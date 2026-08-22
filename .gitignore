@@ -21,3 +21,5 @@ secrets.json
 # local scratch copies are not.
 state.local.db
 state.local.db-*
+data/draft_state.db*
+data/.cache/
