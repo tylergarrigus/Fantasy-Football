@@ -196,18 +196,50 @@ class ESPNDraftSource:
         detail = (response.data or {}).get("draftDetail") or {}
         picks = []
         for pick in detail.get("picks") or []:
+            # ESPN pre-creates every pick slot as soon as a draft is scheduled --
+            # a 12-team, 16-round draft returns 192 entries before anyone has
+            # picked. Unfilled slots carry playerId 0 or -1. Counting those as
+            # made picks makes a draft that has not started look complete.
+            player_id = pick.get("playerId") or 0
+            if player_id <= 0:
+                continue
             picks.append(
                 DraftPick(
                     overall=pick.get("overallPickNumber", 0),
                     round_num=pick.get("roundId", 0),
                     round_pick=pick.get("roundPickNumber", 0),
                     team_id=pick.get("teamId", 0),
-                    espn_player_id=pick.get("playerId", 0),
+                    espn_player_id=player_id,
                     keeper=bool(pick.get("keeper")),
                     bid_amount=pick.get("bidAmount") or None,
                 )
             )
         return picks
+
+    def draft_order(self, league_id: int, season: int) -> list[tuple[int, int]]:
+        """Round-1 slot order as [(round_pick, team_id), ...].
+
+        Available as soon as the draft is scheduled, because ESPN creates the
+        empty pick slots up front. That is what tells us which seat we draft
+        from, and therefore how long the wait is between picks.
+        """
+        try:
+            response = self.http.get_json(
+                f"{BASE}/{season}/segments/0/leagues/{league_id}",
+                params={"view": "mDraftDetail"},
+                cookies=self.creds.as_cookies(),
+                ttl=300,
+            )
+        except SourceError:
+            return []
+
+        detail = (response.data or {}).get("draftDetail") or {}
+        order = [
+            (p.get("roundPickNumber", 0), p.get("teamId", 0))
+            for p in detail.get("picks") or []
+            if p.get("roundId") == 1 and p.get("teamId")
+        ]
+        return sorted(order)
 
     def draft_in_progress(self, league_id: int, season: int) -> dict[str, Any]:
         """Has the draft started, and is it finished?"""

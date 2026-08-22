@@ -82,8 +82,11 @@ class DraftAdvice:
 class DraftEngine:
     """Draft board for one league, under that league's scoring and roster rules."""
 
-    def __init__(self, ctx: LeagueContext):
+    def __init__(self, ctx: LeagueContext, draft_slot: int | None = None):
         self.ctx = ctx
+        # Before the draft starts no picks exist, so the slot cannot be inferred
+        # from pick history -- it has to come from ESPN's published draft order.
+        self._draft_slot = draft_slot
         self._board: list[BoardPlayer] | None = None
 
     # -- board construction ------------------------------------------------
@@ -227,7 +230,9 @@ class DraftEngine:
         return row["n"] if row else 0
 
     def my_draft_slot(self) -> int | None:
-        """Which seat I'm drafting from, inferred from my first pick."""
+        """Which seat I'm drafting from."""
+        if self._draft_slot:
+            return self._draft_slot
         my_team = self.ctx.my_team_id()
         if my_team is None:
             return None

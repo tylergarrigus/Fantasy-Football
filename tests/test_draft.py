@@ -253,3 +253,75 @@ def test_draft_boards_are_isolated_between_leagues(store, registry):
 
     assert p1.projected == 300.0
     assert p2.projected == 240.0, "each league keeps its own projection for the same player"
+
+
+def test_unfilled_pick_slots_are_not_counted_as_made_picks(monkeypatch, store, registry):
+    """ESPN pre-creates every pick slot when a draft is scheduled.
+
+    A 12-team, 16-round draft returns 192 entries before anyone has picked, with
+    playerId 0 on the unfilled ones. Counting those as completed picks makes a
+    draft that has not started look finished -- which is exactly what happened
+    on the first live test.
+    """
+    from ff.config import ESPNCredentials
+    from ff.sources.base import HttpClient, Response
+    from ff.sources.espn_draft import ESPNDraftSource
+
+    scheduled_but_empty = {
+        "draftDetail": {
+            "drafted": False,
+            "inProgress": False,
+            "picks": [
+                {
+                    "overallPickNumber": n,
+                    "roundId": (n - 1) // 12 + 1,
+                    "roundPickNumber": (n - 1) % 12 + 1,
+                    "teamId": (n - 1) % 12 + 1,
+                    # ESPN's placeholder for "nobody has picked here yet"
+                    "playerId": 0 if n > 2 else 3117251,
+                }
+                for n in range(1, 193)
+            ],
+        }
+    }
+
+    http = HttpClient(store.path.parent / "cache")
+    monkeypatch.setattr(
+        http, "get_json",
+        lambda *a, **k: Response(scheduled_but_empty, from_cache=False, fetched_at=0.0),
+    )
+    source = ESPNDraftSource(http, store, registry, ESPNCredentials())
+
+    picks = source.fetch_picks(1, 2026)
+    assert len(picks) == 2, (
+        f"only the 2 real picks should count, not all 192 slots (got {len(picks)})"
+    )
+    assert all(p.espn_player_id > 0 for p in picks)
+
+
+def test_draft_order_is_readable_before_the_draft_starts(monkeypatch, store, registry):
+    """The slot has to come from the published order -- there are no picks yet."""
+    from ff.config import ESPNCredentials
+    from ff.sources.base import HttpClient, Response
+    from ff.sources.espn_draft import ESPNDraftSource
+
+    payload = {
+        "draftDetail": {
+            "picks": [
+                {"overallPickNumber": n, "roundId": 1, "roundPickNumber": n,
+                 "teamId": 100 + n, "playerId": 0}
+                for n in range(1, 13)
+            ]
+        }
+    }
+    http = HttpClient(store.path.parent / "cache2")
+    monkeypatch.setattr(
+        http, "get_json",
+        lambda *a, **k: Response(payload, from_cache=False, fetched_at=0.0),
+    )
+    source = ESPNDraftSource(http, store, registry, ESPNCredentials())
+
+    order = source.draft_order(1, 2026)
+    assert len(order) == 12
+    assert order[0] == (1, 101)
+    assert order[-1] == (12, 112)

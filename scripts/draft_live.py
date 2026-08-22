@@ -154,9 +154,32 @@ def main() -> int:
 
     scoring = "ppr"
     stored = source.sync_rankings(ctx, args.season, scoring)
-    print(f"  Board loaded: {stored} ranked players. Watching for picks...", flush=True)
+    print(f"  Board loaded: {stored} ranked players.", flush=True)
 
-    engine = DraftEngine(ctx)
+    # ESPN publishes the pick slots (and therefore the draft order) as soon as
+    # the draft is scheduled, so we know our seat before anyone has picked.
+    my_team_id = ctx.my_team_id()
+    order = source.draft_order(args.league_id, args.season)
+    my_slot = next((rp for rp, tid in order if tid == my_team_id), None)
+    if order:
+        print("\n  DRAFT ORDER (round 1)")
+        for round_pick, team_id in order:
+            row = ctx.one(
+                "SELECT name FROM league_teams "
+                "WHERE league_id = :league_id AND team_id = :tid",
+                tid=team_id,
+            )
+            mark = "  <-- YOU" if team_id == my_team_id else ""
+            print(f"    {round_pick:>2}. {(row['name'] if row else team_id)}{mark}")
+    if my_slot:
+        engine_preview = DraftEngine(ctx, draft_slot=my_slot)
+        picks = engine_preview.snake_picks(my_slot, rounds=16)
+        print(f"\n  You pick at: {', '.join('#' + str(p) for p in picks[:8])} ...")
+    else:
+        print("\n  Draft order not published yet.")
+    print("\n  Watching for picks...", flush=True)
+
+    engine = DraftEngine(ctx, draft_slot=my_slot)
     deadline = time.time() + args.minutes * 60
     last_count = -1
     idle_notices = 0
