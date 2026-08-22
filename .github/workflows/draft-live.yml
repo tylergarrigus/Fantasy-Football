@@ -1,0 +1,56 @@
+name: Live draft watch
+
+# Watches an ESPN draft in real time and prints a recommendation after every
+# pick. The runner is the only place with network access to ESPN, so it does
+# the watching and the job log becomes the shared view of the draft.
+#
+# Started by writing a start time into `.live-trigger`. Runs up to 5 hours,
+# which covers a 4-hour window plus a late start.
+
+on:
+  push:
+    paths:
+      - ".live-trigger"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ff-draft-live
+  cancel-in-progress: true
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install
+        run: pip install -e .
+
+      - name: Read run length
+        id: cfg
+        # First line of .live-trigger is the minutes to watch for, so a short
+        # smoke test and the real multi-hour watch use the same workflow.
+        run: |
+          MINUTES=$(head -1 .live-trigger | tr -dc '0-9')
+          echo "minutes=${MINUTES:-285}" >> "$GITHUB_OUTPUT"
+          echo "Watching for ${MINUTES:-285} minutes."
+
+      - name: Watch League 1 draft
+        env:
+          ESPN_S2: ${{ secrets.ESPN_S2 }}
+          ESPN_SWID: ${{ secrets.ESPN_SWID }}
+        run: |
+          python scripts/draft_live.py \
+            --league-id 1631980693 \
+            --season 2026 \
+            --minutes ${{ steps.cfg.outputs.minutes }} \
+            --interval 20
