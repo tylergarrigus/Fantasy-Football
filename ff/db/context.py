@@ -42,6 +42,8 @@ LEAGUE_SCOPED_TABLES = frozenset(
         "league_transactions",
         "league_state",
         "league_projections",
+        "draft_rankings",
+        "draft_picks",
         "opponent_profiles",
         "recommendations",
     }

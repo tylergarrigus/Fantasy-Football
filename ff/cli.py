@@ -359,6 +359,154 @@ def cmd_prefer(args) -> int:
     return 0
 
 
+def _draft_engine(store, settings, ctx):
+    from ff.engines.draft import DraftEngine
+
+    return DraftEngine(ctx)
+
+
+def cmd_draft(args) -> int:
+    """Draft board, strategy, and live assistance."""
+    import time
+
+    from ff.engines.draft import DraftEngine
+    from ff.identity import PlayerRegistry
+    from ff.sources.base import HttpClient
+    from ff.sources.espn_draft import ESPNDraftSource
+
+    settings = _load(args.env)
+    store = Store(settings.db_path)
+    http = HttpClient(settings.cache_dir)
+    registry = PlayerRegistry(store)
+    source = ESPNDraftSource(http, store, registry, settings.espn)
+
+    contexts = open_contexts(store, settings)
+    if not contexts:
+        print("No leagues configured. Set FF_LEAGUE_1_ID / FF_LEAGUE_2_ID.")
+        return 1
+
+    for key, ctx in contexts.items():
+        if args.league and key != args.league:
+            continue
+        cfg = settings.league(key)
+        engine = DraftEngine(ctx)
+
+        if args.action == "sync":
+            _print_header(f"{ctx.name} — syncing draft board")
+            scoring = args.scoring or _infer_scoring(ctx)
+            print(f"  Scoring bucket: {scoring}")
+            count = source.sync_rankings(ctx, cfg.season, scoring)
+            picks = source.sync_picks(ctx, cfg.season)
+            print(f"  Stored {count} ranked players, {picks} picks made so far.")
+            if count == 0:
+                print("  DATA UNAVAILABLE — ESPN returned no rankings. If the league is "
+                      "private, check ESPN_S2 / ESPN_SWID.")
+
+        elif args.action == "strategy":
+            strategy = engine.strategy()
+            _print_header(f"{ctx.name} — pre-draft strategy")
+            if strategy.get("status") != "ok":
+                print(f"  {strategy['status']}: {strategy.get('reason')}")
+                continue
+            print(f"  {strategy['teams']}-team league")
+            print(f"  Starting slots: "
+                  f"{', '.join(f'{k}×{v}' for k, v in strategy['roster_slots'].items() if v)}")
+            print(f"\n  Where the value is (steepest drop-off first):")
+            for position in strategy["priority_order"]:
+                info = strategy["positional"][position]
+                print(f"    {position}: best is {info['vor_of_best']:+.0f} over replacement; "
+                      f"{info['elite_tier_size']} in the elite tier, then a "
+                      f"{info['drop_after_elite']:.0f}-point drop")
+                if info["elite_names"]:
+                    print(f"        {', '.join(info['elite_names'])}")
+            for note in strategy["notes"]:
+                print(f"\n  ! {note}")
+
+        elif args.action == "board":
+            _print_header(f"{ctx.name} — draft board (best available)")
+            available = engine.available()
+            if not available:
+                print("  DATA UNAVAILABLE — run `ff draft sync` first.")
+                continue
+            position_filter = (args.position or "").upper()
+            shown = [p for p in available if not position_filter or p.position == position_filter]
+            for player in shown[: args.limit]:
+                print(f"  {player.describe()}")
+
+        elif args.action == "advise":
+            advice = engine.advise(args.pick)
+            _print_draft_advice(ctx, advice)
+
+        elif args.action == "live":
+            _print_header(f"{ctx.name} — LIVE DRAFT MODE")
+            print("  Polling ESPN every "
+                  f"{args.interval}s. Ctrl-C to stop.\n")
+            last_count = -1
+            try:
+                while True:
+                    source.sync_picks(ctx, cfg.season)
+                    engine._board = None  # force recompute; picks changed
+                    made = engine.picks_made()
+                    if made != last_count:
+                        last_count = made
+                        advice = engine.advise()
+                        print("\033[2J\033[H", end="")  # clear screen
+                        _print_header(f"{ctx.name} — pick {made + 1}")
+                        _print_draft_advice(ctx, advice)
+                    time.sleep(args.interval)
+            except KeyboardInterrupt:
+                print("\n  Stopped.")
+
+    http.close()
+    store.close()
+    return 0
+
+
+def _infer_scoring(ctx) -> str:
+    """Pick ESPN's ranking bucket from the league's own scoring settings."""
+    scoring = ctx.scoring()
+    blob = str(scoring).lower()
+    ppr_value = scoring.get("ppr") if isinstance(scoring, dict) else None
+    if ppr_value in (0.5,) or "half" in blob:
+        return "half"
+    if ppr_value or "ppr" in blob or "receptions" in blob:
+        return "ppr"
+    return "standard"
+
+
+def _print_draft_advice(ctx, advice) -> None:
+    if advice.recommendation is None:
+        for caveat in advice.caveats:
+            print(f"  {caveat}")
+        return
+
+    print(f"  Round {advice.round_num}, overall pick {advice.pick_number}")
+    if advice.picks_until_next:
+        print(f"  Your next pick after this: #{advice.next_pick} "
+              f"({advice.picks_until_next} picks away)")
+    if advice.roster_needs:
+        print(f"  Still need: {', '.join(advice.roster_needs)}")
+
+    print(f"\n  TAKE: {advice.recommendation.name} "
+          f"({advice.recommendation.position}, "
+          f"{advice.recommendation.projected:.0f} proj, "
+          f"{advice.recommendation.vor:+.0f} VOR)")
+    print(f"  {advice.reasoning}")
+
+    if advice.alternatives:
+        print("\n  Alternatives:")
+        for alt in advice.alternatives:
+            print(f"    {alt.describe()}")
+
+    if advice.tier_warnings:
+        print("\n  Tier cliffs before your next pick:")
+        for warning in advice.tier_warnings:
+            print(f"    ! {warning}")
+
+    for caveat in advice.caveats:
+        print(f"\n  Note: {caveat}")
+
+
 def cmd_changed(args) -> int:
     """What changed recently?"""
     settings = _load(args.env)
@@ -440,6 +588,29 @@ def build_parser() -> argparse.ArgumentParser:
     p = add("changed", cmd_changed, "what changed in the NFL recently")
     p.add_argument("--hours", type=int, default=24)
     p.add_argument("--limit", type=int, default=25)
+
+    p = add("draft", cmd_draft, "draft board, strategy, and live draft assistance")
+    p.add_argument(
+        "action",
+        choices=["sync", "strategy", "board", "advise", "live"],
+        help=(
+            "sync: pull rankings and picks from ESPN | "
+            "strategy: pre-draft read on this league | "
+            "board: best available | "
+            "advise: who to take at a given pick | "
+            "live: poll during the draft and keep advising"
+        ),
+    )
+    p.add_argument("--league", choices=["L1", "L2"])
+    p.add_argument("--limit", type=int, default=30)
+    p.add_argument("--position", help="filter the board to one position")
+    p.add_argument("--pick", type=int, help="overall pick number to advise for")
+    p.add_argument("--interval", type=int, default=15, help="live poll seconds")
+    p.add_argument(
+        "--scoring",
+        choices=["standard", "ppr", "half"],
+        help="override the detected scoring bucket for ESPN's draft ranks",
+    )
 
     return parser
 

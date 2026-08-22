@@ -180,6 +180,37 @@ CREATE TABLE IF NOT EXISTS league_projections (
     PRIMARY KEY (league_id, player_id, week)
 );
 
+-- Draft rankings and ADP, league-scoped because ESPN computes draft ranks
+-- against the league's own scoring. A PPR league and a standard league produce
+-- genuinely different boards, and using one for the other is how people reach
+-- two rounds early on a possession receiver.
+CREATE TABLE IF NOT EXISTS draft_rankings (
+    league_id     INTEGER NOT NULL REFERENCES leagues(league_id) ON DELETE CASCADE,
+    player_id     TEXT NOT NULL,
+    adp           REAL,      -- average draft position across ESPN leagues
+    adp_change    REAL,      -- recent movement; a fast riser is news
+    draft_rank    INTEGER,   -- ESPN's own rank under this scoring
+    auction_value REAL,
+    pct_drafted   REAL,
+    projected     REAL,      -- season projection under this league's scoring
+    updated_at    TEXT NOT NULL,
+    PRIMARY KEY (league_id, player_id)
+);
+
+-- Picks as they happen. Polled during a live draft.
+CREATE TABLE IF NOT EXISTS draft_picks (
+    league_id    INTEGER NOT NULL REFERENCES leagues(league_id) ON DELETE CASCADE,
+    overall_pick INTEGER NOT NULL,
+    round_num    INTEGER,
+    round_pick   INTEGER,
+    team_id      INTEGER,
+    player_id    TEXT,
+    keeper       INTEGER NOT NULL DEFAULT 0,
+    bid_amount   INTEGER,
+    updated_at   TEXT NOT NULL,
+    PRIMARY KEY (league_id, overall_pick)
+);
+
 CREATE TABLE IF NOT EXISTS league_matchups (
     league_id   INTEGER NOT NULL REFERENCES leagues(league_id) ON DELETE CASCADE,
     week        INTEGER NOT NULL,
