@@ -45,7 +45,53 @@ def tier_groups(board: list[dict], depth: int) -> list[dict]:
     return out
 
 
-def build_league(key: str, headline: str, plan: list[tuple[str, str]]) -> str:
+def snake_picks(slot: int, teams: int, rounds: int) -> list[int]:
+    """Overall pick numbers for a seat in a snake draft."""
+    out = []
+    for rnd in range(1, rounds + 1):
+        in_round = slot if rnd % 2 else teams - slot + 1
+        out.append((rnd - 1) * teams + in_round)
+    return out
+
+
+def turn_card(board: list[dict], slot: int, teams: int) -> str:
+    """What each of your turns actually looks like from this seat.
+
+    A late seat drafts in pairs -- two picks a few slots apart, then a long
+    wait. That changes what a pick costs: you are not choosing between two
+    players, you are choosing which one you are willing to lose.
+    """
+    picks = snake_picks(slot, teams, 16)
+    by_adp = sorted([p for p in board if p.get("adp")], key=lambda p: p["adp"])
+
+    turns = []
+    for i in range(0, 8, 2):
+        first, second = picks[i], picks[i + 1]
+        wait = (picks[i + 2] - second) if i + 2 < len(picks) else None
+        # Who is normally still there: ADP at or past your pick, but not so
+        # far past that naming him is fantasy.
+        likely = [p for p in by_adp if first - 2 <= p["adp"] <= second + 6][:5]
+        names = ", ".join(
+            f'{html.escape(p["name"])} <i>{p["position"]}</i>' for p in likely
+        ) or "&mdash;"
+        tail = f" then {wait} picks off the board before you're up again" if wait else ""
+        turns.append(
+            f'<li><span class="rd">#{first} &amp; #{second}</span>'
+            f'<span class="ra">{names}{tail}.</span></li>'
+        )
+
+    return f"""
+  <h3 class="sh">Your seat &mdash; pick {slot} of {teams}</h3>
+  <p class="sub">You draft in pairs. Each pair is really one question:
+     of the two you want, which one are you willing to lose?
+     Names are who normally lasts that long by ADP &mdash; not a promise.</p>
+  <ol class="plan">{''.join(turns)}</ol>
+"""
+
+
+def build_league(
+    key: str, headline: str, plan: list[tuple[str, str]], slot: int | None = None
+) -> str:
     d = load(key)
     board = [p for p in d["board"] if p["position"] in SKILL]
     slots = d["roster_slots"]
@@ -142,6 +188,7 @@ def build_league(key: str, headline: str, plan: list[tuple[str, str]]) -> str:
 
   <h3 class="sh">Round plan</h3>
   <ol class="plan">{plan_rows}</ol>
+{turn_card(board, slot, teams) if slot else ''}
 
   <div class="two-up">
     <div>
@@ -203,7 +250,8 @@ L2_PLAN = [
 
 
 def main() -> int:
-    l1 = build_league("L1", L1_HEADLINE, L1_PLAN)
+    # Seat confirmed from ESPN's published pick slots for the 2026 draft.
+    l1 = build_league("L1", L1_HEADLINE, L1_PLAN, slot=11)
     l2 = build_league("L2", L2_HEADLINE, L2_PLAN)
     OUT.write_text(PAGE.replace("{{LEAGUES}}", l1 + l2))
     print(f"wrote {OUT} ({OUT.stat().st_size:,} bytes)")
