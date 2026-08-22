@@ -4,8 +4,13 @@ name: Live draft watch
 # pick. The runner is the only place with network access to ESPN, so it does
 # the watching and the job log becomes the shared view of the draft.
 #
-# Started by writing a start time into `.live-trigger`. Runs up to 5 hours,
-# which covers a 4-hour window plus a late start.
+# Started by pushing `.live-trigger`:
+#   line 1  when to start -- a UTC timestamp like 2026-08-23T00:50:00Z, or "now"
+#   line 2  how many minutes to watch for
+#
+# A separate `wait` job holds until the start time. GitHub caps a single job at
+# six hours, so waiting and watching have to be two jobs -- that is what lets a
+# watch be armed hours ahead of an evening draft and still cover all of it.
 
 on:
   push:
@@ -20,9 +25,40 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  watch:
+  wait:
     runs-on: ubuntu-latest
-    timeout-minutes: 300
+    timeout-minutes: 350
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Hold until start time
+        run: |
+          START=$(sed -n '1p' .live-trigger | tr -d '[:space:]')
+          if [ -z "$START" ] || [ "$START" = "now" ]; then
+            echo "Starting immediately."
+            exit 0
+          fi
+          TARGET=$(date -u -d "$START" +%s) || { echo "Unreadable start time: $START"; exit 1; }
+          NOW=$(date -u +%s)
+          DELAY=$(( TARGET - NOW ))
+          if [ "$DELAY" -le 0 ]; then
+            echo "Start time already passed; starting now."
+            exit 0
+          fi
+          # A job cannot outlive six hours, so refuse an arm we cannot honour
+          # rather than silently starting the watch late.
+          if [ "$DELAY" -gt 20400 ]; then
+            echo "Start time is $((DELAY / 60)) minutes out; the maximum is 340."
+            exit 1
+          fi
+          echo "Holding $((DELAY / 60)) minutes, until $START."
+          sleep "$DELAY"
+
+  watch:
+    needs: wait
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
 
     steps:
       - uses: actions/checkout@v4
@@ -37,12 +73,12 @@ jobs:
 
       - name: Read run length
         id: cfg
-        # First line of .live-trigger is the minutes to watch for, so a short
+        # Second line of .live-trigger is the minutes to watch for, so a short
         # smoke test and the real multi-hour watch use the same workflow.
         run: |
-          MINUTES=$(head -1 .live-trigger | tr -dc '0-9')
-          echo "minutes=${MINUTES:-285}" >> "$GITHUB_OUTPUT"
-          echo "Watching for ${MINUTES:-285} minutes."
+          MINUTES=$(sed -n '2p' .live-trigger | tr -dc '0-9')
+          echo "minutes=${MINUTES:-300}" >> "$GITHUB_OUTPUT"
+          echo "Watching for ${MINUTES:-300} minutes."
 
       - name: Watch League 1 draft
         env:
