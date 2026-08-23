@@ -1,0 +1,152 @@
+updated 05:44:34Z
+
+    11. TyG  <-- YOU
+    12. Pink
+
+  You pick at: #11, #14, #35, #38, #59, #62, #83, #86 ...
+
+  Watching for picks...
+
+====================================================================
+[00:49:28Z]  0 PICKS MADE  ·  round 1  ·  next is overall #1
+====================================================================
+
+MY ROSTER (0)
+  (empty)
+
+STILL NEEDED: RB, WR, QB, TE, K
+NEXT PICK: overall #11 (10 away)
+
+>>> TAKE: Jahmyr Gibbs (RB, proj 365, VOR +162)
+    Jahmyr Gibbs (RB) projects 365 points, +162 over replacement at his position. You still need a starting RB. Only 1 player(s) left in this tier and 10 picks until you're up again -- this tier will be gone. Take him now.
+
+NEXT BEST
+  Bijan Robinson           RB   proj   353 VOR   +150  ADP 3
+  Puka Nacua               WR   proj   356 VOR   +144  ADP 5
+  Christian McCaffrey      RB   proj   343 VOR   +140  ADP 7
+  Ja'Marr Chase            WR   proj   338 VOR   +125  ADP 4
+
+CLIFFS BEFORE YOUR NEXT PICK
+  ! RB: only 1 left in the top available tier (Jahmyr Gibbs) with 10 picks until you're up -- you need one.
+  ! WR: only 1 left in the top available tier (Puka Nacua) with 10 picks until you're up -- you need one.
+  ! TE: only 2 left in the top available tier (Trey McBride, Brock Bowers) with 10 picks until you're up -- you need one.
+  ! QB: only 1 left in the top available tier (Josh Allen) with 10 picks until you're up -- you need one.
+
+BEST AVAILABLE BY POSITION
+  QB  Josh Allen (370), Lamar Jackson (323), Jalen Hurts (320), Drake Maye (319)
+  RB  Jahmyr Gibbs (365), Bijan Robinson (353), Christian McCaffrey (343), Jonathan Taylor (317)
+  WR  Puka Nacua (356), Ja'Marr Chase (338), Jaxon Smith-Njigba (327), Amon-Ra St. Brown (324)
+  TE  Trey McBride (242), Brock Bowers (241), Tyler Warren (211), Colston Loveland (206)
+
+[00:54:29Z] waiting... 0 picks so far
+[00:59:32Z] waiting... 0 picks so far
+[01:04:33Z] waiting... 0 picks so far
+[01:09:34Z] waiting... 0 picks so far
+[01:14:35Z] waiting... 0 picks so far
+[01:19:37Z] waiting... 0 picks so far
+[01:24:38Z] waiting... 0 picks so far
+[01:29:39Z] waiting... 0 picks so far
+[01:34:40Z] waiting... 0 picks so far
+[01:39:41Z] waiting... 0 picks so far
+[01:44:43Z] waiting... 0 picks so far
+[01:49:43Z] waiting... 0 picks so far
+[01:54:44Z] waiting... 0 picks so far
+[01:59:46Z] waiting... 0 picks so far
+[02:04:47Z] waiting... 0 picks so far
+[02:09:48Z] waiting... 0 picks so far
+[02:14:49Z] waiting... 0 picks so far
+
+====================================================================
+[02:16:19Z]  177 PICKS MADE  ·  round 15  ·  next is overall #178
+====================================================================
+
+LAST 8 PICKS
+  #183 Calvin Ridley            WR   -> Nick's Nifty Team
+  #184 Will Reichard            K    -> Daddy Dan
+  #185 Jalen Nailor             WR   -> Jack
+  #187 Harrison Mevis           K    -> Robert's Rowdy Team
+  #188 Tyler Loop               K    -> Mike Vick's DAWGS
+  #189 Chris Boswell            K    ->  Terry mcdih
+  #190 Caleb Douglas            WR   -> Diddys allstars
+  #191 Eddy Pineiro             K    -> Robert's Remarkable Team
+
+MY ROSTER (15)
+  RB   De'Von Achane
+  RB   Ashton Jeanty
+  WR   Garrett Wilson
+  WR   Davante Adams
+  QB   Drake Maye
+  WR   Rome Odunze
+  TE   Travis Kelce
+  K    Brandon Aubrey
+  RB   Tony Pollard
+  RB   Rico Dowdle
+  WR   Quentin Johnston
+  WR   Jalen Coker
+  TE   Brenton Strange
+  WR   Tre Tucker
+  WR   Denzel Boston
+
+STILL NEEDED: starters filled
+NEXT PICK: overall #179 (1 away)
+
+>>> TAKE: Pat Freiermuth (TE, proj 136, VOR -33)
+    Pat Freiermuth (TE) projects 136 points, -33 over replacement at his position. 8 players remain in his tier against 1 picks before your next -- you could wait on this position and still get comparable value. Note this is a reach: ADP 169 against pick 178. Justified only by your roster needs.
+
+NEXT BEST
+  Gunnar Helm              TE   proj   127 VOR    -42  ADP 170
+  C.J. Stroud              QB   proj   247 VOR    -42  ADP 166
+  Sam Darnold              QB   proj   243 VOR    -46  ADP 162
+  Greg Dulcich             TE   proj   119 VOR    -50  ADP 170
+
+BEST AVAILABLE BY POSITION
+  QB  C.J. Stroud (247), Sam Darnold (243), Bryce Young (238), Cam Ward (220)
+  RB  Isiah Pacheco (124), Justice Hill (114), Samaje Perine (101), Dylan Sampson (87)
+  WR  Adonai Mitchell (127), Keenan Allen (124), Devaughn Vele (124), Rashod Bateman (123)
+  TE  Pat Freiermuth (136), Gunnar Helm (127), Greg Dulcich (119), Darren Waller (115)
+
+[02:21:21Z] waiting... 177 picks so far
+[02:26:22Z] waiting... 177 picks so far
+[02:31:24Z] waiting... 177 picks so far
+[02:36:25Z] waiting... 177 picks so far
+[02:41:26Z] waiting... 177 picks so far
+[02:46:27Z] waiting... 177 picks so far
+[02:51:29Z] waiting... 177 picks so far
+[02:56:31Z] waiting... 177 picks so far
+[03:01:32Z] waiting... 177 picks so far
+[03:06:33Z] waiting... 177 picks so far
+[03:11:34Z] waiting... 177 picks so far
+[03:16:36Z] waiting... 177 picks so far
+[03:21:37Z] waiting... 177 picks so far
+[03:26:38Z] waiting... 177 picks so far
+[03:31:40Z] waiting... 177 picks so far
+[03:36:41Z] waiting... 177 picks so far
+[03:41:43Z] waiting... 177 picks so far
+[03:46:44Z] waiting... 177 picks so far
+[03:51:45Z] waiting... 177 picks so far
+[03:56:47Z] waiting... 177 picks so far
+[04:01:48Z] waiting... 177 picks so far
+[04:06:49Z] waiting... 177 picks so far
+[04:11:51Z] waiting... 177 picks so far
+[04:16:52Z] waiting... 177 picks so far
+[04:21:53Z] waiting... 177 picks so far
+[04:26:55Z] waiting... 177 picks so far
+[04:31:56Z] waiting... 177 picks so far
+[04:36:57Z] waiting... 177 picks so far
+[04:41:59Z] waiting... 177 picks so far
+[04:47:00Z] waiting... 177 picks so far
+[04:52:01Z] waiting... 177 picks so far
+[04:57:03Z] waiting... 177 picks so far
+[05:02:04Z] waiting... 177 picks so far
+[05:07:06Z] waiting... 177 picks so far
+[05:12:07Z] waiting... 177 picks so far
+[05:17:08Z] waiting... 177 picks so far
+[05:22:09Z] waiting... 177 picks so far
+[05:27:11Z] waiting... 177 picks so far
+[05:32:12Z] waiting... 177 picks so far
+[05:37:13Z] waiting... 177 picks so far
+[05:42:14Z] waiting... 177 picks so far
+
+====================================================================
+WATCH ENDED 05:44:29Z  ·  177 picks recorded
+====================================================================
