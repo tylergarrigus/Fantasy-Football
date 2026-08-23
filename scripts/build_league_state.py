@@ -31,7 +31,10 @@ from ff.sources.sleeper import SleeperSource  # noqa: E402
 
 log = get_logger(__name__)
 
-STARTABLE = ("QB", "RB", "WR", "TE", "K", "DST")
+# ESPN names the defense slot "D/ST" in roster settings and gives its players
+# the same position string. Spelling it "DST" here silently drops the slot:
+# every lineup comes back a defense short and nothing reports an error.
+STARTABLE = ("QB", "RB", "WR", "TE", "K", "D/ST")
 
 
 def _infer_scoring(ctx: LeagueContext) -> str:
