@@ -50,6 +50,9 @@ jobs:
           ESPN_SWID: ${{ secrets.ESPN_SWID }}
         run: python scripts/build_league_state.py --out data --season 2026
 
+      - name: Build command center
+        run: python scripts/build_command_center.py
+
       - name: Commit state
         run: |
           git config user.name "fantasy-gm[bot]"

@@ -23,10 +23,12 @@ from ff.config import ESPNCredentials, LeagueConfig  # noqa: E402
 from ff.db.context import LeagueContext  # noqa: E402
 from ff.db.store import Store  # noqa: E402
 from ff.identity import PlayerRegistry  # noqa: E402
+from ff.intel.news import _TRIVIAL  # noqa: E402
 from ff.logging_setup import get_logger, setup_logging  # noqa: E402
 from ff.sources.base import HttpClient  # noqa: E402
 from ff.sources.espn import ESPNFantasySource  # noqa: E402
 from ff.sources.espn_draft import ESPNDraftSource  # noqa: E402
+from ff.sources.espn_news import ESPNNewsSource  # noqa: E402
 from ff.sources.sleeper import SleeperSource  # noqa: E402
 
 log = get_logger(__name__)
@@ -103,6 +105,38 @@ def best_lineup(players: list[dict], slots: dict[str, int]) -> dict:
     }
 
 
+def fetch_news(http: HttpClient) -> list[dict]:
+    """Recent NFL headlines with the players they name, advice-farm items dropped.
+
+    News is global -- the same injury is one fact -- but each league decides for
+    itself whether it matters. The command center joins these to rosters by the
+    ESPN athlete id, so an item that names nobody we roster simply never shows.
+    """
+    try:
+        articles = ESPNNewsSource(http).news(limit=50)
+    except Exception as exc:  # noqa: BLE001
+        log.warning("news unavailable: %s", exc)
+        return []
+
+    out = []
+    for art in articles:
+        headline = (art.get("headline") or "").strip()
+        if not headline or _TRIVIAL.search(headline):
+            continue
+        out.append(
+            {
+                "headline": headline,
+                "body": (art.get("body") or "")[:300],
+                "published": art.get("published"),
+                "url": art.get("url"),
+                "espn_athlete_ids": [a["id"] for a in art.get("athletes") or []],
+                "athlete_names": [a["name"] for a in art.get("athletes") or []],
+                "source": "ESPN",
+            }
+        )
+    return out
+
+
 def build(league_id: int, key: str, name: str, season: int, out_dir: Path) -> dict:
     store = Store(out_dir / f"state_{key}.db")
     http = HttpClient(out_dir / ".cache")
@@ -140,6 +174,15 @@ def build(league_id: int, key: str, name: str, season: int, out_dir: Path) -> di
         )
     }
 
+    # ESPN athlete ids are what news articles carry, so every player row keeps
+    # one -- that is the join key between a headline and a roster.
+    espn_ids = {
+        r["player_id"]: r["source_id"]
+        for r in store.conn.execute(
+            "SELECT player_id, source_id FROM player_ids WHERE source = 'espn'"
+        ).fetchall()
+    }
+
     def decorate(rows) -> list[dict]:
         out = []
         for r in rows:
@@ -147,6 +190,7 @@ def build(league_id: int, key: str, name: str, season: int, out_dir: Path) -> di
             out.append(
                 {
                     "player_id": pid,
+                    "espn_id": espn_ids.get(pid),
                     "name": r["full_name"],
                     "position": r["position"],
                     "nfl_team": r["nfl_team"] if "nfl_team" in r.keys() else None,
@@ -203,6 +247,9 @@ def build(league_id: int, key: str, name: str, season: int, out_dir: Path) -> di
         "team_count": len(ctx.teams()),
         "roster_slots": slots,
         "playoff_teams": settings["playoff_teams"] if settings else None,
+        "reg_season_weeks": settings["reg_season_weeks"] if settings else None,
+        "waiver_type": settings["waiver_type"] if settings else None,
+        "faab_budget": settings["faab_budget"] if settings else None,
         "my_team_id": ctx.my_team_id(),
         "teams": teams,
         "free_agents": free_agents[:120],
@@ -226,6 +273,24 @@ def main() -> int:
     setup_logging("INFO")
     out_dir = Path(args.out)
     out_dir.mkdir(parents=True, exist_ok=True)
+
+    # News once, globally -- it is the same NFL for both leagues.
+    news_http = HttpClient(out_dir / ".cache")
+    news = fetch_news(news_http)
+    news_http.close()
+    from datetime import datetime, timezone
+
+    (out_dir / "news.json").write_text(
+        json.dumps(
+            {
+                "fetched_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+                "items": news,
+            },
+            indent=2,
+            default=str,
+        )
+    )
+    log.info("wrote %d news items", len(news))
 
     summary = []
     for league_id, key, name in (

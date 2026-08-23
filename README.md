@@ -1,11 +1,43 @@
 # Fantasy Football GM
 
-A background agent that watches two ESPN fantasy leagues and the NFL, and contacts you
-only when something should change what you do.
+A background agent that watches two ESPN fantasy leagues and the NFL, plus one calm
+screen — the **Fantasy Command Center** — that shows exactly what to do about it.
 
-Not an app. Not a dashboard. There is nothing to open. It runs on a schedule, decides
-whether anything material happened, and if so sends one notification telling you exactly
-what to do in each league. Most of the time it correctly does nothing.
+The agent runs on a schedule, decides whether anything material happened, and most of
+the time correctly does nothing. The Command Center is the one page to open when you
+want to look: an action queue, your team, the league market, a trade evaluator, and
+waivers — all measured against *your* roster under *your* league's scoring.
+
+## The Command Center
+
+`scripts/build_command_center.py` renders `data/command_center.html` from the state
+files below. One page, both leagues, seven views:
+
+- **Today** — a short, prioritized action queue. Every card says what to do, why it is
+  right for this league, a confidence word (never a fake percentage), the deadline, and
+  the exact ESPN clicks. When nothing clears the bar it says **No action needed**.
+- **My Team** — starters, bench, injuries, positional strength vs the league median,
+  playoff outlook, this week's plan.
+- **Market** — every rival's needs and surpluses read from lineup construction; that
+  pairing is what makes a trade realistic instead of a calculator fantasy.
+- **Trades** — offers worth making (each with a natural message to copy), an in-page
+  evaluator for incoming offers (Accept / Decline / Counter / Hold, with up to three
+  realistic counters), and a decision log.
+- **Waivers** — free agents scored by what they add to *your* starting lineup, with the
+  exact drop. FAAB advice only in leagues that use FAAB.
+- **News** — only headlines naming a rostered player, each linked to its source. No feed.
+- **Settings** — notification preferences, quiet mode, an untouchables list the trade
+  tools respect, and recommendation rules.
+
+**What is live vs. not:** rosters, projections, standings, free agents, and news are
+real ESPN data pulled twice daily by `league-state.yml`. Decisions, settings, and the
+audit log live in the viewer's browser (localStorage). Nothing is mock data; where a
+feed is unavailable the page says so instead of inventing content.
+
+**Automation safeguards:** nothing is ever submitted to ESPN — ESPN's API is read-only
+for third parties. Every action is approval-first: the page recommends, you approve,
+you make the one click in the ESPN app. Rules in Settings (trade threshold, injured-player
+guard, untouchables) shape recommendations only, and everything they influence is logged.
 
 ---
 
