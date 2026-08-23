@@ -2,15 +2,19 @@ name: Live draft watch
 
 # Watches an ESPN draft in real time and prints a recommendation after every
 # pick. The runner is the only place with network access to ESPN, so it does
-# the watching and the job log becomes the shared view of the draft.
+# the watching.
 #
 # Started by pushing `.live-trigger`:
-#   line 1  when to start -- a UTC timestamp like 2026-08-23T00:50:00Z, or "now"
+#   line 1  when to start -- a UTC timestamp like 2026-08-23T00:45:00Z, or "now"
 #   line 2  how many minutes to watch for
 #
 # A separate `wait` job holds until the start time. GitHub caps a single job at
 # six hours, so waiting and watching have to be two jobs -- that is what lets a
 # watch be armed hours ahead of an evening draft and still cover all of it.
+#
+# The watch publishes its latest report to the `live-state` branch every few
+# seconds. A job's log cannot be read until the job finishes, which is useless
+# during a draft; a branch can be read at any moment.
 
 on:
   push:
@@ -18,7 +22,7 @@ on:
       - ".live-trigger"
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: ff-draft-live
@@ -73,8 +77,6 @@ jobs:
 
       - name: Read run length
         id: cfg
-        # Second line of .live-trigger is the minutes to watch for, so a short
-        # smoke test and the real multi-hour watch use the same workflow.
         run: |
           MINUTES=$(sed -n '2p' .live-trigger | tr -dc '0-9')
           echo "minutes=${MINUTES:-300}" >> "$GITHUB_OUTPUT"
@@ -84,9 +86,57 @@ jobs:
         env:
           ESPN_S2: ${{ secrets.ESPN_S2 }}
           ESPN_SWID: ${{ secrets.ESPN_SWID }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          python scripts/draft_live.py \
+          set -u
+          mkdir -p live
+
+          # -u so every line reaches the file the moment it is printed; a
+          # buffered log is a log that is always a pick behind.
+          python -u scripts/draft_live.py \
             --league-id 1631980693 \
             --season 2026 \
             --minutes ${{ steps.cfg.outputs.minutes }} \
-            --interval 20
+            --interval 15 > live/watch.log 2>&1 &
+          WATCH=$!
+
+          # A throwaway repo holding one file and one commit. Amend-and-force
+          # keeps `live-state` at a single commit no matter how long the draft
+          # runs, instead of several hundred.
+          PUB="$RUNNER_TEMP/pub"
+          rm -rf "$PUB"; mkdir -p "$PUB"; cd "$PUB"
+          git init -q
+          git config user.name "fantasy-gm"
+          git config user.email "fantasy-gm@users.noreply.github.com"
+          REMOTE="https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}"
+          : > latest.txt
+          git add latest.txt
+          git commit -q -m "live draft state"
+
+          publish() {
+            {
+              echo "updated $(date -u +%H:%M:%SZ)"
+              echo
+              tail -n 150 "$GITHUB_WORKSPACE/live/watch.log"
+            } > latest.txt
+            git add latest.txt
+            git commit -q --amend -m "live draft state" || return 0
+            git push -q -f "$REMOTE" HEAD:refs/heads/live-state || echo "publish failed (continuing)"
+          }
+
+          # Publish while the watch runs, then once more so the final board is
+          # readable after the job ends.
+          while kill -0 "$WATCH" 2>/dev/null; do
+            publish
+            sleep 15
+          done
+          publish
+          wait "$WATCH"
+
+      - name: Upload full log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: draft-watch-log
+          path: live/watch.log
+          if-no-files-found: ignore
