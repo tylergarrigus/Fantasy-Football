@@ -52,7 +52,46 @@ def pos_chip(pos: str) -> str:
 # ------------------------------------------------------------- analysis
 
 
-def analyse(state: dict, news_items: list[dict]) -> dict:
+def rejected_filter(queue: list[Action], league_key: str, decisions: dict) -> list[Action]:
+    """Drop trade ideas a manager has already said no to.
+
+    A rejection is information, not a retry queue. Re-pitching the same deal
+    (or the same player from the same manager) is how you stop getting your
+    calls answered.
+    """
+    rejected = [
+        r for r in decisions.get("rejected_trades", [])
+        if r.get("league") == league_key
+    ]
+    if not rejected:
+        return queue
+    out = []
+    for a in queue:
+        if a.kind == "trade" and a.trade:
+            hit = any(
+                r["partner"] == a.trade["partner_name"]
+                and {p["name"] for p in a.trade["receive"]} & set(r["receive"])
+                for r in rejected
+            )
+            if hit:
+                continue
+        out.append(a)
+    if not out:
+        out.append(Action(
+            kind="info",
+            title="No action needed",
+            why="The remaining trade ideas were already offered and declined, "
+                "nobody on waivers would crack your lineup, and no starter is in "
+                "injury trouble. Sitting tight is the right move -- rejected "
+                "offers get re-examined when rosters or projections change.",
+            confidence="High",
+            confidence_why="every roster and the full free-agent pool was checked",
+            deadline="—", steps="—", urgency=0,
+        ))
+    return out
+
+
+def analyse(state: dict, news_items: list[dict], decisions: dict | None = None) -> dict:
     slots = state["roster_slots"]
     for t in state["teams"]:
         lu = best_lineup(t["players"], slots)
@@ -64,7 +103,11 @@ def analyse(state: dict, news_items: list[dict]) -> dict:
 
     me = next((t for t in state["teams"] if t.get("is_me")), None)
     drafted = bool(me and me["players"])
-    queue = build_queue(state, news_items)
+    queue = rejected_filter(
+        build_queue(state, news_items),
+        state.get("league_key", ""),
+        decisions or {},
+    )
 
     # Positional strength: my starters at each position vs the league median.
     strength: dict[str, dict] = {}
@@ -487,13 +530,14 @@ def client_data(analyses: dict[str, dict]) -> str:
 
 def build() -> str:
     news = load("news.json") or {"items": []}
+    decisions = load("decisions.json") or {}
     analyses: dict[str, dict] = {}
     tabs, blocks = [], []
     for key in ("L1", "L2"):
         state = load(f"state_{key}.json")
         if not state:
             continue
-        a = analyse(state, news["items"])
+        a = analyse(state, news["items"], decisions)
         analyses[key] = a
         first = not tabs
         n_act = sum(1 for x in a["queue"] if x.kind != "info")
