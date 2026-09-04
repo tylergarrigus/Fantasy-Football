@@ -150,7 +150,8 @@ def fetch_news(http: HttpClient) -> list[dict]:
         for rec in players.values():
             status = rec.get("injury_status")
             espn_id = rec.get("espn_id")
-            if not status or not espn_id:
+            # No NFL team means a street free agent; his designation is trivia.
+            if not status or not espn_id or not rec.get("team"):
                 continue
             if (rec.get("position") or "").upper() not in {"QB", "RB", "WR", "TE"}:
                 continue
