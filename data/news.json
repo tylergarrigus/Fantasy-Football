@@ -1,0 +1,434 @@
+{
+  "fetched_at": "2026-09-04T14:48:14+00:00",
+  "items": [
+    {
+      "headline": "Sergio Bailey II (WR, None) listed NA",
+      "body": "",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        4039320
+      ],
+      "athlete_names": [
+        "Sergio Bailey II"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
+      "headline": "Levonte Whitfield (WR, None) listed NA",
+      "body": "",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3045379
+      ],
+      "athlete_names": [
+        "Levonte Whitfield"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
+      "headline": "Patrick Mahomes (QB, KC) listed Questionable",
+      "body": "Knee - ACL -- Surgery",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3139477
+      ],
+      "athlete_names": [
+        "Patrick Mahomes"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
+      "headline": "Jeremy McNichols (RB, WAS) listed IR",
+      "body": "Quadriceps",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3127586
+      ],
+      "athlete_names": [
+        "Jeremy McNichols"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
+      "headline": "James Conner (RB, ARI) listed IR",
+      "body": "Foot",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3045147
+      ],
+      "athlete_names": [
+        "James Conner"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
+      "headline": "Darren Carrington (WR, None) listed NA",
+      "body": "",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3052098
+      ],
+      "athlete_names": [
+        "Darren Carrington"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
+      "headline": "Tyreek Hill (WR, None) listed Questionable",
+      "body": "Knee - ACL -- Surgery",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3116406
+      ],
+      "athlete_names": [
+        "Tyreek Hill"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
+      "headline": "Ervin Philips (WR, None) listed NA",
+      "body": "",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3123996
+      ],
+      "athlete_names": [
+        "Ervin Philips"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
+      "headline": "Gunner Olszewski (WR, NYG) listed IR",
+      "body": "Achilles -- Surgery",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        4424106
+      ],
+      "athlete_names": [
+        "Gunner Olszewski"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
+      "headline": "Freddie Brown (WR, None) listed NA",
+      "body": "",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        12637
+      ],
+      "athlete_names": [
+        "Freddie Brown"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
+      "headline": "Will Grier (QB, None) listed NA",
+      "body": "Undisclosed",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3115252
+      ],
+      "athlete_names": [
+        "Will Grier"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
+      "headline": "Antonio Gibson (RB, None) listed Questionable",
+      "body": "Knee - ACL -- Surgery",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        4360294
+      ],
+      "athlete_names": [
+        "Antonio Gibson"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
+      "headline": "Adam Thielen (WR, None) listed NA",
+      "body": "Undisclosed",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        16460
+      ],
+      "athlete_names": [
+        "Adam Thielen"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
+      "headline": "Derek Carr (QB, None) listed NA",
+      "body": "Personal",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        16757
+      ],
+      "athlete_names": [
+        "Derek Carr"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
+      "headline": "George Kittle (TE, SF) listed Questionable",
+      "body": "Achilles -- Surgery",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3040151
+      ],
+      "athlete_names": [
+        "George Kittle"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
+      "headline": "Peyton Hillis (RB, None) listed NA",
+      "body": "",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        11461
+      ],
+      "athlete_names": [
+        "Peyton Hillis"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
+      "headline": "Robert Woods (WR, None) listed NA",
+      "body": "Undisclosed",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        15880
+      ],
+      "athlete_names": [
+        "Robert Woods"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
+      "headline": "Gabe Davis (WR, None) listed Questionable",
+      "body": "Knee - ACL -- Surgery",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        4243537
+      ],
+      "athlete_names": [
+        "Gabe Davis"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
+      "headline": "Teddy Bridgewater (QB, None) listed NA",
+      "body": "Personal",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        16728
+      ],
+      "athlete_names": [
+        "Teddy Bridgewater"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
+      "headline": "Larry Rose (RB, None) listed NA",
+      "body": "",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3124979
+      ],
+      "athlete_names": [
+        "Larry Rose"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
+      "headline": "Christian Kirk (WR, SF) listed IR",
+      "body": "Calf",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3895856
+      ],
+      "athlete_names": [
+        "Christian Kirk"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
+      "headline": "David Sills (WR, TB) listed IR",
+      "body": "Undisclosed",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3871102
+      ],
+      "athlete_names": [
+        "David Sills"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
+      "headline": "Duplicate Player (WR, None) listed NA",
+      "body": "",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        16414
+      ],
+      "athlete_names": [
+        "Duplicate Player"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
+      "headline": "D.J. Montgomery (WR, IND) listed IR",
+      "body": "Abdomen",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        4249030
+      ],
+      "athlete_names": [
+        "D.J. Montgomery"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
+      "headline": "Brandon Aiyuk (WR, SF) listed DNR",
+      "body": "Knee - ACL + MCL -- Surgery",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        4360438
+      ],
+      "athlete_names": [
+        "Brandon Aiyuk"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
+      "headline": "Ray-Ray McCloud (WR, CHI) listed IR",
+      "body": "Undisclosed",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3728262
+      ],
+      "athlete_names": [
+        "Ray-Ray McCloud"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
+      "headline": "Josh Jacobs (RB, GB) listed NA",
+      "body": "Groin",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        4047365
+      ],
+      "athlete_names": [
+        "Josh Jacobs"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
+      "headline": "Parris Campbell (WR, None) listed NA",
+      "body": "Undisclosed",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3121410
+      ],
+      "athlete_names": [
+        "Parris Campbell"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
+      "headline": "Irv Smith (TE, None) listed Questionable",
+      "body": "Ankle -- Sprain",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        4040980
+      ],
+      "athlete_names": [
+        "Irv Smith"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
+      "headline": "Darren Waller (TE, CAR) is the hot add -- 38,205 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        2576925
+      ],
+      "athlete_names": [
+        "Darren Waller"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Justice Hill (RB, BAL) is the hot add -- 19,467 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        4038441
+      ],
+      "athlete_names": [
+        "Justice Hill"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Kirk Cousins (QB, LV) is the hot add -- 16,528 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        14880
+      ],
+      "athlete_names": [
+        "Kirk Cousins"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Odell Beckham (WR, NYG) is the hot add -- 14,588 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        16733
+      ],
+      "athlete_names": [
+        "Odell Beckham"
+      ],
+      "source": "Sleeper trending"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+name: Probe (on push)
+
+# Temporary. Exists purely to bootstrap.
+#
+# GitHub only lets you dispatch a `workflow_dispatch` workflow once it exists on
+# the default branch, and the probe currently lives on a feature branch. A push
+# trigger has no such restriction, so this is how we get the first look at the
+# real leagues without pushing workflow files to main first.
+#
+# Fires only when `.probe-trigger` changes, so ordinary commits don't run it.
+# Delete this file once the branch is merged and `probe.yml` is dispatchable.
+#
+# League IDs are not secrets -- they appear in the ESPN URL and a public league
+# is readable by anyone. Cookies, which are the actual secret, come from
+# repository secrets and are never printed.
+
+on:
+  push:
+    paths:
+      - ".probe-trigger"
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: "League 1"
+            league_id: "1631980693"
+          - name: "League 2"
+            league_id: "1259820957"
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install
+        run: pip install -e .
+
+      - name: Probe ${{ matrix.name }}
+        env:
+          ESPN_S2: ${{ secrets.ESPN_S2 }}
+          ESPN_SWID: ${{ secrets.ESPN_SWID }}
+        run: |
+          python scripts/probe_league.py \
+            --league-id "${{ matrix.league_id }}" \
+            --season 2026
+
+      - name: Probe ${{ matrix.name }} as 2025 (fallback)
+        # If 2026 isn't set up yet, the 2025 league still tells us the scoring
+        # settings, roster rules, and who the managers are -- which is most of
+        # what we need to configure the agent.
+        if: failure()
+        env:
+          ESPN_S2: ${{ secrets.ESPN_S2 }}
+          ESPN_SWID: ${{ secrets.ESPN_SWID }}
+        run: |
+          python scripts/probe_league.py \
+            --league-id "${{ matrix.league_id }}" \
+            --season 2025

@@ -1,0 +1,357 @@
+<title>Draft Night Board</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800&family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --ink:#15171f; --paper:#f1f2f6; --card:#ffffff; --line:#d8dae4;
+  --muted:#5d6377; --faint:#8b90a3;
+  --accent:#2e4a8a; --accent-soft:#e5e9f4;
+  --urgent:#c2410c; --urgent-soft:#fbe9e0;
+  --good:#166534; --good-soft:#e3f0e6;
+  --qb:#6d28d9; --rb:#0f766e; --wr:#a16207; --te:#9f1239;
+  --shadow:0 1px 2px rgba(21,23,31,.06),0 8px 24px -12px rgba(21,23,31,.18);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ink:#e9ebf2; --paper:#101219; --card:#181b24; --line:#2b303d;
+    --muted:#9ba1b4; --faint:#6f7588;
+    --accent:#8fa9e0; --accent-soft:#1d2740;
+    --urgent:#f08a5d; --urgent-soft:#3a2318;
+    --good:#7dc98f; --good-soft:#16291c;
+    --qb:#b295f5; --rb:#5cc9bd; --wr:#dcae4e; --te:#f0849f;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 28px -14px rgba(0,0,0,.7);
+  }
+}
+:root[data-theme="dark"]{
+  --ink:#e9ebf2; --paper:#101219; --card:#181b24; --line:#2b303d;
+  --muted:#9ba1b4; --faint:#6f7588;
+  --accent:#8fa9e0; --accent-soft:#1d2740;
+  --urgent:#f08a5d; --urgent-soft:#3a2318;
+  --good:#7dc98f; --good-soft:#16291c;
+  --qb:#b295f5; --rb:#5cc9bd; --wr:#dcae4e; --te:#f0849f;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 28px -14px rgba(0,0,0,.7);
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font:400 16px/1.55 "IBM Plex Sans",system-ui,-apple-system,sans-serif;
+  -webkit-text-size-adjust:100%;
+}
+.wrap{max-width:760px;margin:0 auto;padding:0 18px 72px}
+
+/* ---- masthead ---- */
+.mast{padding:30px 0 18px}
+.mast h1{
+  font:800 clamp(30px,7.5vw,44px)/1.02 Archivo,system-ui,sans-serif;
+  letter-spacing:-.024em;margin:0;text-wrap:balance;
+}
+.mast p{margin:8px 0 0;color:var(--muted);font-size:14.5px;max-width:56ch}
+.stamp{
+  display:inline-block;margin-bottom:12px;padding:4px 9px;border-radius:3px;
+  background:var(--accent-soft);color:var(--accent);
+  font:600 10.5px/1 "IBM Plex Mono",monospace;letter-spacing:.11em;text-transform:uppercase;
+}
+
+/* ---- league switch ---- */
+.switch{
+  position:sticky;top:0;z-index:20;display:flex;gap:5px;
+  padding:10px 0;margin-bottom:22px;
+  background:color-mix(in srgb,var(--paper) 92%,transparent);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--line);
+}
+.switch button{
+  flex:1;padding:11px 8px;border:1px solid var(--line);border-radius:7px;
+  background:var(--card);color:var(--muted);cursor:pointer;
+  font:600 13.5px/1.2 "IBM Plex Sans",sans-serif;
+  transition:background .14s,color .14s,border-color .14s;
+}
+.switch button small{display:block;font-weight:400;font-size:11px;color:var(--faint);margin-top:3px}
+.switch button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+.switch button[aria-pressed="true"] small{color:rgba(255,255,255,.78)}
+.switch button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* ---- league head ---- */
+.lg-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:18px}
+.lg-head h2{font:800 25px/1.1 Archivo,sans-serif;letter-spacing:-.018em;margin:0}
+.slots{margin:5px 0 0;color:var(--muted);font-size:13px}
+.team{margin:0;text-align:right;font-size:11.5px;color:var(--faint);line-height:1.4;flex-shrink:0}
+.team b{display:block;font-size:15px;color:var(--ink);font-weight:600}
+
+/* ---- thesis ---- */
+.thesis{
+  background:var(--card);border:1px solid var(--line);border-left:3px solid var(--urgent);
+  border-radius:8px;padding:16px 18px;margin-bottom:16px;box-shadow:var(--shadow);
+}
+.eyebrow{
+  margin:0 0 7px;color:var(--urgent);
+  font:600 10.5px/1 "IBM Plex Mono",monospace;letter-spacing:.12em;text-transform:uppercase;
+}
+.thesis p:last-child{margin:0;font-size:15.5px;line-height:1.62}
+.thesis b{font-weight:600}
+
+/* ---- stats ---- */
+.stats{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:26px}
+.stat{
+  flex:1 1 74px;background:var(--card);border:1px solid var(--line);
+  border-radius:7px;padding:10px 11px;
+}
+.stat b{
+  display:block;font:600 20px/1 "IBM Plex Mono",monospace;
+  font-variant-numeric:tabular-nums;letter-spacing:-.02em;
+}
+.stat span{display:block;margin-top:3px;font-size:10.5px;color:var(--faint);letter-spacing:.02em}
+
+/* ---- headings ---- */
+.sh{
+  font:800 12px/1 Archivo,sans-serif;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--muted);margin:30px 0 12px;padding-bottom:8px;border-bottom:1px solid var(--line);
+  display:flex;justify-content:space-between;align-items:baseline;gap:10px;
+}
+.hint{font:400 10.5px/1 "IBM Plex Sans",sans-serif;letter-spacing:0;text-transform:none;color:var(--faint)}
+.sub{margin:-4px 0 10px;font-size:12.5px;color:var(--faint)}
+
+/* ---- plan ---- */
+.plan{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:1px}
+.plan li{display:flex;gap:13px;padding:12px 13px;background:var(--card);border:1px solid var(--line)}
+.plan li:first-child{border-radius:8px 8px 0 0}
+.plan li:last-child{border-radius:0 0 8px 8px}
+.plan li+li{border-top:none}
+.rd{
+  flex:0 0 46px;font:600 12px/1.5 "IBM Plex Mono",monospace;
+  color:var(--accent);font-variant-numeric:tabular-nums;padding-top:1px;
+}
+.ra{font-size:14.5px;line-height:1.55}
+
+/* ---- picks ---- */
+.two-up{display:grid;grid-template-columns:1fr;gap:22px}
+@media (min-width:620px){.two-up{grid-template-columns:1fr 1fr;gap:26px}}
+.picks{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:5px}
+.picks li{
+  display:flex;align-items:center;gap:8px;padding:9px 11px;border-radius:6px;
+  background:var(--card);border:1px solid var(--line);
+}
+.picks.good li{border-left:3px solid var(--good)}
+.picks.bad li{border-left:3px solid var(--urgent)}
+.tn{flex:1;font-size:14px;font-weight:500}
+.tv{
+  font:500 10.5px/1 "IBM Plex Mono",monospace;color:var(--faint);
+  font-variant-numeric:tabular-nums;white-space:nowrap;
+}
+.tv i{font-style:normal;opacity:.45;margin:0 4px}
+
+/* ---- position chips ---- */
+.pos{
+  display:inline-block;min-width:30px;text-align:center;padding:2.5px 5px;border-radius:4px;
+  font:600 10px/1 "IBM Plex Mono",monospace;letter-spacing:.05em;
+  border:1px solid currentColor;
+}
+.pos-QB{color:var(--qb)} .pos-RB{color:var(--rb)}
+.pos-WR{color:var(--wr)} .pos-TE{color:var(--te)}
+
+/* ---- board ---- */
+.scroll{overflow-x:auto;border:1px solid var(--line);border-radius:8px;background:var(--card)}
+.board{width:100%;border-collapse:collapse;font-size:14.5px}
+.board th{
+  position:sticky;top:60px;z-index:5;background:var(--card);
+  text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);
+  font:600 10px/1 "IBM Plex Mono",monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);
+}
+.board td{padding:0 10px;border-bottom:1px solid var(--line);height:42px;vertical-align:middle}
+.board tr:last-child td{border-bottom:none}
+.rk{
+  width:34px;color:var(--faint);
+  font:500 12px/1 "IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;
+}
+.nm{width:100%}
+.strike{
+  all:unset;cursor:pointer;font:500 14.5px/1.3 "IBM Plex Sans",sans-serif;
+  color:var(--ink);padding:6px 0;display:block;width:100%;
+}
+.strike:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:3px}
+.num{
+  text-align:right;font:500 13px/1 "IBM Plex Mono",monospace;
+  font-variant-numeric:tabular-nums;white-space:nowrap;
+}
+.adp{color:var(--faint)}
+tr.gone{background:color-mix(in srgb,var(--paper) 60%,transparent)}
+tr.gone .strike{text-decoration:line-through;color:var(--faint);text-decoration-thickness:1.5px}
+tr.gone .num,tr.gone .rk{opacity:.4}
+tr.gone .pos{opacity:.35}
+tr.cliff td{
+  height:auto;padding:0;border-bottom:1px solid var(--urgent);
+  background:var(--urgent-soft);
+}
+tr.cliff span{
+  display:block;padding:3px 10px;color:var(--urgent);
+  font:600 9.5px/1.5 "IBM Plex Mono",monospace;letter-spacing:.14em;text-transform:uppercase;
+}
+
+/* ---- footer ---- */
+.foot{
+  margin-top:42px;padding-top:18px;border-top:1px solid var(--line);
+  font-size:12.5px;color:var(--faint);line-height:1.65;
+}
+.foot b{color:var(--muted);font-weight:600}
+.reset{
+  all:unset;cursor:pointer;color:var(--accent);font-weight:600;
+  text-decoration:underline;text-underline-offset:2px;
+}
+.reset:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+<div class="wrap">
+  <header class="mast">
+    <span class="stamp">2026 &middot; pre-draft</span>
+    <h1>Draft Night Board</h1>
+    <p>Two leagues, two different right answers. Projections are ESPN's own, scored
+       under each league's actual settings &mdash; so the same player is worth
+       different amounts on each tab.</p>
+  </header>
+
+  <nav class="switch">
+    <button id="btn-L1" aria-pressed="true" onclick="show('L1')">League 1<small>12 teams &middot; 1 QB</small></button>
+    <button id="btn-L2" aria-pressed="false" onclick="show('L2')">League 2<small>8 teams &middot; 2 QB</small></button>
+  </nav>
+
+  
+<section class="league" id="L1" >
+  <header class="lg-head">
+    <div>
+      <h2>League 1</h2>
+      <p class="slots">12 teams &nbsp;·&nbsp; 1&thinsp;QB · 2&thinsp;RB · 2&thinsp;WR · 1&thinsp;TE · 1&thinsp;FLEX · 1&thinsp;K · 1&thinsp;DST</p>
+    </div>
+    <p class="team">You are<br><b>TyG</b></p>
+  </header>
+
+  <div class="thesis">
+    <p class="eyebrow">Read this first</p>
+    <p>Take the best running back or receiver available for four straight rounds and don't overthink it. Your quarterback can wait &mdash; the 12th-best QB scores within a handful of points of the 3rd, so spending a top pick there buys you almost nothing. The real edge in this league is the middle-round tight ends.</p>
+  </div>
+
+  <div class="stats"><div class="stat"><b>12</b><span>QB jobs</span></div><div class="stat"><b>24</b><span>RB jobs</span></div><div class="stat"><b>24</b><span>WR jobs</span></div><div class="stat"><b>12</b><span>TE jobs</span></div>
+    <div class="stat"><b>108</b><span>starters league-wide</span></div>
+  </div>
+
+  <h3 class="sh">Round plan</h3>
+  <ol class="plan"><li><span class="rd">1&ndash;2</span><span class="ra">Best RB or WR on the board. Nothing else. The top nine players are worth 90+ points over replacement; no other position comes close.</span></li><li><span class="rd">3&ndash;4</span><span class="ra">Still RB/WR. Take the one with the bigger gap to the next man at his position, not the bigger name.</span></li><li><span class="rd">5&ndash;6</span><span class="ra">If Trey McBride or Brock Bowers is somehow there, take him &mdash; they are 70+ over replacement at a position where nobody else is. Otherwise keep stacking RB/WR.</span></li><li><span class="rd">7&ndash;9</span><span class="ra">Quarterback window. Anyone from Hurts through Daniels is fine; the gap between them is a rounding error.</span></li><li><span class="rd">10&ndash;12</span><span class="ra">Tight end if you skipped it. Andrews and Hockenson go around here and are worth two rounds earlier.</span></li><li><span class="rd">13+</span><span class="ra">Backup RBs with standalone value. Kicker and defense in the final two rounds &mdash; never sooner.</span></li></ol>
+
+  <h3 class="sh">Your seat &mdash; pick 11 of 12</h3>
+  <p class="sub">You draft in pairs. Each pair is really one question:
+     of the two you want, which one are you willing to lose?
+     Names are who normally lasts that long by ADP &mdash; not a promise.</p>
+  <ol class="plan"><li><span class="rd">#11 &amp; #14</span><span class="ra">CeeDee Lamb <i>WR</i>, De&#x27;Von Achane <i>RB</i>, Justin Jefferson <i>WR</i>, James Cook <i>RB</i>, Saquon Barkley <i>RB</i> then 21 picks off the board before you're up again.</span></li><li><span class="rd">#35 &amp; #38</span><span class="ra">Chris Olave <i>WR</i>, Josh Jacobs <i>RB</i>, Malik Nabers <i>WR</i>, Garrett Wilson <i>WR</i>, Javonte Williams <i>RB</i> then 21 picks off the board before you're up again.</span></li><li><span class="rd">#59 &amp; #62</span><span class="ra">Tee Higgins <i>WR</i>, Jaylen Waddle <i>WR</i>, Joe Burrow <i>QB</i>, Terry McLaurin <i>WR</i>, DJ Moore <i>WR</i> then 21 picks off the board before you're up again.</span></li><li><span class="rd">#83 &amp; #86</span><span class="ra">Courtland Sutton <i>WR</i>, Dak Prescott <i>QB</i>, DK Metcalf <i>WR</i>, Bo Nix <i>QB</i>, Marvin Harrison <i>WR</i> then 21 picks off the board before you're up again.</span></li></ol>
+
+
+  <div class="two-up">
+    <div>
+      <h3 class="sh">Let them come to you</h3>
+      <p class="sub">Reliably last past their value.</p>
+      <ul class="picks good"><li><span class="tn">Daniel Jones</span><span class="pos pos-QB">QB</span><span class="tv">worth ~97<i>·</i>goes 159</span></li><li><span class="tn">Tyler Shough</span><span class="pos pos-QB">QB</span><span class="tv">worth ~98<i>·</i>goes 156</span></li><li><span class="tn">Kenyon Sadiq</span><span class="pos pos-TE">TE</span><span class="tv">worth ~90<i>·</i>goes 143</span></li><li><span class="tn">Mark Andrews</span><span class="pos pos-TE">TE</span><span class="tv">worth ~72<i>·</i>goes 123</span></li><li><span class="tn">Baker Mayfield</span><span class="pos pos-QB">QB</span><span class="tv">worth ~99<i>·</i>goes 149</span></li><li><span class="tn">Hunter Henry</span><span class="pos pos-TE">TE</span><span class="tv">worth ~95<i>·</i>goes 143</span></li><li><span class="tn">T.J. Hockenson</span><span class="pos pos-TE">TE</span><span class="tv">worth ~86<i>·</i>goes 133</span></li></ul>
+    </div>
+    <div>
+      <h3 class="sh">Let someone else pay</h3>
+      <p class="sub">Market price exceeds the projection.</p>
+      <ul class="picks bad"><li><span class="tn">George Pickens</span><span class="pos pos-WR">WR</span><span class="tv">worth ~44<i>·</i>goes 30</span></li><li><span class="tn">David Montgomery</span><span class="pos pos-RB">RB</span><span class="tv">worth ~83<i>·</i>goes 73</span></li><li><span class="tn">Bucky Irving</span><span class="pos pos-RB">RB</span><span class="tv">worth ~65<i>·</i>goes 55</span></li><li><span class="tn">DJ Moore</span><span class="pos pos-WR">WR</span><span class="tv">worth ~75<i>·</i>goes 66</span></li><li><span class="tn">Jaylen Waddle</span><span class="pos pos-WR">WR</span><span class="tv">worth ~68<i>·</i>goes 60</span></li><li><span class="tn">Carnell Tate</span><span class="pos pos-WR">WR</span><span class="tv">worth ~84<i>·</i>goes 76</span></li></ul>
+    </div>
+  </div>
+
+  <h3 class="sh">Board <span class="hint">tap a name to cross him off</span></h3>
+  <div class="scroll">
+    <table class="board">
+      <thead><tr><th>#</th><th>Player</th><th>Pos</th><th class="num">Proj</th><th class="num">ADP</th></tr></thead>
+      <tbody><tr data-player="p_9221"><td class="rk">1</td><td class="nm"><button class="strike" aria-label="Mark Jahmyr Gibbs drafted">Jahmyr Gibbs</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">365</td><td class="num adp">1</td></tr><tr class="cliff"><td colspan="5"><span>drop-off &mdash; next man is 12 points worse</span></td></tr><tr data-player="p_9509"><td class="rk">2</td><td class="nm"><button class="strike" aria-label="Mark Bijan Robinson drafted">Bijan Robinson</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">353</td><td class="num adp">3</td></tr><tr data-player="p_9493"><td class="rk">3</td><td class="nm"><button class="strike" aria-label="Mark Puka Nacua drafted">Puka Nacua</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">356</td><td class="num adp">5</td></tr><tr data-player="p_4034"><td class="rk">4</td><td class="nm"><button class="strike" aria-label="Mark Christian McCaffrey drafted">Christian McCaffrey</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">343</td><td class="num adp">7</td></tr><tr class="cliff"><td colspan="5"><span>drop-off &mdash; next man is 15 points worse</span></td></tr><tr data-player="p_7564"><td class="rk">5</td><td class="nm"><button class="strike" aria-label="Mark Ja&#x27;Marr Chase drafted">Ja&#x27;Marr Chase</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">338</td><td class="num adp">4</td></tr><tr class="cliff"><td colspan="5"><span>drop-off &mdash; next man is 11 points worse</span></td></tr><tr data-player="p_9488"><td class="rk">6</td><td class="nm"><button class="strike" aria-label="Mark Jaxon Smith-Njigba drafted">Jaxon Smith-Njigba</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">327</td><td class="num adp">6</td></tr><tr data-player="p_6813"><td class="rk">7</td><td class="nm"><button class="strike" aria-label="Mark Jonathan Taylor drafted">Jonathan Taylor</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">316</td><td class="num adp">8</td></tr><tr data-player="p_7547"><td class="rk">8</td><td class="nm"><button class="strike" aria-label="Mark Amon-Ra St. Brown drafted">Amon-Ra St. Brown</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">324</td><td class="num adp">8</td></tr><tr class="cliff"><td colspan="5"><span>drop-off &mdash; next man is 21 points worse</span></td></tr><tr data-player="p_9226"><td class="rk">9</td><td class="nm"><button class="strike" aria-label="Mark De&#x27;Von Achane drafted">De&#x27;Von Achane</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">294</td><td class="num adp">12</td></tr><tr data-player="p_4984"><td class="rk">10</td><td class="nm"><button class="strike" aria-label="Mark Josh Allen drafted">Josh Allen</button></td><td><span class="pos pos-QB">QB</span></td><td class="num">370</td><td class="num adp">22</td></tr><tr data-player="p_6794"><td class="rk">11</td><td class="nm"><button class="strike" aria-label="Mark Justin Jefferson drafted">Justin Jefferson</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">294</td><td class="num adp">12</td></tr><tr data-player="p_6786"><td class="rk">12</td><td class="nm"><button class="strike" aria-label="Mark CeeDee Lamb drafted">CeeDee Lamb</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">294</td><td class="num adp">11</td></tr><tr data-player="p_12527"><td class="rk">13</td><td class="nm"><button class="strike" aria-label="Mark Ashton Jeanty drafted">Ashton Jeanty</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">281</td><td class="num adp">17</td></tr><tr data-player="p_8138"><td class="rk">14</td><td class="nm"><button class="strike" aria-label="Mark James Cook drafted">James Cook</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">280</td><td class="num adp">13</td></tr><tr data-player="p_13287"><td class="rk">15</td><td class="nm"><button class="strike" aria-label="Mark Jeremiyah Love drafted">Jeremiyah Love</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">278</td><td class="num adp">20</td></tr><tr data-player="p_8130"><td class="rk">16</td><td class="nm"><button class="strike" aria-label="Mark Trey McBride drafted">Trey McBride</button></td><td><span class="pos pos-TE">TE</span></td><td class="num">242</td><td class="num adp">20</td></tr><tr data-player="p_3198"><td class="rk">17</td><td class="nm"><button class="strike" aria-label="Mark Derrick Henry drafted">Derrick Henry</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">275</td><td class="num adp">20</td></tr><tr data-player="p_11604"><td class="rk">18</td><td class="nm"><button class="strike" aria-label="Mark Brock Bowers drafted">Brock Bowers</button></td><td><span class="pos pos-TE">TE</span></td><td class="num">241</td><td class="num adp">24</td></tr><tr data-player="p_8155"><td class="rk">19</td><td class="nm"><button class="strike" aria-label="Mark Breece Hall drafted">Breece Hall</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">274</td><td class="num adp">32</td></tr><tr data-player="p_8151"><td class="rk">20</td><td class="nm"><button class="strike" aria-label="Mark Kenneth Walker drafted">Kenneth Walker</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">274</td><td class="num adp">23</td></tr><tr data-player="p_4866"><td class="rk">21</td><td class="nm"><button class="strike" aria-label="Mark Saquon Barkley drafted">Saquon Barkley</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">274</td><td class="num adp">16</td></tr><tr data-player="p_9224"><td class="rk">22</td><td class="nm"><button class="strike" aria-label="Mark Chase Brown drafted">Chase Brown</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">272</td><td class="num adp">23</td></tr><tr class="cliff"><td colspan="5"><span>drop-off &mdash; next man is 10 points worse</span></td></tr><tr data-player="p_12507"><td class="rk">23</td><td class="nm"><button class="strike" aria-label="Mark Omarion Hampton drafted">Omarion Hampton</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">262</td><td class="num adp">28</td></tr><tr data-player="p_10229"><td class="rk">24</td><td class="nm"><button class="strike" aria-label="Mark Rashee Rice drafted">Rashee Rice</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">271</td><td class="num adp">22</td></tr><tr data-player="p_8112"><td class="rk">25</td><td class="nm"><button class="strike" aria-label="Mark Drake London drafted">Drake London</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">270</td><td class="num adp">19</td></tr><tr data-player="p_7588"><td class="rk">26</td><td class="nm"><button class="strike" aria-label="Mark Javonte Williams drafted">Javonte Williams</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">259</td><td class="num adp">37</td></tr><tr data-player="p_5850"><td class="rk">27</td><td class="nm"><button class="strike" aria-label="Mark Josh Jacobs drafted">Josh Jacobs</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">259</td><td class="num adp">35</td></tr><tr class="cliff"><td colspan="5"><span>drop-off &mdash; next man is 13 points worse</span></td></tr><tr data-player="p_7543"><td class="rk">28</td><td class="nm"><button class="strike" aria-label="Mark Travis Etienne drafted">Travis Etienne</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">246</td><td class="num adp">47</td></tr><tr data-player="p_12518"><td class="rk">29</td><td class="nm"><button class="strike" aria-label="Mark Tyler Warren drafted">Tyler Warren</button></td><td><span class="pos pos-TE">TE</span></td><td class="num">211</td><td class="num adp">48</td></tr><tr data-player="p_8144"><td class="rk">30</td><td class="nm"><button class="strike" aria-label="Mark Chris Olave drafted">Chris Olave</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">250</td><td class="num adp">34</td></tr><tr data-player="p_8146"><td class="rk">31</td><td class="nm"><button class="strike" aria-label="Mark Garrett Wilson drafted">Garrett Wilson</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">250</td><td class="num adp">36</td></tr><tr data-player="p_12517"><td class="rk">32</td><td class="nm"><button class="strike" aria-label="Mark Colston Loveland drafted">Colston Loveland</button></td><td><span class="pos pos-TE">TE</span></td><td class="num">206</td><td class="num adp">45</td></tr><tr data-player="p_7569"><td class="rk">33</td><td class="nm"><button class="strike" aria-label="Mark Nico Collins drafted">Nico Collins</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">249</td><td class="num adp">27</td></tr><tr data-player="p_5859"><td class="rk">34</td><td class="nm"><button class="strike" aria-label="Mark A.J. Brown drafted">A.J. Brown</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">249</td><td class="num adp">27</td></tr><tr data-player="p_4881"><td class="rk">35</td><td class="nm"><button class="strike" aria-label="Mark Lamar Jackson drafted">Lamar Jackson</button></td><td><span class="pos pos-QB">QB</span></td><td class="num">323</td><td class="num adp">39</td></tr><tr data-player="p_11632"><td class="rk">36</td><td class="nm"><button class="strike" aria-label="Mark Malik Nabers drafted">Malik Nabers</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">246</td><td class="num adp">35</td></tr><tr data-player="p_6904"><td class="rk">37</td><td class="nm"><button class="strike" aria-label="Mark Jalen Hurts drafted">Jalen Hurts</button></td><td><span class="pos pos-QB">QB</span></td><td class="num">320</td><td class="num adp">52</td></tr><tr data-player="p_11564"><td class="rk">38</td><td class="nm"><button class="strike" aria-label="Mark Drake Maye drafted">Drake Maye</button></td><td><span class="pos pos-QB">QB</span></td><td class="num">319</td><td class="num adp">47</td></tr><tr data-player="p_11566"><td class="rk">39</td><td class="nm"><button class="strike" aria-label="Mark Jayden Daniels drafted">Jayden Daniels</button></td><td><span class="pos pos-QB">QB</span></td><td class="num">318</td><td class="num adp">51</td></tr><tr data-player="p_8150"><td class="rk">40</td><td class="nm"><button class="strike" aria-label="Mark Kyren Williams drafted">Kyren Williams</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">232</td><td class="num adp">43</td></tr><tr data-player="p_12481"><td class="rk">41</td><td class="nm"><button class="strike" aria-label="Mark Cam Skattebo drafted">Cam Skattebo</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">230</td><td class="num adp">44</td></tr><tr data-player="p_7525"><td class="rk">42</td><td class="nm"><button class="strike" aria-label="Mark DeVonta Smith drafted">DeVonta Smith</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">239</td><td class="num adp">40</td></tr><tr data-player="p_9997"><td class="rk">43</td><td class="nm"><button class="strike" aria-label="Mark Zay Flowers drafted">Zay Flowers</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">239</td><td class="num adp">42</td></tr><tr data-player="p_8137"><td class="rk">44</td><td class="nm"><button class="strike" aria-label="Mark George Pickens drafted">George Pickens</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">238</td><td class="num adp">30</td></tr><tr data-player="p_12526"><td class="rk">45</td><td class="nm"><button class="strike" aria-label="Mark Tetairoa McMillan drafted">Tetairoa McMillan</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">236</td><td class="num adp">42</td></tr><tr data-player="p_12512"><td class="rk">46</td><td class="nm"><button class="strike" aria-label="Mark Quinshon Judkins drafted">Quinshon Judkins</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">226</td><td class="num adp">55</td></tr><tr data-player="p_2133"><td class="rk">47</td><td class="nm"><button class="strike" aria-label="Mark Davante Adams drafted">Davante Adams</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">232</td><td class="num adp">47</td></tr><tr data-player="p_10859"><td class="rk">48</td><td class="nm"><button class="strike" aria-label="Mark Sam LaPorta drafted">Sam LaPorta</button></td><td><span class="pos pos-TE">TE</span></td><td class="num">189</td><td class="num adp">67</td></tr><tr data-player="p_12506"><td class="rk">49</td><td class="nm"><button class="strike" aria-label="Mark Harold Fannin drafted">Harold Fannin</button></td><td><span class="pos pos-TE">TE</span></td><td class="num">188</td><td class="num adp">77</td></tr><tr data-player="p_6770"><td class="rk">50</td><td class="nm"><button class="strike" aria-label="Mark Joe Burrow drafted">Joe Burrow</button></td><td><span class="pos pos-QB">QB</span></td><td class="num">305</td><td class="num adp">60</td></tr><tr data-player="p_12514"><td class="rk">51</td><td class="nm"><button class="strike" aria-label="Mark Emeka Egbuka drafted">Emeka Egbuka</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">229</td><td class="num adp">46</td></tr><tr data-player="p_7553"><td class="rk">52</td><td class="nm"><button class="strike" aria-label="Mark Kyle Pitts drafted">Kyle Pitts</button></td><td><span class="pos pos-TE">TE</span></td><td class="num">185</td><td class="num adp">66</td></tr><tr data-player="p_12508"><td class="rk">53</td><td class="nm"><button class="strike" aria-label="Mark Jaxson Dart drafted">Jaxson Dart</button></td><td><span class="pos pos-QB">QB</span></td><td class="num">300</td><td class="num adp">76</td></tr><tr data-player="p_9484"><td class="rk">54</td><td class="nm"><button class="strike" aria-label="Mark Tucker Kraft drafted">Tucker Kraft</button></td><td><span class="pos pos-TE">TE</span></td><td class="num">181</td><td class="num adp">95</td></tr><tr data-player="p_6790"><td class="rk">55</td><td class="nm"><button class="strike" aria-label="Mark D&#x27;Andre Swift drafted">D&#x27;Andre Swift</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">212</td><td class="num adp">68</td></tr><tr data-player="p_11635"><td class="rk">56</td><td class="nm"><button class="strike" aria-label="Mark Ladd McConkey drafted">Ladd McConkey</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">221</td><td class="num adp">52</td></tr><tr data-player="p_1466"><td class="rk">57</td><td class="nm"><button class="strike" aria-label="Mark Travis Kelce drafted">Travis Kelce</button></td><td><span class="pos pos-TE">TE</span></td><td class="num">178</td><td class="num adp">99</td></tr><tr data-player="p_11563"><td class="rk">58</td><td class="nm"><button class="strike" aria-label="Mark Bo Nix drafted">Bo Nix</button></td><td><span class="pos pos-QB">QB</span></td><td class="num">296</td><td class="num adp">89</td></tr><tr data-player="p_5022"><td class="rk">59</td><td class="nm"><button class="strike" aria-label="Mark Dallas Goedert drafted">Dallas Goedert</button></td><td><span class="pos pos-TE">TE</span></td><td class="num">177</td><td class="num adp">100</td></tr><tr data-player="p_4217"><td class="rk">60</td><td class="nm"><button class="strike" aria-label="Mark George Kittle drafted">George Kittle</button></td><td><span class="pos pos-TE">TE</span></td><td class="num">177</td><td class="num adp">100</td></tr><tr data-player="p_6801"><td class="rk">61</td><td class="nm"><button class="strike" aria-label="Mark Tee Higgins drafted">Tee Higgins</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">219</td><td class="num adp">57</td></tr><tr data-player="p_5927"><td class="rk">62</td><td class="nm"><button class="strike" aria-label="Mark Terry McLaurin drafted">Terry McLaurin</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">219</td><td class="num adp">61</td></tr><tr data-player="p_421"><td class="rk">63</td><td class="nm"><button class="strike" aria-label="Mark Matthew Stafford drafted">Matthew Stafford</button></td><td><span class="pos pos-QB">QB</span></td><td class="num">293</td><td class="num adp">80</td></tr><tr data-player="p_8183"><td class="rk">64</td><td class="nm"><button class="strike" aria-label="Mark Brock Purdy drafted">Brock Purdy</button></td><td><span class="pos pos-QB">QB</span></td><td class="num">292</td><td class="num adp">104</td></tr><tr data-player="p_11584"><td class="rk">65</td><td class="nm"><button class="strike" aria-label="Mark Bucky Irving drafted">Bucky Irving</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">207</td><td class="num adp">55</td></tr><tr data-player="p_4046"><td class="rk">66</td><td class="nm"><button class="strike" aria-label="Mark Patrick Mahomes drafted">Patrick Mahomes</button></td><td><span class="pos pos-QB">QB</span></td><td class="num">291</td><td class="num adp">109</td></tr><tr data-player="p_12490"><td class="rk">67</td><td class="nm"><button class="strike" aria-label="Mark Bhayshul Tuten drafted">Bhayshul Tuten</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">205</td><td class="num adp">76</td></tr><tr data-player="p_7526"><td class="rk">68</td><td class="nm"><button class="strike" aria-label="Mark Jaylen Waddle drafted">Jaylen Waddle</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">213</td><td class="num adp">60</td></tr><tr data-player="p_7523"><td class="rk">69</td><td class="nm"><button class="strike" aria-label="Mark Trevor Lawrence drafted">Trevor Lawrence</button></td><td><span class="pos pos-QB">QB</span></td><td class="num">288</td><td class="num adp">94</td></tr><tr data-player="p_7611"><td class="rk">70</td><td class="nm"><button class="strike" aria-label="Mark Rhamondre Stevenson drafted">Rhamondre Stevenson</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">203</td><td class="num adp">94</td></tr><tr data-player="p_11620"><td class="rk">71</td><td class="nm"><button class="strike" aria-label="Mark Rome Odunze drafted">Rome Odunze</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">213</td><td class="num adp">68</td></tr><tr data-player="p_5012"><td class="rk">72</td><td class="nm"><button class="strike" aria-label="Mark Mark Andrews drafted">Mark Andrews</button></td><td><span class="pos pos-TE">TE</span></td><td class="num">169</td><td class="num adp">123</td></tr><tr data-player="p_3294"><td class="rk">73</td><td class="nm"><button class="strike" aria-label="Mark Dak Prescott drafted">Dak Prescott</button></td><td><span class="pos pos-QB">QB</span></td><td class="num">287</td><td class="num adp">86</td></tr><tr data-player="p_8110"><td class="rk">74</td><td class="nm"><button class="strike" aria-label="Mark Jake Ferguson drafted">Jake Ferguson</button></td><td><span class="pos pos-TE">TE</span></td><td class="num">166</td><td class="num adp">112</td></tr><tr data-player="p_4983"><td class="rk">75</td><td class="nm"><button class="strike" aria-label="Mark DJ Moore drafted">DJ Moore</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">210</td><td class="num adp">66</td></tr><tr data-player="p_8148"><td class="rk">76</td><td class="nm"><button class="strike" aria-label="Mark Jameson Williams drafted">Jameson Williams</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">208</td><td class="num adp">68</td></tr><tr data-player="p_6797"><td class="rk">77</td><td class="nm"><button class="strike" aria-label="Mark Justin Herbert drafted">Justin Herbert</button></td><td><span class="pos pos-QB">QB</span></td><td class="num">284</td><td class="num adp">108</td></tr><tr data-player="p_12529"><td class="rk">78</td><td class="nm"><button class="strike" aria-label="Mark TreVeyon Henderson drafted">TreVeyon Henderson</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">197</td><td class="num adp">78</td></tr><tr data-player="p_11560"><td class="rk">79</td><td class="nm"><button class="strike" aria-label="Mark Caleb Williams drafted">Caleb Williams</button></td><td><span class="pos pos-QB">QB</span></td><td class="num">282</td><td class="num adp">92</td></tr><tr data-player="p_12519"><td class="rk">80</td><td class="nm"><button class="strike" aria-label="Mark Luther Burden drafted">Luther Burden</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">206</td><td class="num adp">77</td></tr><tr data-player="p_5045"><td class="rk">81</td><td class="nm"><button class="strike" aria-label="Mark Courtland Sutton drafted">Courtland Sutton</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">204</td><td class="num adp">83</td></tr><tr data-player="p_13286"><td class="rk">82</td><td class="nm"><button class="strike" aria-label="Mark Jadarian Price drafted">Jadarian Price</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">194</td><td class="num adp">80</td></tr><tr data-player="p_5892"><td class="rk">83</td><td class="nm"><button class="strike" aria-label="Mark David Montgomery drafted">David Montgomery</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">193</td><td class="num adp">73</td></tr><tr data-player="p_13279"><td class="rk">84</td><td class="nm"><button class="strike" aria-label="Mark Carnell Tate drafted">Carnell Tate</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">202</td><td class="num adp">76</td></tr><tr data-player="p_8228"><td class="rk">85</td><td class="nm"><button class="strike" aria-label="Mark Jaylen Warren drafted">Jaylen Warren</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">192</td><td class="num adp">102</td></tr><tr data-player="p_5844"><td class="rk">86</td><td class="nm"><button class="strike" aria-label="Mark T.J. Hockenson drafted">T.J. Hockenson</button></td><td><span class="pos pos-TE">TE</span></td><td class="num">158</td><td class="num adp">133</td></tr><tr data-player="p_8131"><td class="rk">87</td><td class="nm"><button class="strike" aria-label="Mark Isaiah Likely drafted">Isaiah Likely</button></td><td><span class="pos pos-TE">TE</span></td><td class="num">156</td><td class="num adp">129</td></tr><tr data-player="p_10236"><td class="rk">88</td><td class="nm"><button class="strike" aria-label="Mark Dalton Kincaid drafted">Dalton Kincaid</button></td><td><span class="pos pos-TE">TE</span></td><td class="num">155</td><td class="num adp">134</td></tr><tr data-player="p_6819"><td class="rk">89</td><td class="nm"><button class="strike" aria-label="Mark Michael Pittman drafted">Michael Pittman</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">197</td><td class="num adp">91</td></tr><tr data-player="p_13330"><td class="rk">90</td><td class="nm"><button class="strike" aria-label="Mark Kenyon Sadiq drafted">Kenyon Sadiq</button></td><td><span class="pos pos-TE">TE</span></td><td class="num">154</td><td class="num adp">143</td></tr></tbody>
+    </table>
+  </div>
+</section>
+
+<section class="league" id="L2" hidden>
+  <header class="lg-head">
+    <div>
+      <h2>League 2</h2>
+      <p class="slots">8 teams &nbsp;·&nbsp; 2&thinsp;QB · 4&thinsp;RB · 4&thinsp;WR · 1&thinsp;TE · 2&thinsp;FLEX · 1&thinsp;K · 1&thinsp;DST</p>
+    </div>
+    <p class="team">You are<br><b>TyG TyG</b></p>
+  </header>
+
+  <div class="thesis">
+    <p class="eyebrow">Read this first</p>
+    <p>This league starts <b>two quarterbacks</b>, which means 16 QB jobs among 8 teams. The position runs dry, and the public ADP you see everywhere is priced for one-QB leagues &mdash; so it will badly understate when they actually go here. Get your first QB by round 4 and your second by round 8. And stay away from the expensive tight ends: only 8 TEs start in this league, so the premium ones are a trap.</p>
+  </div>
+
+  <div class="stats"><div class="stat"><b>16</b><span>QB jobs</span></div><div class="stat"><b>32</b><span>RB jobs</span></div><div class="stat"><b>32</b><span>WR jobs</span></div><div class="stat"><b>8</b><span>TE jobs</span></div>
+    <div class="stat"><b>120</b><span>starters league-wide</span></div>
+  </div>
+
+  <h3 class="sh">Round plan</h3>
+  <ol class="plan"><li><span class="rd">1&ndash;2</span><span class="ra">Best RB or WR. Same as anywhere &mdash; the top of the board is where the points are.</span></li><li><span class="rd">3&ndash;4</span><span class="ra">First quarterback. Not Josh Allen at his ADP, but don't slide past the Hurts / Daniels / Jackson group either.</span></li><li><span class="rd">5&ndash;7</span><span class="ra">Running backs. You must start four plus two flex, so you need volume here more than in any normal league.</span></li><li><span class="rd">8&ndash;9</span><span class="ra">Second quarterback. Purdy and Mahomes both go around pick 105 nationally and are worth roughly pick 60 in a two-QB format. That is the single biggest exploitable gap in either of your leagues.</span></li><li><span class="rd">10&ndash;13</span><span class="ra">Fill out RB and WR depth. With 15 starters you will be starting people you drafted in double-digit rounds.</span></li><li><span class="rd">14+</span><span class="ra">One tight end, then kicker and defense last. Do not pay up at TE in this format.</span></li></ol>
+
+
+  <div class="two-up">
+    <div>
+      <h3 class="sh">Let them come to you</h3>
+      <p class="sub">Reliably last past their value.</p>
+      <ul class="picks good"><li><span class="tn">Daniel Jones</span><span class="pos pos-QB">QB</span><span class="tv">worth ~90<i>·</i>goes 159</span></li><li><span class="tn">Tyler Shough</span><span class="pos pos-QB">QB</span><span class="tv">worth ~92<i>·</i>goes 156</span></li><li><span class="tn">Baker Mayfield</span><span class="pos pos-QB">QB</span><span class="tv">worth ~95<i>·</i>goes 149</span></li><li><span class="tn">Jared Goff</span><span class="pos pos-QB">QB</span><span class="tv">worth ~85<i>·</i>goes 139</span></li><li><span class="tn">Patrick Mahomes</span><span class="pos pos-QB">QB</span><span class="tv">worth ~61<i>·</i>goes 109</span></li><li><span class="tn">Aaron Jones</span><span class="pos pos-RB">RB</span><span class="tv">worth ~86<i>·</i>goes 132</span></li><li><span class="tn">Brock Purdy</span><span class="pos pos-QB">QB</span><span class="tv">worth ~60<i>·</i>goes 104</span></li></ul>
+    </div>
+    <div>
+      <h3 class="sh">Let someone else pay</h3>
+      <p class="sub">Market price exceeds the projection.</p>
+      <ul class="picks bad"><li><span class="tn">Kyle Pitts</span><span class="pos pos-TE">TE</span><span class="tv">worth ~81<i>·</i>goes 66</span></li><li><span class="tn">George Pickens</span><span class="pos pos-WR">WR</span><span class="tv">worth ~43<i>·</i>goes 30</span></li><li><span class="tn">Sam LaPorta</span><span class="pos pos-TE">TE</span><span class="tv">worth ~79<i>·</i>goes 67</span></li><li><span class="tn">Colston Loveland</span><span class="pos pos-TE">TE</span><span class="tv">worth ~57<i>·</i>goes 45</span></li><li><span class="tn">Trey McBride</span><span class="pos pos-TE">TE</span><span class="tv">worth ~27<i>·</i>goes 20</span></li><li><span class="tn">Drake London</span><span class="pos pos-WR">WR</span><span class="tv">worth ~25<i>·</i>goes 19</span></li></ul>
+    </div>
+  </div>
+
+  <h3 class="sh">Board <span class="hint">tap a name to cross him off</span></h3>
+  <div class="scroll">
+    <table class="board">
+      <thead><tr><th>#</th><th>Player</th><th>Pos</th><th class="num">Proj</th><th class="num">ADP</th></tr></thead>
+      <tbody><tr data-player="p_9221"><td class="rk">1</td><td class="nm"><button class="strike" aria-label="Mark Jahmyr Gibbs drafted">Jahmyr Gibbs</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">365</td><td class="num adp">1</td></tr><tr class="cliff"><td colspan="5"><span>drop-off &mdash; next man is 12 points worse</span></td></tr><tr data-player="p_9509"><td class="rk">2</td><td class="nm"><button class="strike" aria-label="Mark Bijan Robinson drafted">Bijan Robinson</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">353</td><td class="num adp">3</td></tr><tr class="cliff"><td colspan="5"><span>drop-off &mdash; next man is 10 points worse</span></td></tr><tr data-player="p_4034"><td class="rk">3</td><td class="nm"><button class="strike" aria-label="Mark Christian McCaffrey drafted">Christian McCaffrey</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">343</td><td class="num adp">7</td></tr><tr data-player="p_9493"><td class="rk">4</td><td class="nm"><button class="strike" aria-label="Mark Puka Nacua drafted">Puka Nacua</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">356</td><td class="num adp">5</td></tr><tr class="cliff"><td colspan="5"><span>drop-off &mdash; next man is 19 points worse</span></td></tr><tr data-player="p_7564"><td class="rk">5</td><td class="nm"><button class="strike" aria-label="Mark Ja&#x27;Marr Chase drafted">Ja&#x27;Marr Chase</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">338</td><td class="num adp">4</td></tr><tr data-player="p_6813"><td class="rk">6</td><td class="nm"><button class="strike" aria-label="Mark Jonathan Taylor drafted">Jonathan Taylor</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">316</td><td class="num adp">8</td></tr><tr data-player="p_9488"><td class="rk">7</td><td class="nm"><button class="strike" aria-label="Mark Jaxon Smith-Njigba drafted">Jaxon Smith-Njigba</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">327</td><td class="num adp">6</td></tr><tr data-player="p_7547"><td class="rk">8</td><td class="nm"><button class="strike" aria-label="Mark Amon-Ra St. Brown drafted">Amon-Ra St. Brown</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">324</td><td class="num adp">8</td></tr><tr class="cliff"><td colspan="5"><span>drop-off &mdash; next man is 14 points worse</span></td></tr><tr data-player="p_9226"><td class="rk">9</td><td class="nm"><button class="strike" aria-label="Mark De&#x27;Von Achane drafted">De&#x27;Von Achane</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">294</td><td class="num adp">12</td></tr><tr class="cliff"><td colspan="5"><span>drop-off &mdash; next man is 13 points worse</span></td></tr><tr data-player="p_12527"><td class="rk">10</td><td class="nm"><button class="strike" aria-label="Mark Ashton Jeanty drafted">Ashton Jeanty</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">281</td><td class="num adp">17</td></tr><tr data-player="p_8138"><td class="rk">11</td><td class="nm"><button class="strike" aria-label="Mark James Cook drafted">James Cook</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">280</td><td class="num adp">13</td></tr><tr data-player="p_13287"><td class="rk">12</td><td class="nm"><button class="strike" aria-label="Mark Jeremiyah Love drafted">Jeremiyah Love</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">278</td><td class="num adp">20</td></tr><tr data-player="p_4984"><td class="rk">13</td><td class="nm"><button class="strike" aria-label="Mark Josh Allen drafted">Josh Allen</button></td><td><span class="pos pos-QB">QB</span></td><td class="num">370</td><td class="num adp">22</td></tr><tr data-player="p_6794"><td class="rk">14</td><td class="nm"><button class="strike" aria-label="Mark Justin Jefferson drafted">Justin Jefferson</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">294</td><td class="num adp">12</td></tr><tr data-player="p_6786"><td class="rk">15</td><td class="nm"><button class="strike" aria-label="Mark CeeDee Lamb drafted">CeeDee Lamb</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">294</td><td class="num adp">11</td></tr><tr data-player="p_3198"><td class="rk">16</td><td class="nm"><button class="strike" aria-label="Mark Derrick Henry drafted">Derrick Henry</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">275</td><td class="num adp">20</td></tr><tr data-player="p_8155"><td class="rk">17</td><td class="nm"><button class="strike" aria-label="Mark Breece Hall drafted">Breece Hall</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">274</td><td class="num adp">32</td></tr><tr data-player="p_8151"><td class="rk">18</td><td class="nm"><button class="strike" aria-label="Mark Kenneth Walker drafted">Kenneth Walker</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">274</td><td class="num adp">23</td></tr><tr data-player="p_4866"><td class="rk">19</td><td class="nm"><button class="strike" aria-label="Mark Saquon Barkley drafted">Saquon Barkley</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">274</td><td class="num adp">16</td></tr><tr data-player="p_9224"><td class="rk">20</td><td class="nm"><button class="strike" aria-label="Mark Chase Brown drafted">Chase Brown</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">272</td><td class="num adp">23</td></tr><tr class="cliff"><td colspan="5"><span>drop-off &mdash; next man is 10 points worse</span></td></tr><tr data-player="p_12507"><td class="rk">21</td><td class="nm"><button class="strike" aria-label="Mark Omarion Hampton drafted">Omarion Hampton</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">262</td><td class="num adp">28</td></tr><tr data-player="p_7588"><td class="rk">22</td><td class="nm"><button class="strike" aria-label="Mark Javonte Williams drafted">Javonte Williams</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">259</td><td class="num adp">37</td></tr><tr data-player="p_5850"><td class="rk">23</td><td class="nm"><button class="strike" aria-label="Mark Josh Jacobs drafted">Josh Jacobs</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">259</td><td class="num adp">35</td></tr><tr data-player="p_10229"><td class="rk">24</td><td class="nm"><button class="strike" aria-label="Mark Rashee Rice drafted">Rashee Rice</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">271</td><td class="num adp">22</td></tr><tr data-player="p_8112"><td class="rk">25</td><td class="nm"><button class="strike" aria-label="Mark Drake London drafted">Drake London</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">270</td><td class="num adp">19</td></tr><tr data-player="p_7543"><td class="rk">26</td><td class="nm"><button class="strike" aria-label="Mark Travis Etienne drafted">Travis Etienne</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">246</td><td class="num adp">47</td></tr><tr data-player="p_8130"><td class="rk">27</td><td class="nm"><button class="strike" aria-label="Mark Trey McBride drafted">Trey McBride</button></td><td><span class="pos pos-TE">TE</span></td><td class="num">242</td><td class="num adp">20</td></tr><tr data-player="p_11604"><td class="rk">28</td><td class="nm"><button class="strike" aria-label="Mark Brock Bowers drafted">Brock Bowers</button></td><td><span class="pos pos-TE">TE</span></td><td class="num">241</td><td class="num adp">24</td></tr><tr data-player="p_8144"><td class="rk">29</td><td class="nm"><button class="strike" aria-label="Mark Chris Olave drafted">Chris Olave</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">250</td><td class="num adp">34</td></tr><tr data-player="p_8146"><td class="rk">30</td><td class="nm"><button class="strike" aria-label="Mark Garrett Wilson drafted">Garrett Wilson</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">250</td><td class="num adp">36</td></tr><tr data-player="p_7569"><td class="rk">31</td><td class="nm"><button class="strike" aria-label="Mark Nico Collins drafted">Nico Collins</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">249</td><td class="num adp">27</td></tr><tr data-player="p_8150"><td class="rk">32</td><td class="nm"><button class="strike" aria-label="Mark Kyren Williams drafted">Kyren Williams</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">232</td><td class="num adp">43</td></tr><tr data-player="p_5859"><td class="rk">33</td><td class="nm"><button class="strike" aria-label="Mark A.J. Brown drafted">A.J. Brown</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">249</td><td class="num adp">27</td></tr><tr data-player="p_4881"><td class="rk">34</td><td class="nm"><button class="strike" aria-label="Mark Lamar Jackson drafted">Lamar Jackson</button></td><td><span class="pos pos-QB">QB</span></td><td class="num">323</td><td class="num adp">39</td></tr><tr data-player="p_12481"><td class="rk">35</td><td class="nm"><button class="strike" aria-label="Mark Cam Skattebo drafted">Cam Skattebo</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">230</td><td class="num adp">44</td></tr><tr data-player="p_11632"><td class="rk">36</td><td class="nm"><button class="strike" aria-label="Mark Malik Nabers drafted">Malik Nabers</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">246</td><td class="num adp">35</td></tr><tr data-player="p_6904"><td class="rk">37</td><td class="nm"><button class="strike" aria-label="Mark Jalen Hurts drafted">Jalen Hurts</button></td><td><span class="pos pos-QB">QB</span></td><td class="num">320</td><td class="num adp">52</td></tr><tr data-player="p_11564"><td class="rk">38</td><td class="nm"><button class="strike" aria-label="Mark Drake Maye drafted">Drake Maye</button></td><td><span class="pos pos-QB">QB</span></td><td class="num">319</td><td class="num adp">47</td></tr><tr data-player="p_11566"><td class="rk">39</td><td class="nm"><button class="strike" aria-label="Mark Jayden Daniels drafted">Jayden Daniels</button></td><td><span class="pos pos-QB">QB</span></td><td class="num">318</td><td class="num adp">51</td></tr><tr data-player="p_12512"><td class="rk">40</td><td class="nm"><button class="strike" aria-label="Mark Quinshon Judkins drafted">Quinshon Judkins</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">226</td><td class="num adp">55</td></tr><tr data-player="p_7525"><td class="rk">41</td><td class="nm"><button class="strike" aria-label="Mark DeVonta Smith drafted">DeVonta Smith</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">239</td><td class="num adp">40</td></tr><tr data-player="p_9997"><td class="rk">42</td><td class="nm"><button class="strike" aria-label="Mark Zay Flowers drafted">Zay Flowers</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">239</td><td class="num adp">42</td></tr><tr data-player="p_8137"><td class="rk">43</td><td class="nm"><button class="strike" aria-label="Mark George Pickens drafted">George Pickens</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">238</td><td class="num adp">30</td></tr><tr data-player="p_12526"><td class="rk">44</td><td class="nm"><button class="strike" aria-label="Mark Tetairoa McMillan drafted">Tetairoa McMillan</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">236</td><td class="num adp">42</td></tr><tr data-player="p_2133"><td class="rk">45</td><td class="nm"><button class="strike" aria-label="Mark Davante Adams drafted">Davante Adams</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">232</td><td class="num adp">47</td></tr><tr data-player="p_6770"><td class="rk">46</td><td class="nm"><button class="strike" aria-label="Mark Joe Burrow drafted">Joe Burrow</button></td><td><span class="pos pos-QB">QB</span></td><td class="num">305</td><td class="num adp">60</td></tr><tr data-player="p_12514"><td class="rk">47</td><td class="nm"><button class="strike" aria-label="Mark Emeka Egbuka drafted">Emeka Egbuka</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">229</td><td class="num adp">46</td></tr><tr data-player="p_6790"><td class="rk">48</td><td class="nm"><button class="strike" aria-label="Mark D&#x27;Andre Swift drafted">D&#x27;Andre Swift</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">212</td><td class="num adp">68</td></tr><tr data-player="p_12508"><td class="rk">49</td><td class="nm"><button class="strike" aria-label="Mark Jaxson Dart drafted">Jaxson Dart</button></td><td><span class="pos pos-QB">QB</span></td><td class="num">300</td><td class="num adp">76</td></tr><tr data-player="p_12518"><td class="rk">50</td><td class="nm"><button class="strike" aria-label="Mark Tyler Warren drafted">Tyler Warren</button></td><td><span class="pos pos-TE">TE</span></td><td class="num">211</td><td class="num adp">48</td></tr><tr data-player="p_11584"><td class="rk">51</td><td class="nm"><button class="strike" aria-label="Mark Bucky Irving drafted">Bucky Irving</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">207</td><td class="num adp">55</td></tr><tr data-player="p_12490"><td class="rk">52</td><td class="nm"><button class="strike" aria-label="Mark Bhayshul Tuten drafted">Bhayshul Tuten</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">205</td><td class="num adp">76</td></tr><tr data-player="p_11563"><td class="rk">53</td><td class="nm"><button class="strike" aria-label="Mark Bo Nix drafted">Bo Nix</button></td><td><span class="pos pos-QB">QB</span></td><td class="num">296</td><td class="num adp">89</td></tr><tr data-player="p_11635"><td class="rk">54</td><td class="nm"><button class="strike" aria-label="Mark Ladd McConkey drafted">Ladd McConkey</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">221</td><td class="num adp">52</td></tr><tr data-player="p_7611"><td class="rk">55</td><td class="nm"><button class="strike" aria-label="Mark Rhamondre Stevenson drafted">Rhamondre Stevenson</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">203</td><td class="num adp">94</td></tr><tr data-player="p_6801"><td class="rk">56</td><td class="nm"><button class="strike" aria-label="Mark Tee Higgins drafted">Tee Higgins</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">219</td><td class="num adp">57</td></tr><tr data-player="p_12517"><td class="rk">57</td><td class="nm"><button class="strike" aria-label="Mark Colston Loveland drafted">Colston Loveland</button></td><td><span class="pos pos-TE">TE</span></td><td class="num">206</td><td class="num adp">45</td></tr><tr data-player="p_5927"><td class="rk">58</td><td class="nm"><button class="strike" aria-label="Mark Terry McLaurin drafted">Terry McLaurin</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">219</td><td class="num adp">61</td></tr><tr data-player="p_421"><td class="rk">59</td><td class="nm"><button class="strike" aria-label="Mark Matthew Stafford drafted">Matthew Stafford</button></td><td><span class="pos pos-QB">QB</span></td><td class="num">293</td><td class="num adp">80</td></tr><tr data-player="p_8183"><td class="rk">60</td><td class="nm"><button class="strike" aria-label="Mark Brock Purdy drafted">Brock Purdy</button></td><td><span class="pos pos-QB">QB</span></td><td class="num">292</td><td class="num adp">104</td></tr><tr data-player="p_4046"><td class="rk">61</td><td class="nm"><button class="strike" aria-label="Mark Patrick Mahomes drafted">Patrick Mahomes</button></td><td><span class="pos pos-QB">QB</span></td><td class="num">291</td><td class="num adp">109</td></tr><tr data-player="p_12529"><td class="rk">62</td><td class="nm"><button class="strike" aria-label="Mark TreVeyon Henderson drafted">TreVeyon Henderson</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">197</td><td class="num adp">78</td></tr><tr data-player="p_7523"><td class="rk">63</td><td class="nm"><button class="strike" aria-label="Mark Trevor Lawrence drafted">Trevor Lawrence</button></td><td><span class="pos pos-QB">QB</span></td><td class="num">288</td><td class="num adp">94</td></tr><tr data-player="p_7526"><td class="rk">64</td><td class="nm"><button class="strike" aria-label="Mark Jaylen Waddle drafted">Jaylen Waddle</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">213</td><td class="num adp">60</td></tr><tr data-player="p_11620"><td class="rk">65</td><td class="nm"><button class="strike" aria-label="Mark Rome Odunze drafted">Rome Odunze</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">213</td><td class="num adp">68</td></tr><tr data-player="p_3294"><td class="rk">66</td><td class="nm"><button class="strike" aria-label="Mark Dak Prescott drafted">Dak Prescott</button></td><td><span class="pos pos-QB">QB</span></td><td class="num">287</td><td class="num adp">86</td></tr><tr data-player="p_13286"><td class="rk">67</td><td class="nm"><button class="strike" aria-label="Mark Jadarian Price drafted">Jadarian Price</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">194</td><td class="num adp">80</td></tr><tr data-player="p_5892"><td class="rk">68</td><td class="nm"><button class="strike" aria-label="Mark David Montgomery drafted">David Montgomery</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">193</td><td class="num adp">73</td></tr><tr data-player="p_4983"><td class="rk">69</td><td class="nm"><button class="strike" aria-label="Mark DJ Moore drafted">DJ Moore</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">210</td><td class="num adp">66</td></tr><tr data-player="p_6797"><td class="rk">70</td><td class="nm"><button class="strike" aria-label="Mark Justin Herbert drafted">Justin Herbert</button></td><td><span class="pos pos-QB">QB</span></td><td class="num">284</td><td class="num adp">108</td></tr><tr data-player="p_8228"><td class="rk">71</td><td class="nm"><button class="strike" aria-label="Mark Jaylen Warren drafted">Jaylen Warren</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">192</td><td class="num adp">102</td></tr><tr data-player="p_8148"><td class="rk">72</td><td class="nm"><button class="strike" aria-label="Mark Jameson Williams drafted">Jameson Williams</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">208</td><td class="num adp">68</td></tr><tr data-player="p_11560"><td class="rk">73</td><td class="nm"><button class="strike" aria-label="Mark Caleb Williams drafted">Caleb Williams</button></td><td><span class="pos pos-QB">QB</span></td><td class="num">282</td><td class="num adp">92</td></tr><tr data-player="p_12519"><td class="rk">74</td><td class="nm"><button class="strike" aria-label="Mark Luther Burden drafted">Luther Burden</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">206</td><td class="num adp">77</td></tr><tr data-player="p_5045"><td class="rk">75</td><td class="nm"><button class="strike" aria-label="Mark Courtland Sutton drafted">Courtland Sutton</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">204</td><td class="num adp">83</td></tr><tr data-player="p_7021"><td class="rk">76</td><td class="nm"><button class="strike" aria-label="Mark Rico Dowdle drafted">Rico Dowdle</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">186</td><td class="num adp">108</td></tr><tr data-player="p_5967"><td class="rk">77</td><td class="nm"><button class="strike" aria-label="Mark Tony Pollard drafted">Tony Pollard</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">186</td><td class="num adp">104</td></tr><tr data-player="p_13279"><td class="rk">78</td><td class="nm"><button class="strike" aria-label="Mark Carnell Tate drafted">Carnell Tate</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">202</td><td class="num adp">76</td></tr><tr data-player="p_10859"><td class="rk">79</td><td class="nm"><button class="strike" aria-label="Mark Sam LaPorta drafted">Sam LaPorta</button></td><td><span class="pos pos-TE">TE</span></td><td class="num">189</td><td class="num adp">67</td></tr><tr data-player="p_12506"><td class="rk">80</td><td class="nm"><button class="strike" aria-label="Mark Harold Fannin drafted">Harold Fannin</button></td><td><span class="pos pos-TE">TE</span></td><td class="num">188</td><td class="num adp">77</td></tr><tr data-player="p_7553"><td class="rk">81</td><td class="nm"><button class="strike" aria-label="Mark Kyle Pitts drafted">Kyle Pitts</button></td><td><span class="pos pos-TE">TE</span></td><td class="num">185</td><td class="num adp">66</td></tr><tr data-player="p_6819"><td class="rk">82</td><td class="nm"><button class="strike" aria-label="Mark Michael Pittman drafted">Michael Pittman</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">197</td><td class="num adp">91</td></tr><tr data-player="p_5846"><td class="rk">83</td><td class="nm"><button class="strike" aria-label="Mark DK Metcalf drafted">DK Metcalf</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">196</td><td class="num adp">87</td></tr><tr data-player="p_7567"><td class="rk">84</td><td class="nm"><button class="strike" aria-label="Mark Kenny Gainwell drafted">Kenny Gainwell</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">178</td><td class="num adp">121</td></tr><tr data-player="p_3163"><td class="rk">85</td><td class="nm"><button class="strike" aria-label="Mark Jared Goff drafted">Jared Goff</button></td><td><span class="pos pos-QB">QB</span></td><td class="num">268</td><td class="num adp">139</td></tr><tr data-player="p_4199"><td class="rk">86</td><td class="nm"><button class="strike" aria-label="Mark Aaron Jones drafted">Aaron Jones</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">177</td><td class="num adp">132</td></tr><tr data-player="p_11628"><td class="rk">87</td><td class="nm"><button class="strike" aria-label="Mark Marvin Harrison drafted">Marvin Harrison</button></td><td><span class="pos pos-WR">WR</span></td><td class="num">194</td><td class="num adp">90</td></tr><tr data-player="p_9484"><td class="rk">88</td><td class="nm"><button class="strike" aria-label="Mark Tucker Kraft drafted">Tucker Kraft</button></td><td><span class="pos pos-TE">TE</span></td><td class="num">181</td><td class="num adp">95</td></tr><tr data-player="p_12534"><td class="rk">89</td><td class="nm"><button class="strike" aria-label="Mark Kyle Monangai drafted">Kyle Monangai</button></td><td><span class="pos pos-RB">RB</span></td><td class="num">176</td><td class="num adp">130</td></tr><tr data-player="p_5870"><td class="rk">90</td><td class="nm"><button class="strike" aria-label="Mark Daniel Jones drafted">Daniel Jones</button></td><td><span class="pos pos-QB">QB</span></td><td class="num">267</td><td class="num adp">159</td></tr></tbody>
+    </table>
+  </div>
+</section>
+
+
+  <footer class="foot">
+    <p><b>How to read this.</b> &ldquo;Worth ~40&rdquo; means the projections rank him
+    around the 40th most valuable pick. &ldquo;Goes 78&rdquo; is where he's actually
+    drafted on average. A big gap between those two is the whole game.</p>
+    <p><b>Value is measured against replacement</b>, not raw points. A quarterback
+    scoring 370 isn't better than a running back scoring 320 if the 12th-best QB
+    scores 288 and the 24th-best RB scores 203. That's why the board isn't just
+    sorted by projection.</p>
+    <p><b>ADP comes from ESPN's whole population</b>, most of whom play one-QB
+    leagues. In League 2 it understates quarterback demand. Treat it as a floor
+    for when QBs go there, not a prediction.</p>
+    <p style="margin-bottom:0">Crossed-off players are remembered on this device.
+    <button class="reset" onclick="resetAll()">Clear the board</button></p>
+  </footer>
+</div>
+
+<script>
+const KEY='ffdraft.gone.v1';
+function loadGone(){try{return new Set(JSON.parse(localStorage.getItem(KEY)||'[]'))}catch(e){return new Set()}}
+function saveGone(s){try{localStorage.setItem(KEY,JSON.stringify([...s]))}catch(e){}}
+let gone=loadGone();
+
+function paint(){
+  document.querySelectorAll('tr[data-player]').forEach(tr=>{
+    tr.classList.toggle('gone',gone.has(tr.dataset.player));
+  });
+}
+document.addEventListener('click',e=>{
+  const btn=e.target.closest('.strike'); if(!btn) return;
+  const tr=btn.closest('tr[data-player]'); if(!tr) return;
+  const id=tr.dataset.player;
+  gone.has(id)?gone.delete(id):gone.add(id);
+  saveGone(gone); paint();
+});
+function resetAll(){gone=new Set();saveGone(gone);paint();}
+function show(k){
+  ['L1','L2'].forEach(x=>{
+    document.getElementById(x).hidden = (x!==k);
+    document.getElementById('btn-'+x).setAttribute('aria-pressed',String(x===k));
+  });
+  window.scrollTo({top:0,behavior:'instant'});
+}
+paint();
+</script>
