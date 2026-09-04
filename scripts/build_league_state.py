@@ -106,34 +106,105 @@ def best_lineup(players: list[dict], slots: dict[str, int]) -> dict:
 
 
 def fetch_news(http: HttpClient) -> list[dict]:
-    """Recent NFL headlines with the players they name, advice-farm items dropped.
+    """Recent fantasy-relevant news with the players it names.
 
     News is global -- the same injury is one fact -- but each league decides for
-    itself whether it matters. The command center joins these to rosters by the
+    itself whether it matters. The command center joins items to rosters by the
     ESPN athlete id, so an item that names nobody we roster simply never shows.
-    """
-    try:
-        articles = ESPNNewsSource(http).news(limit=50)
-    except Exception as exc:  # noqa: BLE001
-        log.warning("news unavailable: %s", exc)
-        return []
 
-    out = []
-    for art in articles:
-        headline = (art.get("headline") or "").strip()
-        if not headline or _TRIVIAL.search(headline):
-            continue
-        out.append(
-            {
-                "headline": headline,
-                "body": (art.get("body") or "")[:300],
-                "published": art.get("published"),
-                "url": art.get("url"),
-                "espn_athlete_ids": [a["id"] for a in art.get("athletes") or []],
-                "athlete_names": [a["name"] for a in art.get("athletes") or []],
-                "source": "ESPN",
-            }
-        )
+    Two sources, because they fail differently: ESPN headlines are the richer
+    read but site.api.espn.com 403s datacenter IPs, so on the Actions runner --
+    the only machine that runs this -- Sleeper is usually the one that answers.
+    Sleeper's injury designations and trending adds are facts, not articles,
+    which suits an action queue fine.
+    """
+    out: list[dict] = []
+
+    try:
+        for art in ESPNNewsSource(http).news(limit=50):
+            headline = (art.get("headline") or "").strip()
+            if not headline or _TRIVIAL.search(headline):
+                continue
+            out.append(
+                {
+                    "headline": headline,
+                    "body": (art.get("body") or "")[:300],
+                    "published": art.get("published"),
+                    "url": art.get("url"),
+                    "espn_athlete_ids": [a["id"] for a in art.get("athletes") or []],
+                    "athlete_names": [a["name"] for a in art.get("athletes") or []],
+                    "source": "ESPN",
+                }
+            )
+    except Exception as exc:  # noqa: BLE001
+        log.warning("espn news unavailable: %s", exc)
+
+    try:
+        sleeper = SleeperSource(http)
+        players = sleeper.players()
+
+        # Injury designations. OUT-tier ones always matter; Questionable only
+        # earns a line when it comes with actual notes to read.
+        serious = {"Out", "IR", "PUP", "Sus", "Doubtful", "NA"}
+        added = 0
+        for rec in players.values():
+            status = rec.get("injury_status")
+            espn_id = rec.get("espn_id")
+            if not status or not espn_id:
+                continue
+            if (rec.get("position") or "").upper() not in {"QB", "RB", "WR", "TE"}:
+                continue
+            notes = (rec.get("injury_notes") or "").strip()
+            if status not in serious and not notes:
+                continue
+            part = rec.get("injury_body_part")
+            detail = " -- ".join(x for x in (part, notes[:200]) if x)
+            out.append(
+                {
+                    "headline": f"{rec.get('full_name')} "
+                                f"({rec.get('position')}, {rec.get('team')}) "
+                                f"listed {status}",
+                    "body": detail,
+                    "published": None,
+                    "url": None,
+                    "espn_athlete_ids": [espn_id],
+                    "athlete_names": [rec.get("full_name")],
+                    "source": "Sleeper injury report",
+                }
+            )
+            added += 1
+            if added >= 80:
+                break
+
+        # Trending adds: thousands of managers grabbing the same player is the
+        # earliest public signal of a role change.
+        for row in sleeper.trending("add", lookback_hours=24, limit=25):
+            rec = players.get(str(row.get("player_id"))) or {}
+            espn_id = rec.get("espn_id")
+            if not espn_id or (rec.get("position") or "").upper() not in {
+                "QB", "RB", "WR", "TE"
+            }:
+                continue
+            count = row.get("count") or 0
+            if count < 5000:
+                continue
+            out.append(
+                {
+                    "headline": f"{rec.get('full_name')} "
+                                f"({rec.get('position')}, {rec.get('team')}) is the "
+                                f"hot add -- {count:,} pickups in 24h",
+                    "body": "League-wide add volume like this usually means an "
+                            "injury ahead of him or a role change.",
+                    "published": None,
+                    "url": None,
+                    "espn_athlete_ids": [espn_id],
+                    "athlete_names": [rec.get("full_name")],
+                    "source": "Sleeper trending",
+                }
+            )
+    except Exception as exc:  # noqa: BLE001
+        log.warning("sleeper news unavailable: %s", exc)
+
     return out
 
 
