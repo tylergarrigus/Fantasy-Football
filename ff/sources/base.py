@@ -27,7 +27,12 @@ from ff.logging_setup import get_logger, scrub
 
 log = get_logger(__name__)
 
-USER_AGENT = "ff-gm/0.1 (personal fantasy football agent)"
+# A browser user-agent, because site.api.espn.com 403s unfamiliar clients (the
+# fantasy lm-api endpoints don't care). Same public endpoints a browser hits.
+USER_AGENT = (
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36"
+)
 
 
 class SourceError(RuntimeError):
