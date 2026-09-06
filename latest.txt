@@ -1,0 +1,152 @@
+updated 20:24:49Z
+
+     5. Team Garner
+     6. Mateen's Magnificent Team
+     7. Real Slim Brady .
+     8. Fish Sticks
+
+  You pick at: #2, #15, #18, #31, #34, #47, #50, #63 ...
+
+  Watching for picks...
+
+====================================================================
+[15:24:48Z]  0 PICKS MADE  ·  round 1  ·  next is overall #1
+====================================================================
+
+MY ROSTER (0)
+  (empty)
+
+STILL NEEDED: RB, WR, QB, TE, K
+NEXT PICK: overall #2 (1 away)
+
+>>> TAKE: Jahmyr Gibbs (RB, proj 366, VOR +119)
+    Jahmyr Gibbs (RB) projects 366 points, +119 over replacement at his position. You still need a starting RB.
+
+NEXT BEST
+  Puka Nacua               WR   proj   354 VOR   +115  ADP 5
+  Bijan Robinson           RB   proj   353 VOR   +106  ADP 2
+  Ja'Marr Chase            WR   proj   337 VOR    +98  ADP 4
+  Christian McCaffrey      RB   proj   342 VOR    +95  ADP 8
+
+CLIFFS BEFORE YOUR NEXT PICK
+  ! RB: only 1 left in the top available tier (Jahmyr Gibbs) with 1 picks until you're up -- you need one.
+  ! WR: only 1 left in the top available tier (Puka Nacua) with 1 picks until you're up -- you need one.
+  ! QB: only 1 left in the top available tier (Josh Allen) with 1 picks until you're up -- you need one.
+
+BEST AVAILABLE BY POSITION
+  QB  Josh Allen (371), Lamar Jackson (323), Drake Maye (320), Jalen Hurts (320)
+  RB  Jahmyr Gibbs (366), Bijan Robinson (353), Christian McCaffrey (342), Jonathan Taylor (316)
+  WR  Puka Nacua (354), Ja'Marr Chase (337), Jaxon Smith-Njigba (327), Amon-Ra St. Brown (324)
+  TE  Trey McBride (242), Brock Bowers (241), Tyler Warren (211), Colston Loveland (207)
+
+[15:29:49Z] waiting... 0 picks so far
+[15:34:50Z] waiting... 0 picks so far
+[15:39:51Z] waiting... 0 picks so far
+[15:44:52Z] waiting... 0 picks so far
+[15:49:54Z] waiting... 0 picks so far
+[15:54:55Z] waiting... 0 picks so far
+[15:59:56Z] waiting... 0 picks so far
+[16:04:57Z] waiting... 0 picks so far
+[16:09:58Z] waiting... 0 picks so far
+[16:14:59Z] waiting... 0 picks so far
+
+====================================================================
+[16:18:15Z]  104 PICKS MADE  ·  round 14  ·  next is overall #105
+====================================================================
+
+LAST 8 PICKS
+  #101 Bo Nix                   QB   -> Team Garner
+  #102 Jakobi Meyers            WR   -> Mateen's Magnificent Team
+  #103 Eddy Pineiro             K    -> Real Slim Brady .
+  #104 Cam Little               K    -> Fish Sticks
+  #105 Matthew Golden           WR   -> Fish Sticks
+  #107 Justin Herbert           QB   -> Mateen's Magnificent Team
+  #108 Dallas Goedert           TE   -> Team Garner
+  #109 Harrison Butker          K    -> Waiver Wire Willy 
+
+MY ROSTER (13)
+  RB   Jahmyr Gibbs
+  RB   Saquon Barkley
+  WR   Drake London
+  RB   Kyren Williams
+  WR   Malik Nabers
+  WR   Tetairoa McMillan
+  WR   Tee Higgins
+  QB   Dak Prescott
+  K    Brandon Aubrey
+  TE   Kyle Pitts
+  WR   DK Metcalf
+  RB   Jonathon Brooks
+  TE   Tucker Kraft
+
+STILL NEEDED: starters filled
+NEXT PICK: overall #111 (6 away)
+
+>>> TAKE: Saints D/ST (DST, proj 89, VOR +0)
+    Saints D/ST (DST) projects 89 points, +0 over replacement at his position. He typically goes around 171 -- clear value here.
+
+NEXT BEST
+  Jake Bates               K    proj   146 VOR     -1  ADP 157
+  Tyler Loop               K    proj   146 VOR     -1  ADP 166
+  Cairo Santos             K    proj   144 VOR     -3  ADP 169
+  Trey Smack               K    proj   144 VOR     -3  ADP 168
+
+BEST AVAILABLE BY POSITION
+  QB  Matthew Stafford (293), Brock Purdy (292), Patrick Mahomes (291), Kyler Murray (283)
+  RB  Chuba Hubbard (180), Aaron Jones (178), Kyle Monangai (175), J.K. Dobbins (175)
+  WR  Brian Thomas (177), Wan'Dale Robinson (175), Jayden Reed (174), Stefon Diggs (173)
+  TE  Mark Andrews (169), Jake Ferguson (167), T.J. Hockenson (159), Dalton Kincaid (156)
+
+[16:23:16Z] waiting... 104 picks so far
+[16:28:17Z] waiting... 104 picks so far
+[16:33:19Z] waiting... 104 picks so far
+[16:38:20Z] waiting... 104 picks so far
+[16:43:21Z] waiting... 104 picks so far
+[16:48:23Z] waiting... 104 picks so far
+[16:53:24Z] waiting... 104 picks so far
+[16:58:25Z] waiting... 104 picks so far
+[17:03:27Z] waiting... 104 picks so far
+[17:08:28Z] waiting... 104 picks so far
+[17:13:29Z] waiting... 104 picks so far
+[17:18:30Z] waiting... 104 picks so far
+[17:23:31Z] waiting... 104 picks so far
+[17:28:33Z] waiting... 104 picks so far
+[17:33:34Z] waiting... 104 picks so far
+[17:38:35Z] waiting... 104 picks so far
+[17:43:36Z] waiting... 104 picks so far
+[17:48:37Z] waiting... 104 picks so far
+[17:53:38Z] waiting... 104 picks so far
+[17:58:40Z] waiting... 104 picks so far
+[18:03:41Z] waiting... 104 picks so far
+[18:08:43Z] waiting... 104 picks so far
+[18:13:44Z] waiting... 104 picks so far
+[18:18:45Z] waiting... 104 picks so far
+[18:23:46Z] waiting... 104 picks so far
+[18:28:48Z] waiting... 104 picks so far
+[18:33:49Z] waiting... 104 picks so far
+[18:38:50Z] waiting... 104 picks so far
+[18:43:52Z] waiting... 104 picks so far
+[18:48:53Z] waiting... 104 picks so far
+[18:53:55Z] waiting... 104 picks so far
+[18:58:56Z] waiting... 104 picks so far
+[19:03:57Z] waiting... 104 picks so far
+[19:08:58Z] waiting... 104 picks so far
+[19:14:00Z] waiting... 104 picks so far
+[19:19:01Z] waiting... 104 picks so far
+[19:24:02Z] waiting... 104 picks so far
+[19:29:03Z] waiting... 104 picks so far
+[19:34:05Z] waiting... 104 picks so far
+[19:39:06Z] waiting... 104 picks so far
+[19:44:08Z] waiting... 104 picks so far
+[19:49:09Z] waiting... 104 picks so far
+[19:54:10Z] waiting... 104 picks so far
+[19:59:12Z] waiting... 104 picks so far
+[20:04:13Z] waiting... 104 picks so far
+[20:09:14Z] waiting... 104 picks so far
+[20:14:15Z] waiting... 104 picks so far
+[20:19:17Z] waiting... 104 picks so far
+[20:24:18Z] waiting... 104 picks so far
+
+====================================================================
+WATCH ENDED 20:24:48Z  ·  104 picks recorded
+====================================================================
