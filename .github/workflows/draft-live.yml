@@ -79,6 +79,8 @@ jobs:
         id: cfg
         run: |
           MINUTES=$(sed -n '2p' .live-trigger | tr -dc '0-9')
+          LEAGUE=$(sed -n '3p' .live-trigger | tr -dc '0-9')
+          echo "league=${LEAGUE:-1631980693}" >> "$GITHUB_OUTPUT"
           echo "minutes=${MINUTES:-300}" >> "$GITHUB_OUTPUT"
           echo "Watching for ${MINUTES:-300} minutes."
 
@@ -94,7 +96,7 @@ jobs:
           # -u so every line reaches the file the moment it is printed; a
           # buffered log is a log that is always a pick behind.
           python -u scripts/draft_live.py \
-            --league-id 1631980693 \
+            --league-id ${{ steps.cfg.outputs.league }} \
             --season 2026 \
             --minutes ${{ steps.cfg.outputs.minutes }} \
             --interval 15 > live/watch.log 2>&1 &
