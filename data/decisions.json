@@ -1,0 +1,9 @@
+{
+  "rejected_trades": [
+    {"league": "L1", "partner": "Pink", "receive": ["Drake London"], "when": "2026-08-23"},
+    {"league": "L1", "partner": "Pink", "receive": ["Josh Allen"], "when": "2026-08-23"}
+  ],
+  "partner_notes": {
+    "L1:Pink": "Rejected two projection-favorable offers on 2026-08-23. Values stars over depth; only approach with a star-for-star framing."
+  }
+}

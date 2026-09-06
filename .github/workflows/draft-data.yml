@@ -1,0 +1,62 @@
+name: Build draft data
+
+# Pulls real rankings and projections for both leagues and commits the result
+# as JSON, so the analysis can happen anywhere afterwards. The runner is the
+# only place with network access to ESPN.
+#
+# Fires when `.draft-trigger` changes, so ordinary commits don't run it.
+
+on:
+  push:
+    paths:
+      - ".draft-trigger"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ff-draft-data
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install
+        run: pip install -e .
+
+      - name: Build draft boards
+        env:
+          ESPN_S2: ${{ secrets.ESPN_S2 }}
+          ESPN_SWID: ${{ secrets.ESPN_SWID }}
+        run: python scripts/build_draft_data.py --out data --season 2026
+
+      - name: Commit boards
+        run: |
+          git config user.name "fantasy-gm[bot]"
+          git config user.email "fantasy-gm@users.noreply.github.com"
+          # The scratch DB and HTTP cache are build artifacts, not data.
+          rm -rf data/draft_state.db data/draft_state.db-* data/.cache
+          if [ -n "$(git status --porcelain data)" ]; then
+            git add data
+            git commit -m "data: refresh draft boards $(date -u +%Y-%m-%dT%H:%MZ)"
+            for attempt in 1 2 3; do
+              git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && \
+              git push origin "HEAD:${GITHUB_REF_NAME}" && break
+              sleep $((attempt * 4))
+            done
+          else
+            echo "No change in draft data."
+          fi

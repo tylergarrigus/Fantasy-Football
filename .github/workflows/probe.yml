@@ -1,0 +1,59 @@
+name: Probe League
+
+# A read-only reconnaissance run against one ESPN league.
+#
+# Exists because the development session cannot reach ESPN (network policy), so
+# this is how we find out what a league actually looks like: public or private,
+# what scoring, what roster slots, FAAB or waiver priority, who the teams are.
+#
+# League ID is a workflow *input*, not a secret, so the first probe needs no
+# setup at all -- league IDs appear in the ESPN URL and are not sensitive.
+# Cookies are read from secrets only if you've set them.
+#
+# Prints nothing that isn't already visible to anyone who can open the league.
+
+on:
+  workflow_dispatch:
+    inputs:
+      league_id:
+        description: "ESPN league ID (the leagueId= number in your URL)"
+        required: true
+        type: string
+      season:
+        description: "Season year"
+        required: false
+        default: "2026"
+        type: string
+      team_name:
+        description: "Your team name, if you know it (helps identify which team is yours)"
+        required: false
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install
+        run: pip install -e .
+
+      - name: Probe
+        env:
+          ESPN_S2: ${{ secrets.ESPN_S2 }}
+          ESPN_SWID: ${{ secrets.ESPN_SWID }}
+        run: |
+          python scripts/probe_league.py \
+            --league-id "${{ inputs.league_id }}" \
+            --season "${{ inputs.season }}" \
+            --team-name "${{ inputs.team_name }}"
