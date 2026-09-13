@@ -35,8 +35,8 @@
           "position": "D/ST",
           "nfl_team": "HOU",
           "injury_status": null,
-          "projected": 129.05941244,
-          "adp": 93.13
+          "projected": 130.31812465,
+          "adp": 90.51
         },
         {
           "player_id": "p_11584",
@@ -45,8 +45,8 @@
           "position": "RB",
           "nfl_team": "TB",
           "injury_status": null,
-          "projected": 207.11084758,
-          "adp": 56.8
+          "projected": 207.93710868,
+          "adp": 58.25
         },
         {
           "player_id": "p_11604",
@@ -54,9 +54,9 @@
           "name": "Brock Bowers",
           "position": "TE",
           "nfl_team": "LV",
-          "injury_status": null,
-          "projected": 240.89154634,
-          "adp": 23.94
+          "injury_status": "Out",
+          "projected": 224.97534962,
+          "adp": 24.46
         },
         {
           "player_id": "p_11624",
@@ -65,8 +65,8 @@
           "position": "WR",
           "nfl_team": "KC",
           "injury_status": null,
-          "projected": 172.95866424,
-          "adp": 130.86
+          "projected": 173.45939875,
+          "adp": 134.82
         },
         {
           "player_id": "p_12474",
@@ -75,8 +75,8 @@
           "position": "RB",
           "nfl_team": "HOU",
           "injury_status": null,
-          "projected": 131.795456,
-          "adp": 151.82
+          "projected": 131.83860206,
+          "adp": 152.83
         },
         {
           "player_id": "p_12514",
@@ -84,9 +84,9 @@
           "name": "Emeka Egbuka",
           "position": "WR",
           "nfl_team": "TB",
-          "injury_status": "Questionable",
-          "projected": 228.96994974,
-          "adp": 44.77
+          "injury_status": null,
+          "projected": 228.67597815,
+          "adp": 46.06
         },
         {
           "player_id": "p_13287",
@@ -95,18 +95,18 @@
           "position": "RB",
           "nfl_team": "ARI",
           "injury_status": "Questionable",
-          "projected": 276.52653564,
-          "adp": 25.98
+          "projected": 276.38052922,
+          "adp": 25.66
         },
         {
-          "player_id": "p_13330",
-          "espn_id": "5083315",
-          "name": "Kenyon Sadiq",
-          "position": "TE",
-          "nfl_team": "NYJ",
-          "injury_status": "Questionable",
-          "projected": 146.12430601,
-          "adp": 165.2
+          "player_id": "p_2078",
+          "espn_id": "16733",
+          "name": "Odell Beckham",
+          "position": "WR",
+          "nfl_team": "NYG",
+          "injury_status": null,
+          "projected": 67.51119865,
+          "adp": 169.36
         },
         {
           "player_id": "p_2216",
@@ -114,9 +114,9 @@
           "name": "Mike Evans",
           "position": "WR",
           "nfl_team": "SF",
-          "injury_status": "Questionable",
-          "projected": 180.11879314,
-          "adp": 83.73
+          "injury_status": null,
+          "projected": 192.02851664,
+          "adp": 84.21
         },
         {
           "player_id": "p_3163",
@@ -125,8 +125,8 @@
           "position": "QB",
           "nfl_team": "DET",
           "injury_status": null,
-          "projected": 269.06403073,
-          "adp": 136.6
+          "projected": 276.5036343,
+          "adp": 138.73
         },
         {
           "player_id": "p_5189",
@@ -135,8 +135,8 @@
           "position": "K",
           "nfl_team": "SF",
           "injury_status": null,
-          "projected": 155.22506618,
-          "adp": 141.71
+          "projected": 155.10567919,
+          "adp": 143.56
         },
         {
           "player_id": "p_6770",
@@ -145,8 +145,8 @@
           "position": "QB",
           "nfl_team": "CIN",
           "injury_status": null,
-          "projected": 304.32823765,
-          "adp": 53.54
+          "projected": 315.07329474,
+          "adp": 52.63
         },
         {
           "player_id": "p_8126",
@@ -154,9 +154,9 @@
           "name": "Wan'Dale Robinson",
           "position": "WR",
           "nfl_team": "TEN",
-          "injury_status": "Questionable",
-          "projected": 174.84777793,
-          "adp": 112.94
+          "injury_status": null,
+          "projected": 174.87930538,
+          "adp": 113.45
         },
         {
           "player_id": "p_9221",
@@ -165,8 +165,18 @@
           "position": "RB",
           "nfl_team": "DET",
           "injury_status": null,
-          "projected": 365.66727684,
-          "adp": 1.32
+          "projected": 372.14074844,
+          "adp": 1.36
+        },
+        {
+          "player_id": "p_9482",
+          "espn_id": "4429086",
+          "name": "Michael Mayer",
+          "position": "TE",
+          "nfl_team": "LV",
+          "injury_status": null,
+          "projected": 84.86935605,
+          "adp": 170.19
         },
         {
           "player_id": "p_9508",
@@ -175,8 +185,8 @@
           "position": "RB",
           "nfl_team": "TEN",
           "injury_status": null,
-          "projected": 154.28387791,
-          "adp": 146.65
+          "projected": 154.28543931,
+          "adp": 152.16
         }
       ],
       "starters": [
@@ -187,8 +197,8 @@
           "position": "QB",
           "nfl_team": "CIN",
           "injury_status": null,
-          "projected": 304.32823765,
-          "adp": 53.54,
+          "projected": 315.07329474,
+          "adp": 52.63,
           "slot": "QB"
         },
         {
@@ -198,8 +208,8 @@
           "position": "RB",
           "nfl_team": "DET",
           "injury_status": null,
-          "projected": 365.66727684,
-          "adp": 1.32,
+          "projected": 372.14074844,
+          "adp": 1.36,
           "slot": "RB"
         },
         {
@@ -209,8 +219,8 @@
           "position": "RB",
           "nfl_team": "ARI",
           "injury_status": "Questionable",
-          "projected": 276.52653564,
-          "adp": 25.98,
+          "projected": 276.38052922,
+          "adp": 25.66,
           "slot": "RB"
         },
         {
@@ -219,9 +229,9 @@
           "name": "Emeka Egbuka",
           "position": "WR",
           "nfl_team": "TB",
-          "injury_status": "Questionable",
-          "projected": 228.96994974,
-          "adp": 44.77,
+          "injury_status": null,
+          "projected": 228.67597815,
+          "adp": 46.06,
           "slot": "WR"
         },
         {
@@ -230,9 +240,9 @@
           "name": "Mike Evans",
           "position": "WR",
           "nfl_team": "SF",
-          "injury_status": "Questionable",
-          "projected": 180.11879314,
-          "adp": 83.73,
+          "injury_status": null,
+          "projected": 192.02851664,
+          "adp": 84.21,
           "slot": "WR"
         },
         {
@@ -241,9 +251,9 @@
           "name": "Brock Bowers",
           "position": "TE",
           "nfl_team": "LV",
-          "injury_status": null,
-          "projected": 240.89154634,
-          "adp": 23.94,
+          "injury_status": "Out",
+          "projected": 224.97534962,
+          "adp": 24.46,
           "slot": "TE"
         },
         {
@@ -253,8 +263,8 @@
           "position": "K",
           "nfl_team": "SF",
           "injury_status": null,
-          "projected": 155.22506618,
-          "adp": 141.71,
+          "projected": 155.10567919,
+          "adp": 143.56,
           "slot": "K"
         },
         {
@@ -264,8 +274,8 @@
           "position": "D/ST",
           "nfl_team": "HOU",
           "injury_status": null,
-          "projected": 129.05941244,
-          "adp": 93.13,
+          "projected": 130.31812465,
+          "adp": 90.51,
           "slot": "D/ST"
         },
         {
@@ -275,8 +285,8 @@
           "position": "RB",
           "nfl_team": "TB",
           "injury_status": null,
-          "projected": 207.11084758,
-          "adp": 56.8,
+          "projected": 207.93710868,
+          "adp": 58.25,
           "slot": "FLEX"
         }
       ],
@@ -288,8 +298,8 @@
           "position": "QB",
           "nfl_team": "DET",
           "injury_status": null,
-          "projected": 269.06403073,
-          "adp": 136.6
+          "projected": 276.5036343,
+          "adp": 138.73
         },
         {
           "player_id": "p_8126",
@@ -297,9 +307,9 @@
           "name": "Wan'Dale Robinson",
           "position": "WR",
           "nfl_team": "TEN",
-          "injury_status": "Questionable",
-          "projected": 174.84777793,
-          "adp": 112.94
+          "injury_status": null,
+          "projected": 174.87930538,
+          "adp": 113.45
         },
         {
           "player_id": "p_11624",
@@ -308,8 +318,8 @@
           "position": "WR",
           "nfl_team": "KC",
           "injury_status": null,
-          "projected": 172.95866424,
-          "adp": 130.86
+          "projected": 173.45939875,
+          "adp": 134.82
         },
         {
           "player_id": "p_9508",
@@ -318,18 +328,8 @@
           "position": "RB",
           "nfl_team": "TEN",
           "injury_status": null,
-          "projected": 154.28387791,
-          "adp": 146.65
-        },
-        {
-          "player_id": "p_13330",
-          "espn_id": "5083315",
-          "name": "Kenyon Sadiq",
-          "position": "TE",
-          "nfl_team": "NYJ",
-          "injury_status": "Questionable",
-          "projected": 146.12430601,
-          "adp": 165.2
+          "projected": 154.28543931,
+          "adp": 152.16
         },
         {
           "player_id": "p_12474",
@@ -338,11 +338,31 @@
           "position": "RB",
           "nfl_team": "HOU",
           "injury_status": null,
-          "projected": 131.795456,
-          "adp": 151.82
+          "projected": 131.83860206,
+          "adp": 152.83
+        },
+        {
+          "player_id": "p_9482",
+          "espn_id": "4429086",
+          "name": "Michael Mayer",
+          "position": "TE",
+          "nfl_team": "LV",
+          "injury_status": null,
+          "projected": 84.86935605,
+          "adp": 170.19
+        },
+        {
+          "player_id": "p_2078",
+          "espn_id": "16733",
+          "name": "Odell Beckham",
+          "position": "WR",
+          "nfl_team": "NYG",
+          "injury_status": null,
+          "projected": 67.51119865,
+          "adp": 169.36
         }
       ],
-      "projected": 2087.9,
+      "projected": 2102.6,
       "unfilled": [],
       "rank": 1
     },
@@ -359,8 +379,8 @@
           "position": "D/ST",
           "nfl_team": "DEN",
           "injury_status": null,
-          "projected": 130.78326275,
-          "adp": 99.7
+          "projected": 130.67097804,
+          "adp": 96.18
         },
         {
           "player_id": "p_10213",
@@ -369,8 +389,8 @@
           "position": "WR",
           "nfl_team": "LV",
           "injury_status": null,
-          "projected": 137.95066206,
-          "adp": 169.42
+          "projected": 138.6239357,
+          "adp": 169.29
         },
         {
           "player_id": "p_11533",
@@ -379,8 +399,8 @@
           "position": "K",
           "nfl_team": "DAL",
           "injury_status": null,
-          "projected": 171.47184129,
-          "adp": 84.53
+          "projected": 171.47184253,
+          "adp": 81.76
         },
         {
           "player_id": "p_11564",
@@ -389,8 +409,8 @@
           "position": "QB",
           "nfl_team": "NE",
           "injury_status": null,
-          "projected": 320.17261778,
-          "adp": 47.22
+          "projected": 330.03528316,
+          "adp": 46.85
         },
         {
           "player_id": "p_11620",
@@ -398,9 +418,9 @@
           "name": "Rome Odunze",
           "position": "WR",
           "nfl_team": "CHI",
-          "injury_status": "Questionable",
-          "projected": 213.55134299,
-          "adp": 65.05
+          "injury_status": null,
+          "projected": 213.05297551,
+          "adp": 70.84
         },
         {
           "player_id": "p_11646",
@@ -409,8 +429,8 @@
           "position": "WR",
           "nfl_team": "CAR",
           "injury_status": null,
-          "projected": 147.00811088,
-          "adp": 154.27
+          "projected": 146.79517829,
+          "adp": 154.95
         },
         {
           "player_id": "p_12527",
@@ -418,9 +438,9 @@
           "name": "Ashton Jeanty",
           "position": "RB",
           "nfl_team": "LV",
-          "injury_status": "Questionable",
-          "projected": 278.89877031,
-          "adp": 21.83
+          "injury_status": null,
+          "projected": 278.48549363,
+          "adp": 21.64
         },
         {
           "player_id": "p_13346",
@@ -429,8 +449,8 @@
           "position": "WR",
           "nfl_team": "CLE",
           "injury_status": null,
-          "projected": 142.27109235,
-          "adp": 169.21
+          "projected": 142.38767124,
+          "adp": 168.7
         },
         {
           "player_id": "p_1466",
@@ -439,8 +459,8 @@
           "position": "TE",
           "nfl_team": "KC",
           "injury_status": null,
-          "projected": 177.18883453,
-          "adp": 94.54
+          "projected": 177.68598781,
+          "adp": 94.65
         },
         {
           "player_id": "p_2133",
@@ -449,8 +469,8 @@
           "position": "WR",
           "nfl_team": "LA",
           "injury_status": null,
-          "projected": 232.21906542,
-          "adp": 46.08
+          "projected": 232.10791599,
+          "adp": 46.93
         },
         {
           "player_id": "p_5967",
@@ -459,8 +479,8 @@
           "position": "RB",
           "nfl_team": "TEN",
           "injury_status": null,
-          "projected": 185.53767849,
-          "adp": 87.2
+          "projected": 185.54947521,
+          "adp": 88.59
         },
         {
           "player_id": "p_7021",
@@ -469,8 +489,8 @@
           "position": "RB",
           "nfl_team": "PIT",
           "injury_status": null,
-          "projected": 188.32135431,
-          "adp": 94.99
+          "projected": 188.4349655,
+          "adp": 100.27
         },
         {
           "player_id": "p_8146",
@@ -479,8 +499,8 @@
           "position": "WR",
           "nfl_team": "NYJ",
           "injury_status": null,
-          "projected": 250.29130698,
-          "adp": 37.11
+          "projected": 250.53426069,
+          "adp": 37.34
         },
         {
           "player_id": "p_9226",
@@ -489,8 +509,8 @@
           "position": "RB",
           "nfl_team": "MIA",
           "injury_status": null,
-          "projected": 293.57397401,
-          "adp": 12.44
+          "projected": 292.75824701,
+          "adp": 13.57
         },
         {
           "player_id": "p_9480",
@@ -499,8 +519,8 @@
           "position": "TE",
           "nfl_team": "JAC",
           "injury_status": null,
-          "projected": 142.57476404,
-          "adp": 167.88
+          "projected": 142.51532979,
+          "adp": 168.88
         },
         {
           "player_id": "p_9754",
@@ -509,8 +529,8 @@
           "position": "WR",
           "nfl_team": "LAC",
           "injury_status": null,
-          "projected": 165.39610291,
-          "adp": 130.33
+          "projected": 165.76234235,
+          "adp": 137.05
         }
       ],
       "starters": [
@@ -521,8 +541,8 @@
           "position": "QB",
           "nfl_team": "NE",
           "injury_status": null,
-          "projected": 320.17261778,
-          "adp": 47.22,
+          "projected": 330.03528316,
+          "adp": 46.85,
           "slot": "QB"
         },
         {
@@ -532,8 +552,8 @@
           "position": "RB",
           "nfl_team": "MIA",
           "injury_status": null,
-          "projected": 293.57397401,
-          "adp": 12.44,
+          "projected": 292.75824701,
+          "adp": 13.57,
           "slot": "RB"
         },
         {
@@ -542,9 +562,9 @@
           "name": "Ashton Jeanty",
           "position": "RB",
           "nfl_team": "LV",
-          "injury_status": "Questionable",
-          "projected": 278.89877031,
-          "adp": 21.83,
+          "injury_status": null,
+          "projected": 278.48549363,
+          "adp": 21.64,
           "slot": "RB"
         },
         {
@@ -554,8 +574,8 @@
           "position": "WR",
           "nfl_team": "NYJ",
           "injury_status": null,
-          "projected": 250.29130698,
-          "adp": 37.11,
+          "projected": 250.53426069,
+          "adp": 37.34,
           "slot": "WR"
         },
         {
@@ -565,8 +585,8 @@
           "position": "WR",
           "nfl_team": "LA",
           "injury_status": null,
-          "projected": 232.21906542,
-          "adp": 46.08,
+          "projected": 232.10791599,
+          "adp": 46.93,
           "slot": "WR"
         },
         {
@@ -576,8 +596,8 @@
           "position": "TE",
           "nfl_team": "KC",
           "injury_status": null,
-          "projected": 177.18883453,
-          "adp": 94.54,
+          "projected": 177.68598781,
+          "adp": 94.65,
           "slot": "TE"
         },
         {
@@ -587,8 +607,8 @@
           "position": "K",
           "nfl_team": "DAL",
           "injury_status": null,
-          "projected": 171.47184129,
-          "adp": 84.53,
+          "projected": 171.47184253,
+          "adp": 81.76,
           "slot": "K"
         },
         {
@@ -598,8 +618,8 @@
           "position": "D/ST",
           "nfl_team": "DEN",
           "injury_status": null,
-          "projected": 130.78326275,
-          "adp": 99.7,
+          "projected": 130.67097804,
+          "adp": 96.18,
           "slot": "D/ST"
         },
         {
@@ -608,9 +628,9 @@
           "name": "Rome Odunze",
           "position": "WR",
           "nfl_team": "CHI",
-          "injury_status": "Questionable",
-          "projected": 213.55134299,
-          "adp": 65.05,
+          "injury_status": null,
+          "projected": 213.05297551,
+          "adp": 70.84,
           "slot": "FLEX"
         }
       ],
@@ -622,8 +642,8 @@
           "position": "RB",
           "nfl_team": "PIT",
           "injury_status": null,
-          "projected": 188.32135431,
-          "adp": 94.99
+          "projected": 188.4349655,
+          "adp": 100.27
         },
         {
           "player_id": "p_5967",
@@ -632,8 +652,8 @@
           "position": "RB",
           "nfl_team": "TEN",
           "injury_status": null,
-          "projected": 185.53767849,
-          "adp": 87.2
+          "projected": 185.54947521,
+          "adp": 88.59
         },
         {
           "player_id": "p_9754",
@@ -642,8 +662,8 @@
           "position": "WR",
           "nfl_team": "LAC",
           "injury_status": null,
-          "projected": 165.39610291,
-          "adp": 130.33
+          "projected": 165.76234235,
+          "adp": 137.05
         },
         {
           "player_id": "p_11646",
@@ -652,8 +672,8 @@
           "position": "WR",
           "nfl_team": "CAR",
           "injury_status": null,
-          "projected": 147.00811088,
-          "adp": 154.27
+          "projected": 146.79517829,
+          "adp": 154.95
         },
         {
           "player_id": "p_9480",
@@ -662,8 +682,8 @@
           "position": "TE",
           "nfl_team": "JAC",
           "injury_status": null,
-          "projected": 142.57476404,
-          "adp": 167.88
+          "projected": 142.51532979,
+          "adp": 168.88
         },
         {
           "player_id": "p_13346",
@@ -672,8 +692,8 @@
           "position": "WR",
           "nfl_team": "CLE",
           "injury_status": null,
-          "projected": 142.27109235,
-          "adp": 169.21
+          "projected": 142.38767124,
+          "adp": 168.7
         },
         {
           "player_id": "p_10213",
@@ -682,11 +702,11 @@
           "position": "WR",
           "nfl_team": "LV",
           "injury_status": null,
-          "projected": 137.95066206,
-          "adp": 169.42
+          "projected": 138.6239357,
+          "adp": 169.29
         }
       ],
-      "projected": 2068.2,
+      "projected": 2076.8,
       "unfilled": [],
       "rank": 2
     },
@@ -703,8 +723,8 @@
           "position": "D/ST",
           "nfl_team": "DET",
           "injury_status": null,
-          "projected": 107.99349859,
-          "adp": 155.36
+          "projected": 107.56850778,
+          "adp": 154.36
         },
         {
           "player_id": "p_11583",
@@ -712,9 +732,9 @@
           "name": "Jonathon Brooks",
           "position": "RB",
           "nfl_team": "CAR",
-          "injury_status": "Questionable",
-          "projected": 179.86533631,
-          "adp": 104.12
+          "injury_status": null,
+          "projected": 178.87746344,
+          "adp": 107.81
         },
         {
           "player_id": "p_12487",
@@ -722,9 +742,9 @@
           "name": "Terrance Ferguson",
           "position": "TE",
           "nfl_team": "LA",
-          "injury_status": "Questionable",
-          "projected": 135.73480676,
-          "adp": 168.57
+          "injury_status": null,
+          "projected": 105.80200918,
+          "adp": 167.06
         },
         {
           "player_id": "p_12508",
@@ -733,8 +753,8 @@
           "position": "QB",
           "nfl_team": "NYG",
           "injury_status": null,
-          "projected": 299.52563618,
-          "adp": 83.32
+          "projected": 309.11034392,
+          "adp": 82.39
         },
         {
           "player_id": "p_12517",
@@ -743,8 +763,8 @@
           "position": "TE",
           "nfl_team": "CHI",
           "injury_status": null,
-          "projected": 206.94356188,
-          "adp": 42.38
+          "projected": 206.42507312,
+          "adp": 42.01
         },
         {
           "player_id": "p_12519",
@@ -752,9 +772,9 @@
           "name": "Luther Burden",
           "position": "WR",
           "nfl_team": "CHI",
-          "injury_status": "Questionable",
-          "projected": 206.82457056,
-          "adp": 74.8
+          "injury_status": null,
+          "projected": 206.30034372,
+          "adp": 76.88
         },
         {
           "player_id": "p_13294",
@@ -763,8 +783,8 @@
           "position": "WR",
           "nfl_team": "PHI",
           "injury_status": null,
-          "projected": 155.1634061,
-          "adp": 132.45
+          "projected": 153.68169563,
+          "adp": 137.51
         },
         {
           "player_id": "p_3451",
@@ -773,8 +793,8 @@
           "position": "K",
           "nfl_team": "HOU",
           "injury_status": null,
-          "projected": 157.76907893,
-          "adp": 124.29
+          "projected": 157.76907981,
+          "adp": 125.67
         },
         {
           "player_id": "p_4199",
@@ -783,8 +803,8 @@
           "position": "RB",
           "nfl_team": "MIN",
           "injury_status": null,
-          "projected": 178.01282116,
-          "adp": 113.85
+          "projected": 178.30629128,
+          "adp": 119.55
         },
         {
           "player_id": "p_5870",
@@ -793,8 +813,8 @@
           "position": "QB",
           "nfl_team": "IND",
           "injury_status": null,
-          "projected": 266.58418767,
-          "adp": 160.25
+          "projected": 275.37111533,
+          "adp": 161.2
         },
         {
           "player_id": "p_7547",
@@ -803,8 +823,8 @@
           "position": "WR",
           "nfl_team": "DET",
           "injury_status": null,
-          "projected": 324.44327963,
-          "adp": 8.37
+          "projected": 325.43701555,
+          "adp": 8.61
         },
         {
           "player_id": "p_8138",
@@ -813,8 +833,8 @@
           "position": "RB",
           "nfl_team": "BUF",
           "injury_status": null,
-          "projected": 280.31414284,
-          "adp": 10.1
+          "projected": 279.85881626,
+          "adp": 10.36
         },
         {
           "player_id": "p_8150",
@@ -823,8 +843,8 @@
           "position": "RB",
           "nfl_team": "LA",
           "injury_status": null,
-          "projected": 232.01003414,
-          "adp": 34.95
+          "projected": 233.95567544,
+          "adp": 35.61
         },
         {
           "player_id": "p_8408",
@@ -833,8 +853,8 @@
           "position": "RB",
           "nfl_team": "MIN",
           "injury_status": null,
-          "projected": 151.74335836,
-          "adp": 139.04
+          "projected": 152.41619372,
+          "adp": 143.08
         },
         {
           "player_id": "p_9756",
@@ -843,8 +863,8 @@
           "position": "WR",
           "nfl_team": "MIN",
           "injury_status": null,
-          "projected": 171.07916574,
-          "adp": 121.32
+          "projected": 170.70500915,
+          "adp": 126.98
         },
         {
           "player_id": "p_9997",
@@ -852,9 +872,9 @@
           "name": "Zay Flowers",
           "position": "WR",
           "nfl_team": "BAL",
-          "injury_status": "Questionable",
-          "projected": 238.47751413,
-          "adp": 44.08
+          "injury_status": null,
+          "projected": 239.19499467,
+          "adp": 44.36
         }
       ],
       "starters": [
@@ -865,8 +885,8 @@
           "position": "QB",
           "nfl_team": "NYG",
           "injury_status": null,
-          "projected": 299.52563618,
-          "adp": 83.32,
+          "projected": 309.11034392,
+          "adp": 82.39,
           "slot": "QB"
         },
         {
@@ -876,8 +896,8 @@
           "position": "RB",
           "nfl_team": "BUF",
           "injury_status": null,
-          "projected": 280.31414284,
-          "adp": 10.1,
+          "projected": 279.85881626,
+          "adp": 10.36,
           "slot": "RB"
         },
         {
@@ -887,8 +907,8 @@
           "position": "RB",
           "nfl_team": "LA",
           "injury_status": null,
-          "projected": 232.01003414,
-          "adp": 34.95,
+          "projected": 233.95567544,
+          "adp": 35.61,
           "slot": "RB"
         },
         {
@@ -898,8 +918,8 @@
           "position": "WR",
           "nfl_team": "DET",
           "injury_status": null,
-          "projected": 324.44327963,
-          "adp": 8.37,
+          "projected": 325.43701555,
+          "adp": 8.61,
           "slot": "WR"
         },
         {
@@ -908,9 +928,9 @@
           "name": "Zay Flowers",
           "position": "WR",
           "nfl_team": "BAL",
-          "injury_status": "Questionable",
-          "projected": 238.47751413,
-          "adp": 44.08,
+          "injury_status": null,
+          "projected": 239.19499467,
+          "adp": 44.36,
           "slot": "WR"
         },
         {
@@ -920,8 +940,8 @@
           "position": "TE",
           "nfl_team": "CHI",
           "injury_status": null,
-          "projected": 206.94356188,
-          "adp": 42.38,
+          "projected": 206.42507312,
+          "adp": 42.01,
           "slot": "TE"
         },
         {
@@ -931,8 +951,8 @@
           "position": "K",
           "nfl_team": "HOU",
           "injury_status": null,
-          "projected": 157.76907893,
-          "adp": 124.29,
+          "projected": 157.76907981,
+          "adp": 125.67,
           "slot": "K"
         },
         {
@@ -942,8 +962,8 @@
           "position": "D/ST",
           "nfl_team": "DET",
           "injury_status": null,
-          "projected": 107.99349859,
-          "adp": 155.36,
+          "projected": 107.56850778,
+          "adp": 154.36,
           "slot": "D/ST"
         },
         {
@@ -952,9 +972,9 @@
           "name": "Luther Burden",
           "position": "WR",
           "nfl_team": "CHI",
-          "injury_status": "Questionable",
-          "projected": 206.82457056,
-          "adp": 74.8,
+          "injury_status": null,
+          "projected": 206.30034372,
+          "adp": 76.88,
           "slot": "FLEX"
         }
       ],
@@ -966,8 +986,8 @@
           "position": "QB",
           "nfl_team": "IND",
           "injury_status": null,
-          "projected": 266.58418767,
-          "adp": 160.25
+          "projected": 275.37111533,
+          "adp": 161.2
         },
         {
           "player_id": "p_11583",
@@ -975,9 +995,9 @@
           "name": "Jonathon Brooks",
           "position": "RB",
           "nfl_team": "CAR",
-          "injury_status": "Questionable",
-          "projected": 179.86533631,
-          "adp": 104.12
+          "injury_status": null,
+          "projected": 178.87746344,
+          "adp": 107.81
         },
         {
           "player_id": "p_4199",
@@ -986,8 +1006,8 @@
           "position": "RB",
           "nfl_team": "MIN",
           "injury_status": null,
-          "projected": 178.01282116,
-          "adp": 113.85
+          "projected": 178.30629128,
+          "adp": 119.55
         },
         {
           "player_id": "p_9756",
@@ -996,8 +1016,8 @@
           "position": "WR",
           "nfl_team": "MIN",
           "injury_status": null,
-          "projected": 171.07916574,
-          "adp": 121.32
+          "projected": 170.70500915,
+          "adp": 126.98
         },
         {
           "player_id": "p_13294",
@@ -1006,8 +1026,8 @@
           "position": "WR",
           "nfl_team": "PHI",
           "injury_status": null,
-          "projected": 155.1634061,
-          "adp": 132.45
+          "projected": 153.68169563,
+          "adp": 137.51
         },
         {
           "player_id": "p_8408",
@@ -1016,8 +1036,8 @@
           "position": "RB",
           "nfl_team": "MIN",
           "injury_status": null,
-          "projected": 151.74335836,
-          "adp": 139.04
+          "projected": 152.41619372,
+          "adp": 143.08
         },
         {
           "player_id": "p_12487",
@@ -1025,12 +1045,12 @@
           "name": "Terrance Ferguson",
           "position": "TE",
           "nfl_team": "LA",
-          "injury_status": "Questionable",
-          "projected": 135.73480676,
-          "adp": 168.57
+          "injury_status": null,
+          "projected": 105.80200918,
+          "adp": 167.06
         }
       ],
-      "projected": 2054.3,
+      "projected": 2065.6,
       "unfilled": [],
       "rank": 3
     },
@@ -1047,8 +1067,8 @@
           "position": "D/ST",
           "nfl_team": "PIT",
           "injury_status": null,
-          "projected": 123.05959697,
-          "adp": 122.65
+          "projected": 125.36592023,
+          "adp": 118.79
         },
         {
           "player_id": "p_10229",
@@ -1057,8 +1077,8 @@
           "position": "WR",
           "nfl_team": "KC",
           "injury_status": null,
-          "projected": 259.26816371,
-          "adp": 29.4
+          "projected": 260.03788095,
+          "adp": 29.39
         },
         {
           "player_id": "p_12481",
@@ -1067,8 +1087,8 @@
           "position": "RB",
           "nfl_team": "NYG",
           "injury_status": null,
-          "projected": 227.38681901,
-          "adp": 45.04
+          "projected": 227.50351433,
+          "adp": 46.43
         },
         {
           "player_id": "p_12518",
@@ -1076,9 +1096,9 @@
           "name": "Tyler Warren",
           "position": "TE",
           "nfl_team": "IND",
-          "injury_status": "Questionable",
-          "projected": 210.62572952,
-          "adp": 52.09
+          "injury_status": null,
+          "projected": 210.44314025,
+          "adp": 50.9
         },
         {
           "player_id": "p_1373",
@@ -1087,8 +1107,8 @@
           "position": "QB",
           "nfl_team": "NYJ",
           "injury_status": null,
-          "projected": 233.16272396,
-          "adp": 170.04
+          "projected": 240.30603686,
+          "adp": 170.0
         },
         {
           "player_id": "p_4046",
@@ -1096,9 +1116,9 @@
           "name": "Patrick Mahomes",
           "position": "QB",
           "nfl_team": "KC",
-          "injury_status": "Questionable",
-          "projected": 290.97210836,
-          "adp": 108.91
+          "injury_status": null,
+          "projected": 300.83270944,
+          "adp": 109.92
         },
         {
           "player_id": "p_4981",
@@ -1107,8 +1127,8 @@
           "position": "WR",
           "nfl_team": "TEN",
           "injury_status": null,
-          "projected": 135.25103764,
-          "adp": 168.81
+          "projected": 135.27905598,
+          "adp": 170.19
         },
         {
           "player_id": "p_5012",
@@ -1117,8 +1137,8 @@
           "position": "TE",
           "nfl_team": "BAL",
           "injury_status": null,
-          "projected": 169.06873792,
-          "adp": 126.55
+          "projected": 169.37362819,
+          "adp": 127.71
         },
         {
           "player_id": "p_5045",
@@ -1127,8 +1147,8 @@
           "position": "WR",
           "nfl_team": "DEN",
           "injury_status": null,
-          "projected": 204.11645156,
-          "adp": 81.2
+          "projected": 204.62695263,
+          "adp": 84.89
         },
         {
           "player_id": "p_6794",
@@ -1137,8 +1157,8 @@
           "position": "WR",
           "nfl_team": "MIN",
           "injury_status": null,
-          "projected": 294.67210672,
-          "adp": 12.64
+          "projected": 293.95490061,
+          "adp": 12.31
         },
         {
           "player_id": "p_7567",
@@ -1147,8 +1167,8 @@
           "position": "RB",
           "nfl_team": "TB",
           "injury_status": null,
-          "projected": 177.85590081,
-          "adp": 99.91
+          "projected": 178.88922606,
+          "adp": 102.52
         },
         {
           "player_id": "p_7588",
@@ -1157,8 +1177,8 @@
           "position": "RB",
           "nfl_team": "DAL",
           "injury_status": null,
-          "projected": 259.48689499,
-          "adp": 32.68
+          "projected": 261.10025268,
+          "adp": 33.24
         },
         {
           "player_id": "p_8154",
@@ -1167,8 +1187,8 @@
           "position": "RB",
           "nfl_team": "ATL",
           "injury_status": null,
-          "projected": 93.96950399,
-          "adp": 167.94
+          "projected": 92.21614937,
+          "adp": 168.01
         },
         {
           "player_id": "p_8259",
@@ -1176,9 +1196,9 @@
           "name": "Cameron Dicker",
           "position": "K",
           "nfl_team": "LAC",
-          "injury_status": "Questionable",
-          "projected": 161.89103824,
-          "adp": 112.86
+          "injury_status": null,
+          "projected": 161.89119053,
+          "adp": 109.74
         },
         {
           "player_id": "p_8676",
@@ -1187,8 +1207,8 @@
           "position": "WR",
           "nfl_team": "SEA",
           "injury_status": null,
-          "projected": 144.43662492,
-          "adp": 160.85
+          "projected": 153.41277849,
+          "adp": 160.67
         },
         {
           "player_id": "p_9487",
@@ -1197,8 +1217,8 @@
           "position": "WR",
           "nfl_team": "JAC",
           "injury_status": null,
-          "projected": 187.2268169,
-          "adp": 89.57
+          "projected": 187.76509123,
+          "adp": 93.42
         }
       ],
       "starters": [
@@ -1208,9 +1228,9 @@
           "name": "Patrick Mahomes",
           "position": "QB",
           "nfl_team": "KC",
-          "injury_status": "Questionable",
-          "projected": 290.97210836,
-          "adp": 108.91,
+          "injury_status": null,
+          "projected": 300.83270944,
+          "adp": 109.92,
           "slot": "QB"
         },
         {
@@ -1220,8 +1240,8 @@
           "position": "RB",
           "nfl_team": "DAL",
           "injury_status": null,
-          "projected": 259.48689499,
-          "adp": 32.68,
+          "projected": 261.10025268,
+          "adp": 33.24,
           "slot": "RB"
         },
         {
@@ -1231,8 +1251,8 @@
           "position": "RB",
           "nfl_team": "NYG",
           "injury_status": null,
-          "projected": 227.38681901,
-          "adp": 45.04,
+          "projected": 227.50351433,
+          "adp": 46.43,
           "slot": "RB"
         },
         {
@@ -1242,8 +1262,8 @@
           "position": "WR",
           "nfl_team": "MIN",
           "injury_status": null,
-          "projected": 294.67210672,
-          "adp": 12.64,
+          "projected": 293.95490061,
+          "adp": 12.31,
           "slot": "WR"
         },
         {
@@ -1253,8 +1273,8 @@
           "position": "WR",
           "nfl_team": "KC",
           "injury_status": null,
-          "projected": 259.26816371,
-          "adp": 29.4,
+          "projected": 260.03788095,
+          "adp": 29.39,
           "slot": "WR"
         },
         {
@@ -1263,9 +1283,9 @@
           "name": "Tyler Warren",
           "position": "TE",
           "nfl_team": "IND",
-          "injury_status": "Questionable",
-          "projected": 210.62572952,
-          "adp": 52.09,
+          "injury_status": null,
+          "projected": 210.44314025,
+          "adp": 50.9,
           "slot": "TE"
         },
         {
@@ -1274,9 +1294,9 @@
           "name": "Cameron Dicker",
           "position": "K",
           "nfl_team": "LAC",
-          "injury_status": "Questionable",
-          "projected": 161.89103824,
-          "adp": 112.86,
+          "injury_status": null,
+          "projected": 161.89119053,
+          "adp": 109.74,
           "slot": "K"
         },
         {
@@ -1286,8 +1306,8 @@
           "position": "D/ST",
           "nfl_team": "PIT",
           "injury_status": null,
-          "projected": 123.05959697,
-          "adp": 122.65,
+          "projected": 125.36592023,
+          "adp": 118.79,
           "slot": "D/ST"
         },
         {
@@ -1297,8 +1317,8 @@
           "position": "WR",
           "nfl_team": "DEN",
           "injury_status": null,
-          "projected": 204.11645156,
-          "adp": 81.2,
+          "projected": 204.62695263,
+          "adp": 84.89,
           "slot": "FLEX"
         }
       ],
@@ -1310,8 +1330,8 @@
           "position": "QB",
           "nfl_team": "NYJ",
           "injury_status": null,
-          "projected": 233.16272396,
-          "adp": 170.04
+          "projected": 240.30603686,
+          "adp": 170.0
         },
         {
           "player_id": "p_9487",
@@ -1320,8 +1340,8 @@
           "position": "WR",
           "nfl_team": "JAC",
           "injury_status": null,
-          "projected": 187.2268169,
-          "adp": 89.57
+          "projected": 187.76509123,
+          "adp": 93.42
         },
         {
           "player_id": "p_7567",
@@ -1330,8 +1350,8 @@
           "position": "RB",
           "nfl_team": "TB",
           "injury_status": null,
-          "projected": 177.85590081,
-          "adp": 99.91
+          "projected": 178.88922606,
+          "adp": 102.52
         },
         {
           "player_id": "p_5012",
@@ -1340,8 +1360,8 @@
           "position": "TE",
           "nfl_team": "BAL",
           "injury_status": null,
-          "projected": 169.06873792,
-          "adp": 126.55
+          "projected": 169.37362819,
+          "adp": 127.71
         },
         {
           "player_id": "p_8676",
@@ -1350,8 +1370,8 @@
           "position": "WR",
           "nfl_team": "SEA",
           "injury_status": null,
-          "projected": 144.43662492,
-          "adp": 160.85
+          "projected": 153.41277849,
+          "adp": 160.67
         },
         {
           "player_id": "p_4981",
@@ -1360,8 +1380,8 @@
           "position": "WR",
           "nfl_team": "TEN",
           "injury_status": null,
-          "projected": 135.25103764,
-          "adp": 168.81
+          "projected": 135.27905598,
+          "adp": 170.19
         },
         {
           "player_id": "p_8154",
@@ -1370,357 +1390,13 @@
           "position": "RB",
           "nfl_team": "ATL",
           "injury_status": null,
-          "projected": 93.96950399,
-          "adp": 167.94
+          "projected": 92.21614937,
+          "adp": 168.01
         }
       ],
-      "projected": 2031.5,
+      "projected": 2045.8,
       "unfilled": [],
       "rank": 4
-    },
-    {
-      "team_id": 10,
-      "name": "OUCH! Dak Hurts dude!",
-      "owner": "Mateen Mastory",
-      "is_me": false,
-      "players": [
-        {
-          "player_id": "espn_-16006",
-          "espn_id": "-16006",
-          "name": "Cowboys D/ST",
-          "position": "D/ST",
-          "nfl_team": "DAL",
-          "injury_status": null,
-          "projected": 78.12499662,
-          "adp": 167.52
-        },
-        {
-          "player_id": "p_10232",
-          "espn_id": "4360761",
-          "name": "Michael Wilson",
-          "position": "WR",
-          "nfl_team": "ARI",
-          "injury_status": null,
-          "projected": 176.36272608,
-          "adp": 102.7
-        },
-        {
-          "player_id": "p_11610",
-          "espn_id": "4569603",
-          "name": "Malik Washington",
-          "position": "WR",
-          "nfl_team": "MIA",
-          "injury_status": null,
-          "projected": 113.83694331,
-          "adp": 170.08
-        },
-        {
-          "player_id": "p_11786",
-          "espn_id": "4686361",
-          "name": "Cam Little",
-          "position": "K",
-          "nfl_team": "JAC",
-          "injury_status": null,
-          "projected": 146.93234861,
-          "adp": 141.15
-        },
-        {
-          "player_id": "p_12507",
-          "espn_id": "4685382",
-          "name": "Omarion Hampton",
-          "position": "RB",
-          "nfl_team": "LAC",
-          "injury_status": null,
-          "projected": 261.71448375,
-          "adp": 18.11
-        },
-        {
-          "player_id": "p_13305",
-          "espn_id": "4686658",
-          "name": "Mike Washington",
-          "position": "RB",
-          "nfl_team": "LV",
-          "injury_status": null,
-          "projected": 67.0721891,
-          "adp": 163.5
-        },
-        {
-          "player_id": "p_3294",
-          "espn_id": "2577417",
-          "name": "Dak Prescott",
-          "position": "QB",
-          "nfl_team": "DAL",
-          "injury_status": null,
-          "projected": 286.11130176,
-          "adp": 71.79
-        },
-        {
-          "player_id": "p_5001",
-          "espn_id": "3117256",
-          "name": "Dalton Schultz",
-          "position": "TE",
-          "nfl_team": "HOU",
-          "injury_status": null,
-          "projected": 132.94023087,
-          "adp": 168.89
-        },
-        {
-          "player_id": "p_5947",
-          "espn_id": "3916433",
-          "name": "Jakobi Meyers",
-          "position": "WR",
-          "nfl_team": "JAC",
-          "injury_status": "Questionable",
-          "projected": 181.93871186,
-          "adp": 122.46
-        },
-        {
-          "player_id": "p_6801",
-          "espn_id": "4239993",
-          "name": "Tee Higgins",
-          "position": "WR",
-          "nfl_team": "CIN",
-          "injury_status": "Questionable",
-          "projected": 218.92004347,
-          "adp": 51.1
-        },
-        {
-          "player_id": "p_6904",
-          "espn_id": "4040715",
-          "name": "Jalen Hurts",
-          "position": "QB",
-          "nfl_team": "PHI",
-          "injury_status": null,
-          "projected": 319.83543312,
-          "adp": 54.74
-        },
-        {
-          "player_id": "p_7543",
-          "espn_id": "4239996",
-          "name": "Travis Etienne",
-          "position": "RB",
-          "nfl_team": "NO",
-          "injury_status": null,
-          "projected": 246.69980163,
-          "adp": 40.59
-        },
-        {
-          "player_id": "p_8110",
-          "espn_id": "4242355",
-          "name": "Jake Ferguson",
-          "position": "TE",
-          "nfl_team": "DAL",
-          "injury_status": null,
-          "projected": 166.58216589,
-          "adp": 110.97
-        },
-        {
-          "player_id": "p_8132",
-          "espn_id": "4373626",
-          "name": "Tyler Allgeier",
-          "position": "RB",
-          "nfl_team": "ARI",
-          "injury_status": null,
-          "projected": 92.61906315,
-          "adp": 162.8
-        },
-        {
-          "player_id": "p_8137",
-          "espn_id": "4426354",
-          "name": "George Pickens",
-          "position": "WR",
-          "nfl_team": "DAL",
-          "injury_status": null,
-          "projected": 239.25406404,
-          "adp": 28.22
-        },
-        {
-          "player_id": "p_9509",
-          "espn_id": "4430807",
-          "name": "Bijan Robinson",
-          "position": "RB",
-          "nfl_team": "ATL",
-          "injury_status": null,
-          "projected": 352.80097344,
-          "adp": 2.38
-        }
-      ],
-      "starters": [
-        {
-          "player_id": "p_6904",
-          "espn_id": "4040715",
-          "name": "Jalen Hurts",
-          "position": "QB",
-          "nfl_team": "PHI",
-          "injury_status": null,
-          "projected": 319.83543312,
-          "adp": 54.74,
-          "slot": "QB"
-        },
-        {
-          "player_id": "p_9509",
-          "espn_id": "4430807",
-          "name": "Bijan Robinson",
-          "position": "RB",
-          "nfl_team": "ATL",
-          "injury_status": null,
-          "projected": 352.80097344,
-          "adp": 2.38,
-          "slot": "RB"
-        },
-        {
-          "player_id": "p_12507",
-          "espn_id": "4685382",
-          "name": "Omarion Hampton",
-          "position": "RB",
-          "nfl_team": "LAC",
-          "injury_status": null,
-          "projected": 261.71448375,
-          "adp": 18.11,
-          "slot": "RB"
-        },
-        {
-          "player_id": "p_8137",
-          "espn_id": "4426354",
-          "name": "George Pickens",
-          "position": "WR",
-          "nfl_team": "DAL",
-          "injury_status": null,
-          "projected": 239.25406404,
-          "adp": 28.22,
-          "slot": "WR"
-        },
-        {
-          "player_id": "p_6801",
-          "espn_id": "4239993",
-          "name": "Tee Higgins",
-          "position": "WR",
-          "nfl_team": "CIN",
-          "injury_status": "Questionable",
-          "projected": 218.92004347,
-          "adp": 51.1,
-          "slot": "WR"
-        },
-        {
-          "player_id": "p_8110",
-          "espn_id": "4242355",
-          "name": "Jake Ferguson",
-          "position": "TE",
-          "nfl_team": "DAL",
-          "injury_status": null,
-          "projected": 166.58216589,
-          "adp": 110.97,
-          "slot": "TE"
-        },
-        {
-          "player_id": "p_11786",
-          "espn_id": "4686361",
-          "name": "Cam Little",
-          "position": "K",
-          "nfl_team": "JAC",
-          "injury_status": null,
-          "projected": 146.93234861,
-          "adp": 141.15,
-          "slot": "K"
-        },
-        {
-          "player_id": "espn_-16006",
-          "espn_id": "-16006",
-          "name": "Cowboys D/ST",
-          "position": "D/ST",
-          "nfl_team": "DAL",
-          "injury_status": null,
-          "projected": 78.12499662,
-          "adp": 167.52,
-          "slot": "D/ST"
-        },
-        {
-          "player_id": "p_7543",
-          "espn_id": "4239996",
-          "name": "Travis Etienne",
-          "position": "RB",
-          "nfl_team": "NO",
-          "injury_status": null,
-          "projected": 246.69980163,
-          "adp": 40.59,
-          "slot": "FLEX"
-        }
-      ],
-      "bench": [
-        {
-          "player_id": "p_3294",
-          "espn_id": "2577417",
-          "name": "Dak Prescott",
-          "position": "QB",
-          "nfl_team": "DAL",
-          "injury_status": null,
-          "projected": 286.11130176,
-          "adp": 71.79
-        },
-        {
-          "player_id": "p_5947",
-          "espn_id": "3916433",
-          "name": "Jakobi Meyers",
-          "position": "WR",
-          "nfl_team": "JAC",
-          "injury_status": "Questionable",
-          "projected": 181.93871186,
-          "adp": 122.46
-        },
-        {
-          "player_id": "p_10232",
-          "espn_id": "4360761",
-          "name": "Michael Wilson",
-          "position": "WR",
-          "nfl_team": "ARI",
-          "injury_status": null,
-          "projected": 176.36272608,
-          "adp": 102.7
-        },
-        {
-          "player_id": "p_5001",
-          "espn_id": "3117256",
-          "name": "Dalton Schultz",
-          "position": "TE",
-          "nfl_team": "HOU",
-          "injury_status": null,
-          "projected": 132.94023087,
-          "adp": 168.89
-        },
-        {
-          "player_id": "p_11610",
-          "espn_id": "4569603",
-          "name": "Malik Washington",
-          "position": "WR",
-          "nfl_team": "MIA",
-          "injury_status": null,
-          "projected": 113.83694331,
-          "adp": 170.08
-        },
-        {
-          "player_id": "p_8132",
-          "espn_id": "4373626",
-          "name": "Tyler Allgeier",
-          "position": "RB",
-          "nfl_team": "ARI",
-          "injury_status": null,
-          "projected": 92.61906315,
-          "adp": 162.8
-        },
-        {
-          "player_id": "p_13305",
-          "espn_id": "4686658",
-          "name": "Mike Washington",
-          "position": "RB",
-          "nfl_team": "LV",
-          "injury_status": null,
-          "projected": 67.0721891,
-          "adp": 163.5
-        }
-      ],
-      "projected": 2030.9,
-      "unfilled": [],
-      "rank": 5
     },
     {
       "team_id": 16,
@@ -1735,8 +1411,8 @@
           "position": "D/ST",
           "nfl_team": "LA",
           "injury_status": null,
-          "projected": 124.44005893,
-          "adp": 102.29
+          "projected": 121.45471778,
+          "adp": 97.64
         },
         {
           "player_id": "p_11566",
@@ -1745,8 +1421,8 @@
           "position": "QB",
           "nfl_team": "WAS",
           "injury_status": null,
-          "projected": 317.48994413,
-          "adp": 53.13
+          "projected": 327.68133651,
+          "adp": 51.95
         },
         {
           "player_id": "p_12526",
@@ -1755,8 +1431,8 @@
           "position": "WR",
           "nfl_team": "CAR",
           "injury_status": null,
-          "projected": 236.15808312,
-          "adp": 42.2
+          "projected": 235.70917884,
+          "adp": 43.74
         },
         {
           "player_id": "p_12529",
@@ -1764,9 +1440,9 @@
           "name": "TreVeyon Henderson",
           "position": "RB",
           "nfl_team": "NE",
-          "injury_status": "Questionable",
-          "projected": 197.871002,
-          "adp": 77.38
+          "injury_status": "Out",
+          "projected": 153.80601446,
+          "adp": 82.51
         },
         {
           "player_id": "p_12533",
@@ -1774,9 +1450,9 @@
           "name": "Jacory Croskey-Merritt",
           "position": "RB",
           "nfl_team": "WAS",
-          "injury_status": "Questionable",
-          "projected": 159.03637485,
-          "adp": 136.12
+          "injury_status": null,
+          "projected": 158.6640516,
+          "adp": 139.63
         },
         {
           "player_id": "p_13298",
@@ -1785,8 +1461,8 @@
           "position": "WR",
           "nfl_team": "CLE",
           "injury_status": null,
-          "projected": 156.01090946,
-          "adp": 146.92
+          "projected": 156.13409266,
+          "adp": 150.08
         },
         {
           "player_id": "p_1945",
@@ -1795,8 +1471,8 @@
           "position": "K",
           "nfl_team": "PIT",
           "injury_status": null,
-          "projected": 142.75478025,
-          "adp": 164.83
+          "projected": 142.7547796,
+          "adp": 164.86
         },
         {
           "player_id": "p_5844",
@@ -1805,8 +1481,8 @@
           "position": "TE",
           "nfl_team": "MIN",
           "injury_status": null,
-          "projected": 158.91621814,
-          "adp": 152.72
+          "projected": 158.56013832,
+          "adp": 155.04
         },
         {
           "player_id": "p_6790",
@@ -1814,9 +1490,9 @@
           "name": "D'Andre Swift",
           "position": "RB",
           "nfl_team": "CHI",
-          "injury_status": "Questionable",
-          "projected": 210.47199177,
-          "adp": 51.64
+          "injury_status": null,
+          "projected": 209.9115737,
+          "adp": 54.9
         },
         {
           "player_id": "p_6819",
@@ -1824,9 +1500,9 @@
           "name": "Michael Pittman",
           "position": "WR",
           "nfl_team": "PIT",
-          "injury_status": "Questionable",
-          "projected": 197.17356957,
-          "adp": 89.52
+          "injury_status": null,
+          "projected": 197.1382672,
+          "adp": 92.53
         },
         {
           "player_id": "p_7526",
@@ -1835,8 +1511,8 @@
           "position": "WR",
           "nfl_team": "DEN",
           "injury_status": null,
-          "projected": 213.05733051,
-          "adp": 52.08
+          "projected": 213.58167341,
+          "adp": 55.27
         },
         {
           "player_id": "p_8121",
@@ -1845,8 +1521,8 @@
           "position": "WR",
           "nfl_team": "NE",
           "injury_status": null,
-          "projected": 150.613982,
-          "adp": 147.47
+          "projected": 149.71111113,
+          "adp": 149.54
         },
         {
           "player_id": "p_8151",
@@ -1855,8 +1531,8 @@
           "position": "RB",
           "nfl_team": "KC",
           "injury_status": null,
-          "projected": 273.0838511,
-          "adp": 24.81
+          "projected": 273.50455244,
+          "adp": 24.88
         },
         {
           "player_id": "p_8210",
@@ -1865,8 +1541,8 @@
           "position": "TE",
           "nfl_team": "WAS",
           "injury_status": null,
-          "projected": 120.94460133,
-          "adp": 170.21
+          "projected": 120.82825049,
+          "adp": 170.06
         },
         {
           "player_id": "p_9493",
@@ -1874,9 +1550,9 @@
           "name": "Puka Nacua",
           "position": "WR",
           "nfl_team": "LA",
-          "injury_status": "Questionable",
-          "projected": 353.58398975,
-          "adp": 5.3
+          "injury_status": null,
+          "projected": 353.71592721,
+          "adp": 5.18
         },
         {
           "player_id": "p_9758",
@@ -1885,8 +1561,8 @@
           "position": "QB",
           "nfl_team": "HOU",
           "injury_status": null,
-          "projected": 246.0558333,
-          "adp": 165.45
+          "projected": 254.37176656,
+          "adp": 165.27
         }
       ],
       "starters": [
@@ -1897,8 +1573,8 @@
           "position": "QB",
           "nfl_team": "WAS",
           "injury_status": null,
-          "projected": 317.48994413,
-          "adp": 53.13,
+          "projected": 327.68133651,
+          "adp": 51.95,
           "slot": "QB"
         },
         {
@@ -1908,8 +1584,8 @@
           "position": "RB",
           "nfl_team": "KC",
           "injury_status": null,
-          "projected": 273.0838511,
-          "adp": 24.81,
+          "projected": 273.50455244,
+          "adp": 24.88,
           "slot": "RB"
         },
         {
@@ -1918,9 +1594,9 @@
           "name": "D'Andre Swift",
           "position": "RB",
           "nfl_team": "CHI",
-          "injury_status": "Questionable",
-          "projected": 210.47199177,
-          "adp": 51.64,
+          "injury_status": null,
+          "projected": 209.9115737,
+          "adp": 54.9,
           "slot": "RB"
         },
         {
@@ -1929,9 +1605,9 @@
           "name": "Puka Nacua",
           "position": "WR",
           "nfl_team": "LA",
-          "injury_status": "Questionable",
-          "projected": 353.58398975,
-          "adp": 5.3,
+          "injury_status": null,
+          "projected": 353.71592721,
+          "adp": 5.18,
           "slot": "WR"
         },
         {
@@ -1941,8 +1617,8 @@
           "position": "WR",
           "nfl_team": "CAR",
           "injury_status": null,
-          "projected": 236.15808312,
-          "adp": 42.2,
+          "projected": 235.70917884,
+          "adp": 43.74,
           "slot": "WR"
         },
         {
@@ -1952,8 +1628,8 @@
           "position": "TE",
           "nfl_team": "MIN",
           "injury_status": null,
-          "projected": 158.91621814,
-          "adp": 152.72,
+          "projected": 158.56013832,
+          "adp": 155.04,
           "slot": "TE"
         },
         {
@@ -1963,8 +1639,8 @@
           "position": "K",
           "nfl_team": "PIT",
           "injury_status": null,
-          "projected": 142.75478025,
-          "adp": 164.83,
+          "projected": 142.7547796,
+          "adp": 164.86,
           "slot": "K"
         },
         {
@@ -1974,8 +1650,8 @@
           "position": "D/ST",
           "nfl_team": "LA",
           "injury_status": null,
-          "projected": 124.44005893,
-          "adp": 102.29,
+          "projected": 121.45471778,
+          "adp": 97.64,
           "slot": "D/ST"
         },
         {
@@ -1985,8 +1661,8 @@
           "position": "WR",
           "nfl_team": "DEN",
           "injury_status": null,
-          "projected": 213.05733051,
-          "adp": 52.08,
+          "projected": 213.58167341,
+          "adp": 55.27,
           "slot": "FLEX"
         }
       ],
@@ -1998,18 +1674,8 @@
           "position": "QB",
           "nfl_team": "HOU",
           "injury_status": null,
-          "projected": 246.0558333,
-          "adp": 165.45
-        },
-        {
-          "player_id": "p_12529",
-          "espn_id": "4432710",
-          "name": "TreVeyon Henderson",
-          "position": "RB",
-          "nfl_team": "NE",
-          "injury_status": "Questionable",
-          "projected": 197.871002,
-          "adp": 77.38
+          "projected": 254.37176656,
+          "adp": 165.27
         },
         {
           "player_id": "p_6819",
@@ -2017,9 +1683,9 @@
           "name": "Michael Pittman",
           "position": "WR",
           "nfl_team": "PIT",
-          "injury_status": "Questionable",
-          "projected": 197.17356957,
-          "adp": 89.52
+          "injury_status": null,
+          "projected": 197.1382672,
+          "adp": 92.53
         },
         {
           "player_id": "p_12533",
@@ -2027,9 +1693,9 @@
           "name": "Jacory Croskey-Merritt",
           "position": "RB",
           "nfl_team": "WAS",
-          "injury_status": "Questionable",
-          "projected": 159.03637485,
-          "adp": 136.12
+          "injury_status": null,
+          "projected": 158.6640516,
+          "adp": 139.63
         },
         {
           "player_id": "p_13298",
@@ -2038,8 +1704,18 @@
           "position": "WR",
           "nfl_team": "CLE",
           "injury_status": null,
-          "projected": 156.01090946,
-          "adp": 146.92
+          "projected": 156.13409266,
+          "adp": 150.08
+        },
+        {
+          "player_id": "p_12529",
+          "espn_id": "4432710",
+          "name": "TreVeyon Henderson",
+          "position": "RB",
+          "nfl_team": "NE",
+          "injury_status": "Out",
+          "projected": 153.80601446,
+          "adp": 82.51
         },
         {
           "player_id": "p_8121",
@@ -2048,8 +1724,8 @@
           "position": "WR",
           "nfl_team": "NE",
           "injury_status": null,
-          "projected": 150.613982,
-          "adp": 147.47
+          "projected": 149.71111113,
+          "adp": 149.54
         },
         {
           "player_id": "p_8210",
@@ -2058,13 +1734,13 @@
           "position": "TE",
           "nfl_team": "WAS",
           "injury_status": null,
-          "projected": 120.94460133,
-          "adp": 170.21
+          "projected": 120.82825049,
+          "adp": 170.06
         }
       ],
-      "projected": 2030.0,
+      "projected": 2036.9,
       "unfilled": [],
-      "rank": 6
+      "rank": 5
     },
     {
       "team_id": 6,
@@ -2079,8 +1755,8 @@
           "position": "D/ST",
           "nfl_team": "SEA",
           "injury_status": null,
-          "projected": 122.22190224,
-          "adp": 113.51
+          "projected": 118.58175297,
+          "adp": 110.21
         },
         {
           "player_id": "p_10219",
@@ -2089,8 +1765,8 @@
           "position": "RB",
           "nfl_team": "JAC",
           "injury_status": null,
-          "projected": 71.996165,
-          "adp": 164.37
+          "projected": 72.82594891,
+          "adp": 164.53
         },
         {
           "player_id": "p_10222",
@@ -2099,8 +1775,8 @@
           "position": "WR",
           "nfl_team": "GB",
           "injury_status": null,
-          "projected": 173.67592964,
-          "adp": 139.49
+          "projected": 173.88162812,
+          "adp": 141.28
         },
         {
           "player_id": "p_11560",
@@ -2109,8 +1785,8 @@
           "position": "QB",
           "nfl_team": "CHI",
           "injury_status": null,
-          "projected": 281.92016557,
-          "adp": 88.88
+          "projected": 290.89383075,
+          "adp": 86.7
         },
         {
           "player_id": "p_11581",
@@ -2119,8 +1795,8 @@
           "position": "RB",
           "nfl_team": "GB",
           "injury_status": null,
-          "projected": 134.78851378,
-          "adp": 115.46
+          "projected": 135.27894747,
+          "adp": 108.06
         },
         {
           "player_id": "p_11834",
@@ -2129,8 +1805,8 @@
           "position": "WR",
           "nfl_team": "NO",
           "injury_status": null,
-          "projected": 123.38166228,
-          "adp": 171.65
+          "projected": 123.33600183,
+          "adp": 171.34
         },
         {
           "player_id": "p_13279",
@@ -2138,9 +1814,9 @@
           "name": "Carnell Tate",
           "position": "WR",
           "nfl_team": "TEN",
-          "injury_status": "Questionable",
-          "projected": 202.23501788,
-          "adp": 77.79
+          "injury_status": null,
+          "projected": 202.26671962,
+          "adp": 83.37
         },
         {
           "player_id": "p_13281",
@@ -2149,8 +1825,8 @@
           "position": "WR",
           "nfl_team": "NO",
           "injury_status": "IR",
-          "projected": 99.79973661,
-          "adp": 168.05
+          "projected": 99.85746757,
+          "adp": 168.12
         },
         {
           "player_id": "p_2747",
@@ -2159,8 +1835,8 @@
           "position": "K",
           "nfl_team": "SEA",
           "injury_status": null,
-          "projected": 158.52167511,
-          "adp": 115.21
+          "projected": 158.53035362,
+          "adp": 113.02
         },
         {
           "player_id": "p_4217",
@@ -2168,9 +1844,9 @@
           "name": "George Kittle",
           "position": "TE",
           "nfl_team": "SF",
-          "injury_status": "Questionable",
-          "projected": 193.43652005,
-          "adp": 72.96
+          "injury_status": null,
+          "projected": 182.05670356,
+          "adp": 69.35
         },
         {
           "player_id": "p_5927",
@@ -2179,8 +1855,8 @@
           "position": "WR",
           "nfl_team": "WAS",
           "injury_status": null,
-          "projected": 218.20946591,
-          "adp": 60.87
+          "projected": 218.00637366,
+          "adp": 62.7
         },
         {
           "player_id": "p_7002",
@@ -2189,8 +1865,8 @@
           "position": "TE",
           "nfl_team": "NO",
           "injury_status": null,
-          "projected": 146.86665286,
-          "adp": 157.62
+          "projected": 146.78240162,
+          "adp": 157.42
         },
         {
           "player_id": "p_7564",
@@ -2198,19 +1874,9 @@
           "name": "Ja'Marr Chase",
           "position": "WR",
           "nfl_team": "CIN",
-          "injury_status": "Questionable",
-          "projected": 336.94557365,
-          "adp": 4.26
-        },
-        {
-          "player_id": "p_7600",
-          "espn_id": "4361411",
-          "name": "Pat Freiermuth",
-          "position": "TE",
-          "nfl_team": "PIT",
           "injury_status": null,
-          "projected": 136.27407127,
-          "adp": 169.72
+          "projected": 337.37027894,
+          "adp": 4.31
         },
         {
           "player_id": "p_7611",
@@ -2219,8 +1885,8 @@
           "position": "RB",
           "nfl_team": "NE",
           "injury_status": null,
-          "projected": 203.34139714,
-          "adp": 78.1
+          "projected": 240.34414329,
+          "adp": 78.27
         },
         {
           "player_id": "p_8155",
@@ -2228,9 +1894,19 @@
           "name": "Breece Hall",
           "position": "RB",
           "nfl_team": "NYJ",
-          "injury_status": "Questionable",
-          "projected": 274.47317751,
-          "adp": 35.95
+          "injury_status": null,
+          "projected": 274.79465667,
+          "adp": 35.96
+        },
+        {
+          "player_id": "p_8180",
+          "espn_id": "4382466",
+          "name": "Jalen Nailor",
+          "position": "WR",
+          "nfl_team": "LV",
+          "injury_status": null,
+          "projected": 124.94579706,
+          "adp": 171.04
         },
         {
           "player_id": "p_8183",
@@ -2239,8 +1915,8 @@
           "position": "QB",
           "nfl_team": "SF",
           "injury_status": null,
-          "projected": 292.04553947,
-          "adp": 110.33
+          "projected": 301.11142884,
+          "adp": 109.0
         }
       ],
       "starters": [
@@ -2251,8 +1927,8 @@
           "position": "QB",
           "nfl_team": "SF",
           "injury_status": null,
-          "projected": 292.04553947,
-          "adp": 110.33,
+          "projected": 301.11142884,
+          "adp": 109.0,
           "slot": "QB"
         },
         {
@@ -2261,9 +1937,9 @@
           "name": "Breece Hall",
           "position": "RB",
           "nfl_team": "NYJ",
-          "injury_status": "Questionable",
-          "projected": 274.47317751,
-          "adp": 35.95,
+          "injury_status": null,
+          "projected": 274.79465667,
+          "adp": 35.96,
           "slot": "RB"
         },
         {
@@ -2273,8 +1949,8 @@
           "position": "RB",
           "nfl_team": "NE",
           "injury_status": null,
-          "projected": 203.34139714,
-          "adp": 78.1,
+          "projected": 240.34414329,
+          "adp": 78.27,
           "slot": "RB"
         },
         {
@@ -2283,9 +1959,9 @@
           "name": "Ja'Marr Chase",
           "position": "WR",
           "nfl_team": "CIN",
-          "injury_status": "Questionable",
-          "projected": 336.94557365,
-          "adp": 4.26,
+          "injury_status": null,
+          "projected": 337.37027894,
+          "adp": 4.31,
           "slot": "WR"
         },
         {
@@ -2295,8 +1971,8 @@
           "position": "WR",
           "nfl_team": "WAS",
           "injury_status": null,
-          "projected": 218.20946591,
-          "adp": 60.87,
+          "projected": 218.00637366,
+          "adp": 62.7,
           "slot": "WR"
         },
         {
@@ -2305,9 +1981,9 @@
           "name": "George Kittle",
           "position": "TE",
           "nfl_team": "SF",
-          "injury_status": "Questionable",
-          "projected": 193.43652005,
-          "adp": 72.96,
+          "injury_status": null,
+          "projected": 182.05670356,
+          "adp": 69.35,
           "slot": "TE"
         },
         {
@@ -2317,8 +1993,8 @@
           "position": "K",
           "nfl_team": "SEA",
           "injury_status": null,
-          "projected": 158.52167511,
-          "adp": 115.21,
+          "projected": 158.53035362,
+          "adp": 113.02,
           "slot": "K"
         },
         {
@@ -2328,8 +2004,8 @@
           "position": "D/ST",
           "nfl_team": "SEA",
           "injury_status": null,
-          "projected": 122.22190224,
-          "adp": 113.51,
+          "projected": 118.58175297,
+          "adp": 110.21,
           "slot": "D/ST"
         },
         {
@@ -2338,9 +2014,9 @@
           "name": "Carnell Tate",
           "position": "WR",
           "nfl_team": "TEN",
-          "injury_status": "Questionable",
-          "projected": 202.23501788,
-          "adp": 77.79,
+          "injury_status": null,
+          "projected": 202.26671962,
+          "adp": 83.37,
           "slot": "FLEX"
         }
       ],
@@ -2352,8 +2028,8 @@
           "position": "QB",
           "nfl_team": "CHI",
           "injury_status": null,
-          "projected": 281.92016557,
-          "adp": 88.88
+          "projected": 290.89383075,
+          "adp": 86.7
         },
         {
           "player_id": "p_10222",
@@ -2362,8 +2038,8 @@
           "position": "WR",
           "nfl_team": "GB",
           "injury_status": null,
-          "projected": 173.67592964,
-          "adp": 139.49
+          "projected": 173.88162812,
+          "adp": 141.28
         },
         {
           "player_id": "p_7002",
@@ -2372,18 +2048,8 @@
           "position": "TE",
           "nfl_team": "NO",
           "injury_status": null,
-          "projected": 146.86665286,
-          "adp": 157.62
-        },
-        {
-          "player_id": "p_7600",
-          "espn_id": "4361411",
-          "name": "Pat Freiermuth",
-          "position": "TE",
-          "nfl_team": "PIT",
-          "injury_status": null,
-          "projected": 136.27407127,
-          "adp": 169.72
+          "projected": 146.78240162,
+          "adp": 157.42
         },
         {
           "player_id": "p_11581",
@@ -2392,8 +2058,18 @@
           "position": "RB",
           "nfl_team": "GB",
           "injury_status": null,
-          "projected": 134.78851378,
-          "adp": 115.46
+          "projected": 135.27894747,
+          "adp": 108.06
+        },
+        {
+          "player_id": "p_8180",
+          "espn_id": "4382466",
+          "name": "Jalen Nailor",
+          "position": "WR",
+          "nfl_team": "LV",
+          "injury_status": null,
+          "projected": 124.94579706,
+          "adp": 171.04
         },
         {
           "player_id": "p_11834",
@@ -2402,8 +2078,8 @@
           "position": "WR",
           "nfl_team": "NO",
           "injury_status": null,
-          "projected": 123.38166228,
-          "adp": 171.65
+          "projected": 123.33600183,
+          "adp": 171.34
         },
         {
           "player_id": "p_13281",
@@ -2412,8 +2088,8 @@
           "position": "WR",
           "nfl_team": "NO",
           "injury_status": "IR",
-          "projected": 99.79973661,
-          "adp": 168.05
+          "projected": 99.85746757,
+          "adp": 168.12
         },
         {
           "player_id": "p_10219",
@@ -2422,357 +2098,367 @@
           "position": "RB",
           "nfl_team": "JAC",
           "injury_status": null,
-          "projected": 71.996165,
-          "adp": 164.37
+          "projected": 72.82594891,
+          "adp": 164.53
         }
       ],
-      "projected": 2001.4,
+      "projected": 2033.1,
       "unfilled": [],
-      "rank": 7
+      "rank": 6
     },
     {
-      "team_id": 12,
-      "name": "Robert's Rowdy Team",
-      "owner": "Robert Zamani",
+      "team_id": 10,
+      "name": "OUCH! Dak Hurts dude!",
+      "owner": "Mateen Mastory",
       "is_me": false,
       "players": [
         {
-          "player_id": "espn_-16005",
-          "espn_id": "-16005",
-          "name": "Browns D/ST",
+          "player_id": "espn_-16006",
+          "espn_id": "-16006",
+          "name": "Cowboys D/ST",
           "position": "D/ST",
-          "nfl_team": "CLE",
+          "nfl_team": "DAL",
           "injury_status": null,
-          "projected": 103.95198763,
-          "adp": 158.51
+          "projected": 76.49346512,
+          "adp": 167.38
         },
         {
-          "player_id": "p_11628",
-          "espn_id": "4432708",
-          "name": "Marvin Harrison",
+          "player_id": "p_10232",
+          "espn_id": "4360761",
+          "name": "Michael Wilson",
           "position": "WR",
           "nfl_team": "ARI",
           "injury_status": null,
-          "projected": 193.61006177,
-          "adp": 78.54
+          "projected": 177.01816656,
+          "adp": 107.91
         },
         {
-          "player_id": "p_11632",
-          "espn_id": "4595348",
-          "name": "Malik Nabers",
+          "player_id": "p_11786",
+          "espn_id": "4686361",
+          "name": "Cam Little",
+          "position": "K",
+          "nfl_team": "JAC",
+          "injury_status": null,
+          "projected": 146.93234928,
+          "adp": 141.03
+        },
+        {
+          "player_id": "p_12507",
+          "espn_id": "4685382",
+          "name": "Omarion Hampton",
+          "position": "RB",
+          "nfl_team": "LAC",
+          "injury_status": null,
+          "projected": 261.83952372,
+          "adp": 18.14
+        },
+        {
+          "player_id": "p_13285",
+          "espn_id": "4682648",
+          "name": "Malachi Fields",
           "position": "WR",
           "nfl_team": "NYG",
-          "injury_status": "Questionable",
-          "projected": 243.8874967,
-          "adp": 35.04
-        },
-        {
-          "player_id": "p_12015",
-          "espn_id": "4574716",
-          "name": "Harrison Mevis",
-          "position": "K",
-          "nfl_team": "LA",
           "injury_status": null,
-          "projected": 159.42880533,
-          "adp": 135.19
+          "projected": 104.37502765,
+          "adp": 170.88
         },
         {
-          "player_id": "p_12489",
-          "espn_id": "4568490",
-          "name": "RJ Harvey",
+          "player_id": "p_13305",
+          "espn_id": "4686658",
+          "name": "Mike Washington",
           "position": "RB",
-          "nfl_team": "DEN",
+          "nfl_team": "LV",
           "injury_status": null,
-          "projected": 149.37202933,
-          "adp": 125.59
+          "projected": 67.62315248,
+          "adp": 163.81
         },
         {
-          "player_id": "p_12506",
-          "espn_id": "5083076",
-          "name": "Harold Fannin",
+          "player_id": "p_3294",
+          "espn_id": "2577417",
+          "name": "Dak Prescott",
+          "position": "QB",
+          "nfl_team": "DAL",
+          "injury_status": null,
+          "projected": 295.54218395,
+          "adp": 72.78
+        },
+        {
+          "player_id": "p_3321",
+          "espn_id": "3116406",
+          "name": "Tyreek Hill",
+          "position": "WR",
+          "nfl_team": null,
+          "injury_status": "",
+          "projected": null,
+          "adp": null
+        },
+        {
+          "player_id": "p_5001",
+          "espn_id": "3117256",
+          "name": "Dalton Schultz",
           "position": "TE",
-          "nfl_team": "CLE",
+          "nfl_team": "HOU",
           "injury_status": null,
-          "projected": 188.86833095,
-          "adp": 70.5
+          "projected": 133.0694902,
+          "adp": 168.78
         },
         {
-          "player_id": "p_12530",
-          "espn_id": "4685415",
-          "name": "Travis Hunter",
+          "player_id": "p_5947",
+          "espn_id": "3916433",
+          "name": "Jakobi Meyers",
           "position": "WR",
           "nfl_team": "JAC",
           "injury_status": null,
-          "projected": 103.57323334,
-          "adp": 118.67
+          "projected": 181.90970941,
+          "adp": 122.56
         },
         {
-          "player_id": "p_12534",
-          "espn_id": "4608686",
-          "name": "Kyle Monangai",
-          "position": "RB",
-          "nfl_team": "CHI",
-          "injury_status": "Questionable",
-          "projected": 175.18508724,
-          "adp": 123.61
-        },
-        {
-          "player_id": "p_13286",
-          "espn_id": "4685512",
-          "name": "Jadarian Price",
-          "position": "RB",
-          "nfl_team": "SEA",
-          "injury_status": null,
-          "projected": 194.0616339,
-          "adp": 66.75
-        },
-        {
-          "player_id": "p_13417",
-          "espn_id": "4710714",
-          "name": "De'Zhaun Stribling",
+          "player_id": "p_6801",
+          "espn_id": "4239993",
+          "name": "Tee Higgins",
           "position": "WR",
-          "nfl_team": "SF",
-          "injury_status": "Questionable",
-          "projected": 160.20093775,
-          "adp": 138.34
-        },
-        {
-          "player_id": "p_4034",
-          "espn_id": "3117251",
-          "name": "Christian McCaffrey",
-          "position": "RB",
-          "nfl_team": "SF",
-          "injury_status": "Questionable",
-          "projected": 341.88631234,
-          "adp": 7.71
-        },
-        {
-          "player_id": "p_4983",
-          "espn_id": "3915416",
-          "name": "DJ Moore",
-          "position": "WR",
-          "nfl_team": "BUF",
+          "nfl_team": "CIN",
           "injury_status": null,
-          "projected": 209.72858126,
-          "adp": 60.16
+          "projected": 219.20729913,
+          "adp": 53.71
         },
         {
-          "player_id": "p_6797",
-          "espn_id": "4038941",
-          "name": "Justin Herbert",
+          "player_id": "p_6904",
+          "espn_id": "4040715",
+          "name": "Jalen Hurts",
           "position": "QB",
-          "nfl_team": "LAC",
+          "nfl_team": "PHI",
           "injury_status": null,
-          "projected": 283.57791274,
-          "adp": 85.45
+          "projected": 329.4002891,
+          "adp": 53.69
         },
         {
-          "player_id": "p_8131",
-          "espn_id": "4361050",
-          "name": "Isaiah Likely",
-          "position": "TE",
-          "nfl_team": "NYG",
-          "injury_status": null,
-          "projected": 155.09309005,
-          "adp": 122.14
-        },
-        {
-          "player_id": "p_8144",
-          "espn_id": "4361370",
-          "name": "Chris Olave",
-          "position": "WR",
+          "player_id": "p_7543",
+          "espn_id": "4239996",
+          "name": "Travis Etienne",
+          "position": "RB",
           "nfl_team": "NO",
           "injury_status": null,
-          "projected": 249.81226241,
-          "adp": 29.35
+          "projected": 244.67087726,
+          "adp": 40.28
         },
         {
-          "player_id": "p_9500",
-          "espn_id": "4688813",
-          "name": "Josh Downs",
+          "player_id": "p_8110",
+          "espn_id": "4242355",
+          "name": "Jake Ferguson",
+          "position": "TE",
+          "nfl_team": "DAL",
+          "injury_status": null,
+          "projected": 166.98124235,
+          "adp": 117.02
+        },
+        {
+          "player_id": "p_8132",
+          "espn_id": "4373626",
+          "name": "Tyler Allgeier",
+          "position": "RB",
+          "nfl_team": "ARI",
+          "injury_status": null,
+          "projected": 93.59575258,
+          "adp": 163.47
+        },
+        {
+          "player_id": "p_8137",
+          "espn_id": "4426354",
+          "name": "George Pickens",
           "position": "WR",
-          "nfl_team": "IND",
-          "injury_status": "Questionable",
-          "projected": 157.67928759,
-          "adp": 136.45
+          "nfl_team": "DAL",
+          "injury_status": null,
+          "projected": 239.93130751,
+          "adp": 28.36
+        },
+        {
+          "player_id": "p_9509",
+          "espn_id": "4430807",
+          "name": "Bijan Robinson",
+          "position": "RB",
+          "nfl_team": "ATL",
+          "injury_status": null,
+          "projected": 346.36364766,
+          "adp": 2.5
         }
       ],
       "starters": [
         {
-          "player_id": "p_6797",
-          "espn_id": "4038941",
-          "name": "Justin Herbert",
+          "player_id": "p_6904",
+          "espn_id": "4040715",
+          "name": "Jalen Hurts",
           "position": "QB",
-          "nfl_team": "LAC",
+          "nfl_team": "PHI",
           "injury_status": null,
-          "projected": 283.57791274,
-          "adp": 85.45,
+          "projected": 329.4002891,
+          "adp": 53.69,
           "slot": "QB"
         },
         {
-          "player_id": "p_4034",
-          "espn_id": "3117251",
-          "name": "Christian McCaffrey",
+          "player_id": "p_9509",
+          "espn_id": "4430807",
+          "name": "Bijan Robinson",
           "position": "RB",
-          "nfl_team": "SF",
-          "injury_status": "Questionable",
-          "projected": 341.88631234,
-          "adp": 7.71,
+          "nfl_team": "ATL",
+          "injury_status": null,
+          "projected": 346.36364766,
+          "adp": 2.5,
           "slot": "RB"
         },
         {
-          "player_id": "p_13286",
-          "espn_id": "4685512",
-          "name": "Jadarian Price",
+          "player_id": "p_12507",
+          "espn_id": "4685382",
+          "name": "Omarion Hampton",
           "position": "RB",
-          "nfl_team": "SEA",
+          "nfl_team": "LAC",
           "injury_status": null,
-          "projected": 194.0616339,
-          "adp": 66.75,
+          "projected": 261.83952372,
+          "adp": 18.14,
           "slot": "RB"
         },
         {
-          "player_id": "p_8144",
-          "espn_id": "4361370",
-          "name": "Chris Olave",
+          "player_id": "p_8137",
+          "espn_id": "4426354",
+          "name": "George Pickens",
           "position": "WR",
-          "nfl_team": "NO",
+          "nfl_team": "DAL",
           "injury_status": null,
-          "projected": 249.81226241,
-          "adp": 29.35,
+          "projected": 239.93130751,
+          "adp": 28.36,
           "slot": "WR"
         },
         {
-          "player_id": "p_11632",
-          "espn_id": "4595348",
-          "name": "Malik Nabers",
+          "player_id": "p_6801",
+          "espn_id": "4239993",
+          "name": "Tee Higgins",
           "position": "WR",
-          "nfl_team": "NYG",
-          "injury_status": "Questionable",
-          "projected": 243.8874967,
-          "adp": 35.04,
+          "nfl_team": "CIN",
+          "injury_status": null,
+          "projected": 219.20729913,
+          "adp": 53.71,
           "slot": "WR"
         },
         {
-          "player_id": "p_12506",
-          "espn_id": "5083076",
-          "name": "Harold Fannin",
+          "player_id": "p_8110",
+          "espn_id": "4242355",
+          "name": "Jake Ferguson",
           "position": "TE",
-          "nfl_team": "CLE",
+          "nfl_team": "DAL",
           "injury_status": null,
-          "projected": 188.86833095,
-          "adp": 70.5,
+          "projected": 166.98124235,
+          "adp": 117.02,
           "slot": "TE"
         },
         {
-          "player_id": "p_12015",
-          "espn_id": "4574716",
-          "name": "Harrison Mevis",
+          "player_id": "p_11786",
+          "espn_id": "4686361",
+          "name": "Cam Little",
           "position": "K",
-          "nfl_team": "LA",
+          "nfl_team": "JAC",
           "injury_status": null,
-          "projected": 159.42880533,
-          "adp": 135.19,
+          "projected": 146.93234928,
+          "adp": 141.03,
           "slot": "K"
         },
         {
-          "player_id": "espn_-16005",
-          "espn_id": "-16005",
-          "name": "Browns D/ST",
+          "player_id": "espn_-16006",
+          "espn_id": "-16006",
+          "name": "Cowboys D/ST",
           "position": "D/ST",
-          "nfl_team": "CLE",
+          "nfl_team": "DAL",
           "injury_status": null,
-          "projected": 103.95198763,
-          "adp": 158.51,
+          "projected": 76.49346512,
+          "adp": 167.38,
           "slot": "D/ST"
         },
         {
-          "player_id": "p_4983",
-          "espn_id": "3915416",
-          "name": "DJ Moore",
-          "position": "WR",
-          "nfl_team": "BUF",
+          "player_id": "p_7543",
+          "espn_id": "4239996",
+          "name": "Travis Etienne",
+          "position": "RB",
+          "nfl_team": "NO",
           "injury_status": null,
-          "projected": 209.72858126,
-          "adp": 60.16,
+          "projected": 244.67087726,
+          "adp": 40.28,
           "slot": "FLEX"
         }
       ],
       "bench": [
         {
-          "player_id": "p_11628",
-          "espn_id": "4432708",
-          "name": "Marvin Harrison",
-          "position": "WR",
-          "nfl_team": "ARI",
+          "player_id": "p_3294",
+          "espn_id": "2577417",
+          "name": "Dak Prescott",
+          "position": "QB",
+          "nfl_team": "DAL",
           "injury_status": null,
-          "projected": 193.61006177,
-          "adp": 78.54
+          "projected": 295.54218395,
+          "adp": 72.78
         },
         {
-          "player_id": "p_12534",
-          "espn_id": "4608686",
-          "name": "Kyle Monangai",
-          "position": "RB",
-          "nfl_team": "CHI",
-          "injury_status": "Questionable",
-          "projected": 175.18508724,
-          "adp": 123.61
-        },
-        {
-          "player_id": "p_13417",
-          "espn_id": "4710714",
-          "name": "De'Zhaun Stribling",
-          "position": "WR",
-          "nfl_team": "SF",
-          "injury_status": "Questionable",
-          "projected": 160.20093775,
-          "adp": 138.34
-        },
-        {
-          "player_id": "p_9500",
-          "espn_id": "4688813",
-          "name": "Josh Downs",
-          "position": "WR",
-          "nfl_team": "IND",
-          "injury_status": "Questionable",
-          "projected": 157.67928759,
-          "adp": 136.45
-        },
-        {
-          "player_id": "p_8131",
-          "espn_id": "4361050",
-          "name": "Isaiah Likely",
-          "position": "TE",
-          "nfl_team": "NYG",
-          "injury_status": null,
-          "projected": 155.09309005,
-          "adp": 122.14
-        },
-        {
-          "player_id": "p_12489",
-          "espn_id": "4568490",
-          "name": "RJ Harvey",
-          "position": "RB",
-          "nfl_team": "DEN",
-          "injury_status": null,
-          "projected": 149.37202933,
-          "adp": 125.59
-        },
-        {
-          "player_id": "p_12530",
-          "espn_id": "4685415",
-          "name": "Travis Hunter",
+          "player_id": "p_5947",
+          "espn_id": "3916433",
+          "name": "Jakobi Meyers",
           "position": "WR",
           "nfl_team": "JAC",
           "injury_status": null,
-          "projected": 103.57323334,
-          "adp": 118.67
+          "projected": 181.90970941,
+          "adp": 122.56
+        },
+        {
+          "player_id": "p_10232",
+          "espn_id": "4360761",
+          "name": "Michael Wilson",
+          "position": "WR",
+          "nfl_team": "ARI",
+          "injury_status": null,
+          "projected": 177.01816656,
+          "adp": 107.91
+        },
+        {
+          "player_id": "p_5001",
+          "espn_id": "3117256",
+          "name": "Dalton Schultz",
+          "position": "TE",
+          "nfl_team": "HOU",
+          "injury_status": null,
+          "projected": 133.0694902,
+          "adp": 168.78
+        },
+        {
+          "player_id": "p_13285",
+          "espn_id": "4682648",
+          "name": "Malachi Fields",
+          "position": "WR",
+          "nfl_team": "NYG",
+          "injury_status": null,
+          "projected": 104.37502765,
+          "adp": 170.88
+        },
+        {
+          "player_id": "p_8132",
+          "espn_id": "4373626",
+          "name": "Tyler Allgeier",
+          "position": "RB",
+          "nfl_team": "ARI",
+          "injury_status": null,
+          "projected": 93.59575258,
+          "adp": 163.47
+        },
+        {
+          "player_id": "p_13305",
+          "espn_id": "4686658",
+          "name": "Mike Washington",
+          "position": "RB",
+          "nfl_team": "LV",
+          "injury_status": null,
+          "projected": 67.62315248,
+          "adp": 163.81
         }
       ],
-      "projected": 1975.2,
+      "projected": 2031.8,
       "unfilled": [],
-      "rank": 8
+      "rank": 7
     },
     {
       "team_id": 1,
@@ -2787,8 +2473,8 @@
           "position": "D/ST",
           "nfl_team": "PHI",
           "injury_status": null,
-          "projected": 107.07150523,
-          "adp": 138.31
+          "projected": 106.32813379,
+          "adp": 136.38
         },
         {
           "player_id": "espn_-16024",
@@ -2797,8 +2483,8 @@
           "position": "D/ST",
           "nfl_team": "LAC",
           "injury_status": null,
-          "projected": 94.83224741,
-          "adp": 165.66
+          "projected": 94.23547263,
+          "adp": 164.45
         },
         {
           "player_id": "p_11586",
@@ -2807,8 +2493,8 @@
           "position": "RB",
           "nfl_team": "LA",
           "injury_status": null,
-          "projected": 159.28790712,
-          "adp": 125.48
+          "projected": 157.88217516,
+          "adp": 129.61
         },
         {
           "player_id": "p_11618",
@@ -2816,9 +2502,9 @@
           "name": "Jalen McMillan",
           "position": "WR",
           "nfl_team": "TB",
-          "injury_status": "Questionable",
-          "projected": 132.86499694,
-          "adp": 163.67
+          "injury_status": "Out",
+          "projected": 124.53271526,
+          "adp": 163.27
         },
         {
           "player_id": "p_12512",
@@ -2827,8 +2513,8 @@
           "position": "RB",
           "nfl_team": "CLE",
           "injury_status": null,
-          "projected": 226.74554228,
-          "adp": 48.54
+          "projected": 226.7626569,
+          "adp": 49.06
         },
         {
           "player_id": "p_12711",
@@ -2837,8 +2523,8 @@
           "position": "K",
           "nfl_team": "BAL",
           "injury_status": null,
-          "projected": 145.93463581,
-          "adp": 165.66
+          "projected": 145.93463325,
+          "adp": 165.3
         },
         {
           "player_id": "p_5849",
@@ -2847,8 +2533,8 @@
           "position": "QB",
           "nfl_team": "MIN",
           "injury_status": null,
-          "projected": 283.38791842,
-          "adp": 137.17
+          "projected": 293.02397984,
+          "adp": 138.15
         },
         {
           "player_id": "p_5892",
@@ -2857,8 +2543,8 @@
           "position": "RB",
           "nfl_team": "HOU",
           "injury_status": null,
-          "projected": 199.68127698,
-          "adp": 61.4
+          "projected": 199.75072498,
+          "adp": 64.76
         },
         {
           "player_id": "p_6783",
@@ -2867,8 +2553,8 @@
           "position": "WR",
           "nfl_team": "CLE",
           "injury_status": null,
-          "projected": 139.81347975,
-          "adp": 168.9
+          "projected": 139.93256616,
+          "adp": 168.65
         },
         {
           "player_id": "p_6806",
@@ -2877,8 +2563,8 @@
           "position": "RB",
           "nfl_team": "DEN",
           "injury_status": null,
-          "projected": 174.78613347,
-          "adp": 111.49
+          "projected": 174.82082345,
+          "adp": 114.02
         },
         {
           "player_id": "p_7523",
@@ -2887,8 +2573,8 @@
           "position": "QB",
           "nfl_team": "JAC",
           "injury_status": null,
-          "projected": 289.54865055,
-          "adp": 101.2
+          "projected": 299.22762666,
+          "adp": 104.75
         },
         {
           "player_id": "p_7553",
@@ -2897,8 +2583,8 @@
           "position": "TE",
           "nfl_team": "ATL",
           "injury_status": null,
-          "projected": 185.14866572,
-          "adp": 68.66
+          "projected": 180.74757672,
+          "adp": 69.53
         },
         {
           "player_id": "p_7569",
@@ -2907,8 +2593,8 @@
           "position": "WR",
           "nfl_team": "HOU",
           "injury_status": null,
-          "projected": 248.22187065,
-          "adp": 25.7
+          "projected": 248.60905474,
+          "adp": 26.14
         },
         {
           "player_id": "p_8130",
@@ -2917,8 +2603,8 @@
           "position": "TE",
           "nfl_team": "ARI",
           "injury_status": null,
-          "projected": 241.65202394,
-          "adp": 23.01
+          "projected": 242.39311601,
+          "adp": 23.32
         },
         {
           "player_id": "p_8142",
@@ -2927,8 +2613,8 @@
           "position": "WR",
           "nfl_team": "IND",
           "injury_status": null,
-          "projected": 185.42948979,
-          "adp": 108.11
+          "projected": 185.29021519,
+          "adp": 107.02
         },
         {
           "player_id": "p_9488",
@@ -2937,8 +2623,8 @@
           "position": "WR",
           "nfl_team": "SEA",
           "injury_status": null,
-          "projected": 326.66995964,
-          "adp": 6.3
+          "projected": 324.14569955,
+          "adp": 6.45
         },
         {
           "player_id": "p_9502",
@@ -2948,7 +2634,7 @@
           "nfl_team": "HOU",
           "injury_status": "IR",
           "projected": 0.0,
-          "adp": 164.63
+          "adp": 164.77
         }
       ],
       "starters": [
@@ -2959,8 +2645,8 @@
           "position": "QB",
           "nfl_team": "JAC",
           "injury_status": null,
-          "projected": 289.54865055,
-          "adp": 101.2,
+          "projected": 299.22762666,
+          "adp": 104.75,
           "slot": "QB"
         },
         {
@@ -2970,8 +2656,8 @@
           "position": "RB",
           "nfl_team": "CLE",
           "injury_status": null,
-          "projected": 226.74554228,
-          "adp": 48.54,
+          "projected": 226.7626569,
+          "adp": 49.06,
           "slot": "RB"
         },
         {
@@ -2981,8 +2667,8 @@
           "position": "RB",
           "nfl_team": "HOU",
           "injury_status": null,
-          "projected": 199.68127698,
-          "adp": 61.4,
+          "projected": 199.75072498,
+          "adp": 64.76,
           "slot": "RB"
         },
         {
@@ -2992,8 +2678,8 @@
           "position": "WR",
           "nfl_team": "SEA",
           "injury_status": null,
-          "projected": 326.66995964,
-          "adp": 6.3,
+          "projected": 324.14569955,
+          "adp": 6.45,
           "slot": "WR"
         },
         {
@@ -3003,8 +2689,8 @@
           "position": "WR",
           "nfl_team": "HOU",
           "injury_status": null,
-          "projected": 248.22187065,
-          "adp": 25.7,
+          "projected": 248.60905474,
+          "adp": 26.14,
           "slot": "WR"
         },
         {
@@ -3014,8 +2700,8 @@
           "position": "TE",
           "nfl_team": "ARI",
           "injury_status": null,
-          "projected": 241.65202394,
-          "adp": 23.01,
+          "projected": 242.39311601,
+          "adp": 23.32,
           "slot": "TE"
         },
         {
@@ -3025,8 +2711,8 @@
           "position": "K",
           "nfl_team": "BAL",
           "injury_status": null,
-          "projected": 145.93463581,
-          "adp": 165.66,
+          "projected": 145.93463325,
+          "adp": 165.3,
           "slot": "K"
         },
         {
@@ -3036,8 +2722,8 @@
           "position": "D/ST",
           "nfl_team": "PHI",
           "injury_status": null,
-          "projected": 107.07150523,
-          "adp": 138.31,
+          "projected": 106.32813379,
+          "adp": 136.38,
           "slot": "D/ST"
         },
         {
@@ -3047,8 +2733,8 @@
           "position": "WR",
           "nfl_team": "IND",
           "injury_status": null,
-          "projected": 185.42948979,
-          "adp": 108.11,
+          "projected": 185.29021519,
+          "adp": 107.02,
           "slot": "FLEX"
         }
       ],
@@ -3060,8 +2746,8 @@
           "position": "QB",
           "nfl_team": "MIN",
           "injury_status": null,
-          "projected": 283.38791842,
-          "adp": 137.17
+          "projected": 293.02397984,
+          "adp": 138.15
         },
         {
           "player_id": "p_7553",
@@ -3070,8 +2756,8 @@
           "position": "TE",
           "nfl_team": "ATL",
           "injury_status": null,
-          "projected": 185.14866572,
-          "adp": 68.66
+          "projected": 180.74757672,
+          "adp": 69.53
         },
         {
           "player_id": "p_6806",
@@ -3080,8 +2766,8 @@
           "position": "RB",
           "nfl_team": "DEN",
           "injury_status": null,
-          "projected": 174.78613347,
-          "adp": 111.49
+          "projected": 174.82082345,
+          "adp": 114.02
         },
         {
           "player_id": "p_11586",
@@ -3090,8 +2776,8 @@
           "position": "RB",
           "nfl_team": "LA",
           "injury_status": null,
-          "projected": 159.28790712,
-          "adp": 125.48
+          "projected": 157.88217516,
+          "adp": 129.61
         },
         {
           "player_id": "p_6783",
@@ -3100,8 +2786,8 @@
           "position": "WR",
           "nfl_team": "CLE",
           "injury_status": null,
-          "projected": 139.81347975,
-          "adp": 168.9
+          "projected": 139.93256616,
+          "adp": 168.65
         },
         {
           "player_id": "p_11618",
@@ -3109,9 +2795,9 @@
           "name": "Jalen McMillan",
           "position": "WR",
           "nfl_team": "TB",
-          "injury_status": "Questionable",
-          "projected": 132.86499694,
-          "adp": 163.67
+          "injury_status": "Out",
+          "projected": 124.53271526,
+          "adp": 163.27
         },
         {
           "player_id": "espn_-16024",
@@ -3120,8 +2806,8 @@
           "position": "D/ST",
           "nfl_team": "LAC",
           "injury_status": null,
-          "projected": 94.83224741,
-          "adp": 165.66
+          "projected": 94.23547263,
+          "adp": 164.45
         },
         {
           "player_id": "p_9502",
@@ -3131,356 +2817,356 @@
           "nfl_team": "HOU",
           "injury_status": "IR",
           "projected": 0.0,
-          "adp": 164.63
+          "adp": 164.77
         }
       ],
-      "projected": 1971.0,
+      "projected": 1978.4,
       "unfilled": [],
-      "rank": 9
+      "rank": 8
     },
     {
-      "team_id": 14,
-      "name": "JT runs this league",
-      "owner": "Soyombo Myagmarjav",
+      "team_id": 12,
+      "name": "Robert's Rowdy Team",
+      "owner": "Robert Zamani",
       "is_me": false,
       "players": [
         {
-          "player_id": "espn_-16030",
-          "espn_id": "-16030",
-          "name": "Jaguars D/ST",
+          "player_id": "espn_-16005",
+          "espn_id": "-16005",
+          "name": "Browns D/ST",
           "position": "D/ST",
+          "nfl_team": "CLE",
+          "injury_status": null,
+          "projected": 103.86984184,
+          "adp": 157.15
+        },
+        {
+          "player_id": "espn_4685415",
+          "espn_id": "4685415",
+          "name": "Travis Hunter",
+          "position": "WR",
           "nfl_team": "JAC",
           "injury_status": null,
-          "projected": 78.44575699,
-          "adp": 167.96
+          "projected": 103.02100634,
+          "adp": 134.98
         },
         {
-          "player_id": "p_10236",
-          "espn_id": "4385690",
-          "name": "Dalton Kincaid",
+          "player_id": "p_11628",
+          "espn_id": "4432708",
+          "name": "Marvin Harrison",
+          "position": "WR",
+          "nfl_team": "ARI",
+          "injury_status": null,
+          "projected": 194.28589953,
+          "adp": 82.09
+        },
+        {
+          "player_id": "p_11632",
+          "espn_id": "4595348",
+          "name": "Malik Nabers",
+          "position": "WR",
+          "nfl_team": "NYG",
+          "injury_status": "Questionable",
+          "projected": 243.68999603,
+          "adp": 36.48
+        },
+        {
+          "player_id": "p_12015",
+          "espn_id": "4574716",
+          "name": "Harrison Mevis",
+          "position": "K",
+          "nfl_team": "LA",
+          "injury_status": null,
+          "projected": 159.43527695,
+          "adp": 128.25
+        },
+        {
+          "player_id": "p_12489",
+          "espn_id": "4568490",
+          "name": "RJ Harvey",
+          "position": "RB",
+          "nfl_team": "DEN",
+          "injury_status": null,
+          "projected": 149.63449204,
+          "adp": 131.11
+        },
+        {
+          "player_id": "p_12506",
+          "espn_id": "5083076",
+          "name": "Harold Fannin",
           "position": "TE",
+          "nfl_team": "CLE",
+          "injury_status": null,
+          "projected": 188.98366031,
+          "adp": 71.38
+        },
+        {
+          "player_id": "p_12534",
+          "espn_id": "4608686",
+          "name": "Kyle Monangai",
+          "position": "RB",
+          "nfl_team": "CHI",
+          "injury_status": null,
+          "projected": 174.71371257,
+          "adp": 126.69
+        },
+        {
+          "player_id": "p_13286",
+          "espn_id": "4685512",
+          "name": "Jadarian Price",
+          "position": "RB",
+          "nfl_team": "SEA",
+          "injury_status": null,
+          "projected": 189.14548554,
+          "adp": 68.73
+        },
+        {
+          "player_id": "p_13417",
+          "espn_id": "4710714",
+          "name": "De'Zhaun Stribling",
+          "position": "WR",
+          "nfl_team": "SF",
+          "injury_status": "Out",
+          "projected": 108.10867927,
+          "adp": 139.47
+        },
+        {
+          "player_id": "p_4034",
+          "espn_id": "3117251",
+          "name": "Christian McCaffrey",
+          "position": "RB",
+          "nfl_team": "SF",
+          "injury_status": null,
+          "projected": 325.77834411,
+          "adp": 7.57
+        },
+        {
+          "player_id": "p_4983",
+          "espn_id": "3915416",
+          "name": "DJ Moore",
+          "position": "WR",
           "nfl_team": "BUF",
           "injury_status": null,
-          "projected": 155.55128355,
-          "adp": 130.84
+          "projected": 207.8854302,
+          "adp": 60.32
         },
         {
-          "player_id": "p_10859",
-          "espn_id": "4430027",
-          "name": "Sam LaPorta",
-          "position": "TE",
-          "nfl_team": "DET",
-          "injury_status": "Questionable",
-          "projected": 188.91204447,
-          "adp": 74.05
-        },
-        {
-          "player_id": "p_11539",
-          "espn_id": "4689936",
-          "name": "Jake Bates",
-          "position": "K",
-          "nfl_team": "DET",
-          "injury_status": null,
-          "projected": 146.10945551,
-          "adp": 157.05
-        },
-        {
-          "player_id": "p_11635",
-          "espn_id": "4612826",
-          "name": "Ladd McConkey",
-          "position": "WR",
+          "player_id": "p_6797",
+          "espn_id": "4038941",
+          "name": "Justin Herbert",
+          "position": "QB",
           "nfl_team": "LAC",
           "injury_status": null,
-          "projected": 220.99549381,
-          "adp": 45.75
+          "projected": 292.93440514,
+          "adp": 87.22
         },
         {
-          "player_id": "p_3214",
-          "espn_id": "3046439",
-          "name": "Hunter Henry",
+          "player_id": "p_8131",
+          "espn_id": "4361050",
+          "name": "Isaiah Likely",
           "position": "TE",
-          "nfl_team": "NE",
+          "nfl_team": "NYG",
           "injury_status": null,
-          "projected": 150.26894117,
-          "adp": 153.16
+          "projected": 155.72433219,
+          "adp": 124.48
         },
         {
-          "player_id": "p_4227",
-          "espn_id": "3055899",
-          "name": "Harrison Butker",
-          "position": "K",
-          "nfl_team": "KC",
-          "injury_status": null,
-          "projected": 148.76572896,
-          "adp": 144.29
-        },
-        {
-          "player_id": "p_4892",
-          "espn_id": "3052587",
-          "name": "Baker Mayfield",
-          "position": "QB",
-          "nfl_team": "TB",
-          "injury_status": null,
-          "projected": 264.72767204,
-          "adp": 146.38
-        },
-        {
-          "player_id": "p_5859",
-          "espn_id": "4047646",
-          "name": "A.J. Brown",
+          "player_id": "p_8144",
+          "espn_id": "4361370",
+          "name": "Chris Olave",
           "position": "WR",
-          "nfl_team": "NE",
+          "nfl_team": "NO",
           "injury_status": null,
-          "projected": 249.71407746,
-          "adp": 20.97
+          "projected": 249.78389427,
+          "adp": 30.13
         },
         {
-          "player_id": "p_6804",
-          "espn_id": "4036378",
-          "name": "Jordan Love",
-          "position": "QB",
-          "nfl_team": "GB",
-          "injury_status": null,
-          "projected": 263.44221537,
-          "adp": 155.23
-        },
-        {
-          "player_id": "p_6813",
-          "espn_id": "4242335",
-          "name": "Jonathan Taylor",
-          "position": "RB",
+          "player_id": "p_9500",
+          "espn_id": "4688813",
+          "name": "Josh Downs",
+          "position": "WR",
           "nfl_team": "IND",
           "injury_status": null,
-          "projected": 316.30331382,
-          "adp": 6.16
-        },
-        {
-          "player_id": "p_7594",
-          "espn_id": "4241416",
-          "name": "Chuba Hubbard",
-          "position": "RB",
-          "nfl_team": "CAR",
-          "injury_status": "Questionable",
-          "projected": 180.23597475,
-          "adp": 108.05
-        },
-        {
-          "player_id": "p_8148",
-          "espn_id": "4426388",
-          "name": "Jameson Williams",
-          "position": "WR",
-          "nfl_team": "DET",
-          "injury_status": null,
-          "projected": 208.62416648,
-          "adp": 64.06
-        },
-        {
-          "player_id": "p_8167",
-          "espn_id": "4248528",
-          "name": "Christian Watson",
-          "position": "WR",
-          "nfl_team": "GB",
-          "injury_status": null,
-          "projected": 188.75787347,
-          "adp": 88.46
-        },
-        {
-          "player_id": "p_9224",
-          "espn_id": "4362238",
-          "name": "Chase Brown",
-          "position": "RB",
-          "nfl_team": "CIN",
-          "injury_status": null,
-          "projected": 271.60865615,
-          "adp": 17.05
-        },
-        {
-          "player_id": "p_9504",
-          "espn_id": "4429022",
-          "name": "Kayshon Boutte",
-          "position": "WR",
-          "nfl_team": "HOU",
-          "injury_status": null,
-          "projected": 139.01877591,
-          "adp": 170.58
+          "projected": 157.55703272,
+          "adp": 139.05
         }
       ],
       "starters": [
         {
-          "player_id": "p_4892",
-          "espn_id": "3052587",
-          "name": "Baker Mayfield",
+          "player_id": "p_6797",
+          "espn_id": "4038941",
+          "name": "Justin Herbert",
           "position": "QB",
-          "nfl_team": "TB",
+          "nfl_team": "LAC",
           "injury_status": null,
-          "projected": 264.72767204,
-          "adp": 146.38,
+          "projected": 292.93440514,
+          "adp": 87.22,
           "slot": "QB"
         },
         {
-          "player_id": "p_6813",
-          "espn_id": "4242335",
-          "name": "Jonathan Taylor",
+          "player_id": "p_4034",
+          "espn_id": "3117251",
+          "name": "Christian McCaffrey",
           "position": "RB",
-          "nfl_team": "IND",
+          "nfl_team": "SF",
           "injury_status": null,
-          "projected": 316.30331382,
-          "adp": 6.16,
+          "projected": 325.77834411,
+          "adp": 7.57,
           "slot": "RB"
         },
         {
-          "player_id": "p_9224",
-          "espn_id": "4362238",
-          "name": "Chase Brown",
+          "player_id": "p_13286",
+          "espn_id": "4685512",
+          "name": "Jadarian Price",
           "position": "RB",
-          "nfl_team": "CIN",
+          "nfl_team": "SEA",
           "injury_status": null,
-          "projected": 271.60865615,
-          "adp": 17.05,
+          "projected": 189.14548554,
+          "adp": 68.73,
           "slot": "RB"
         },
         {
-          "player_id": "p_5859",
-          "espn_id": "4047646",
-          "name": "A.J. Brown",
+          "player_id": "p_8144",
+          "espn_id": "4361370",
+          "name": "Chris Olave",
           "position": "WR",
-          "nfl_team": "NE",
+          "nfl_team": "NO",
           "injury_status": null,
-          "projected": 249.71407746,
-          "adp": 20.97,
+          "projected": 249.78389427,
+          "adp": 30.13,
           "slot": "WR"
         },
         {
-          "player_id": "p_11635",
-          "espn_id": "4612826",
-          "name": "Ladd McConkey",
+          "player_id": "p_11632",
+          "espn_id": "4595348",
+          "name": "Malik Nabers",
           "position": "WR",
-          "nfl_team": "LAC",
-          "injury_status": null,
-          "projected": 220.99549381,
-          "adp": 45.75,
-          "slot": "WR"
-        },
-        {
-          "player_id": "p_10859",
-          "espn_id": "4430027",
-          "name": "Sam LaPorta",
-          "position": "TE",
-          "nfl_team": "DET",
+          "nfl_team": "NYG",
           "injury_status": "Questionable",
-          "projected": 188.91204447,
-          "adp": 74.05,
+          "projected": 243.68999603,
+          "adp": 36.48,
+          "slot": "WR"
+        },
+        {
+          "player_id": "p_12506",
+          "espn_id": "5083076",
+          "name": "Harold Fannin",
+          "position": "TE",
+          "nfl_team": "CLE",
+          "injury_status": null,
+          "projected": 188.98366031,
+          "adp": 71.38,
           "slot": "TE"
         },
         {
-          "player_id": "p_4227",
-          "espn_id": "3055899",
-          "name": "Harrison Butker",
+          "player_id": "p_12015",
+          "espn_id": "4574716",
+          "name": "Harrison Mevis",
           "position": "K",
-          "nfl_team": "KC",
+          "nfl_team": "LA",
           "injury_status": null,
-          "projected": 148.76572896,
-          "adp": 144.29,
+          "projected": 159.43527695,
+          "adp": 128.25,
           "slot": "K"
         },
         {
-          "player_id": "espn_-16030",
-          "espn_id": "-16030",
-          "name": "Jaguars D/ST",
+          "player_id": "espn_-16005",
+          "espn_id": "-16005",
+          "name": "Browns D/ST",
           "position": "D/ST",
-          "nfl_team": "JAC",
+          "nfl_team": "CLE",
           "injury_status": null,
-          "projected": 78.44575699,
-          "adp": 167.96,
+          "projected": 103.86984184,
+          "adp": 157.15,
           "slot": "D/ST"
         },
         {
-          "player_id": "p_8148",
-          "espn_id": "4426388",
-          "name": "Jameson Williams",
+          "player_id": "p_4983",
+          "espn_id": "3915416",
+          "name": "DJ Moore",
           "position": "WR",
-          "nfl_team": "DET",
+          "nfl_team": "BUF",
           "injury_status": null,
-          "projected": 208.62416648,
-          "adp": 64.06,
+          "projected": 207.8854302,
+          "adp": 60.32,
           "slot": "FLEX"
         }
       ],
       "bench": [
         {
-          "player_id": "p_6804",
-          "espn_id": "4036378",
-          "name": "Jordan Love",
-          "position": "QB",
-          "nfl_team": "GB",
-          "injury_status": null,
-          "projected": 263.44221537,
-          "adp": 155.23
-        },
-        {
-          "player_id": "p_8167",
-          "espn_id": "4248528",
-          "name": "Christian Watson",
+          "player_id": "p_11628",
+          "espn_id": "4432708",
+          "name": "Marvin Harrison",
           "position": "WR",
-          "nfl_team": "GB",
+          "nfl_team": "ARI",
           "injury_status": null,
-          "projected": 188.75787347,
-          "adp": 88.46
+          "projected": 194.28589953,
+          "adp": 82.09
         },
         {
-          "player_id": "p_7594",
-          "espn_id": "4241416",
-          "name": "Chuba Hubbard",
+          "player_id": "p_12534",
+          "espn_id": "4608686",
+          "name": "Kyle Monangai",
           "position": "RB",
-          "nfl_team": "CAR",
-          "injury_status": "Questionable",
-          "projected": 180.23597475,
-          "adp": 108.05
-        },
-        {
-          "player_id": "p_10236",
-          "espn_id": "4385690",
-          "name": "Dalton Kincaid",
-          "position": "TE",
-          "nfl_team": "BUF",
+          "nfl_team": "CHI",
           "injury_status": null,
-          "projected": 155.55128355,
-          "adp": 130.84
+          "projected": 174.71371257,
+          "adp": 126.69
         },
         {
-          "player_id": "p_3214",
-          "espn_id": "3046439",
-          "name": "Hunter Henry",
-          "position": "TE",
-          "nfl_team": "NE",
-          "injury_status": null,
-          "projected": 150.26894117,
-          "adp": 153.16
-        },
-        {
-          "player_id": "p_11539",
-          "espn_id": "4689936",
-          "name": "Jake Bates",
-          "position": "K",
-          "nfl_team": "DET",
-          "injury_status": null,
-          "projected": 146.10945551,
-          "adp": 157.05
-        },
-        {
-          "player_id": "p_9504",
-          "espn_id": "4429022",
-          "name": "Kayshon Boutte",
+          "player_id": "p_9500",
+          "espn_id": "4688813",
+          "name": "Josh Downs",
           "position": "WR",
-          "nfl_team": "HOU",
+          "nfl_team": "IND",
           "injury_status": null,
-          "projected": 139.01877591,
-          "adp": 170.58
+          "projected": 157.55703272,
+          "adp": 139.05
+        },
+        {
+          "player_id": "p_8131",
+          "espn_id": "4361050",
+          "name": "Isaiah Likely",
+          "position": "TE",
+          "nfl_team": "NYG",
+          "injury_status": null,
+          "projected": 155.72433219,
+          "adp": 124.48
+        },
+        {
+          "player_id": "p_12489",
+          "espn_id": "4568490",
+          "name": "RJ Harvey",
+          "position": "RB",
+          "nfl_team": "DEN",
+          "injury_status": null,
+          "projected": 149.63449204,
+          "adp": 131.11
+        },
+        {
+          "player_id": "p_13417",
+          "espn_id": "4710714",
+          "name": "De'Zhaun Stribling",
+          "position": "WR",
+          "nfl_team": "SF",
+          "injury_status": "Out",
+          "projected": 108.10867927,
+          "adp": 139.47
+        },
+        {
+          "player_id": "espn_4685415",
+          "espn_id": "4685415",
+          "name": "Travis Hunter",
+          "position": "WR",
+          "nfl_team": "JAC",
+          "injury_status": null,
+          "projected": 103.02100634,
+          "adp": 134.98
         }
       ],
-      "projected": 1948.1,
+      "projected": 1961.5,
       "unfilled": [],
-      "rank": 10
+      "rank": 9
     },
     {
       "team_id": 13,
@@ -3495,8 +3181,8 @@
           "position": "D/ST",
           "nfl_team": "GB",
           "injury_status": null,
-          "projected": 90.30158507,
-          "adp": 169.54
+          "projected": 88.6065599,
+          "adp": 169.37
         },
         {
           "player_id": "p_11563",
@@ -3505,8 +3191,8 @@
           "position": "QB",
           "nfl_team": "DEN",
           "injury_status": null,
-          "projected": 295.73082077,
-          "adp": 103.47
+          "projected": 305.797606,
+          "adp": 105.43
         },
         {
           "player_id": "p_11792",
@@ -3515,8 +3201,8 @@
           "position": "K",
           "nfl_team": "MIN",
           "injury_status": null,
-          "projected": 142.49770196,
-          "adp": 167.88
+          "projected": 142.48158117,
+          "adp": 167.66
         },
         {
           "player_id": "p_12490",
@@ -3524,9 +3210,9 @@
           "name": "Bhayshul Tuten",
           "position": "RB",
           "nfl_team": "JAC",
-          "injury_status": "Questionable",
-          "projected": 206.02127737,
-          "adp": 61.07
+          "injury_status": null,
+          "projected": 204.9095071,
+          "adp": 64.52
         },
         {
           "player_id": "p_12501",
@@ -3535,8 +3221,8 @@
           "position": "WR",
           "nfl_team": "GB",
           "injury_status": null,
-          "projected": 188.89859285,
-          "adp": 112.88
+          "projected": 190.86182169,
+          "adp": 117.67
         },
         {
           "player_id": "p_12504",
@@ -3545,8 +3231,8 @@
           "position": "RB",
           "nfl_team": "GB",
           "injury_status": null,
-          "projected": 7.89467342,
-          "adp": 169.95
+          "projected": 7.88166855,
+          "adp": 170.08
         },
         {
           "player_id": "p_4037",
@@ -3555,8 +3241,8 @@
           "position": "WR",
           "nfl_team": "TB",
           "injury_status": null,
-          "projected": 157.33353261,
-          "adp": 121.73
+          "projected": 157.71149928,
+          "adp": 127.52
         },
         {
           "player_id": "p_4866",
@@ -3565,8 +3251,8 @@
           "position": "RB",
           "nfl_team": "PHI",
           "injury_status": null,
-          "projected": 273.30217759,
-          "adp": 13.99
+          "projected": 273.12491122,
+          "adp": 14.29
         },
         {
           "player_id": "p_5846",
@@ -3574,9 +3260,9 @@
           "name": "DK Metcalf",
           "position": "WR",
           "nfl_team": "PIT",
-          "injury_status": "Questionable",
-          "projected": 195.79324142,
-          "adp": 85.14
+          "injury_status": null,
+          "projected": 195.76918892,
+          "adp": 87.66
         },
         {
           "player_id": "p_5850",
@@ -3585,8 +3271,8 @@
           "position": "RB",
           "nfl_team": "GB",
           "injury_status": "NA",
-          "projected": 164.38297688,
-          "adp": 77.36
+          "projected": 164.26137889,
+          "adp": 102.74
         },
         {
           "player_id": "p_6786",
@@ -3595,8 +3281,8 @@
           "position": "WR",
           "nfl_team": "DAL",
           "injury_status": null,
-          "projected": 293.62742666,
-          "adp": 11.81
+          "projected": 294.52724505,
+          "adp": 11.55
         },
         {
           "player_id": "p_7525",
@@ -3605,8 +3291,8 @@
           "position": "WR",
           "nfl_team": "PHI",
           "injury_status": null,
-          "projected": 239.08357327,
-          "adp": 36.61
+          "projected": 239.55837015,
+          "adp": 36.47
         },
         {
           "player_id": "p_8136",
@@ -3614,9 +3300,9 @@
           "name": "Rachaad White",
           "position": "RB",
           "nfl_team": "WAS",
-          "injury_status": "Questionable",
-          "projected": 164.26972817,
-          "adp": 125.57
+          "injury_status": null,
+          "projected": 163.97355606,
+          "adp": 130.46
         },
         {
           "player_id": "p_9225",
@@ -3625,8 +3311,8 @@
           "position": "RB",
           "nfl_team": "PHI",
           "injury_status": null,
-          "projected": 64.07925279,
-          "adp": 169.66
+          "projected": 67.11661333,
+          "adp": 169.64
         },
         {
           "player_id": "p_9484",
@@ -3634,9 +3320,9 @@
           "name": "Tucker Kraft",
           "position": "TE",
           "nfl_team": "GB",
-          "injury_status": "Questionable",
-          "projected": 172.26815891,
-          "adp": 91.04
+          "injury_status": null,
+          "projected": 172.41484204,
+          "adp": 92.21
         },
         {
           "player_id": "p_9486",
@@ -3645,8 +3331,8 @@
           "position": "WR",
           "nfl_team": "PHI",
           "injury_status": null,
-          "projected": 108.66841306,
-          "adp": 171.01
+          "projected": 108.90559119,
+          "adp": 170.85
         },
         {
           "player_id": "p_9753",
@@ -3655,8 +3341,8 @@
           "position": "RB",
           "nfl_team": "SEA",
           "injury_status": "PUP",
-          "projected": 133.98936764,
-          "adp": 153.37
+          "projected": 133.74211996,
+          "adp": 156.48
         }
       ],
       "starters": [
@@ -3667,8 +3353,8 @@
           "position": "QB",
           "nfl_team": "DEN",
           "injury_status": null,
-          "projected": 295.73082077,
-          "adp": 103.47,
+          "projected": 305.797606,
+          "adp": 105.43,
           "slot": "QB"
         },
         {
@@ -3678,8 +3364,8 @@
           "position": "RB",
           "nfl_team": "PHI",
           "injury_status": null,
-          "projected": 273.30217759,
-          "adp": 13.99,
+          "projected": 273.12491122,
+          "adp": 14.29,
           "slot": "RB"
         },
         {
@@ -3688,9 +3374,9 @@
           "name": "Bhayshul Tuten",
           "position": "RB",
           "nfl_team": "JAC",
-          "injury_status": "Questionable",
-          "projected": 206.02127737,
-          "adp": 61.07,
+          "injury_status": null,
+          "projected": 204.9095071,
+          "adp": 64.52,
           "slot": "RB"
         },
         {
@@ -3700,8 +3386,8 @@
           "position": "WR",
           "nfl_team": "DAL",
           "injury_status": null,
-          "projected": 293.62742666,
-          "adp": 11.81,
+          "projected": 294.52724505,
+          "adp": 11.55,
           "slot": "WR"
         },
         {
@@ -3711,8 +3397,8 @@
           "position": "WR",
           "nfl_team": "PHI",
           "injury_status": null,
-          "projected": 239.08357327,
-          "adp": 36.61,
+          "projected": 239.55837015,
+          "adp": 36.47,
           "slot": "WR"
         },
         {
@@ -3721,9 +3407,9 @@
           "name": "Tucker Kraft",
           "position": "TE",
           "nfl_team": "GB",
-          "injury_status": "Questionable",
-          "projected": 172.26815891,
-          "adp": 91.04,
+          "injury_status": null,
+          "projected": 172.41484204,
+          "adp": 92.21,
           "slot": "TE"
         },
         {
@@ -3733,8 +3419,8 @@
           "position": "K",
           "nfl_team": "MIN",
           "injury_status": null,
-          "projected": 142.49770196,
-          "adp": 167.88,
+          "projected": 142.48158117,
+          "adp": 167.66,
           "slot": "K"
         },
         {
@@ -3744,8 +3430,8 @@
           "position": "D/ST",
           "nfl_team": "GB",
           "injury_status": null,
-          "projected": 90.30158507,
-          "adp": 169.54,
+          "projected": 88.6065599,
+          "adp": 169.37,
           "slot": "D/ST"
         },
         {
@@ -3754,9 +3440,9 @@
           "name": "DK Metcalf",
           "position": "WR",
           "nfl_team": "PIT",
-          "injury_status": "Questionable",
-          "projected": 195.79324142,
-          "adp": 85.14,
+          "injury_status": null,
+          "projected": 195.76918892,
+          "adp": 87.66,
           "slot": "FLEX"
         }
       ],
@@ -3768,8 +3454,8 @@
           "position": "WR",
           "nfl_team": "GB",
           "injury_status": null,
-          "projected": 188.89859285,
-          "adp": 112.88
+          "projected": 190.86182169,
+          "adp": 117.67
         },
         {
           "player_id": "p_5850",
@@ -3778,8 +3464,8 @@
           "position": "RB",
           "nfl_team": "GB",
           "injury_status": "NA",
-          "projected": 164.38297688,
-          "adp": 77.36
+          "projected": 164.26137889,
+          "adp": 102.74
         },
         {
           "player_id": "p_8136",
@@ -3787,9 +3473,9 @@
           "name": "Rachaad White",
           "position": "RB",
           "nfl_team": "WAS",
-          "injury_status": "Questionable",
-          "projected": 164.26972817,
-          "adp": 125.57
+          "injury_status": null,
+          "projected": 163.97355606,
+          "adp": 130.46
         },
         {
           "player_id": "p_4037",
@@ -3798,8 +3484,8 @@
           "position": "WR",
           "nfl_team": "TB",
           "injury_status": null,
-          "projected": 157.33353261,
-          "adp": 121.73
+          "projected": 157.71149928,
+          "adp": 127.52
         },
         {
           "player_id": "p_9753",
@@ -3808,8 +3494,8 @@
           "position": "RB",
           "nfl_team": "SEA",
           "injury_status": "PUP",
-          "projected": 133.98936764,
-          "adp": 153.37
+          "projected": 133.74211996,
+          "adp": 156.48
         },
         {
           "player_id": "p_9486",
@@ -3818,8 +3504,8 @@
           "position": "WR",
           "nfl_team": "PHI",
           "injury_status": null,
-          "projected": 108.66841306,
-          "adp": 171.01
+          "projected": 108.90559119,
+          "adp": 170.85
         },
         {
           "player_id": "p_9225",
@@ -3828,8 +3514,8 @@
           "position": "RB",
           "nfl_team": "PHI",
           "injury_status": null,
-          "projected": 64.07925279,
-          "adp": 169.66
+          "projected": 67.11661333,
+          "adp": 169.64
         },
         {
           "player_id": "p_12504",
@@ -3838,11 +3524,355 @@
           "position": "RB",
           "nfl_team": "GB",
           "injury_status": null,
-          "projected": 7.89467342,
-          "adp": 169.95
+          "projected": 7.88166855,
+          "adp": 170.08
         }
       ],
-      "projected": 1908.6,
+      "projected": 1917.2,
+      "unfilled": [],
+      "rank": 10
+    },
+    {
+      "team_id": 14,
+      "name": "JT runs this league",
+      "owner": "Soyombo Myagmarjav",
+      "is_me": false,
+      "players": [
+        {
+          "player_id": "espn_-16030",
+          "espn_id": "-16030",
+          "name": "Jaguars D/ST",
+          "position": "D/ST",
+          "nfl_team": "JAC",
+          "injury_status": null,
+          "projected": 77.13989932,
+          "adp": 166.59
+        },
+        {
+          "player_id": "p_10236",
+          "espn_id": "4385690",
+          "name": "Dalton Kincaid",
+          "position": "TE",
+          "nfl_team": "BUF",
+          "injury_status": null,
+          "projected": 154.00061134,
+          "adp": 133.85
+        },
+        {
+          "player_id": "p_10859",
+          "espn_id": "4430027",
+          "name": "Sam LaPorta",
+          "position": "TE",
+          "nfl_team": "DET",
+          "injury_status": null,
+          "projected": 189.28525795,
+          "adp": 75.4
+        },
+        {
+          "player_id": "p_11539",
+          "espn_id": "4689936",
+          "name": "Jake Bates",
+          "position": "K",
+          "nfl_team": "DET",
+          "injury_status": null,
+          "projected": 145.91284735,
+          "adp": 156.83
+        },
+        {
+          "player_id": "p_11635",
+          "espn_id": "4612826",
+          "name": "Ladd McConkey",
+          "position": "WR",
+          "nfl_team": "LAC",
+          "injury_status": null,
+          "projected": 221.09881103,
+          "adp": 47.64
+        },
+        {
+          "player_id": "p_3214",
+          "espn_id": "3046439",
+          "name": "Hunter Henry",
+          "position": "TE",
+          "nfl_team": "NE",
+          "injury_status": null,
+          "projected": 156.23864821,
+          "adp": 153.9
+        },
+        {
+          "player_id": "p_4227",
+          "espn_id": "3055899",
+          "name": "Harrison Butker",
+          "position": "K",
+          "nfl_team": "KC",
+          "injury_status": null,
+          "projected": 148.76657066,
+          "adp": 144.19
+        },
+        {
+          "player_id": "p_4892",
+          "espn_id": "3052587",
+          "name": "Baker Mayfield",
+          "position": "QB",
+          "nfl_team": "TB",
+          "injury_status": null,
+          "projected": 274.27277136,
+          "adp": 147.81
+        },
+        {
+          "player_id": "p_5859",
+          "espn_id": "4047646",
+          "name": "A.J. Brown",
+          "position": "WR",
+          "nfl_team": "NE",
+          "injury_status": "IR",
+          "projected": 176.01078055,
+          "adp": 22.26
+        },
+        {
+          "player_id": "p_6804",
+          "espn_id": "4036378",
+          "name": "Jordan Love",
+          "position": "QB",
+          "nfl_team": "GB",
+          "injury_status": null,
+          "projected": 270.99458642,
+          "adp": 155.88
+        },
+        {
+          "player_id": "p_6813",
+          "espn_id": "4242335",
+          "name": "Jonathan Taylor",
+          "position": "RB",
+          "nfl_team": "IND",
+          "injury_status": null,
+          "projected": 315.69077135,
+          "adp": 6.35
+        },
+        {
+          "player_id": "p_7594",
+          "espn_id": "4241416",
+          "name": "Chuba Hubbard",
+          "position": "RB",
+          "nfl_team": "CAR",
+          "injury_status": null,
+          "projected": 180.87378825,
+          "adp": 113.53
+        },
+        {
+          "player_id": "p_8148",
+          "espn_id": "4426388",
+          "name": "Jameson Williams",
+          "position": "WR",
+          "nfl_team": "DET",
+          "injury_status": null,
+          "projected": 209.15099249,
+          "adp": 66.02
+        },
+        {
+          "player_id": "p_8167",
+          "espn_id": "4248528",
+          "name": "Christian Watson",
+          "position": "WR",
+          "nfl_team": "GB",
+          "injury_status": null,
+          "projected": 188.98322822,
+          "adp": 91.83
+        },
+        {
+          "player_id": "p_9224",
+          "espn_id": "4362238",
+          "name": "Chase Brown",
+          "position": "RB",
+          "nfl_team": "CIN",
+          "injury_status": null,
+          "projected": 271.64204328,
+          "adp": 18.31
+        },
+        {
+          "player_id": "p_9504",
+          "espn_id": "4429022",
+          "name": "Kayshon Boutte",
+          "position": "WR",
+          "nfl_team": "HOU",
+          "injury_status": null,
+          "projected": 139.86916298,
+          "adp": 170.45
+        }
+      ],
+      "starters": [
+        {
+          "player_id": "p_4892",
+          "espn_id": "3052587",
+          "name": "Baker Mayfield",
+          "position": "QB",
+          "nfl_team": "TB",
+          "injury_status": null,
+          "projected": 274.27277136,
+          "adp": 147.81,
+          "slot": "QB"
+        },
+        {
+          "player_id": "p_6813",
+          "espn_id": "4242335",
+          "name": "Jonathan Taylor",
+          "position": "RB",
+          "nfl_team": "IND",
+          "injury_status": null,
+          "projected": 315.69077135,
+          "adp": 6.35,
+          "slot": "RB"
+        },
+        {
+          "player_id": "p_9224",
+          "espn_id": "4362238",
+          "name": "Chase Brown",
+          "position": "RB",
+          "nfl_team": "CIN",
+          "injury_status": null,
+          "projected": 271.64204328,
+          "adp": 18.31,
+          "slot": "RB"
+        },
+        {
+          "player_id": "p_11635",
+          "espn_id": "4612826",
+          "name": "Ladd McConkey",
+          "position": "WR",
+          "nfl_team": "LAC",
+          "injury_status": null,
+          "projected": 221.09881103,
+          "adp": 47.64,
+          "slot": "WR"
+        },
+        {
+          "player_id": "p_8148",
+          "espn_id": "4426388",
+          "name": "Jameson Williams",
+          "position": "WR",
+          "nfl_team": "DET",
+          "injury_status": null,
+          "projected": 209.15099249,
+          "adp": 66.02,
+          "slot": "WR"
+        },
+        {
+          "player_id": "p_10859",
+          "espn_id": "4430027",
+          "name": "Sam LaPorta",
+          "position": "TE",
+          "nfl_team": "DET",
+          "injury_status": null,
+          "projected": 189.28525795,
+          "adp": 75.4,
+          "slot": "TE"
+        },
+        {
+          "player_id": "p_4227",
+          "espn_id": "3055899",
+          "name": "Harrison Butker",
+          "position": "K",
+          "nfl_team": "KC",
+          "injury_status": null,
+          "projected": 148.76657066,
+          "adp": 144.19,
+          "slot": "K"
+        },
+        {
+          "player_id": "espn_-16030",
+          "espn_id": "-16030",
+          "name": "Jaguars D/ST",
+          "position": "D/ST",
+          "nfl_team": "JAC",
+          "injury_status": null,
+          "projected": 77.13989932,
+          "adp": 166.59,
+          "slot": "D/ST"
+        },
+        {
+          "player_id": "p_8167",
+          "espn_id": "4248528",
+          "name": "Christian Watson",
+          "position": "WR",
+          "nfl_team": "GB",
+          "injury_status": null,
+          "projected": 188.98322822,
+          "adp": 91.83,
+          "slot": "FLEX"
+        }
+      ],
+      "bench": [
+        {
+          "player_id": "p_6804",
+          "espn_id": "4036378",
+          "name": "Jordan Love",
+          "position": "QB",
+          "nfl_team": "GB",
+          "injury_status": null,
+          "projected": 270.99458642,
+          "adp": 155.88
+        },
+        {
+          "player_id": "p_7594",
+          "espn_id": "4241416",
+          "name": "Chuba Hubbard",
+          "position": "RB",
+          "nfl_team": "CAR",
+          "injury_status": null,
+          "projected": 180.87378825,
+          "adp": 113.53
+        },
+        {
+          "player_id": "p_5859",
+          "espn_id": "4047646",
+          "name": "A.J. Brown",
+          "position": "WR",
+          "nfl_team": "NE",
+          "injury_status": "IR",
+          "projected": 176.01078055,
+          "adp": 22.26
+        },
+        {
+          "player_id": "p_3214",
+          "espn_id": "3046439",
+          "name": "Hunter Henry",
+          "position": "TE",
+          "nfl_team": "NE",
+          "injury_status": null,
+          "projected": 156.23864821,
+          "adp": 153.9
+        },
+        {
+          "player_id": "p_10236",
+          "espn_id": "4385690",
+          "name": "Dalton Kincaid",
+          "position": "TE",
+          "nfl_team": "BUF",
+          "injury_status": null,
+          "projected": 154.00061134,
+          "adp": 133.85
+        },
+        {
+          "player_id": "p_11539",
+          "espn_id": "4689936",
+          "name": "Jake Bates",
+          "position": "K",
+          "nfl_team": "DET",
+          "injury_status": null,
+          "projected": 145.91284735,
+          "adp": 156.83
+        },
+        {
+          "player_id": "p_9504",
+          "espn_id": "4429022",
+          "name": "Kayshon Boutte",
+          "position": "WR",
+          "nfl_team": "HOU",
+          "injury_status": null,
+          "projected": 139.86916298,
+          "adp": 170.45
+        }
+      ],
+      "projected": 1896.0,
       "unfilled": [],
       "rank": 11
     },
@@ -3859,8 +3889,8 @@
           "position": "D/ST",
           "nfl_team": "NE",
           "injury_status": null,
-          "projected": 100.5142522,
-          "adp": 154.01
+          "projected": 101.74547473,
+          "adp": 153.27
         },
         {
           "player_id": "espn_-16033",
@@ -3869,8 +3899,8 @@
           "position": "D/ST",
           "nfl_team": "BAL",
           "injury_status": null,
-          "projected": 119.9912005,
-          "adp": 134.39
+          "projected": 119.13993449,
+          "adp": 132.57
         },
         {
           "player_id": "p_11631",
@@ -3879,8 +3909,8 @@
           "position": "WR",
           "nfl_team": "JAC",
           "injury_status": null,
-          "projected": 176.65913167,
-          "adp": 113.56
+          "projected": 176.63375829,
+          "adp": 115.35
         },
         {
           "player_id": "p_12502",
@@ -3889,8 +3919,8 @@
           "position": "TE",
           "nfl_team": "TEN",
           "injury_status": null,
-          "projected": 126.8677665,
-          "adp": 170.78
+          "projected": 126.86832316,
+          "adp": 170.55
         },
         {
           "player_id": "p_13293",
@@ -3899,18 +3929,8 @@
           "position": "WR",
           "nfl_team": "BAL",
           "injury_status": null,
-          "projected": 109.68417031,
-          "adp": 168.92
-        },
-        {
-          "player_id": "p_1479",
-          "espn_id": "15818",
-          "name": "Keenan Allen",
-          "position": "WR",
-          "nfl_team": "IND",
-          "injury_status": null,
-          "projected": 124.21088213,
-          "adp": 165.38
+          "projected": 110.61148438,
+          "adp": 169.17
         },
         {
           "player_id": "p_2449",
@@ -3919,8 +3939,8 @@
           "position": "WR",
           "nfl_team": "WAS",
           "injury_status": null,
-          "projected": 173.07055349,
-          "adp": 101.61
+          "projected": 172.91268178,
+          "adp": 106.68
         },
         {
           "player_id": "p_3198",
@@ -3929,8 +3949,8 @@
           "position": "RB",
           "nfl_team": "BAL",
           "injury_status": null,
-          "projected": 277.81109202,
-          "adp": 16.53
+          "projected": 277.83058932,
+          "adp": 16.71
         },
         {
           "player_id": "p_4195",
@@ -3939,8 +3959,8 @@
           "position": "K",
           "nfl_team": "PHI",
           "injury_status": null,
-          "projected": 135.71682201,
-          "adp": 169.13
+          "projected": 135.66381385,
+          "adp": 168.91
         },
         {
           "player_id": "p_421",
@@ -3949,8 +3969,8 @@
           "position": "QB",
           "nfl_team": "LA",
           "injury_status": null,
-          "projected": 292.84720263,
-          "adp": 93.32
+          "projected": 302.37461993,
+          "adp": 94.96
         },
         {
           "player_id": "p_4881",
@@ -3959,8 +3979,8 @@
           "position": "QB",
           "nfl_team": "BAL",
           "injury_status": null,
-          "projected": 322.51227164,
-          "adp": 34.55
+          "projected": 331.52265489,
+          "adp": 32.32
         },
         {
           "player_id": "p_4984",
@@ -3969,8 +3989,8 @@
           "position": "QB",
           "nfl_team": "BUF",
           "injury_status": null,
-          "projected": 370.5519409,
-          "adp": 19.16
+          "projected": 379.72821481,
+          "adp": 18.61
         },
         {
           "player_id": "p_5022",
@@ -3979,8 +3999,8 @@
           "position": "TE",
           "nfl_team": "PHI",
           "injury_status": null,
-          "projected": 176.94611858,
-          "adp": 103.32
+          "projected": 177.27425513,
+          "adp": 103.21
         },
         {
           "player_id": "p_5872",
@@ -3989,8 +4009,8 @@
           "position": "WR",
           "nfl_team": "SF",
           "injury_status": null,
-          "projected": 149.61199021,
-          "adp": 143.61
+          "projected": 162.21801479,
+          "adp": 145.88
         },
         {
           "player_id": "p_8112",
@@ -3999,8 +4019,18 @@
           "position": "WR",
           "nfl_team": "ATL",
           "injury_status": null,
-          "projected": 269.77861353,
-          "adp": 20.35
+          "projected": 262.05649765,
+          "adp": 20.92
+        },
+        {
+          "player_id": "p_8134",
+          "espn_id": "4373678",
+          "name": "Khalil Shakir",
+          "position": "WR",
+          "nfl_team": "BUF",
+          "injury_status": null,
+          "projected": 169.90260252,
+          "adp": 139.25
         },
         {
           "player_id": "p_8228",
@@ -4009,8 +4039,8 @@
           "position": "RB",
           "nfl_team": "PIT",
           "injury_status": null,
-          "projected": 193.96027522,
-          "adp": 86.41
+          "projected": 194.06744369,
+          "adp": 87.94
         }
       ],
       "starters": [
@@ -4021,8 +4051,8 @@
           "position": "QB",
           "nfl_team": "BUF",
           "injury_status": null,
-          "projected": 370.5519409,
-          "adp": 19.16,
+          "projected": 379.72821481,
+          "adp": 18.61,
           "slot": "QB"
         },
         {
@@ -4032,8 +4062,8 @@
           "position": "RB",
           "nfl_team": "BAL",
           "injury_status": null,
-          "projected": 277.81109202,
-          "adp": 16.53,
+          "projected": 277.83058932,
+          "adp": 16.71,
           "slot": "RB"
         },
         {
@@ -4043,8 +4073,8 @@
           "position": "RB",
           "nfl_team": "PIT",
           "injury_status": null,
-          "projected": 193.96027522,
-          "adp": 86.41,
+          "projected": 194.06744369,
+          "adp": 87.94,
           "slot": "RB"
         },
         {
@@ -4054,8 +4084,8 @@
           "position": "WR",
           "nfl_team": "ATL",
           "injury_status": null,
-          "projected": 269.77861353,
-          "adp": 20.35,
+          "projected": 262.05649765,
+          "adp": 20.92,
           "slot": "WR"
         },
         {
@@ -4065,8 +4095,8 @@
           "position": "WR",
           "nfl_team": "JAC",
           "injury_status": null,
-          "projected": 176.65913167,
-          "adp": 113.56,
+          "projected": 176.63375829,
+          "adp": 115.35,
           "slot": "WR"
         },
         {
@@ -4076,8 +4106,8 @@
           "position": "TE",
           "nfl_team": "PHI",
           "injury_status": null,
-          "projected": 176.94611858,
-          "adp": 103.32,
+          "projected": 177.27425513,
+          "adp": 103.21,
           "slot": "TE"
         },
         {
@@ -4087,8 +4117,8 @@
           "position": "K",
           "nfl_team": "PHI",
           "injury_status": null,
-          "projected": 135.71682201,
-          "adp": 169.13,
+          "projected": 135.66381385,
+          "adp": 168.91,
           "slot": "K"
         },
         {
@@ -4098,8 +4128,8 @@
           "position": "D/ST",
           "nfl_team": "BAL",
           "injury_status": null,
-          "projected": 119.9912005,
-          "adp": 134.39,
+          "projected": 119.13993449,
+          "adp": 132.57,
           "slot": "D/ST"
         },
         {
@@ -4109,8 +4139,8 @@
           "position": "WR",
           "nfl_team": "WAS",
           "injury_status": null,
-          "projected": 173.07055349,
-          "adp": 101.61,
+          "projected": 172.91268178,
+          "adp": 106.68,
           "slot": "FLEX"
         }
       ],
@@ -4122,8 +4152,8 @@
           "position": "QB",
           "nfl_team": "BAL",
           "injury_status": null,
-          "projected": 322.51227164,
-          "adp": 34.55
+          "projected": 331.52265489,
+          "adp": 32.32
         },
         {
           "player_id": "p_421",
@@ -4132,8 +4162,18 @@
           "position": "QB",
           "nfl_team": "LA",
           "injury_status": null,
-          "projected": 292.84720263,
-          "adp": 93.32
+          "projected": 302.37461993,
+          "adp": 94.96
+        },
+        {
+          "player_id": "p_8134",
+          "espn_id": "4373678",
+          "name": "Khalil Shakir",
+          "position": "WR",
+          "nfl_team": "BUF",
+          "injury_status": null,
+          "projected": 169.90260252,
+          "adp": 139.25
         },
         {
           "player_id": "p_5872",
@@ -4142,8 +4182,8 @@
           "position": "WR",
           "nfl_team": "SF",
           "injury_status": null,
-          "projected": 149.61199021,
-          "adp": 143.61
+          "projected": 162.21801479,
+          "adp": 145.88
         },
         {
           "player_id": "p_12502",
@@ -4152,18 +4192,8 @@
           "position": "TE",
           "nfl_team": "TEN",
           "injury_status": null,
-          "projected": 126.8677665,
-          "adp": 170.78
-        },
-        {
-          "player_id": "p_1479",
-          "espn_id": "15818",
-          "name": "Keenan Allen",
-          "position": "WR",
-          "nfl_team": "IND",
-          "injury_status": null,
-          "projected": 124.21088213,
-          "adp": 165.38
+          "projected": 126.86832316,
+          "adp": 170.55
         },
         {
           "player_id": "p_13293",
@@ -4172,8 +4202,8 @@
           "position": "WR",
           "nfl_team": "BAL",
           "injury_status": null,
-          "projected": 109.68417031,
-          "adp": 168.92
+          "projected": 110.61148438,
+          "adp": 169.17
         },
         {
           "player_id": "espn_-16017",
@@ -4182,11 +4212,11 @@
           "position": "D/ST",
           "nfl_team": "NE",
           "injury_status": null,
-          "projected": 100.5142522,
-          "adp": 154.01
+          "projected": 101.74547473,
+          "adp": 153.27
         }
       ],
-      "projected": 1894.5,
+      "projected": 1895.3,
       "unfilled": [],
       "rank": 12
     }
@@ -4199,18 +4229,8 @@
       "position": "QB",
       "nfl_team": "NO",
       "injury_status": null,
-      "projected": 265.55383082,
-      "adp": 152.35
-    },
-    {
-      "player_id": "p_4943",
-      "espn_id": "3912547",
-      "name": "Sam Darnold",
-      "position": "QB",
-      "nfl_team": "SEA",
-      "injury_status": null,
-      "projected": 242.53529056,
-      "adp": 162.52
+      "projected": 273.99568717,
+      "adp": 152.92
     },
     {
       "player_id": "p_8161",
@@ -4219,8 +4239,8 @@
       "position": "QB",
       "nfl_team": "MIA",
       "injury_status": null,
-      "projected": 239.77663465,
-      "adp": 167.59
+      "projected": 247.39884285,
+      "adp": 167.32
     },
     {
       "player_id": "p_9228",
@@ -4229,28 +4249,8 @@
       "position": "QB",
       "nfl_team": "CAR",
       "injury_status": null,
-      "projected": 238.15304859,
-      "adp": 168.9
-    },
-    {
-      "player_id": "p_12522",
-      "espn_id": "4688380",
-      "name": "Cam Ward",
-      "position": "QB",
-      "nfl_team": "TEN",
-      "injury_status": null,
-      "projected": 219.56489345,
-      "adp": 169.23
-    },
-    {
-      "player_id": "p_96",
-      "espn_id": "8439",
-      "name": "Aaron Rodgers",
-      "position": "QB",
-      "nfl_team": "PIT",
-      "injury_status": null,
-      "projected": 218.83449964,
-      "adp": 169.19
+      "projected": 246.47786355,
+      "adp": 168.59
     },
     {
       "player_id": "p_3257",
@@ -4259,8 +4259,48 @@
       "position": "QB",
       "nfl_team": "ARI",
       "injury_status": null,
-      "projected": 198.53317561,
-      "adp": 169.92
+      "projected": 235.69571672,
+      "adp": 169.76
+    },
+    {
+      "player_id": "p_4943",
+      "espn_id": "3912547",
+      "name": "Sam Darnold",
+      "position": "QB",
+      "nfl_team": "SEA",
+      "injury_status": "Out",
+      "projected": 234.50788603,
+      "adp": 162.94
+    },
+    {
+      "player_id": "p_12522",
+      "espn_id": "4688380",
+      "name": "Cam Ward",
+      "position": "QB",
+      "nfl_team": "TEN",
+      "injury_status": null,
+      "projected": 227.32714887,
+      "adp": 169.12
+    },
+    {
+      "player_id": "p_96",
+      "espn_id": "8439",
+      "name": "Aaron Rodgers",
+      "position": "QB",
+      "nfl_team": "PIT",
+      "injury_status": null,
+      "projected": 227.13809532,
+      "adp": 169.03
+    },
+    {
+      "player_id": "p_11559",
+      "espn_id": "4360423",
+      "name": "Michael Penix",
+      "position": "QB",
+      "nfl_team": "ATL",
+      "injury_status": "Out",
+      "projected": 226.68008838,
+      "adp": 170.08
     },
     {
       "player_id": "p_13269",
@@ -4269,38 +4309,18 @@
       "position": "QB",
       "nfl_team": "LV",
       "injury_status": null,
-      "projected": 187.51039473,
-      "adp": 168.58
+      "projected": 194.04013663,
+      "adp": 168.71
     },
     {
-      "player_id": "p_8134",
-      "espn_id": "4373678",
-      "name": "Khalil Shakir",
-      "position": "WR",
-      "nfl_team": "BUF",
-      "injury_status": "Questionable",
-      "projected": 171.28169853,
-      "adp": 140.3
-    },
-    {
-      "player_id": "p_2020",
-      "espn_id": "17427",
-      "name": "Cairo Santos",
-      "position": "K",
-      "nfl_team": "CHI",
+      "player_id": "p_13330",
+      "espn_id": "5083315",
+      "name": "Kenyon Sadiq",
+      "position": "TE",
+      "nfl_team": "NYJ",
       "injury_status": null,
-      "projected": 144.31887638,
-      "adp": 169.12
-    },
-    {
-      "player_id": "p_13545",
-      "espn_id": "4869461",
-      "name": "Trey Smack",
-      "position": "K",
-      "nfl_team": "GB",
-      "injury_status": null,
-      "projected": 144.28442693,
-      "adp": 168.18
+      "projected": 146.1800344,
+      "adp": 167.09
     },
     {
       "player_id": "p_12524",
@@ -4309,8 +4329,28 @@
       "position": "QB",
       "nfl_team": "CLE",
       "injury_status": null,
-      "projected": 142.55510857,
-      "adp": 169.89
+      "projected": 145.00908062,
+      "adp": 169.82
+    },
+    {
+      "player_id": "p_2020",
+      "espn_id": "17427",
+      "name": "Cairo Santos",
+      "position": "K",
+      "nfl_team": "CHI",
+      "injury_status": null,
+      "projected": 144.13620918,
+      "adp": 168.51
+    },
+    {
+      "player_id": "p_13545",
+      "espn_id": "4869461",
+      "name": "Trey Smack",
+      "position": "K",
+      "nfl_team": "GB",
+      "injury_status": null,
+      "projected": 144.10598322,
+      "adp": 168.29
     },
     {
       "player_id": "p_6650",
@@ -4319,8 +4359,8 @@
       "position": "K",
       "nfl_team": "TB",
       "injury_status": null,
-      "projected": 142.20124553,
-      "adp": 170.32
+      "projected": 142.11428774,
+      "adp": 170.04
     },
     {
       "player_id": "p_7839",
@@ -4330,7 +4370,7 @@
       "nfl_team": "CIN",
       "injury_status": null,
       "projected": 141.84332141,
-      "adp": 169.34
+      "adp": 169.09
     },
     {
       "player_id": "p_650",
@@ -4339,8 +4379,8 @@
       "position": "K",
       "nfl_team": "ATL",
       "injury_status": null,
-      "projected": 141.26710601,
-      "adp": 170.33
+      "projected": 141.17313242,
+      "adp": 170.14
     },
     {
       "player_id": "p_12185",
@@ -4349,8 +4389,8 @@
       "position": "K",
       "nfl_team": "IND",
       "injury_status": null,
-      "projected": 139.55631868,
-      "adp": 170.01
+      "projected": 139.46437504,
+      "adp": 170.04
     },
     {
       "player_id": "p_5095",
@@ -4359,8 +4399,8 @@
       "position": "K",
       "nfl_team": "NO",
       "injury_status": null,
-      "projected": 137.83877876,
-      "adp": 170.17
+      "projected": 137.74056668,
+      "adp": 170.05
     },
     {
       "player_id": "p_7042",
@@ -4369,8 +4409,18 @@
       "position": "K",
       "nfl_team": "BUF",
       "injury_status": null,
-      "projected": 136.95984575,
-      "adp": 169.61
+      "projected": 136.87442334,
+      "adp": 169.43
+    },
+    {
+      "player_id": "p_7600",
+      "espn_id": "4361411",
+      "name": "Pat Freiermuth",
+      "position": "TE",
+      "nfl_team": "PIT",
+      "injury_status": null,
+      "projected": 136.29873906,
+      "adp": 169.6
     },
     {
       "player_id": "p_3678",
@@ -4379,8 +4429,8 @@
       "position": "K",
       "nfl_team": "DEN",
       "injury_status": null,
-      "projected": 135.77328759,
-      "adp": 169.62
+      "projected": 135.77355578,
+      "adp": 169.51
     },
     {
       "player_id": "p_13968",
@@ -4389,8 +4439,8 @@
       "position": "K",
       "nfl_team": "WAS",
       "injury_status": null,
-      "projected": 133.60397423,
-      "adp": 169.96
+      "projected": 133.51895373,
+      "adp": 169.91
     },
     {
       "player_id": "p_13833",
@@ -4399,8 +4449,8 @@
       "position": "K",
       "nfl_team": "NYG",
       "injury_status": null,
-      "projected": 133.16773453,
-      "adp": 169.84
+      "projected": 133.16773444,
+      "adp": 169.76
     },
     {
       "player_id": "p_12536",
@@ -4408,9 +4458,9 @@
       "name": "Jaylin Noel",
       "position": "WR",
       "nfl_team": "HOU",
-      "injury_status": "Questionable",
-      "projected": 131.62597027,
-      "adp": 171.77
+      "injury_status": null,
+      "projected": 131.30515829,
+      "adp": 171.39
     },
     {
       "player_id": "p_12713",
@@ -4419,8 +4469,8 @@
       "position": "K",
       "nfl_team": "NE",
       "injury_status": null,
-      "projected": 129.30301838,
-      "adp": 170.08
+      "projected": 129.21710954,
+      "adp": 170.01
     },
     {
       "player_id": "p_11625",
@@ -4429,8 +4479,8 @@
       "position": "WR",
       "nfl_team": "NYJ",
       "injury_status": null,
-      "projected": 127.87001003,
-      "adp": 171.31
+      "projected": 127.97706165,
+      "adp": 170.96
     },
     {
       "player_id": "p_7922",
@@ -4439,8 +4489,8 @@
       "position": "K",
       "nfl_team": "MIA",
       "injury_status": null,
-      "projected": 127.56923197,
-      "adp": 169.94
+      "projected": 127.47493535,
+      "adp": 169.92
     },
     {
       "player_id": "p_6083",
@@ -4449,208 +4499,8 @@
       "position": "K",
       "nfl_team": "LV",
       "injury_status": null,
-      "projected": 125.09511447,
-      "adp": 169.59
-    },
-    {
-      "player_id": "p_12961",
-      "espn_id": "4568263",
-      "name": "Ryan Fitzgerald",
-      "position": "K",
-      "nfl_team": "CAR",
-      "injury_status": null,
-      "projected": 124.24949595,
-      "adp": 169.81
-    },
-    {
-      "player_id": "p_8180",
-      "espn_id": "4382466",
-      "name": "Jalen Nailor",
-      "position": "WR",
-      "nfl_team": "LV",
-      "injury_status": null,
-      "projected": 124.22468476,
-      "adp": 171.19
-    },
-    {
-      "player_id": "p_6528",
-      "espn_id": "3124084",
-      "name": "Joey Slye",
-      "position": "K",
-      "nfl_team": "TEN",
-      "injury_status": null,
-      "projected": 123.28333903,
-      "adp": 169.79
-    },
-    {
-      "player_id": "p_7571",
-      "espn_id": "4360939",
-      "name": "Rashod Bateman",
-      "position": "WR",
-      "nfl_team": "BAL",
-      "injury_status": null,
-      "projected": 122.33281358,
-      "adp": 171.47
-    },
-    {
-      "player_id": "p_11261",
-      "espn_id": "4258620",
-      "name": "Andre Szmyt",
-      "position": "K",
-      "nfl_team": "CLE",
-      "injury_status": null,
-      "projected": 121.58830576,
-      "adp": 169.88
-    },
-    {
-      "player_id": "p_10955",
-      "espn_id": "4363538",
-      "name": "Chad Ryland",
-      "position": "K",
-      "nfl_team": "ARI",
-      "injury_status": null,
-      "projected": 121.51969315,
-      "adp": 169.92
-    },
-    {
-      "player_id": "p_5995",
-      "espn_id": "4038441",
-      "name": "Justice Hill",
-      "position": "RB",
-      "nfl_team": "BAL",
-      "injury_status": null,
-      "projected": 120.09175977,
-      "adp": 168.9
-    },
-    {
-      "player_id": "p_11058",
-      "espn_id": "4259619",
-      "name": "Blake Grupe",
-      "position": "K",
-      "nfl_team": "NYJ",
-      "injury_status": null,
-      "projected": 119.87971992,
-      "adp": 169.99
-    },
-    {
-      "player_id": "p_8172",
-      "espn_id": "4367209",
-      "name": "Greg Dulcich",
-      "position": "TE",
-      "nfl_team": "MIA",
-      "injury_status": null,
-      "projected": 118.96295799,
-      "adp": 170.48
-    },
-    {
-      "player_id": "p_6768",
-      "espn_id": "4241479",
-      "name": "Tua Tagovailoa",
-      "position": "QB",
-      "nfl_team": "ATL",
-      "injury_status": null,
-      "projected": 115.24569583,
-      "adp": 170.09
-    },
-    {
-      "player_id": "p_7049",
-      "espn_id": "3886598",
-      "name": "Jauan Jennings",
-      "position": "WR",
-      "nfl_team": "MIN",
-      "injury_status": null,
-      "projected": 115.0270047,
-      "adp": 171.15
-    },
-    {
-      "player_id": "p_2505",
-      "espn_id": "2576925",
-      "name": "Darren Waller",
-      "position": "TE",
-      "nfl_team": "CAR",
-      "injury_status": null,
-      "projected": 114.4882306,
-      "adp": 170.4
-    },
-    {
-      "player_id": "p_11603",
-      "espn_id": "4576297",
-      "name": "AJ Barner",
-      "position": "TE",
-      "nfl_team": "SEA",
-      "injury_status": null,
-      "projected": 113.75689806,
-      "adp": 169.77
-    },
-    {
-      "player_id": "p_4035",
-      "espn_id": "3054850",
-      "name": "Alvin Kamara",
-      "position": "RB",
-      "nfl_team": "NO",
-      "injury_status": "Questionable",
-      "projected": 113.43185666,
-      "adp": 161.64
-    },
-    {
-      "player_id": "p_13296",
-      "espn_id": "4869645",
-      "name": "Caleb Douglas",
-      "position": "WR",
-      "nfl_team": "MIA",
-      "injury_status": null,
-      "projected": 113.38908271,
-      "adp": 170.91
-    },
-    {
-      "player_id": "p_11559",
-      "espn_id": "4360423",
-      "name": "Michael Penix",
-      "position": "QB",
-      "nfl_team": "ATL",
-      "injury_status": "Questionable",
-      "projected": 113.20608226,
-      "adp": 170.1
-    },
-    {
-      "player_id": "p_13274",
-      "espn_id": "4685261",
-      "name": "Germie Bernard",
-      "position": "WR",
-      "nfl_team": "PIT",
-      "injury_status": null,
-      "projected": 108.71463284,
-      "adp": 171.3
-    },
-    {
-      "player_id": "p_4066",
-      "espn_id": "3051876",
-      "name": "Evan Engram",
-      "position": "TE",
-      "nfl_team": "DEN",
-      "injury_status": null,
-      "projected": 106.4934276,
-      "adp": 170.03
-    },
-    {
-      "player_id": "p_4033",
-      "espn_id": "3123076",
-      "name": "David Njoku",
-      "position": "TE",
-      "nfl_team": "LAC",
-      "injury_status": null,
-      "projected": 104.33621269,
-      "adp": 169.73
-    },
-    {
-      "player_id": "p_8111",
-      "espn_id": "4243331",
-      "name": "Cade Otton",
-      "position": "TE",
-      "nfl_team": "TB",
-      "injury_status": null,
-      "projected": 102.08702502,
-      "adp": 170.32
+      "projected": 125.09525473,
+      "adp": 169.53
     },
     {
       "player_id": "p_4039",
@@ -4659,128 +4509,78 @@
       "position": "WR",
       "nfl_team": "SEA",
       "injury_status": null,
-      "projected": 101.50020485,
-      "adp": 169.38
+      "projected": 124.42258761,
+      "adp": 169.03
     },
     {
-      "player_id": "espn_-16012",
-      "espn_id": "-16012",
-      "name": "Chiefs D/ST",
-      "position": "D/ST",
-      "nfl_team": "KC",
-      "injury_status": null,
-      "projected": 100.41901674,
-      "adp": 166.51
-    },
-    {
-      "player_id": "p_4147",
-      "espn_id": "3116389",
-      "name": "Samaje Perine",
-      "position": "RB",
-      "nfl_team": "CIN",
-      "injury_status": null,
-      "projected": 100.32797614,
-      "adp": 171.09
-    },
-    {
-      "player_id": "p_4993",
-      "espn_id": "3116164",
-      "name": "Mike Gesicki",
-      "position": "TE",
-      "nfl_team": "CIN",
-      "injury_status": null,
-      "projected": 96.45723873,
-      "adp": 170.21
-    },
-    {
-      "player_id": "p_11626",
-      "espn_id": "4430034",
-      "name": "Xavier Legette",
-      "position": "WR",
+      "player_id": "p_12961",
+      "espn_id": "4568263",
+      "name": "Ryan Fitzgerald",
+      "position": "K",
       "nfl_team": "CAR",
-      "injury_status": "Questionable",
-      "projected": 94.01409975,
-      "adp": 170.74
-    },
-    {
-      "player_id": "p_9511",
-      "espn_id": "4596334",
-      "name": "Keaton Mitchell",
-      "position": "RB",
-      "nfl_team": "LAC",
-      "injury_status": "Questionable",
-      "projected": 93.88785547,
-      "adp": 169.32
-    },
-    {
-      "player_id": "espn_-16027",
-      "espn_id": "-16027",
-      "name": "Buccaneers D/ST",
-      "position": "D/ST",
-      "nfl_team": "TB",
       "injury_status": null,
-      "projected": 92.96866463,
-      "adp": 170.65
+      "projected": 124.17589772,
+      "adp": 169.79
     },
     {
-      "player_id": "p_8119",
-      "espn_id": "4361409",
-      "name": "Jahan Dotson",
+      "player_id": "p_1479",
+      "espn_id": "15818",
+      "name": "Keenan Allen",
       "position": "WR",
-      "nfl_team": "ATL",
+      "nfl_team": "IND",
       "injury_status": null,
-      "projected": 92.7672717,
-      "adp": 170.66
+      "projected": 124.11821577,
+      "adp": 166.02
     },
     {
-      "player_id": "p_10218",
-      "espn_id": "4686422",
-      "name": "Xavier Hutchinson",
-      "position": "WR",
-      "nfl_team": "HOU",
+      "player_id": "p_6528",
+      "espn_id": "3124084",
+      "name": "Joey Slye",
+      "position": "K",
+      "nfl_team": "TEN",
       "injury_status": null,
-      "projected": 91.13769286,
-      "adp": 170.28
+      "projected": 123.2834799,
+      "adp": 169.84
     },
     {
-      "player_id": "p_12509",
-      "espn_id": "4686612",
-      "name": "Tre' Harris",
+      "player_id": "p_7571",
+      "espn_id": "4360939",
+      "name": "Rashod Bateman",
       "position": "WR",
-      "nfl_team": "LAC",
-      "injury_status": "Questionable",
-      "projected": 89.85955088,
-      "adp": 171.15
+      "nfl_team": "BAL",
+      "injury_status": null,
+      "projected": 122.75477041,
+      "adp": 171.18
     },
     {
-      "player_id": "p_8117",
-      "espn_id": "4249417",
-      "name": "Jalen Tolbert",
+      "player_id": "p_13296",
+      "espn_id": "4869645",
+      "name": "Caleb Douglas",
       "position": "WR",
       "nfl_team": "MIA",
       "injury_status": null,
-      "projected": 89.49546457,
-      "adp": 170.55
+      "projected": 121.85144194,
+      "adp": 170.79
     },
     {
-      "player_id": "p_11783",
-      "espn_id": "5083754",
-      "name": "Ryan Flournoy",
-      "position": "WR",
-      "nfl_team": "DAL",
+      "player_id": "p_11261",
+      "espn_id": "4258620",
+      "name": "Andre Szmyt",
+      "position": "K",
+      "nfl_team": "CLE",
       "injury_status": null,
-      "projected": 89.34661393,
-      "adp": 171.08
+      "projected": 121.58845865,
+      "adp": 169.86
     },
     {
-      "player_id": "espn_-16018",
-      "espn_id": "-16018",
-      "name": "Saints D/ST",
-      "position": "D/ST",
-      "nfl_team": "NO",
+      "player_id": "p_10955",
+      "espn_id": "4363538",
+      "name": "Chad Ryland",
+      "position": "K",
+      "nfl_team": "ARI",
       "injury_status": null,
-      "projected": 89.05439811,
-      "adp": 170.61
+      "projected": 121.51989512,
+      "adp": 169.9
     },
     {
       "player_id": "p_13311",
@@ -4789,198 +4589,38 @@
       "position": "WR",
       "nfl_team": "MIA",
       "injury_status": null,
-      "projected": 88.39566876,
-      "adp": 170.55
+      "projected": 121.17071032,
+      "adp": 170.59
     },
     {
-      "player_id": "p_12469",
-      "espn_id": "5081397",
-      "name": "Dylan Sampson",
+      "player_id": "p_5995",
+      "espn_id": "4038441",
+      "name": "Justice Hill",
       "position": "RB",
-      "nfl_team": "CLE",
+      "nfl_team": "BAL",
       "injury_status": null,
-      "projected": 88.16406842,
-      "adp": 169.17
+      "projected": 120.17486849,
+      "adp": 170.03
     },
     {
-      "player_id": "p_13276",
-      "espn_id": "4723820",
-      "name": "Omar Cooper",
-      "position": "WR",
-      "nfl_team": "NYJ",
-      "injury_status": null,
-      "projected": 87.68904691,
-      "adp": 171.14
-    },
-    {
-      "player_id": "p_13285",
-      "espn_id": "4682648",
-      "name": "Malachi Fields",
-      "position": "WR",
-      "nfl_team": "NYG",
-      "injury_status": null,
-      "projected": 86.26096625,
-      "adp": 170.54
-    },
-    {
-      "player_id": "p_6039",
-      "espn_id": "3915411",
-      "name": "Ty Johnson",
+      "player_id": "p_4035",
+      "espn_id": "3054850",
+      "name": "Alvin Kamara",
       "position": "RB",
-      "nfl_team": "BUF",
-      "injury_status": "Questionable",
-      "projected": 84.90616064,
-      "adp": 170.77
+      "nfl_team": "NO",
+      "injury_status": "Out",
+      "projected": 120.11983221,
+      "adp": 163.94
     },
     {
-      "player_id": "espn_-16025",
-      "espn_id": "-16025",
-      "name": "49ers D/ST",
-      "position": "D/ST",
-      "nfl_team": "SF",
-      "injury_status": null,
-      "projected": 83.14879037,
-      "adp": 169.14
-    },
-    {
-      "player_id": "espn_-16020",
-      "espn_id": "-16020",
-      "name": "Jets D/ST",
-      "position": "D/ST",
-      "nfl_team": "NYJ",
-      "injury_status": null,
-      "projected": 82.59347607,
-      "adp": 170.3
-    },
-    {
-      "player_id": "p_13320",
-      "espn_id": "4870612",
-      "name": "Zachariah Branch",
-      "position": "WR",
-      "nfl_team": "ATL",
-      "injury_status": null,
-      "projected": 82.53510995,
-      "adp": 170.81
-    },
-    {
-      "player_id": "p_9501",
-      "espn_id": "4427095",
-      "name": "DeMario Douglas",
-      "position": "WR",
-      "nfl_team": "NE",
-      "injury_status": null,
-      "projected": 81.51501718,
-      "adp": 170.49
-    },
-    {
-      "player_id": "p_9482",
-      "espn_id": "4429086",
-      "name": "Michael Mayer",
+      "player_id": "p_8172",
+      "espn_id": "4367209",
+      "name": "Greg Dulcich",
       "position": "TE",
-      "nfl_team": "LV",
+      "nfl_team": "MIA",
       "injury_status": null,
-      "projected": 80.94154104,
-      "adp": 170.21
-    },
-    {
-      "player_id": "p_6149",
-      "espn_id": "3916945",
-      "name": "Darius Slayton",
-      "position": "WR",
-      "nfl_team": "NYG",
-      "injury_status": null,
-      "projected": 80.08603982,
-      "adp": 170.54
-    },
-    {
-      "player_id": "espn_-16019",
-      "espn_id": "-16019",
-      "name": "Giants D/ST",
-      "position": "D/ST",
-      "nfl_team": "NYG",
-      "injury_status": null,
-      "projected": 79.3393778,
-      "adp": 169.71
-    },
-    {
-      "player_id": "p_7528",
-      "espn_id": "4241457",
-      "name": "Najee Harris",
-      "position": "RB",
-      "nfl_team": "NYG",
-      "injury_status": null,
-      "projected": 78.45239787,
-      "adp": 170.18
-    },
-    {
-      "player_id": "p_4017",
-      "espn_id": "3122840",
-      "name": "Deshaun Watson",
-      "position": "QB",
-      "nfl_team": "CLE",
-      "injury_status": null,
-      "projected": 78.21072728,
-      "adp": 170.11
-    },
-    {
-      "player_id": "p_13301",
-      "espn_id": "5081432",
-      "name": "Antonio Williams",
-      "position": "WR",
-      "nfl_team": "WAS",
-      "injury_status": null,
-      "projected": 77.65433474,
-      "adp": 170.43
-    },
-    {
-      "player_id": "p_8188",
-      "espn_id": "4362921",
-      "name": "Tyquan Thornton",
-      "position": "WR",
-      "nfl_team": "KC",
-      "injury_status": null,
-      "projected": 77.28949104,
-      "adp": 170.34
-    },
-    {
-      "player_id": "p_12493",
-      "espn_id": "4595342",
-      "name": "Oronde Gadsden",
-      "position": "TE",
-      "nfl_team": "LAC",
-      "injury_status": null,
-      "projected": 77.24909335,
-      "adp": 170.23
-    },
-    {
-      "player_id": "p_11576",
-      "espn_id": "4685247",
-      "name": "Braelon Allen",
-      "position": "RB",
-      "nfl_team": "NYJ",
-      "injury_status": null,
-      "projected": 76.78526613,
-      "adp": 170.95
-    },
-    {
-      "player_id": "espn_-16011",
-      "espn_id": "-16011",
-      "name": "Colts D/ST",
-      "position": "D/ST",
-      "nfl_team": "IND",
-      "injury_status": null,
-      "projected": 76.07255882,
-      "adp": 170.1
-    },
-    {
-      "player_id": "p_11637",
-      "espn_id": "4635008",
-      "name": "Keon Coleman",
-      "position": "WR",
-      "nfl_team": "BUF",
-      "injury_status": "Questionable",
-      "projected": 75.51022122,
-      "adp": 170.25
+      "projected": 118.35783012,
+      "adp": 170.38
     },
     {
       "player_id": "p_6865",
@@ -4989,48 +4629,188 @@
       "position": "TE",
       "nfl_team": "LA",
       "injury_status": null,
-      "projected": 75.33963933,
-      "adp": 170.2
+      "projected": 116.12300367,
+      "adp": 170.24
     },
     {
-      "player_id": "p_13345",
-      "espn_id": "4702555",
-      "name": "Jonah Coleman",
-      "position": "RB",
-      "nfl_team": "DEN",
-      "injury_status": null,
-      "projected": 74.38760122,
-      "adp": 165.88
-    },
-    {
-      "player_id": "espn_-16016",
-      "espn_id": "-16016",
-      "name": "Vikings D/ST",
-      "position": "D/ST",
+      "player_id": "p_7049",
+      "espn_id": "3886598",
+      "name": "Jauan Jennings",
+      "position": "WR",
       "nfl_team": "MIN",
       "injury_status": null,
-      "projected": 74.38189954,
-      "adp": 169.04
+      "projected": 114.75756476,
+      "adp": 171.0
     },
     {
-      "player_id": "espn_-16029",
-      "espn_id": "-16029",
-      "name": "Panthers D/ST",
-      "position": "D/ST",
+      "player_id": "p_2505",
+      "espn_id": "2576925",
+      "name": "Darren Waller",
+      "position": "TE",
       "nfl_team": "CAR",
       "injury_status": null,
-      "projected": 73.90878415,
-      "adp": 169.84
+      "projected": 114.30990437,
+      "adp": 170.4
     },
     {
-      "player_id": "p_12535",
-      "espn_id": "5123663",
-      "name": "Isaac TeSlaa",
-      "position": "WR",
-      "nfl_team": "DET",
+      "player_id": "p_13414",
+      "espn_id": "4696044",
+      "name": "Kaelon Black",
+      "position": "RB",
+      "nfl_team": "SF",
       "injury_status": null,
-      "projected": 72.95517986,
-      "adp": 170.29
+      "projected": 113.78331256,
+      "adp": 169.71
+    },
+    {
+      "player_id": "p_11603",
+      "espn_id": "4576297",
+      "name": "AJ Barner",
+      "position": "TE",
+      "nfl_team": "SEA",
+      "injury_status": null,
+      "projected": 113.54612039,
+      "adp": 169.55
+    },
+    {
+      "player_id": "p_13274",
+      "espn_id": "4685261",
+      "name": "Germie Bernard",
+      "position": "WR",
+      "nfl_team": "PIT",
+      "injury_status": null,
+      "projected": 108.69500813,
+      "adp": 171.15
+    },
+    {
+      "player_id": "p_4066",
+      "espn_id": "3051876",
+      "name": "Evan Engram",
+      "position": "TE",
+      "nfl_team": "DEN",
+      "injury_status": null,
+      "projected": 106.78528002,
+      "adp": 169.97
+    },
+    {
+      "player_id": "p_4033",
+      "espn_id": "3123076",
+      "name": "David Njoku",
+      "position": "TE",
+      "nfl_team": "LAC",
+      "injury_status": null,
+      "projected": 104.50950913,
+      "adp": 169.8
+    },
+    {
+      "player_id": "p_9501",
+      "espn_id": "4427095",
+      "name": "DeMario Douglas",
+      "position": "WR",
+      "nfl_team": "NE",
+      "injury_status": null,
+      "projected": 103.5790891,
+      "adp": 170.51
+    },
+    {
+      "player_id": "p_8111",
+      "espn_id": "4243331",
+      "name": "Cade Otton",
+      "position": "TE",
+      "nfl_team": "TB",
+      "injury_status": null,
+      "projected": 103.0030079,
+      "adp": 170.25
+    },
+    {
+      "player_id": "p_4147",
+      "espn_id": "3116389",
+      "name": "Samaje Perine",
+      "position": "RB",
+      "nfl_team": "CIN",
+      "injury_status": null,
+      "projected": 100.32561117,
+      "adp": 170.39
+    },
+    {
+      "player_id": "espn_-16012",
+      "espn_id": "-16012",
+      "name": "Chiefs D/ST",
+      "position": "D/ST",
+      "nfl_team": "KC",
+      "injury_status": null,
+      "projected": 100.281617,
+      "adp": 165.59
+    },
+    {
+      "player_id": "p_4993",
+      "espn_id": "3116164",
+      "name": "Mike Gesicki",
+      "position": "TE",
+      "nfl_team": "CIN",
+      "injury_status": null,
+      "projected": 96.54118881,
+      "adp": 170.19
+    },
+    {
+      "player_id": "p_4177",
+      "espn_id": "2991662",
+      "name": "Mack Hollins",
+      "position": "WR",
+      "nfl_team": "NE",
+      "injury_status": null,
+      "projected": 95.82046764,
+      "adp": 170.09
+    },
+    {
+      "player_id": "p_11610",
+      "espn_id": "4569603",
+      "name": "Malik Washington",
+      "position": "WR",
+      "nfl_team": "MIA",
+      "injury_status": null,
+      "projected": 95.08775942,
+      "adp": 169.94
+    },
+    {
+      "player_id": "p_9511",
+      "espn_id": "4596334",
+      "name": "Keaton Mitchell",
+      "position": "RB",
+      "nfl_team": "LAC",
+      "injury_status": null,
+      "projected": 93.94068352,
+      "adp": 168.96
+    },
+    {
+      "player_id": "p_11637",
+      "espn_id": "4635008",
+      "name": "Keon Coleman",
+      "position": "WR",
+      "nfl_team": "BUF",
+      "injury_status": null,
+      "projected": 93.90640531,
+      "adp": 170.18
+    },
+    {
+      "player_id": "p_11626",
+      "espn_id": "4430034",
+      "name": "Xavier Legette",
+      "position": "WR",
+      "nfl_team": "CAR",
+      "injury_status": null,
+      "projected": 93.8913648,
+      "adp": 170.76
+    },
+    {
+      "player_id": "espn_-16027",
+      "espn_id": "-16027",
+      "name": "Buccaneers D/ST",
+      "position": "D/ST",
+      "nfl_team": "TB",
+      "injury_status": null,
+      "projected": 92.20808826,
+      "adp": 170.2
     },
     {
       "player_id": "p_12492",
@@ -5039,8 +4819,278 @@
       "position": "WR",
       "nfl_team": "DEN",
       "injury_status": null,
-      "projected": 72.74866247,
+      "projected": 91.70151179,
+      "adp": 170.38
+    },
+    {
+      "player_id": "p_10218",
+      "espn_id": "4686422",
+      "name": "Xavier Hutchinson",
+      "position": "WR",
+      "nfl_team": "HOU",
+      "injury_status": null,
+      "projected": 91.32340974,
+      "adp": 170.49
+    },
+    {
+      "player_id": "p_12509",
+      "espn_id": "4686612",
+      "name": "Tre' Harris",
+      "position": "WR",
+      "nfl_team": "LAC",
+      "injury_status": null,
+      "projected": 90.08853357,
+      "adp": 171.01
+    },
+    {
+      "player_id": "p_8119",
+      "espn_id": "4361409",
+      "name": "Jahan Dotson",
+      "position": "WR",
+      "nfl_team": "ATL",
+      "injury_status": null,
+      "projected": 89.96307577,
+      "adp": 170.59
+    },
+    {
+      "player_id": "p_11783",
+      "espn_id": "5083754",
+      "name": "Ryan Flournoy",
+      "position": "WR",
+      "nfl_team": "DAL",
+      "injury_status": null,
+      "projected": 89.6330848,
+      "adp": 170.85
+    },
+    {
+      "player_id": "espn_-16016",
+      "espn_id": "-16016",
+      "name": "Vikings D/ST",
+      "position": "D/ST",
+      "nfl_team": "MIN",
+      "injury_status": null,
+      "projected": 89.47975844,
+      "adp": 168.67
+    },
+    {
+      "player_id": "p_12469",
+      "espn_id": "5081397",
+      "name": "Dylan Sampson",
+      "position": "RB",
+      "nfl_team": "CLE",
+      "injury_status": null,
+      "projected": 88.19341828,
+      "adp": 169.41
+    },
+    {
+      "player_id": "espn_-16018",
+      "espn_id": "-16018",
+      "name": "Saints D/ST",
+      "position": "D/ST",
+      "nfl_team": "NO",
+      "injury_status": null,
+      "projected": 88.10798983,
+      "adp": 170.4
+    },
+    {
+      "player_id": "p_13276",
+      "espn_id": "4723820",
+      "name": "Omar Cooper",
+      "position": "WR",
+      "nfl_team": "NYJ",
+      "injury_status": null,
+      "projected": 87.7729608,
+      "adp": 171.01
+    },
+    {
+      "player_id": "p_11199",
+      "espn_id": "4362478",
+      "name": "Emari Demercado",
+      "position": "RB",
+      "nfl_team": "DAL",
+      "injury_status": null,
+      "projected": 82.62713454,
+      "adp": 170.18
+    },
+    {
+      "player_id": "espn_-16020",
+      "espn_id": "-16020",
+      "name": "Jets D/ST",
+      "position": "D/ST",
+      "nfl_team": "NYJ",
+      "injury_status": null,
+      "projected": 81.2995192,
+      "adp": 170.22
+    },
+    {
+      "player_id": "p_7090",
+      "espn_id": "4040655",
+      "name": "Darnell Mooney",
+      "position": "WR",
+      "nfl_team": "NYG",
+      "injury_status": null,
+      "projected": 80.78033589,
       "adp": 170.37
+    },
+    {
+      "player_id": "p_13320",
+      "espn_id": "4870612",
+      "name": "Zachariah Branch",
+      "position": "WR",
+      "nfl_team": "ATL",
+      "injury_status": null,
+      "projected": 80.28755895,
+      "adp": 170.59
+    },
+    {
+      "player_id": "p_6039",
+      "espn_id": "3915411",
+      "name": "Ty Johnson",
+      "position": "RB",
+      "nfl_team": "BUF",
+      "injury_status": "Out",
+      "projected": 79.65894254,
+      "adp": 170.7
+    },
+    {
+      "player_id": "espn_-16019",
+      "espn_id": "-16019",
+      "name": "Giants D/ST",
+      "position": "D/ST",
+      "nfl_team": "NYG",
+      "injury_status": null,
+      "projected": 79.13834383,
+      "adp": 169.68
+    },
+    {
+      "player_id": "espn_-16025",
+      "espn_id": "-16025",
+      "name": "49ers D/ST",
+      "position": "D/ST",
+      "nfl_team": "SF",
+      "injury_status": null,
+      "projected": 78.77009532,
+      "adp": 168.55
+    },
+    {
+      "player_id": "p_7528",
+      "espn_id": "4241457",
+      "name": "Najee Harris",
+      "position": "RB",
+      "nfl_team": "NYG",
+      "injury_status": null,
+      "projected": 78.46153983,
+      "adp": 169.94
+    },
+    {
+      "player_id": "p_6768",
+      "espn_id": "4241479",
+      "name": "Tua Tagovailoa",
+      "position": "QB",
+      "nfl_team": "ATL",
+      "injury_status": "Out",
+      "projected": 78.36193248,
+      "adp": 170.03
+    },
+    {
+      "player_id": "p_13301",
+      "espn_id": "5081432",
+      "name": "Antonio Williams",
+      "position": "WR",
+      "nfl_team": "WAS",
+      "injury_status": null,
+      "projected": 77.58026692,
+      "adp": 170.38
+    },
+    {
+      "player_id": "p_8188",
+      "espn_id": "4362921",
+      "name": "Tyquan Thornton",
+      "position": "WR",
+      "nfl_team": "KC",
+      "injury_status": null,
+      "projected": 77.5030739,
+      "adp": 170.28
+    },
+    {
+      "player_id": "p_12493",
+      "espn_id": "4595342",
+      "name": "Oronde Gadsden",
+      "position": "TE",
+      "nfl_team": "LAC",
+      "injury_status": null,
+      "projected": 77.37634667,
+      "adp": 170.33
+    },
+    {
+      "player_id": "p_11576",
+      "espn_id": "4685247",
+      "name": "Braelon Allen",
+      "position": "RB",
+      "nfl_team": "NYJ",
+      "injury_status": null,
+      "projected": 76.88740057,
+      "adp": 170.87
+    },
+    {
+      "player_id": "p_4017",
+      "espn_id": "3122840",
+      "name": "Deshaun Watson",
+      "position": "QB",
+      "nfl_team": "CLE",
+      "injury_status": null,
+      "projected": 75.83743321,
+      "adp": 170.06
+    },
+    {
+      "player_id": "p_7670",
+      "espn_id": "4242433",
+      "name": "Joshua Palmer",
+      "position": "WR",
+      "nfl_team": "BUF",
+      "injury_status": null,
+      "projected": 75.45474301,
+      "adp": 169.96
+    },
+    {
+      "player_id": "p_13345",
+      "espn_id": "4702555",
+      "name": "Jonah Coleman",
+      "position": "RB",
+      "nfl_team": "DEN",
+      "injury_status": null,
+      "projected": 74.46328874,
+      "adp": 163.34
+    },
+    {
+      "player_id": "p_8117",
+      "espn_id": "4249417",
+      "name": "Jalen Tolbert",
+      "position": "WR",
+      "nfl_team": "MIA",
+      "injury_status": null,
+      "projected": 73.78687952,
+      "adp": 170.46
+    },
+    {
+      "player_id": "espn_-16011",
+      "espn_id": "-16011",
+      "name": "Colts D/ST",
+      "position": "D/ST",
+      "nfl_team": "IND",
+      "injury_status": null,
+      "projected": 73.40233849,
+      "adp": 170.02
+    },
+    {
+      "player_id": "p_12535",
+      "espn_id": "5123663",
+      "name": "Isaac TeSlaa",
+      "position": "WR",
+      "nfl_team": "DET",
+      "injury_status": null,
+      "projected": 73.16446576,
+      "adp": 170.27
     },
     {
       "player_id": "p_9479",
@@ -5049,38 +5099,8 @@
       "position": "TE",
       "nfl_team": "PIT",
       "injury_status": null,
-      "projected": 72.44355904,
-      "adp": 169.85
-    },
-    {
-      "player_id": "espn_-16004",
-      "espn_id": "-16004",
-      "name": "Bengals D/ST",
-      "position": "D/ST",
-      "nfl_team": "CIN",
-      "injury_status": null,
-      "projected": 72.35901443,
-      "adp": 169.75
-    },
-    {
-      "player_id": "p_8205",
-      "espn_id": "4361529",
-      "name": "Isiah Pacheco",
-      "position": "RB",
-      "nfl_team": "DET",
-      "injury_status": "IR",
-      "projected": 71.19728946,
-      "adp": 160.79
-    },
-    {
-      "player_id": "espn_-16003",
-      "espn_id": "-16003",
-      "name": "Bears D/ST",
-      "position": "D/ST",
-      "nfl_team": "CHI",
-      "injury_status": null,
-      "projected": 71.14289837,
-      "adp": 169.58
+      "projected": 72.45419537,
+      "adp": 169.87
     },
     {
       "player_id": "p_11370",
@@ -5089,8 +5109,38 @@
       "position": "RB",
       "nfl_team": "GB",
       "injury_status": null,
-      "projected": 70.8095271,
-      "adp": 170.43
+      "projected": 71.41556916,
+      "adp": 170.78
+    },
+    {
+      "player_id": "p_8205",
+      "espn_id": "4361529",
+      "name": "Isiah Pacheco",
+      "position": "RB",
+      "nfl_team": "DET",
+      "injury_status": "IR",
+      "projected": 71.10997451,
+      "adp": 166.21
+    },
+    {
+      "player_id": "espn_-16004",
+      "espn_id": "-16004",
+      "name": "Bengals D/ST",
+      "position": "D/ST",
+      "nfl_team": "CIN",
+      "injury_status": null,
+      "projected": 70.9207137,
+      "adp": 169.77
+    },
+    {
+      "player_id": "espn_-16029",
+      "espn_id": "-16029",
+      "name": "Panthers D/ST",
+      "position": "D/ST",
+      "nfl_team": "CAR",
+      "injury_status": null,
+      "projected": 70.79147223,
+      "adp": 169.79
     },
     {
       "player_id": "p_11592",
@@ -5099,7 +5149,7 @@
       "position": "TE",
       "nfl_team": "CIN",
       "injury_status": null,
-      "projected": 70.58566714,
+      "projected": 70.65370314,
       "adp": 170.03
     },
     {
@@ -5109,18 +5159,18 @@
       "position": "TE",
       "nfl_team": "NYJ",
       "injury_status": null,
-      "projected": 70.36266288,
-      "adp": 170.0
+      "projected": 70.40114613,
+      "adp": 169.98
     },
     {
-      "player_id": "p_9494",
-      "espn_id": "4686472",
-      "name": "Marvin Mims",
-      "position": "WR",
-      "nfl_team": "DEN",
-      "injury_status": "Questionable",
-      "projected": 70.0145951,
-      "adp": 170.15
+      "player_id": "espn_-16003",
+      "espn_id": "-16003",
+      "name": "Bears D/ST",
+      "position": "D/ST",
+      "nfl_team": "CHI",
+      "injury_status": null,
+      "projected": 70.26896549,
+      "adp": 169.35
     },
     {
       "player_id": "espn_-16010",
@@ -5129,18 +5179,8 @@
       "position": "D/ST",
       "nfl_team": "TEN",
       "injury_status": null,
-      "projected": 68.359154,
-      "adp": 169.92
-    },
-    {
-      "player_id": "p_5906",
-      "espn_id": "3930086",
-      "name": "Dawson Knox",
-      "position": "TE",
-      "nfl_team": "BUF",
-      "injury_status": null,
-      "projected": 68.24722754,
-      "adp": 169.81
+      "projected": 68.25380174,
+      "adp": 169.9
     },
     {
       "player_id": "p_10226",
@@ -5149,28 +5189,8 @@
       "position": "WR",
       "nfl_team": "CIN",
       "injury_status": null,
-      "projected": 67.64691006,
-      "adp": 170.15
-    },
-    {
-      "player_id": "p_13338",
-      "espn_id": "4685307",
-      "name": "Kevin Coleman",
-      "position": "WR",
-      "nfl_team": "MIA",
-      "injury_status": null,
-      "projected": 66.97368549,
-      "adp": 170.08
-    },
-    {
-      "player_id": "p_8917",
-      "espn_id": "3676833",
-      "name": "KaVontae Turpin",
-      "position": "WR",
-      "nfl_team": "DAL",
-      "injury_status": null,
-      "projected": 66.36387281,
-      "adp": 169.76
+      "projected": 67.75389045,
+      "adp": 170.13
     },
     {
       "player_id": "p_12483",
@@ -5179,198 +5199,18 @@
       "position": "WR",
       "nfl_team": "LV",
       "injury_status": null,
-      "projected": 65.92311227,
-      "adp": 170.2
-    },
-    {
-      "player_id": "p_12497",
-      "espn_id": "4597703",
-      "name": "Tory Horton",
-      "position": "WR",
-      "nfl_team": "SEA",
-      "injury_status": "Questionable",
-      "projected": 65.4757054,
+      "projected": 67.68419421,
       "adp": 170.18
     },
     {
-      "player_id": "p_13317",
-      "espn_id": "5220680",
-      "name": "Ted Hurst",
-      "position": "WR",
-      "nfl_team": "TB",
-      "injury_status": null,
-      "projected": 64.91637032,
-      "adp": 170.16
-    },
-    {
-      "player_id": "p_7090",
-      "espn_id": "4040655",
-      "name": "Darnell Mooney",
-      "position": "WR",
-      "nfl_team": "NYG",
-      "injury_status": null,
-      "projected": 63.69121144,
-      "adp": 170.36
-    },
-    {
-      "player_id": "p_11597",
-      "espn_id": "4429148",
-      "name": "Theo Johnson",
+      "player_id": "p_5906",
+      "espn_id": "3930086",
+      "name": "Dawson Knox",
       "position": "TE",
-      "nfl_team": "NYG",
-      "injury_status": "Questionable",
-      "projected": 61.54616362,
-      "adp": 170.1
-    },
-    {
-      "player_id": "espn_-16028",
-      "espn_id": "-16028",
-      "name": "Commanders D/ST",
-      "position": "D/ST",
-      "nfl_team": "WAS",
-      "injury_status": null,
-      "projected": 60.76872635,
-      "adp": 169.77
-    },
-    {
-      "player_id": "p_7828",
-      "espn_id": "4240472",
-      "name": "Noah Gray",
-      "position": "TE",
-      "nfl_team": "KC",
-      "injury_status": null,
-      "projected": 60.72666841,
-      "adp": 169.92
-    },
-    {
-      "player_id": "p_12521",
-      "espn_id": "4678006",
-      "name": "Elijah Arroyo",
-      "position": "TE",
-      "nfl_team": "SEA",
-      "injury_status": null,
-      "projected": 60.60368443,
-      "adp": 169.93
-    },
-    {
-      "player_id": "p_13414",
-      "espn_id": "4696044",
-      "name": "Kaelon Black",
-      "position": "RB",
-      "nfl_team": "SF",
-      "injury_status": null,
-      "projected": 60.37829088,
-      "adp": 170.27
-    },
-    {
-      "player_id": "p_12455",
-      "espn_id": "4596602",
-      "name": "Brashard Smith",
-      "position": "RB",
-      "nfl_team": "KC",
-      "injury_status": null,
-      "projected": 59.65474911,
-      "adp": 170.31
-    },
-    {
-      "player_id": "espn_-16002",
-      "espn_id": "-16002",
-      "name": "Bills D/ST",
-      "position": "D/ST",
       "nfl_team": "BUF",
       "injury_status": null,
-      "projected": 58.96557673,
-      "adp": 169.07
-    },
-    {
-      "player_id": "espn_-16001",
-      "espn_id": "-16001",
-      "name": "Falcons D/ST",
-      "position": "D/ST",
-      "nfl_team": "ATL",
-      "injury_status": null,
-      "projected": 58.42415963,
-      "adp": 170.04
-    },
-    {
-      "player_id": "p_8800",
-      "espn_id": "4240603",
-      "name": "Malik Davis",
-      "position": "RB",
-      "nfl_team": "DAL",
-      "injury_status": null,
-      "projected": 57.59972082,
-      "adp": 170.34
-    },
-    {
-      "player_id": "p_4177",
-      "espn_id": "2991662",
-      "name": "Mack Hollins",
-      "position": "WR",
-      "nfl_team": "NE",
-      "injury_status": null,
-      "projected": 56.66862899,
-      "adp": 170.1
-    },
-    {
-      "player_id": "p_13329",
-      "espn_id": "5150247",
-      "name": "Malik Benson",
-      "position": "WR",
-      "nfl_team": "LV",
-      "injury_status": null,
-      "projected": 56.54933268,
-      "adp": 170.0
-    },
-    {
-      "player_id": "p_13337",
-      "espn_id": "4832955",
-      "name": "Emmett Johnson",
-      "position": "RB",
-      "nfl_team": "KC",
-      "injury_status": null,
-      "projected": 53.87127272,
-      "adp": 169.9
-    },
-    {
-      "player_id": "espn_-16013",
-      "espn_id": "-16013",
-      "name": "Raiders D/ST",
-      "position": "D/ST",
-      "nfl_team": "LV",
-      "injury_status": null,
-      "projected": 53.85949642,
-      "adp": 169.83
-    },
-    {
-      "player_id": "p_6826",
-      "espn_id": "4258595",
-      "name": "Cole Kmet",
-      "position": "TE",
-      "nfl_team": "CHI",
-      "injury_status": null,
-      "projected": 53.85857427,
-      "adp": 169.76
-    },
-    {
-      "player_id": "p_13413",
-      "espn_id": "4912218",
-      "name": "Cyrus Allen",
-      "position": "WR",
-      "nfl_team": "KC",
-      "injury_status": null,
-      "projected": 52.80644981,
-      "adp": 169.81
-    },
-    {
-      "player_id": "p_11571",
-      "espn_id": "4695404",
-      "name": "Isaiah Davis",
-      "position": "RB",
-      "nfl_team": "NYJ",
-      "injury_status": "Questionable",
-      "projected": 51.05088157,
-      "adp": 170.52
+      "projected": 67.54651407,
+      "adp": 169.88
     },
     {
       "player_id": "p_12547",
@@ -5379,18 +5219,208 @@
       "position": "WR",
       "nfl_team": "NE",
       "injury_status": null,
-      "projected": 50.75043171,
-      "adp": 169.98
+      "projected": 66.67258152,
+      "adp": 169.97
     },
     {
-      "player_id": "p_11627",
-      "espn_id": "4431280",
-      "name": "Troy Franklin",
+      "player_id": "p_13317",
+      "espn_id": "5220680",
+      "name": "Ted Hurst",
+      "position": "WR",
+      "nfl_team": "TB",
+      "injury_status": null,
+      "projected": 66.57719641,
+      "adp": 170.15
+    },
+    {
+      "player_id": "p_8917",
+      "espn_id": "3676833",
+      "name": "KaVontae Turpin",
+      "position": "WR",
+      "nfl_team": "DAL",
+      "injury_status": null,
+      "projected": 66.56822979,
+      "adp": 169.72
+    },
+    {
+      "player_id": "p_11597",
+      "espn_id": "4429148",
+      "name": "Theo Johnson",
+      "position": "TE",
+      "nfl_team": "NYG",
+      "injury_status": null,
+      "projected": 61.79961271,
+      "adp": 170.13
+    },
+    {
+      "player_id": "p_7828",
+      "espn_id": "4240472",
+      "name": "Noah Gray",
+      "position": "TE",
+      "nfl_team": "KC",
+      "injury_status": null,
+      "projected": 60.90039592,
+      "adp": 169.91
+    },
+    {
+      "player_id": "espn_-16028",
+      "espn_id": "-16028",
+      "name": "Commanders D/ST",
+      "position": "D/ST",
+      "nfl_team": "WAS",
+      "injury_status": null,
+      "projected": 60.47311078,
+      "adp": 169.74
+    },
+    {
+      "player_id": "p_9494",
+      "espn_id": "4686472",
+      "name": "Marvin Mims",
       "position": "WR",
       "nfl_team": "DEN",
       "injury_status": null,
-      "projected": 50.69009409,
-      "adp": 170.05
+      "projected": 59.87693068,
+      "adp": 170.11
+    },
+    {
+      "player_id": "p_12455",
+      "espn_id": "4596602",
+      "name": "Brashard Smith",
+      "position": "RB",
+      "nfl_team": "KC",
+      "injury_status": null,
+      "projected": 59.76850305,
+      "adp": 170.49
+    },
+    {
+      "player_id": "p_13338",
+      "espn_id": "4685307",
+      "name": "Kevin Coleman",
+      "position": "WR",
+      "nfl_team": "MIA",
+      "injury_status": null,
+      "projected": 59.05266109,
+      "adp": 170.18
+    },
+    {
+      "player_id": "espn_-16002",
+      "espn_id": "-16002",
+      "name": "Bills D/ST",
+      "position": "D/ST",
+      "nfl_team": "BUF",
+      "injury_status": null,
+      "projected": 58.77605765,
+      "adp": 168.94
+    },
+    {
+      "player_id": "p_13329",
+      "espn_id": "5150247",
+      "name": "Malik Benson",
+      "position": "WR",
+      "nfl_team": "LV",
+      "injury_status": null,
+      "projected": 58.23123243,
+      "adp": 170.02
+    },
+    {
+      "player_id": "espn_-16001",
+      "espn_id": "-16001",
+      "name": "Falcons D/ST",
+      "position": "D/ST",
+      "nfl_team": "ATL",
+      "injury_status": null,
+      "projected": 58.2075347,
+      "adp": 170.03
+    },
+    {
+      "player_id": "p_13337",
+      "espn_id": "4832955",
+      "name": "Emmett Johnson",
+      "position": "RB",
+      "nfl_team": "KC",
+      "injury_status": null,
+      "projected": 53.94933786,
+      "adp": 169.91
+    },
+    {
+      "player_id": "p_6826",
+      "espn_id": "4258595",
+      "name": "Cole Kmet",
+      "position": "TE",
+      "nfl_team": "CHI",
+      "injury_status": null,
+      "projected": 53.72175521,
+      "adp": 169.71
+    },
+    {
+      "player_id": "espn_-16013",
+      "espn_id": "-16013",
+      "name": "Raiders D/ST",
+      "position": "D/ST",
+      "nfl_team": "LV",
+      "injury_status": null,
+      "projected": 53.23036505,
+      "adp": 169.79
+    },
+    {
+      "player_id": "p_13413",
+      "espn_id": "4912218",
+      "name": "Cyrus Allen",
+      "position": "WR",
+      "nfl_team": "KC",
+      "injury_status": null,
+      "projected": 52.96924696,
+      "adp": 169.94
+    },
+    {
+      "player_id": "p_12521",
+      "espn_id": "4678006",
+      "name": "Elijah Arroyo",
+      "position": "TE",
+      "nfl_team": "SEA",
+      "injury_status": null,
+      "projected": 52.53241085,
+      "adp": 169.94
+    },
+    {
+      "player_id": "p_7694",
+      "espn_id": "4372780",
+      "name": "Tommy Tremble",
+      "position": "TE",
+      "nfl_team": "CAR",
+      "injury_status": null,
+      "projected": 52.29681089,
+      "adp": 169.96
+    },
+    {
+      "player_id": "p_11571",
+      "espn_id": "4695404",
+      "name": "Isaiah Davis",
+      "position": "RB",
+      "nfl_team": "NYJ",
+      "injury_status": null,
+      "projected": 51.11769809,
+      "adp": 170.4
+    },
+    {
+      "player_id": "p_4454",
+      "espn_id": "3045523",
+      "name": "Kendrick Bourne",
+      "position": "WR",
+      "nfl_team": "ARI",
+      "injury_status": null,
+      "projected": 50.44413188,
+      "adp": 170.0
+    },
+    {
+      "player_id": "espn_-16022",
+      "espn_id": "-16022",
+      "name": "Cardinals D/ST",
+      "position": "D/ST",
+      "nfl_team": "ARI",
+      "injury_status": null,
+      "projected": 50.03399315,
+      "adp": 169.82
     }
   ]
 }

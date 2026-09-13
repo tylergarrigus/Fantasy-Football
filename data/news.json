@@ -1,42 +1,29 @@
 {
-  "fetched_at": "2026-09-04T14:48:14+00:00",
+  "fetched_at": "2026-09-13T16:42:09+00:00",
   "items": [
     {
-      "headline": "Sergio Bailey II (WR, None) listed NA",
-      "body": "",
+      "headline": "Sam Darnold (QB, SEA) listed Out",
+      "body": "Hip",
       "published": null,
       "url": null,
       "espn_athlete_ids": [
-        4039320
+        3912547
       ],
       "athlete_names": [
-        "Sergio Bailey II"
+        "Sam Darnold"
       ],
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Levonte Whitfield (WR, None) listed NA",
-      "body": "",
+      "headline": "Tua Tagovailoa (QB, ATL) listed Out",
+      "body": "Oblique -- Strain",
       "published": null,
       "url": null,
       "espn_athlete_ids": [
-        3045379
+        4241479
       ],
       "athlete_names": [
-        "Levonte Whitfield"
-      ],
-      "source": "Sleeper injury report"
-    },
-    {
-      "headline": "Patrick Mahomes (QB, KC) listed Questionable",
-      "body": "Knee - ACL -- Surgery",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        3139477
-      ],
-      "athlete_names": [
-        "Patrick Mahomes"
+        "Tua Tagovailoa"
       ],
       "source": "Sleeper injury report"
     },
@@ -67,41 +54,28 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Darren Carrington (WR, None) listed NA",
-      "body": "",
+      "headline": "Tim Patrick (WR, NYJ) listed IR",
+      "body": "Groin",
       "published": null,
       "url": null,
       "espn_athlete_ids": [
-        3052098
+        3134353
       ],
       "athlete_names": [
-        "Darren Carrington"
+        "Tim Patrick"
       ],
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Tyreek Hill (WR, None) listed Questionable",
-      "body": "Knee - ACL -- Surgery",
+      "headline": "A.J. Brown (WR, NE) listed IR",
+      "body": "Ankle -- Sprain",
       "published": null,
       "url": null,
       "espn_athlete_ids": [
-        3116406
+        4047646
       ],
       "athlete_names": [
-        "Tyreek Hill"
-      ],
-      "source": "Sleeper injury report"
-    },
-    {
-      "headline": "Ervin Philips (WR, None) listed NA",
-      "body": "",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        3123996
-      ],
-      "athlete_names": [
-        "Ervin Philips"
+        "A.J. Brown"
       ],
       "source": "Sleeper injury report"
     },
@@ -115,149 +89,6 @@
       ],
       "athlete_names": [
         "Gunner Olszewski"
-      ],
-      "source": "Sleeper injury report"
-    },
-    {
-      "headline": "Freddie Brown (WR, None) listed NA",
-      "body": "",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        12637
-      ],
-      "athlete_names": [
-        "Freddie Brown"
-      ],
-      "source": "Sleeper injury report"
-    },
-    {
-      "headline": "Will Grier (QB, None) listed NA",
-      "body": "Undisclosed",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        3115252
-      ],
-      "athlete_names": [
-        "Will Grier"
-      ],
-      "source": "Sleeper injury report"
-    },
-    {
-      "headline": "Antonio Gibson (RB, None) listed Questionable",
-      "body": "Knee - ACL -- Surgery",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        4360294
-      ],
-      "athlete_names": [
-        "Antonio Gibson"
-      ],
-      "source": "Sleeper injury report"
-    },
-    {
-      "headline": "Adam Thielen (WR, None) listed NA",
-      "body": "Undisclosed",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        16460
-      ],
-      "athlete_names": [
-        "Adam Thielen"
-      ],
-      "source": "Sleeper injury report"
-    },
-    {
-      "headline": "Derek Carr (QB, None) listed NA",
-      "body": "Personal",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        16757
-      ],
-      "athlete_names": [
-        "Derek Carr"
-      ],
-      "source": "Sleeper injury report"
-    },
-    {
-      "headline": "George Kittle (TE, SF) listed Questionable",
-      "body": "Achilles -- Surgery",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        3040151
-      ],
-      "athlete_names": [
-        "George Kittle"
-      ],
-      "source": "Sleeper injury report"
-    },
-    {
-      "headline": "Peyton Hillis (RB, None) listed NA",
-      "body": "",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        11461
-      ],
-      "athlete_names": [
-        "Peyton Hillis"
-      ],
-      "source": "Sleeper injury report"
-    },
-    {
-      "headline": "Robert Woods (WR, None) listed NA",
-      "body": "Undisclosed",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        15880
-      ],
-      "athlete_names": [
-        "Robert Woods"
-      ],
-      "source": "Sleeper injury report"
-    },
-    {
-      "headline": "Gabe Davis (WR, None) listed Questionable",
-      "body": "Knee - ACL -- Surgery",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        4243537
-      ],
-      "athlete_names": [
-        "Gabe Davis"
-      ],
-      "source": "Sleeper injury report"
-    },
-    {
-      "headline": "Teddy Bridgewater (QB, None) listed NA",
-      "body": "Personal",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        16728
-      ],
-      "athlete_names": [
-        "Teddy Bridgewater"
-      ],
-      "source": "Sleeper injury report"
-    },
-    {
-      "headline": "Larry Rose (RB, None) listed NA",
-      "body": "",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        3124979
-      ],
-      "athlete_names": [
-        "Larry Rose"
       ],
       "source": "Sleeper injury report"
     },
@@ -288,19 +119,6 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Duplicate Player (WR, None) listed NA",
-      "body": "",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        16414
-      ],
-      "athlete_names": [
-        "Duplicate Player"
-      ],
-      "source": "Sleeper injury report"
-    },
-    {
       "headline": "D.J. Montgomery (WR, IND) listed IR",
       "body": "Abdomen",
       "published": null,
@@ -310,6 +128,19 @@
       ],
       "athlete_names": [
         "D.J. Montgomery"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
+      "headline": "Ty Johnson (RB, BUF) listed Out",
+      "body": "Hamstring",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3915411
+      ],
+      "athlete_names": [
+        "Ty Johnson"
       ],
       "source": "Sleeper injury report"
     },
@@ -327,21 +158,21 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Ray-Ray McCloud (WR, CHI) listed IR",
-      "body": "Undisclosed",
+      "headline": "Alvin Kamara (RB, NO) listed Out",
+      "body": "Knee - MCL -- Sprain",
       "published": null,
       "url": null,
       "espn_athlete_ids": [
-        3728262
+        3054850
       ],
       "athlete_names": [
-        "Ray-Ray McCloud"
+        "Alvin Kamara"
       ],
       "source": "Sleeper injury report"
     },
     {
       "headline": "Josh Jacobs (RB, GB) listed NA",
-      "body": "Groin",
+      "body": "Personal",
       "published": null,
       "url": null,
       "espn_athlete_ids": [
@@ -353,33 +184,33 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Parris Campbell (WR, None) listed NA",
-      "body": "Undisclosed",
+      "headline": "Demarcus Robinson (WR, SF) is the hot add -- 58,098 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
       "espn_athlete_ids": [
-        3121410
+        3043116
       ],
       "athlete_names": [
-        "Parris Campbell"
+        "Demarcus Robinson"
       ],
-      "source": "Sleeper injury report"
+      "source": "Sleeper trending"
     },
     {
-      "headline": "Irv Smith (TE, None) listed Questionable",
-      "body": "Ankle -- Sprain",
+      "headline": "Darnell Mooney (WR, NYG) is the hot add -- 52,443 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
       "espn_athlete_ids": [
-        4040980
+        4040655
       ],
       "athlete_names": [
-        "Irv Smith"
+        "Darnell Mooney"
       ],
-      "source": "Sleeper injury report"
+      "source": "Sleeper trending"
     },
     {
-      "headline": "Darren Waller (TE, CAR) is the hot add -- 38,205 pickups in 24h",
+      "headline": "Darren Waller (TE, CAR) is the hot add -- 41,589 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -392,7 +223,20 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Justice Hill (RB, BAL) is the hot add -- 19,467 pickups in 24h",
+      "headline": "Odell Beckham (WR, NYG) is the hot add -- 37,387 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        16733
+      ],
+      "athlete_names": [
+        "Odell Beckham"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Justice Hill (RB, BAL) is the hot add -- 32,112 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -405,28 +249,41 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Kirk Cousins (QB, LV) is the hot add -- 16,528 pickups in 24h",
+      "headline": "Cooper Rush (QB, ATL) is the hot add -- 31,866 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
       "espn_athlete_ids": [
-        14880
+        2972515
       ],
       "athlete_names": [
-        "Kirk Cousins"
+        "Cooper Rush"
       ],
       "source": "Sleeper trending"
     },
     {
-      "headline": "Odell Beckham (WR, NYG) is the hot add -- 14,588 pickups in 24h",
+      "headline": "Alvin Kamara (RB, NO) is the hot add -- 26,056 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
       "espn_athlete_ids": [
-        16733
+        3054850
       ],
       "athlete_names": [
-        "Odell Beckham"
+        "Alvin Kamara"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Samaje Perine (RB, CIN) is the hot add -- 20,600 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3116389
+      ],
+      "athlete_names": [
+        "Samaje Perine"
       ],
       "source": "Sleeper trending"
     }
