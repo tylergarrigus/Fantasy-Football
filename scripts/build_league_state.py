@@ -277,12 +277,18 @@ def build(league_id: int, key: str, name: str, season: int, out_dir: Path) -> di
     teams = []
     for team in ctx.teams():
         rows = ctx.query(
-            "SELECT r.player_id, p.full_name, p.position, p.nfl_team, p.injury_status "
+            "SELECT r.player_id, r.slot, p.full_name, p.position, p.nfl_team, "
+            "p.injury_status "
             "FROM league_rosters r JOIN nfl_players p ON p.player_id = r.player_id "
             "WHERE r.league_id = :league_id AND r.team_id = :tid",
             tid=team["team_id"],
         )
+        slot_by_pid = {r["player_id"]: r["slot"] for r in rows}
         players = decorate(rows)
+        for p in players:
+            # The lineup as currently set in ESPN -- what the optimal lineup
+            # gets compared against to say "swap these two".
+            p["current_slot"] = slot_by_pid.get(p["player_id"])
         lineup = best_lineup(players, slots)
         teams.append(
             {
