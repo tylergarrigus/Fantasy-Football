@@ -579,7 +579,7 @@ PAGE = r"""<title>Fantasy Command Center</title>
 :root{
   --bg:#FFF6E9; --surface:#FFFFFF; --surface2:#FFEDCB;
   --ink:#151515; --muted:#6E675C; --grid:#E8DFC9;
-  --brand:#FFD44D;
+  --brand:#8FC7FF;
   --good:#187C33; --good-bg:#9FEA92;
   --warn:#8A6400; --warn-bg:#FFD44D;
   --help:#B3241C; --help-bg:#FF9E93;
