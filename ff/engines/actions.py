@@ -16,7 +16,13 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from typing import Any, Sequence
 
-from ff.engines.trades import TradeIdea, best_lineup, find_trades
+from ff.engines.trades import (
+    TradeChain,
+    TradeIdea,
+    best_lineup,
+    find_trade_chains,
+    find_trades,
+)
 
 # Below this many starting-lineup points, a move is noise, not an action.
 ACTION_FLOOR = 3.0
@@ -121,6 +127,52 @@ def trade_actions(
     return out
 
 
+def chain_action(
+    me: dict,
+    opponents: Sequence[dict],
+    slots: dict,
+    untouchable: Sequence[str] = (),
+    rejected: Sequence[tuple[str, str]] = (),
+) -> Action | None:
+    """The best two-move plan, when one clearly beats any single trade."""
+    chains = find_trade_chains(
+        me["players"], opponents, slots,
+        untouchable=untouchable, rejected=rejected, limit=1,
+    )
+    if not chains:
+        return None
+    c: TradeChain = chains[0]
+    s1, s2 = c.step1, c.step2
+    give1 = ", ".join(f'{p["name"]} ({p["position"]})' for p in s1.send)
+    get1 = ", ".join(f'{p["name"]} ({p["position"]})' for p in s1.receive)
+    give2 = ", ".join(f'{p["name"]} ({p["position"]})' for p in s2.send)
+    get2 = ", ".join(f'{p["name"]} ({p["position"]})' for p in s2.receive)
+    conf, conf_why = _confidence_for_gain(c.total_gain)
+    return Action(
+        kind="plan",
+        title=f"Two-step plan: land {get2} by first getting {get1}",
+        why=(
+            f"Step 1 (do now): offer {give1} to {s1.partner_name} for {get1} -- "
+            f"they gain ~{s1.their_gain:.0f}, {_acceptance_read(s1.their_gain)}. "
+            f"That makes step 2 possible: offer {give2} to {s2.partner_name} "
+            f"for {get2} (they gain ~{s2.their_gain:.0f}). "
+            f"Both deals together are worth ~{c.total_gain:.0f} points to you -- "
+            "more than any single trade on the board. Step 2 only happens if "
+            "step 1 lands, so nothing is risked up front."
+        ),
+        confidence="Medium" if conf == "High" else conf,
+        confidence_why=f"{conf_why}; two separate managers each have to say yes",
+        deadline="Step 1 has no hard deadline; step 2 depends on it landing.",
+        steps=f"ESPN app: League → {s1.partner_name} → Propose Trade → offer "
+              f"{give1} for {get1}. When accepted, come back for step 2.",
+        gain=c.total_gain,
+        urgency=1,
+        players=[p["name"] for p in s1.send + s1.receive + s2.send + s2.receive],
+        draft_message=_trade_message(s1),
+        trade=c.as_dict(),
+    )
+
+
 def waiver_actions(me: dict, free_agents: Sequence[dict], slots: dict,
                    faab: bool = False) -> list[Action]:
     base = best_lineup(me["players"], slots)
@@ -194,7 +246,8 @@ def injury_actions(me: dict, slots: dict, news_by_espn_id: dict) -> list[Action]
 
 
 def build_queue(state: dict, news_items: Sequence[dict],
-                untouchable: Sequence[str] = ()) -> list[Action]:
+                untouchable: Sequence[str] = (),
+                rejected: Sequence[tuple[str, str]] = ()) -> list[Action]:
     """The whole point: a short list, ordered by what matters most."""
     me = next((t for t in state["teams"] if t.get("is_me")), None)
     if me is None or not me.get("players"):
@@ -217,6 +270,9 @@ def build_queue(state: dict, news_items: Sequence[dict],
     queue: list[Action] = []
     queue += injury_actions(me, slots, news_by_id)
     queue += trade_actions(me, opponents, slots, untouchable)
+    chain = chain_action(me, opponents, slots, untouchable, rejected)
+    if chain:
+        queue.append(chain)
     queue += waiver_actions(
         me, state.get("free_agents", []), slots,
         faab=(state.get("waiver_type") == "faab"),

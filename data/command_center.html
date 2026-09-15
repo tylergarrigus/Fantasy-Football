@@ -56,11 +56,13 @@ a{color:var(--ink)}
 .act.k-waiver{border-left-color:var(--warn)}
 .act.k-injury,[data-urgent]{border-left-color:var(--hot)}
 .act.k-info{border-left-color:var(--good)}
+.act.k-plan{border-left-color:var(--qb)}
 .act[data-state="done"]{border-left-color:var(--good);opacity:.95}
 .act[data-state="passed"]{opacity:.45}
 .act-h{display:flex;align-items:center;gap:12px;margin-bottom:8px;flex-wrap:wrap}
 .kind{font:500 10.5px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--hot)}
 .k-waiver .kind{color:var(--warn)}.k-info .kind{color:var(--good)}
+.k-plan .kind{color:var(--qb)}
 .conf{font:500 10.5px/1 var(--mono);letter-spacing:.1em;padding:3px 7px;border:1px solid}
 .conf.hi{color:var(--good);border-color:var(--good)}
 .conf.md{color:var(--warn);border-color:var(--warn)}
@@ -186,9 +188,9 @@ a{color:var(--ink)}
 <div class="wrap">
   <div class="top">
     <span class="mark">Fantasy <i>Command Center</i></span>
-    <span class="stamp">Data updated Sep 15, 01:52 UTC</span>
+    <span class="stamp">Data updated Sep 15, 04:23 UTC</span>
   </div>
-  <nav class="lgs"><button data-league="L1" aria-pressed="true">League 1</button><button data-league="L2" aria-pressed="false">League 2<i class="badge">7</i></button></nav>
+  <nav class="lgs"><button data-league="L1" aria-pressed="true">League 1<i class="badge">1</i></button><button data-league="L2" aria-pressed="false">League 2<i class="badge">7</i></button></nav>
   <nav class="nav">
     <button data-nav="today" aria-pressed="true">Today</button>
     <button data-nav="team" aria-pressed="false">My Team</button>
@@ -201,17 +203,17 @@ a{color:var(--ink)}
 
   
 <section class="league" id="lg-L1">
-  <div class="view" data-view="today"><p class="allclear">Quiet day. That is the system working.</p><div class="acts">
-<article class="act k-info" data-act="L1-0">
+  <div class="view" data-view="today"><div class="acts">
+<article class="act k-plan" data-act="L1-0">
   <header class="act-h">
-    <span class="kind">info</span>
-    <span class="conf hi">High</span>
-    <span class="dl">—</span>
+    <span class="kind">plan</span>
+    <span class="conf md">Medium</span>
+    <span class="dl">Step 1 has no hard deadline; step 2 depends on it landing.</span>
   </header>
-  <h3>No action needed</h3>
-  <p class="why">The remaining trade ideas were already offered and declined, nobody on waivers would crack your lineup, and no starter is in injury trouble. Sitting tight is the right move -- rejected offers get re-examined when rosters or projections change.</p>
-  <p class="conf-why">Confidence: High &mdash; every roster and the full free-agent pool was checked.</p>
-  
+  <h3>Two-step plan: land Chase Brown (RB) by first getting Lamar Jackson (QB)</h3>
+  <p class="why">Step 1 (do now): offer Rico Dowdle (RB) to Pink for Lamar Jackson (QB) -- they gain ~16, a modest but real gain for them -- worth an ask. That makes step 2 possible: offer Drake Maye (QB), Davante Adams (WR) to JT runs this league for Chase Brown (RB) (they gain ~16). Both deals together are worth ~41 points to you -- more than any single trade on the board. Step 2 only happens if step 1 lands, so nothing is risked up front.</p>
+  <p class="conf-why">Confidence: Medium &mdash; the gap is ~41 starting-lineup points -- far larger than projection noise; two separate managers each have to say yes.</p>
+  <div class="msg"><span class="msg-l">Message to send <button class="copy" data-copy>Copy</button></span><p>Hey -- would you do Lamar Jackson for Rico Dowdle? Looking at your roster I think Rico Dowdle actually helps your starting lineup, and I have a hole Lamar Jackson would fill. Open to tweaking it if you&#x27;re close.</p></div><div class="act-do"><button class="btn yes" data-yes>Approve</button><button class="btn no" data-no>Pass</button></div><div class="steps" hidden><p><b>Do it:</b> ESPN app: League → Pink → Propose Trade → offer Rico Dowdle (RB) for Lamar Jackson (QB). When accepted, come back for step 2.</p></div>
 </article></div></div>
   
 <div class="view" data-view="team" hidden>
@@ -235,7 +237,7 @@ a{color:var(--ink)}
       <h2 class="sh">Playoff outlook</h2>
       <p class="prose">Projections put you <b>2 of 12</b>; top 7 make the playoffs, so you are currently inside the line. That is a preseason estimate, not a fate.</p>
       <h2 class="sh" style="margin-top:18px">This week's plan</h2>
-      <ol class="plan"><li>Nothing this week. Check back after the first games.</li></ol>
+      <ol class="plan"><li>Two-step plan: land Chase Brown (RB) by first getting Lamar Jackson (QB)</li></ol>
     </section>
   </div>
 </div>

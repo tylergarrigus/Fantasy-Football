@@ -103,8 +103,14 @@ def analyse(state: dict, news_items: list[dict], decisions: dict | None = None) 
 
     me = next((t for t in state["teams"] if t.get("is_me")), None)
     drafted = bool(me and me["players"])
+    rejected_pairs = [
+        (r["partner"], name)
+        for r in (decisions or {}).get("rejected_trades", [])
+        if r.get("league") == state.get("league_key")
+        for name in r.get("receive", [])
+    ]
     queue = rejected_filter(
-        build_queue(state, news_items),
+        build_queue(state, news_items, rejected=rejected_pairs),
         state.get("league_key", ""),
         decisions or {},
     )
@@ -623,11 +629,13 @@ a{color:var(--ink)}
 .act.k-waiver{border-left-color:var(--warn)}
 .act.k-injury,[data-urgent]{border-left-color:var(--hot)}
 .act.k-info{border-left-color:var(--good)}
+.act.k-plan{border-left-color:var(--qb)}
 .act[data-state="done"]{border-left-color:var(--good);opacity:.95}
 .act[data-state="passed"]{opacity:.45}
 .act-h{display:flex;align-items:center;gap:12px;margin-bottom:8px;flex-wrap:wrap}
 .kind{font:500 10.5px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--hot)}
 .k-waiver .kind{color:var(--warn)}.k-info .kind{color:var(--good)}
+.k-plan .kind{color:var(--qb)}
 .conf{font:500 10.5px/1 var(--mono);letter-spacing:.1em;padding:3px 7px;border:1px solid}
 .conf.hi{color:var(--good);border-color:var(--good)}
 .conf.md{color:var(--warn);border-color:var(--warn)}
