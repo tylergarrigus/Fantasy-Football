@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-13T16:42:41+00:00",
+  "fetched_at": "2026-09-15T01:51:56+00:00",
   "items": [
     {
       "headline": "Sam Darnold (QB, SEA) listed Out",
@@ -184,7 +184,98 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Demarcus Robinson (WR, SF) is the hot add -- 58,098 pickups in 24h",
+      "headline": "Kyler Murray (QB, MIN) listed Out",
+      "body": "Concussion",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3917315
+      ],
+      "athlete_names": [
+        "Kyler Murray"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
+      "headline": "Devin Singletary (RB, NYG) is the hot add -- 411,516 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        4040761
+      ],
+      "athlete_names": [
+        "Devin Singletary"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Carson Wentz (QB, MIN) is the hot add -- 253,842 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        2573079
+      ],
+      "athlete_names": [
+        "Carson Wentz"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Mike Gesicki (TE, CIN) is the hot add -- 211,844 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3116164
+      ],
+      "athlete_names": [
+        "Mike Gesicki"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Kendrick Bourne (WR, ARI) is the hot add -- 62,544 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3045523
+      ],
+      "athlete_names": [
+        "Kendrick Bourne"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Kalif Raymond (WR, CHI) is the hot add -- 59,028 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        2973405
+      ],
+      "athlete_names": [
+        "Kalif Raymond"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Evan Engram (TE, DEN) is the hot add -- 46,240 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3051876
+      ],
+      "athlete_names": [
+        "Evan Engram"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Demarcus Robinson (WR, SF) is the hot add -- 45,978 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -197,93 +288,15 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Darnell Mooney (WR, NYG) is the hot add -- 52,443 pickups in 24h",
+      "headline": "Cole Kmet (TE, CHI) is the hot add -- 27,945 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
       "espn_athlete_ids": [
-        4040655
+        4258595
       ],
       "athlete_names": [
-        "Darnell Mooney"
-      ],
-      "source": "Sleeper trending"
-    },
-    {
-      "headline": "Darren Waller (TE, CAR) is the hot add -- 41,589 pickups in 24h",
-      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        2576925
-      ],
-      "athlete_names": [
-        "Darren Waller"
-      ],
-      "source": "Sleeper trending"
-    },
-    {
-      "headline": "Odell Beckham (WR, NYG) is the hot add -- 37,387 pickups in 24h",
-      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        16733
-      ],
-      "athlete_names": [
-        "Odell Beckham"
-      ],
-      "source": "Sleeper trending"
-    },
-    {
-      "headline": "Justice Hill (RB, BAL) is the hot add -- 32,112 pickups in 24h",
-      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        4038441
-      ],
-      "athlete_names": [
-        "Justice Hill"
-      ],
-      "source": "Sleeper trending"
-    },
-    {
-      "headline": "Cooper Rush (QB, ATL) is the hot add -- 31,866 pickups in 24h",
-      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        2972515
-      ],
-      "athlete_names": [
-        "Cooper Rush"
-      ],
-      "source": "Sleeper trending"
-    },
-    {
-      "headline": "Alvin Kamara (RB, NO) is the hot add -- 26,056 pickups in 24h",
-      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        3054850
-      ],
-      "athlete_names": [
-        "Alvin Kamara"
-      ],
-      "source": "Sleeper trending"
-    },
-    {
-      "headline": "Samaje Perine (RB, CIN) is the hot add -- 20,600 pickups in 24h",
-      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        3116389
-      ],
-      "athlete_names": [
-        "Samaje Perine"
+        "Cole Kmet"
       ],
       "source": "Sleeper trending"
     }
