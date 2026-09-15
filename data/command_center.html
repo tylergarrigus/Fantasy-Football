@@ -1,0 +1,912 @@
+<title>Fantasy Command Center</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Outfit:wght@400;600;700;800&display=swap">
+<style>
+:root{
+  --bg:#FFF6E9; --surface:#FFFFFF; --surface2:#FFEDCB;
+  --ink:#151515; --muted:#6E675C; --grid:#E8DFC9;
+  --brand:#8FC7FF;
+  --good:#187C33; --good-bg:#9FEA92;
+  --warn:#8A6400; --warn-bg:#FFD44D;
+  --help:#B3241C; --help-bg:#FF9E93;
+  --plan:#2563EB; --plan-bg:#BFD6FF;
+  --qb:#CBB4FF; --rb:#9FE8DC; --wr:#FFD44D; --te:#FFB3C2; --dst:#E4E0D6; --k:#E4E0D6;
+  --disp:'Big Shoulders Display','Arial Narrow',system-ui,sans-serif;
+  --body:Outfit,system-ui,-apple-system,sans-serif;
+  --pop:5px 5px 0 var(--ink);
+  --pop-sm:3px 3px 0 var(--ink);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.5 var(--body)}
+a{color:var(--ink)}
+.num,.grid .n,.stamp{font-variant-numeric:tabular-nums}
+.wrap{max-width:1020px;margin:0 auto;padding:0 16px 90px}
+
+/* top */
+.top{position:sticky;top:0;z-index:20;margin:0 -16px 14px;background:var(--brand);
+     border-bottom:3px solid var(--ink);
+     display:flex;align-items:center;justify-content:space-between;gap:12px;
+     padding:13px 18px;flex-wrap:wrap}
+.mark{font:700 24px/1 var(--disp);letter-spacing:.05em;text-transform:uppercase}
+.mark i{font-style:normal}
+.stamp{font:600 12px/1 var(--body);opacity:.65}
+
+/* league switch + view nav: chunky press-down pills */
+.lgs{display:flex;gap:10px;margin:16px 0 8px}
+.lgs button{appearance:none;cursor:pointer;flex:1;padding:11px 8px;
+  background:var(--surface);border:2.5px solid var(--ink);border-radius:14px;
+  box-shadow:var(--pop-sm);color:var(--ink);
+  font:700 15px/1.2 var(--body);display:flex;align-items:center;justify-content:center;gap:8px}
+.lgs button[aria-pressed="true"]{background:var(--ink);color:#fff;box-shadow:none;
+  transform:translate(3px,3px)}
+.lgs button:active{transform:translate(3px,3px);box-shadow:none}
+.badge{font:800 11.5px/1 var(--body);font-style:normal;background:var(--help-bg);
+  border:2px solid var(--ink);color:var(--ink);padding:2px 8px;border-radius:999px}
+.lgs button[aria-pressed="true"] .badge{border-color:#fff}
+.nav{display:flex;gap:8px;margin:10px 0 22px;overflow-x:auto;scrollbar-width:none;padding:4px 2px 6px}
+.nav button{appearance:none;cursor:pointer;border:2px solid var(--ink);background:var(--surface);
+  color:var(--ink);padding:8px 14px;border-radius:999px;white-space:nowrap;
+  font:700 13.5px/1 var(--body);box-shadow:2px 2px 0 var(--ink)}
+.nav button[aria-pressed="true"]{background:var(--ink);color:#fff;box-shadow:none;
+  transform:translate(2px,2px)}
+.nav button:active{transform:translate(2px,2px);box-shadow:none}
+.lgs button:focus-visible,.nav button:focus-visible,.btn:focus-visible,
+.copy:focus-visible{outline:3px solid var(--plan);outline-offset:2px}
+
+/* action cards */
+.allclear{margin:0 0 14px;color:var(--good);font:700 24px/1.2 var(--disp);
+          letter-spacing:.04em;text-transform:uppercase}
+.acts{display:flex;flex-direction:column;gap:16px}
+.act{background:var(--surface);border:2.5px solid var(--ink);border-radius:18px;
+     padding:17px 19px 15px;box-shadow:var(--pop)}
+.act[data-state="done"]{background:var(--good-bg)}
+.act[data-state="passed"]{opacity:.45;box-shadow:var(--pop-sm)}
+.act-h{display:flex;align-items:center;gap:9px;margin-bottom:9px;flex-wrap:wrap}
+.kind{font:800 12px/1 var(--body);letter-spacing:.06em;text-transform:uppercase;
+  border:2px solid var(--ink);border-radius:999px;padding:3px 11px;background:var(--surface2)}
+.k-trade .kind{background:var(--wr)}
+.k-waiver .kind{background:var(--warn-bg)}
+.k-injury .kind,[data-urgent] .kind{background:var(--help-bg)}
+.k-info .kind{background:var(--good-bg)}
+.k-plan .kind{background:var(--plan-bg)}
+.conf{font:800 11.5px/1 var(--body);letter-spacing:.04em;padding:3px 10px;
+  border:2px solid var(--ink);border-radius:999px}
+.conf.hi{background:var(--good-bg)}
+.conf.md{background:var(--warn-bg)}
+.conf.lo{background:var(--dst)}
+.dl{margin-left:auto;font-size:12.5px;color:var(--muted);font-weight:600}
+.act h3{margin:0 0 9px;font:700 clamp(22px,3.6vw,30px)/1.05 var(--disp);
+  letter-spacing:.02em;text-wrap:balance}
+.why{margin:0;color:var(--ink);font-size:15px;max-width:68ch}
+.conf-why{margin:7px 0 0;color:var(--muted);font-size:13px;max-width:68ch}
+.msg{margin-top:13px;background:var(--surface2);border:2px solid var(--ink);
+  border-radius:14px 14px 14px 4px;padding:11px 14px}
+.msg-l{display:flex;justify-content:space-between;align-items:center;gap:8px;
+  font:800 11px/1 var(--body);letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.msg p{margin:8px 0 0;font-size:14.5px}
+.copy{appearance:none;cursor:pointer;border:2px solid var(--ink);background:var(--surface);
+  color:var(--ink);padding:4px 12px;border-radius:10px;
+  font:800 11px/1 var(--body);letter-spacing:.05em;box-shadow:2px 2px 0 var(--ink)}
+.copy:active{transform:translate(2px,2px);box-shadow:none}
+.act-do{display:flex;gap:10px;margin-top:15px}
+.btn{appearance:none;cursor:pointer;border:2.5px solid var(--ink);padding:10px 24px;
+  border-radius:14px;background:var(--surface);color:var(--ink);
+  font:800 14px/1 var(--body);box-shadow:var(--pop-sm)}
+.btn.yes{background:var(--brand)}
+.btn:active{transform:translate(3px,3px);box-shadow:none}
+.steps{margin-top:13px;padding:11px 14px;background:var(--good-bg);
+  border:2px solid var(--ink);border-radius:14px}
+.steps p{margin:0;font-size:14.5px}
+
+/* panels + tables */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+@media(max-width:740px){.two{grid-template-columns:1fr}}
+.panel{background:var(--surface);border:2.5px solid var(--ink);border-radius:18px;
+  padding:17px 19px;margin-bottom:16px;box-shadow:var(--pop)}
+.two .panel{margin-bottom:0}
+.sh{margin:0 0 7px;font:800 18px/1.1 var(--body)}
+.sub{margin:0 0 13px;color:var(--muted);font-size:13.5px;max-width:74ch}
+.prose{margin:0;color:var(--ink);font-size:15px}
+.empty{color:var(--muted);font-size:15px}
+.grid{width:100%;border-collapse:collapse}
+.grid th{text-align:left;font:800 11px/1 var(--body);letter-spacing:.09em;
+  text-transform:uppercase;color:var(--muted);padding:0 8px 8px 0;
+  border-bottom:2px solid var(--ink)}
+.grid th.n{text-align:right}
+.grid td{padding:8px 8px 8px 0;border-bottom:1.5px solid var(--grid);vertical-align:middle}
+.grid tr:last-child td{border-bottom:0}
+.grid .slot{width:48px;font:700 15px/1 var(--disp);letter-spacing:.06em;color:var(--muted)}
+.grid .who{font-weight:600;font-size:15.5px}
+.grid .n{text-align:right;font-weight:600;font-size:14px}
+.grid .rk{width:26px;font-weight:700;color:var(--muted)}
+.grid tr.mine td{background:var(--surface2)}
+.grid tr.mine .who{font-weight:800}
+.grid tr.good .who{color:var(--good);font-weight:700}
+.bench .who{color:var(--muted)}
+.market .sur{font-size:13.5px;color:var(--muted)}
+.fit{display:block;font-size:12px;color:var(--good);font-weight:700}
+.none{color:var(--muted);font-size:12.5px}
+.scroll{overflow-x:auto}
+.tot{display:flex;justify-content:space-between;align-items:baseline;margin:14px 0 0;
+  padding-top:12px;border-top:2.5px solid var(--ink)}
+.tot span{font:800 11px/1 var(--body);letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.tot b{font:700 34px/1 var(--disp)}
+.flag{display:inline-block;margin-left:6px;padding:2px 7px;border:1.5px solid var(--ink);
+  border-radius:999px;font:800 10px/1.3 var(--body);letter-spacing:.04em;vertical-align:1px}
+.flag.warn{background:var(--warn-bg)}
+.flag.bad{background:var(--help-bg)}
+
+.p{display:inline-block;min-width:38px;text-align:center;padding:3px 8px;
+   border:1.5px solid var(--ink);border-radius:999px;
+   font:800 11px/1.3 var(--body);letter-spacing:.02em;color:var(--ink)}
+.p-QB{background:var(--qb)}.p-RB{background:var(--rb)}.p-WR{background:var(--wr)}
+.p-TE{background:var(--te)}.p-DST{background:var(--dst)}.p-K{background:var(--k)}
+
+.strength{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px}
+.strength li{display:flex;align-items:center;gap:11px}
+.st-w{font-weight:700;font-size:15px}
+.strength .good .st-w{color:var(--good)}
+.strength .bad .st-w{color:var(--help)}
+.st-n{margin-left:auto;font-size:13px;color:var(--muted);font-weight:600}
+.plan{margin:0;padding-left:20px;font-size:14.5px}
+.plan li{margin-bottom:7px}
+
+/* standings bars */
+.bars{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.bars li{display:flex;align-items:center;gap:11px}
+.bars .r{width:22px;font-weight:700;color:var(--muted);text-align:right;font-size:13px}
+.bars .t{width:185px;flex:0 0 auto;font-size:14.5px;color:var(--muted);font-weight:600;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bars .bar{flex:1;height:18px;background:var(--surface2);min-width:60px;
+  border:1.5px solid var(--ink);border-radius:999px;overflow:hidden}
+.bars .bar i{display:block;height:100%;background:var(--grid)}
+.bars .v{width:58px;text-align:right;font-size:13px;color:var(--muted);font-weight:700}
+.bars .mine .t{color:var(--ink);font-weight:800}
+.bars .mine .bar i{background:var(--brand)}
+.bars .mine .v{color:var(--ink)}
+@media(max-width:600px){.bars .t{width:105px}}
+
+/* evaluator */
+.eval{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+@media(max-width:700px){.eval{grid-template-columns:1fr}}
+.lbl{display:block;margin:0 0 6px;font:800 11px/1 var(--body);
+  letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.sel,.numin,#untouch-in{background:var(--surface);border:2px solid var(--ink);
+  border-radius:12px;color:var(--ink);padding:9px 11px;font:600 14.5px/1.3 var(--body);width:100%}
+.sel{margin-bottom:12px}
+.sel:focus,.numin:focus,#untouch-in:focus{outline:3px solid var(--plan);outline-offset:2px}
+.numin{width:76px;padding:5px 8px;margin:0 6px}
+.picklist{display:flex;flex-direction:column;gap:2px;max-height:250px;overflow-y:auto;
+  border:2px solid var(--ink);border-radius:12px;background:var(--surface);padding:6px}
+.picklist label{display:flex;align-items:center;gap:9px;padding:6px 8px;cursor:pointer;
+  font-size:14.5px;font-weight:600;border-radius:8px}
+.picklist label:hover{background:var(--surface2)}
+.picklist input[type=checkbox]{width:16px;height:16px;accent-color:var(--ink)}
+.picklist .pr{margin-left:auto;font-size:12.5px;color:var(--muted);font-weight:700}
+.verdict{margin-top:14px;padding:15px 18px;background:var(--help-bg);
+  border:2.5px solid var(--ink);border-radius:16px;box-shadow:var(--pop-sm)}
+.verdict.ok{background:var(--good-bg)}
+.verdict h4{margin:0 0 8px;font:700 30px/1 var(--disp);letter-spacing:.04em;text-transform:uppercase}
+.verdict p{margin:0 0 6px;font-size:14.5px}
+.verdict .counter{margin-top:10px;padding:10px 13px;background:var(--surface);
+  border:2px solid var(--ink);border-radius:12px}
+.verdict .counter b{font-size:15px}
+.verdict .counter span{display:block;color:var(--muted);font-size:13px;margin-top:3px}
+
+/* audit + news + prefs */
+.audit{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.audit li{font-size:14px;border-bottom:1.5px solid var(--grid);padding-bottom:8px}
+.audit li:last-child{border-bottom:0}
+.audit time{font-weight:700;font-size:12px;color:var(--muted);margin-right:9px}
+.news{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:13px}
+.news li{background:var(--surface2);border:2px solid var(--ink);border-radius:14px;padding:10px 14px}
+.news li.empty{background:none;border:0;padding:0}
+.nh{margin:0;font-weight:700;font-size:15.5px}
+.nm{margin:3px 0 0;font-size:13px;color:var(--muted)}
+.nm b{color:var(--ink)}
+.prefs{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:11px}
+.prefs label{display:flex;align-items:center;gap:10px;font-size:15px;cursor:pointer;font-weight:600}
+.prefs input[type=checkbox]{width:18px;height:18px;accent-color:var(--ink)}
+.quiet-row label{font-weight:800}
+.untouch ul{list-style:none;margin:10px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.untouch li{background:var(--surface2);border:2px solid var(--ink);border-radius:999px;
+  padding:5px 12px;font-size:14px;font-weight:700;display:flex;gap:8px;align-items:center}
+.untouch li button{appearance:none;border:0;background:none;color:var(--muted);
+  cursor:pointer;font-size:16px;padding:0;font-weight:800}
+.foot{margin-top:32px;color:var(--muted);font-size:13px;max-width:74ch}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;transform:none!important}}
+</style>
+
+<div class="wrap">
+  <div class="top">
+    <span class="mark">Fantasy <i>Command Center</i></span>
+    <span class="stamp">Data updated Sep 15, 17:02 UTC</span>
+  </div>
+  <nav class="lgs"><button data-league="L1" aria-pressed="true">League 1<i class="badge">1</i></button><button data-league="L2" aria-pressed="false">League 2<i class="badge">7</i></button></nav>
+  <nav class="nav">
+    <button data-nav="today" aria-pressed="true">Today</button>
+    <button data-nav="team" aria-pressed="false">My Team</button>
+    <button data-nav="market" aria-pressed="false">Market</button>
+    <button data-nav="trades" aria-pressed="false">Trades</button>
+    <button data-nav="waivers" aria-pressed="false">Waivers</button>
+    <button data-nav="news" aria-pressed="false">News</button>
+    <button data-nav="settings" aria-pressed="false">Settings</button>
+  </nav>
+
+  
+<section class="league" id="lg-L1">
+  <div class="view" data-view="today"><div class="acts">
+<article class="act k-plan" data-act="L1-0">
+  <header class="act-h">
+    <span class="kind">plan</span>
+    <span class="conf md">Medium</span>
+    <span class="dl">Step 1 has no hard deadline; step 2 depends on it landing.</span>
+  </header>
+  <h3>Two-step plan: land Chase Brown (RB) by first getting Lamar Jackson (QB)</h3>
+  <p class="why">Step 1 (do now): offer Rico Dowdle (RB) to Pink for Lamar Jackson (QB) -- they gain ~16, a modest but real gain for them -- worth an ask. That makes step 2 possible: offer Drake Maye (QB), Davante Adams (WR) to JT runs this league for Chase Brown (RB) (they gain ~16). Both deals together are worth ~41 points to you -- more than any single trade on the board. Step 2 only happens if step 1 lands, so nothing is risked up front.</p>
+  <p class="conf-why">Confidence: Medium &mdash; the gap is ~41 starting-lineup points -- far larger than projection noise; two separate managers each have to say yes.</p>
+  <div class="msg"><span class="msg-l">Message to send <button class="copy" data-copy>Copy</button></span><p>Hey -- would you do Lamar Jackson for Rico Dowdle? Looking at your roster I think Rico Dowdle actually helps your starting lineup, and I have a hole Lamar Jackson would fill. Open to tweaking it if you&#x27;re close.</p></div><div class="act-do"><button class="btn yes" data-yes>Approve</button><button class="btn no" data-no>Pass</button></div><div class="steps" hidden><p><b>Do it:</b> ESPN app: League → Pink → Propose Trade → offer Rico Dowdle (RB) for Lamar Jackson (QB). When accepted, come back for step 2.</p></div>
+</article></div></div>
+  
+<div class="view" data-view="team" hidden>
+  <div class="two">
+    <section class="panel">
+      <h2 class="sh">Starters</h2>
+      <table class="grid"><tbody><tr><td class="slot">QB</td><td class="who">Drake Maye</td><td><span class="p p-QB">QB</span></td><td class="n">330</td></tr><tr><td class="slot">RB</td><td class="who">De&#x27;Von Achane</td><td><span class="p p-RB">RB</span></td><td class="n">293</td></tr><tr><td class="slot">RB</td><td class="who">Ashton Jeanty</td><td><span class="p p-RB">RB</span></td><td class="n">278</td></tr><tr><td class="slot">WR</td><td class="who">Garrett Wilson</td><td><span class="p p-WR">WR</span></td><td class="n">252</td></tr><tr><td class="slot">WR</td><td class="who">Davante Adams</td><td><span class="p p-WR">WR</span></td><td class="n">232</td></tr><tr><td class="slot">TE</td><td class="who">Travis Kelce</td><td><span class="p p-TE">TE</span></td><td class="n">178</td></tr><tr><td class="slot">FLEX</td><td class="who">Rome Odunze</td><td><span class="p p-WR">WR</span></td><td class="n">213</td></tr><tr><td class="slot">D/ST</td><td class="who">Broncos D/ST</td><td><span class="p p-DST">D/ST</span></td><td class="n">131</td></tr><tr><td class="slot">K</td><td class="who">Brandon Aubrey</td><td><span class="p p-K">K</span></td><td class="n">171</td></tr></tbody></table>
+      <p class="tot"><span>Season projection</span><b>2,078</b></p>
+    </section>
+    <section class="panel">
+      <h2 class="sh">Bench</h2>
+      <table class="grid bench"><tbody><tr><td class="who">Rico Dowdle</td><td><span class="p p-RB">RB</span></td><td class="n">188</td></tr><tr><td class="who">Tony Pollard</td><td><span class="p p-RB">RB</span></td><td class="n">186</td></tr><tr><td class="who">Quentin Johnston</td><td><span class="p p-WR">WR</span></td><td class="n">166</td></tr><tr><td class="who">Jalen Coker <span class="flag warn">QUE</span></td><td><span class="p p-WR">WR</span></td><td class="n">147</td></tr><tr><td class="who">Brenton Strange</td><td><span class="p p-TE">TE</span></td><td class="n">143</td></tr><tr><td class="who">Denzel Boston</td><td><span class="p p-WR">WR</span></td><td class="n">142</td></tr><tr><td class="who">Tre Tucker</td><td><span class="p p-WR">WR</span></td><td class="n">139</td></tr></tbody></table>
+    </section>
+  </div>
+  <div class="two">
+    <section class="panel">
+      <h2 class="sh">Positional strength</h2>
+      <ul class="strength"><li class="good"><span class="p p-QB">QB</span><span class="st-w">strong</span><span class="st-n">+21 vs median</span></li><li class="good"><span class="p p-RB">RB</span><span class="st-w">strong</span><span class="st-n">+56 vs median</span></li><li class="bad"><span class="p p-WR">WR</span><span class="st-w">thin</span><span class="st-n">-32 vs median</span></li><li class="even"><span class="p p-TE">TE</span><span class="st-w">league-average</span><span class="st-n">-11 vs median</span></li></ul>
+    </section>
+    <section class="panel">
+      <h2 class="sh">Playoff outlook</h2>
+      <p class="prose">Projections put you <b>2 of 12</b>; top 7 make the playoffs, so you are currently inside the line. That is a preseason estimate, not a fate.</p>
+      <h2 class="sh" style="margin-top:18px">This week's plan</h2>
+      <ol class="plan"><li>Two-step plan: land Chase Brown (RB) by first getting Lamar Jackson (QB)</li></ol>
+    </section>
+  </div>
+</div>
+  
+<div class="view" data-view="market" hidden>
+  <section class="panel">
+    <h2 class="sh">Every team, honestly read</h2>
+    <p class="sub">Needs are starting spots in the league's bottom quartile.
+       Surplus is a benched player good enough to start elsewhere &mdash; that
+       pair is what makes a trade real.</p>
+    <div class="scroll"><table class="grid market">
+      <thead><tr><th></th><th>Team</th><th class="n">Proj</th><th>Needs</th><th>Surplus</th></tr></thead>
+      <tbody><tr><td class="rk">1</td><td class="who">Skattmans World</td><td class="n">2,102</td><td><span class="p p-RB">RB</span> <span class="p p-WR">WR</span></td><td class="sur">Jared Goff (QB), Wan&#x27;Dale Robinson (WR)</td></tr><tr class="mine"><td class="rk">2</td><td class="who">TyG</td><td class="n">2,078</td><td><span class="none">none</span></td><td class="sur">&mdash;</td></tr><tr><td class="rk">3</td><td class="who">When Life Gives You Makai Lemon</td><td class="n">2,066</td><td><span class="p p-WR">WR</span></td><td class="sur">Daniel Jones (QB)</td></tr><tr><td class="rk">4</td><td class="who">Shaheetz</td><td class="n">2,046</td><td><span class="p p-QB">QB</span> <span class="p p-WR">WR</span></td><td class="sur">Parker Washington (WR)</td></tr><tr><td class="rk">5</td><td class="who">Nacua Matata</td><td class="n">2,037</td><td><span class="p p-RB">RB</span> <span class="p p-TE">TE</span></td><td class="sur">Michael Pittman (WR)</td></tr><tr><td class="rk">6</td><td class="who">Diddys allstars</td><td class="n">2,033</td><td><span class="p p-WR">WR</span></td><td class="sur">Caleb Williams (QB), Jayden Reed (WR)</td></tr><tr><td class="rk">7</td><td class="who">OUCH! Dak Hurts dude!</td><td class="n">2,032</td><td><span class="p p-TE">TE</span></td><td class="sur">Dak Prescott (QB)</td></tr><tr><td class="rk">8</td><td class="who">Mike Vick&#x27;s DAWGS</td><td class="n">1,979</td><td><span class="p p-QB">QB</span> <span class="p p-RB">RB</span> <span class="p p-WR">WR</span></td><td class="sur">Kyler Murray (QB), J.K. Dobbins (RB)</td></tr><tr><td class="rk">9</td><td class="who">Robert&#x27;s Rowdy Team</td><td class="n">1,962</td><td><span class="p p-QB">QB</span> <span class="p p-RB">RB</span> <span class="p p-WR">WR</span></td><td class="sur">Kyle Monangai (RB), Marvin Harrison (WR)</td></tr><tr><td class="rk">10</td><td class="who">Daddy Dan</td><td class="n">1,917</td><td><span class="p p-RB">RB</span> <span class="p p-WR">WR</span> <span class="p p-TE">TE</span></td><td class="sur">Matthew Golden (WR)</td></tr><tr><td class="rk">11</td><td class="who">JT runs this league</td><td class="n">1,900</td><td><span class="p p-QB">QB</span> <span class="p p-RB">RB</span> <span class="p p-WR">WR</span></td><td class="sur">Jordan Love (QB), Christian Watson (WR)</td></tr><tr><td class="rk">12</td><td class="who">Pink</td><td class="n">1,895</td><td><span class="p p-RB">RB</span> <span class="p p-WR">WR</span> <span class="p p-TE">TE</span></td><td class="sur">Lamar Jackson (QB), Khalil Shakir (WR)</td></tr></tbody>
+    </table></div>
+  </section>
+</div>
+  
+<div class="view" data-view="trades" hidden>
+  <section class="panel">
+    <h2 class="sh">Offers worth making</h2>
+    <div class="acts"><p class="empty">No outgoing offer clears the bar right now.</p></div>
+  </section>
+  <section class="panel">
+    <h2 class="sh">Got an offer? Evaluate it</h2>
+    <p class="sub">Pick who they want and who they're giving. Verdict comes from
+       both starting lineups, this league's slots and scoring &mdash; not a generic
+       trade calculator.</p>
+    <div class="eval">
+      <div class="ev-col">
+        <label class="lbl" for="ev-partner">From</label>
+        <select id="ev-partner" class="sel"></select>
+        <label class="lbl">They give you</label>
+        <div id="ev-get" class="picklist"></div>
+      </div>
+      <div class="ev-col">
+        <label class="lbl">You give them</label>
+        <div id="ev-send" class="picklist"></div>
+      </div>
+    </div>
+    <button class="btn yes" id="ev-run">Evaluate</button>
+    <div id="ev-out" class="verdict" hidden></div>
+  </section>
+  <section class="panel">
+    <h2 class="sh">Decision log</h2>
+    <p class="sub">Everything you approve, pass on, or evaluate is recorded here,
+       on this device.</p>
+    <ul id="audit" class="audit"><li class="empty">Nothing yet.</li></ul>
+  </section>
+</div>
+  
+<div class="view" data-view="waivers" hidden>
+  <section class="panel">
+    <h2 class="sh">Free agents, measured against your roster</h2>
+    <p class="sub">"+Lineup" is what adding him does to <em>your</em> starting
+       lineup &mdash; the only number that matters. This league uses waiver priority, so a claim also spends your spot in line &mdash; the +points column says when that's worth it.</p>
+    <div class="scroll"><table class="grid">
+      <thead><tr><th>Player</th><th></th><th class="n">Proj</th>
+      <th class="n">+Lineup</th><th>Verdict</th></tr></thead>
+      <tbody><tr class=""><td class="who">Tyler Shough</td><td><span class="p p-QB">QB</span></td><td class="n">274</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Malik Willis</td><td><span class="p p-QB">QB</span></td><td class="n">247</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Bryce Young</td><td><span class="p p-QB">QB</span></td><td class="n">246</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Jacoby Brissett</td><td><span class="p p-QB">QB</span></td><td class="n">236</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Sam Darnold</td><td><span class="p p-QB">QB</span></td><td class="n">235</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Cam Ward</td><td><span class="p p-QB">QB</span></td><td class="n">227</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Aaron Rodgers</td><td><span class="p p-QB">QB</span></td><td class="n">227</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Michael Penix</td><td><span class="p p-QB">QB</span></td><td class="n">227</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Fernando Mendoza</td><td><span class="p p-QB">QB</span></td><td class="n">194</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Kenyon Sadiq</td><td><span class="p p-TE">TE</span></td><td class="n">147</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Shedeur Sanders</td><td><span class="p p-QB">QB</span></td><td class="n">145</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Cairo Santos</td><td><span class="p p-K">K</span></td><td class="n">144</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Trey Smack</td><td><span class="p p-K">K</span></td><td class="n">144</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Chase McLaughlin</td><td><span class="p p-K">K</span></td><td class="n">142</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Evan McPherson</td><td><span class="p p-K">K</span></td><td class="n">142</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Nick Folk</td><td><span class="p p-K">K</span></td><td class="n">141</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Spencer Shrader</td><td><span class="p p-K">K</span></td><td class="n">139</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Daniel Carlson</td><td><span class="p p-K">K</span></td><td class="n">138</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Tyler Bass</td><td><span class="p p-K">K</span></td><td class="n">137</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Pat Freiermuth</td><td><span class="p p-TE">TE</span></td><td class="n">136</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Wil Lutz</td><td><span class="p p-K">K</span></td><td class="n">136</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Drew Stevens</td><td><span class="p p-K">K</span></td><td class="n">134</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Dominic Zvada</td><td><span class="p p-K">K</span></td><td class="n">133</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Andy Borregales</td><td><span class="p p-K">K</span></td><td class="n">129</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Adonai Mitchell</td><td><span class="p p-WR">WR</span></td><td class="n">129</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Riley Patterson</td><td><span class="p p-K">K</span></td><td class="n">127</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Matt Gay</td><td><span class="p p-K">K</span></td><td class="n">125</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Cooper Kupp</td><td><span class="p p-WR">WR</span></td><td class="n">124</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Ryan Fitzgerald</td><td><span class="p p-K">K</span></td><td class="n">124</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Keenan Allen</td><td><span class="p p-WR">WR</span></td><td class="n">124</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Braelon Allen</td><td><span class="p p-RB">RB</span></td><td class="n">124</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Joey Slye</td><td><span class="p p-K">K</span></td><td class="n">123</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Rashod Bateman</td><td><span class="p p-WR">WR</span></td><td class="n">122</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Caleb Douglas</td><td><span class="p p-WR">WR</span></td><td class="n">122</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Andre Szmyt</td><td><span class="p p-K">K</span></td><td class="n">122</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Chad Ryland</td><td><span class="p p-K">K</span></td><td class="n">122</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Chris Bell</td><td><span class="p p-WR">WR</span></td><td class="n">121</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Alvin Kamara</td><td><span class="p p-RB">RB</span></td><td class="n">120</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Justice Hill</td><td><span class="p p-RB">RB</span></td><td class="n">120</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Greg Dulcich</td><td><span class="p p-TE">TE</span></td><td class="n">118</td><td class="n">+0</td><td>depth only</td></tr></tbody>
+    </table></div>
+  </section>
+</div>
+  
+<div class="view" data-view="news" hidden>
+  <section class="panel">
+    <h2 class="sh">News that touches this league</h2>
+    <p class="sub">Only stories naming a rostered player appear here. Anything
+       that changes a decision also shows up on Today as an action.
+       Last checked 2026-09-15 01:51 UTC.</p>
+    <ul class="news"><li><p class="nh">A.J. Brown (WR, NE) listed IR</p><p class="nm">Affects <b>A.J. Brown</b> (JT runs this league)</p></li><li><p class="nh">Josh Jacobs (RB, GB) listed NA</p><p class="nm">Affects <b>Josh Jacobs</b> (Daddy Dan)</p></li><li><p class="nh">Kyler Murray (QB, MIN) listed Out</p><p class="nm">Affects <b>Kyler Murray</b> (Mike Vick&#x27;s DAWGS)</p></li></ul>
+  </section>
+</div>
+  
+<div class="view" data-view="settings" hidden>
+  <section class="panel">
+    <h2 class="sh">Notifications</h2>
+    <p class="sub">These control what Claude includes when it messages you about
+       this league. Nothing here creates extra pings &mdash; it only removes them.</p>
+    <ul class="prefs" data-league="L1">
+      <li><label><input type="checkbox" data-pref="digest" checked>
+        Daily digest &mdash; one message, only when something changed</label></li>
+      <li><label><input type="checkbox" data-pref="deadlines" checked>
+        Deadline reminders &mdash; waivers and lineup lock</label></li>
+      <li><label><input type="checkbox" data-pref="urgent" checked>
+        Urgent only: starter injured, incoming trade, time-sensitive pickup</label></li>
+      <li class="quiet-row"><label><input type="checkbox" data-pref="quiet">
+        <b>Quiet mode</b> &mdash; nothing but urgent, until you turn it off</label></li>
+    </ul>
+  </section>
+  <section class="panel">
+    <h2 class="sh">Untouchables</h2>
+    <p class="sub">Players the system must never offer in a trade. The evaluator
+       and counteroffers respect this list immediately.</p>
+    <div class="untouch"><input type="text" id="untouch-in"
+      placeholder="Type a player's name and press Enter"><ul id="untouch-list"></ul></div>
+  </section>
+  <section class="panel">
+    <h2 class="sh">Automation</h2>
+    <p class="prose">Nothing is ever submitted to ESPN automatically &mdash; ESPN
+       doesn't allow it, and this product wouldn't do it anyway. The flow is
+       always: it recommends, you approve, you make the one click in ESPN.
+       The rules below shape <em>recommendations only</em>.</p>
+    <ul class="prefs">
+      <li><label>Flag trades as "accept-worthy" only above
+        <input type="number" id="rule-threshold" value="10" min="0" max="100"
+         class="numin"> lineup points</label></li>
+      <li><label><input type="checkbox" id="rule-injured" checked>
+        Never recommend accepting a trade for an OUT/IR player without a warning</label></li>
+    </ul>
+  </section>
+</div>
+</section>
+<section class="league" id="lg-L2" hidden>
+  <div class="view" data-view="today"><div class="acts">
+<article class="act k-trade" data-act="L2-0">
+  <header class="act-h">
+    <span class="kind">trade</span>
+    <span class="conf hi">High</span>
+    <span class="dl">No hard deadline, but value fades once the season starts and everyone sees the same holes.</span>
+  </header>
+  <h3>Offer Malik Nabers (WR), Tee Higgins (WR) to Real Slim Brady . for Josh Allen (QB)</h3>
+  <p class="why">Your starting lineup improves by ~74 points over the season; theirs improves by ~5, which is a marginal gain for them, so expect a negotiation.</p>
+  <p class="conf-why">Confidence: High &mdash; the gap is ~74 starting-lineup points -- far larger than projection noise.</p>
+  <div class="msg"><span class="msg-l">Message to send <button class="copy" data-copy>Copy</button></span><p>Hey -- would you do Josh Allen for Malik Nabers and Tee Higgins? Looking at your roster I think Malik Nabers actually helps your starting lineup, and I have a hole Josh Allen would fill. Open to tweaking it if you&#x27;re close.</p></div><div class="act-do"><button class="btn yes" data-yes>Approve</button><button class="btn no" data-no>Pass</button></div><div class="steps" hidden><p><b>Do it:</b> ESPN app: League → Real Slim Brady . → Propose Trade → offer Malik Nabers (WR), Tee Higgins (WR) for Josh Allen (QB).</p></div>
+</article>
+<article class="act k-trade" data-act="L2-1">
+  <header class="act-h">
+    <span class="kind">trade</span>
+    <span class="conf hi">High</span>
+    <span class="dl">No hard deadline, but value fades once the season starts and everyone sees the same holes.</span>
+  </header>
+  <h3>Alternative: offer Tee Higgins (WR), Kyren Williams (RB) to Real Slim Brady . for Jalen Hurts (QB)</h3>
+  <p class="why">Your starting lineup improves by ~34 points over the season; theirs improves by ~46, which is clearly better for them too, so an accept is realistic.</p>
+  <p class="conf-why">Confidence: High &mdash; the gap is ~34 starting-lineup points -- far larger than projection noise.</p>
+  <div class="msg"><span class="msg-l">Message to send <button class="copy" data-copy>Copy</button></span><p>Hey -- would you do Jalen Hurts for Tee Higgins and Kyren Williams? Looking at your roster I think Tee Higgins actually helps your starting lineup, and I have a hole Jalen Hurts would fill. Open to tweaking it if you&#x27;re close.</p></div><div class="act-do"><button class="btn yes" data-yes>Approve</button><button class="btn no" data-no>Pass</button></div><div class="steps" hidden><p><b>Do it:</b> ESPN app: League → Real Slim Brady . → Propose Trade → offer Tee Higgins (WR), Kyren Williams (RB) for Jalen Hurts (QB).</p></div>
+</article>
+<article class="act k-trade" data-act="L2-2">
+  <header class="act-h">
+    <span class="kind">trade</span>
+    <span class="conf md">Medium</span>
+    <span class="dl">No hard deadline, but value fades once the season starts and everyone sees the same holes.</span>
+  </header>
+  <h3>Alternative: offer Malik Nabers (WR) to Fish Sticks for Jayden Daniels (QB)</h3>
+  <p class="why">Your starting lineup improves by ~22 points over the season; theirs improves by ~12, which is a modest but real gain for them -- worth an ask.</p>
+  <p class="conf-why">Confidence: Medium &mdash; worth ~22 points over the season; real, but within a range where projections can be wrong.</p>
+  <div class="msg"><span class="msg-l">Message to send <button class="copy" data-copy>Copy</button></span><p>Hey -- would you do Jayden Daniels for Malik Nabers? Looking at your roster I think Malik Nabers actually helps your starting lineup, and I have a hole Jayden Daniels would fill. Open to tweaking it if you&#x27;re close.</p></div><div class="act-do"><button class="btn yes" data-yes>Approve</button><button class="btn no" data-no>Pass</button></div><div class="steps" hidden><p><b>Do it:</b> ESPN app: League → Fish Sticks → Propose Trade → offer Malik Nabers (WR) for Jayden Daniels (QB).</p></div>
+</article>
+<article class="act k-trade" data-act="L2-3">
+  <header class="act-h">
+    <span class="kind">trade</span>
+    <span class="conf md">Medium</span>
+    <span class="dl">No hard deadline, but value fades once the season starts and everyone sees the same holes.</span>
+  </header>
+  <h3>Alternative: offer Malik Nabers (WR), Drake London (WR) to Real Slim Brady . for CeeDee Lamb (WR)</h3>
+  <p class="why">Your starting lineup improves by ~22 points over the season; theirs improves by ~9, which is a modest but real gain for them -- worth an ask.</p>
+  <p class="conf-why">Confidence: Medium &mdash; worth ~22 points over the season; real, but within a range where projections can be wrong.</p>
+  <div class="msg"><span class="msg-l">Message to send <button class="copy" data-copy>Copy</button></span><p>Hey -- would you do CeeDee Lamb for Malik Nabers and Drake London? Looking at your roster I think Malik Nabers actually helps your starting lineup, and I have a hole CeeDee Lamb would fill. Open to tweaking it if you&#x27;re close.</p></div><div class="act-do"><button class="btn yes" data-yes>Approve</button><button class="btn no" data-no>Pass</button></div><div class="steps" hidden><p><b>Do it:</b> ESPN app: League → Real Slim Brady . → Propose Trade → offer Malik Nabers (WR), Drake London (WR) for CeeDee Lamb (WR).</p></div>
+</article>
+<article class="act k-waiver" data-act="L2-4">
+  <header class="act-h">
+    <span class="kind">waiver</span>
+    <span class="conf md">Medium</span>
+    <span class="dl">Before your league&#x27;s next waiver run.</span>
+  </header>
+  <h3>Add Bo Nix (QB), drop Jonathon Brooks</h3>
+  <p class="why">Bo Nix projects 306 and would start for you, worth ~10 points over your current lineup.</p>
+  <p class="conf-why">Confidence: Medium &mdash; worth ~10 points over the season; real, but within a range where projections can be wrong.</p>
+  <div class="act-do"><button class="btn yes" data-yes>Approve</button><button class="btn no" data-no>Pass</button></div><div class="steps" hidden><p><b>Do it:</b> ESPN app: Players → search Bo Nix → Add → drop Jonathon Brooks.</p></div>
+</article>
+<article class="act k-waiver" data-act="L2-5">
+  <header class="act-h">
+    <span class="kind">waiver</span>
+    <span class="conf lo">Low</span>
+    <span class="dl">Before your league&#x27;s next waiver run.</span>
+  </header>
+  <h3>Add Matthew Stafford (QB), drop Jonathon Brooks</h3>
+  <p class="why">Matthew Stafford projects 302 and would start for you, worth ~7 points over your current lineup.</p>
+  <p class="conf-why">Confidence: Low &mdash; only ~7 points -- close to projection noise.</p>
+  <div class="act-do"><button class="btn yes" data-yes>Approve</button><button class="btn no" data-no>Pass</button></div><div class="steps" hidden><p><b>Do it:</b> ESPN app: Players → search Matthew Stafford → Add → drop Jonathon Brooks.</p></div>
+</article>
+<article class="act k-waiver" data-act="L2-6">
+  <header class="act-h">
+    <span class="kind">waiver</span>
+    <span class="conf lo">Low</span>
+    <span class="dl">Before your league&#x27;s next waiver run.</span>
+  </header>
+  <h3>Add Brock Purdy (QB), drop Jonathon Brooks</h3>
+  <p class="why">Brock Purdy projects 301 and would start for you, worth ~6 points over your current lineup.</p>
+  <p class="conf-why">Confidence: Low &mdash; only ~6 points -- close to projection noise.</p>
+  <div class="act-do"><button class="btn yes" data-yes>Approve</button><button class="btn no" data-no>Pass</button></div><div class="steps" hidden><p><b>Do it:</b> ESPN app: Players → search Brock Purdy → Add → drop Jonathon Brooks.</p></div>
+</article></div></div>
+  
+<div class="view" data-view="team" hidden>
+  <div class="two">
+    <section class="panel">
+      <h2 class="sh">Starters</h2>
+      <table class="grid"><tbody><tr><td class="slot">QB</td><td class="who">Dak Prescott</td><td><span class="p p-QB">QB</span></td><td class="n">296</td></tr><tr><td class="slot">RB</td><td class="who">Jahmyr Gibbs</td><td><span class="p p-RB">RB</span></td><td class="n">372</td></tr><tr><td class="slot">RB</td><td class="who">Saquon Barkley</td><td><span class="p p-RB">RB</span></td><td class="n">273</td></tr><tr><td class="slot">WR</td><td class="who">Drake London</td><td><span class="p p-WR">WR</span></td><td class="n">262</td></tr><tr><td class="slot">WR</td><td class="who">Malik Nabers</td><td><span class="p p-WR">WR</span></td><td class="n">244</td></tr><tr><td class="slot">TE</td><td class="who">Kyle Pitts</td><td><span class="p p-TE">TE</span></td><td class="n">181</td></tr><tr><td class="slot">FLEX</td><td class="who">Tetairoa McMillan</td><td><span class="p p-WR">WR</span></td><td class="n">235</td></tr><tr><td class="slot">D/ST</td><td class="who">Eagles D/ST</td><td><span class="p p-DST">D/ST</span></td><td class="n">106</td></tr><tr><td class="slot">K</td><td class="who">Brandon Aubrey</td><td><span class="p p-K">K</span></td><td class="n">171</td></tr></tbody></table>
+      <p class="tot"><span>Season projection</span><b>2,141</b></p>
+    </section>
+    <section class="panel">
+      <h2 class="sh">Bench</h2>
+      <table class="grid bench"><tbody><tr><td class="who">Kyren Williams</td><td><span class="p p-RB">RB</span></td><td class="n">234</td></tr><tr><td class="who">Tee Higgins</td><td><span class="p p-WR">WR</span></td><td class="n">219</td></tr><tr><td class="who">DK Metcalf</td><td><span class="p p-WR">WR</span></td><td class="n">196</td></tr><tr><td class="who">Tucker Kraft</td><td><span class="p p-TE">TE</span></td><td class="n">172</td></tr><tr><td class="who">Jonathon Brooks</td><td><span class="p p-RB">RB</span></td><td class="n">166</td></tr></tbody></table>
+    </section>
+  </div>
+  <div class="two">
+    <section class="panel">
+      <h2 class="sh">Positional strength</h2>
+      <ul class="strength"><li class="bad"><span class="p p-QB">QB</span><span class="st-w">thin</span><span class="st-n">-32 vs median</span></li><li class="bad"><span class="p p-RB">RB</span><span class="st-w">thin</span><span class="st-n">-46 vs median</span></li><li class="even"><span class="p p-WR">WR</span><span class="st-w">league-average</span><span class="st-n">+0 vs median</span></li><li class="bad"><span class="p p-TE">TE</span><span class="st-w">thin</span><span class="st-n">-25 vs median</span></li></ul>
+    </section>
+    <section class="panel">
+      <h2 class="sh">Playoff outlook</h2>
+      <p class="prose">Projections put you <b>6 of 8</b>; top 6 make the playoffs, so you are currently inside the line. That is a preseason estimate, not a fate.</p>
+      <h2 class="sh" style="margin-top:18px">This week's plan</h2>
+      <ol class="plan"><li>Offer Malik Nabers (WR), Tee Higgins (WR) to Real Slim Brady . for Josh Allen (QB)</li><li>Alternative: offer Tee Higgins (WR), Kyren Williams (RB) to Real Slim Brady . for Jalen Hurts (QB)</li><li>Alternative: offer Malik Nabers (WR) to Fish Sticks for Jayden Daniels (QB)</li><li>Alternative: offer Malik Nabers (WR), Drake London (WR) to Real Slim Brady . for CeeDee Lamb (WR)</li><li>Add Bo Nix (QB), drop Jonathon Brooks</li><li>Add Matthew Stafford (QB), drop Jonathon Brooks</li><li>Add Brock Purdy (QB), drop Jonathon Brooks</li></ol>
+    </section>
+  </div>
+</div>
+  
+<div class="view" data-view="market" hidden>
+  <section class="panel">
+    <h2 class="sh">Every team, honestly read</h2>
+    <p class="sub">Needs are starting spots in the league's bottom quartile.
+       Surplus is a benched player good enough to start elsewhere &mdash; that
+       pair is what makes a trade real.</p>
+    <div class="scroll"><table class="grid market">
+      <thead><tr><th></th><th>Team</th><th class="n">Proj</th><th>Needs</th><th>Surplus</th></tr></thead>
+      <tbody><tr><td class="rk">1</td><td class="who">Waiver Wire Willy <span class="fit">fit: they need RB, you have spare</span></td><td class="n">2,202</td><td><span class="p p-RB">RB</span> <span class="p p-TE">TE</span></td><td class="sur">Quinshon Judkins (RB)</td></tr><tr><td class="rk">2</td><td class="who">Riley Reid Option</td><td class="n">2,182</td><td><span class="none">none</span></td><td class="sur">Caleb Williams (QB), Rome Odunze (WR)</td></tr><tr><td class="rk">3</td><td class="who">George picken brown flowers <span class="fit">fit: they need RB, you have spare</span></td><td class="n">2,175</td><td><span class="p p-QB">QB</span> <span class="p p-RB">RB</span> <span class="p p-WR">WR</span></td><td class="sur">DJ Moore (WR)</td></tr><tr><td class="rk">4</td><td class="who">Egbuka and Sausage Sammich<span class="fit">fit: they need WR, you have spare</span></td><td class="n">2,172</td><td><span class="p p-WR">WR</span></td><td class="sur">Emeka Egbuka (WR), Dallas Goedert (TE)</td></tr><tr><td class="rk">5</td><td class="who">Fish Sticks<span class="fit">fit: they need WR, you have spare</span></td><td class="n">2,154</td><td><span class="p p-WR">WR</span></td><td class="sur">Jaxson Dart (QB), Matthew Golden (WR), Harold Fannin (TE)</td></tr><tr class="mine"><td class="rk">6</td><td class="who">TyG TyG</td><td class="n">2,141</td><td><span class="p p-QB">QB</span> <span class="p p-WR">WR</span> <span class="p p-TE">TE</span></td><td class="sur">Kyren Williams (RB), Tee Higgins (WR), Tucker Kraft (TE)</td></tr><tr><td class="rk">7</td><td class="who">The Commish<span class="fit">fit: they need RB, you have spare</span></td><td class="n">2,109</td><td><span class="p p-QB">QB</span> <span class="p p-RB">RB</span> <span class="p p-WR">WR</span></td><td class="sur">Jameson Williams (WR)</td></tr><tr><td class="rk">8</td><td class="who">Real Slim Brady .<span class="fit">fit: they need RB, you have spare</span></td><td class="n">2,030</td><td><span class="p p-RB">RB</span> <span class="p p-WR">WR</span> <span class="p p-TE">TE</span></td><td class="sur">Jalen Hurts (QB), Tony Pollard (RB), Parker Washington (WR)</td></tr></tbody>
+    </table></div>
+  </section>
+</div>
+  
+<div class="view" data-view="trades" hidden>
+  <section class="panel">
+    <h2 class="sh">Offers worth making</h2>
+    <div class="acts">
+<article class="act k-trade" data-act="L2-100">
+  <header class="act-h">
+    <span class="kind">trade</span>
+    <span class="conf hi">High</span>
+    <span class="dl">No hard deadline, but value fades once the season starts and everyone sees the same holes.</span>
+  </header>
+  <h3>Offer Malik Nabers (WR), Tee Higgins (WR) to Real Slim Brady . for Josh Allen (QB)</h3>
+  <p class="why">Your starting lineup improves by ~74 points over the season; theirs improves by ~5, which is a marginal gain for them, so expect a negotiation.</p>
+  <p class="conf-why">Confidence: High &mdash; the gap is ~74 starting-lineup points -- far larger than projection noise.</p>
+  <div class="msg"><span class="msg-l">Message to send <button class="copy" data-copy>Copy</button></span><p>Hey -- would you do Josh Allen for Malik Nabers and Tee Higgins? Looking at your roster I think Malik Nabers actually helps your starting lineup, and I have a hole Josh Allen would fill. Open to tweaking it if you&#x27;re close.</p></div><div class="act-do"><button class="btn yes" data-yes>Approve</button><button class="btn no" data-no>Pass</button></div><div class="steps" hidden><p><b>Do it:</b> ESPN app: League → Real Slim Brady . → Propose Trade → offer Malik Nabers (WR), Tee Higgins (WR) for Josh Allen (QB).</p></div>
+</article>
+<article class="act k-trade" data-act="L2-101">
+  <header class="act-h">
+    <span class="kind">trade</span>
+    <span class="conf hi">High</span>
+    <span class="dl">No hard deadline, but value fades once the season starts and everyone sees the same holes.</span>
+  </header>
+  <h3>Alternative: offer Tee Higgins (WR), Kyren Williams (RB) to Real Slim Brady . for Jalen Hurts (QB)</h3>
+  <p class="why">Your starting lineup improves by ~34 points over the season; theirs improves by ~46, which is clearly better for them too, so an accept is realistic.</p>
+  <p class="conf-why">Confidence: High &mdash; the gap is ~34 starting-lineup points -- far larger than projection noise.</p>
+  <div class="msg"><span class="msg-l">Message to send <button class="copy" data-copy>Copy</button></span><p>Hey -- would you do Jalen Hurts for Tee Higgins and Kyren Williams? Looking at your roster I think Tee Higgins actually helps your starting lineup, and I have a hole Jalen Hurts would fill. Open to tweaking it if you&#x27;re close.</p></div><div class="act-do"><button class="btn yes" data-yes>Approve</button><button class="btn no" data-no>Pass</button></div><div class="steps" hidden><p><b>Do it:</b> ESPN app: League → Real Slim Brady . → Propose Trade → offer Tee Higgins (WR), Kyren Williams (RB) for Jalen Hurts (QB).</p></div>
+</article>
+<article class="act k-trade" data-act="L2-102">
+  <header class="act-h">
+    <span class="kind">trade</span>
+    <span class="conf md">Medium</span>
+    <span class="dl">No hard deadline, but value fades once the season starts and everyone sees the same holes.</span>
+  </header>
+  <h3>Alternative: offer Malik Nabers (WR) to Fish Sticks for Jayden Daniels (QB)</h3>
+  <p class="why">Your starting lineup improves by ~22 points over the season; theirs improves by ~12, which is a modest but real gain for them -- worth an ask.</p>
+  <p class="conf-why">Confidence: Medium &mdash; worth ~22 points over the season; real, but within a range where projections can be wrong.</p>
+  <div class="msg"><span class="msg-l">Message to send <button class="copy" data-copy>Copy</button></span><p>Hey -- would you do Jayden Daniels for Malik Nabers? Looking at your roster I think Malik Nabers actually helps your starting lineup, and I have a hole Jayden Daniels would fill. Open to tweaking it if you&#x27;re close.</p></div><div class="act-do"><button class="btn yes" data-yes>Approve</button><button class="btn no" data-no>Pass</button></div><div class="steps" hidden><p><b>Do it:</b> ESPN app: League → Fish Sticks → Propose Trade → offer Malik Nabers (WR) for Jayden Daniels (QB).</p></div>
+</article>
+<article class="act k-trade" data-act="L2-103">
+  <header class="act-h">
+    <span class="kind">trade</span>
+    <span class="conf md">Medium</span>
+    <span class="dl">No hard deadline, but value fades once the season starts and everyone sees the same holes.</span>
+  </header>
+  <h3>Alternative: offer Malik Nabers (WR), Drake London (WR) to Real Slim Brady . for CeeDee Lamb (WR)</h3>
+  <p class="why">Your starting lineup improves by ~22 points over the season; theirs improves by ~9, which is a modest but real gain for them -- worth an ask.</p>
+  <p class="conf-why">Confidence: Medium &mdash; worth ~22 points over the season; real, but within a range where projections can be wrong.</p>
+  <div class="msg"><span class="msg-l">Message to send <button class="copy" data-copy>Copy</button></span><p>Hey -- would you do CeeDee Lamb for Malik Nabers and Drake London? Looking at your roster I think Malik Nabers actually helps your starting lineup, and I have a hole CeeDee Lamb would fill. Open to tweaking it if you&#x27;re close.</p></div><div class="act-do"><button class="btn yes" data-yes>Approve</button><button class="btn no" data-no>Pass</button></div><div class="steps" hidden><p><b>Do it:</b> ESPN app: League → Real Slim Brady . → Propose Trade → offer Malik Nabers (WR), Drake London (WR) for CeeDee Lamb (WR).</p></div>
+</article></div>
+  </section>
+  <section class="panel">
+    <h2 class="sh">Got an offer? Evaluate it</h2>
+    <p class="sub">Pick who they want and who they're giving. Verdict comes from
+       both starting lineups, this league's slots and scoring &mdash; not a generic
+       trade calculator.</p>
+    <div class="eval">
+      <div class="ev-col">
+        <label class="lbl" for="ev-partner">From</label>
+        <select id="ev-partner" class="sel"></select>
+        <label class="lbl">They give you</label>
+        <div id="ev-get" class="picklist"></div>
+      </div>
+      <div class="ev-col">
+        <label class="lbl">You give them</label>
+        <div id="ev-send" class="picklist"></div>
+      </div>
+    </div>
+    <button class="btn yes" id="ev-run">Evaluate</button>
+    <div id="ev-out" class="verdict" hidden></div>
+  </section>
+  <section class="panel">
+    <h2 class="sh">Decision log</h2>
+    <p class="sub">Everything you approve, pass on, or evaluate is recorded here,
+       on this device.</p>
+    <ul id="audit" class="audit"><li class="empty">Nothing yet.</li></ul>
+  </section>
+</div>
+  
+<div class="view" data-view="waivers" hidden>
+  <section class="panel">
+    <h2 class="sh">Free agents, measured against your roster</h2>
+    <p class="sub">"+Lineup" is what adding him does to <em>your</em> starting
+       lineup &mdash; the only number that matters. This league uses waiver priority, so a claim also spends your spot in line &mdash; the +points column says when that's worth it.</p>
+    <div class="scroll"><table class="grid">
+      <thead><tr><th>Player</th><th></th><th class="n">Proj</th>
+      <th class="n">+Lineup</th><th>Verdict</th></tr></thead>
+      <tbody><tr class="good"><td class="who">Bo Nix</td><td><span class="p p-QB">QB</span></td><td class="n">306</td><td class="n">+10</td><td>starts for you</td></tr><tr class="good"><td class="who">Matthew Stafford</td><td><span class="p p-QB">QB</span></td><td class="n">302</td><td class="n">+7</td><td>starts for you</td></tr><tr class="good"><td class="who">Brock Purdy</td><td><span class="p p-QB">QB</span></td><td class="n">301</td><td class="n">+6</td><td>starts for you</td></tr><tr class="good"><td class="who">Patrick Mahomes</td><td><span class="p p-QB">QB</span></td><td class="n">301</td><td class="n">+5</td><td>starts for you</td></tr><tr class=""><td class="who">Kyler Murray</td><td><span class="p p-QB">QB</span></td><td class="n">293</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Jared Goff</td><td><span class="p p-QB">QB</span></td><td class="n">276</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Daniel Jones</td><td><span class="p p-QB">QB</span></td><td class="n">275</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Baker Mayfield</td><td><span class="p p-QB">QB</span></td><td class="n">274</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Tyler Shough</td><td><span class="p p-QB">QB</span></td><td class="n">274</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Jordan Love</td><td><span class="p p-QB">QB</span></td><td class="n">271</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">C.J. Stroud</td><td><span class="p p-QB">QB</span></td><td class="n">254</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Malik Willis</td><td><span class="p p-QB">QB</span></td><td class="n">247</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Bryce Young</td><td><span class="p p-QB">QB</span></td><td class="n">246</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Geno Smith</td><td><span class="p p-QB">QB</span></td><td class="n">240</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Jacoby Brissett</td><td><span class="p p-QB">QB</span></td><td class="n">236</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Sam Darnold</td><td><span class="p p-QB">QB</span></td><td class="n">235</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Cam Ward</td><td><span class="p p-QB">QB</span></td><td class="n">227</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Aaron Rodgers</td><td><span class="p p-QB">QB</span></td><td class="n">227</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Michael Penix</td><td><span class="p p-QB">QB</span></td><td class="n">227</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Fernando Mendoza</td><td><span class="p p-QB">QB</span></td><td class="n">194</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Chuba Hubbard</td><td><span class="p p-RB">RB</span></td><td class="n">193</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Alec Pierce</td><td><span class="p p-WR">WR</span></td><td class="n">185</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Aaron Jones</td><td><span class="p p-RB">RB</span></td><td class="n">181</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Brian Thomas</td><td><span class="p p-WR">WR</span></td><td class="n">177</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Wan&#x27;Dale Robinson</td><td><span class="p p-WR">WR</span></td><td class="n">175</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">J.K. Dobbins</td><td><span class="p p-RB">RB</span></td><td class="n">175</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Kyle Monangai</td><td><span class="p p-RB">RB</span></td><td class="n">175</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Jayden Reed</td><td><span class="p p-WR">WR</span></td><td class="n">174</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Xavier Worthy</td><td><span class="p p-WR">WR</span></td><td class="n">173</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Stefon Diggs</td><td><span class="p p-WR">WR</span></td><td class="n">172</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Jordan Addison</td><td><span class="p p-WR">WR</span></td><td class="n">171</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Khalil Shakir</td><td><span class="p p-WR">WR</span></td><td class="n">170</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Mark Andrews</td><td><span class="p p-TE">TE</span></td><td class="n">169</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Jordan Mason</td><td><span class="p p-RB">RB</span></td><td class="n">167</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Jake Ferguson</td><td><span class="p p-TE">TE</span></td><td class="n">167</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Chris Godwin</td><td><span class="p p-WR">WR</span></td><td class="n">167</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Rachaad White</td><td><span class="p p-RB">RB</span></td><td class="n">164</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Deebo Samuel</td><td><span class="p p-WR">WR</span></td><td class="n">162</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">T.J. Hockenson</td><td><span class="p p-TE">TE</span></td><td class="n">159</td><td class="n">+0</td><td>depth only</td></tr><tr class=""><td class="who">Jacory Croskey-Merritt</td><td><span class="p p-RB">RB</span></td><td class="n">159</td><td class="n">+0</td><td>depth only</td></tr></tbody>
+    </table></div>
+  </section>
+</div>
+  
+<div class="view" data-view="news" hidden>
+  <section class="panel">
+    <h2 class="sh">News that touches this league</h2>
+    <p class="sub">Only stories naming a rostered player appear here. Anything
+       that changes a decision also shows up on Today as an action.
+       Last checked 2026-09-15 01:51 UTC.</p>
+    <ul class="news"><li><p class="nh">A.J. Brown (WR, NE) listed IR</p><p class="nm">Affects <b>A.J. Brown</b> (Real Slim Brady .)</p></li><li><p class="nh">Josh Jacobs (RB, GB) listed NA</p><p class="nm">Affects <b>Josh Jacobs</b> (The Commish)</p></li></ul>
+  </section>
+</div>
+  
+<div class="view" data-view="settings" hidden>
+  <section class="panel">
+    <h2 class="sh">Notifications</h2>
+    <p class="sub">These control what Claude includes when it messages you about
+       this league. Nothing here creates extra pings &mdash; it only removes them.</p>
+    <ul class="prefs" data-league="L2">
+      <li><label><input type="checkbox" data-pref="digest" checked>
+        Daily digest &mdash; one message, only when something changed</label></li>
+      <li><label><input type="checkbox" data-pref="deadlines" checked>
+        Deadline reminders &mdash; waivers and lineup lock</label></li>
+      <li><label><input type="checkbox" data-pref="urgent" checked>
+        Urgent only: starter injured, incoming trade, time-sensitive pickup</label></li>
+      <li class="quiet-row"><label><input type="checkbox" data-pref="quiet">
+        <b>Quiet mode</b> &mdash; nothing but urgent, until you turn it off</label></li>
+    </ul>
+  </section>
+  <section class="panel">
+    <h2 class="sh">Untouchables</h2>
+    <p class="sub">Players the system must never offer in a trade. The evaluator
+       and counteroffers respect this list immediately.</p>
+    <div class="untouch"><input type="text" id="untouch-in"
+      placeholder="Type a player's name and press Enter"><ul id="untouch-list"></ul></div>
+  </section>
+  <section class="panel">
+    <h2 class="sh">Automation</h2>
+    <p class="prose">Nothing is ever submitted to ESPN automatically &mdash; ESPN
+       doesn't allow it, and this product wouldn't do it anyway. The flow is
+       always: it recommends, you approve, you make the one click in ESPN.
+       The rules below shape <em>recommendations only</em>.</p>
+    <ul class="prefs">
+      <li><label>Flag trades as "accept-worthy" only above
+        <input type="number" id="rule-threshold" value="10" min="0" max="100"
+         class="numin"> lineup points</label></li>
+      <li><label><input type="checkbox" id="rule-injured" checked>
+        Never recommend accepting a trade for an OUT/IR player without a warning</label></li>
+    </ul>
+  </section>
+</div>
+</section>
+
+  <p class="foot">Every number is ESPN's own projection under this league's scoring,
+     refreshed twice daily. Nothing is ever submitted automatically &mdash; you approve,
+     then make the one click in ESPN. Decisions and settings live on this device.</p>
+</div>
+
+<script>
+var LEAGUES = {"L1":{"slots":{"QB":1,"RB":2,"WR":2,"TE":1,"D/ST":1,"K":1,"BE":7,"IR":1,"RB/WR/TE":1},"myTeamId":3,"teams":[{"id":9,"name":"Skattmans World","me":false,"players":[{"id":"espn_-16034","n":"Texans D/ST","pos":"D/ST","pr":130.31738828,"inj":null},{"id":"p_11584","n":"Bucky Irving","pos":"RB","pr":207.8492743,"inj":null},{"id":"p_11604","n":"Brock Bowers","pos":"TE","pr":224.96181481,"inj":"Out"},{"id":"p_11624","n":"Xavier Worthy","pos":"WR","pr":173.45085773,"inj":null},{"id":"p_12474","n":"Woody Marks","pos":"RB","pr":131.92890557,"inj":null},{"id":"p_12514","n":"Emeka Egbuka","pos":"WR","pr":228.36314104,"inj":null},{"id":"p_13287","n":"Jeremiyah Love","pos":"RB","pr":276.31593435,"inj":null},{"id":"p_2078","n":"Odell Beckham","pos":"WR","pr":67.5107537,"inj":null},{"id":"p_2216","n":"Mike Evans","pos":"WR","pr":192.02549376,"inj":null},{"id":"p_3163","n":"Jared Goff","pos":"QB","pr":276.49745141,"inj":null},{"id":"p_5189","n":"Eddy Pineiro","pos":"K","pr":155.10567919,"inj":null},{"id":"p_6770","n":"Joe Burrow","pos":"QB","pr":315.0618365,"inj":null},{"id":"p_8126","n":"Wan'Dale Robinson","pos":"WR","pr":174.88014452,"inj":null},{"id":"p_9221","n":"Jahmyr Gibbs","pos":"RB","pr":372.20324529,"inj":null},{"id":"p_9482","n":"Michael Mayer","pos":"TE","pr":84.86422505,"inj":null},{"id":"p_9508","n":"Tyjae Spears","pos":"RB","pr":154.2698758,"inj":null}]},{"id":3,"name":"TyG","me":true,"players":[{"id":"espn_-16007","n":"Broncos D/ST","pos":"D/ST","pr":130.67097804,"inj":null},{"id":"p_10213","n":"Tre Tucker","pos":"WR","pr":138.6162113,"inj":null},{"id":"p_11533","n":"Brandon Aubrey","pos":"K","pr":171.47184253,"inj":null},{"id":"p_11564","n":"Drake Maye","pos":"QB","pr":330.02790994,"inj":null},{"id":"p_11620","n":"Rome Odunze","pos":"WR","pr":213.11723165,"inj":null},{"id":"p_11646","n":"Jalen Coker","pos":"WR","pr":146.63303372,"inj":"Questionable"},{"id":"p_12527","n":"Ashton Jeanty","pos":"RB","pr":278.477078,"inj":null},{"id":"p_13346","n":"Denzel Boston","pos":"WR","pr":142.38561164,"inj":null},{"id":"p_1466","n":"Travis Kelce","pos":"TE","pr":177.67639795,"inj":null},{"id":"p_2133","n":"Davante Adams","pos":"WR","pr":232.09844753,"inj":null},{"id":"p_5967","n":"Tony Pollard","pos":"RB","pr":185.51867001,"inj":null},{"id":"p_7021","n":"Rico Dowdle","pos":"RB","pr":188.43575336,"inj":null},{"id":"p_8146","n":"Garrett Wilson","pos":"WR","pr":252.18134106,"inj":null},{"id":"p_9226","n":"De'Von Achane","pos":"RB","pr":292.59783657,"inj":null},{"id":"p_9480","n":"Brenton Strange","pos":"TE","pr":142.50604682,"inj":null},{"id":"p_9754","n":"Quentin Johnston","pos":"WR","pr":165.75383747,"inj":null}]},{"id":5,"name":"When Life Gives You Makai Lemon","me":false,"players":[{"id":"espn_-16008","n":"Lions D/ST","pos":"D/ST","pr":108.108202,"inj":null},{"id":"p_11583","n":"Jonathon Brooks","pos":"RB","pr":166.0658946,"inj":null},{"id":"p_12487","n":"Terrance Ferguson","pos":"TE","pr":105.79776281,"inj":null},{"id":"p_12508","n":"Jaxson Dart","pos":"QB","pr":309.10698531,"inj":null},{"id":"p_12517","n":"Colston Loveland","pos":"TE","pr":206.38402417,"inj":null},{"id":"p_12519","n":"Luther Burden","pos":"WR","pr":206.26029904,"inj":null},{"id":"p_13294","n":"Makai Lemon","pos":"WR","pr":153.69045378,"inj":null},{"id":"p_3451","n":"Ka'imi Fairbairn","pos":"K","pr":157.76907981,"inj":null},{"id":"p_4199","n":"Aaron Jones","pos":"RB","pr":180.62009322,"inj":null},{"id":"p_5870","n":"Daniel Jones","pos":"QB","pr":275.3460951,"inj":null},{"id":"p_7547","n":"Amon-Ra St. Brown","pos":"WR","pr":325.39166829,"inj":null},{"id":"p_8138","n":"James Cook","pos":"RB","pr":279.85652474,"inj":null},{"id":"p_8150","n":"Kyren Williams","pos":"RB","pr":233.95092159,"inj":null},{"id":"p_8408","n":"Jordan Mason","pos":"RB","pr":167.07308574,"inj":"Questionable"},{"id":"p_9756","n":"Jordan Addison","pos":"WR","pr":170.79021937,"inj":null},{"id":"p_9997","n":"Zay Flowers","pos":"WR","pr":238.73786037,"inj":"Out"}]},{"id":8,"name":"Shaheetz","me":false,"players":[{"id":"espn_-16023","n":"Steelers D/ST","pos":"D/ST","pr":125.36470156,"inj":null},{"id":"p_10229","n":"Rashee Rice","pos":"WR","pr":260.02464353,"inj":null},{"id":"p_12481","n":"Cam Skattebo","pos":"RB","pr":227.50081403,"inj":null},{"id":"p_12518","n":"Tyler Warren","pos":"TE","pr":210.3617222,"inj":null},{"id":"p_1373","n":"Geno Smith","pos":"QB","pr":240.24990886,"inj":null},{"id":"p_4046","n":"Patrick Mahomes","pos":"QB","pr":300.83555231,"inj":null},{"id":"p_4981","n":"Calvin Ridley","pos":"WR","pr":135.27889227,"inj":null},{"id":"p_5012","n":"Mark Andrews","pos":"TE","pr":168.92589268,"inj":null},{"id":"p_5045","n":"Courtland Sutton","pos":"WR","pr":204.6132919,"inj":null},{"id":"p_6794","n":"Justin Jefferson","pos":"WR","pr":294.07924728,"inj":null},{"id":"p_7567","n":"Kenny Gainwell","pos":"RB","pr":178.78733517,"inj":null},{"id":"p_7588","n":"Javonte Williams","pos":"RB","pr":261.09900157,"inj":null},{"id":"p_8154","n":"Brian Robinson","pos":"RB","pr":92.23562243,"inj":null},{"id":"p_8259","n":"Cameron Dicker","pos":"K","pr":161.89119053,"inj":null},{"id":"p_8676","n":"Rashid Shaheed","pos":"WR","pr":153.40928802,"inj":null},{"id":"p_9487","n":"Parker Washington","pos":"WR","pr":187.75860881,"inj":null}]},{"id":16,"name":"Nacua Matata","me":false,"players":[{"id":"espn_-16014","n":"Rams D/ST","pos":"D/ST","pr":121.45452952,"inj":null},{"id":"p_11566","n":"Jayden Daniels","pos":"QB","pr":327.67966365,"inj":null},{"id":"p_12526","n":"Tetairoa McMillan","pos":"WR","pr":235.47356545,"inj":null},{"id":"p_12529","n":"TreVeyon Henderson","pos":"RB","pr":153.79861982,"inj":"Out"},{"id":"p_12533","n":"Jacory Croskey-Merritt","pos":"RB","pr":158.58775769,"inj":null},{"id":"p_13298","n":"KC Concepcion","pos":"WR","pr":156.13174918,"inj":null},{"id":"p_1945","n":"Chris Boswell","pos":"K","pr":142.7547796,"inj":null},{"id":"p_5844","n":"T.J. Hockenson","pos":"TE","pr":158.61066675,"inj":null},{"id":"p_6790","n":"D'Andre Swift","pos":"RB","pr":209.87704012,"inj":null},{"id":"p_6819","n":"Michael Pittman","pos":"WR","pr":197.14048632,"inj":null},{"id":"p_7526","n":"Jaylen Waddle","pos":"WR","pr":213.56674569,"inj":null},{"id":"p_8121","n":"Romeo Doubs","pos":"WR","pr":149.69704841,"inj":null},{"id":"p_8151","n":"Kenneth Walker","pos":"RB","pr":273.49591162,"inj":null},{"id":"p_8210","n":"Chig Okonkwo","pos":"TE","pr":120.49844369,"inj":"Questionable"},{"id":"p_9493","n":"Puka Nacua","pos":"WR","pr":353.69941482,"inj":null},{"id":"p_9758","n":"C.J. Stroud","pos":"QB","pr":254.37551473,"inj":null}]},{"id":6,"name":"Diddys allstars","me":false,"players":[{"id":"espn_-16026","n":"Seahawks D/ST","pos":"D/ST","pr":118.58157223,"inj":null},{"id":"p_10219","n":"Chris Rodriguez","pos":"RB","pr":72.82571858,"inj":null},{"id":"p_10222","n":"Jayden Reed","pos":"WR","pr":173.86969769,"inj":null},{"id":"p_11560","n":"Caleb Williams","pos":"QB","pr":290.92713034,"inj":null},{"id":"p_11581","n":"MarShawn Lloyd","pos":"RB","pr":135.27609222,"inj":null},{"id":"p_11834","n":"Devaughn Vele","pos":"WR","pr":123.32403428,"inj":null},{"id":"p_13279","n":"Carnell Tate","pos":"WR","pr":202.26861439,"inj":null},{"id":"p_13281","n":"Jordyn Tyson","pos":"WR","pr":99.85362959,"inj":"IR"},{"id":"p_2747","n":"Jason Myers","pos":"K","pr":158.53035362,"inj":null},{"id":"p_4217","n":"George Kittle","pos":"TE","pr":182.0538239,"inj":null},{"id":"p_5927","n":"Terry McLaurin","pos":"WR","pr":217.32286377,"inj":null},{"id":"p_7002","n":"Juwan Johnson","pos":"TE","pr":146.76839637,"inj":null},{"id":"p_7564","n":"Ja'Marr Chase","pos":"WR","pr":337.31917937,"inj":null},{"id":"p_7611","n":"Rhamondre Stevenson","pos":"RB","pr":240.33361617,"inj":null},{"id":"p_8155","n":"Breece Hall","pos":"RB","pr":275.32378765,"inj":null},{"id":"p_8180","n":"Jalen Nailor","pos":"WR","pr":124.93875773,"inj":null},{"id":"p_8183","n":"Brock Purdy","pos":"QB","pr":301.11302647,"inj":null}]},{"id":10,"name":"OUCH! Dak Hurts dude!","me":false,"players":[{"id":"espn_-16006","n":"Cowboys D/ST","pos":"D/ST","pr":76.49308089,"inj":null},{"id":"p_10232","n":"Michael Wilson","pos":"WR","pr":176.94923041,"inj":null},{"id":"p_11786","n":"Cam Little","pos":"K","pr":146.93234928,"inj":null},{"id":"p_12507","n":"Omarion Hampton","pos":"RB","pr":261.83314,"inj":null},{"id":"p_13285","n":"Malachi Fields","pos":"WR","pr":104.3743792,"inj":null},{"id":"p_13305","n":"Mike Washington","pos":"RB","pr":67.62210851,"inj":null},{"id":"p_3294","n":"Dak Prescott","pos":"QB","pr":295.54498051,"inj":null},{"id":"p_3321","n":"Tyreek Hill","pos":"WR","pr":null,"inj":""},{"id":"p_5001","n":"Dalton Schultz","pos":"TE","pr":133.31887975,"inj":null},{"id":"p_5947","n":"Jakobi Meyers","pos":"WR","pr":181.90331635,"inj":null},{"id":"p_6801","n":"Tee Higgins","pos":"WR","pr":219.17655715,"inj":null},{"id":"p_6904","n":"Jalen Hurts","pos":"QB","pr":329.38980147,"inj":null},{"id":"p_7543","n":"Travis Etienne","pos":"RB","pr":244.65862447,"inj":null},{"id":"p_8110","n":"Jake Ferguson","pos":"TE","pr":166.98350022,"inj":null},{"id":"p_8132","n":"Tyler Allgeier","pos":"RB","pr":93.58087783,"inj":null},{"id":"p_8137","n":"George Pickens","pos":"WR","pr":239.93439049,"inj":null},{"id":"p_9509","n":"Bijan Robinson","pos":"RB","pr":346.57772314,"inj":null}]},{"id":1,"name":"Mike Vick's DAWGS","me":false,"players":[{"id":"espn_-16021","n":"Eagles D/ST","pos":"D/ST","pr":106.32778912,"inj":null},{"id":"espn_-16024","n":"Chargers D/ST","pos":"D/ST","pr":94.28980201,"inj":null},{"id":"p_11586","n":"Blake Corum","pos":"RB","pr":157.88012158,"inj":null},{"id":"p_11618","n":"Jalen McMillan","pos":"WR","pr":115.44033325,"inj":"Out"},{"id":"p_12512","n":"Quinshon Judkins","pos":"RB","pr":226.75616112,"inj":null},{"id":"p_12711","n":"Tyler Loop","pos":"K","pr":145.93463325,"inj":null},{"id":"p_5849","n":"Kyler Murray","pos":"QB","pr":293.02745151,"inj":"Out"},{"id":"p_5892","n":"David Montgomery","pos":"RB","pr":199.86019079,"inj":null},{"id":"p_6783","n":"Jerry Jeudy","pos":"WR","pr":139.93054714,"inj":null},{"id":"p_6806","n":"J.K. Dobbins","pos":"RB","pr":174.81764041,"inj":null},{"id":"p_7523","n":"Trevor Lawrence","pos":"QB","pr":299.18244812,"inj":null},{"id":"p_7553","n":"Kyle Pitts","pos":"TE","pr":181.00766738,"inj":null},{"id":"p_7569","n":"Nico Collins","pos":"WR","pr":249.10870158,"inj":null},{"id":"p_8130","n":"Trey McBride","pos":"TE","pr":242.2710695,"inj":null},{"id":"p_8142","n":"Alec Pierce","pos":"WR","pr":185.22249098,"inj":"Questionable"},{"id":"p_9488","n":"Jaxon Smith-Njigba","pos":"WR","pr":324.13684293,"inj":null},{"id":"p_9502","n":"Tank Dell","pos":"WR","pr":0.0,"inj":"IR"}]},{"id":12,"name":"Robert's Rowdy Team","me":false,"players":[{"id":"espn_-16005","n":"Browns D/ST","pos":"D/ST","pr":103.98355135,"inj":null},{"id":"espn_4685415","n":"Travis Hunter","pos":"WR","pr":103.01457132,"inj":null},{"id":"p_11628","n":"Marvin Harrison","pos":"WR","pr":194.19459482,"inj":null},{"id":"p_11632","n":"Malik Nabers","pos":"WR","pr":243.68839582,"inj":null},{"id":"p_12015","n":"Harrison Mevis","pos":"K","pr":159.43527695,"inj":null},{"id":"p_12489","n":"RJ Harvey","pos":"RB","pr":149.62681209,"inj":null},{"id":"p_12506","n":"Harold Fannin","pos":"TE","pr":188.98069428,"inj":null},{"id":"p_12534","n":"Kyle Monangai","pos":"RB","pr":174.68671818,"inj":null},{"id":"p_13286","n":"Jadarian Price","pos":"RB","pr":189.14313419,"inj":null},{"id":"p_13417","n":"De'Zhaun Stribling","pos":"WR","pr":108.10755823,"inj":"Out"},{"id":"p_4034","n":"Christian McCaffrey","pos":"RB","pr":325.77421398,"inj":null},{"id":"p_4983","n":"DJ Moore","pos":"WR","pr":207.88181009,"inj":null},{"id":"p_6797","n":"Justin Herbert","pos":"QB","pr":292.93294418,"inj":null},{"id":"p_8131","n":"Isaiah Likely","pos":"TE","pr":155.72334813,"inj":null},{"id":"p_8144","n":"Chris Olave","pos":"WR","pr":249.76198998,"inj":null},{"id":"p_9500","n":"Josh Downs","pos":"WR","pr":157.49565074,"inj":null}]},{"id":13,"name":"Daddy Dan","me":false,"players":[{"id":"espn_-16009","n":"Packers D/ST","pos":"D/ST","pr":88.59256165,"inj":null},{"id":"p_11563","n":"Bo Nix","pos":"QB","pr":305.79855214,"inj":null},{"id":"p_11792","n":"Will Reichard","pos":"K","pr":142.48158489,"inj":null},{"id":"p_12490","n":"Bhayshul Tuten","pos":"RB","pr":204.91125231,"inj":null},{"id":"p_12501","n":"Matthew Golden","pos":"WR","pr":190.84847432,"inj":null},{"id":"p_12504","n":"Kaleb Johnson","pos":"RB","pr":0.0,"inj":null},{"id":"p_4037","n":"Chris Godwin","pos":"WR","pr":166.5813949,"inj":null},{"id":"p_4866","n":"Saquon Barkley","pos":"RB","pr":273.12894368,"inj":null},{"id":"p_5846","n":"DK Metcalf","pos":"WR","pr":195.77118825,"inj":null},{"id":"p_5850","n":"Josh Jacobs","pos":"RB","pr":164.25456274,"inj":"NA"},{"id":"p_6786","n":"CeeDee Lamb","pos":"WR","pr":294.53127314,"inj":null},{"id":"p_7525","n":"DeVonta Smith","pos":"WR","pr":239.57488551,"inj":null},{"id":"p_8136","n":"Rachaad White","pos":"RB","pr":163.76469633,"inj":null},{"id":"p_9225","n":"Tank Bigsby","pos":"RB","pr":67.11692137,"inj":null},{"id":"p_9484","n":"Tucker Kraft","pos":"TE","pr":172.40252032,"inj":null},{"id":"p_9486","n":"Dontayvion Wicks","pos":"WR","pr":108.91393861,"inj":null},{"id":"p_9753","n":"Zach Charbonnet","pos":"RB","pr":133.7404063,"inj":"PUP"}]},{"id":14,"name":"JT runs this league","me":false,"players":[{"id":"espn_-16030","n":"Jaguars D/ST","pos":"D/ST","pr":77.13917912,"inj":null},{"id":"p_10236","n":"Dalton Kincaid","pos":"TE","pr":153.99779934,"inj":null},{"id":"p_10859","n":"Sam LaPorta","pos":"TE","pr":189.25861396,"inj":null},{"id":"p_11539","n":"Jake Bates","pos":"K","pr":145.93202067,"inj":null},{"id":"p_11635","n":"Ladd McConkey","pos":"WR","pr":221.08631797,"inj":"Questionable"},{"id":"p_3214","n":"Hunter Henry","pos":"TE","pr":156.22462688,"inj":null},{"id":"p_4227","n":"Harrison Butker","pos":"K","pr":148.76657066,"inj":null},{"id":"p_4892","n":"Baker Mayfield","pos":"QB","pr":274.26643528,"inj":null},{"id":"p_5859","n":"A.J. Brown","pos":"WR","pr":175.9980521,"inj":"IR"},{"id":"p_6804","n":"Jordan Love","pos":"QB","pr":270.9810156,"inj":null},{"id":"p_6813","n":"Jonathan Taylor","pos":"RB","pr":315.57705741,"inj":null},{"id":"p_7594","n":"Chuba Hubbard","pos":"RB","pr":193.06725018,"inj":null},{"id":"p_8148","n":"Jameson Williams","pos":"WR","pr":209.12657694,"inj":null},{"id":"p_8167","n":"Christian Watson","pos":"WR","pr":188.97148613,"inj":null},{"id":"p_9224","n":"Chase Brown","pos":"RB","pr":271.66250166,"inj":null},{"id":"p_9504","n":"Kayshon Boutte","pos":"WR","pr":122.12713293,"inj":null}]},{"id":15,"name":"Pink","me":false,"players":[{"id":"espn_-16017","n":"Patriots D/ST","pos":"D/ST","pr":101.74536311,"inj":null},{"id":"espn_-16033","n":"Ravens D/ST","pos":"D/ST","pr":119.15494665,"inj":null},{"id":"p_11631","n":"Brian Thomas","pos":"WR","pr":176.62409564,"inj":"Questionable"},{"id":"p_12502","n":"Gunnar Helm","pos":"TE","pr":126.86964549,"inj":null},{"id":"p_13293","n":"Ja'Kobi Lane","pos":"WR","pr":110.34708722,"inj":"Out"},{"id":"p_2449","n":"Stefon Diggs","pos":"WR","pr":172.43157837,"inj":null},{"id":"p_3198","n":"Derrick Henry","pos":"RB","pr":277.72441122,"inj":null},{"id":"p_4195","n":"Jake Elliott","pos":"K","pr":135.66381385,"inj":null},{"id":"p_421","n":"Matthew Stafford","pos":"QB","pr":302.37452525,"inj":null},{"id":"p_4881","n":"Lamar Jackson","pos":"QB","pr":331.52158712,"inj":null},{"id":"p_4984","n":"Josh Allen","pos":"QB","pr":379.69723514,"inj":null},{"id":"p_5022","n":"Dallas Goedert","pos":"TE","pr":177.2833797,"inj":null},{"id":"p_5872","n":"Deebo Samuel","pos":"WR","pr":162.21540315,"inj":null},{"id":"p_8112","n":"Drake London","pos":"WR","pr":262.38011951,"inj":null},{"id":"p_8134","n":"Khalil Shakir","pos":"WR","pr":169.89923144,"inj":null},{"id":"p_8228","n":"Jaylen Warren","pos":"RB","pr":194.06848456,"inj":null}]}]},"L2":{"slots":{"QB":1,"RB":2,"WR":2,"TE":1,"D/ST":1,"K":1,"BE":5,"IR":1,"RB/WR/TE":1},"myTeamId":6,"teams":[{"id":8,"name":"Waiver Wire Willy ","me":false,"players":[{"id":"espn_-16014","n":"Rams D/ST","pos":"D/ST","pr":121.45452952,"inj":null},{"id":"p_11635","n":"Ladd McConkey","pos":"WR","pr":221.08631797,"inj":"Questionable"},{"id":"p_12512","n":"Quinshon Judkins","pos":"RB","pr":226.75616112,"inj":null},{"id":"p_13417","n":"De'Zhaun Stribling","pos":"WR","pr":108.10755823,"inj":"Out"},{"id":"p_1466","n":"Travis Kelce","pos":"TE","pr":177.67639795,"inj":null},{"id":"p_4227","n":"Harrison Butker","pos":"K","pr":148.76657066,"inj":null},{"id":"p_4881","n":"Lamar Jackson","pos":"QB","pr":331.52158712,"inj":null},{"id":"p_5892","n":"David Montgomery","pos":"RB","pr":199.86019079,"inj":null},{"id":"p_6794","n":"Justin Jefferson","pos":"WR","pr":294.07924728,"inj":null},{"id":"p_7588","n":"Javonte Williams","pos":"RB","pr":261.09900157,"inj":null},{"id":"p_7611","n":"Rhamondre Stevenson","pos":"RB","pr":240.33361617,"inj":null},{"id":"p_8151","n":"Kenneth Walker","pos":"RB","pr":273.49591162,"inj":null},{"id":"p_8167","n":"Christian Watson","pos":"WR","pr":188.97148613,"inj":null},{"id":"p_9493","n":"Puka Nacua","pos":"WR","pr":353.69941482,"inj":null}]},{"id":4,"name":"Riley Reid Option","me":false,"players":[{"id":"espn_-16033","n":"Ravens D/ST","pos":"D/ST","pr":119.15494665,"inj":null},{"id":"p_11560","n":"Caleb Williams","pos":"QB","pr":290.92713034,"inj":null},{"id":"p_11564","n":"Drake Maye","pos":"QB","pr":330.02790994,"inj":null},{"id":"p_11620","n":"Rome Odunze","pos":"WR","pr":213.11723165,"inj":null},{"id":"p_12015","n":"Harrison Mevis","pos":"K","pr":159.43527695,"inj":null},{"id":"p_12507","n":"Omarion Hampton","pos":"RB","pr":261.83314,"inj":null},{"id":"p_12518","n":"Tyler Warren","pos":"TE","pr":210.3617222,"inj":null},{"id":"p_12519","n":"Luther Burden","pos":"WR","pr":206.26029904,"inj":null},{"id":"p_2216","n":"Mike Evans","pos":"WR","pr":192.02549376,"inj":null},{"id":"p_7525","n":"DeVonta Smith","pos":"WR","pr":239.57488551,"inj":null},{"id":"p_7564","n":"Ja'Marr Chase","pos":"WR","pr":337.31917937,"inj":null},{"id":"p_7567","n":"Kenny Gainwell","pos":"RB","pr":178.78733517,"inj":null},{"id":"p_8146","n":"Garrett Wilson","pos":"WR","pr":252.18134106,"inj":null},{"id":"p_9224","n":"Chase Brown","pos":"RB","pr":271.66250166,"inj":null}]},{"id":12,"name":"George picken brown flowers ","me":false,"players":[{"id":"espn_-16034","n":"Texans D/ST","pos":"D/ST","pr":130.31738828,"inj":null},{"id":"p_10232","n":"Michael Wilson","pos":"WR","pr":176.94923041,"inj":null},{"id":"p_11581","n":"MarShawn Lloyd","pos":"RB","pr":135.27609222,"inj":null},{"id":"p_12481","n":"Cam Skattebo","pos":"RB","pr":227.50081403,"inj":null},{"id":"p_13286","n":"Jadarian Price","pos":"RB","pr":189.14313419,"inj":null},{"id":"p_4983","n":"DJ Moore","pos":"WR","pr":207.88181009,"inj":null},{"id":"p_5947","n":"Jakobi Meyers","pos":"WR","pr":181.90331635,"inj":null},{"id":"p_6797","n":"Justin Herbert","pos":"QB","pr":292.93294418,"inj":null},{"id":"p_6813","n":"Jonathan Taylor","pos":"RB","pr":315.57705741,"inj":null},{"id":"p_7547","n":"Amon-Ra St. Brown","pos":"WR","pr":325.39166829,"inj":null},{"id":"p_8130","n":"Trey McBride","pos":"TE","pr":242.2710695,"inj":null},{"id":"p_8137","n":"George Pickens","pos":"WR","pr":239.93439049,"inj":null},{"id":"p_8259","n":"Cameron Dicker","pos":"K","pr":161.89119053,"inj":null},{"id":"p_9997","n":"Zay Flowers","pos":"WR","pr":238.73786037,"inj":"Out"}]},{"id":2,"name":"Egbuka and Sausage Sammich","me":false,"players":[{"id":"espn_-16007","n":"Broncos D/ST","pos":"D/ST","pr":130.67097804,"inj":null},{"id":"espn_-16008","n":"Lions D/ST","pos":"D/ST","pr":108.108202,"inj":null},{"id":"p_10859","n":"Sam LaPorta","pos":"TE","pr":189.25861396,"inj":null},{"id":"p_12514","n":"Emeka Egbuka","pos":"WR","pr":228.36314104,"inj":null},{"id":"p_2133","n":"Davante Adams","pos":"WR","pr":232.09844753,"inj":null},{"id":"p_2747","n":"Jason Myers","pos":"K","pr":158.53035362,"inj":null},{"id":"p_3198","n":"Derrick Henry","pos":"RB","pr":277.72441122,"inj":null},{"id":"p_4034","n":"Christian McCaffrey","pos":"RB","pr":325.77421398,"inj":null},{"id":"p_5022","n":"Dallas Goedert","pos":"TE","pr":177.2833797,"inj":null},{"id":"p_5045","n":"Courtland Sutton","pos":"WR","pr":204.6132919,"inj":null},{"id":"p_6770","n":"Joe Burrow","pos":"QB","pr":315.0618365,"inj":null},{"id":"p_6819","n":"Michael Pittman","pos":"WR","pr":197.14048632,"inj":null},{"id":"p_8144","n":"Chris Olave","pos":"WR","pr":249.76198998,"inj":null},{"id":"p_9226","n":"De'Von Achane","pos":"RB","pr":292.59783657,"inj":null}]},{"id":3,"name":"Fish Sticks","me":false,"players":[{"id":"espn_-16026","n":"Seahawks D/ST","pos":"D/ST","pr":118.58157223,"inj":null},{"id":"p_10229","n":"Rashee Rice","pos":"WR","pr":260.02464353,"inj":null},{"id":"p_11566","n":"Jayden Daniels","pos":"QB","pr":327.67966365,"inj":null},{"id":"p_11786","n":"Cam Little","pos":"K","pr":146.93234928,"inj":null},{"id":"p_12501","n":"Matthew Golden","pos":"WR","pr":190.84847432,"inj":null},{"id":"p_12506","n":"Harold Fannin","pos":"TE","pr":188.98069428,"inj":null},{"id":"p_12508","n":"Jaxson Dart","pos":"QB","pr":309.10698531,"inj":null},{"id":"p_12517","n":"Colston Loveland","pos":"TE","pr":206.38402417,"inj":null},{"id":"p_13287","n":"Jeremiyah Love","pos":"RB","pr":276.31593435,"inj":null},{"id":"p_6790","n":"D'Andre Swift","pos":"RB","pr":209.87704012,"inj":null},{"id":"p_7526","n":"Jaylen Waddle","pos":"WR","pr":213.56674569,"inj":null},{"id":"p_8138","n":"James Cook","pos":"RB","pr":279.85652474,"inj":null},{"id":"p_8228","n":"Jaylen Warren","pos":"RB","pr":194.06848456,"inj":null},{"id":"p_9488","n":"Jaxon Smith-Njigba","pos":"WR","pr":324.13684293,"inj":null}]},{"id":6,"name":"TyG TyG","me":true,"players":[{"id":"espn_-16021","n":"Eagles D/ST","pos":"D/ST","pr":106.32778912,"inj":null},{"id":"p_11533","n":"Brandon Aubrey","pos":"K","pr":171.47184253,"inj":null},{"id":"p_11583","n":"Jonathon Brooks","pos":"RB","pr":166.0658946,"inj":null},{"id":"p_11632","n":"Malik Nabers","pos":"WR","pr":243.68839582,"inj":null},{"id":"p_12526","n":"Tetairoa McMillan","pos":"WR","pr":235.47356545,"inj":null},{"id":"p_3294","n":"Dak Prescott","pos":"QB","pr":295.54498051,"inj":null},{"id":"p_4866","n":"Saquon Barkley","pos":"RB","pr":273.12894368,"inj":null},{"id":"p_5846","n":"DK Metcalf","pos":"WR","pr":195.77118825,"inj":null},{"id":"p_6801","n":"Tee Higgins","pos":"WR","pr":219.17655715,"inj":null},{"id":"p_7553","n":"Kyle Pitts","pos":"TE","pr":181.00766738,"inj":null},{"id":"p_8112","n":"Drake London","pos":"WR","pr":262.38011951,"inj":null},{"id":"p_8150","n":"Kyren Williams","pos":"RB","pr":233.95092159,"inj":null},{"id":"p_9221","n":"Jahmyr Gibbs","pos":"RB","pr":372.20324529,"inj":null},{"id":"p_9484","n":"Tucker Kraft","pos":"TE","pr":172.40252032,"inj":null}]},{"id":1,"name":"The Commish","me":false,"players":[{"id":"espn_-16024","n":"Chargers D/ST","pos":"D/ST","pr":94.28980201,"inj":null},{"id":"p_11604","n":"Brock Bowers","pos":"TE","pr":224.96181481,"inj":"Out"},{"id":"p_11628","n":"Marvin Harrison","pos":"WR","pr":194.19459482,"inj":null},{"id":"p_3451","n":"Ka'imi Fairbairn","pos":"K","pr":157.76907981,"inj":null},{"id":"p_5850","n":"Josh Jacobs","pos":"RB","pr":164.25456274,"inj":"NA"},{"id":"p_5927","n":"Terry McLaurin","pos":"WR","pr":217.32286377,"inj":null},{"id":"p_7021","n":"Rico Dowdle","pos":"RB","pr":188.43575336,"inj":null},{"id":"p_7523","n":"Trevor Lawrence","pos":"QB","pr":299.18244812,"inj":null},{"id":"p_7543","n":"Travis Etienne","pos":"RB","pr":244.65862447,"inj":null},{"id":"p_7569","n":"Nico Collins","pos":"WR","pr":249.10870158,"inj":null},{"id":"p_8131","n":"Isaiah Likely","pos":"TE","pr":155.72334813,"inj":null},{"id":"p_8148","n":"Jameson Williams","pos":"WR","pr":209.12657694,"inj":null},{"id":"p_8155","n":"Breece Hall","pos":"RB","pr":275.32378765,"inj":null},{"id":"p_9509","n":"Bijan Robinson","pos":"RB","pr":346.57772314,"inj":null},{"id":"p_9754","n":"Quentin Johnston","pos":"WR","pr":165.75383747,"inj":null}]},{"id":10,"name":"Real Slim Brady .","me":false,"players":[{"id":"espn_-16023","n":"Steelers D/ST","pos":"D/ST","pr":125.36470156,"inj":null},{"id":"p_11584","n":"Bucky Irving","pos":"RB","pr":207.8492743,"inj":null},{"id":"p_12490","n":"Bhayshul Tuten","pos":"RB","pr":204.91125231,"inj":null},{"id":"p_12527","n":"Ashton Jeanty","pos":"RB","pr":278.477078,"inj":null},{"id":"p_12529","n":"TreVeyon Henderson","pos":"RB","pr":153.79861982,"inj":"Out"},{"id":"p_13279","n":"Carnell Tate","pos":"WR","pr":202.26861439,"inj":null},{"id":"p_4217","n":"George Kittle","pos":"TE","pr":182.0538239,"inj":null},{"id":"p_4984","n":"Josh Allen","pos":"QB","pr":379.69723514,"inj":null},{"id":"p_5189","n":"Eddy Pineiro","pos":"K","pr":155.10567919,"inj":null},{"id":"p_5859","n":"A.J. Brown","pos":"WR","pr":175.9980521,"inj":"IR"},{"id":"p_5967","n":"Tony Pollard","pos":"RB","pr":185.51867001,"inj":null},{"id":"p_6786","n":"CeeDee Lamb","pos":"WR","pr":294.53127314,"inj":null},{"id":"p_6904","n":"Jalen Hurts","pos":"QB","pr":329.38980147,"inj":null},{"id":"p_9487","n":"Parker Washington","pos":"WR","pr":187.75860881,"inj":null}]}]}};
+(function(){
+  "use strict";
+  function store(key, val){ try{ localStorage.setItem(key, JSON.stringify(val)); }catch(e){} }
+  function read(key, fb){ try{ return JSON.parse(localStorage.getItem(key)) || fb; }catch(e){ return fb; } }
+
+  /* ---------- league + view switching ---------- */
+  var lgBtns = document.querySelectorAll(".lgs button");
+  var navBtns = document.querySelectorAll(".nav button");
+  function currentLeague(){
+    var b = document.querySelector('.lgs button[aria-pressed="true"]');
+    return b ? b.dataset.league : null;
+  }
+  function show(){
+    var lg = currentLeague();
+    var nb = document.querySelector('.nav button[aria-pressed="true"]');
+    var view = nb ? nb.dataset.nav : "today";
+    document.querySelectorAll(".league").forEach(function(sec){
+      sec.hidden = sec.id !== "lg-" + lg;
+      sec.querySelectorAll(".view").forEach(function(v){
+        v.hidden = v.dataset.view !== view;
+      });
+    });
+  }
+  lgBtns.forEach(function(b){ b.addEventListener("click", function(){
+    lgBtns.forEach(function(x){ x.setAttribute("aria-pressed", String(x===b)); });
+    initEval(); show();
+  });});
+  navBtns.forEach(function(b){ b.addEventListener("click", function(){
+    navBtns.forEach(function(x){ x.setAttribute("aria-pressed", String(x===b)); });
+    show();
+  });});
+
+  /* ---------- decisions: approve / pass + audit ---------- */
+  var decisions = read("fcc-decisions", {});
+  var audit = read("fcc-audit", []);
+  function logAudit(text){
+    audit.unshift({t: new Date().toISOString().slice(0,16).replace("T"," "), x: text});
+    audit = audit.slice(0, 40); store("fcc-audit", audit); paintAudit();
+  }
+  function paintAudit(){
+    document.querySelectorAll("#audit").forEach(function(ul){
+      if(!audit.length){ ul.innerHTML = '<li class="empty">Nothing yet.</li>'; return; }
+      ul.innerHTML = audit.map(function(a){
+        return "<li><time>"+a.t+"</time>"+a.x.replace(/</g,"&lt;")+"</li>";
+      }).join("");
+    });
+  }
+  function paintCard(card, state){
+    card.dataset.state = state || "";
+    var st = card.querySelector(".steps"); if(st) st.hidden = state !== "done";
+    var y = card.querySelector("[data-yes]");
+    if(y) y.textContent = state === "done" ? "Approved" : "Approve";
+  }
+  document.querySelectorAll(".act[data-act]").forEach(function(card){
+    var id = card.dataset.act;
+    if(decisions[id]) paintCard(card, decisions[id]);
+    var title = (card.querySelector("h3")||{}).textContent || id;
+    var y = card.querySelector("[data-yes]"), n = card.querySelector("[data-no]");
+    if(y) y.addEventListener("click", function(){
+      decisions[id] = decisions[id]==="done" ? "" : "done";
+      store("fcc-decisions", decisions); paintCard(card, decisions[id]);
+      if(decisions[id]) logAudit("Approved: " + title);
+    });
+    if(n) n.addEventListener("click", function(){
+      decisions[id] = decisions[id]==="passed" ? "" : "passed";
+      store("fcc-decisions", decisions); paintCard(card, decisions[id]);
+      if(decisions[id]) logAudit("Passed: " + title);
+    });
+  });
+
+  /* copy buttons */
+  document.querySelectorAll("[data-copy]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var p = btn.closest(".msg").querySelector("p");
+      var done = function(){ btn.textContent = "Copied"; setTimeout(function(){ btn.textContent="Copy"; }, 1500); };
+      if(navigator.clipboard){ navigator.clipboard.writeText(p.textContent).then(done, done); }
+    });
+  });
+
+  /* ---------- prefs, untouchables, rules ---------- */
+  var prefs = read("fcc-prefs", {});
+  document.querySelectorAll(".prefs [data-pref]").forEach(function(cb){
+    var lg = cb.closest(".prefs").dataset.league || "all";
+    var k = lg + ":" + cb.dataset.pref;
+    if(k in prefs) cb.checked = prefs[k];
+    cb.addEventListener("change", function(){ prefs[k] = cb.checked; store("fcc-prefs", prefs); });
+  });
+  var untouch = read("fcc-untouchables", []);
+  function paintUntouch(){
+    document.querySelectorAll("#untouch-list").forEach(function(ul){
+      ul.innerHTML = untouch.map(function(n,i){
+        return "<li>"+n.replace(/</g,"&lt;")+'<button data-ui="'+i+'" aria-label="Remove">&times;</button></li>';
+      }).join("");
+      ul.querySelectorAll("[data-ui]").forEach(function(b){
+        b.addEventListener("click", function(){
+          untouch.splice(+b.dataset.ui,1); store("fcc-untouchables", untouch); paintUntouch();
+        });
+      });
+    });
+  }
+  document.querySelectorAll("#untouch-in").forEach(function(inp){
+    inp.addEventListener("keydown", function(e){
+      if(e.key === "Enter" && inp.value.trim()){
+        untouch.push(inp.value.trim()); inp.value="";
+        store("fcc-untouchables", untouch); paintUntouch();
+      }
+    });
+  });
+  var rules = read("fcc-rules", {threshold: 10, injured: true});
+  document.querySelectorAll("#rule-threshold").forEach(function(el){
+    el.value = rules.threshold;
+    el.addEventListener("change", function(){ rules.threshold = +el.value || 0; store("fcc-rules", rules); });
+  });
+  document.querySelectorAll("#rule-injured").forEach(function(el){
+    el.checked = rules.injured !== false;
+    el.addEventListener("change", function(){ rules.injured = el.checked; store("fcc-rules", rules); });
+  });
+
+  /* ---------- lineup math (mirror of the Python engine) ---------- */
+  var FIXED = ["QB","RB","WR","TE","K","D/ST"], FLEXP = {RB:1,WR:1,TE:1};
+  function lineupValue(players, slots){
+    var pool = players.filter(function(p){ return p.pr != null; })
+                      .slice().sort(function(a,b){ return b.pr - a.pr; });
+    var used = {}, total = 0;
+    FIXED.forEach(function(pos){
+      var need = +(slots[pos]||0);
+      for(var i=0;i<pool.length && need>0;i++){
+        var p = pool[i];
+        if(used[p.id] || p.pos !== pos) continue;
+        used[p.id]=1; total+=p.pr; need--;
+      }
+    });
+    var flex = +(slots["RB/WR/TE"]||0);
+    for(var j=0;j<pool.length && flex>0;j++){
+      var q = pool[j];
+      if(used[q.id] || !FLEXP[q.pos]) continue;
+      used[q.id]=1; total+=q.pr; flex--;
+    }
+    return total;
+  }
+  function swap(roster, out, inn){
+    var gone = {}; out.forEach(function(p){ gone[p.id]=1; });
+    return roster.filter(function(p){ return !gone[p.id]; }).concat(inn);
+  }
+
+  /* ---------- incoming-trade evaluator ---------- */
+  function initEval(){
+    var lg = LEAGUES[currentLeague()]; if(!lg) return;
+    var partnerSel = document.querySelector("#lg-"+currentLeague()+" #ev-partner");
+    if(!partnerSel || partnerSel.dataset.ready) { fillPick(); return; }
+    partnerSel.dataset.ready = "1";
+    lg.teams.filter(function(t){ return !t.me; }).forEach(function(t){
+      var o = document.createElement("option");
+      o.value = t.id; o.textContent = t.name; partnerSel.appendChild(o);
+    });
+    partnerSel.addEventListener("change", fillPick);
+    fillPick();
+
+    function fillPick(){
+      var sec = document.querySelector("#lg-"+currentLeague());
+      if(!sec) return;
+      var me = lg.teams.filter(function(t){ return t.me; })[0];
+      var them = lg.teams.filter(function(t){ return String(t.id) === partnerSel.value; })[0]
+                 || lg.teams.filter(function(t){ return !t.me; })[0];
+      function list(el, team){
+        el.innerHTML = team.players.slice().sort(function(a,b){ return (b.pr||0)-(a.pr||0); })
+          .map(function(p){
+            return '<label><input type="checkbox" value="'+p.id+'">'+
+              p.n.replace(/</g,"&lt;")+' ('+p.pos+')'+
+              (p.inj && p.inj !== "ACTIVE" ? ' <span class="flag warn">'+p.inj.slice(0,3)+"</span>":"")+
+              '<span class="pr">'+(p.pr!=null ? Math.round(p.pr) : "&mdash;")+"</span></label>";
+          }).join("");
+      }
+      list(sec.querySelector("#ev-get"), them);
+      list(sec.querySelector("#ev-send"), me);
+    }
+  }
+  initEval();
+
+  document.querySelectorAll("#ev-run").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var key = currentLeague(), lg = LEAGUES[key]; if(!lg) return;
+      var sec = document.querySelector("#lg-"+key);
+      var me = lg.teams.filter(function(t){ return t.me; })[0];
+      var pid = sec.querySelector("#ev-partner").value;
+      var them = lg.teams.filter(function(t){ return String(t.id)===pid; })[0];
+      function picked(id, team){
+        var ids = Array.prototype.map.call(
+          sec.querySelectorAll(id+" input:checked"), function(i){ return i.value; });
+        return team.players.filter(function(p){ return ids.indexOf(p.id)>=0; });
+      }
+      var get = picked("#ev-get", them), send = picked("#ev-send", me);
+      var out = sec.querySelector("#ev-out"); out.hidden = false;
+      if(!get.length && !send.length){
+        out.className = "verdict"; out.innerHTML = "<p>Pick at least one player on either side.</p>"; return;
+      }
+      var myBase = lineupValue(me.players, lg.slots);
+      var myAfter = lineupValue(swap(me.players, send, get), lg.slots);
+      var thBase = lineupValue(them.players, lg.slots);
+      var thAfter = lineupValue(swap(them.players, get, send), lg.slots);
+      var myGain = myAfter - myBase, thGain = thAfter - thBase;
+      var injured = get.filter(function(p){
+        return p.inj && ["OUT","DOUBTFUL","INJURY_RESERVE","IR"].indexOf(p.inj.toUpperCase())>=0; });
+
+      var verdict, cls = "verdict", body = "";
+      var thr = rules.threshold || 10;
+      if(injured.length && rules.injured !== false){
+        verdict = "Hold"; body = "<p><b>"+injured[0].n+"</b> is listed "+injured[0].inj+
+          ". Your rules say never accept a deal for an injured player without a second look.</p>";
+      } else if(myGain >= thr){
+        verdict = "Accept"; cls += " ok";
+        body = "<p>Your starting lineup improves by ~"+Math.round(myGain)+
+          " points over the season. That clears your "+thr+"-point bar.</p>";
+      } else if(myGain >= 0){
+        verdict = "Hold";
+        body = "<p>You gain ~"+Math.round(myGain)+" points -- inside projection noise. "+
+          "No harm accepting, no rush either.</p>";
+      } else {
+        verdict = "Decline"; body = "<p>This costs your starting lineup ~"+
+          Math.round(-myGain)+" points. Their side improves by ~"+Math.round(thGain)+".</p>";
+      }
+
+      /* counters: what WOULD work with this partner */
+      var counters = [];
+      if(verdict !== "Accept"){
+        var mine = me.players.filter(function(p){
+          return p.pr != null && untouch.indexOf(p.n) < 0; });
+        var packs = [];
+        mine.forEach(function(p){ packs.push([p]); });
+        for(var i=0;i<mine.length;i++) for(var j=i+1;j<mine.length;j++) packs.push([mine[i],mine[j]]);
+        them.players.forEach(function(target){
+          if(target.pr == null) return;
+          packs.forEach(function(pk){
+            var mg = lineupValue(swap(me.players, pk, [target]), lg.slots) - myBase;
+            var tg = lineupValue(swap(them.players, [target], pk), lg.slots) - thBase;
+            if(mg >= 5 && tg >= 3) counters.push({send: pk, get: target, mg: mg, tg: tg});
+          });
+        });
+        counters.sort(function(a,b){ return (b.tg+b.mg)-(a.tg+a.mg); });
+        var seen = {}; counters = counters.filter(function(c){
+          if(seen[c.get.id]) return false; seen[c.get.id]=1; return true; }).slice(0,3);
+        if(counters.length && verdict === "Decline") verdict = "Counter";
+      }
+      var chtml = counters.map(function(c){
+        return '<div class="counter"><b>Send '+
+          c.send.map(function(p){return p.n;}).join(" + ")+" for "+c.get.n+"</b>"+
+          "<span>you ~+"+Math.round(c.mg)+", them ~+"+Math.round(c.tg)+
+          " -- realistic because they gain too</span></div>";
+      }).join("");
+      out.className = cls;
+      out.innerHTML = "<h4>"+verdict+"</h4>"+body+chtml;
+      logAudit("Evaluated offer from "+them.name+": "+
+        (get.map(function(p){return p.n;}).join(", ")||"nothing")+" for "+
+        (send.map(function(p){return p.n;}).join(", ")||"nothing")+" -> "+verdict);
+    });
+  });
+
+  paintAudit(); paintUntouch(); show();
+})();
+</script>
