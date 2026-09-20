@@ -1,9 +1,22 @@
 {
-  "fetched_at": "2026-09-15T01:51:56+00:00",
+  "fetched_at": "2026-09-20T02:46:22+00:00",
   "items": [
     {
+      "headline": "Jauan Jennings (WR, MIN) listed Out",
+      "body": "Personal",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3886598
+      ],
+      "athlete_names": [
+        "Jauan Jennings"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
       "headline": "Sam Darnold (QB, SEA) listed Out",
-      "body": "Hip",
+      "body": "Lower Body -- Soreness",
       "published": null,
       "url": null,
       "espn_athlete_ids": [
@@ -15,7 +28,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Tua Tagovailoa (QB, ATL) listed Out",
+      "headline": "Tua Tagovailoa (QB, ATL) listed Doubtful",
       "body": "Oblique -- Strain",
       "published": null,
       "url": null,
@@ -93,6 +106,32 @@
       "source": "Sleeper injury report"
     },
     {
+      "headline": "DJ Moore (WR, BUF) listed Out",
+      "body": "Shoulder",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3915416
+      ],
+      "athlete_names": [
+        "DJ Moore"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
+      "headline": "Joe Burrow (QB, CIN) listed Questionable",
+      "body": "Back -- Soreness",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3915511
+      ],
+      "athlete_names": [
+        "Joe Burrow"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
       "headline": "Christian Kirk (WR, SF) listed IR",
       "body": "Calf",
       "published": null,
@@ -158,19 +197,6 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Alvin Kamara (RB, NO) listed Out",
-      "body": "Knee - MCL -- Sprain",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        3054850
-      ],
-      "athlete_names": [
-        "Alvin Kamara"
-      ],
-      "source": "Sleeper injury report"
-    },
-    {
       "headline": "Josh Jacobs (RB, GB) listed NA",
       "body": "Personal",
       "published": null,
@@ -197,7 +223,33 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Devin Singletary (RB, NYG) is the hot add -- 411,516 pickups in 24h",
+      "headline": "Michael Pittman (WR, PIT) listed Out",
+      "body": "Ankle",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        4035687
+      ],
+      "athlete_names": [
+        "Michael Pittman"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
+      "headline": "Ashton Dulin (WR, IND) listed Out",
+      "body": "Ankle",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        4061956
+      ],
+      "athlete_names": [
+        "Ashton Dulin"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
+      "headline": "Devin Singletary (RB, NYG) is the hot add -- 87,111 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -210,7 +262,20 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Carson Wentz (QB, MIN) is the hot add -- 253,842 pickups in 24h",
+      "headline": "Alvin Kamara (RB, NO) is the hot add -- 76,296 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3054850
+      ],
+      "athlete_names": [
+        "Alvin Kamara"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Carson Wentz (QB, MIN) is the hot add -- 47,226 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -223,59 +288,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Mike Gesicki (TE, CIN) is the hot add -- 211,844 pickups in 24h",
-      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        3116164
-      ],
-      "athlete_names": [
-        "Mike Gesicki"
-      ],
-      "source": "Sleeper trending"
-    },
-    {
-      "headline": "Kendrick Bourne (WR, ARI) is the hot add -- 62,544 pickups in 24h",
-      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        3045523
-      ],
-      "athlete_names": [
-        "Kendrick Bourne"
-      ],
-      "source": "Sleeper trending"
-    },
-    {
-      "headline": "Kalif Raymond (WR, CHI) is the hot add -- 59,028 pickups in 24h",
-      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        2973405
-      ],
-      "athlete_names": [
-        "Kalif Raymond"
-      ],
-      "source": "Sleeper trending"
-    },
-    {
-      "headline": "Evan Engram (TE, DEN) is the hot add -- 46,240 pickups in 24h",
-      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        3051876
-      ],
-      "athlete_names": [
-        "Evan Engram"
-      ],
-      "source": "Sleeper trending"
-    },
-    {
-      "headline": "Demarcus Robinson (WR, SF) is the hot add -- 45,978 pickups in 24h",
+      "headline": "Demarcus Robinson (WR, SF) is the hot add -- 43,812 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -288,15 +301,54 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Cole Kmet (TE, CHI) is the hot add -- 27,945 pickups in 24h",
+      "headline": "Mack Hollins (WR, NE) is the hot add -- 28,272 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
       "espn_athlete_ids": [
-        4258595
+        2991662
       ],
       "athlete_names": [
-        "Cole Kmet"
+        "Mack Hollins"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Mark Andrews (TE, BAL) is the hot add -- 27,261 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3116365
+      ],
+      "athlete_names": [
+        "Mark Andrews"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "DeeJay Dallas (RB, MIN) is the hot add -- 26,391 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        4240631
+      ],
+      "athlete_names": [
+        "DeeJay Dallas"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Tyreek Hill (WR, None) is the hot add -- 22,120 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3116406
+      ],
+      "athlete_names": [
+        "Tyreek Hill"
       ],
       "source": "Sleeper trending"
     }
