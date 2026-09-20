@@ -98,6 +98,33 @@ a{color:var(--ink)}
   border:2px solid var(--ink);border-radius:14px}
 .steps p{margin:0;font-size:14.5px}
 
+/* deal picture */
+.swap{display:flex;align-items:stretch;gap:10px;margin:4px 0 10px;flex-wrap:wrap}
+.side{flex:1 1 200px;background:var(--bg);border:2px solid var(--ink);
+  border-radius:14px;padding:10px 12px}
+.side-l{display:block;margin-bottom:7px;font:800 10.5px/1 var(--body);
+  letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.side.in{background:var(--good-bg)}
+.side ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:6px}
+.side li{display:flex;align-items:center;gap:8px}
+.side li b{flex:1;font-weight:700;font-size:15px}
+.side li em{font-style:normal;font-weight:700;font-size:13px;color:var(--muted)}
+.arr{align-self:center;font-size:22px;font-weight:800;flex:0 0 auto}
+.gains{display:flex;gap:8px;margin:2px 0 4px;flex-wrap:wrap}
+.gchip{display:inline-block;border:2px solid var(--ink);border-radius:999px;
+  padding:4px 12px;font:800 12.5px/1.3 var(--body)}
+.gchip.you{background:var(--good-bg)}
+.gchip.them{background:var(--surface2)}
+.step{display:flex;gap:10px;margin-bottom:10px}
+.stepn{flex:0 0 auto;width:30px;height:30px;border:2.5px solid var(--ink);
+  border-radius:999px;background:var(--brand);display:flex;align-items:center;
+  justify-content:center;font:800 15px/1 var(--body)}
+.stepbody{flex:1;min-width:0}
+.stepwho{display:block;margin-bottom:5px;font-weight:800;font-size:14px}
+.steptag{font-style:normal;font-weight:700;font-size:11px;margin-left:8px;
+  border:1.5px solid var(--ink);border-radius:999px;padding:2px 8px;background:var(--surface2)}
+.step .swap{margin-bottom:6px}
+
 /* panels + tables */
 .two{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
 @media(max-width:740px){.two{grid-template-columns:1fr}}
@@ -220,7 +247,7 @@ a{color:var(--ink)}
 <div class="wrap">
   <div class="top">
     <span class="mark">Fantasy <i>Command Center</i></span>
-    <span class="stamp">Data updated Sep 20, 02:51 UTC</span>
+    <span class="stamp">Data updated Sep 20, 02:59 UTC</span>
   </div>
   <nav class="lgs"><button data-league="L1" aria-pressed="true">League 1<i class="badge">1</i></button><button data-league="L2" aria-pressed="false">League 2<i class="badge">6</i></button></nav>
   <nav class="nav">
@@ -240,12 +267,10 @@ a{color:var(--ink)}
   <header class="act-h">
     <span class="kind">plan</span>
     <span class="conf md">Medium</span>
-    <span class="dl">Step 1 has no hard deadline; step 2 depends on it landing.</span>
+    <span class="dl">Step 1 now</span>
   </header>
-  <h3>Two-step plan: land Chase Brown (RB) by first getting Lamar Jackson (QB)</h3>
-  <p class="why">Step 1 (do now): offer Rico Dowdle (RB) to Pink for Lamar Jackson (QB) -- they gain ~16, a modest but real gain for them -- worth an ask. That makes step 2 possible: offer Drake Maye (QB), Davante Adams (WR) to JT runs this league for Chase Brown (RB) (they gain ~16). Both deals together are worth ~41 points to you -- more than any single trade on the board. Step 2 only happens if step 1 lands, so nothing is risked up front.</p>
-  <p class="conf-why">Confidence: Medium &mdash; the gap is ~41 starting-lineup points -- far larger than projection noise; two separate managers each have to say yes.</p>
-  <div class="msg"><span class="msg-l">Message to send <button class="copy" data-copy>Copy</button></span><p>Hey -- would you do Lamar Jackson for Rico Dowdle? Looking at your roster I think Rico Dowdle actually helps your starting lineup, and I have a hole Lamar Jackson would fill. Open to tweaking it if you&#x27;re close.</p></div><div class="act-do"><button class="btn yes" data-yes>Approve</button><button class="btn no" data-no>Pass</button></div><div class="steps" hidden><p><b>Do it:</b> ESPN app: League → Pink → Propose Trade → offer Rico Dowdle (RB) for Lamar Jackson (QB). When accepted, come back for step 2.</p></div>
+  <h3>Get Chase Brown in two moves</h3>
+  <div class="step"><span class="stepn">1</span><div class="stepbody"><span class="stepwho">Pink<i class="steptag">do now</i></span><div class="swap"><div class="side out"><span class="side-l">You give</span><ul><li><span class="p p-RB">RB</span><b>Rico Dowdle</b><em>188</em></li></ul></div><div class="arr" aria-hidden="true">&rarr;</div><div class="side in"><span class="side-l">You get</span><ul><li><span class="p p-QB">QB</span><b>Lamar Jackson</b><em>332</em></li></ul></div></div><span class="gchip them">they gain +16</span></div></div><div class="step"><span class="stepn">2</span><div class="stepbody"><span class="stepwho">JT runs this league<i class="steptag">after step 1</i></span><div class="swap"><div class="side out"><span class="side-l">You give</span><ul><li><span class="p p-QB">QB</span><b>Drake Maye</b><em>330</em></li><li><span class="p p-WR">WR</span><b>Davante Adams</b><em>232</em></li></ul></div><div class="arr" aria-hidden="true">&rarr;</div><div class="side in"><span class="side-l">You get</span><ul><li><span class="p p-RB">RB</span><b>Chase Brown</b><em>272</em></li></ul></div></div><span class="gchip them">they gain +16</span></div></div><div class="gains"><span class="gchip you">You +41 total</span></div><div class="msg"><span class="msg-l">Message to send <button class="copy" data-copy>Copy</button></span><p>Hey -- would you do Lamar Jackson for Rico Dowdle? Looking at your roster I think Rico Dowdle actually helps your starting lineup, and I have a hole Lamar Jackson would fill. Open to tweaking it if you&#x27;re close.</p></div><div class="act-do"><button class="btn yes" data-yes>Approve</button><button class="btn no" data-no>Pass</button></div><div class="steps" hidden><p><b>Do it:</b> ESPN app: League → Pink → Propose Trade → offer Rico Dowdle (RB) for Lamar Jackson (QB). When accepted, come back for step 2.</p></div>
 </article></div></div>
   
 <div class="view" data-view="team" hidden>
@@ -388,66 +413,54 @@ a{color:var(--ink)}
   <header class="act-h">
     <span class="kind">trade</span>
     <span class="conf hi">High</span>
-    <span class="dl">No hard deadline, but value fades once the season starts and everyone sees the same holes.</span>
+    <span class="dl">No deadline</span>
   </header>
-  <h3>Offer Malik Nabers (WR), Kyren Williams (RB) to Real Slim Brady . for Josh Allen (QB)</h3>
-  <p class="why">Your starting lineup improves by ~60 points over the season; theirs improves by ~20, which is a modest but real gain for them -- worth an ask.</p>
-  <p class="conf-why">Confidence: High &mdash; the gap is ~60 starting-lineup points -- far larger than projection noise.</p>
-  <div class="msg"><span class="msg-l">Message to send <button class="copy" data-copy>Copy</button></span><p>Hey -- would you do Josh Allen for Malik Nabers and Kyren Williams? Looking at your roster I think Malik Nabers actually helps your starting lineup, and I have a hole Josh Allen would fill. Open to tweaking it if you&#x27;re close.</p></div><div class="act-do"><button class="btn yes" data-yes>Approve</button><button class="btn no" data-no>Pass</button></div><div class="steps" hidden><p><b>Do it:</b> ESPN app: League → Real Slim Brady . → Propose Trade → offer Malik Nabers (WR), Kyren Williams (RB) for Josh Allen (QB).</p></div>
+  <h3>Get Josh Allen</h3>
+  <div class="swap"><div class="side out"><span class="side-l">You give</span><ul><li><span class="p p-WR">WR</span><b>Malik Nabers</b><em>244</em></li><li><span class="p p-RB">RB</span><b>Kyren Williams</b><em>234</em></li></ul></div><div class="arr" aria-hidden="true">&rarr;</div><div class="side in"><span class="side-l">You get</span><ul><li><span class="p p-QB">QB</span><b>Josh Allen</b><em>380</em></li></ul></div></div><div class="gains"><span class="gchip you">You +60</span><span class="gchip them">Real Slim Brady . +20</span></div><div class="msg"><span class="msg-l">Message to send <button class="copy" data-copy>Copy</button></span><p>Hey -- would you do Josh Allen for Malik Nabers and Kyren Williams? Looking at your roster I think Malik Nabers actually helps your starting lineup, and I have a hole Josh Allen would fill. Open to tweaking it if you&#x27;re close.</p></div><div class="act-do"><button class="btn yes" data-yes>Approve</button><button class="btn no" data-no>Pass</button></div><div class="steps" hidden><p><b>Do it:</b> ESPN app: League → Real Slim Brady . → Propose Trade → offer Malik Nabers (WR), Kyren Williams (RB) for Josh Allen (QB).</p></div>
 </article>
 <article class="act k-trade" data-act="L2-1">
   <header class="act-h">
     <span class="kind">trade</span>
     <span class="conf hi">High</span>
-    <span class="dl">No hard deadline, but value fades once the season starts and everyone sees the same holes.</span>
+    <span class="dl">No deadline</span>
   </header>
-  <h3>Alternative: offer Tee Higgins (WR), Kyren Williams (RB) to Real Slim Brady . for Jalen Hurts (QB)</h3>
-  <p class="why">Your starting lineup improves by ~34 points over the season; theirs improves by ~46, which is clearly better for them too, so an accept is realistic.</p>
-  <p class="conf-why">Confidence: High &mdash; the gap is ~34 starting-lineup points -- far larger than projection noise.</p>
-  <div class="msg"><span class="msg-l">Message to send <button class="copy" data-copy>Copy</button></span><p>Hey -- would you do Jalen Hurts for Tee Higgins and Kyren Williams? Looking at your roster I think Tee Higgins actually helps your starting lineup, and I have a hole Jalen Hurts would fill. Open to tweaking it if you&#x27;re close.</p></div><div class="act-do"><button class="btn yes" data-yes>Approve</button><button class="btn no" data-no>Pass</button></div><div class="steps" hidden><p><b>Do it:</b> ESPN app: League → Real Slim Brady . → Propose Trade → offer Tee Higgins (WR), Kyren Williams (RB) for Jalen Hurts (QB).</p></div>
+  <h3>Get Jalen Hurts</h3>
+  <div class="swap"><div class="side out"><span class="side-l">You give</span><ul><li><span class="p p-WR">WR</span><b>Tee Higgins</b><em>219</em></li><li><span class="p p-RB">RB</span><b>Kyren Williams</b><em>234</em></li></ul></div><div class="arr" aria-hidden="true">&rarr;</div><div class="side in"><span class="side-l">You get</span><ul><li><span class="p p-QB">QB</span><b>Jalen Hurts</b><em>329</em></li></ul></div></div><div class="gains"><span class="gchip you">You +34</span><span class="gchip them">Real Slim Brady . +46</span></div><div class="msg"><span class="msg-l">Message to send <button class="copy" data-copy>Copy</button></span><p>Hey -- would you do Jalen Hurts for Tee Higgins and Kyren Williams? Looking at your roster I think Tee Higgins actually helps your starting lineup, and I have a hole Jalen Hurts would fill. Open to tweaking it if you&#x27;re close.</p></div><div class="act-do"><button class="btn yes" data-yes>Approve</button><button class="btn no" data-no>Pass</button></div><div class="steps" hidden><p><b>Do it:</b> ESPN app: League → Real Slim Brady . → Propose Trade → offer Tee Higgins (WR), Kyren Williams (RB) for Jalen Hurts (QB).</p></div>
 </article>
 <article class="act k-trade" data-act="L2-2">
   <header class="act-h">
     <span class="kind">trade</span>
     <span class="conf md">Medium</span>
-    <span class="dl">No hard deadline, but value fades once the season starts and everyone sees the same holes.</span>
+    <span class="dl">No deadline</span>
   </header>
-  <h3>Alternative: offer Drake London (WR), Kyren Williams (RB) to Real Slim Brady . for Ashton Jeanty (RB)</h3>
-  <p class="why">Your starting lineup improves by ~16 points over the season; theirs improves by ~16, which is a modest but real gain for them -- worth an ask.</p>
-  <p class="conf-why">Confidence: Medium &mdash; worth ~16 points over the season; real, but within a range where projections can be wrong.</p>
-  <div class="msg"><span class="msg-l">Message to send <button class="copy" data-copy>Copy</button></span><p>Hey -- would you do Ashton Jeanty for Drake London and Kyren Williams? Looking at your roster I think Drake London actually helps your starting lineup, and I have a hole Ashton Jeanty would fill. Open to tweaking it if you&#x27;re close.</p></div><div class="act-do"><button class="btn yes" data-yes>Approve</button><button class="btn no" data-no>Pass</button></div><div class="steps" hidden><p><b>Do it:</b> ESPN app: League → Real Slim Brady . → Propose Trade → offer Drake London (WR), Kyren Williams (RB) for Ashton Jeanty (RB).</p></div>
+  <h3>Get Ashton Jeanty</h3>
+  <div class="swap"><div class="side out"><span class="side-l">You give</span><ul><li><span class="p p-WR">WR</span><b>Drake London</b><em>262</em></li><li><span class="p p-RB">RB</span><b>Kyren Williams</b><em>234</em></li></ul></div><div class="arr" aria-hidden="true">&rarr;</div><div class="side in"><span class="side-l">You get</span><ul><li><span class="p p-RB">RB</span><b>Ashton Jeanty</b><em>278</em></li></ul></div></div><div class="gains"><span class="gchip you">You +16</span><span class="gchip them">Real Slim Brady . +16</span></div><div class="msg"><span class="msg-l">Message to send <button class="copy" data-copy>Copy</button></span><p>Hey -- would you do Ashton Jeanty for Drake London and Kyren Williams? Looking at your roster I think Drake London actually helps your starting lineup, and I have a hole Ashton Jeanty would fill. Open to tweaking it if you&#x27;re close.</p></div><div class="act-do"><button class="btn yes" data-yes>Approve</button><button class="btn no" data-no>Pass</button></div><div class="steps" hidden><p><b>Do it:</b> ESPN app: League → Real Slim Brady . → Propose Trade → offer Drake London (WR), Kyren Williams (RB) for Ashton Jeanty (RB).</p></div>
 </article>
 <article class="act k-trade" data-act="L2-3">
   <header class="act-h">
     <span class="kind">trade</span>
     <span class="conf md">Medium</span>
-    <span class="dl">No hard deadline, but value fades once the season starts and everyone sees the same holes.</span>
+    <span class="dl">No deadline</span>
   </header>
-  <h3>Alternative: offer Kyren Williams (RB) to Fish Sticks for Jaxson Dart (QB)</h3>
-  <p class="why">Your starting lineup improves by ~14 points over the season; theirs improves by ~20, which is a modest but real gain for them -- worth an ask.</p>
-  <p class="conf-why">Confidence: Medium &mdash; worth ~14 points over the season; real, but within a range where projections can be wrong.</p>
-  <div class="msg"><span class="msg-l">Message to send <button class="copy" data-copy>Copy</button></span><p>Hey -- would you do Jaxson Dart for Kyren Williams? Looking at your roster I think Kyren Williams actually helps your starting lineup, and I have a hole Jaxson Dart would fill. Open to tweaking it if you&#x27;re close.</p></div><div class="act-do"><button class="btn yes" data-yes>Approve</button><button class="btn no" data-no>Pass</button></div><div class="steps" hidden><p><b>Do it:</b> ESPN app: League → Fish Sticks → Propose Trade → offer Kyren Williams (RB) for Jaxson Dart (QB).</p></div>
+  <h3>Get Jaxson Dart</h3>
+  <div class="swap"><div class="side out"><span class="side-l">You give</span><ul><li><span class="p p-RB">RB</span><b>Kyren Williams</b><em>234</em></li></ul></div><div class="arr" aria-hidden="true">&rarr;</div><div class="side in"><span class="side-l">You get</span><ul><li><span class="p p-QB">QB</span><b>Jaxson Dart</b><em>309</em></li></ul></div></div><div class="gains"><span class="gchip you">You +14</span><span class="gchip them">Fish Sticks +20</span></div><div class="msg"><span class="msg-l">Message to send <button class="copy" data-copy>Copy</button></span><p>Hey -- would you do Jaxson Dart for Kyren Williams? Looking at your roster I think Kyren Williams actually helps your starting lineup, and I have a hole Jaxson Dart would fill. Open to tweaking it if you&#x27;re close.</p></div><div class="act-do"><button class="btn yes" data-yes>Approve</button><button class="btn no" data-no>Pass</button></div><div class="steps" hidden><p><b>Do it:</b> ESPN app: League → Fish Sticks → Propose Trade → offer Kyren Williams (RB) for Jaxson Dart (QB).</p></div>
 </article>
 <article class="act k-waiver" data-act="L2-4">
   <header class="act-h">
     <span class="kind">waiver</span>
-    <span class="conf md">Medium</span>
-    <span class="dl">Before your league&#x27;s next waiver run.</span>
+    <span class="conf md">Medium</span><span class="gchip you">+10 pts</span>
+    <span class="dl">Before the next waiver run</span>
   </header>
   <h3>Add Bo Nix (QB), drop Jonathon Brooks</h3>
-  <p class="why">Bo Nix projects 306 and would start for you, worth ~10 points over your current lineup.</p>
-  <p class="conf-why">Confidence: Medium &mdash; worth ~10 points over the season; real, but within a range where projections can be wrong.</p>
   <div class="act-do"><button class="btn yes" data-yes>Approve</button><button class="btn no" data-no>Pass</button></div><div class="steps" hidden><p><b>Do it:</b> ESPN app: Players → search Bo Nix → Add → drop Jonathon Brooks.</p></div>
 </article>
 <article class="act k-waiver" data-act="L2-5">
   <header class="act-h">
     <span class="kind">waiver</span>
-    <span class="conf lo">Low</span>
-    <span class="dl">Before your league&#x27;s next waiver run.</span>
+    <span class="conf lo">Low</span><span class="gchip you">+7 pts</span>
+    <span class="dl">Before the next waiver run</span>
   </header>
   <h3>Add Matthew Stafford (QB), drop Jonathon Brooks</h3>
-  <p class="why">Matthew Stafford projects 302 and would start for you, worth ~7 points over your current lineup.</p>
-  <p class="conf-why">Confidence: Low &mdash; only ~7 points -- close to projection noise.</p>
   <div class="act-do"><button class="btn yes" data-yes>Approve</button><button class="btn no" data-no>Pass</button></div><div class="steps" hidden><p><b>Do it:</b> ESPN app: Players → search Matthew Stafford → Add → drop Jonathon Brooks.</p></div>
 </article></div></div>
   
@@ -498,45 +511,37 @@ a{color:var(--ink)}
   <header class="act-h">
     <span class="kind">trade</span>
     <span class="conf hi">High</span>
-    <span class="dl">No hard deadline, but value fades once the season starts and everyone sees the same holes.</span>
+    <span class="dl">No deadline</span>
   </header>
-  <h3>Offer Malik Nabers (WR), Kyren Williams (RB) to Real Slim Brady . for Josh Allen (QB)</h3>
-  <p class="why">Your starting lineup improves by ~60 points over the season; theirs improves by ~20, which is a modest but real gain for them -- worth an ask.</p>
-  <p class="conf-why">Confidence: High &mdash; the gap is ~60 starting-lineup points -- far larger than projection noise.</p>
-  <div class="msg"><span class="msg-l">Message to send <button class="copy" data-copy>Copy</button></span><p>Hey -- would you do Josh Allen for Malik Nabers and Kyren Williams? Looking at your roster I think Malik Nabers actually helps your starting lineup, and I have a hole Josh Allen would fill. Open to tweaking it if you&#x27;re close.</p></div><div class="act-do"><button class="btn yes" data-yes>Approve</button><button class="btn no" data-no>Pass</button></div><div class="steps" hidden><p><b>Do it:</b> ESPN app: League → Real Slim Brady . → Propose Trade → offer Malik Nabers (WR), Kyren Williams (RB) for Josh Allen (QB).</p></div>
+  <h3>Get Josh Allen</h3>
+  <div class="swap"><div class="side out"><span class="side-l">You give</span><ul><li><span class="p p-WR">WR</span><b>Malik Nabers</b><em>244</em></li><li><span class="p p-RB">RB</span><b>Kyren Williams</b><em>234</em></li></ul></div><div class="arr" aria-hidden="true">&rarr;</div><div class="side in"><span class="side-l">You get</span><ul><li><span class="p p-QB">QB</span><b>Josh Allen</b><em>380</em></li></ul></div></div><div class="gains"><span class="gchip you">You +60</span><span class="gchip them">Real Slim Brady . +20</span></div><div class="msg"><span class="msg-l">Message to send <button class="copy" data-copy>Copy</button></span><p>Hey -- would you do Josh Allen for Malik Nabers and Kyren Williams? Looking at your roster I think Malik Nabers actually helps your starting lineup, and I have a hole Josh Allen would fill. Open to tweaking it if you&#x27;re close.</p></div><div class="act-do"><button class="btn yes" data-yes>Approve</button><button class="btn no" data-no>Pass</button></div><div class="steps" hidden><p><b>Do it:</b> ESPN app: League → Real Slim Brady . → Propose Trade → offer Malik Nabers (WR), Kyren Williams (RB) for Josh Allen (QB).</p></div>
 </article>
 <article class="act k-trade" data-act="L2-101">
   <header class="act-h">
     <span class="kind">trade</span>
     <span class="conf hi">High</span>
-    <span class="dl">No hard deadline, but value fades once the season starts and everyone sees the same holes.</span>
+    <span class="dl">No deadline</span>
   </header>
-  <h3>Alternative: offer Tee Higgins (WR), Kyren Williams (RB) to Real Slim Brady . for Jalen Hurts (QB)</h3>
-  <p class="why">Your starting lineup improves by ~34 points over the season; theirs improves by ~46, which is clearly better for them too, so an accept is realistic.</p>
-  <p class="conf-why">Confidence: High &mdash; the gap is ~34 starting-lineup points -- far larger than projection noise.</p>
-  <div class="msg"><span class="msg-l">Message to send <button class="copy" data-copy>Copy</button></span><p>Hey -- would you do Jalen Hurts for Tee Higgins and Kyren Williams? Looking at your roster I think Tee Higgins actually helps your starting lineup, and I have a hole Jalen Hurts would fill. Open to tweaking it if you&#x27;re close.</p></div><div class="act-do"><button class="btn yes" data-yes>Approve</button><button class="btn no" data-no>Pass</button></div><div class="steps" hidden><p><b>Do it:</b> ESPN app: League → Real Slim Brady . → Propose Trade → offer Tee Higgins (WR), Kyren Williams (RB) for Jalen Hurts (QB).</p></div>
+  <h3>Get Jalen Hurts</h3>
+  <div class="swap"><div class="side out"><span class="side-l">You give</span><ul><li><span class="p p-WR">WR</span><b>Tee Higgins</b><em>219</em></li><li><span class="p p-RB">RB</span><b>Kyren Williams</b><em>234</em></li></ul></div><div class="arr" aria-hidden="true">&rarr;</div><div class="side in"><span class="side-l">You get</span><ul><li><span class="p p-QB">QB</span><b>Jalen Hurts</b><em>329</em></li></ul></div></div><div class="gains"><span class="gchip you">You +34</span><span class="gchip them">Real Slim Brady . +46</span></div><div class="msg"><span class="msg-l">Message to send <button class="copy" data-copy>Copy</button></span><p>Hey -- would you do Jalen Hurts for Tee Higgins and Kyren Williams? Looking at your roster I think Tee Higgins actually helps your starting lineup, and I have a hole Jalen Hurts would fill. Open to tweaking it if you&#x27;re close.</p></div><div class="act-do"><button class="btn yes" data-yes>Approve</button><button class="btn no" data-no>Pass</button></div><div class="steps" hidden><p><b>Do it:</b> ESPN app: League → Real Slim Brady . → Propose Trade → offer Tee Higgins (WR), Kyren Williams (RB) for Jalen Hurts (QB).</p></div>
 </article>
 <article class="act k-trade" data-act="L2-102">
   <header class="act-h">
     <span class="kind">trade</span>
     <span class="conf md">Medium</span>
-    <span class="dl">No hard deadline, but value fades once the season starts and everyone sees the same holes.</span>
+    <span class="dl">No deadline</span>
   </header>
-  <h3>Alternative: offer Drake London (WR), Kyren Williams (RB) to Real Slim Brady . for Ashton Jeanty (RB)</h3>
-  <p class="why">Your starting lineup improves by ~16 points over the season; theirs improves by ~16, which is a modest but real gain for them -- worth an ask.</p>
-  <p class="conf-why">Confidence: Medium &mdash; worth ~16 points over the season; real, but within a range where projections can be wrong.</p>
-  <div class="msg"><span class="msg-l">Message to send <button class="copy" data-copy>Copy</button></span><p>Hey -- would you do Ashton Jeanty for Drake London and Kyren Williams? Looking at your roster I think Drake London actually helps your starting lineup, and I have a hole Ashton Jeanty would fill. Open to tweaking it if you&#x27;re close.</p></div><div class="act-do"><button class="btn yes" data-yes>Approve</button><button class="btn no" data-no>Pass</button></div><div class="steps" hidden><p><b>Do it:</b> ESPN app: League → Real Slim Brady . → Propose Trade → offer Drake London (WR), Kyren Williams (RB) for Ashton Jeanty (RB).</p></div>
+  <h3>Get Ashton Jeanty</h3>
+  <div class="swap"><div class="side out"><span class="side-l">You give</span><ul><li><span class="p p-WR">WR</span><b>Drake London</b><em>262</em></li><li><span class="p p-RB">RB</span><b>Kyren Williams</b><em>234</em></li></ul></div><div class="arr" aria-hidden="true">&rarr;</div><div class="side in"><span class="side-l">You get</span><ul><li><span class="p p-RB">RB</span><b>Ashton Jeanty</b><em>278</em></li></ul></div></div><div class="gains"><span class="gchip you">You +16</span><span class="gchip them">Real Slim Brady . +16</span></div><div class="msg"><span class="msg-l">Message to send <button class="copy" data-copy>Copy</button></span><p>Hey -- would you do Ashton Jeanty for Drake London and Kyren Williams? Looking at your roster I think Drake London actually helps your starting lineup, and I have a hole Ashton Jeanty would fill. Open to tweaking it if you&#x27;re close.</p></div><div class="act-do"><button class="btn yes" data-yes>Approve</button><button class="btn no" data-no>Pass</button></div><div class="steps" hidden><p><b>Do it:</b> ESPN app: League → Real Slim Brady . → Propose Trade → offer Drake London (WR), Kyren Williams (RB) for Ashton Jeanty (RB).</p></div>
 </article>
 <article class="act k-trade" data-act="L2-103">
   <header class="act-h">
     <span class="kind">trade</span>
     <span class="conf md">Medium</span>
-    <span class="dl">No hard deadline, but value fades once the season starts and everyone sees the same holes.</span>
+    <span class="dl">No deadline</span>
   </header>
-  <h3>Alternative: offer Kyren Williams (RB) to Fish Sticks for Jaxson Dart (QB)</h3>
-  <p class="why">Your starting lineup improves by ~14 points over the season; theirs improves by ~20, which is a modest but real gain for them -- worth an ask.</p>
-  <p class="conf-why">Confidence: Medium &mdash; worth ~14 points over the season; real, but within a range where projections can be wrong.</p>
-  <div class="msg"><span class="msg-l">Message to send <button class="copy" data-copy>Copy</button></span><p>Hey -- would you do Jaxson Dart for Kyren Williams? Looking at your roster I think Kyren Williams actually helps your starting lineup, and I have a hole Jaxson Dart would fill. Open to tweaking it if you&#x27;re close.</p></div><div class="act-do"><button class="btn yes" data-yes>Approve</button><button class="btn no" data-no>Pass</button></div><div class="steps" hidden><p><b>Do it:</b> ESPN app: League → Fish Sticks → Propose Trade → offer Kyren Williams (RB) for Jaxson Dart (QB).</p></div>
+  <h3>Get Jaxson Dart</h3>
+  <div class="swap"><div class="side out"><span class="side-l">You give</span><ul><li><span class="p p-RB">RB</span><b>Kyren Williams</b><em>234</em></li></ul></div><div class="arr" aria-hidden="true">&rarr;</div><div class="side in"><span class="side-l">You get</span><ul><li><span class="p p-QB">QB</span><b>Jaxson Dart</b><em>309</em></li></ul></div></div><div class="gains"><span class="gchip you">You +14</span><span class="gchip them">Fish Sticks +20</span></div><div class="msg"><span class="msg-l">Message to send <button class="copy" data-copy>Copy</button></span><p>Hey -- would you do Jaxson Dart for Kyren Williams? Looking at your roster I think Kyren Williams actually helps your starting lineup, and I have a hole Jaxson Dart would fill. Open to tweaking it if you&#x27;re close.</p></div><div class="act-do"><button class="btn yes" data-yes>Approve</button><button class="btn no" data-no>Pass</button></div><div class="steps" hidden><p><b>Do it:</b> ESPN app: League → Fish Sticks → Propose Trade → offer Kyren Williams (RB) for Jaxson Dart (QB).</p></div>
 </article></div>
   </section>
   <section class="panel">

@@ -182,10 +182,57 @@ def analyse(state: dict, news_items: list[dict], decisions: dict | None = None) 
 CONF_CLASS = {"High": "hi", "Medium": "md", "Low": "lo"}
 
 
+def _names(ps) -> str:
+    return ", ".join(p["name"] for p in ps)
+
+
+def _swap_panel(send, receive) -> str:
+    def side(label, ps, cls):
+        lis = "".join(
+            f'<li>{pos_chip(p["position"])}<b>{esc(p["name"])}</b>'
+            f'<em>{(p.get("projected") or 0):.0f}</em></li>'
+            for p in ps
+        )
+        return (f'<div class="side {cls}"><span class="side-l">{label}</span>'
+                f'<ul>{lis}</ul></div>')
+    return (f'<div class="swap">{side("You give", send, "out")}'
+            f'<div class="arr" aria-hidden="true">&rarr;</div>'
+            f'{side("You get", receive, "in")}</div>')
+
+
 def render_action(a: Action, i: int, league: str) -> str:
+    """A card you read in three seconds: verb headline, chips, a picture of
+    the deal. Prose only where a fact needs a sentence (injury citations)."""
     conf = f'<span class="conf {CONF_CLASS.get(a.confidence, "lo")}">' \
            f'{esc(a.confidence)}</span>'
     urgent = ' data-urgent="1"' if a.urgency >= 2 else ""
+
+    title = a.title
+    body = ""
+    gains = ""
+    if a.kind == "trade" and a.trade:
+        t = a.trade
+        title = f'Get {_names(t["receive"])}'
+        body = _swap_panel(t["send"], t["receive"])
+        gains = (f'<div class="gains"><span class="gchip you">You +{t["my_gain"]:.0f}</span>'
+                 f'<span class="gchip them">{esc(t["partner_name"])} +{t["their_gain"]:.0f}</span></div>')
+    elif a.kind == "plan" and a.trade:
+        c = a.trade
+        s1, s2 = c["step1"], c["step2"]
+        title = f'Get {_names(s2["receive"])} in two moves'
+        def step(n, st, tag):
+            return (f'<div class="step"><span class="stepn">{n}</span>'
+                    f'<div class="stepbody">'
+                    f'<span class="stepwho">{esc(st["partner_name"])}'
+                    f'<i class="steptag">{tag}</i></span>'
+                    f'{_swap_panel(st["send"], st["receive"])}'
+                    f'<span class="gchip them">they gain +{st["their_gain"]:.0f}</span>'
+                    f'</div></div>')
+        body = step(1, s1, "do now") + step(2, s2, "after step 1")
+        gains = f'<div class="gains"><span class="gchip you">You +{c["total_gain"]:.0f} total</span></div>'
+    elif a.kind in ("injury", "info"):
+        body = f'<p class="why">{esc(a.why)}</p>'
+
     msg = ""
     if a.draft_message:
         msg = (
@@ -201,17 +248,17 @@ def render_action(a: Action, i: int, league: str) -> str:
             '<button class="btn no" data-no>Pass</button></div>'
             f'<div class="steps" hidden><p><b>Do it:</b> {esc(a.steps)}</p></div>'
         )
+    gain_chip = (f'<span class="gchip you">+{a.gain:.0f} pts</span>'
+                 if a.kind == "waiver" and a.gain else "")
     return f"""
 <article class="act k-{esc(a.kind)}" data-act="{esc(league)}-{i}"{urgent}>
   <header class="act-h">
     <span class="kind">{esc(a.kind)}</span>
-    {conf}
+    {conf}{gain_chip}
     <span class="dl">{esc(a.deadline)}</span>
   </header>
-  <h3>{esc(a.title)}</h3>
-  <p class="why">{esc(a.why)}</p>
-  <p class="conf-why">Confidence: {esc(a.confidence)} &mdash; {esc(a.confidence_why)}.</p>
-  {msg}{controls}
+  <h3>{esc(title)}</h3>
+  {body}{gains}{msg}{controls}
 </article>"""
 
 
@@ -671,6 +718,33 @@ a{color:var(--ink)}
 .steps{margin-top:13px;padding:11px 14px;background:var(--good-bg);
   border:2px solid var(--ink);border-radius:14px}
 .steps p{margin:0;font-size:14.5px}
+
+/* deal picture */
+.swap{display:flex;align-items:stretch;gap:10px;margin:4px 0 10px;flex-wrap:wrap}
+.side{flex:1 1 200px;background:var(--bg);border:2px solid var(--ink);
+  border-radius:14px;padding:10px 12px}
+.side-l{display:block;margin-bottom:7px;font:800 10.5px/1 var(--body);
+  letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.side.in{background:var(--good-bg)}
+.side ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:6px}
+.side li{display:flex;align-items:center;gap:8px}
+.side li b{flex:1;font-weight:700;font-size:15px}
+.side li em{font-style:normal;font-weight:700;font-size:13px;color:var(--muted)}
+.arr{align-self:center;font-size:22px;font-weight:800;flex:0 0 auto}
+.gains{display:flex;gap:8px;margin:2px 0 4px;flex-wrap:wrap}
+.gchip{display:inline-block;border:2px solid var(--ink);border-radius:999px;
+  padding:4px 12px;font:800 12.5px/1.3 var(--body)}
+.gchip.you{background:var(--good-bg)}
+.gchip.them{background:var(--surface2)}
+.step{display:flex;gap:10px;margin-bottom:10px}
+.stepn{flex:0 0 auto;width:30px;height:30px;border:2.5px solid var(--ink);
+  border-radius:999px;background:var(--brand);display:flex;align-items:center;
+  justify-content:center;font:800 15px/1 var(--body)}
+.stepbody{flex:1;min-width:0}
+.stepwho{display:block;margin-bottom:5px;font-weight:800;font-size:14px}
+.steptag{font-style:normal;font-weight:700;font-size:11px;margin-left:8px;
+  border:1.5px solid var(--ink);border-radius:999px;padding:2px 8px;background:var(--surface2)}
+.step .swap{margin-bottom:6px}
 
 /* panels + tables */
 .two{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}

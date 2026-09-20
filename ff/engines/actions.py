@@ -115,8 +115,7 @@ def trade_actions(
                 ),
                 confidence=conf,
                 confidence_why=conf_why,
-                deadline="No hard deadline, but value fades once the season starts "
-                         "and everyone sees the same holes.",
+                deadline="No deadline",
                 steps=f"ESPN app: League → {idea.partner_name} → Propose Trade "
                       f"→ offer {give} for {get}.",
                 gain=idea.my_gain,
@@ -166,7 +165,7 @@ def chain_action(
         ),
         confidence="Medium" if conf == "High" else conf,
         confidence_why=f"{conf_why}; two separate managers each have to say yes",
-        deadline="Step 1 has no hard deadline; step 2 depends on it landing.",
+        deadline="Step 1 now",
         steps=f"ESPN app: League → {s1.partner_name} → Propose Trade → offer "
               f"{give1} for {get1}. When accepted, come back for step 2.",
         gain=c.total_gain,
@@ -208,7 +207,7 @@ def waiver_actions(me: dict, free_agents: Sequence[dict], slots: dict,
                 ),
                 confidence=conf,
                 confidence_why=conf_why,
-                deadline="Before your league's next waiver run.",
+                deadline="Before the next waiver run",
                 steps=f"ESPN app: Players → search {fa['name']} → Add"
                       + (f" → drop {drop['name']}." if drop else "."),
                 gain=gain,
@@ -238,7 +237,7 @@ def injury_actions(me: dict, slots: dict, news_by_espn_id: dict) -> list[Action]
                     f"your {s['slot']} slot.{cite}",
                 confidence="High",
                 confidence_why="injury designations are facts, not projections",
-                deadline="Before kickoff of his game.",
+                deadline="Before kickoff",
                 steps="ESPN app: My Team → move him to bench → start the "
                       "best healthy option.",
                 gain=s.get("projected") or 0,
