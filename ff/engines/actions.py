@@ -72,15 +72,18 @@ def _acceptance_read(their_gain: float) -> str:
 
 
 def _trade_message(idea: TradeIdea) -> str:
-    """A short, natural note Tyler can paste. No analytics jargon."""
-    give = " and ".join(p["name"] for p in idea.send)
-    get = " and ".join(p["name"] for p in idea.receive)
-    return (
-        f"Hey -- would you do {get} for {give}? "
-        f"Looking at your roster I think {give.split(' and ')[0]} actually helps "
-        f"your starting lineup, and I have a hole {get.split(' and ')[0]} would fill. "
-        "Open to tweaking it if you're close."
-    )
+    """One casual line for the league group chat -- not a formal pitch.
+
+    The league barely talks; a trade note has to sound like a person, be
+    over in a second, and make one true claim. Both sides gaining is the
+    claim, because it is the only one the math actually backs.
+    """
+    give = " + ".join(p["name"] for p in idea.send).lower()
+    get = " + ".join(p["name"] for p in idea.receive).lower()
+    who = idea.partner_name.strip().split()[0].lower()
+    return (f"yo {who} -- {give} for {get}, straight swap? "
+            "ran the numbers and your lineup actually gets better too, "
+            "not tryna fleece anyone lol")
 
 
 def trade_actions(

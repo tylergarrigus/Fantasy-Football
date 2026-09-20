@@ -241,7 +241,7 @@ def render_action(a: Action, i: int, league: str) -> str:
     msg = ""
     if a.draft_message:
         msg = (
-            '<div class="msg"><span class="msg-l">Message to send '
+            '<div class="msg"><span class="msg-l">Drop in the group chat '
             '<button class="copy" data-copy>Copy</button></span>'
             f'<p>{esc(a.draft_message)}</p></div>'
         )

@@ -113,7 +113,7 @@ def test_trade_action_carries_a_sendable_message():
     q = build_queue(state(mine, opp_players=theirs), [])
     trades = [a for a in q if a.kind == "trade"]
     assert trades
-    assert trades[0].draft_message and "would you do" in trades[0].draft_message
+    assert trades[0].draft_message and "straight swap" in trades[0].draft_message
     assert trades[0].trade["send"]
 
 
