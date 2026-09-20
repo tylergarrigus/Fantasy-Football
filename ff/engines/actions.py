@@ -146,6 +146,40 @@ def chain_action(
         return None
     c: TradeChain = chains[0]
     s1, s2 = c.step1, c.step2
+
+    # The raw projections on screen look lopsided; the honest resolution is
+    # naming who actually starts. Both notes are computed, not written.
+    def _swap_roster(roster, out, into):
+        gone = {p["player_id"] for p in out}
+        return [p for p in roster if p["player_id"] not in gone] + list(into)
+
+    def bench_note(step):
+        o = next((x for x in opponents if x["team_id"] == step.partner_id), None)
+        if not o:
+            return ""
+        theirs = [p for p in o.get("players", []) if p.get("projected") is not None]
+        starters = {x["player_id"] for x in best_lineup(theirs, slots).starters}
+        riding = [p["name"] for p in step.receive if p["player_id"] not in starters]
+        if riding:
+            return (f"{' and '.join(riding)} never cracks "
+                    f"{o['name']}'s lineup -- scores them nothing.")
+        return ""
+
+    mine_now = [p for p in me["players"] if p.get("projected") is not None]
+    orig = {x["player_id"]: x["name"]
+            for x in best_lineup(mine_now, slots).starters}
+    final_roster = _swap_roster(
+        _swap_roster(mine_now, s1.send, s1.receive), s2.send, s2.receive
+    )
+    fin = {x["player_id"]: x["name"]
+           for x in best_lineup(final_roster, slots).starters}
+    into = [n for pid, n in fin.items() if pid not in orig]
+    outof = [n for pid, n in orig.items() if pid not in fin]
+    end_note = ""
+    if into and outof:
+        end_note = (f"You end up starting {', '.join(sorted(into))} "
+                    f"instead of {', '.join(sorted(outof))}.")
+    step_notes = [bench_note(s1), end_note]
     give1 = ", ".join(f'{p["name"]} ({p["position"]})' for p in s1.send)
     get1 = ", ".join(f'{p["name"]} ({p["position"]})' for p in s1.receive)
     give2 = ", ".join(f'{p["name"]} ({p["position"]})' for p in s2.send)
@@ -172,7 +206,7 @@ def chain_action(
         urgency=1,
         players=[p["name"] for p in s1.send + s1.receive + s2.send + s2.receive],
         draft_message=_trade_message(s1),
-        trade=c.as_dict(),
+        trade={**c.as_dict(), "step_notes": step_notes},
     )
 
 

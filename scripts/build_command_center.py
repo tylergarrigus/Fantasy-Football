@@ -214,22 +214,27 @@ def render_action(a: Action, i: int, league: str) -> str:
         t = a.trade
         title = f'Get {_names(t["receive"])}'
         body = _swap_panel(t["send"], t["receive"])
-        gains = (f'<div class="gains"><span class="gchip you">You +{t["my_gain"]:.0f}</span>'
-                 f'<span class="gchip them">{esc(t["partner_name"])} +{t["their_gain"]:.0f}</span></div>')
+        gains = (f'<div class="gains"><span class="gchip you">Your lineup +{t["my_gain"]:.0f}</span>'
+                 f'<span class="gchip them">{esc(t["partner_name"])} lineup +{t["their_gain"]:.0f}</span></div>'
+                 '<p class="gnote">Pills count points that get started, not raw player totals.</p>')
     elif a.kind == "plan" and a.trade:
         c = a.trade
         s1, s2 = c["step1"], c["step2"]
         title = f'Get {_names(s2["receive"])} in two moves'
-        def step(n, st, tag):
+        notes = c.get("step_notes") or ["", ""]
+        def step(n, st, tag, note):
+            nline = f'<span class="stepnote">{esc(note)}</span>' if note else ""
             return (f'<div class="step"><span class="stepn">{n}</span>'
                     f'<div class="stepbody">'
                     f'<span class="stepwho">{esc(st["partner_name"])}'
                     f'<i class="steptag">{tag}</i></span>'
                     f'{_swap_panel(st["send"], st["receive"])}'
-                    f'<span class="gchip them">they gain +{st["their_gain"]:.0f}</span>'
+                    f'<span class="gchip them">their lineup +{st["their_gain"]:.0f}</span>'
+                    f'{nline}'
                     f'</div></div>')
-        body = step(1, s1, "do now") + step(2, s2, "after step 1")
-        gains = f'<div class="gains"><span class="gchip you">You +{c["total_gain"]:.0f} total</span></div>'
+        body = step(1, s1, "do now", notes[0]) + step(2, s2, "after step 1", notes[1])
+        gains = (f'<div class="gains"><span class="gchip you">Your lineup +{c["total_gain"]:.0f}</span></div>'
+                 '<p class="gnote">Pills count points that get started, not raw player totals.</p>')
     elif a.kind in ("injury", "info"):
         body = f'<p class="why">{esc(a.why)}</p>'
 
@@ -745,6 +750,8 @@ a{color:var(--ink)}
 .steptag{font-style:normal;font-weight:700;font-size:11px;margin-left:8px;
   border:1.5px solid var(--ink);border-radius:999px;padding:2px 8px;background:var(--surface2)}
 .step .swap{margin-bottom:6px}
+.stepnote{display:block;margin-top:5px;font-size:12.5px;color:var(--muted);font-weight:600}
+.gnote{margin:2px 0 4px;font-size:11.5px;color:var(--muted)}
 
 /* panels + tables */
 .two{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
