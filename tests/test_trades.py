@@ -234,3 +234,31 @@ def test_untouchables_never_sent_in_either_step():
     for c in find_trade_chains(mine, opps, SLOTS, untouchable=["QBstar"]):
         for step in (c.step1, c.step2):
             assert all(p["player_id"] != "QBstar" for p in step.send)
+
+
+def test_lopsided_name_value_is_never_proposed():
+    """A bench RB for a star QB is a decline-on-sight offer, even when the
+    lineup math loves it. Fairness is judged in raw projection, the closest
+    number to how managers perceive value."""
+    from ff.engines.trades import find_trades, find_trade_chains
+    mine = roster(QB=1, RB=2, WR=2, TE=1, K=1, DST=1)
+    mine.append(player("RBspare", "RB", 150))
+    theirs = [
+        player("StarQB", "QB", 340), player("tQB2", "QB", 330),
+        player("tRB0", "RB", 120), player("tRB1", "RB", 110),
+        player("tWR0", "WR", 200), player("tWR1", "WR", 195),
+        player("tFlex", "WR", 190),
+        player("tTE", "TE", 170), player("tK", "K", 150),
+        player("tDST", "D/ST", 140),
+    ]
+    opponents = [{"team_id": 2, "name": "Hoarder", "players": theirs}]
+    for idea in find_trades(mine, opponents, SLOTS,
+                            min_my_gain=0.0, min_their_gain=1.0):
+        offered = sum(p["projected"] for p in idea.send)
+        asked = sum(p["projected"] for p in idea.receive)
+        assert offered / asked >= 0.7
+    for c in find_trade_chains(mine, opponents, SLOTS):
+        for step in (c.step1, c.step2):
+            offered = sum(p["projected"] for p in step.send)
+            asked = sum(p["projected"] for p in step.receive)
+            assert offered / asked >= 0.7

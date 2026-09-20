@@ -20,6 +20,18 @@ FIXED_SLOTS = ("QB", "RB", "WR", "TE", "K", "D/ST")
 FLEX_SLOT = "RB/WR/TE"
 FLEX_POSITIONS = ("RB", "WR", "TE")
 
+# Managers judge offers by name value before lineup value. An offer where the
+# raw projection you send is far below what you ask for reads as an insult and
+# gets declined on sight, no matter how sound the lineup math is -- learned the
+# hard way. Below this send/receive ratio a deal is never proposed.
+FAIRNESS_FLOOR = 0.7
+
+
+def _looks_fair(send, receive) -> bool:
+    asked = sum(p.get("projected") or 0 for p in receive)
+    offered = sum(p.get("projected") or 0 for p in send)
+    return asked <= 0 or offered / asked >= FAIRNESS_FLOOR
+
 
 @dataclass
 class Lineup:
@@ -151,6 +163,8 @@ def find_trades(
 
         for give in _packages(mine, protected):
             for get in theirs:
+                if not _looks_fair(give, [get]):
+                    continue
                 # Straight positional duplicates rarely help anyone, but let the
                 # lineup math decide rather than guessing from position alone.
                 my_after = lineup_value(_swap(mine, give, [get]), slots)
@@ -335,6 +349,8 @@ def _step_candidates(
         for give in _packages(mine, protected):
             for get in theirs:
                 if (opp["name"], get["name"]) in rejected_set:
+                    continue
+                if not _looks_fair(give, [get]):
                     continue
                 my_gain = lineup_value(_swap(mine, give, [get]), slots) - base
                 if my_gain < min_my_gain:
