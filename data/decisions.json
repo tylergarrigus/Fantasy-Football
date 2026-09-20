@@ -1,9 +1,27 @@
 {
   "rejected_trades": [
-    {"league": "L1", "partner": "Pink", "receive": ["Drake London"], "when": "2026-08-23"},
-    {"league": "L1", "partner": "Pink", "receive": ["Josh Allen"], "when": "2026-08-23"}
+    {
+      "league": "L1",
+      "partner": "Pink",
+      "receive": [
+        "Drake London"
+      ],
+      "when": "2026-08-23"
+    },
+    {
+      "league": "L1",
+      "partner": "Pink",
+      "receive": [
+        "Josh Allen"
+      ],
+      "when": "2026-08-23"
+    }
   ],
   "partner_notes": {
     "L1:Pink": "Rejected two projection-favorable offers on 2026-08-23. Values stars over depth; only approach with a star-for-star framing."
+  },
+  "trade_posture": "conservative",
+  "league_notes": {
+    "general": "2026-09-20: Tyler reports both leagues rarely accept trades. Surface only offers with a large, obvious gain for the other manager; prefer waiver/lineup moves."
   }
 }

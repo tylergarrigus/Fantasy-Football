@@ -110,7 +110,8 @@ def analyse(state: dict, news_items: list[dict], decisions: dict | None = None) 
         for name in r.get("receive", [])
     ]
     queue = rejected_filter(
-        build_queue(state, news_items, rejected=rejected_pairs),
+        build_queue(state, news_items, rejected=rejected_pairs,
+                    trade_posture=(decisions or {}).get("trade_posture", "normal")),
         state.get("league_key", ""),
         decisions or {},
     )

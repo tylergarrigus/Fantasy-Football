@@ -84,10 +84,12 @@ def _trade_message(idea: TradeIdea) -> str:
 
 
 def trade_actions(
-    me: dict, opponents: Sequence[dict], slots: dict, untouchable: Sequence[str] = ()
+    me: dict, opponents: Sequence[dict], slots: dict,
+    untouchable: Sequence[str] = (), min_their_gain: float = 5.0,
 ) -> list[Action]:
     ideas = find_trades(
-        me["players"], opponents, slots, untouchable=untouchable, limit=4
+        me["players"], opponents, slots, untouchable=untouchable,
+        min_their_gain=min_their_gain, limit=4,
     )
     # Offers that spend the same player are alternatives, not a to-do list.
     seen_senders: set[str] = set()
@@ -133,11 +135,13 @@ def chain_action(
     slots: dict,
     untouchable: Sequence[str] = (),
     rejected: Sequence[tuple[str, str]] = (),
+    min_their_gain: float = 3.0,
 ) -> Action | None:
     """The best two-move plan, when one clearly beats any single trade."""
     chains = find_trade_chains(
         me["players"], opponents, slots,
-        untouchable=untouchable, rejected=rejected, limit=1,
+        untouchable=untouchable, rejected=rejected,
+        min_their_gain=min_their_gain, limit=1,
     )
     if not chains:
         return None
@@ -247,7 +251,8 @@ def injury_actions(me: dict, slots: dict, news_by_espn_id: dict) -> list[Action]
 
 def build_queue(state: dict, news_items: Sequence[dict],
                 untouchable: Sequence[str] = (),
-                rejected: Sequence[tuple[str, str]] = ()) -> list[Action]:
+                rejected: Sequence[tuple[str, str]] = (),
+                trade_posture: str = "normal") -> list[Action]:
     """The whole point: a short list, ordered by what matters most."""
     me = next((t for t in state["teams"] if t.get("is_me")), None)
     if me is None or not me.get("players"):
@@ -267,10 +272,15 @@ def build_queue(state: dict, news_items: Sequence[dict],
         for aid in item.get("espn_athlete_ids") or []:
             news_by_id.setdefault(str(aid), item)
 
+    # A league that rarely accepts trades gets shown only offers the other
+    # manager would find hard to refuse. Their history sets the bar, not ours.
+    their_bar = 15.0 if trade_posture == "conservative" else 5.0
+    chain_bar = 12.0 if trade_posture == "conservative" else 3.0
+
     queue: list[Action] = []
     queue += injury_actions(me, slots, news_by_id)
-    queue += trade_actions(me, opponents, slots, untouchable)
-    chain = chain_action(me, opponents, slots, untouchable, rejected)
+    queue += trade_actions(me, opponents, slots, untouchable, their_bar)
+    chain = chain_action(me, opponents, slots, untouchable, rejected, chain_bar)
     if chain:
         queue.append(chain)
     queue += waiver_actions(
