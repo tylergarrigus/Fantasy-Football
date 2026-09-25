@@ -1,16 +1,16 @@
 {
-  "fetched_at": "2026-09-24T02:49:09+00:00",
+  "fetched_at": "2026-09-25T04:16:08+00:00",
   "items": [
     {
-      "headline": "Sam Darnold (QB, SEA) listed Questionable",
-      "body": "Lower Body -- Strain",
+      "headline": "Cooper Rush (QB, ATL) listed Out",
+      "body": "Coach's Decision",
       "published": null,
       "url": null,
       "espn_athlete_ids": [
-        3912547
+        2972515
       ],
       "athlete_names": [
-        "Sam Darnold"
+        "Cooper Rush"
       ],
       "source": "Sleeper injury report"
     },
@@ -210,20 +210,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Zach Ertz (TE, PHI) is the hot add -- 623,610 pickups in 24h",
-      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        15835
-      ],
-      "athlete_names": [
-        "Zach Ertz"
-      ],
-      "source": "Sleeper trending"
-    },
-    {
-      "headline": "Darren Waller (TE, CAR) is the hot add -- 522,288 pickups in 24h",
+      "headline": "Darren Waller (TE, CAR) is the hot add -- 317,736 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -236,46 +223,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Kyler Murray (QB, MIN) is the hot add -- 519,736 pickups in 24h",
-      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        3917315
-      ],
-      "athlete_names": [
-        "Kyler Murray"
-      ],
-      "source": "Sleeper trending"
-    },
-    {
-      "headline": "Kirk Cousins (QB, LV) is the hot add -- 469,888 pickups in 24h",
-      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        14880
-      ],
-      "athlete_names": [
-        "Kirk Cousins"
-      ],
-      "source": "Sleeper trending"
-    },
-    {
-      "headline": "Alvin Kamara (RB, NO) is the hot add -- 320,208 pickups in 24h",
-      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        3054850
-      ],
-      "athlete_names": [
-        "Alvin Kamara"
-      ],
-      "source": "Sleeper trending"
-    },
-    {
-      "headline": "AJ Dillon (RB, CAR) is the hot add -- 217,384 pickups in 24h",
+      "headline": "AJ Dillon (RB, CAR) is the hot add -- 233,440 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -288,28 +236,67 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Marcus Mariota (QB, WAS) is the hot add -- 217,232 pickups in 24h",
+      "headline": "Kyler Murray (QB, MIN) is the hot add -- 214,200 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
       "espn_athlete_ids": [
-        2576980
+        3917315
       ],
       "athlete_names": [
-        "Marcus Mariota"
+        "Kyler Murray"
       ],
       "source": "Sleeper trending"
     },
     {
-      "headline": "Jared Goff (QB, DET) is the hot add -- 205,480 pickups in 24h",
+      "headline": "Kirk Cousins (QB, LV) is the hot add -- 194,656 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
       "espn_athlete_ids": [
-        3046779
+        14880
       ],
       "athlete_names": [
-        "Jared Goff"
+        "Kirk Cousins"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Alvin Kamara (RB, NO) is the hot add -- 177,208 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3054850
+      ],
+      "athlete_names": [
+        "Alvin Kamara"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Zach Ertz (TE, PHI) is the hot add -- 136,800 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        15835
+      ],
+      "athlete_names": [
+        "Zach Ertz"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Deshaun Watson (QB, CLE) is the hot add -- 65,192 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3122840
+      ],
+      "athlete_names": [
+        "Deshaun Watson"
       ],
       "source": "Sleeper trending"
     }
