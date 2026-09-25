@@ -1,0 +1,114 @@
+name: Monitor
+
+# The agent's heartbeat. Runs on GitHub-hosted runners, which is free and
+# unlimited because this repository is public.
+#
+# Three things to know about GitHub's scheduler, all designed around here:
+#
+#   1. `schedule` is best-effort and can be delayed 15-30 minutes at peak. Every
+#      cycle is therefore idempotent -- a late or duplicated run is harmless.
+#   2. Scheduled workflows on public repos are auto-disabled after 60 days of no
+#      repository activity. The state commit at the end of each run is that
+#      activity, so the agent keeps itself alive.
+#   3. A brand-new repo sometimes takes 12-48h to register cron. Use the manual
+#      `workflow_dispatch` trigger below to verify the setup before assuming
+#      anything is broken.
+#
+# Minute offsets are deliberately not :00 -- every repo on the planet schedules
+# on the hour, and the queue is measurably worse there.
+
+on:
+  schedule:
+    # Baseline: twice an hour, all week.
+    - cron: "7,37 * * * *"
+    # Sunday game windows (UTC). 16:00-23:59 UTC covers the 12pm-7pm ET slate,
+    # including the ~90 minutes before kickoff when inactives post -- the single
+    # highest-value window of the week.
+    - cron: "3,13,23,33,43,53 16-23 * * 0"
+    # Sunday night + Monday night + Thursday night spillover into the next UTC day.
+    - cron: "3,13,23,33,43,53 0-4 * * 1,2,5"
+    # Daily deep pass: trades and the full waiver wire. 11:13 UTC ~= 7am ET.
+    - cron: "13 11 * * *"
+  workflow_dispatch:
+    inputs:
+      deep:
+        description: "Run the deep sweep (trades + full waiver wire)"
+        type: boolean
+        default: false
+      dry_run:
+        description: "Analyse but do not send notifications"
+        type: boolean
+        default: false
+
+# Never let two cycles overlap -- they would fight over the state file.
+concurrency:
+  group: ff-monitor
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  cycle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install
+        run: pip install -e .
+
+      - name: Decide run depth
+        id: mode
+        run: |
+          # The 11:13 UTC schedule is the deep pass; everything else is light.
+          if [ "${{ github.event.inputs.deep }}" = "true" ] || \
+             [ "${{ github.event.schedule }}" = "13 11 * * *" ]; then
+            echo "deep=--deep" >> "$GITHUB_OUTPUT"
+          else
+            echo "deep=" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Run monitoring cycle
+        env:
+          FF_LEAGUE_1_ID: ${{ secrets.FF_LEAGUE_1_ID }}
+          FF_LEAGUE_2_ID: ${{ secrets.FF_LEAGUE_2_ID }}
+          FF_LEAGUE_1_NAME: ${{ vars.FF_LEAGUE_1_NAME }}
+          FF_LEAGUE_2_NAME: ${{ vars.FF_LEAGUE_2_NAME }}
+          FF_LEAGUE_1_TEAM_ID: ${{ vars.FF_LEAGUE_1_TEAM_ID }}
+          FF_LEAGUE_2_TEAM_ID: ${{ vars.FF_LEAGUE_2_TEAM_ID }}
+          FF_SEASON: ${{ vars.FF_SEASON || '2026' }}
+          ESPN_S2: ${{ secrets.ESPN_S2 }}
+          ESPN_SWID: ${{ secrets.ESPN_SWID }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          FF_NOTIFY_URL: ${{ secrets.FF_NOTIFY_URL }}
+          FANTASYPROS_API_KEY: ${{ secrets.FANTASYPROS_API_KEY }}
+          FF_MIN_CHAMPIONSHIP_DELTA: ${{ vars.FF_MIN_CHAMPIONSHIP_DELTA || '1.0' }}
+          FF_DRY_RUN: ${{ github.event.inputs.dry_run == 'true' && '1' || '0' }}
+        run: ff run ${{ steps.mode.outputs.deep }} --trigger "${{ github.event_name }}"
+
+      - name: Persist state
+        # Runs even if the cycle failed: the run log is the record of *why* it
+        # failed, and committing it is also what keeps cron alive.
+        if: always()
+        run: |
+          git config user.name "fantasy-gm[bot]"
+          git config user.email "fantasy-gm@users.noreply.github.com"
+          if [ -n "$(git status --porcelain state.db)" ]; then
+            git add state.db
+            git commit -m "state: cycle $(date -u +%Y-%m-%dT%H:%MZ)"
+            # Another cycle may have pushed while we ran. Rebase, don't clobber.
+            for attempt in 1 2 3; do
+              git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && \
+              git push origin "HEAD:${GITHUB_REF_NAME}" && break
+              sleep $((attempt * 4))
+            done
+          else
+            echo "No state change to commit."
+          fi
