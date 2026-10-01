@@ -1,32 +1,6 @@
 {
-  "fetched_at": "2026-09-30T03:53:24+00:00",
+  "fetched_at": "2026-10-01T15:02:53+00:00",
   "items": [
-    {
-      "headline": "Devin Singletary (RB, NYG) listed Out",
-      "body": "Coach's Decision",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        4040761
-      ],
-      "athlete_names": [
-        "Devin Singletary"
-      ],
-      "source": "Sleeper injury report"
-    },
-    {
-      "headline": "Cooper Rush (QB, ATL) listed Out",
-      "body": "Coach's Decision",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        2972515
-      ],
-      "athlete_names": [
-        "Cooper Rush"
-      ],
-      "source": "Sleeper injury report"
-    },
     {
       "headline": "Demarcus Robinson (WR, SF) listed IR",
       "body": "Ankle",
@@ -106,21 +80,8 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Lil'Jordan Humphrey (WR, DEN) listed Out",
-      "body": "Coach's Decision",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        4039057
-      ],
-      "athlete_names": [
-        "Lil'Jordan Humphrey"
-      ],
-      "source": "Sleeper injury report"
-    },
-    {
-      "headline": "Mike Evans (WR, SF) listed Out",
-      "body": "Ribs",
+      "headline": "Mike Evans (WR, SF) listed Questionable",
+      "body": "Ribs -- Strain",
       "published": null,
       "url": null,
       "espn_athlete_ids": [
@@ -171,7 +132,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Dallas Goedert (TE, PHI) listed Out",
+      "headline": "Dallas Goedert (TE, PHI) listed Doubtful",
       "body": "Knee - MCL -- Sprain",
       "published": null,
       "url": null,
@@ -180,32 +141,6 @@
       ],
       "athlete_names": [
         "Dallas Goedert"
-      ],
-      "source": "Sleeper injury report"
-    },
-    {
-      "headline": "Tyler Conklin (TE, DET) listed Out",
-      "body": "Coach's Decision",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        3122920
-      ],
-      "athlete_names": [
-        "Tyler Conklin"
-      ],
-      "source": "Sleeper injury report"
-    },
-    {
-      "headline": "Marquise Brown (WR, PHI) listed Out",
-      "body": "Ankle",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        4241372
-      ],
-      "athlete_names": [
-        "Marquise Brown"
       ],
       "source": "Sleeper injury report"
     },
@@ -236,8 +171,8 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Justin Jefferson (WR, MIN) listed Out",
-      "body": "Ankle",
+      "headline": "Justin Jefferson (WR, MIN) listed Questionable",
+      "body": "Ankle -- Sprain",
       "published": null,
       "url": null,
       "espn_athlete_ids": [
@@ -275,19 +210,6 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Darius Slayton (WR, IND) listed Out",
-      "body": "Coach's Decision",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        3916945
-      ],
-      "athlete_names": [
-        "Darius Slayton"
-      ],
-      "source": "Sleeper injury report"
-    },
-    {
       "headline": "Josh Jacobs (RB, GB) listed NA",
       "body": "Personal",
       "published": null,
@@ -314,59 +236,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Ashton Dulin (WR, IND) listed Out",
-      "body": "Ankle",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        4061956
-      ],
-      "athlete_names": [
-        "Ashton Dulin"
-      ],
-      "source": "Sleeper injury report"
-    },
-    {
-      "headline": "Tyler Higbee (TE, LAR) is the hot add -- 780,399 pickups in 24h",
-      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        2573401
-      ],
-      "athlete_names": [
-        "Tyler Higbee"
-      ],
-      "source": "Sleeper trending"
-    },
-    {
-      "headline": "Alvin Kamara (RB, NO) is the hot add -- 765,808 pickups in 24h",
-      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        3054850
-      ],
-      "athlete_names": [
-        "Alvin Kamara"
-      ],
-      "source": "Sleeper trending"
-    },
-    {
-      "headline": "Kalif Raymond (WR, CHI) is the hot add -- 605,758 pickups in 24h",
-      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        2973405
-      ],
-      "athlete_names": [
-        "Kalif Raymond"
-      ],
-      "source": "Sleeper trending"
-    },
-    {
-      "headline": "Tyreek Hill (WR, None) is the hot add -- 549,384 pickups in 24h",
+      "headline": "Tyreek Hill (WR, None) is the hot add -- 499,720 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -379,20 +249,33 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Keenan Allen (WR, IND) is the hot add -- 538,516 pickups in 24h",
+      "headline": "Tyler Higbee (TE, LAR) is the hot add -- 280,791 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
       "espn_athlete_ids": [
-        15818
+        2573401
       ],
       "athlete_names": [
-        "Keenan Allen"
+        "Tyler Higbee"
       ],
       "source": "Sleeper trending"
     },
     {
-      "headline": "Darren Waller (TE, CAR) is the hot add -- 427,536 pickups in 24h",
+      "headline": "Alvin Kamara (RB, NO) is the hot add -- 274,264 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3054850
+      ],
+      "athlete_names": [
+        "Alvin Kamara"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Darren Waller (TE, CAR) is the hot add -- 253,566 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -405,7 +288,20 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Kirk Cousins (QB, LV) is the hot add -- 334,344 pickups in 24h",
+      "headline": "Kalif Raymond (WR, CHI) is the hot add -- 175,618 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        2973405
+      ],
+      "athlete_names": [
+        "Kalif Raymond"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Kirk Cousins (QB, LV) is the hot add -- 168,832 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -418,15 +314,28 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Jakobi Meyers (WR, JAX) is the hot add -- 218,580 pickups in 24h",
+      "headline": "Keenan Allen (WR, IND) is the hot add -- 163,988 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
       "espn_athlete_ids": [
-        3916433
+        15818
       ],
       "athlete_names": [
-        "Jakobi Meyers"
+        "Keenan Allen"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Deshaun Watson (QB, CLE) is the hot add -- 99,248 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3122840
+      ],
+      "athlete_names": [
+        "Deshaun Watson"
       ],
       "source": "Sleeper trending"
     }
