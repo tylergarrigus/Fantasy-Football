@@ -1,0 +1,25 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Secrets. Never commit these.
+.env
+.env.*
+!.env.example
+*.cookies
+secrets.json
+
+# Local HTTP cache (regenerable)
+.cache/
+
+# The state DB is committed by the Actions runner (see ff/db/store.py), but
+# local scratch copies are not.
+state.local.db
+state.local.db-*
+data/draft_state.db*
+data/.cache/
