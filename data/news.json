@@ -1,10 +1,164 @@
 {
-  "fetched_at": "2026-10-13T19:23:42+00:00",
+  "fetched_at": "2026-10-14T03:06:48+00:00",
   "items": [
+    {
+      "headline": "Niners LB Dre Greenlaw's appeal of suspension rejected, will sit vs. Commanders",
+      "body": "Niners linebacker Dre Greenlaw will serve his one-game suspension in Monday night's game against the Commanders after the NFL denied his appeal Tuesday.",
+      "published": "2026-10-14T02:37:47Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50178480/niners-lb-dre-greenlaw-appeal-1-game-suspension-rejected",
+      "espn_athlete_ids": [
+        380096
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Tyreek Hill found liable for 2 of 10 counts in battery trial; wife awarded $500K",
+      "body": "A Miami jury returned a mixed verdict in the assault and battery civil trial against Tyreek Hill, finding the former NFL receiver liable for two counts of battery but not liable for the eight other claims made by his estranged wife, Lakeeta Vaccaro.",
+      "published": "2026-10-14T02:27:17Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50178212/tyreek-hill-found-liable-2-counts-battery-civil-trial-not-liable-remaining-claims",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Cleveland Browns gets their close-up in first trailer for Hulu's 'The Land'",
+      "body": "Created by Dan Fogelman, the NFL-backed drama follows a fictional version of the Browns and premieres the day after Super Bowl LXI.",
+      "published": "2026-10-14T00:31:08Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50177761/cleveland-browns-land-hulu-trailer",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Broncos' Bo Nix says he needs to simplify approach, play faster amid rocky start",
+      "body": "Broncos quarterback Bo Nix said Tuesday he can find solutions if he can simplify his approach: \"Making it simple, making things 1-2-3, and let's play fast and let's roll.\"",
+      "published": "2026-10-14T00:05:25Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50177580/broncos-bo-nix-says-needs-simplify-approach-amid-rocky-start",
+      "espn_athlete_ids": [
+        549664
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Panthers RT Moton coughed up blood before clot diagnosis",
+      "body": "Carolina Panthers right tackle Taylor Moton, 32, told reporters Tuesday that he coughed up blood before being diagnosed with multiple blood clots in June, an ailment that sidelined him through training camp and into the second month of the regular season.",
+      "published": "2026-10-14T01:37:20Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50177416/panthers-rt-moton-coughed-blood-clot-diagnosis",
+      "espn_athlete_ids": [
+        166989
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Saints owner Gayle Benson rips 1-4 start, says fans 'deserve better'",
+      "body": "Saints owner Gayle Benson called out several members of the organization amid the team's 1-4 start and said that fans are \"right to expect more than we have delivered.\"",
+      "published": "2026-10-14T01:15:11Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50177269/saints-owner-benson-rips-1-4-start-says-fans-deserve-better",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Micah Parsons: 'Jayden Daniels probably cost my man Dan Quinn his job'",
+      "body": "Micah Parsons said on his podcast that Jayden Daniels' mistake at the end of overtime Sunday will probably end up getting Commanders coach Dan Quinn fired.",
+      "published": "2026-10-13T23:36:26Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50177238/parsons-qb-daniels-probably-cost-my-man-dan-quinn-job",
+      "espn_athlete_ids": [
+        390109,
+        470130
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "The Saints' offense keeps declining each week. Can they turn it around?",
+      "body": "After dropping three straight games at home, New Orleans goes on the road with intent to turn things around.",
+      "published": "2026-10-14T01:33:25Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50176573/new-orleans-saints-offense-worse-week-6-turn-around",
+      "espn_athlete_ids": [
+        209237,
+        391014
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Bills' Joe Brady warns RB James Cook of 'consequences' for costly fumbles",
+      "body": "Bills coach Joe Brady said RB James Cook has done a lot of \"good things\" this season but warned his star runner about the \"consequences\" of his fumbling issues.",
+      "published": "2026-10-13T23:32:42Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50177135/bills-brady-warns-rb-cook-consequences-costly-fumbles",
+      "espn_athlete_ids": [
+        529581
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "NFL suspends Rams' Alaric Jackson for two games after punch",
+      "body": "The NFL on Tuesday suspended Rams left tackle Alaric Jackson for two games without pay after he punched Bills outside linebacker Bradley Chubb following Monday night's game in Los Angeles.",
+      "published": "2026-10-14T02:01:58Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50173615/nfl-suspends-rams-lt-jackson-punching-bills-chubb",
+      "espn_athlete_ids": [
+        471465,
+        184449
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Bears DE Montez Sweat suspended two games for violating NFL's PED policy",
+      "body": "The NFL has issued a two-game suspension to Bears defensive end Montez Sweat for violating the league's policy on performance-enhancing substances.",
+      "published": "2026-10-13T22:02:40Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50176333/bears-de-sweat-suspended-two-games-violating-ped-policy",
+      "espn_athlete_ids": [
+        379886
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Why Rams releasing Harrison Mevis for Blake Grupe is a 'significant change'",
+      "body": " Why Rams releasing Harrison Mevis for Blake Grupe is a 'significant change'",
+      "published": "2026-10-13T19:58:30Z",
+      "url": "https://www.espn.com/video/clip/_/id/50176017/why-rams-releasing-harrison-mevis-blake-grupe-significant-change",
+      "espn_athlete_ids": [
+        2963,
+        439595,
+        221789
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
     {
       "headline": "Eagles pass rusher Jalyx Hunt (leg) unlikely vs. Panthers",
       "body": "Eagles pass rusher Jalyx Hunt, who sustained ankle and knee injuries last week, is not expected to play Sunday against the Carolina Panthers, DC Vic Fangio said.",
-      "published": "2026-10-13T19:15:49Z",
+      "published": "2026-10-13T20:26:07Z",
       "url": "https://www.espn.com/nfl/story/_/id/50175748/eagles-pass-rusher-jalyx-hunt-leg-unlikely-vs-panthers",
       "espn_athlete_ids": [
         394085,
@@ -33,7 +187,7 @@
     {
       "headline": "Pat Freiermuth: Mike McCarthy is everything I expected",
       "body": "Pat Freiermuth: Mike McCarthy is everything I expected",
-      "published": "2026-10-13T19:07:07Z",
+      "published": "2026-10-13T19:53:58Z",
       "url": "https://www.espn.com/video/clip/_/id/50175744/mike-mccarthy-everything-expected",
       "espn_athlete_ids": [
         470266,
@@ -90,7 +244,7 @@
     {
       "headline": "Expected fantasy points (xFP): 2026 leaderboard for RBs",
       "body": "xFP focuses solely on opportunity. Here are the leaders for 2026.",
-      "published": "2026-10-13T17:45:20Z",
+      "published": "2026-10-14T00:15:15Z",
       "url": "https://www.espn.com/fantasy/football/story/_/id/49869631/2026-fantasy-football-expected-fantasy-points-xfp-rb",
       "espn_athlete_ids": [],
       "athlete_names": [],
@@ -124,9 +278,9 @@
       "source": "ESPN"
     },
     {
-      "headline": "Sources: Rams release kicker Mevis after miscues in loss, sign Grupe from Jets",
+      "headline": "Rams releasing kicker Mevis after miscues in loss, sign Grupe from Jets",
       "body": "The Rams are releasing kicker Harrison Mevis and signing Blake Grupe off the Jets' practice squad, sources told NFL Network's Ian Rapoport and Mike Garafolo on Tuesday.",
-      "published": "2026-10-13T18:53:07Z",
+      "published": "2026-10-14T01:12:54Z",
       "url": "https://www.espn.com/nfl/story/_/id/50175234/rams-release-kicker-mevis-miscues-ot-loss",
       "espn_athlete_ids": [
         439595,
@@ -185,7 +339,7 @@
     {
       "headline": "Recruiting firm's Brian Flores memo contains racial stereotypes, lawyers say",
       "body": "A recruiting report on Brian Flores has examples of what his lawyers say are racial stereotypes that NFL teams use when evaluating Black coaching candidates.",
-      "published": "2026-10-13T18:13:11Z",
+      "published": "2026-10-13T22:38:50Z",
       "url": "https://www.espn.com/nfl/story/_/id/50174946/brian-flores-memo-rife-racial-stereotypes-lawyers-say",
       "espn_athlete_ids": [],
       "athlete_names": [],
@@ -301,104 +455,6 @@
       ],
       "athlete_names": [
         null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "2026 NFL playoff picture: AFC, NFC seed projections, chances to make postseason",
-      "body": "We're looking ahead to how the 14-team playoff picture could line up -- and who will win divisions -- en route to the Super Bowl.",
-      "published": "2026-10-13T15:02:42Z",
-      "url": "https://www.espn.com/nfl/story/_/id/49745176/2026-nfl-playoff-predictions-afc-nfc-odds-super-bowl",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Why Mike Clay is not interested in MarShawn Lloyd in Week 6",
-      "body": "Why Mike Clay is not interested in MarShawn Lloyd in Week 6",
-      "published": "2026-10-13T15:25:29Z",
-      "url": "https://www.espn.com/video/clip/_/id/50174093/why-mike-clay-not-interested-marshawn-lloyd-week-6",
-      "espn_athlete_ids": [
-        440533
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Mike Clay 'optimistic' over Pat Freiermuth in Week 6",
-      "body": "Mike Clay 'optimistic' over Pat Freiermuth in Week 6",
-      "published": "2026-10-13T16:42:42Z",
-      "url": "https://www.espn.com/video/clip/_/id/50174048/mike-clay-optimistic-pat-freiermuth-week-6",
-      "espn_athlete_ids": [
-        470266
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Sources: Patriots' TreVeyon Henderson out multiple weeks with high ankle sprain",
-      "body": "Patriots running back TreVeyon Henderson is expected to miss multiple weeks because of a high ankle sprain, sources told ESPN.",
-      "published": "2026-10-13T15:10:23Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50173985/sources-patriots-treveyon-henderson-high-ankle-sprain",
-      "espn_athlete_ids": [
-        492605
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Stephen A. to Canty: It's kind of hard not to trust Josh Allen",
-      "body": "Stephen A. to Canty: It's kind of hard not to trust Josh Allen",
-      "published": "2026-10-13T14:56:46Z",
-      "url": "https://www.espn.com/video/clip/_/id/50173928/kind-hard-not-trust-josh-allen",
-      "espn_athlete_ids": [
-        184455
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "What punishment should Alaric Jackson face after punching Bradley Chubb postgame?",
-      "body": "What punishment should Alaric Jackson face after punching Bradley Chubb postgame?",
-      "published": "2026-10-13T14:49:29Z",
-      "url": "https://www.espn.com/video/clip/_/id/50173897/what-punishment-alaric-jackson-face-punching-bradley-chubb-postgame",
-      "espn_athlete_ids": [
-        471465,
-        184449
-      ],
-      "athlete_names": [
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Jeff Saturday: The Rams will figure it out",
-      "body": "Jeff Saturday: The Rams will figure it out",
-      "published": "2026-10-13T12:51:58Z",
-      "url": "https://www.espn.com/video/clip/_/id/50173097/rams-figure-out",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Sources: Jaguars LT Anton Harrison to undergo knee surgery",
-      "body": "Jaguars left tackle Anton Harrison will have arthroscopic surgery on his right knee when the team returns from London next week, league sources told NFL Network's Ian Rapoport and ESPN's Jeremy Fowler.",
-      "published": "2026-10-13T15:49:13Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50172717/sources-jaguars-lt-anton-harrison-undergo-knee-surgery",
-      "espn_athlete_ids": [
-        445912
-      ],
-      "athlete_names": [
         null
       ],
       "source": "ESPN"
@@ -859,7 +915,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Tyler Higbee (TE, LAR) is the hot add -- 407,547 pickups in 24h",
+      "headline": "Tyler Higbee (TE, LAR) is the hot add -- 458,541 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -872,7 +928,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Kendrick Bourne (WR, ARI) is the hot add -- 242,889 pickups in 24h",
+      "headline": "Kendrick Bourne (WR, ARI) is the hot add -- 372,225 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -885,7 +941,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Aaron Rodgers (QB, PIT) is the hot add -- 190,748 pickups in 24h",
+      "headline": "Aaron Rodgers (QB, PIT) is the hot add -- 251,320 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -898,7 +954,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Kirk Cousins (QB, LV) is the hot add -- 143,536 pickups in 24h",
+      "headline": "Kirk Cousins (QB, LV) is the hot add -- 230,768 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
