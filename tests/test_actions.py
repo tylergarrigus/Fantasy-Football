@@ -207,3 +207,17 @@ def test_dead_slot_with_no_bench_fix_becomes_a_pickup():
     assert "StreamRB" in pick.title
     assert "ByeRB" not in pick.title
     assert pick.urgency == 2
+
+
+def test_never_drop_a_good_player_just_because_he_is_on_bye():
+    mine = weekly_roster(
+        RB0=weekly("RB0", "RB", 320, 22, "RB", bye=True),
+        RBb=weekly("RBb", "RB", 150, 9, "BE", injury="OUT"),
+        WRbye=weekly("WRbye", "WR", 230, 0, "BE", bye=True),
+        WRscrub=weekly("WRscrub", "WR", 60, 4, "BE"),
+    )
+    fa = [weekly("StreamRB", "RB", 90, 11, None)]
+    q = build_queue(state(mine, free_agents=fa), [])
+    pick = next(a for a in q if "Pick up" in a.title)
+    assert "drop WRscrub" in pick.title
+    assert "WRbye" not in pick.title

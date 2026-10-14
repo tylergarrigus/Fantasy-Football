@@ -299,7 +299,8 @@ def lineup_actions(me: dict, slots: dict,
     players = [p for p in me.get("players", []) if _week_value(p) is not None]
     if not players or not any("current_slot" in p for p in players):
         return []
-    weekly = [{**p, "projected": _week_value(p)} for p in players]
+    weekly = [{**p, "season": p.get("projected"), "projected": _week_value(p)}
+              for p in players]
     best = best_lineup(weekly, slots)
     best_ids = {s["player_id"] for s in best.starters}
     started = [p for p in weekly
@@ -351,7 +352,9 @@ def lineup_actions(me: dict, slots: dict,
         drop = min((p for p in weekly if p["player_id"] not in best_ids
                     and p["name"] not in named
                     and (p.get("current_slot") or "BE") != "IR"),
-                   key=lambda p: (p.get("projected") or 0), default=None)
+                   # Who to cut is a rest-of-season question: a good player
+                   # on bye this week is still a good player next week.
+                   key=lambda p: (p.get("season") or 0), default=None)
         drop_txt = f", drop {drop['name']}" if drop else ""
         opp = pick.get("opponent")
         actions.append(Action(
