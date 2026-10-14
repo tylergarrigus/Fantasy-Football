@@ -176,6 +176,7 @@ CREATE TABLE IF NOT EXISTS league_projections (
     projected   REAL,
     season_avg  REAL,
     last_actual REAL,
+    opponent    TEXT,                        -- NFL opponent this week; 'BYE' when idle
     updated_at  TEXT NOT NULL,
     PRIMARY KEY (league_id, player_id, week)
 );

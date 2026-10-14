@@ -256,6 +256,80 @@ def waiver_actions(me: dict, free_agents: Sequence[dict], slots: dict,
     return out[:3]
 
 
+UNAVAILABLE = OUT_STATUSES | {"PUP", "NA"}
+
+
+def _week_value(p: dict) -> float | None:
+    """What a player is worth in THIS week's lineup.
+
+    Bye and unavailable players are worth exactly zero -- the thing season
+    averages hide. When ESPN gave no weekly number, fall back to a per-game
+    share of the season projection rather than inventing one.
+    """
+    if p.get("on_bye"):
+        return 0.0
+    status = (p.get("injury_status") or "").upper().replace(" ", "_")
+    if status in UNAVAILABLE:
+        return 0.0
+    if p.get("week_projected") is not None:
+        return float(p["week_projected"])
+    if p.get("projected") is not None:
+        return float(p["projected"]) / 17.0
+    return None
+
+
+def _why_not(p: dict) -> str:
+    if p.get("on_bye"):
+        return "on bye"
+    status = (p.get("injury_status") or "").upper().replace(" ", "_")
+    if status in UNAVAILABLE:
+        return status.replace("_", " ").title()
+    return f"{(_week_value(p) or 0):.1f} proj"
+
+
+def lineup_actions(me: dict, slots: dict) -> list[Action]:
+    """Start/sit for this week only, from weekly projections and byes."""
+    players = [p for p in me.get("players", []) if _week_value(p) is not None]
+    if not players or not any("current_slot" in p for p in players):
+        return []
+    weekly = [{**p, "projected": _week_value(p)} for p in players]
+    best = best_lineup(weekly, slots)
+    best_ids = {s["player_id"] for s in best.starters}
+    started = [p for p in weekly
+               if (p.get("current_slot") or "BE") not in ("BE", "IR")]
+    started_ids = {p["player_id"] for p in started}
+
+    ins = sorted((p for p in weekly if p["player_id"] in best_ids - started_ids),
+                 key=lambda p: -p["projected"])
+    outs = sorted((p for p in started if p["player_id"] not in best_ids),
+                  key=lambda p: p["projected"])
+    actions: list[Action] = []
+    for put_in, take_out in zip(ins, outs):
+        gain = put_in["projected"] - take_out["projected"]
+        dead = take_out["projected"] == 0
+        if gain < 1.0 and not dead:
+            continue
+        reason = _why_not(take_out)
+        opp = put_in.get("opponent")
+        vs = f" vs {opp}" if opp and opp != "BYE" else ""
+        actions.append(Action(
+            kind="lineup",
+            title=f"Start {put_in['name']}, bench {take_out['name']}",
+            why=(f"{take_out['name']} is {reason}; {put_in['name']} projects "
+                 f"{put_in['projected']:.1f}{vs} this week."),
+            confidence="High" if dead or gain >= 4 else "Medium",
+            confidence_why=("a bye or injury is a fact, not a projection" if dead
+                            else f"about {gain:.1f} points this week"),
+            deadline="Before kickoff",
+            steps=f"ESPN app: My Team → move {take_out['name']} to bench → "
+                  f"start {put_in['name']}.",
+            gain=gain,
+            urgency=2 if dead else 1,
+            players=[put_in["name"], take_out["name"]],
+        ))
+    return actions
+
+
 def injury_actions(me: dict, slots: dict, news_by_espn_id: dict) -> list[Action]:
     """Starters in real injury trouble -- not the ambient 'questionable' fog."""
     lineup = best_lineup(me["players"], slots)
@@ -314,7 +388,11 @@ def build_queue(state: dict, news_items: Sequence[dict],
     chain_bar = 12.0 if trade_posture == "conservative" else 3.0
 
     queue: list[Action] = []
-    queue += injury_actions(me, slots, news_by_id)
+    lineup = lineup_actions(me, slots)
+    queue += lineup
+    covered = {n for a in lineup for n in a.players}
+    queue += [a for a in injury_actions(me, slots, news_by_id)
+              if not set(a.players) & covered]
     queue += trade_actions(me, opponents, slots, untouchable, their_bar)
     chain = chain_action(me, opponents, slots, untouchable, rejected, chain_bar)
     if chain:

@@ -55,6 +55,12 @@ class Store:
 
     def _ensure_schema(self) -> None:
         self.conn.executescript(SCHEMA_PATH.read_text())
+        # CREATE TABLE IF NOT EXISTS never alters an existing table, so columns
+        # added after a DB was first created need an explicit, idempotent add.
+        for table, column, decl in (("league_projections", "opponent", "TEXT"),):
+            cols = {r[1] for r in self.conn.execute(f"PRAGMA table_info({table})")}
+            if column not in cols:
+                self.conn.execute(f"ALTER TABLE {table} ADD COLUMN {column} {decl}")
         self.conn.execute(
             "INSERT INTO schema_meta(key, value) VALUES('version', ?) "
             "ON CONFLICT(key) DO UPDATE SET value = excluded.value",

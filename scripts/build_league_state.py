@@ -255,10 +255,23 @@ def build(league_id: int, key: str, name: str, season: int, out_dir: Path) -> di
         ).fetchall()
     }
 
+    # This week's projection and opponent ('BYE' when idle) -- the only valid
+    # inputs to start/sit. Season numbers stay for trades and waivers.
+    week = ctx.current_week()
+    weekly = {
+        r["player_id"]: (r["projected"], r["opponent"])
+        for r in ctx.query(
+            "SELECT player_id, projected, opponent FROM league_projections "
+            "WHERE league_id = :league_id AND week = :wk",
+            wk=week,
+        )
+    }
+
     def decorate(rows) -> list[dict]:
         out = []
         for r in rows:
             pid = r["player_id"]
+            wk_proj, opp = weekly.get(pid, (None, None))
             out.append(
                 {
                     "player_id": pid,
@@ -269,6 +282,9 @@ def build(league_id: int, key: str, name: str, season: int, out_dir: Path) -> di
                     "injury_status": r["injury_status"] if "injury_status" in r.keys() else None,
                     "projected": proj.get(pid),
                     "adp": adp.get(pid),
+                    "week_projected": wk_proj,
+                    "opponent": opp,
+                    "on_bye": opp == "BYE",
                 }
             )
         return out
@@ -329,6 +345,7 @@ def build(league_id: int, key: str, name: str, season: int, out_dir: Path) -> di
         "waiver_type": settings["waiver_type"] if settings else None,
         "faab_budget": settings["faab_budget"] if settings else None,
         "my_team_id": ctx.my_team_id(),
+        "current_week": week,
         "teams": teams,
         "free_agents": free_agents[:120],
     }

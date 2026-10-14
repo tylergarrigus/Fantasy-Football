@@ -263,16 +263,18 @@ class LeagueContext:
         projected: float | None,
         season_avg: float | None = None,
         last_actual: float | None = None,
+        opponent: str | None = None,
     ) -> None:
         self.execute(
             "INSERT INTO league_projections(league_id, player_id, week, projected, "
-            "season_avg, last_actual, updated_at) "
-            "VALUES(:league_id, :pid, :week, :proj, :avg, :last, :ts) "
+            "season_avg, last_actual, opponent, updated_at) "
+            "VALUES(:league_id, :pid, :week, :proj, :avg, :last, :opp, :ts) "
             "ON CONFLICT(league_id, player_id, week) DO UPDATE SET "
             "projected = excluded.projected, season_avg = excluded.season_avg, "
-            "last_actual = excluded.last_actual, updated_at = excluded.updated_at",
+            "last_actual = excluded.last_actual, opponent = excluded.opponent, "
+            "updated_at = excluded.updated_at",
             pid=player_id, week=week, proj=projected, avg=season_avg,
-            last=last_actual, ts=utcnow(),
+            last=last_actual, opp=opponent, ts=utcnow(),
         )
 
     def projection(self, player_id: str, week: int) -> float | None:

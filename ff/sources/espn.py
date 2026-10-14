@@ -382,25 +382,47 @@ class ESPNFantasySource:
     def _store_projection(
         self, ctx: LeagueContext, espn_player: Any, player_id: str, league: Any
     ) -> None:
-        """Capture ESPN's projection under THIS league's scoring settings.
+        """Capture THIS week's projection and opponent under this league's scoring.
 
         ESPN computes projected points against the league's own scoring rules,
         so the same player legitimately carries different numbers in each league
         -- which is why this table is league-scoped.
+
+        Roster players carry `stats` keyed by scoring period and `schedule`
+        keyed by the period as a string. A team with no game that week is on
+        bye: the player is stored at 0 with opponent 'BYE', because a season
+        average for a man who isn't playing is the single worst lineup input.
         """
         week = getattr(league, "current_week", None)
         if not week:
             return
-        projected = getattr(espn_player, "projected_points", None)
+        week = int(week)
+        stats = getattr(espn_player, "stats", None) or {}
+        weekly = (stats.get(week) or {}).get("projected_points")
+        if weekly is None:
+            # BoxPlayer exposes the weekly number directly.
+            weekly = getattr(espn_player, "projected_points", None)
         season_avg = getattr(espn_player, "projected_avg_points", None)
-        if projected is None and season_avg is None:
+
+        schedule = getattr(espn_player, "schedule", None) or {}
+        opponent = None
+        if schedule:
+            game = schedule.get(str(week)) or schedule.get(week)
+            if game:
+                opponent = str(game.get("team") or "") or None
+            else:
+                opponent = "BYE"
+                weekly = 0.0
+
+        if weekly is None and season_avg is None:
             return  # no projection is better than a fabricated one
         try:
             ctx.set_projection(
-                player_id, int(week),
-                float(projected) if projected is not None else None,
+                player_id, week,
+                float(weekly) if weekly is not None else None,
                 float(season_avg) if season_avg is not None else None,
                 _safe_float(getattr(espn_player, "points", None)),
+                opponent,
             )
         except (TypeError, ValueError):
             return

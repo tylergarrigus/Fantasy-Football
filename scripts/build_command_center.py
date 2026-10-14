@@ -235,7 +235,7 @@ def render_action(a: Action, i: int, league: str) -> str:
         body = step(1, s1, "do now", notes[0]) + step(2, s2, "after step 1", notes[1])
         gains = (f'<div class="gains"><span class="gchip you">Your lineup +{c["total_gain"]:.0f}</span></div>'
                  '<p class="gnote">Pills count points that get started, not raw player totals.</p>')
-    elif a.kind in ("injury", "info"):
+    elif a.kind in ("injury", "info", "lineup"):
         body = f'<p class="why">{esc(a.why)}</p>'
 
     msg = ""
@@ -290,7 +290,9 @@ def render_team(a: dict) -> str:
     def prow(s, slot=True):
         status = (s.get("injury_status") or "").upper()
         flag = ""
-        if status and status not in ("ACTIVE", "NORMAL"):
+        if s.get("on_bye"):
+            flag = ' <span class="flag bad">BYE</span>'
+        elif status and status not in ("ACTIVE", "NORMAL"):
             cls = "bad" if status in ("OUT", "DOUBTFUL", "INJURY_RESERVE") else "warn"
             flag = f' <span class="flag {cls}">{esc(status[:3])}</span>'
         left = f'<td class="slot">{esc(s["slot"])}</td>' if slot else ""
@@ -696,6 +698,7 @@ a{color:var(--ink)}
 .k-injury .kind,[data-urgent] .kind{background:var(--help-bg)}
 .k-info .kind{background:var(--good-bg)}
 .k-plan .kind{background:var(--plan-bg)}
+.k-lineup .kind{background:var(--help-bg)}
 .conf{font:800 11.5px/1 var(--body);letter-spacing:.04em;padding:3px 10px;
   border:2px solid var(--ink);border-radius:999px}
 .conf.hi{background:var(--good-bg)}
