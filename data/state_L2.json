@@ -21,6 +21,7 @@
   "waiver_type": null,
   "faab_budget": null,
   "my_team_id": 6,
+  "current_week": 6,
   "teams": [
     {
       "team_id": 8,
@@ -37,6 +38,9 @@
           "injury_status": null,
           "projected": 90.93599287,
           "adp": 115.72,
+          "week_projected": 0.0,
+          "opponent": "BYE",
+          "on_bye": true,
           "current_slot": "D/ST"
         },
         {
@@ -48,6 +52,9 @@
           "injury_status": null,
           "projected": 21.34312208,
           "adp": 158.55,
+          "week_projected": 14.86,
+          "opponent": "DEN",
+          "on_bye": false,
           "current_slot": "RB/WR/TE"
         },
         {
@@ -59,6 +66,9 @@
           "injury_status": "Questionable",
           "projected": 124.26267583,
           "adp": 78.94,
+          "week_projected": 10.21,
+          "opponent": "KC",
+          "on_bye": false,
           "current_slot": "BE"
         },
         {
@@ -70,6 +80,9 @@
           "injury_status": null,
           "projected": 117.08713061,
           "adp": 126.07,
+          "week_projected": 9.47,
+          "opponent": "HOU",
+          "on_bye": false,
           "current_slot": "K"
         },
         {
@@ -81,6 +94,9 @@
           "injury_status": "Questionable",
           "projected": 167.20693281,
           "adp": 65.47,
+          "week_projected": 13.26,
+          "opponent": "BAL",
+          "on_bye": false,
           "current_slot": "BE"
         },
         {
@@ -92,6 +108,9 @@
           "injury_status": null,
           "projected": 142.92221724,
           "adp": 94.49,
+          "week_projected": 10.83,
+          "opponent": "LAC",
+          "on_bye": false,
           "current_slot": "TE"
         },
         {
@@ -103,6 +122,9 @@
           "injury_status": null,
           "projected": 204.65953631,
           "adp": 116.81,
+          "week_projected": 19.65,
+          "opponent": "ARI",
+          "on_bye": false,
           "current_slot": "QB"
         },
         {
@@ -114,6 +136,9 @@
           "injury_status": "Out",
           "projected": 235.75685221,
           "adp": 38.1,
+          "week_projected": 19.29,
+          "opponent": "CLE",
+          "on_bye": false,
           "current_slot": "IR"
         },
         {
@@ -125,6 +150,9 @@
           "injury_status": "Out",
           "projected": 123.46320715,
           "adp": 96.18,
+          "week_projected": 0.0,
+          "opponent": "JAX",
+          "on_bye": false,
           "current_slot": "BE"
         },
         {
@@ -136,6 +164,9 @@
           "injury_status": null,
           "projected": 216.62715551,
           "adp": 15.76,
+          "week_projected": 0.0,
+          "opponent": "BYE",
+          "on_bye": true,
           "current_slot": "BE"
         },
         {
@@ -147,6 +178,9 @@
           "injury_status": null,
           "projected": 117.82028823,
           "adp": 134.04,
+          "week_projected": 10.54,
+          "opponent": "NYG",
+          "on_bye": false,
           "current_slot": "BE"
         },
         {
@@ -158,6 +192,9 @@
           "injury_status": null,
           "projected": 205.59879697,
           "adp": 32.05,
+          "week_projected": 16.93,
+          "opponent": "GB",
+          "on_bye": false,
           "current_slot": "RB"
         },
         {
@@ -169,6 +206,9 @@
           "injury_status": null,
           "projected": 285.31239131,
           "adp": 13.18,
+          "week_projected": 22.71,
+          "opponent": "LAC",
+          "on_bye": false,
           "current_slot": "RB"
         },
         {
@@ -180,6 +220,9 @@
           "injury_status": null,
           "projected": 185.82819516,
           "adp": 74.56,
+          "week_projected": 16.73,
+          "opponent": "DAL",
+          "on_bye": false,
           "current_slot": "WR"
         },
         {
@@ -191,6 +234,9 @@
           "injury_status": null,
           "projected": 259.9600167,
           "adp": 6.36,
+          "week_projected": 22.78,
+          "opponent": "ARI",
+          "on_bye": false,
           "current_slot": "WR"
         }
       ],
@@ -204,6 +250,9 @@
           "injury_status": "Out",
           "projected": 235.75685221,
           "adp": 38.1,
+          "week_projected": 19.29,
+          "opponent": "CLE",
+          "on_bye": false,
           "current_slot": "IR",
           "slot": "QB"
         },
@@ -216,6 +265,9 @@
           "injury_status": null,
           "projected": 285.31239131,
           "adp": 13.18,
+          "week_projected": 22.71,
+          "opponent": "LAC",
+          "on_bye": false,
           "current_slot": "RB",
           "slot": "RB"
         },
@@ -228,6 +280,9 @@
           "injury_status": null,
           "projected": 205.59879697,
           "adp": 32.05,
+          "week_projected": 16.93,
+          "opponent": "GB",
+          "on_bye": false,
           "current_slot": "RB",
           "slot": "RB"
         },
@@ -240,6 +295,9 @@
           "injury_status": null,
           "projected": 259.9600167,
           "adp": 6.36,
+          "week_projected": 22.78,
+          "opponent": "ARI",
+          "on_bye": false,
           "current_slot": "WR",
           "slot": "WR"
         },
@@ -252,6 +310,9 @@
           "injury_status": null,
           "projected": 216.62715551,
           "adp": 15.76,
+          "week_projected": 0.0,
+          "opponent": "BYE",
+          "on_bye": true,
           "current_slot": "BE",
           "slot": "WR"
         },
@@ -264,6 +325,9 @@
           "injury_status": null,
           "projected": 142.92221724,
           "adp": 94.49,
+          "week_projected": 10.83,
+          "opponent": "LAC",
+          "on_bye": false,
           "current_slot": "TE",
           "slot": "TE"
         },
@@ -276,6 +340,9 @@
           "injury_status": null,
           "projected": 117.08713061,
           "adp": 126.07,
+          "week_projected": 9.47,
+          "opponent": "HOU",
+          "on_bye": false,
           "current_slot": "K",
           "slot": "K"
         },
@@ -288,6 +355,9 @@
           "injury_status": null,
           "projected": 90.93599287,
           "adp": 115.72,
+          "week_projected": 0.0,
+          "opponent": "BYE",
+          "on_bye": true,
           "current_slot": "D/ST",
           "slot": "D/ST"
         },
@@ -300,6 +370,9 @@
           "injury_status": null,
           "projected": 185.82819516,
           "adp": 74.56,
+          "week_projected": 16.73,
+          "opponent": "DAL",
+          "on_bye": false,
           "current_slot": "WR",
           "slot": "FLEX"
         }
@@ -314,6 +387,9 @@
           "injury_status": null,
           "projected": 204.65953631,
           "adp": 116.81,
+          "week_projected": 19.65,
+          "opponent": "ARI",
+          "on_bye": false,
           "current_slot": "QB"
         },
         {
@@ -325,6 +401,9 @@
           "injury_status": "Questionable",
           "projected": 167.20693281,
           "adp": 65.47,
+          "week_projected": 13.26,
+          "opponent": "BAL",
+          "on_bye": false,
           "current_slot": "BE"
         },
         {
@@ -336,6 +415,9 @@
           "injury_status": "Questionable",
           "projected": 124.26267583,
           "adp": 78.94,
+          "week_projected": 10.21,
+          "opponent": "KC",
+          "on_bye": false,
           "current_slot": "BE"
         },
         {
@@ -347,6 +429,9 @@
           "injury_status": "Out",
           "projected": 123.46320715,
           "adp": 96.18,
+          "week_projected": 0.0,
+          "opponent": "JAX",
+          "on_bye": false,
           "current_slot": "BE"
         },
         {
@@ -358,6 +443,9 @@
           "injury_status": null,
           "projected": 117.82028823,
           "adp": 134.04,
+          "week_projected": 10.54,
+          "opponent": "NYG",
+          "on_bye": false,
           "current_slot": "BE"
         },
         {
@@ -369,6 +457,9 @@
           "injury_status": null,
           "projected": 21.34312208,
           "adp": 158.55,
+          "week_projected": 14.86,
+          "opponent": "DEN",
+          "on_bye": false,
           "current_slot": "RB/WR/TE"
         }
       ],
@@ -391,6 +482,9 @@
           "injury_status": null,
           "projected": 90.72093911,
           "adp": 146.62,
+          "week_projected": 6.21,
+          "opponent": "HOU",
+          "on_bye": false,
           "current_slot": "D/ST"
         },
         {
@@ -402,6 +496,9 @@
           "injury_status": null,
           "projected": 178.50048202,
           "adp": 94.54,
+          "week_projected": 14.08,
+          "opponent": "LAR",
+          "on_bye": false,
           "current_slot": "WR"
         },
         {
@@ -413,6 +510,9 @@
           "injury_status": null,
           "projected": 134.79534423,
           "adp": 128.74,
+          "week_projected": 0.0,
+          "opponent": "BYE",
+          "on_bye": true,
           "current_slot": "K"
         },
         {
@@ -424,6 +524,9 @@
           "injury_status": null,
           "projected": 135.08848933,
           "adp": 64.01,
+          "week_projected": 13.23,
+          "opponent": "NO",
+          "on_bye": false,
           "current_slot": "BE"
         },
         {
@@ -435,6 +538,9 @@
           "injury_status": "",
           "projected": null,
           "adp": null,
+          "week_projected": null,
+          "opponent": null,
+          "on_bye": false,
           "current_slot": "IR"
         },
         {
@@ -446,6 +552,9 @@
           "injury_status": null,
           "projected": 240.94991602,
           "adp": 75.95,
+          "week_projected": 18.77,
+          "opponent": "LAC",
+          "on_bye": false,
           "current_slot": "QB"
         },
         {
@@ -457,6 +566,9 @@
           "injury_status": "Out",
           "projected": 154.971466,
           "adp": 89.71,
+          "week_projected": 13.47,
+          "opponent": "LV",
+          "on_bye": false,
           "current_slot": "BE"
         },
         {
@@ -468,6 +580,9 @@
           "injury_status": null,
           "projected": 210.99337928,
           "adp": 8.5,
+          "week_projected": 18.88,
+          "opponent": "TEN",
+          "on_bye": false,
           "current_slot": "RB"
         },
         {
@@ -479,6 +594,9 @@
           "injury_status": null,
           "projected": 236.38921346,
           "adp": 9.76,
+          "week_projected": 0.0,
+          "opponent": "BYE",
+          "on_bye": true,
           "current_slot": "BE"
         },
         {
@@ -490,6 +608,9 @@
           "injury_status": null,
           "projected": 192.73743163,
           "adp": 79.47,
+          "week_projected": 14.64,
+          "opponent": "PHI",
+          "on_bye": false,
           "current_slot": "RB"
         },
         {
@@ -501,6 +622,9 @@
           "injury_status": null,
           "projected": 214.01718524,
           "adp": 21.23,
+          "week_projected": 17.06,
+          "opponent": "LAR",
+          "on_bye": false,
           "current_slot": "TE"
         },
         {
@@ -512,6 +636,9 @@
           "injury_status": null,
           "projected": 165.29374318,
           "adp": 102.61,
+          "week_projected": 14.83,
+          "opponent": "NO",
+          "on_bye": false,
           "current_slot": "BE"
         },
         {
@@ -523,6 +650,9 @@
           "injury_status": null,
           "projected": 164.46174193,
           "adp": 33.99,
+          "week_projected": 13.62,
+          "opponent": "GB",
+          "on_bye": false,
           "current_slot": "RB/WR/TE"
         },
         {
@@ -534,6 +664,9 @@
           "injury_status": null,
           "projected": 202.02270793,
           "adp": 36.59,
+          "week_projected": 16.3,
+          "opponent": "CLE",
+          "on_bye": false,
           "current_slot": "WR"
         }
       ],
@@ -547,6 +680,9 @@
           "injury_status": null,
           "projected": 240.94991602,
           "adp": 75.95,
+          "week_projected": 18.77,
+          "opponent": "LAC",
+          "on_bye": false,
           "current_slot": "QB",
           "slot": "QB"
         },
@@ -559,6 +695,9 @@
           "injury_status": null,
           "projected": 210.99337928,
           "adp": 8.5,
+          "week_projected": 18.88,
+          "opponent": "TEN",
+          "on_bye": false,
           "current_slot": "RB",
           "slot": "RB"
         },
@@ -571,6 +710,9 @@
           "injury_status": null,
           "projected": 192.73743163,
           "adp": 79.47,
+          "week_projected": 14.64,
+          "opponent": "PHI",
+          "on_bye": false,
           "current_slot": "RB",
           "slot": "RB"
         },
@@ -583,6 +725,9 @@
           "injury_status": null,
           "projected": 236.38921346,
           "adp": 9.76,
+          "week_projected": 0.0,
+          "opponent": "BYE",
+          "on_bye": true,
           "current_slot": "BE",
           "slot": "WR"
         },
@@ -595,6 +740,9 @@
           "injury_status": null,
           "projected": 202.02270793,
           "adp": 36.59,
+          "week_projected": 16.3,
+          "opponent": "CLE",
+          "on_bye": false,
           "current_slot": "WR",
           "slot": "WR"
         },
@@ -607,6 +755,9 @@
           "injury_status": null,
           "projected": 214.01718524,
           "adp": 21.23,
+          "week_projected": 17.06,
+          "opponent": "LAR",
+          "on_bye": false,
           "current_slot": "TE",
           "slot": "TE"
         },
@@ -619,6 +770,9 @@
           "injury_status": null,
           "projected": 134.79534423,
           "adp": 128.74,
+          "week_projected": 0.0,
+          "opponent": "BYE",
+          "on_bye": true,
           "current_slot": "K",
           "slot": "K"
         },
@@ -631,6 +785,9 @@
           "injury_status": null,
           "projected": 90.72093911,
           "adp": 146.62,
+          "week_projected": 6.21,
+          "opponent": "HOU",
+          "on_bye": false,
           "current_slot": "D/ST",
           "slot": "D/ST"
         },
@@ -643,6 +800,9 @@
           "injury_status": null,
           "projected": 178.50048202,
           "adp": 94.54,
+          "week_projected": 14.08,
+          "opponent": "LAR",
+          "on_bye": false,
           "current_slot": "WR",
           "slot": "FLEX"
         }
@@ -657,6 +817,9 @@
           "injury_status": null,
           "projected": 165.29374318,
           "adp": 102.61,
+          "week_projected": 14.83,
+          "opponent": "NO",
+          "on_bye": false,
           "current_slot": "BE"
         },
         {
@@ -668,6 +831,9 @@
           "injury_status": null,
           "projected": 164.46174193,
           "adp": 33.99,
+          "week_projected": 13.62,
+          "opponent": "GB",
+          "on_bye": false,
           "current_slot": "RB/WR/TE"
         },
         {
@@ -679,6 +845,9 @@
           "injury_status": "Out",
           "projected": 154.971466,
           "adp": 89.71,
+          "week_projected": 13.47,
+          "opponent": "LV",
+          "on_bye": false,
           "current_slot": "BE"
         },
         {
@@ -690,6 +859,9 @@
           "injury_status": null,
           "projected": 135.08848933,
           "adp": 64.01,
+          "week_projected": 13.23,
+          "opponent": "NO",
+          "on_bye": false,
           "current_slot": "BE"
         }
       ],
@@ -712,6 +884,9 @@
           "injury_status": null,
           "projected": 76.63217564,
           "adp": 113.65,
+          "week_projected": 7.02,
+          "opponent": "ARI",
+          "on_bye": false,
           "current_slot": "D/ST"
         },
         {
@@ -723,6 +898,9 @@
           "injury_status": null,
           "projected": 123.88877972,
           "adp": 81.25,
+          "week_projected": 10.21,
+          "opponent": "GB",
+          "on_bye": false,
           "current_slot": "K"
         },
         {
@@ -734,6 +912,9 @@
           "injury_status": null,
           "projected": 193.64703304,
           "adp": 41.2,
+          "week_projected": 17.41,
+          "opponent": "NO",
+          "on_bye": false,
           "current_slot": "RB/WR/TE"
         },
         {
@@ -745,6 +926,9 @@
           "injury_status": null,
           "projected": 209.38502207,
           "adp": 37.2,
+          "week_projected": 16.03,
+          "opponent": "PHI",
+          "on_bye": false,
           "current_slot": "WR"
         },
         {
@@ -756,6 +940,9 @@
           "injury_status": null,
           "projected": 208.32651526,
           "adp": 85.8,
+          "week_projected": 17.12,
+          "opponent": "GB",
+          "on_bye": false,
           "current_slot": "QB"
         },
         {
@@ -767,6 +954,9 @@
           "injury_status": "Out",
           "projected": 160.95390041,
           "adp": 34.01,
+          "week_projected": 13.82,
+          "opponent": "CAR",
+          "on_bye": false,
           "current_slot": "RB"
         },
         {
@@ -778,6 +968,9 @@
           "injury_status": null,
           "projected": 119.64823228,
           "adp": 140.34,
+          "week_projected": 9.63,
+          "opponent": "CLE",
+          "on_bye": false,
           "current_slot": "BE"
         },
         {
@@ -789,6 +982,9 @@
           "injury_status": null,
           "projected": 141.73637731,
           "adp": 106.1,
+          "week_projected": 11.76,
+          "opponent": "TB",
+          "on_bye": false,
           "current_slot": "BE"
         },
         {
@@ -800,6 +996,9 @@
           "injury_status": "Out",
           "projected": 111.09963232,
           "adp": 132.06,
+          "week_projected": 0.0,
+          "opponent": "WSH",
+          "on_bye": false,
           "current_slot": "IR"
         },
         {
@@ -811,6 +1010,9 @@
           "injury_status": null,
           "projected": 176.28183102,
           "adp": 58.58,
+          "week_projected": 0.0,
+          "opponent": "BYE",
+          "on_bye": true,
           "current_slot": "BE"
         },
         {
@@ -822,6 +1024,9 @@
           "injury_status": null,
           "projected": 186.08782233,
           "adp": 23.4,
+          "week_projected": 15.99,
+          "opponent": "CHI",
+          "on_bye": false,
           "current_slot": "WR"
         },
         {
@@ -833,6 +1038,9 @@
           "injury_status": null,
           "projected": 223.24650267,
           "adp": 30.61,
+          "week_projected": 20.92,
+          "opponent": "ARI",
+          "on_bye": false,
           "current_slot": "RB"
         },
         {
@@ -844,6 +1052,9 @@
           "injury_status": null,
           "projected": 314.34165714,
           "adp": 1.76,
+          "week_projected": 0.0,
+          "opponent": "BYE",
+          "on_bye": true,
           "current_slot": "BE"
         },
         {
@@ -855,6 +1066,9 @@
           "injury_status": null,
           "projected": 133.03400093,
           "adp": 111.2,
+          "week_projected": 12.01,
+          "opponent": "DAL",
+          "on_bye": false,
           "current_slot": "TE"
         }
       ],
@@ -868,6 +1082,9 @@
           "injury_status": null,
           "projected": 208.32651526,
           "adp": 85.8,
+          "week_projected": 17.12,
+          "opponent": "GB",
+          "on_bye": false,
           "current_slot": "QB",
           "slot": "QB"
         },
@@ -880,6 +1097,9 @@
           "injury_status": null,
           "projected": 314.34165714,
           "adp": 1.76,
+          "week_projected": 0.0,
+          "opponent": "BYE",
+          "on_bye": true,
           "current_slot": "BE",
           "slot": "RB"
         },
@@ -892,6 +1112,9 @@
           "injury_status": null,
           "projected": 223.24650267,
           "adp": 30.61,
+          "week_projected": 20.92,
+          "opponent": "ARI",
+          "on_bye": false,
           "current_slot": "RB",
           "slot": "RB"
         },
@@ -904,6 +1127,9 @@
           "injury_status": null,
           "projected": 209.38502207,
           "adp": 37.2,
+          "week_projected": 16.03,
+          "opponent": "PHI",
+          "on_bye": false,
           "current_slot": "WR",
           "slot": "WR"
         },
@@ -916,6 +1142,9 @@
           "injury_status": null,
           "projected": 193.64703304,
           "adp": 41.2,
+          "week_projected": 17.41,
+          "opponent": "NO",
+          "on_bye": false,
           "current_slot": "RB/WR/TE",
           "slot": "WR"
         },
@@ -928,6 +1157,9 @@
           "injury_status": null,
           "projected": 133.03400093,
           "adp": 111.2,
+          "week_projected": 12.01,
+          "opponent": "DAL",
+          "on_bye": false,
           "current_slot": "TE",
           "slot": "TE"
         },
@@ -940,6 +1172,9 @@
           "injury_status": null,
           "projected": 123.88877972,
           "adp": 81.25,
+          "week_projected": 10.21,
+          "opponent": "GB",
+          "on_bye": false,
           "current_slot": "K",
           "slot": "K"
         },
@@ -952,6 +1187,9 @@
           "injury_status": null,
           "projected": 76.63217564,
           "adp": 113.65,
+          "week_projected": 7.02,
+          "opponent": "ARI",
+          "on_bye": false,
           "current_slot": "D/ST",
           "slot": "D/ST"
         },
@@ -964,6 +1202,9 @@
           "injury_status": null,
           "projected": 186.08782233,
           "adp": 23.4,
+          "week_projected": 15.99,
+          "opponent": "CHI",
+          "on_bye": false,
           "current_slot": "WR",
           "slot": "FLEX"
         }
@@ -978,6 +1219,9 @@
           "injury_status": null,
           "projected": 176.28183102,
           "adp": 58.58,
+          "week_projected": 0.0,
+          "opponent": "BYE",
+          "on_bye": true,
           "current_slot": "BE"
         },
         {
@@ -989,6 +1233,9 @@
           "injury_status": "Out",
           "projected": 160.95390041,
           "adp": 34.01,
+          "week_projected": 13.82,
+          "opponent": "CAR",
+          "on_bye": false,
           "current_slot": "RB"
         },
         {
@@ -1000,6 +1247,9 @@
           "injury_status": null,
           "projected": 141.73637731,
           "adp": 106.1,
+          "week_projected": 11.76,
+          "opponent": "TB",
+          "on_bye": false,
           "current_slot": "BE"
         },
         {
@@ -1011,6 +1261,9 @@
           "injury_status": null,
           "projected": 119.64823228,
           "adp": 140.34,
+          "week_projected": 9.63,
+          "opponent": "CLE",
+          "on_bye": false,
           "current_slot": "BE"
         },
         {
@@ -1022,6 +1275,9 @@
           "injury_status": "Out",
           "projected": 111.09963232,
           "adp": 132.06,
+          "week_projected": 0.0,
+          "opponent": "WSH",
+          "on_bye": false,
           "current_slot": "IR"
         }
       ],
@@ -1044,6 +1300,9 @@
           "injury_status": null,
           "projected": 82.36507182,
           "adp": 121.57,
+          "week_projected": 7.03,
+          "opponent": "TB",
+          "on_bye": false,
           "current_slot": "D/ST"
         },
         {
@@ -1055,6 +1314,9 @@
           "injury_status": null,
           "projected": 193.02833578,
           "adp": 57.7,
+          "week_projected": 15.06,
+          "opponent": "PIT",
+          "on_bye": false,
           "current_slot": "RB"
         },
         {
@@ -1066,6 +1328,9 @@
           "injury_status": null,
           "projected": 173.5586486,
           "adp": 72.78,
+          "week_projected": 13.15,
+          "opponent": "HOU",
+          "on_bye": false,
           "current_slot": "BE"
         },
         {
@@ -1077,6 +1342,9 @@
           "injury_status": null,
           "projected": 205.81856702,
           "adp": 24.49,
+          "week_projected": 18.94,
+          "opponent": "BUF",
+          "on_bye": false,
           "current_slot": "RB"
         },
         {
@@ -1088,6 +1356,9 @@
           "injury_status": "Out",
           "projected": 95.19840094,
           "adp": 110.55,
+          "week_projected": 0.0,
+          "opponent": "NYJ",
+          "on_bye": false,
           "current_slot": "BE"
         },
         {
@@ -1099,6 +1370,9 @@
           "injury_status": null,
           "projected": 140.02228679,
           "adp": 105.06,
+          "week_projected": 11.82,
+          "opponent": "IND",
+          "on_bye": false,
           "current_slot": "BE"
         },
         {
@@ -1110,6 +1384,9 @@
           "injury_status": null,
           "projected": 165.90036216,
           "adp": 55.44,
+          "week_projected": 14.72,
+          "opponent": "WSH",
+          "on_bye": false,
           "current_slot": "TE"
         },
         {
@@ -1121,6 +1398,9 @@
           "injury_status": null,
           "projected": 281.14953229,
           "adp": 13.85,
+          "week_projected": 25.11,
+          "opponent": "LV",
+          "on_bye": false,
           "current_slot": "QB"
         },
         {
@@ -1132,6 +1412,9 @@
           "injury_status": null,
           "projected": 101.2304964,
           "adp": 153.97,
+          "week_projected": 8.97,
+          "opponent": "WSH",
+          "on_bye": false,
           "current_slot": "K"
         },
         {
@@ -1143,6 +1426,9 @@
           "injury_status": "IR",
           "projected": 175.76490954,
           "adp": 47.45,
+          "week_projected": 0.0,
+          "opponent": "NYJ",
+          "on_bye": false,
           "current_slot": "BE"
         },
         {
@@ -1154,6 +1440,9 @@
           "injury_status": null,
           "projected": 157.66424405,
           "adp": 114.33,
+          "week_projected": 14.14,
+          "opponent": "IND",
+          "on_bye": false,
           "current_slot": "RB/WR/TE"
         },
         {
@@ -1165,6 +1454,9 @@
           "injury_status": "Questionable",
           "projected": 223.72815632,
           "adp": 11.86,
+          "week_projected": 18.55,
+          "opponent": "GB",
+          "on_bye": false,
           "current_slot": "WR"
         },
         {
@@ -1176,6 +1468,9 @@
           "injury_status": null,
           "projected": 205.5490857,
           "adp": 82.11,
+          "week_projected": 17.81,
+          "opponent": "CAR",
+          "on_bye": false,
           "current_slot": "BE"
         },
         {
@@ -1187,6 +1482,9 @@
           "injury_status": null,
           "projected": 184.34924956,
           "adp": 80.53,
+          "week_projected": 14.8,
+          "opponent": "HOU",
+          "on_bye": false,
           "current_slot": "WR"
         }
       ],
@@ -1200,6 +1498,9 @@
           "injury_status": null,
           "projected": 281.14953229,
           "adp": 13.85,
+          "week_projected": 25.11,
+          "opponent": "LV",
+          "on_bye": false,
           "current_slot": "QB",
           "slot": "QB"
         },
@@ -1212,6 +1513,9 @@
           "injury_status": null,
           "projected": 205.81856702,
           "adp": 24.49,
+          "week_projected": 18.94,
+          "opponent": "BUF",
+          "on_bye": false,
           "current_slot": "RB",
           "slot": "RB"
         },
@@ -1224,6 +1528,9 @@
           "injury_status": null,
           "projected": 193.02833578,
           "adp": 57.7,
+          "week_projected": 15.06,
+          "opponent": "PIT",
+          "on_bye": false,
           "current_slot": "RB",
           "slot": "RB"
         },
@@ -1236,6 +1543,9 @@
           "injury_status": "Questionable",
           "projected": 223.72815632,
           "adp": 11.86,
+          "week_projected": 18.55,
+          "opponent": "GB",
+          "on_bye": false,
           "current_slot": "WR",
           "slot": "WR"
         },
@@ -1248,6 +1558,9 @@
           "injury_status": null,
           "projected": 184.34924956,
           "adp": 80.53,
+          "week_projected": 14.8,
+          "opponent": "HOU",
+          "on_bye": false,
           "current_slot": "WR",
           "slot": "WR"
         },
@@ -1260,6 +1573,9 @@
           "injury_status": null,
           "projected": 165.90036216,
           "adp": 55.44,
+          "week_projected": 14.72,
+          "opponent": "WSH",
+          "on_bye": false,
           "current_slot": "TE",
           "slot": "TE"
         },
@@ -1272,6 +1588,9 @@
           "injury_status": null,
           "projected": 101.2304964,
           "adp": 153.97,
+          "week_projected": 8.97,
+          "opponent": "WSH",
+          "on_bye": false,
           "current_slot": "K",
           "slot": "K"
         },
@@ -1284,6 +1603,9 @@
           "injury_status": null,
           "projected": 82.36507182,
           "adp": 121.57,
+          "week_projected": 7.03,
+          "opponent": "TB",
+          "on_bye": false,
           "current_slot": "D/ST",
           "slot": "D/ST"
         },
@@ -1296,6 +1618,9 @@
           "injury_status": "IR",
           "projected": 175.76490954,
           "adp": 47.45,
+          "week_projected": 0.0,
+          "opponent": "NYJ",
+          "on_bye": false,
           "current_slot": "BE",
           "slot": "FLEX"
         }
@@ -1310,6 +1635,9 @@
           "injury_status": null,
           "projected": 205.5490857,
           "adp": 82.11,
+          "week_projected": 17.81,
+          "opponent": "CAR",
+          "on_bye": false,
           "current_slot": "BE"
         },
         {
@@ -1321,6 +1649,9 @@
           "injury_status": null,
           "projected": 173.5586486,
           "adp": 72.78,
+          "week_projected": 13.15,
+          "opponent": "HOU",
+          "on_bye": false,
           "current_slot": "BE"
         },
         {
@@ -1332,6 +1663,9 @@
           "injury_status": null,
           "projected": 157.66424405,
           "adp": 114.33,
+          "week_projected": 14.14,
+          "opponent": "IND",
+          "on_bye": false,
           "current_slot": "RB/WR/TE"
         },
         {
@@ -1343,6 +1677,9 @@
           "injury_status": null,
           "projected": 140.02228679,
           "adp": 105.06,
+          "week_projected": 11.82,
+          "opponent": "IND",
+          "on_bye": false,
           "current_slot": "BE"
         },
         {
@@ -1354,6 +1691,9 @@
           "injury_status": "Out",
           "projected": 95.19840094,
           "adp": 110.55,
+          "week_projected": 0.0,
+          "opponent": "NYJ",
+          "on_bye": false,
           "current_slot": "BE"
         }
       ],
@@ -1376,6 +1716,9 @@
           "injury_status": null,
           "projected": 63.95077117,
           "adp": 165.49,
+          "week_projected": 0.0,
+          "opponent": "BYE",
+          "on_bye": true,
           "current_slot": "BE"
         },
         {
@@ -1387,6 +1730,9 @@
           "injury_status": null,
           "projected": 46.52090379,
           "adp": 168.96,
+          "week_projected": 5.16,
+          "opponent": "PHI",
+          "on_bye": false,
           "current_slot": "D/ST"
         },
         {
@@ -1398,6 +1744,9 @@
           "injury_status": null,
           "projected": 152.61458427,
           "adp": 75.08,
+          "week_projected": 0.0,
+          "opponent": "BYE",
+          "on_bye": true,
           "current_slot": "BE"
         },
         {
@@ -1409,6 +1758,9 @@
           "injury_status": null,
           "projected": 140.08479721,
           "adp": 64.3,
+          "week_projected": 10.84,
+          "opponent": "PIT",
+          "on_bye": false,
           "current_slot": "BE"
         },
         {
@@ -1420,6 +1772,9 @@
           "injury_status": null,
           "projected": 182.76030249,
           "adp": 47.32,
+          "week_projected": 15.99,
+          "opponent": "ARI",
+          "on_bye": false,
           "current_slot": "WR"
         },
         {
@@ -1431,6 +1786,9 @@
           "injury_status": "Out",
           "projected": 128.60447136,
           "adp": 124.93,
+          "week_projected": 10.46,
+          "opponent": "SF",
+          "on_bye": false,
           "current_slot": "BE"
         },
         {
@@ -1442,6 +1800,9 @@
           "injury_status": null,
           "projected": 109.41428637,
           "adp": 124.66,
+          "week_projected": 8.61,
+          "opponent": "DEN",
+          "on_bye": false,
           "current_slot": "K"
         },
         {
@@ -1453,6 +1814,9 @@
           "injury_status": null,
           "projected": 245.12607676,
           "adp": 15.14,
+          "week_projected": 20.58,
+          "opponent": "CLE",
+          "on_bye": false,
           "current_slot": "RB"
         },
         {
@@ -1464,6 +1828,9 @@
           "injury_status": "",
           "projected": null,
           "adp": null,
+          "week_projected": null,
+          "opponent": null,
+          "on_bye": false,
           "current_slot": "BE"
         },
         {
@@ -1475,6 +1842,9 @@
           "injury_status": null,
           "projected": 244.83771774,
           "adp": 9.4,
+          "week_projected": 22.18,
+          "opponent": "WSH",
+          "on_bye": false,
           "current_slot": "RB"
         },
         {
@@ -1486,6 +1856,9 @@
           "injury_status": null,
           "projected": 238.57975145,
           "adp": 54.46,
+          "week_projected": 0.0,
+          "opponent": "BYE",
+          "on_bye": true,
           "current_slot": "BE"
         },
         {
@@ -1497,6 +1870,9 @@
           "injury_status": null,
           "projected": 159.43268522,
           "adp": 107.66,
+          "week_projected": 16.34,
+          "opponent": "NYJ",
+          "on_bye": false,
           "current_slot": "RB/WR/TE"
         },
         {
@@ -1508,6 +1884,9 @@
           "injury_status": null,
           "projected": 197.96686082,
           "adp": 24.45,
+          "week_projected": 17.38,
+          "opponent": "NYG",
+          "on_bye": false,
           "current_slot": "WR"
         },
         {
@@ -1519,6 +1898,9 @@
           "injury_status": null,
           "projected": 241.66968895,
           "adp": 58.44,
+          "week_projected": 21.38,
+          "opponent": "WSH",
+          "on_bye": false,
           "current_slot": "QB"
         }
       ],
@@ -1532,6 +1914,9 @@
           "injury_status": null,
           "projected": 241.66968895,
           "adp": 58.44,
+          "week_projected": 21.38,
+          "opponent": "WSH",
+          "on_bye": false,
           "current_slot": "QB",
           "slot": "QB"
         },
@@ -1544,6 +1929,9 @@
           "injury_status": null,
           "projected": 245.12607676,
           "adp": 15.14,
+          "week_projected": 20.58,
+          "opponent": "CLE",
+          "on_bye": false,
           "current_slot": "RB",
           "slot": "RB"
         },
@@ -1556,6 +1944,9 @@
           "injury_status": null,
           "projected": 244.83771774,
           "adp": 9.4,
+          "week_projected": 22.18,
+          "opponent": "WSH",
+          "on_bye": false,
           "current_slot": "RB",
           "slot": "RB"
         },
@@ -1568,6 +1959,9 @@
           "injury_status": null,
           "projected": 197.96686082,
           "adp": 24.45,
+          "week_projected": 17.38,
+          "opponent": "NYG",
+          "on_bye": false,
           "current_slot": "WR",
           "slot": "WR"
         },
@@ -1580,6 +1974,9 @@
           "injury_status": null,
           "projected": 182.76030249,
           "adp": 47.32,
+          "week_projected": 15.99,
+          "opponent": "ARI",
+          "on_bye": false,
           "current_slot": "WR",
           "slot": "WR"
         },
@@ -1592,6 +1989,9 @@
           "injury_status": null,
           "projected": 152.61458427,
           "adp": 75.08,
+          "week_projected": 0.0,
+          "opponent": "BYE",
+          "on_bye": true,
           "current_slot": "BE",
           "slot": "TE"
         },
@@ -1604,6 +2004,9 @@
           "injury_status": null,
           "projected": 109.41428637,
           "adp": 124.66,
+          "week_projected": 8.61,
+          "opponent": "DEN",
+          "on_bye": false,
           "current_slot": "K",
           "slot": "K"
         },
@@ -1616,6 +2019,9 @@
           "injury_status": null,
           "projected": 63.95077117,
           "adp": 165.49,
+          "week_projected": 0.0,
+          "opponent": "BYE",
+          "on_bye": true,
           "current_slot": "BE",
           "slot": "D/ST"
         },
@@ -1628,6 +2034,9 @@
           "injury_status": null,
           "projected": 159.43268522,
           "adp": 107.66,
+          "week_projected": 16.34,
+          "opponent": "NYJ",
+          "on_bye": false,
           "current_slot": "RB/WR/TE",
           "slot": "FLEX"
         }
@@ -1642,6 +2051,9 @@
           "injury_status": null,
           "projected": 238.57975145,
           "adp": 54.46,
+          "week_projected": 0.0,
+          "opponent": "BYE",
+          "on_bye": true,
           "current_slot": "BE"
         },
         {
@@ -1653,6 +2065,9 @@
           "injury_status": null,
           "projected": 140.08479721,
           "adp": 64.3,
+          "week_projected": 10.84,
+          "opponent": "PIT",
+          "on_bye": false,
           "current_slot": "BE"
         },
         {
@@ -1664,6 +2079,9 @@
           "injury_status": "Out",
           "projected": 128.60447136,
           "adp": 124.93,
+          "week_projected": 10.46,
+          "opponent": "SF",
+          "on_bye": false,
           "current_slot": "BE"
         },
         {
@@ -1675,6 +2093,9 @@
           "injury_status": null,
           "projected": 46.52090379,
           "adp": 168.96,
+          "week_projected": 5.16,
+          "opponent": "PHI",
+          "on_bye": false,
           "current_slot": "D/ST"
         }
       ],
@@ -1697,6 +2118,9 @@
           "injury_status": null,
           "projected": 52.02948619,
           "adp": 166.67,
+          "week_projected": 2.96,
+          "opponent": "ATL",
+          "on_bye": false,
           "current_slot": "D/ST"
         },
         {
@@ -1708,6 +2132,9 @@
           "injury_status": null,
           "projected": 208.15067839,
           "adp": 22.32,
+          "week_projected": 19.58,
+          "opponent": "BUF",
+          "on_bye": false,
           "current_slot": "TE"
         },
         {
@@ -1719,6 +2146,9 @@
           "injury_status": "Out",
           "projected": 181.43825761,
           "adp": 126.17,
+          "week_projected": 13.91,
+          "opponent": "PHI",
+          "on_bye": false,
           "current_slot": "WR"
         },
         {
@@ -1730,6 +2160,9 @@
           "injury_status": null,
           "projected": 95.73151344,
           "adp": 160.95,
+          "week_projected": 11.18,
+          "opponent": "NYG",
+          "on_bye": false,
           "current_slot": "BE"
         },
         {
@@ -1741,6 +2174,9 @@
           "injury_status": null,
           "projected": 131.12485656,
           "adp": 138.55,
+          "week_projected": 10.48,
+          "opponent": "JAX",
+          "on_bye": false,
           "current_slot": "K"
         },
         {
@@ -1752,6 +2188,9 @@
           "injury_status": null,
           "projected": 97.75020846,
           "adp": 156.91,
+          "week_projected": 10.11,
+          "opponent": "NYG",
+          "on_bye": false,
           "current_slot": "BE"
         },
         {
@@ -1763,6 +2202,9 @@
           "injury_status": "Questionable",
           "projected": 142.05108743,
           "adp": 108.28,
+          "week_projected": 0.0,
+          "opponent": "BYE",
+          "on_bye": true,
           "current_slot": "BE"
         },
         {
@@ -1774,6 +2216,9 @@
           "injury_status": "NA",
           "projected": 89.45129988,
           "adp": 125.71,
+          "week_projected": 0.0,
+          "opponent": "DAL",
+          "on_bye": false,
           "current_slot": "BE"
         },
         {
@@ -1785,6 +2230,9 @@
           "injury_status": null,
           "projected": 151.18794527,
           "adp": 90.39,
+          "week_projected": 12.33,
+          "opponent": "SF",
+          "on_bye": false,
           "current_slot": "BE"
         },
         {
@@ -1796,6 +2244,9 @@
           "injury_status": null,
           "projected": 224.0736456,
           "adp": 99.3,
+          "week_projected": 17.11,
+          "opponent": "HOU",
+          "on_bye": false,
           "current_slot": "QB"
         },
         {
@@ -1807,6 +2258,9 @@
           "injury_status": "IR",
           "projected": 124.88333096,
           "adp": 75.73,
+          "week_projected": 0.0,
+          "opponent": "NYG",
+          "on_bye": false,
           "current_slot": "IR"
         },
         {
@@ -1818,6 +2272,9 @@
           "injury_status": null,
           "projected": 194.16889808,
           "adp": 27.24,
+          "week_projected": 15.92,
+          "opponent": "JAX",
+          "on_bye": false,
           "current_slot": "WR"
         },
         {
@@ -1829,6 +2286,9 @@
           "injury_status": "Out",
           "projected": 186.12361726,
           "adp": 53.52,
+          "week_projected": 14.04,
+          "opponent": "NE",
+          "on_bye": false,
           "current_slot": "RB"
         },
         {
@@ -1840,6 +2300,9 @@
           "injury_status": null,
           "projected": 108.85596187,
           "adp": 137.16,
+          "week_projected": 9.73,
+          "opponent": "TEN",
+          "on_bye": false,
           "current_slot": "RB/WR/TE"
         },
         {
@@ -1851,6 +2314,9 @@
           "injury_status": null,
           "projected": 268.81053252,
           "adp": 3.05,
+          "week_projected": 23.07,
+          "opponent": "CHI",
+          "on_bye": false,
           "current_slot": "RB"
         }
       ],
@@ -1864,6 +2330,9 @@
           "injury_status": null,
           "projected": 224.0736456,
           "adp": 99.3,
+          "week_projected": 17.11,
+          "opponent": "HOU",
+          "on_bye": false,
           "current_slot": "QB",
           "slot": "QB"
         },
@@ -1876,6 +2345,9 @@
           "injury_status": null,
           "projected": 268.81053252,
           "adp": 3.05,
+          "week_projected": 23.07,
+          "opponent": "CHI",
+          "on_bye": false,
           "current_slot": "RB",
           "slot": "RB"
         },
@@ -1888,6 +2360,9 @@
           "injury_status": "Out",
           "projected": 186.12361726,
           "adp": 53.52,
+          "week_projected": 14.04,
+          "opponent": "NE",
+          "on_bye": false,
           "current_slot": "RB",
           "slot": "RB"
         },
@@ -1900,6 +2375,9 @@
           "injury_status": null,
           "projected": 194.16889808,
           "adp": 27.24,
+          "week_projected": 15.92,
+          "opponent": "JAX",
+          "on_bye": false,
           "current_slot": "WR",
           "slot": "WR"
         },
@@ -1912,6 +2390,9 @@
           "injury_status": "Out",
           "projected": 181.43825761,
           "adp": 126.17,
+          "week_projected": 13.91,
+          "opponent": "PHI",
+          "on_bye": false,
           "current_slot": "WR",
           "slot": "WR"
         },
@@ -1924,6 +2405,9 @@
           "injury_status": null,
           "projected": 208.15067839,
           "adp": 22.32,
+          "week_projected": 19.58,
+          "opponent": "BUF",
+          "on_bye": false,
           "current_slot": "TE",
           "slot": "TE"
         },
@@ -1936,6 +2420,9 @@
           "injury_status": null,
           "projected": 131.12485656,
           "adp": 138.55,
+          "week_projected": 10.48,
+          "opponent": "JAX",
+          "on_bye": false,
           "current_slot": "K",
           "slot": "K"
         },
@@ -1948,6 +2435,9 @@
           "injury_status": null,
           "projected": 52.02948619,
           "adp": 166.67,
+          "week_projected": 2.96,
+          "opponent": "ATL",
+          "on_bye": false,
           "current_slot": "D/ST",
           "slot": "D/ST"
         },
@@ -1960,6 +2450,9 @@
           "injury_status": null,
           "projected": 151.18794527,
           "adp": 90.39,
+          "week_projected": 12.33,
+          "opponent": "SF",
+          "on_bye": false,
           "current_slot": "BE",
           "slot": "FLEX"
         }
@@ -1974,6 +2467,9 @@
           "injury_status": "Questionable",
           "projected": 142.05108743,
           "adp": 108.28,
+          "week_projected": 0.0,
+          "opponent": "BYE",
+          "on_bye": true,
           "current_slot": "BE"
         },
         {
@@ -1985,6 +2481,9 @@
           "injury_status": "IR",
           "projected": 124.88333096,
           "adp": 75.73,
+          "week_projected": 0.0,
+          "opponent": "NYG",
+          "on_bye": false,
           "current_slot": "IR"
         },
         {
@@ -1996,6 +2495,9 @@
           "injury_status": null,
           "projected": 108.85596187,
           "adp": 137.16,
+          "week_projected": 9.73,
+          "opponent": "TEN",
+          "on_bye": false,
           "current_slot": "RB/WR/TE"
         },
         {
@@ -2007,6 +2509,9 @@
           "injury_status": null,
           "projected": 97.75020846,
           "adp": 156.91,
+          "week_projected": 10.11,
+          "opponent": "NYG",
+          "on_bye": false,
           "current_slot": "BE"
         },
         {
@@ -2018,6 +2523,9 @@
           "injury_status": null,
           "projected": 95.73151344,
           "adp": 160.95,
+          "week_projected": 11.18,
+          "opponent": "NYG",
+          "on_bye": false,
           "current_slot": "BE"
         },
         {
@@ -2029,6 +2537,9 @@
           "injury_status": "NA",
           "projected": 89.45129988,
           "adp": 125.71,
+          "week_projected": 0.0,
+          "opponent": "DAL",
+          "on_bye": false,
           "current_slot": "BE"
         }
       ],
@@ -2051,6 +2562,9 @@
           "injury_status": null,
           "projected": 86.66672147,
           "adp": 86.23,
+          "week_projected": 6.06,
+          "opponent": "DEN",
+          "on_bye": false,
           "current_slot": "D/ST"
         },
         {
@@ -2062,6 +2576,9 @@
           "injury_status": "Questionable",
           "projected": 189.78144008,
           "adp": 47.37,
+          "week_projected": 14.4,
+          "opponent": "LAC",
+          "on_bye": false,
           "current_slot": "WR"
         },
         {
@@ -2073,6 +2590,9 @@
           "injury_status": null,
           "projected": 93.54779397,
           "adp": 135.43,
+          "week_projected": 8.12,
+          "opponent": "LV",
+          "on_bye": false,
           "current_slot": "BE"
         },
         {
@@ -2084,6 +2604,9 @@
           "injury_status": null,
           "projected": 126.85698517,
           "adp": 134.28,
+          "week_projected": 10.99,
+          "opponent": "TEN",
+          "on_bye": false,
           "current_slot": "K"
         },
         {
@@ -2095,6 +2618,9 @@
           "injury_status": null,
           "projected": 178.17006619,
           "adp": 107.81,
+          "week_projected": 16.1,
+          "opponent": "DAL",
+          "on_bye": false,
           "current_slot": "RB/WR/TE"
         },
         {
@@ -2106,6 +2632,9 @@
           "injury_status": null,
           "projected": 126.66863759,
           "adp": 89.72,
+          "week_projected": 10.29,
+          "opponent": "BAL",
+          "on_bye": false,
           "current_slot": "TE"
         },
         {
@@ -2117,6 +2646,9 @@
           "injury_status": null,
           "projected": 203.43033492,
           "adp": 127.36,
+          "week_projected": 16.82,
+          "opponent": "NYG",
+          "on_bye": false,
           "current_slot": "BE"
         },
         {
@@ -2128,6 +2660,9 @@
           "injury_status": null,
           "projected": 144.57006639,
           "adp": 37.75,
+          "week_projected": 11.34,
+          "opponent": "LAR",
+          "on_bye": false,
           "current_slot": "BE"
         },
         {
@@ -2139,6 +2674,9 @@
           "injury_status": null,
           "projected": 167.34557593,
           "adp": 62.71,
+          "week_projected": 13.6,
+          "opponent": "ATL",
+          "on_bye": false,
           "current_slot": "BE"
         },
         {
@@ -2150,6 +2688,9 @@
           "injury_status": null,
           "projected": 128.04470777,
           "adp": 80.91,
+          "week_projected": 10.0,
+          "opponent": "SEA",
+          "on_bye": false,
           "current_slot": "BE"
         },
         {
@@ -2161,6 +2702,9 @@
           "injury_status": null,
           "projected": 215.05759823,
           "adp": 13.36,
+          "week_projected": 19.34,
+          "opponent": "LV",
+          "on_bye": false,
           "current_slot": "RB"
         },
         {
@@ -2172,6 +2716,9 @@
           "injury_status": null,
           "projected": 187.08032022,
           "adp": 85.96,
+          "week_projected": 14.93,
+          "opponent": "TB",
+          "on_bye": false,
           "current_slot": "RB"
         },
         {
@@ -2183,6 +2730,9 @@
           "injury_status": null,
           "projected": 237.90896012,
           "adp": 118.02,
+          "week_projected": 18.27,
+          "opponent": "PHI",
+          "on_bye": false,
           "current_slot": "QB"
         },
         {
@@ -2194,6 +2744,9 @@
           "injury_status": "Questionable",
           "projected": 239.45161306,
           "adp": 5.22,
+          "week_projected": 18.86,
+          "opponent": "DEN",
+          "on_bye": false,
           "current_slot": "WR"
         }
       ],
@@ -2207,6 +2760,9 @@
           "injury_status": null,
           "projected": 237.90896012,
           "adp": 118.02,
+          "week_projected": 18.27,
+          "opponent": "PHI",
+          "on_bye": false,
           "current_slot": "QB",
           "slot": "QB"
         },
@@ -2219,6 +2775,9 @@
           "injury_status": null,
           "projected": 215.05759823,
           "adp": 13.36,
+          "week_projected": 19.34,
+          "opponent": "LV",
+          "on_bye": false,
           "current_slot": "RB",
           "slot": "RB"
         },
@@ -2231,6 +2790,9 @@
           "injury_status": null,
           "projected": 187.08032022,
           "adp": 85.96,
+          "week_projected": 14.93,
+          "opponent": "TB",
+          "on_bye": false,
           "current_slot": "RB",
           "slot": "RB"
         },
@@ -2243,6 +2805,9 @@
           "injury_status": "Questionable",
           "projected": 239.45161306,
           "adp": 5.22,
+          "week_projected": 18.86,
+          "opponent": "DEN",
+          "on_bye": false,
           "current_slot": "WR",
           "slot": "WR"
         },
@@ -2255,6 +2820,9 @@
           "injury_status": "Questionable",
           "projected": 189.78144008,
           "adp": 47.37,
+          "week_projected": 14.4,
+          "opponent": "LAC",
+          "on_bye": false,
           "current_slot": "WR",
           "slot": "WR"
         },
@@ -2267,6 +2835,9 @@
           "injury_status": null,
           "projected": 126.66863759,
           "adp": 89.72,
+          "week_projected": 10.29,
+          "opponent": "BAL",
+          "on_bye": false,
           "current_slot": "TE",
           "slot": "TE"
         },
@@ -2279,6 +2850,9 @@
           "injury_status": null,
           "projected": 126.85698517,
           "adp": 134.28,
+          "week_projected": 10.99,
+          "opponent": "TEN",
+          "on_bye": false,
           "current_slot": "K",
           "slot": "K"
         },
@@ -2291,6 +2865,9 @@
           "injury_status": null,
           "projected": 86.66672147,
           "adp": 86.23,
+          "week_projected": 6.06,
+          "opponent": "DEN",
+          "on_bye": false,
           "current_slot": "D/ST",
           "slot": "D/ST"
         },
@@ -2303,6 +2880,9 @@
           "injury_status": null,
           "projected": 178.17006619,
           "adp": 107.81,
+          "week_projected": 16.1,
+          "opponent": "DAL",
+          "on_bye": false,
           "current_slot": "RB/WR/TE",
           "slot": "FLEX"
         }
@@ -2317,6 +2897,9 @@
           "injury_status": null,
           "projected": 203.43033492,
           "adp": 127.36,
+          "week_projected": 16.82,
+          "opponent": "NYG",
+          "on_bye": false,
           "current_slot": "BE"
         },
         {
@@ -2328,6 +2911,9 @@
           "injury_status": null,
           "projected": 167.34557593,
           "adp": 62.71,
+          "week_projected": 13.6,
+          "opponent": "ATL",
+          "on_bye": false,
           "current_slot": "BE"
         },
         {
@@ -2339,6 +2925,9 @@
           "injury_status": null,
           "projected": 144.57006639,
           "adp": 37.75,
+          "week_projected": 11.34,
+          "opponent": "LAR",
+          "on_bye": false,
           "current_slot": "BE"
         },
         {
@@ -2350,6 +2939,9 @@
           "injury_status": null,
           "projected": 128.04470777,
           "adp": 80.91,
+          "week_projected": 10.0,
+          "opponent": "SEA",
+          "on_bye": false,
           "current_slot": "BE"
         },
         {
@@ -2361,6 +2953,9 @@
           "injury_status": null,
           "projected": 93.54779397,
           "adp": 135.43,
+          "week_projected": 8.12,
+          "opponent": "LV",
+          "on_bye": false,
           "current_slot": "BE"
         }
       ],
@@ -2383,6 +2978,9 @@
           "injury_status": null,
           "projected": 40.51594752,
           "adp": 167.52,
+          "week_projected": 3.36,
+          "opponent": "GB",
+          "on_bye": false,
           "current_slot": "D/ST"
         },
         {
@@ -2394,6 +2992,9 @@
           "injury_status": "Out",
           "projected": 208.18099711,
           "adp": 115.15,
+          "week_projected": 16.75,
+          "opponent": "ATL",
+          "on_bye": false,
           "current_slot": "QB"
         },
         {
@@ -2405,6 +3006,9 @@
           "injury_status": null,
           "projected": 128.25944003,
           "adp": 99.55,
+          "week_projected": 10.48,
+          "opponent": "ATL",
+          "on_bye": false,
           "current_slot": "BE"
         },
         {
@@ -2416,6 +3020,9 @@
           "injury_status": null,
           "projected": 121.91717263,
           "adp": 34.77,
+          "week_projected": 9.03,
+          "opponent": "KC",
+          "on_bye": false,
           "current_slot": "RB"
         },
         {
@@ -2427,6 +3034,9 @@
           "injury_status": null,
           "projected": 145.40726888,
           "adp": 56.68,
+          "week_projected": 12.44,
+          "opponent": "TEN",
+          "on_bye": false,
           "current_slot": "TE"
         },
         {
@@ -2438,6 +3048,9 @@
           "injury_status": null,
           "projected": 143.46092041,
           "adp": 101.84,
+          "week_projected": 11.71,
+          "opponent": "ATL",
+          "on_bye": false,
           "current_slot": "WR"
         },
         {
@@ -2449,6 +3062,9 @@
           "injury_status": null,
           "projected": 119.27785441,
           "adp": 155.37,
+          "week_projected": 9.73,
+          "opponent": "CLE",
+          "on_bye": false,
           "current_slot": "K"
         },
         {
@@ -2460,6 +3076,9 @@
           "injury_status": null,
           "projected": 193.8448595,
           "adp": 87.66,
+          "week_projected": 17.19,
+          "opponent": "WSH",
+          "on_bye": false,
           "current_slot": "RB/WR/TE"
         },
         {
@@ -2471,6 +3090,9 @@
           "injury_status": null,
           "projected": 223.00371484,
           "adp": 116.7,
+          "week_projected": 0.0,
+          "opponent": "BYE",
+          "on_bye": true,
           "current_slot": "BE"
         },
         {
@@ -2482,6 +3104,9 @@
           "injury_status": "Out",
           "projected": 177.53167455,
           "adp": 55.02,
+          "week_projected": 14.62,
+          "opponent": "CAR",
+          "on_bye": false,
           "current_slot": "IR"
         },
         {
@@ -2493,6 +3118,9 @@
           "injury_status": null,
           "projected": 258.86256691,
           "adp": 6.58,
+          "week_projected": 0.0,
+          "opponent": "BYE",
+          "on_bye": true,
           "current_slot": "BE"
         },
         {
@@ -2504,6 +3132,9 @@
           "injury_status": null,
           "projected": 88.55053566,
           "adp": 129.11,
+          "week_projected": 7.06,
+          "opponent": "PIT",
+          "on_bye": false,
           "current_slot": "RB"
         },
         {
@@ -2515,6 +3146,9 @@
           "injury_status": null,
           "projected": 178.59082505,
           "adp": 38.72,
+          "week_projected": 14.63,
+          "opponent": "NE",
+          "on_bye": false,
           "current_slot": "WR"
         },
         {
@@ -2526,6 +3160,9 @@
           "injury_status": null,
           "projected": 186.24662367,
           "adp": 24.91,
+          "week_projected": 0.0,
+          "opponent": "BYE",
+          "on_bye": true,
           "current_slot": "BE"
         },
         {
@@ -2537,6 +3174,9 @@
           "injury_status": "Out",
           "projected": 134.52948285,
           "adp": 140.13,
+          "week_projected": 0.0,
+          "opponent": "BYE",
+          "on_bye": true,
           "current_slot": "BE"
         }
       ],
@@ -2550,6 +3190,9 @@
           "injury_status": null,
           "projected": 223.00371484,
           "adp": 116.7,
+          "week_projected": 0.0,
+          "opponent": "BYE",
+          "on_bye": true,
           "current_slot": "BE",
           "slot": "QB"
         },
@@ -2562,6 +3205,9 @@
           "injury_status": null,
           "projected": 186.24662367,
           "adp": 24.91,
+          "week_projected": 0.0,
+          "opponent": "BYE",
+          "on_bye": true,
           "current_slot": "BE",
           "slot": "RB"
         },
@@ -2574,6 +3220,9 @@
           "injury_status": null,
           "projected": 121.91717263,
           "adp": 34.77,
+          "week_projected": 9.03,
+          "opponent": "KC",
+          "on_bye": false,
           "current_slot": "RB",
           "slot": "RB"
         },
@@ -2586,6 +3235,9 @@
           "injury_status": null,
           "projected": 258.86256691,
           "adp": 6.58,
+          "week_projected": 0.0,
+          "opponent": "BYE",
+          "on_bye": true,
           "current_slot": "BE",
           "slot": "WR"
         },
@@ -2598,6 +3250,9 @@
           "injury_status": null,
           "projected": 193.8448595,
           "adp": 87.66,
+          "week_projected": 17.19,
+          "opponent": "WSH",
+          "on_bye": false,
           "current_slot": "RB/WR/TE",
           "slot": "WR"
         },
@@ -2610,6 +3265,9 @@
           "injury_status": null,
           "projected": 145.40726888,
           "adp": 56.68,
+          "week_projected": 12.44,
+          "opponent": "TEN",
+          "on_bye": false,
           "current_slot": "TE",
           "slot": "TE"
         },
@@ -2622,6 +3280,9 @@
           "injury_status": null,
           "projected": 119.27785441,
           "adp": 155.37,
+          "week_projected": 9.73,
+          "opponent": "CLE",
+          "on_bye": false,
           "current_slot": "K",
           "slot": "K"
         },
@@ -2634,6 +3295,9 @@
           "injury_status": null,
           "projected": 40.51594752,
           "adp": 167.52,
+          "week_projected": 3.36,
+          "opponent": "GB",
+          "on_bye": false,
           "current_slot": "D/ST",
           "slot": "D/ST"
         },
@@ -2646,6 +3310,9 @@
           "injury_status": null,
           "projected": 178.59082505,
           "adp": 38.72,
+          "week_projected": 14.63,
+          "opponent": "NE",
+          "on_bye": false,
           "current_slot": "WR",
           "slot": "FLEX"
         }
@@ -2660,6 +3327,9 @@
           "injury_status": "Out",
           "projected": 208.18099711,
           "adp": 115.15,
+          "week_projected": 16.75,
+          "opponent": "ATL",
+          "on_bye": false,
           "current_slot": "QB"
         },
         {
@@ -2671,6 +3341,9 @@
           "injury_status": "Out",
           "projected": 177.53167455,
           "adp": 55.02,
+          "week_projected": 14.62,
+          "opponent": "CAR",
+          "on_bye": false,
           "current_slot": "IR"
         },
         {
@@ -2682,6 +3355,9 @@
           "injury_status": null,
           "projected": 143.46092041,
           "adp": 101.84,
+          "week_projected": 11.71,
+          "opponent": "ATL",
+          "on_bye": false,
           "current_slot": "WR"
         },
         {
@@ -2693,6 +3369,9 @@
           "injury_status": "Out",
           "projected": 134.52948285,
           "adp": 140.13,
+          "week_projected": 0.0,
+          "opponent": "BYE",
+          "on_bye": true,
           "current_slot": "BE"
         },
         {
@@ -2704,6 +3383,9 @@
           "injury_status": null,
           "projected": 128.25944003,
           "adp": 99.55,
+          "week_projected": 10.48,
+          "opponent": "ATL",
+          "on_bye": false,
           "current_slot": "BE"
         },
         {
@@ -2715,6 +3397,9 @@
           "injury_status": null,
           "projected": 88.55053566,
           "adp": 129.11,
+          "week_projected": 7.06,
+          "opponent": "PIT",
+          "on_bye": false,
           "current_slot": "RB"
         }
       ],
@@ -2732,7 +3417,10 @@
       "nfl_team": "WAS",
       "injury_status": null,
       "projected": 261.32606246,
-      "adp": 58.62
+      "adp": 58.62,
+      "week_projected": 19.86,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_11564",
@@ -2742,7 +3430,10 @@
       "nfl_team": "NE",
       "injury_status": null,
       "projected": 247.70913833,
-      "adp": 63.26
+      "adp": 63.26,
+      "week_projected": 20.24,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_6804",
@@ -2752,7 +3443,10 @@
       "nfl_team": "GB",
       "injury_status": null,
       "projected": 219.9171848,
-      "adp": 154.27
+      "adp": 154.27,
+      "week_projected": 20.87,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_5849",
@@ -2762,7 +3456,10 @@
       "nfl_team": "MIN",
       "injury_status": null,
       "projected": 205.43992193,
-      "adp": 152.15
+      "adp": 152.15,
+      "week_projected": 0.0,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_3257",
@@ -2772,7 +3469,10 @@
       "nfl_team": "ARI",
       "injury_status": null,
       "projected": 202.22273066,
-      "adp": 167.34
+      "adp": 167.34,
+      "week_projected": 15.25,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_4017",
@@ -2782,7 +3482,10 @@
       "nfl_team": "CLE",
       "injury_status": null,
       "projected": 196.94372197,
-      "adp": 166.87
+      "adp": 166.87,
+      "week_projected": 16.4,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_96",
@@ -2792,7 +3495,10 @@
       "nfl_team": "PIT",
       "injury_status": null,
       "projected": 196.82928796,
-      "adp": 166.72
+      "adp": 166.72,
+      "week_projected": 14.87,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_9758",
@@ -2802,7 +3508,10 @@
       "nfl_team": "HOU",
       "injury_status": null,
       "projected": 186.16556823,
-      "adp": 159.31
+      "adp": 159.31,
+      "week_projected": 14.12,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_11563",
@@ -2812,7 +3521,10 @@
       "nfl_team": "DEN",
       "injury_status": null,
       "projected": 184.32487061,
-      "adp": 134.5
+      "adp": 134.5,
+      "week_projected": 13.13,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_4943",
@@ -2822,7 +3534,10 @@
       "nfl_team": "SEA",
       "injury_status": null,
       "projected": 179.98427409,
-      "adp": 161.85
+      "adp": 161.85,
+      "week_projected": 13.62,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_1373",
@@ -2832,7 +3547,10 @@
       "nfl_team": "NYJ",
       "injury_status": null,
       "projected": 175.00799533,
-      "adp": 169.55
+      "adp": 169.55,
+      "week_projected": 13.4,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_11559",
@@ -2842,7 +3560,10 @@
       "nfl_team": "ATL",
       "injury_status": "Questionable",
       "projected": 173.36154428,
-      "adp": 168.09
+      "adp": 168.09,
+      "week_projected": 15.16,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_8161",
@@ -2852,7 +3573,10 @@
       "nfl_team": "MIA",
       "injury_status": null,
       "projected": 165.12500663,
-      "adp": 169.14
+      "adp": 169.14,
+      "week_projected": 0.0,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_4892",
@@ -2862,7 +3586,10 @@
       "nfl_team": "TB",
       "injury_status": "Out",
       "projected": 153.41468653,
-      "adp": 167.02
+      "adp": 167.02,
+      "week_projected": 0.0,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_5870",
@@ -2872,7 +3599,10 @@
       "nfl_team": "IND",
       "injury_status": null,
       "projected": 153.10438992,
-      "adp": 167.74
+      "adp": 167.74,
+      "week_projected": 13.7,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_12495",
@@ -2882,7 +3612,10 @@
       "nfl_team": "MIA",
       "injury_status": "Questionable",
       "projected": 152.59086831,
-      "adp": 145.64
+      "adp": 145.64,
+      "week_projected": 0.0,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_6797",
@@ -2892,7 +3625,10 @@
       "nfl_team": "LAC",
       "injury_status": null,
       "projected": 151.49333868,
-      "adp": 126.68
+      "adp": 126.68,
+      "week_projected": 11.52,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_12522",
@@ -2902,7 +3638,10 @@
       "nfl_team": "TEN",
       "injury_status": null,
       "projected": 147.57372472,
-      "adp": 168.81
+      "adp": 168.81,
+      "week_projected": 13.01,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_9753",
@@ -2912,7 +3651,10 @@
       "nfl_team": "SEA",
       "injury_status": "PUP",
       "projected": 146.97545944,
-      "adp": 153.35
+      "adp": 153.35,
+      "week_projected": 0.0,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_13346",
@@ -2922,7 +3664,10 @@
       "nfl_team": "CLE",
       "injury_status": null,
       "projected": 143.60466272,
-      "adp": 140.73
+      "adp": 140.73,
+      "week_projected": 12.2,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_6806",
@@ -2932,7 +3677,10 @@
       "nfl_team": "DEN",
       "injury_status": null,
       "projected": 137.56923657,
-      "adp": 135.07
+      "adp": 135.07,
+      "week_projected": 10.06,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_8148",
@@ -2942,7 +3690,10 @@
       "nfl_team": "DET",
       "injury_status": null,
       "projected": 129.39744292,
-      "adp": 88.89
+      "adp": 88.89,
+      "week_projected": 0.0,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_5844",
@@ -2952,7 +3703,10 @@
       "nfl_team": "MIN",
       "injury_status": "Out",
       "projected": 127.80914292,
-      "adp": 154.89
+      "adp": 154.89,
+      "week_projected": 0.0,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_11624",
@@ -2962,7 +3716,10 @@
       "nfl_team": "KC",
       "injury_status": null,
       "projected": 127.65976222,
-      "adp": 140.98
+      "adp": 140.98,
+      "week_projected": 9.71,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_11610",
@@ -2972,7 +3729,10 @@
       "nfl_team": "MIA",
       "injury_status": null,
       "projected": 127.44718902,
-      "adp": 165.25
+      "adp": 165.25,
+      "week_projected": 0.0,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_5022",
@@ -2982,7 +3742,10 @@
       "nfl_team": "PHI",
       "injury_status": null,
       "projected": 127.13741204,
-      "adp": 131.16
+      "adp": 131.16,
+      "week_projected": 10.43,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_12534",
@@ -2992,7 +3755,10 @@
       "nfl_team": "CHI",
       "injury_status": "Out",
       "projected": 124.78250829,
-      "adp": 128.44
+      "adp": 128.44,
+      "week_projected": 10.13,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_13833",
@@ -3002,7 +3768,10 @@
       "nfl_team": "NYG",
       "injury_status": null,
       "projected": 122.83232141,
-      "adp": 168.19
+      "adp": 168.19,
+      "week_projected": 10.91,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_12489",
@@ -3012,7 +3781,10 @@
       "nfl_team": "DEN",
       "injury_status": null,
       "projected": 122.58734115,
-      "adp": 137.16
+      "adp": 137.16,
+      "week_projected": 9.55,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_7600",
@@ -3022,7 +3794,10 @@
       "nfl_team": "PIT",
       "injury_status": null,
       "projected": 121.86784949,
-      "adp": 165.58
+      "adp": 165.58,
+      "week_projected": 10.27,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_9480",
@@ -3032,7 +3807,10 @@
       "nfl_team": "JAC",
       "injury_status": null,
       "projected": 121.11724801,
-      "adp": 162.77
+      "adp": 162.77,
+      "week_projected": 9.75,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_4227",
@@ -3042,7 +3820,10 @@
       "nfl_team": "KC",
       "injury_status": null,
       "projected": 120.74973907,
-      "adp": 151.28
+      "adp": 151.28,
+      "week_projected": 9.55,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_6083",
@@ -3052,7 +3833,10 @@
       "nfl_team": "LV",
       "injury_status": null,
       "projected": 119.36239929,
-      "adp": 167.1
+      "adp": 167.1,
+      "week_projected": 10.71,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_13269",
@@ -3062,7 +3846,10 @@
       "nfl_team": "LV",
       "injury_status": null,
       "projected": 116.9094133,
-      "adp": 168.94
+      "adp": 168.94,
+      "week_projected": 0.0,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_8121",
@@ -3072,7 +3859,10 @@
       "nfl_team": "NE",
       "injury_status": null,
       "projected": 115.23158094,
-      "adp": 150.27
+      "adp": 150.27,
+      "week_projected": 11.15,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_5947",
@@ -3082,7 +3872,10 @@
       "nfl_team": "JAC",
       "injury_status": null,
       "projected": 114.99504667,
-      "adp": 134.23
+      "adp": 134.23,
+      "week_projected": 9.21,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_13286",
@@ -3092,7 +3885,10 @@
       "nfl_team": "SEA",
       "injury_status": "IR",
       "projected": 114.20238892,
-      "adp": 115.79
+      "adp": 115.79,
+      "week_projected": 0.0,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_11625",
@@ -3102,7 +3898,10 @@
       "nfl_team": "NYJ",
       "injury_status": "Out",
       "projected": 113.99298187,
-      "adp": 168.57
+      "adp": 168.57,
+      "week_projected": 9.3,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_13274",
@@ -3112,7 +3911,10 @@
       "nfl_team": "PIT",
       "injury_status": null,
       "projected": 113.57610776,
-      "adp": 169.13
+      "adp": 169.13,
+      "week_projected": 10.55,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_8408",
@@ -3122,7 +3924,10 @@
       "nfl_team": "MIN",
       "injury_status": "IR",
       "projected": 113.53388843,
-      "adp": 162.92
+      "adp": 162.92,
+      "week_projected": 0.0,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_650",
@@ -3132,7 +3937,10 @@
       "nfl_team": "ATL",
       "injury_status": null,
       "projected": 112.38509089,
-      "adp": 168.8
+      "adp": 168.8,
+      "week_projected": 9.55,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_12961",
@@ -3142,7 +3950,10 @@
       "nfl_team": "CAR",
       "injury_status": null,
       "projected": 111.14394639,
-      "adp": 168.95
+      "adp": 168.95,
+      "week_projected": 8.42,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_1945",
@@ -3152,7 +3963,10 @@
       "nfl_team": "PIT",
       "injury_status": null,
       "projected": 110.08351374,
-      "adp": 166.21
+      "adp": 166.21,
+      "week_projected": 8.76,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_11565",
@@ -3162,7 +3976,10 @@
       "nfl_team": "NYG",
       "injury_status": null,
       "projected": 108.13973449,
-      "adp": 168.92
+      "adp": 168.92,
+      "week_projected": 0.0,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_10213",
@@ -3172,7 +3989,10 @@
       "nfl_team": "LV",
       "injury_status": null,
       "projected": 108.06302034,
-      "adp": 167.18
+      "adp": 167.18,
+      "week_projected": 10.37,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_5045",
@@ -3182,7 +4002,10 @@
       "nfl_team": "DEN",
       "injury_status": null,
       "projected": 107.98097041,
-      "adp": 121.8
+      "adp": 121.8,
+      "week_projected": 8.39,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_7042",
@@ -3192,7 +4015,10 @@
       "nfl_team": "BUF",
       "injury_status": null,
       "projected": 107.63469106,
-      "adp": 168.21
+      "adp": 168.21,
+      "week_projected": 9.09,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_8142",
@@ -3202,7 +4028,10 @@
       "nfl_team": "IND",
       "injury_status": "IR",
       "projected": 107.49623287,
-      "adp": 139.45
+      "adp": 139.45,
+      "week_projected": 0.0,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_11539",
@@ -3212,7 +4041,10 @@
       "nfl_team": "DET",
       "injury_status": null,
       "projected": 106.31353558,
-      "adp": 158.63
+      "adp": 158.63,
+      "week_projected": 0.0,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_13298",
@@ -3222,7 +4054,10 @@
       "nfl_team": "CLE",
       "injury_status": "Out",
       "projected": 106.11251341,
-      "adp": 159.7
+      "adp": 159.7,
+      "week_projected": 0.11,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_8126",
@@ -3232,7 +4067,10 @@
       "nfl_team": "TEN",
       "injury_status": null,
       "projected": 105.65682811,
-      "adp": 128.92
+      "adp": 128.92,
+      "week_projected": 8.92,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_13968",
@@ -3242,7 +4080,10 @@
       "nfl_team": "WAS",
       "injury_status": null,
       "projected": 105.57054617,
-      "adp": 169.72
+      "adp": 169.72,
+      "week_projected": 8.23,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_9486",
@@ -3252,7 +4093,10 @@
       "nfl_team": "PHI",
       "injury_status": null,
       "projected": 105.23740899,
-      "adp": 166.75
+      "adp": 166.75,
+      "week_projected": 8.67,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_11603",
@@ -3262,7 +4106,10 @@
       "nfl_team": "SEA",
       "injury_status": null,
       "projected": 104.58997987,
-      "adp": 168.13
+      "adp": 168.13,
+      "week_projected": 8.22,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_12517",
@@ -3272,7 +4119,10 @@
       "nfl_team": "CHI",
       "injury_status": null,
       "projected": 104.23030668,
-      "adp": 60.39
+      "adp": 60.39,
+      "week_projected": 8.52,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_3678",
@@ -3282,7 +4132,10 @@
       "nfl_team": "DEN",
       "injury_status": null,
       "projected": 104.06741822,
-      "adp": 169.33
+      "adp": 169.33,
+      "week_projected": 8.36,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_8134",
@@ -3292,7 +4145,10 @@
       "nfl_team": "BUF",
       "injury_status": null,
       "projected": 103.86208427,
-      "adp": 143.57
+      "adp": 143.57,
+      "week_projected": 9.02,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_8676",
@@ -3302,7 +4158,10 @@
       "nfl_team": "SEA",
       "injury_status": null,
       "projected": 103.16412871,
-      "adp": 166.35
+      "adp": 166.35,
+      "week_projected": 8.12,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_13281",
@@ -3312,7 +4171,10 @@
       "nfl_team": "NO",
       "injury_status": "IR",
       "projected": 101.70811643,
-      "adp": 167.84
+      "adp": 167.84,
+      "week_projected": 0.0,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_9508",
@@ -3322,7 +4184,10 @@
       "nfl_team": "TEN",
       "injury_status": null,
       "projected": 101.39226395,
-      "adp": 163.25
+      "adp": 163.25,
+      "week_projected": 8.81,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_2020",
@@ -3332,7 +4197,10 @@
       "nfl_team": "CHI",
       "injury_status": null,
       "projected": 101.27535272,
-      "adp": 166.86
+      "adp": 166.86,
+      "week_projected": 8.17,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_12474",
@@ -3342,7 +4210,10 @@
       "nfl_team": "HOU",
       "injury_status": null,
       "projected": 101.22533451,
-      "adp": 158.85
+      "adp": 158.85,
+      "week_projected": 10.82,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_1479",
@@ -3352,7 +4223,10 @@
       "nfl_team": "IND",
       "injury_status": null,
       "projected": 100.28897144,
-      "adp": 167.96
+      "adp": 167.96,
+      "week_projected": 9.43,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_11783",
@@ -3362,7 +4236,10 @@
       "nfl_team": "DAL",
       "injury_status": null,
       "projected": 99.35231237,
-      "adp": 169.23
+      "adp": 169.23,
+      "week_projected": 8.22,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_6650",
@@ -3372,7 +4249,10 @@
       "nfl_team": "TB",
       "injury_status": null,
       "projected": 99.08551375,
-      "adp": 167.18
+      "adp": 167.18,
+      "week_projected": 8.17,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_12533",
@@ -3382,7 +4262,10 @@
       "nfl_team": "WAS",
       "injury_status": null,
       "projected": 98.2510498,
-      "adp": 148.94
+      "adp": 148.94,
+      "week_projected": 6.92,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_3214",
@@ -3392,7 +4275,10 @@
       "nfl_team": "NE",
       "injury_status": null,
       "projected": 98.24668643,
-      "adp": 163.14
+      "adp": 163.14,
+      "week_projected": 8.56,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_8111",
@@ -3402,7 +4288,10 @@
       "nfl_team": "TB",
       "injury_status": null,
       "projected": 98.05141671,
-      "adp": 169.68
+      "adp": 169.68,
+      "week_projected": 7.74,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_11261",
@@ -3412,7 +4301,10 @@
       "nfl_team": "CLE",
       "injury_status": null,
       "projected": 97.97700296,
-      "adp": 169.47
+      "adp": 169.47,
+      "week_projected": 8.29,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_9511",
@@ -3422,7 +4314,10 @@
       "nfl_team": "LAC",
       "injury_status": null,
       "projected": 97.24745127,
-      "adp": 168.34
+      "adp": 168.34,
+      "week_projected": 7.66,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_7553",
@@ -3432,7 +4327,10 @@
       "nfl_team": "ATL",
       "injury_status": null,
       "projected": 97.00544064,
-      "adp": 104.84
+      "adp": 104.84,
+      "week_projected": 8.39,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_8259",
@@ -3442,7 +4340,10 @@
       "nfl_team": "LAC",
       "injury_status": null,
       "projected": 97.00234512,
-      "adp": 122.25
+      "adp": 122.25,
+      "week_projected": 7.66,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_13545",
@@ -3452,7 +4353,10 @@
       "nfl_team": "GB",
       "injury_status": null,
       "projected": 96.96695877,
-      "adp": 168.54
+      "adp": 168.54,
+      "week_projected": 8.6,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_8136",
@@ -3462,7 +4366,10 @@
       "nfl_team": "WAS",
       "injury_status": null,
       "projected": 96.54344992,
-      "adp": 143.47
+      "adp": 143.47,
+      "week_projected": 7.41,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_11586",
@@ -3472,7 +4379,10 @@
       "nfl_team": "LA",
       "injury_status": null,
       "projected": 95.12742305,
-      "adp": 145.77
+      "adp": 145.77,
+      "week_projected": 9.0,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_2505",
@@ -3482,7 +4392,10 @@
       "nfl_team": "CAR",
       "injury_status": null,
       "projected": 92.15305562,
-      "adp": 169.0
+      "adp": 169.0,
+      "week_projected": 7.07,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_7839",
@@ -3492,7 +4405,10 @@
       "nfl_team": "CIN",
       "injury_status": null,
       "projected": 91.830071,
-      "adp": 161.21
+      "adp": 161.21,
+      "week_projected": 0.0,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_13296",
@@ -3502,7 +4418,10 @@
       "nfl_team": "MIA",
       "injury_status": "Out",
       "projected": 91.01499641,
-      "adp": 169.68
+      "adp": 169.68,
+      "week_projected": 0.0,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_4037",
@@ -3512,7 +4431,10 @@
       "nfl_team": "TB",
       "injury_status": null,
       "projected": 91.0092321,
-      "adp": 142.84
+      "adp": 142.84,
+      "week_projected": 7.01,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_5001",
@@ -3522,7 +4444,10 @@
       "nfl_team": "HOU",
       "injury_status": null,
       "projected": 90.48528326,
-      "adp": 166.51
+      "adp": 166.51,
+      "week_projected": 7.5,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "espn_-16034",
@@ -3532,7 +4457,10 @@
       "nfl_team": "HOU",
       "injury_status": null,
       "projected": 90.46374002,
-      "adp": 93.38
+      "adp": 93.38,
+      "week_projected": 5.27,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_8154",
@@ -3542,7 +4470,10 @@
       "nfl_team": "ATL",
       "injury_status": null,
       "projected": 88.20232242,
-      "adp": 154.04
+      "adp": 154.04,
+      "week_projected": 7.56,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_12535",
@@ -3552,7 +4483,10 @@
       "nfl_team": "DET",
       "injury_status": null,
       "projected": 88.00085179,
-      "adp": 169.13
+      "adp": 169.13,
+      "week_projected": 0.0,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_7571",
@@ -3562,7 +4496,10 @@
       "nfl_team": "BAL",
       "injury_status": null,
       "projected": 86.90990155,
-      "adp": 168.8
+      "adp": 168.8,
+      "week_projected": 7.0,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_3634",
@@ -3572,7 +4509,10 @@
       "nfl_team": "CHI",
       "injury_status": null,
       "projected": 86.5664558,
-      "adp": 169.52
+      "adp": 169.52,
+      "week_projected": 7.06,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_12713",
@@ -3582,7 +4522,10 @@
       "nfl_team": "NE",
       "injury_status": null,
       "projected": 86.39908933,
-      "adp": 169.39
+      "adp": 169.39,
+      "week_projected": 7.25,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "espn_-16025",
@@ -3592,7 +4535,10 @@
       "nfl_team": "SF",
       "injury_status": null,
       "projected": 85.05349746,
-      "adp": 150.51
+      "adp": 150.51,
+      "week_projected": 4.86,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_9482",
@@ -3602,7 +4548,10 @@
       "nfl_team": "LV",
       "injury_status": null,
       "projected": 84.8053651,
-      "adp": 168.61
+      "adp": 168.61,
+      "week_projected": 8.06,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_8132",
@@ -3612,7 +4561,10 @@
       "nfl_team": "ARI",
       "injury_status": null,
       "projected": 84.7323115,
-      "adp": 167.36
+      "adp": 167.36,
+      "week_projected": 6.66,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_13294",
@@ -3622,7 +4574,10 @@
       "nfl_team": "PHI",
       "injury_status": null,
       "projected": 83.93429019,
-      "adp": 153.13
+      "adp": 153.13,
+      "week_projected": 6.93,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_10955",
@@ -3632,7 +4587,10 @@
       "nfl_team": "ARI",
       "injury_status": null,
       "projected": 83.45168729,
-      "adp": 169.66
+      "adp": 169.66,
+      "week_projected": 6.5,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_3271",
@@ -3642,7 +4600,10 @@
       "nfl_team": "LA",
       "injury_status": null,
       "projected": 83.0955843,
-      "adp": 169.2
+      "adp": 169.2,
+      "week_projected": 7.25,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_8110",
@@ -3652,7 +4613,10 @@
       "nfl_team": "DAL",
       "injury_status": null,
       "projected": 82.66136911,
-      "adp": 142.19
+      "adp": 142.19,
+      "week_projected": 6.82,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_11576",
@@ -3662,7 +4626,10 @@
       "nfl_team": "NYJ",
       "injury_status": null,
       "projected": 82.40256587,
-      "adp": 163.39
+      "adp": 163.39,
+      "week_projected": 6.76,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_11637",
@@ -3672,7 +4639,10 @@
       "nfl_team": "BUF",
       "injury_status": null,
       "projected": 82.16728552,
-      "adp": 165.65
+      "adp": 165.65,
+      "week_projected": 7.12,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_7090",
@@ -3682,7 +4652,10 @@
       "nfl_team": "NYG",
       "injury_status": null,
       "projected": 81.91402274,
-      "adp": 169.84
+      "adp": 169.84,
+      "week_projected": 7.41,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "espn_-16033",
@@ -3692,7 +4665,10 @@
       "nfl_team": "BAL",
       "injury_status": null,
       "projected": 81.15844062,
-      "adp": 142.96
+      "adp": 142.96,
+      "week_projected": 7.53,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_8119",
@@ -3702,7 +4678,10 @@
       "nfl_team": "ATL",
       "injury_status": null,
       "projected": 81.03958506,
-      "adp": 169.67
+      "adp": 169.67,
+      "week_projected": 7.03,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_9754",
@@ -3712,7 +4691,10 @@
       "nfl_team": "LAC",
       "injury_status": "Out",
       "projected": 80.47663515,
-      "adp": 155.07
+      "adp": 155.07,
+      "week_projected": 7.37,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_8210",
@@ -3722,7 +4704,10 @@
       "nfl_team": "WAS",
       "injury_status": null,
       "projected": 80.4194505,
-      "adp": 169.83
+      "adp": 169.83,
+      "week_projected": 6.58,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_7021",
@@ -3732,7 +4717,10 @@
       "nfl_team": "PIT",
       "injury_status": "Out",
       "projected": 80.28256472,
-      "adp": 135.7
+      "adp": 135.7,
+      "week_projected": 6.38,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_10218",
@@ -3742,7 +4730,10 @@
       "nfl_team": "HOU",
       "injury_status": null,
       "projected": 80.09945317,
-      "adp": 169.82
+      "adp": 169.82,
+      "week_projected": 6.53,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_9479",
@@ -3752,7 +4743,10 @@
       "nfl_team": "PIT",
       "injury_status": null,
       "projected": 79.27330911,
-      "adp": 168.28
+      "adp": 168.28,
+      "week_projected": 6.36,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_4195",
@@ -3762,7 +4756,10 @@
       "nfl_team": "PHI",
       "injury_status": null,
       "projected": 79.16344385,
-      "adp": 168.46
+      "adp": 168.46,
+      "week_projected": 6.87,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_6039",
@@ -3772,7 +4769,10 @@
       "nfl_team": "BUF",
       "injury_status": null,
       "projected": 78.27733339,
-      "adp": 169.44
+      "adp": 169.44,
+      "week_projected": 6.82,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_4993",
@@ -3782,7 +4782,10 @@
       "nfl_team": "CIN",
       "injury_status": null,
       "projected": 77.98008524,
-      "adp": 167.63
+      "adp": 167.63,
+      "week_projected": 0.0,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_13330",
@@ -3792,7 +4795,10 @@
       "nfl_team": "NYJ",
       "injury_status": "Out",
       "projected": 77.38474867,
-      "adp": 165.54
+      "adp": 165.54,
+      "week_projected": 6.36,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_4454",
@@ -3802,7 +4808,10 @@
       "nfl_team": "ARI",
       "injury_status": null,
       "projected": 77.29453477,
-      "adp": 169.82
+      "adp": 169.82,
+      "week_projected": 6.11,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_4147",
@@ -3812,7 +4821,10 @@
       "nfl_team": "CIN",
       "injury_status": null,
       "projected": 76.70180078,
-      "adp": 169.22
+      "adp": 169.22,
+      "week_projected": 0.0,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_11631",
@@ -3822,7 +4834,10 @@
       "nfl_team": "JAC",
       "injury_status": null,
       "projected": 76.68308334,
-      "adp": 139.22
+      "adp": 139.22,
+      "week_projected": 6.14,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_9501",
@@ -3832,7 +4847,10 @@
       "nfl_team": "NE",
       "injury_status": null,
       "projected": 76.09557267,
-      "adp": 169.43
+      "adp": 169.43,
+      "week_projected": 9.01,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_11647",
@@ -3842,7 +4860,10 @@
       "nfl_team": "LAC",
       "injury_status": null,
       "projected": 76.02327202,
-      "adp": 169.84
+      "adp": 169.84,
+      "week_projected": 5.92,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_11581",
@@ -3852,7 +4873,10 @@
       "nfl_team": "GB",
       "injury_status": null,
       "projected": 75.64863377,
-      "adp": 135.19
+      "adp": 135.19,
+      "week_projected": 10.85,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_1166",
@@ -3862,7 +4886,10 @@
       "nfl_team": "LV",
       "injury_status": null,
       "projected": 75.56455815,
-      "adp": 162.75
+      "adp": 162.75,
+      "week_projected": 18.29,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_5095",
@@ -3872,7 +4899,10 @@
       "nfl_team": "NO",
       "injury_status": null,
       "projected": 75.20609954,
-      "adp": 169.67
+      "adp": 169.67,
+      "week_projected": 6.17,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_6783",
@@ -3882,7 +4912,10 @@
       "nfl_team": "CLE",
       "injury_status": null,
       "projected": 75.12860514,
-      "adp": 168.72
+      "adp": 168.72,
+      "week_projected": 8.52,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "espn_-16020",
@@ -3892,7 +4925,10 @@
       "nfl_team": "NYJ",
       "injury_status": null,
       "projected": 74.80549233,
-      "adp": 168.44
+      "adp": 168.44,
+      "week_projected": 5.29,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_2306",
@@ -3902,7 +4938,10 @@
       "nfl_team": "NYG",
       "injury_status": null,
       "projected": 74.38362289,
-      "adp": 169.22
+      "adp": 169.22,
+      "week_projected": 17.74,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "espn_-16017",
@@ -3912,7 +4951,10 @@
       "nfl_team": "NE",
       "injury_status": null,
       "projected": 74.13213619,
-      "adp": 151.95
+      "adp": 151.95,
+      "week_projected": 6.76,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_13285",
@@ -3922,7 +4964,10 @@
       "nfl_team": "NYG",
       "injury_status": null,
       "projected": 73.42922493,
-      "adp": 169.49
+      "adp": 169.49,
+      "week_projected": 6.61,
+      "opponent": null,
+      "on_bye": false
     }
   ]
 }
