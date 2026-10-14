@@ -192,3 +192,18 @@ def test_out_starter_produces_one_card_not_two():
     q = build_queue(state(mine), [])
     mentions = [a for a in q if "WR0" in a.players]
     assert len(mentions) == 1
+
+
+def test_dead_slot_with_no_bench_fix_becomes_a_pickup():
+    """Star on bye, backup out, no other RB: only a waiver add fixes it."""
+    mine = weekly_roster(
+        RB0=weekly("RB0", "RB", 320, 22, "RB", bye=True),
+        RBb=weekly("RBb", "RB", 150, 9, "BE", injury="OUT"),
+    )
+    fa = [weekly("StreamRB", "RB", 90, 11, None),
+          weekly("ByeRB", "RB", 200, 0, None, bye=True)]
+    q = build_queue(state(mine, free_agents=fa), [])
+    pick = next(a for a in q if a.kind == "lineup" and "Pick up" in a.title)
+    assert "StreamRB" in pick.title
+    assert "ByeRB" not in pick.title
+    assert pick.urgency == 2

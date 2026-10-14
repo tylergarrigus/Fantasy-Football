@@ -257,6 +257,7 @@ def waiver_actions(me: dict, free_agents: Sequence[dict], slots: dict,
 
 
 UNAVAILABLE = OUT_STATUSES | {"PUP", "NA"}
+FLEX_OK = {"RB", "WR", "TE"}
 
 
 def _week_value(p: dict) -> float | None:
@@ -287,8 +288,14 @@ def _why_not(p: dict) -> str:
     return f"{(_week_value(p) or 0):.1f} proj"
 
 
-def lineup_actions(me: dict, slots: dict) -> list[Action]:
-    """Start/sit for this week only, from weekly projections and byes."""
+def lineup_actions(me: dict, slots: dict,
+                   free_agents: Sequence[dict] = ()) -> list[Action]:
+    """Start/sit for this week only, from weekly projections and byes.
+
+    When the best possible lineup still has a dead slot -- every eligible
+    player on bye or out -- no swap fixes it, and the move is a one-week
+    pickup. That is the case season averages can never see.
+    """
     players = [p for p in me.get("players", []) if _week_value(p) is not None]
     if not players or not any("current_slot" in p for p in players):
         return []
@@ -327,6 +334,44 @@ def lineup_actions(me: dict, slots: dict) -> list[Action]:
             urgency=2 if dead else 1,
             players=[put_in["name"], take_out["name"]],
         ))
+
+    named = {n for a in actions for n in a.players}
+    for hole in [s for s in best.starters if s["projected"] == 0]:
+        slot = hole["slot"]
+        eligible = FLEX_OK if slot == "FLEX" else {slot}
+        pool = [fa for fa in free_agents
+                if fa.get("position") in eligible and not fa.get("on_bye")
+                and (fa.get("injury_status") or "").upper().replace(" ", "_")
+                not in UNAVAILABLE and fa.get("week_projected")]
+        if not pool:
+            continue
+        pick = max(pool, key=lambda fa: fa["week_projected"])
+        # An IR-slot player doesn't hold a bench spot, so dropping him frees
+        # nothing; the drop has to come off the active bench.
+        drop = min((p for p in weekly if p["player_id"] not in best_ids
+                    and p["name"] not in named
+                    and (p.get("current_slot") or "BE") != "IR"),
+                   key=lambda p: (p.get("projected") or 0), default=None)
+        drop_txt = f", drop {drop['name']}" if drop else ""
+        opp = pick.get("opponent")
+        actions.append(Action(
+            kind="lineup",
+            title=f"Pick up {pick['name']} ({pick['position']}) for this week{drop_txt}",
+            why=(f"Your {slot} spot scores zero: {hole['name']} is "
+                 f"{_why_not(hole)} and nobody on your bench can fill it. "
+                 f"{pick['name']} projects {pick['week_projected']:.1f}"
+                 f"{' vs ' + opp if opp else ''}."),
+            confidence="High",
+            confidence_why="an empty slot is a guaranteed zero",
+            deadline="Before kickoff",
+            steps=f"ESPN app: Players → {pick['name']} → Add"
+                  + (f" → drop {drop['name']}" if drop else "")
+                  + f" → start him at {slot}.",
+            gain=float(pick["week_projected"]),
+            urgency=2,
+            players=[pick["name"]] + ([drop["name"]] if drop else []),
+        ))
+        named.update(a for a in [pick["name"]])
     return actions
 
 
@@ -388,7 +433,7 @@ def build_queue(state: dict, news_items: Sequence[dict],
     chain_bar = 12.0 if trade_posture == "conservative" else 3.0
 
     queue: list[Action] = []
-    lineup = lineup_actions(me, slots)
+    lineup = lineup_actions(me, slots, state.get("free_agents", []))
     queue += lineup
     covered = {n for a in lineup for n in a.players}
     queue += [a for a in injury_actions(me, slots, news_by_id)
