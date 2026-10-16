@@ -18,17 +18,18 @@ name: Monitor
 # on the hour, and the queue is measurably worse there.
 
 on:
-  schedule:
-    # Baseline: twice an hour, all week.
-    - cron: "7,37 * * * *"
-    # Sunday game windows (UTC). 16:00-23:59 UTC covers the 12pm-7pm ET slate,
-    # including the ~90 minutes before kickoff when inactives post -- the single
-    # highest-value window of the week.
-    - cron: "3,13,23,33,43,53 16-23 * * 0"
-    # Sunday night + Monday night + Thursday night spillover into the next UTC day.
-    - cron: "3,13,23,33,43,53 0-4 * * 1,2,5"
-    # Daily deep pass: trades and the full waiver wire. 11:13 UTC ~= 7am ET.
-    - cron: "13 11 * * *"
+  # Schedule paused: this cycle needs FF_LEAGUE_1_ID, FF_LEAGUE_2_ID and a
+  # notification channel (FF_NOTIFY_URL) set as repository secrets, and they
+  # aren't yet -- unpaused it would fail every 30 minutes and email a failure
+  # notice each time. The Command Center refresh (league-state.yml) needs only
+  # the ESPN cookies and runs on its own schedule. Restore the block below once
+  # those secrets exist.
+  #
+  # schedule:
+  #   - cron: "7,37 * * * *"
+  #   - cron: "3,13,23,33,43,53 16-23 * * 0"
+  #   - cron: "3,13,23,33,43,53 0-4 * * 1,2,5"
+  #   - cron: "13 11 * * *"
   workflow_dispatch:
     inputs:
       deep:
