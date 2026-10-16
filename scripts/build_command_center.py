@@ -63,7 +63,7 @@ def flag(p: dict) -> tuple[str, str] | None:
 
 def flag_html(p: dict) -> str:
     f = flag(p)
-    return f'<span class="tag {f[1]}">{esc(f[0])}</span>' if f else ""
+    return f'<span class="flg {f[1]}">{esc(f[0])}</span>' if f else ""
 
 
 def pos_html(pos: str) -> str:
@@ -184,33 +184,7 @@ def split_queue(queue: list[Action]) -> tuple[list[Action], list[Action], list[A
     today.sort(key=lambda a: (-a.urgency, -a.gain))
     return today, trades, alts
 
-
 # ------------------------------------------------------------- pieces
-
-
-def row(p: dict | None, name: str, value: str = "", sub: str = "") -> str:
-    p = p or {}
-    meta = sub or esc(p.get("nfl_team") or "")
-    val = f'<span class="pv">{value}</span>' if value else ""
-    return (f'<li class="pr">{pos_html(p.get("position") or "")}'
-            f'<span class="pn"><b>{esc(name)}</b><small>{meta}</small></span>'
-            f'{flag_html(p)}{val}</li>')
-
-
-def swap(out_label: str, out_rows: str, in_label: str, in_rows: str) -> str:
-    return (f'<div class="swap">'
-            f'<div class="side out"><span class="sl">{out_label}</span><ul>{out_rows}</ul></div>'
-            f'<div class="side in"><span class="sl">{in_label}</span><ul>{in_rows}</ul></div>'
-            f'</div>')
-
-
-def wk(p: dict | None) -> str:
-    if not p:
-        return ""
-    f = flag(p)
-    if f and f[1] == "bad":
-        return "0"
-    return f"{week_pts(p):.1f}"
 
 
 def opp_sub(p: dict | None) -> str:
@@ -219,89 +193,97 @@ def opp_sub(p: dict | None) -> str:
     opp = p.get("opponent")
     team = esc(p.get("nfl_team") or "")
     if opp == "BYE":
-        return f"{team} · bye week"
-    return f"{team} · vs {esc(opp)}" if opp else team
+        return f"{team} · bye"
+    return f"{team} vs {esc(opp)}" if opp else team
 
 
-def bubble(text: str) -> str:
-    return (f'<div class="chat"><p class="bub">{esc(text)}</p>'
-            f'<button class="ghost" data-copy>Copy</button></div>')
+def wk(p: dict | None) -> str:
+    if not p:
+        return ""
+    f = flag(p)
+    return "0" if f and f[1] == "bad" else f"{week_pts(p):.1f}"
 
 
-TAGS = {"lineup": ("Lineup", "t-lineup"), "injury": ("Injury", "t-injury"),
-        "waiver": ("Pickup", "t-pickup"), "trade": ("Trade", "t-trade"),
-        "plan": ("2-step trade", "t-plan")}
+def mv(sign: str, p: dict | None, name: str, value: str = "", sub: str = "") -> str:
+    """One player line in a move: minus = leaves your lineup, plus = joins it."""
+    p = p or {}
+    meta = sub or esc(p.get("nfl_team") or "")
+    val = f'<span class="val">{value}</span>' if value else ""
+    glyph = "+" if sign == "in" else "&minus;"
+    return (f'<li class="mv {sign}"><span class="sg">{glyph}</span>{pos_html(p.get("position") or "")}'
+            f'<span class="nm"><b>{esc(name)}</b><small>{meta}</small></span>'
+            f'{flag_html(p)}{val}</li>')
 
-OPEN_SPOT = '<li class="pr none">Open spot</li>'
+
+def mvs(sign: str, ps: list[dict], people: dict) -> str:
+    return "".join(mv(sign, people.get(p["name"]) or p, p["name"]) for p in ps)
 
 
-def _rows(ps: list[dict], people: dict) -> str:
-    return "".join(row(people.get(p["name"]) or p, p["name"]) for p in ps)
+TAGS = {"lineup": ("Lineup", "k-line"), "injury": ("Injury", "k-hurt"),
+        "waiver": ("Pickup", "k-add"), "trade": ("Trade", "k-trade"),
+        "plan": ("2-step", "k-trade")}
+
+CHECK = ('<button class="done" data-done aria-pressed="false" aria-label="Mark done">'
+         '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 12.5l4 4L18 8"/></svg></button>')
 
 
-def card(a: Action, lg: str, people: dict) -> str:
+def card(a: Action, lg: str, people: dict, i: int) -> str:
     get = people.get
-    tag, tcls = TAGS.get(a.kind, ("Move", ""))
-    title, body, gain_n, gain_l, extra = a.title, "", "", "", ""
+    tag, kcls = TAGS.get(a.kind, ("Move", ""))
+    title, rows, gain, unit, foot = a.title, "", "", "", ""
 
     if a.kind == "lineup" and a.title.startswith("Pick up"):
-        tag, tcls = "Pickup", "t-pickup"
+        tag, kcls = "Pickup", "k-add"
         add, drop = (a.players + [None])[:2]
         title = f"Pick up {add}"
-        body = swap("Drop", row(get(drop), drop) if drop else OPEN_SPOT,
-                    "Add", row(get(add), add, wk(get(add)), opp_sub(get(add))))
-        gain_n, gain_l = f"+{a.gain:.1f}", "pts this week"
+        rows = mv("in", get(add), add, wk(get(add)), opp_sub(get(add)))
+        if drop:
+            rows += mv("out", get(drop), drop)
+        gain, unit = f"+{a.gain:.1f}", "this week"
     elif a.kind == "lineup":
         start, sit = a.players[:2]
         title = f"Start {start}"
-        body = swap("Bench", row(get(sit), sit, wk(get(sit)), opp_sub(get(sit))),
-                    "Start", row(get(start), start, wk(get(start)), opp_sub(get(start))))
-        gain_n, gain_l = f"+{a.gain:.1f}", "pts this week"
+        rows = (mv("in", get(start), start, wk(get(start)), opp_sub(get(start)))
+                + mv("out", get(sit), sit, wk(get(sit)), opp_sub(get(sit))))
+        gain, unit = f"+{a.gain:.1f}", "this week"
     elif a.kind == "injury":
         n = a.players[0]
         title = f"Bench {n}"
-        body = (f'<ul class="solo">{row(get(n), n)}</ul>'
-                '<p class="note">Out this week. Start your best healthy player.</p>')
+        rows = mv("out", get(n), n)
     elif a.kind == "waiver":
         add, drop = (a.players + [None])[:2]
         title = f"Add {add}"
-        body = swap("Drop", row(get(drop), drop) if drop else OPEN_SPOT,
-                    "Add", row(get(add), add))
-        gain_n, gain_l = f"+{a.gain:.0f}", "season pts"
+        rows = mv("in", get(add), add) + (mv("out", get(drop), drop) if drop else "")
+        gain, unit = f"+{a.gain:.0f}", "season"
     elif a.kind == "trade" and a.trade:
         t = a.trade
         title = "Get " + " + ".join(p["name"] for p in t["receive"])
-        body = (f'<p class="who">with <b>{esc(t["partner_name"])}</b></p>'
-                + swap("You give", _rows(t["send"], people),
-                       "You get", _rows(t["receive"], people)))
-        gain_n, gain_l = f"+{t['my_gain']:.0f}", "your lineup"
-        extra = f'<span class="them">them +{t["their_gain"]:.0f}</span>'
+        rows = mvs("in", t["receive"], people) + mvs("out", t["send"], people)
+        gain, unit = f"+{t['my_gain']:.0f}", "season"
+        foot = (f'<p class="with">w/ <b>{esc(t["partner_name"].strip())}</b>'
+                f'<span>them +{t["their_gain"]:.0f}</span></p>')
     elif a.kind == "plan" and a.trade:
         c = a.trade
-        notes = c.get("step_notes") or ["", ""]
         title = "Get " + " + ".join(p["name"] for p in c["step2"]["receive"])
-        steps = ""
-        for i, (st, note) in enumerate(((c["step1"], notes[0]), (c["step2"], notes[1])), 1):
-            nline = f'<p class="note">{esc(note)}</p>' if note else ""
-            steps += (
-                f'<li class="step"><span class="sn">{i}</span><div class="sb">'
-                f'<p class="who">with <b>{esc(st["partner_name"])}</b></p>'
-                + swap("Give", _rows(st["send"], people), "Get", _rows(st["receive"], people))
-                + nline + "</div></li>")
-        body = f'<ol class="steps">{steps}</ol>'
-        gain_n, gain_l = f"+{c['total_gain']:.0f}", "your lineup"
+        for n, st in enumerate((c["step1"], c["step2"]), 1):
+            rows += (f'<li class="stp"><span class="sn">{n}</span>'
+                     f'<span>w/ <b>{esc(st["partner_name"].strip())}</b></span></li>'
+                     + mvs("in", st["receive"], people) + mvs("out", st["send"], people))
+        gain, unit = f"+{c['total_gain']:.0f}", "season"
 
-    chat = bubble(a.draft_message) if a.draft_message else ""
-    gain = (f'<div class="gain"><b>{gain_n}</b><span>{gain_l}</span>{extra}</div>'
-            if gain_n else '<div class="gain"></div>')
+    if a.draft_message:
+        foot += (f'<button class="txt" data-copy="{esc(a.draft_message)}">'
+                 '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 6h14v9H10l-4 3v-3H5z"/></svg>'
+                 'Copy text</button>')
+    live = '<span class="live"><i></i>Now</span>' if a.urgency >= 2 else ""
+    g = (f'<span class="gain"><b>{gain}</b><small>{unit}</small></span>' if gain else "")
     key = esc(f"{lg}|{a.kind}|{a.title}")
-    urgent = " urgent" if a.urgency >= 2 else ""
+    foot_html = f'<div class="foot">{foot}</div>' if foot else ""
     return f"""
-<article class="card{urgent}" data-key="{key}">
-  <header class="ch"><span class="kt {tcls}">{tag}</span><span class="dl">{esc(a.deadline)}</span></header>
-  <h3>{esc(title)}</h3>
-  <div class="cb">{body}{chat}</div>
-  <footer class="cf">{gain}<button class="done" data-done aria-pressed="false"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3L15 6.5"/></svg>Done</button></footer>
+<article class="card {kcls}" data-key="{key}" style="--i:{i}">
+  <div class="top-row"><span class="tag"><span>{tag}</span></span>{live}{CHECK}</div>
+  <div class="head"><h3>{esc(title)}</h3>{g}</div>
+  <div class="fold"><div><ul class="moves">{rows}</ul>{foot_html}</div></div>
 </article>"""
 
 
@@ -315,52 +297,44 @@ def started(me: dict) -> list[dict]:
 def view_today(a: dict, key: str, today: list[Action], n_trades: int) -> str:
     st, me = a["state"], a["me"]
     if not a["drafted"]:
-        return ('<div class="view" data-view="today"><section class="hero">'
-                '<p class="big ok">Not drafted</p><p class="sub">This fills in after the draft.</p>'
-                '</section></div>')
+        return ('<div class="view" data-view="today"><section class="bug">'
+                '<p class="count">—</p><p class="cap">Not drafted yet</p></section></div>')
     n = len(today)
     pts = sum(week_pts(p) for p in started(me))
-    rec = ""
-    if me.get("wins") is not None:
-        ties = f'-{me["ties"]}' if me.get("ties") else ""
-        rec = (f'<div class="stat"><b>{me["wins"]}-{me["losses"]}{ties}</b>'
-               f'<span>record</span></div>')
     po = st.get("playoff_teams") or 0
     total = len(st["teams"])
     cells = "".join(
-        f'<i class="{"me" if t.get("is_me") else ""}{" in" if i < po else ""}"></i>'
+        f'<i class="{"me" if t.get("is_me") else ""}{" po" if i < po else ""}" style="--j:{i}"></i>'
         for i, t in enumerate(st["teams"])
     )
-    ladder = ""
-    if po:
-        ladder = (f'<div class="ladder" aria-hidden="true">{cells}</div>'
-                  f'<p class="lcap"><span>Roster strength: <b>{ordinal(me["_rank"])}</b> of {total}</span>'
-                  f'<span>Top {po} make playoffs</span></p>')
+    rec = ""
+    if me.get("wins") is not None:
+        rec = f'<div><b>{me["wins"]}-{me["losses"]}</b><small>record</small></div>'
     word = "move" if n == 1 else "moves"
-    head = (f'<p class="big">{n}<span>{word}</span></p>' if n
-            else '<p class="big ok">All set</p>')
-    cards = "".join(card(x, key, a["people"]) for x in today)
-    more = (f'<button class="more" data-goto="trades">All trade ideas<span>{n_trades}</span></button>'
-            if n_trades > 1 else "")
-    empty = ('<p class="calm">Lineup is set, nobody on waivers beats your guys, '
-             'and no trade helps both sides. Check back later.</p>') if not n else ""
+    cards = "".join(card(x, key, a["people"], i) for i, x in enumerate(today))
+    if not n:
+        cards = '<p class="calm">Nothing to do. Your team is set.</p>'
+    more = (f'<button class="more" data-goto="trades" style="--i:{n}">'
+            f'<span>{n_trades} trade ideas</span><svg viewBox="0 0 24 24" aria-hidden="true">'
+            '<path d="M9 6l6 6-6 6"/></svg></button>' if n_trades > 1 else "")
     return f"""
 <div class="view" data-view="today">
-  <section class="hero">
-    <div class="hrow">{head}
-      <div class="stats"><div class="stat"><b>{pts:.0f}</b><span>proj this week</span></div>{rec}</div>
+  <section class="bug">
+    <div class="bug-l"><p class="count" data-count="{n}">{n}</p><p class="cap">{word}</p></div>
+    <div class="bug-r">
+      <div><b>{pts:.0f}</b><small>proj pts</small></div>
+      <div><b>{ordinal(me["_rank"])}</b><small>of {total}</small></div>{rec}
     </div>
-    {ladder}
+    <div class="ladder" aria-label="Top {po} make playoffs">{cells}</div>
   </section>
-  {empty}<div class="cards">{cards}</div>{more}
+  <div class="cards">{cards}</div>{more}
 </div>"""
 
 
-def view_lineup(a: dict, news: dict) -> str:
+def view_lineup(a: dict) -> str:
     if not a["drafted"]:
         return '<div class="view" data-view="lineup" hidden></div>'
     me, st = a["me"], a["state"]
-    week = st.get("current_week")
 
     moves_in, moves_out = set(), set()
     for x in a["queue"]:
@@ -377,92 +351,79 @@ def view_lineup(a: dict, news: dict) -> str:
     ir = [p for p in me["players"] if p.get("current_slot") == "IR"]
     top = max([week_pts(p) for p in me["players"]] + [1])
 
-    def line(p, slot):
+    def line(p, slot, i):
         v = week_pts(p)
         f = flag(p)
         dead = bool(f and f[1] == "bad")
         mark = ""
         if p["name"] in moves_out:
-            mark = '<span class="mv sit">Sit</span>'
+            mark = '<span class="arrow down" title="Sit">Sit</span>'
         elif p["name"] in moves_in:
-            mark = '<span class="mv go">Start</span>'
-        bar = max(0.0, min(1.0, v / top))
+            mark = '<span class="arrow up" title="Start">Start</span>'
         shown = "0" if dead else f"{v:.1f}"
         dcls = " dead" if dead else ""
-        return (f'<li class="lr{dcls}">'
+        return (f'<li class="dr{dcls}" style="--i:{i};--w:{max(0.0, min(1.0, v / top)):.2f}">'
                 f'<span class="slot">{esc(slot)}</span>'
-                f'<span class="pn"><b>{esc(p["name"])}</b><small>{opp_sub(p)}</small></span>'
-                f'{flag_html(p)}{mark}'
-                f'<span class="pts"><b>{shown}</b><i style="--w:{bar:.2f}"></i></span></li>')
+                f'<span class="nm"><b>{esc(p["name"])}</b><small>{opp_sub(p)}</small></span>'
+                f'{flag_html(p)}{mark}<span class="pts"><b>{shown}</b><i></i></span></li>')
 
-    srows = "".join(line(p, SLOT_LABEL.get(p["current_slot"], p["current_slot"])) for p in starters)
-    brows = "".join(line(p, "BN") for p in bench)
-    irows = "".join(line(p, "IR") for p in ir)
+    srows = "".join(line(p, SLOT_LABEL.get(p["current_slot"], p["current_slot"]), i)
+                    for i, p in enumerate(starters))
+    brows = "".join(line(p, "BN", i) for i, p in enumerate(bench))
+    brows += "".join(line(p, "IR", len(bench) + i) for i, p in enumerate(ir))
     total = sum(week_pts(p) for p in starters)
-
-    mine = {str(p["espn_id"]): p["name"] for p in me["players"] if p.get("espn_id")}
-    items = ""
-    seen = 0
-    for item in news.get("items", []):
-        names = [mine[str(i)] for i in item.get("espn_athlete_ids", []) if str(i) in mine]
-        if not names or seen >= 5:
-            continue
-        seen += 1
-        when = (item.get("published") or "")[:10]
-        link = esc(item.get("url") or "")
-        head = esc(item["headline"])
-        h = f'<a href="{link}" target="_blank" rel="noopener">{head}</a>' if link else head
-        who = esc(", ".join(dict.fromkeys(names)))
-        items += (f'<li><span class="nw">{who}</span><p>{h}</p>'
-                  f'<small>{esc(when)}</small></li>')
-    news_block = ""
-    if items:
-        news_block = (f'<section class="block"><h2>Your guys in the news</h2>'
-                      f'<ul class="news">{items}</ul></section>')
-
     return f"""
 <div class="view" data-view="lineup" hidden>
-  <section class="block">
-    <div class="bh"><h2>Week {esc(week)} starters</h2><span class="tot"><b>{total:.1f}</b> proj</span></div>
-    <ul class="lineup">{srows}</ul>
+  <section class="sheet">
+    <header class="sh"><h2>Week {esc(st.get("current_week"))}</h2><span><b>{total:.1f}</b> proj</span></header>
+    <ul class="depth">{srows}</ul>
   </section>
-  <section class="block">
-    <h2>Bench</h2>
-    <ul class="lineup bench">{brows}{irows}</ul>
+  <section class="sheet">
+    <header class="sh"><h2>Bench</h2></header>
+    <ul class="depth bench">{brows}</ul>
   </section>
-  {news_block}
 </div>"""
 
 
-def view_trades(a: dict, key: str, trades: list[Action], alts: list[Action]) -> str:
+def view_trades(a: dict, key: str, trades: list[Action]) -> str:
     if not a["drafted"]:
         return '<div class="view" data-view="trades" hidden></div>'
-    cards = "".join(card(x, key, a["people"]) for x in sorted(trades, key=lambda x: -x.gain))
+    cards = "".join(card(x, key, a["people"], i)
+                    for i, x in enumerate(sorted(trades, key=lambda x: -x.gain)))
     if not cards:
         cards = '<p class="calm">No trade helps both sides right now.</p>'
-    alt_rows = ""
-    for x in alts:
-        t = x.trade
-        give = esc(" + ".join(p["name"] for p in t["send"]))
-        getn = esc(" + ".join(p["name"] for p in t["receive"]))
-        alt_rows += (f'<li><span class="ag">{give}<i>for</i>{getn}</span>'
-                     f'<small>{esc(t["partner_name"])}</small><b>+{t["my_gain"]:.0f}</b></li>')
-    alt_block = ""
-    if alt_rows:
-        alt_block = (f'<section class="block"><h2>Other versions</h2>'
-                     f'<ul class="alts">{alt_rows}</ul></section>')
     return f"""
 <div class="view" data-view="trades" hidden>
   <div class="cards">{cards}</div>
-  {alt_block}
-  <section class="block check" data-eval="{key}">
-    <h2>Got an offer?</h2>
-    <label class="sel"><span>From</span><select id="ev-team-{key}"></select></label>
-    <p class="eh">They give you</p><div class="chips" data-side="get"></div>
-    <p class="eh">You give them</p><div class="chips" data-side="send"></div>
-    <div class="verdict" aria-live="polite"><p class="vw">Tap players on both sides</p></div>
+  <section class="sheet check" data-eval="{key}">
+    <header class="sh"><h2>Got an offer?</h2></header>
+    <select id="ev-team-{key}" aria-label="Who sent it"></select>
+    <p class="lbl">They give</p><div class="chips" data-side="get"></div>
+    <p class="lbl">You give</p><div class="chips" data-side="send"></div>
+    <div class="verdict" aria-live="polite"><p class="vw">Pick players</p></div>
   </section>
 </div>"""
+
+
+def ticker(a: dict, news: dict, key: str, first: bool) -> str:
+    """Bottom-line headlines about my own players, broadcast style."""
+    if not a["drafted"]:
+        return ""
+    mine = {str(p["espn_id"]): p["name"] for p in a["me"]["players"] if p.get("espn_id")}
+    items = []
+    for item in news.get("items", []):
+        names = [mine[str(i)] for i in item.get("espn_athlete_ids", []) if str(i) in mine]
+        if names and len(items) < 6:
+            who = esc(", ".join(dict.fromkeys(names)))
+            items.append(f'<span class="ti"><b>{who}</b>{esc(item["headline"])}</span>')
+    if not items:
+        return ""
+    run = "".join(items)
+    length = sum(len(i) for i in items)
+    hidden = "" if first else " hidden"
+    return (f'<div class="ticker" data-lg="{key}"{hidden}><span class="tl">News</span>'
+            f'<div class="tw"><div class="tt" style="--dur:{max(14, length // 9)}s">'
+            f'{run}<span aria-hidden="true" class="dup">{run}</span></div></div></div>')
 
 
 # ------------------------------------------------------------- shell
@@ -496,7 +457,7 @@ def build() -> str:
     news = load("news.json") or {"items": []}
     decisions = load("decisions.json") or {}
     analyses: dict[str, dict] = {}
-    switch, blocks = [], []
+    switch, blocks, tickers = [], [], []
     week = None
     for key in ("L1", "L2"):
         state = load(f"state_{key}.json")
@@ -505,279 +466,288 @@ def build() -> str:
         a = analyse(state, news["items"], decisions)
         analyses[key] = a
         week = week or state.get("current_week")
-        today, trades, alts = split_queue(a["queue"])
+        today, trades, _alts = split_queue(a["queue"])
         first = not switch
         n = len(today)
-        count = f'<i class="cnt">{n}</i>' if n else '<i class="cnt ok">✓</i>'
-        pressed = "true" if first else "false"
+        badge = f'<i class="n">{n}</i>' if n else '<i class="n ok">✓</i>'
         switch.append(
-            f'<button data-lg="{key}" aria-pressed="{pressed}">'
-            f'<span class="ln">{esc(state["name"])}</span>'
-            f'<span class="ls">{esc(state.get("team_count", ""))} teams</span>{count}</button>'
+            f'<button data-lg="{key}" aria-pressed="{"true" if first else "false"}">'
+            f'<span>{esc(state["name"])}</span>{badge}</button>'
         )
         hidden = "" if first else " hidden"
         blocks.append(f"""
 <section class="lg" data-lg="{key}"{hidden}>
   {view_today(a, key, today, len(trades))}
-  {view_lineup(a, news)}
-  {view_trades(a, key, trades, alts)}
+  {view_lineup(a)}
+  {view_trades(a, key, trades)}
 </section>""")
+        tickers.append(ticker(a, news, key, first))
 
     now = datetime.now(timezone.utc)
     return (PAGE
             .replace("{{SWITCH}}", "".join(switch))
             .replace("{{BLOCKS}}", "".join(blocks))
+            .replace("{{TICKERS}}", "".join(tickers))
             .replace("{{DATA}}", client_data(analyses))
             .replace("{{WEEK}}", esc(week or ""))
-            .replace("{{ISO}}", now.strftime("%Y-%m-%dT%H:%M:%SZ"))
-            .replace("{{STAMP}}", now.strftime("%b %-d, %H:%M UTC")))
+            .replace("{{ISO}}", now.strftime("%Y-%m-%dT%H:%M:%SZ")))
 
 
 PAGE = r"""<title>Fantasy Command Center</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Figtree:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@700;800&display=swap">
 <style>
-/* One narrow app column: sticky league switch on top, three tabs on the bottom. */
+/* Broadcast package: score bug on top, lower-third move cards, bottom line + tabs. Single dark look by choice. */
 :root{
-  --bg:#EDF2F7; --card:#FFFFFF; --soft:#F3F6FA; --line:#DDE5EE;
-  --fg:#0E1726; --muted:#5F6C7D;
-  --sky:#1E8FFF; --sky-soft:#DDEEFF; --sky-ink:#0B5CB5; --sky-line:#B9DBFF;
-  --bub:#1E8FFF; --on-bub:#FFFFFF;
-  --good:#11904A; --good-soft:#DCF4E5;
-  --bad:#D63A2C; --bad-soft:#FCE2DF;
-  --warn:#A86C00; --warn-soft:#FFEFCC;
-  --qb:#B197FC; --rb:#3FD8C2; --wr:#FFC53D; --te:#FF8FA3; --k:#B8C2CF; --on-pos:#0B1220;
-  --num:'Barlow Condensed','Arial Narrow',system-ui,sans-serif;
-  --ui:Figtree,system-ui,-apple-system,'Segoe UI',sans-serif;
-  --r:18px;
+  color-scheme:dark;
+  --bg:#07101C; --panel:#0E1B2D; --panel2:#132741; --line:#1C3049; --line2:#284468;
+  --fg:#F2F7FD; --muted:#8597B0; --dim:#4F6380;
+  --sky:#56B9FF; --sky2:#B4E0FF; --ink:#03101F;
+  --win:#43E595; --loss:#FF5E58; --gold:#FFC74D;
+  --qb:#B59CFF; --rb:#43DCC6; --wr:#FFC74D; --te:#FF92A6; --k:#9DB0C8;
+  --disp:'Big Shoulders Display','Saira Condensed','Arial Narrow',sans-serif;
+  --ui:Archivo,system-ui,-apple-system,'Segoe UI',sans-serif;
+  --ease:cubic-bezier(.2,.8,.2,1);
+  --spring:cubic-bezier(.34,1.4,.5,1);
 }
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --bg:#0A1019; --card:#131C28; --soft:#1A2431; --line:#243143;
-  --fg:#EAF0F7; --muted:#8E9BAE;
-  --sky:#5BB7FF; --sky-soft:#13314F; --sky-ink:#A6D7FF; --sky-line:#1F4C78;
-  --bub:#2580E0; --on-bub:#FFFFFF;
-  --good:#3FD68D; --good-soft:#0F3324;
-  --bad:#FF6B5E; --bad-soft:#3B1816;
-  --warn:#FFC24D; --warn-soft:#3A2A0C;
-  color-scheme:dark}}
-:root[data-theme="dark"]{
-  --bg:#0A1019; --card:#131C28; --soft:#1A2431; --line:#243143;
-  --fg:#EAF0F7; --muted:#8E9BAE;
-  --sky:#5BB7FF; --sky-soft:#13314F; --sky-ink:#A6D7FF; --sky-line:#1F4C78;
-  --bub:#2580E0; --on-bub:#FFFFFF;
-  --good:#3FD68D; --good-soft:#0F3324;
-  --bad:#FF6B5E; --bad-soft:#3B1816;
-  --warn:#FFC24D; --warn-soft:#3A2A0C;
-  color-scheme:dark}
-
 *{box-sizing:border-box}
+[hidden]{display:none!important}
 html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--fg);font:500 16px/1.4 var(--ui);-webkit-font-smoothing:antialiased}
-body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--fg);font:500 16px/1.35 var(--ui);-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:40;background:var(--bg)}
+.field{position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background:
+    radial-gradient(90% 50% at 50% -8%,rgba(86,185,255,.22),transparent 70%),
+    repeating-linear-gradient(180deg,transparent 0 71px,rgba(180,224,255,.035) 71px 72px);
+  -webkit-mask-image:linear-gradient(180deg,#000 0,#000 45%,transparent 85%);mask-image:linear-gradient(180deg,#000 0,#000 45%,transparent 85%)}
 button{font:inherit;color:inherit}
-a{color:inherit}
 b{font-weight:700}
-small{font-size:13px;color:var(--muted);font-weight:500}
-:focus-visible{outline:3px solid var(--sky);outline-offset:2px;border-radius:10px}
+small{color:var(--muted);font-weight:500}
+:focus-visible{outline:2px solid var(--sky);outline-offset:3px;border-radius:10px}
 
-.app{max-width:560px;margin:0 auto;
-  padding-left:max(16px,env(safe-area-inset-left,0px));
-  padding-right:max(16px,env(safe-area-inset-right,0px));
-  padding-block:0 calc(96px + env(safe-area-inset-bottom,0px))}
-
-/* top: brand + league switch */
-.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);padding-block:14px 12px;display:grid;gap:12px}
-.brand{display:flex;align-items:center;justify-content:space-between;gap:12px}
-.mark{display:flex;align-items:center;gap:10px;font:800 19px/1 var(--ui);letter-spacing:-.01em}
-.mark i{display:grid;place-items:center;width:38px;height:34px;border-radius:11px;background:var(--sky);
-  color:var(--on-bub);font:700 17px/1 var(--num);font-style:normal;letter-spacing:.02em}
-.upd{font-size:13px;color:var(--muted);text-align:right;line-height:1.35}
-.upd b{color:var(--fg);font-weight:700}
-.switch{display:grid;grid-template-columns:1fr 1fr;gap:4px;padding:4px;background:var(--card);border:1px solid var(--line);border-radius:16px}
-.switch button{appearance:none;border:0;background:transparent;cursor:pointer;border-radius:12px;padding:8px 10px 8px 12px;
-  display:grid;grid-template-columns:1fr auto;text-align:left;column-gap:8px;align-items:center}
-.switch .ln{font-weight:700;font-size:15px}
-.switch .ls{grid-row:2;font-size:12px;color:var(--muted)}
-.switch .cnt{grid-row:1/3;grid-column:2;font:700 15px/1 var(--num);font-style:normal;min-width:26px;height:26px;
-  border-radius:99px;display:grid;place-items:center;background:var(--bad);color:var(--on-bub);padding:0 7px}
-.switch .cnt.ok{background:var(--good-soft);color:var(--good)}
-.switch button[aria-pressed="true"]{background:var(--sky-soft)}
-.switch button[aria-pressed="true"] .ln{color:var(--sky-ink)}
-
-/* hero */
-.hero{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px 18px 16px;margin-block:4px 14px;display:grid;gap:14px}
-.hrow{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap}
-.big{margin:0;font:700 66px/.82 var(--num);display:flex;align-items:baseline;gap:8px}
-.big span{font:700 20px/1 var(--ui);color:var(--muted)}
-.big.ok{color:var(--good);font-size:52px}
-.sub{margin:0;color:var(--muted)}
-.stats{display:flex;gap:20px}
-.stat{display:grid;text-align:right}
-.stat b{font:700 30px/1 var(--num);font-variant-numeric:tabular-nums}
-.stat span{font-size:12px;color:var(--muted)}
-.ladder{display:flex;gap:4px;align-items:center}
-.ladder i{flex:1;height:12px;border-radius:4px;background:var(--soft);border:1px solid var(--line)}
-.ladder i.in{background:var(--sky-soft);border-color:var(--sky-line)}
-.ladder i.me{background:var(--sky);border-color:var(--sky);height:20px}
-.lcap{margin:-4px 0 0;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
-.lcap b{color:var(--fg)}
-.calm{margin:0 0 14px;color:var(--muted);text-wrap:pretty}
-
-/* move cards */
-.cards{display:grid;gap:12px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:14px 16px 12px;display:grid;gap:10px}
-.card.urgent{border-color:var(--bad);box-shadow:inset 0 0 0 1px var(--bad)}
-.ch{display:flex;align-items:center;justify-content:space-between;gap:10px}
-.kt{font:700 12px/1 var(--ui);letter-spacing:.06em;text-transform:uppercase;padding:5px 9px;border-radius:8px;background:var(--soft);color:var(--muted)}
-.t-lineup{background:var(--sky-soft);color:var(--sky-ink)}
-.t-pickup{background:var(--good-soft);color:var(--good)}
-.t-injury{background:var(--bad-soft);color:var(--bad)}
-.t-trade,.t-plan{background:var(--warn-soft);color:var(--warn)}
-.dl{font-size:13px;color:var(--muted)}
-.urgent .dl{color:var(--bad);font-weight:700}
-.card h3{margin:0;font:800 21px/1.15 var(--ui);letter-spacing:-.01em;text-wrap:balance}
-.cb{display:grid;gap:10px}
-.who{margin:0;font-size:14px;color:var(--muted)}
-.who b{color:var(--fg)}
-.note{margin:0;font-size:14px;color:var(--muted)}
-
-.swap{display:grid;grid-template-columns:minmax(0,1fr);gap:6px}
-@media (min-width:540px){.swap{grid-template-columns:repeat(2,minmax(0,1fr))}}
-.side{border-radius:14px;padding:9px 12px 5px;min-width:0}
-.side.out{background:var(--soft)}
-.side.in{background:var(--sky-soft)}
-.sl{display:block;font:700 11px/1 var(--ui);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:3px}
-.side.in .sl{color:var(--sky-ink)}
-.side ul,.solo{list-style:none;margin:0;padding:0;display:grid}
-.pr{display:flex;align-items:center;gap:8px;padding-block:5px;min-width:0}
-.pr+.pr{border-top:1px solid var(--line)}
-.side.in .pr+.pr{border-top-color:var(--sky-line)}
-.pr.none{color:var(--muted);font-size:14px}
-.pn{display:grid;min-width:0;flex:1}
-.pn b{font-size:15px;line-height:1.2;overflow-wrap:anywhere}
-.pn small{font-size:12px;line-height:1.3}
-.pv{font:700 20px/1 var(--num);font-variant-numeric:tabular-nums}
-.pos{flex:none;width:34px;text-align:center;font:700 12px/1 var(--num);letter-spacing:.04em;padding:5px 0;border-radius:7px;color:var(--on-pos);background:var(--k)}
-.pos-qb{background:var(--qb)} .pos-rb{background:var(--rb)} .pos-wr{background:var(--wr)} .pos-te{background:var(--te)}
-.tag{flex:none;font:700 11px/1 var(--ui);letter-spacing:.04em;padding:4px 6px;border-radius:6px}
-.tag.bad{background:var(--bad-soft);color:var(--bad)}
-.tag.warn{background:var(--warn-soft);color:var(--warn)}
-
-.steps{list-style:none;margin:0;padding:0;display:grid;gap:14px}
-.step{display:grid;grid-template-columns:28px 1fr;gap:10px}
-.sn{width:28px;height:28px;border-radius:99px;display:grid;place-items:center;background:var(--fg);color:var(--bg);font:700 16px/1 var(--num)}
-.sb{display:grid;gap:8px;min-width:0}
-
-.chat{display:flex;align-items:flex-end;gap:8px}
-.bub{margin:0;flex:1;min-width:0;background:var(--bub);color:var(--on-bub);padding:10px 13px;border-radius:18px 18px 4px 18px;font-size:15px;line-height:1.35}
-.ghost{appearance:none;cursor:pointer;border:1px solid var(--line);background:var(--card);border-radius:10px;padding:7px 11px;font-weight:700;font-size:13px}
-
-.cf{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:10px;border-top:1px solid var(--line)}
-.gain{display:flex;align-items:baseline;gap:6px;flex-wrap:wrap}
-.gain b{font:700 30px/1 var(--num);color:var(--good)}
-.gain span{font-size:13px;color:var(--muted)}
-.gain .them{margin-left:6px;padding:3px 8px;border-radius:99px;background:var(--soft);font-weight:600}
-.done{appearance:none;cursor:pointer;flex:none;display:flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--card);border-radius:12px;padding:8px 12px;font-weight:700;font-size:14px}
-.done svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
-.card.is-done{opacity:.6}
-.card.is-done .cb{display:none}
-.card.is-done h3{text-decoration:line-through;text-decoration-thickness:2px}
-.card.is-done .done{background:var(--good);border-color:var(--good);color:var(--on-bub)}
-.card.is-done.urgent{border-color:var(--line);box-shadow:none}
-
-.more{appearance:none;cursor:pointer;margin-top:12px;width:100%;display:flex;justify-content:space-between;align-items:center;
-  background:transparent;border:1px dashed var(--line);border-radius:14px;padding:13px 16px;font-weight:700}
-.more span{font:700 18px/1 var(--num);color:var(--muted)}
-
-/* lineup */
-.block{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:14px 16px;margin-block:0 12px}
-.block h2{margin:0 0 6px;font:800 17px/1.2 var(--ui)}
-.bh{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
-.tot{font-size:13px;color:var(--muted)}
-.tot b{font:700 22px/1 var(--num);color:var(--fg)}
-.lineup{list-style:none;margin:0;padding:0}
-.lr{display:flex;align-items:center;gap:10px;padding-block:9px;min-width:0}
-.lr+.lr{border-top:1px solid var(--line)}
-.slot{flex:none;width:36px;font:700 14px/1 var(--num);letter-spacing:.05em;color:var(--muted)}
-.pts{flex:none;width:54px;display:grid;justify-items:end;gap:5px}
-.pts b{font:700 21px/1 var(--num);font-variant-numeric:tabular-nums}
-.pts i{display:block;height:4px;width:100%;border-radius:4px;background:linear-gradient(90deg,var(--sky) calc(var(--w)*100%),var(--soft) 0)}
-.lr.dead .pts b{color:var(--bad)}
-.bench .pn b{font-weight:600}
-.mv{flex:none;font:700 11px/1 var(--ui);letter-spacing:.05em;text-transform:uppercase;padding:4px 7px;border-radius:6px;color:var(--on-bub)}
-.mv.go{background:var(--good)}
-.mv.sit{background:var(--bad)}
-.news{list-style:none;margin:0;padding:0}
-.news li{padding-block:10px;display:grid;gap:3px}
-.news li+li{border-top:1px solid var(--line)}
-.news p{margin:0;font-weight:600;line-height:1.3;text-wrap:pretty}
-.news a{text-decoration:none}
-.news a:hover{text-decoration:underline}
-.nw{font-size:12px;font-weight:700;color:var(--sky-ink);text-transform:uppercase;letter-spacing:.05em}
-
-/* trades */
-.alts{list-style:none;margin:0;padding:0}
-.alts li{display:grid;grid-template-columns:1fr auto;column-gap:10px;padding-block:9px}
-.alts li+li{border-top:1px solid var(--line)}
-.ag{font-weight:600;font-size:15px;min-width:0}
-.ag i{font-style:normal;color:var(--muted);font-weight:500;margin-inline:6px}
-.alts small{grid-row:2}
-.alts b{grid-row:1/3;grid-column:2;align-self:center;font:700 22px/1 var(--num);color:var(--good)}
-.check{display:grid;grid-template-columns:minmax(0,1fr);gap:8px}
-.sel{display:flex;align-items:center;gap:10px;background:var(--soft);border-radius:12px;padding:4px 4px 4px 12px}
-.sel span{font-size:13px;color:var(--muted);font-weight:600}
-.sel select{flex:1;min-width:0;appearance:none;border:0;background:var(--card);color:var(--fg);border-radius:9px;padding:9px 12px;font:600 15px/1.2 var(--ui)}
-.eh{margin:8px 0 0;font:700 11px/1 var(--ui);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
-.chips{display:flex;flex-wrap:wrap;gap:6px}
-.chip{appearance:none;cursor:pointer;display:flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--card);
-  border-radius:10px;padding:4px 10px 4px 4px;font-size:14px;font-weight:600;max-width:100%;text-align:left}
-.chip .pos{width:30px;padding:4px 0;font-size:11px}
-.chip[aria-pressed="true"]{background:var(--sky);border-color:var(--sky);color:var(--on-bub)}
-.verdict{margin-top:8px;border-radius:14px;padding:14px;background:var(--soft);display:grid;gap:6px}
-.vw{margin:0;font:800 20px/1.2 var(--ui)}
-.verdict.good{background:var(--good-soft)} .verdict.good .vw{color:var(--good)}
-.verdict.bad{background:var(--bad-soft)} .verdict.bad .vw{color:var(--bad)}
-.verdict.meh{background:var(--warn-soft)} .verdict.meh .vw{color:var(--warn)}
-.vn{display:flex;gap:16px;flex-wrap:wrap;font-size:14px;color:var(--muted)}
-.vn b{font:700 22px/1 var(--num);color:var(--fg)}
-.vx{margin:0;font-size:14px}
-
-/* bottom tabs */
-.tabs{position:fixed;left:0;right:0;bottom:0;z-index:25;background:var(--card);border-top:1px solid var(--line);
+.app{max-width:540px;margin:0 auto;
   padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
-  padding-block:6px calc(6px + env(safe-area-inset-bottom,0px))}
-.tabs nav{max-width:560px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:4px}
-.tabs button{appearance:none;border:0;background:transparent;cursor:pointer;display:grid;justify-items:center;gap:3px;
-  padding:7px 0;border-radius:12px;color:var(--muted);font-size:12px;font-weight:700}
-.tabs svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.tabs button[aria-pressed="true"]{color:var(--sky)}
+  padding-block:0 calc(130px + env(safe-area-inset-bottom,0px))}
 
-@media (prefers-reduced-motion:no-preference){
-  .card,.chip,.done,.switch button{transition:background-color .15s,opacity .2s,border-color .15s}
+/* header */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;padding-block:14px 12px;display:grid;gap:12px;
+  background:linear-gradient(180deg,var(--bg) 75%,rgba(7,16,28,0));animation:drop .5s var(--ease) both}
+.brand{display:flex;align-items:center;justify-content:space-between}
+.logo{font:italic 900 30px/1 var(--disp);letter-spacing:.01em;text-transform:uppercase;display:flex;align-items:center;gap:8px}
+.logo i{width:10px;height:26px;background:var(--sky);transform:skewX(-18deg);border-radius:2px}
+.meta{font:700 12px/1.3 var(--ui);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);text-align:right;font-stretch:90%}
+.meta b{color:var(--fg)}
+.switch{position:relative;display:grid;grid-template-columns:1fr 1fr;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:4px;isolation:isolate}
+.switch .ind{position:absolute;z-index:-1;top:4px;bottom:4px;left:4px;width:calc(50% - 4px);border-radius:10px;
+  background:linear-gradient(135deg,var(--sky),#3A9BEA);box-shadow:0 6px 24px -6px rgba(86,185,255,.6);
+  transform:translateX(calc(var(--x,0) * 100%));transition:transform .45s var(--spring)}
+.switch button{appearance:none;border:0;background:none;cursor:pointer;padding:10px 12px;display:flex;align-items:center;justify-content:center;gap:8px;
+  font:800 15px/1 var(--ui);font-stretch:110%;letter-spacing:.01em;color:var(--muted);transition:color .3s}
+.switch button[aria-pressed="true"]{color:var(--ink)}
+.switch .n{font:800 13px/1 var(--ui);font-style:normal;min-width:22px;height:22px;padding:0 6px;border-radius:99px;display:grid;place-items:center;background:var(--loss);color:#fff}
+.switch .n.ok{background:rgba(67,229,149,.16);color:var(--win)}
+.switch button[aria-pressed="true"] .n.ok{background:rgba(3,16,31,.18);color:var(--ink)}
+
+/* score bug */
+.bug{position:relative;overflow:hidden;margin-block:6px 18px;padding:18px 18px 16px;border-radius:20px;
+  background:linear-gradient(160deg,var(--panel2),var(--panel) 60%);border:1px solid var(--line);
+  display:grid;grid-template-columns:auto 1fr;gap:14px 18px;align-items:end}
+.bug::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 40%,rgba(180,224,255,.09) 50%,transparent 60%);
+  transform:translateX(-100%);animation:sheen 1.6s .35s var(--ease) both;pointer-events:none}
+.bug-l{display:flex;align-items:baseline;gap:8px}
+.count{margin:0;font:900 104px/.78 var(--disp);letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.cap{margin:0;font:800 15px/1 var(--ui);font-stretch:120%;letter-spacing:.14em;text-transform:uppercase;color:var(--sky)}
+.bug-r{display:flex;justify-content:flex-end;gap:18px;padding-bottom:4px}
+.bug-r div{display:grid;justify-items:end}
+.bug-r b{font:800 34px/1 var(--disp);font-variant-numeric:tabular-nums}
+.bug-r small{font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:700}
+.ladder{grid-column:1/-1;display:flex;gap:4px;align-items:end;height:22px}
+.ladder i{flex:1;height:8px;border-radius:3px;background:var(--line);transform-origin:bottom;animation:rise .5s calc(.25s + var(--j)*35ms) var(--spring) both}
+.ladder i.po{background:var(--line2)}
+.ladder i.me{height:22px;background:var(--sky);box-shadow:0 0 16px rgba(86,185,255,.7)}
+
+/* move cards: lower thirds */
+.cards{display:grid;gap:12px}
+.card{position:relative;border-radius:18px;padding:14px 14px 12px 16px;background:linear-gradient(170deg,var(--panel2),var(--panel) 70%);
+  border:1px solid var(--line);display:grid;gap:10px;
+  animation:wipe .6s calc(.15s + var(--i)*80ms) var(--ease) both;transition:opacity .35s,transform .35s var(--ease),border-color .3s}
+@media (hover:hover){.card:hover{border-color:var(--line2);transform:translateY(-2px)}}
+.top-row{display:flex;align-items:center;gap:8px}
+.tag{display:inline-block;transform:skewX(-14deg);background:var(--line2);border-radius:4px;padding:5px 10px}
+.tag span{display:block;transform:skewX(14deg);font:800 11px/1 var(--ui);font-stretch:115%;letter-spacing:.14em;text-transform:uppercase}
+.k-line .tag{background:var(--sky);color:var(--ink)}
+.k-add .tag{background:var(--win);color:var(--ink)}
+.k-hurt .tag{background:var(--loss);color:#fff}
+.k-trade .tag{background:var(--gold);color:var(--ink)}
+.live{display:flex;align-items:center;gap:6px;font:800 11px/1 var(--ui);letter-spacing:.14em;text-transform:uppercase;color:var(--loss)}
+.live i{width:7px;height:7px;border-radius:99px;background:var(--loss);animation:pulse 1.6s infinite}
+.done{appearance:none;cursor:pointer;margin-left:auto;width:34px;height:34px;border-radius:99px;border:1.5px solid var(--line2);background:transparent;display:grid;place-items:center;
+  transition:background .3s,border-color .3s,transform .2s var(--spring)}
+.done:active{transform:scale(.88)}
+.done svg{width:18px;height:18px;fill:none;stroke:var(--muted);stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:20;stroke-dashoffset:0}
+.head{display:flex;align-items:flex-end;justify-content:space-between;gap:12px}
+.head h3{margin:0;font:800 23px/1.08 var(--ui);font-stretch:108%;letter-spacing:-.01em;text-wrap:balance;min-width:0}
+.gain{flex:none;display:grid;justify-items:end}
+.gain b{font:900 40px/.85 var(--disp);color:var(--sky);font-variant-numeric:tabular-nums}
+.gain small{font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;margin-top:3px}
+.fold{display:grid;grid-template-rows:1fr;transition:grid-template-rows .45s var(--ease),opacity .3s}
+.fold>div{overflow:hidden;min-height:0}
+.moves{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+.mv{display:flex;align-items:center;gap:9px;padding:7px 8px;border-radius:10px;min-width:0}
+.mv.in{background:rgba(86,185,255,.09)}
+.sg{flex:none;width:18px;font:800 18px/1 var(--ui);text-align:center}
+.mv.in .sg{color:var(--sky)}
+.mv.out .sg{color:var(--loss)}
+.mv.out .nm b{color:var(--muted)}
+.nm{display:grid;min-width:0;flex:1}
+.nm b{font-size:15.5px;line-height:1.2;overflow-wrap:anywhere}
+.nm small{font-size:12px}
+.val{font:800 22px/1 var(--disp);font-variant-numeric:tabular-nums}
+.mv.out .val{color:var(--muted)}
+.pos{flex:none;width:32px;text-align:center;font:800 11px/1 var(--ui);font-stretch:90%;letter-spacing:.04em;padding:5px 0;border-radius:6px;color:var(--ink);background:var(--k)}
+.pos-qb{background:var(--qb)} .pos-rb{background:var(--rb)} .pos-wr{background:var(--wr)} .pos-te{background:var(--te)}
+.flg{flex:none;padding:3px 6px;border-radius:5px;font:800 10.5px/1 var(--ui);letter-spacing:.06em}
+.flg.bad{background:rgba(255,94,88,.16);color:var(--loss)}
+.flg.warn{background:rgba(255,199,77,.14);color:var(--gold)}
+.stp{display:flex;align-items:center;gap:10px;padding:8px 2px 4px;font-size:14px;color:var(--muted)}
+.stp b{color:var(--fg)}
+.sn{width:24px;height:24px;border-radius:7px;display:grid;place-items:center;border:1.5px solid var(--sky);color:var(--sky);font:800 15px/1 var(--disp)}
+.foot{display:flex;align-items:center;justify-content:space-between;gap:10px;padding-top:10px;margin-top:8px;border-top:1px solid var(--line);flex-wrap:wrap}
+.with{margin:0;font-size:13.5px;color:var(--muted);display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.with b{color:var(--fg)}
+.with span{font-weight:700;color:var(--win)}
+.txt{appearance:none;cursor:pointer;margin-left:auto;display:flex;align-items:center;gap:7px;border:0;border-radius:99px;padding:8px 14px;
+  background:var(--sky);color:var(--ink);font:800 13px/1 var(--ui);transition:transform .2s var(--spring)}
+.txt:active{transform:scale(.94)}
+.txt svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linejoin:round}
+
+.card.is-done{opacity:.45}
+.card.is-done .fold{grid-template-rows:0fr;opacity:0}
+.card.is-done .gain{opacity:.5}
+.card.is-done .done{background:var(--win);border-color:var(--win)}
+.card.is-done .done svg{stroke:var(--ink);animation:draw .4s var(--ease) both}
+.card.is-done h3{text-decoration:line-through;text-decoration-thickness:2px;text-decoration-color:var(--muted)}
+.calm{margin:0;padding:22px;border-radius:18px;border:1px dashed var(--line2);text-align:center;color:var(--muted);font-weight:600}
+.more{appearance:none;cursor:pointer;margin-top:12px;width:100%;display:flex;justify-content:space-between;align-items:center;padding:14px 16px;border-radius:14px;
+  border:1px solid var(--line);background:transparent;font:800 15px/1 var(--ui);font-stretch:108%;animation:wipe .6s calc(.15s + var(--i)*80ms) var(--ease) both}
+.more svg{width:20px;height:20px;fill:none;stroke:var(--sky);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;transition:transform .3s var(--spring)}
+.more:hover svg{transform:translateX(4px)}
+
+/* lineup sheet */
+.sheet{background:linear-gradient(170deg,var(--panel2),var(--panel) 50%);border:1px solid var(--line);border-radius:18px;padding:12px 14px 6px;margin-block:6px 12px;
+  animation:wipe .6s .1s var(--ease) both}
+.sh{display:flex;justify-content:space-between;align-items:baseline;padding:2px 2px 6px}
+.sh h2{margin:0;font:900 26px/1 var(--disp);text-transform:uppercase;letter-spacing:.02em}
+.sh span{font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--muted)}
+.sh span b{font:800 26px/1 var(--disp);color:var(--fg);letter-spacing:0}
+.depth{list-style:none;margin:0;padding:0}
+.dr{display:flex;align-items:center;gap:10px;padding-block:9px;min-width:0;border-top:1px solid var(--line);animation:slide .45s calc(.15s + var(--i)*35ms) var(--ease) both}
+.slot{flex:none;width:34px;font:800 15px/1 var(--disp);letter-spacing:.06em;color:var(--sky)}
+.bench .slot{color:var(--dim)}
+.pts{flex:none;width:52px;display:grid;justify-items:end;gap:5px}
+.pts b{font:800 22px/1 var(--disp);font-variant-numeric:tabular-nums}
+.pts i{display:block;height:3px;width:100%;border-radius:3px;background:var(--line);position:relative;overflow:hidden}
+.pts i::after{content:"";position:absolute;inset:0;background:var(--sky);transform-origin:left;transform:scaleX(var(--w));animation:grow .8s calc(.3s + var(--i)*35ms) var(--ease) both}
+.dr.dead .pts b{color:var(--loss)}
+.dr.dead .pts i::after{background:var(--loss)}
+.bench .nm b{color:var(--muted);font-weight:600}
+.arrow{flex:none;font:800 10.5px/1 var(--ui);letter-spacing:.1em;text-transform:uppercase;padding:4px 7px;border-radius:5px}
+.arrow.up{background:var(--win);color:var(--ink)}
+.arrow.down{background:var(--loss);color:#fff}
+
+/* offer checker */
+.check{display:grid;grid-template-columns:minmax(0,1fr);gap:8px;padding-bottom:14px}
+.check select{appearance:none;width:100%;border:1px solid var(--line2);background:var(--panel);color:var(--fg);border-radius:12px;padding:12px 14px;font:700 15px/1.2 var(--ui)}
+.lbl{margin:6px 0 0;font:800 11px/1 var(--ui);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{appearance:none;cursor:pointer;display:flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--panel);border-radius:10px;padding:4px 10px 4px 4px;
+  font:600 13.5px/1.2 var(--ui);max-width:100%;text-align:left;transition:background .2s,border-color .2s,transform .2s var(--spring)}
+.chip:active{transform:scale(.94)}
+.chip .pos{width:28px;font-size:10px;padding:4px 0}
+.chip[aria-pressed="true"]{background:var(--sky);border-color:var(--sky);color:var(--ink)}
+.verdict{margin-top:8px;border-radius:14px;padding:14px 16px;background:var(--panel);border:1px solid var(--line);display:grid;gap:6px;transition:background .3s,border-color .3s}
+.vw{margin:0;font:900 30px/1 var(--disp);text-transform:uppercase;letter-spacing:.01em;color:var(--muted)}
+.verdict.good{border-color:rgba(67,229,149,.5);background:rgba(67,229,149,.08)} .verdict.good .vw{color:var(--win)}
+.verdict.bad{border-color:rgba(255,94,88,.5);background:rgba(255,94,88,.08)} .verdict.bad .vw{color:var(--loss)}
+.verdict.meh{border-color:rgba(255,199,77,.45);background:rgba(255,199,77,.07)} .verdict.meh .vw{color:var(--gold)}
+.vn{display:flex;gap:18px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--muted)}
+.vn b{font:800 24px/1 var(--disp);color:var(--fg);letter-spacing:0;margin-left:4px}
+.vx{margin:0;font-size:14px;color:var(--muted)}
+.vx b{color:var(--fg)}
+.pop{animation:pop .35s var(--spring)}
+
+/* bottom: news ticker + tabs */
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:30;background:rgba(9,19,33,.86);-webkit-backdrop-filter:blur(18px) saturate(1.4);backdrop-filter:blur(18px) saturate(1.4);
+  border-top:1px solid var(--line);padding-bottom:env(safe-area-inset-bottom,0px)}
+.ticker{display:flex;align-items:center;height:32px;border-bottom:1px solid var(--line);overflow:hidden;
+  padding-left:max(0px,env(safe-area-inset-left,0px));padding-right:max(0px,env(safe-area-inset-right,0px))}
+.tl{flex:none;height:100%;display:grid;place-items:center;padding:0 12px 0 max(16px,env(safe-area-inset-left,0px));background:var(--sky);color:var(--ink);
+  font:900 14px/1 var(--disp);letter-spacing:.12em;text-transform:uppercase;clip-path:polygon(0 0,100% 0,calc(100% - 10px) 100%,0 100%);padding-right:20px}
+.tw{flex:1;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 24px,#000 calc(100% - 24px),transparent);mask-image:linear-gradient(90deg,transparent,#000 24px,#000 calc(100% - 24px),transparent)}
+.tt{display:inline-flex;white-space:nowrap;animation:tick var(--dur) linear infinite}
+.ti{padding-inline:20px;font-size:13px;font-weight:600;color:var(--muted)}
+.ti b{color:var(--sky2);text-transform:uppercase;font-size:12px;letter-spacing:.08em;margin-right:8px}
+.tabs{position:relative;max-width:540px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:6px}
+.tabs .ind{position:absolute;top:0;height:3px;left:max(16px,env(safe-area-inset-left,0px));width:calc((100% - 2*max(16px,env(safe-area-inset-left,0px)))/3);
+  display:flex;justify-content:center;transform:translateX(calc(var(--x,0)*100%));transition:transform .45s var(--spring)}
+.tabs .ind::after{content:"";width:36px;height:3px;border-radius:0 0 3px 3px;background:var(--sky);box-shadow:0 0 14px var(--sky)}
+.tabs button{appearance:none;border:0;background:none;cursor:pointer;display:grid;justify-items:center;gap:3px;padding:8px 0 4px;color:var(--dim);
+  font:800 11px/1 var(--ui);letter-spacing:.12em;text-transform:uppercase;transition:color .3s}
+.tabs svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:transform .35s var(--spring)}
+.tabs button[aria-pressed="true"]{color:var(--fg)}
+.tabs button[aria-pressed="true"] svg{transform:translateY(-2px) scale(1.08);stroke:var(--sky)}
+
+.toast{position:fixed;left:50%;bottom:calc(110px + env(safe-area-inset-bottom,0px));z-index:50;width:min(92vw,420px);
+  background:var(--fg);color:var(--ink);border-radius:16px;padding:12px 14px;font-size:14px;line-height:1.35;box-shadow:0 18px 40px -12px rgba(0,0,0,.6);
+  transform:translate(-50%,20px);opacity:0;pointer-events:none;transition:transform .4s var(--spring),opacity .25s}
+.toast b{display:block;font:800 11px/1 var(--ui);letter-spacing:.14em;text-transform:uppercase;margin-bottom:5px;color:#1A6FC0}
+.toast.on{transform:translate(-50%,0);opacity:1}
+
+@keyframes drop{from{transform:translateY(-10px);opacity:0}}
+@keyframes wipe{from{clip-path:inset(0 100% 0 0 round 18px);transform:translateX(-14px)}to{clip-path:inset(0 0 0 0 round 18px)}}
+@keyframes slide{from{opacity:0;transform:translateX(-10px)}}
+@keyframes rise{from{transform:scaleY(0)}}
+@keyframes grow{from{transform:scaleX(0)}}
+@keyframes sheen{to{transform:translateX(100%)}}
+@keyframes pulse{50%{opacity:.25}}
+@keyframes draw{from{stroke-dashoffset:20}}
+@keyframes pop{0%{transform:scale(.96)}60%{transform:scale(1.02)}}
+@keyframes tick{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .tw{overflow-x:auto}
+  .dup{display:none}
 }
-@media (max-width:380px){ .big{font-size:56px} }
+@media (max-width:370px){.count{font-size:88px}.bug-r{gap:12px}.bug-r b{font-size:28px}}
 </style>
 
+<div class="field" aria-hidden="true"></div>
 <div class="app">
   <header class="top">
     <div class="brand">
-      <span class="mark"><i>TyG</i>Fantasy</span>
-      <span class="upd">Week {{WEEK}}<br><span data-ago="{{ISO}}">Updated {{STAMP}}</span></span>
+      <span class="logo"><i></i>TyG</span>
+      <span class="meta">Week {{WEEK}}<br><span data-ago="{{ISO}}">&nbsp;</span></span>
     </div>
-    <div class="switch" role="group" aria-label="League">{{SWITCH}}</div>
+    <div class="switch" role="group" aria-label="League"><span class="ind" aria-hidden="true"></span>{{SWITCH}}</div>
   </header>
   <main>{{BLOCKS}}</main>
 </div>
 
-<div class="tabs">
-  <nav aria-label="Sections">
-    <button data-tab="today" aria-pressed="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4L19 7"/></svg>Today</button>
-    <button data-tab="lineup" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4"/><path d="M4 12h16M12 4v16"/></svg>Lineup</button>
+<div class="dock">
+  {{TICKERS}}
+  <nav class="tabs" aria-label="Sections">
+    <span class="ind" aria-hidden="true"></span>
+    <button data-tab="today" aria-pressed="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13 3L5 13.5h6L10 21l8-10.5h-6z"/></svg>Today</button>
+    <button data-tab="lineup" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg>Lineup</button>
     <button data-tab="trades" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h12l-3-3M17 17H5l3 3"/></svg>Trades</button>
   </nav>
 </div>
+<div class="toast" role="status" aria-live="polite"><b>Copied</b><span></span></div>
 
 <script>
 var LEAGUES = {{DATA}};
@@ -786,27 +756,43 @@ var LEAGUES = {{DATA}};
   function get(k, fb){ try{ var v = JSON.parse(localStorage.getItem(k)); return v == null ? fb : v; }catch(e){ return fb; } }
   function put(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
   function $$(s, el){ return Array.prototype.slice.call((el||document).querySelectorAll(s)); }
+  var calm = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var TABS = ["today","lineup","trades"];
 
-  /* league + tab, remembered on this device */
   var lg = get("tyg-lg", null), tab = get("tyg-tab", "today");
-  if(!document.querySelector('.lg[data-lg="'+lg+'"]')){ var f = document.querySelector(".lg"); lg = f ? f.dataset.lg : null; }
-  if(["today","lineup","trades"].indexOf(tab) < 0) tab = "today";
+  var lgs = $$(".switch button").map(function(b){ return b.dataset.lg; });
+  if(lgs.indexOf(lg) < 0) lg = lgs[0];
+  if(TABS.indexOf(tab) < 0) tab = "today";
+
+  function countUp(){
+    $$('.lg:not([hidden]) .view:not([hidden]) [data-count]').forEach(function(el){
+      var n = +el.dataset.count; if(calm || !n){ el.textContent = n; return; }
+      var t0 = null;
+      function step(t){ if(!t0) t0 = t; var p = Math.min(1, (t - t0) / 650);
+        el.textContent = Math.round(n * (1 - Math.pow(1 - p, 3))); if(p < 1) requestAnimationFrame(step); }
+      el.textContent = 0; requestAnimationFrame(step);
+    });
+  }
   function show(){
     $$(".switch button").forEach(function(b){ b.setAttribute("aria-pressed", String(b.dataset.lg === lg)); });
+    document.querySelector(".switch .ind").style.setProperty("--x", Math.max(0, lgs.indexOf(lg)));
     $$(".tabs button").forEach(function(b){ b.setAttribute("aria-pressed", String(b.dataset.tab === tab)); });
+    document.querySelector(".tabs .ind").style.setProperty("--x", TABS.indexOf(tab));
     $$(".lg").forEach(function(s){
       s.hidden = s.dataset.lg !== lg;
       $$(".view", s).forEach(function(v){ v.hidden = v.dataset.view !== tab; });
     });
+    $$(".ticker").forEach(function(t){ t.hidden = t.dataset.lg !== lg; });
+    countUp();
   }
   $$(".switch button").forEach(function(b){ b.addEventListener("click", function(){
-    lg = b.dataset.lg; put("tyg-lg", lg); show(); window.scrollTo(0, 0);
+    if(lg === b.dataset.lg) return; lg = b.dataset.lg; put("tyg-lg", lg); show(); window.scrollTo(0, 0);
   }); });
-  function goTab(t){ tab = t; put("tyg-tab", tab); show(); window.scrollTo(0, 0); }
+  function goTab(t){ if(tab === t) return; tab = t; put("tyg-tab", tab); show(); window.scrollTo(0, 0); }
   $$(".tabs button").forEach(function(b){ b.addEventListener("click", function(){ goTab(b.dataset.tab); }); });
   $$("[data-goto]").forEach(function(b){ b.addEventListener("click", function(){ goTab(b.dataset.goto); }); });
 
-  /* done checkmarks */
+  /* done */
   var done = get("tyg-done", {});
   $$(".card[data-key]").forEach(function(c){
     var k = c.dataset.key, btn = c.querySelector("[data-done]");
@@ -815,13 +801,17 @@ var LEAGUES = {{DATA}};
     btn.addEventListener("click", function(){ if(done[k]) delete done[k]; else done[k] = 1; put("tyg-done", done); paint(); });
   });
 
-  /* copy the group-chat line */
+  /* copy group-chat text */
+  var toast = document.querySelector(".toast"), tt;
+  function say(head, text){
+    toast.querySelector("b").textContent = head; toast.querySelector("span").textContent = text;
+    toast.classList.add("on"); clearTimeout(tt); tt = setTimeout(function(){ toast.classList.remove("on"); }, 3200);
+  }
   $$("[data-copy]").forEach(function(btn){
     btn.addEventListener("click", function(){
-      var p = btn.parentNode.querySelector(".bub");
-      function ok(){ btn.textContent = "Copied"; setTimeout(function(){ btn.textContent = "Copy"; }, 1600); }
-      function pick(){ var r = document.createRange(); r.selectNodeContents(p); var s = getSelection(); s.removeAllRanges(); s.addRange(r); btn.textContent = "Selected"; }
-      try{ navigator.clipboard.writeText(p.textContent).then(ok, pick); }catch(e){ pick(); }
+      var text = btn.dataset.copy;
+      try{ navigator.clipboard.writeText(text).then(function(){ say("Copied", text); }, function(){ say("Copy this", text); }); }
+      catch(e){ say("Copy this", text); }
     });
   });
 
@@ -829,8 +819,8 @@ var LEAGUES = {{DATA}};
   $$("[data-ago]").forEach(function(el){
     var t = Date.parse(el.dataset.ago); if(isNaN(t)) return;
     var m = Math.round((Date.now() - t) / 60000), txt;
-    if(m < 2) txt = "just now"; else if(m < 60) txt = m + " min ago";
-    else if(m < 48*60) txt = Math.round(m/60) + "h ago"; else txt = Math.round(m/1440) + " days ago";
+    if(m < 2) txt = "just now"; else if(m < 60) txt = m + "m ago";
+    else if(m < 48*60) txt = Math.round(m/60) + "h ago"; else txt = Math.round(m/1440) + "d ago";
     el.innerHTML = "Updated <b>" + txt + "</b>";
   });
 
@@ -865,7 +855,7 @@ var LEAGUES = {{DATA}};
     var sel = box.querySelector("select"), getEl = box.querySelector('[data-side="get"]'),
         sendEl = box.querySelector('[data-side="send"]'), out = box.querySelector(".verdict");
     others.forEach(function(t){ var o = document.createElement("option"); o.value = t.id; o.textContent = t.name; sel.appendChild(o); });
-    var picks = {get:{}, send:{}};
+    var picks = {get:{}, send:{}}, last = "";
     function them(){ return others.filter(function(t){ return String(t.id) === sel.value; })[0] || others[0]; }
     function chips(el, team, side){
       el.innerHTML = team.players.filter(function(p){ return p.pr != null; })
@@ -885,25 +875,29 @@ var LEAGUES = {{DATA}};
       var t = them();
       var get = t.players.filter(function(p){ return picks.get[p.id]; });
       var send = me.players.filter(function(p){ return picks.send[p.id]; });
-      if(!get.length || !send.length){ out.className = "verdict"; out.innerHTML = '<p class="vw">Tap players on both sides</p>'; return; }
-      var mine0 = value(me.players, L.slots), th0 = value(t.players, L.slots);
-      var mg = value(swap(me.players, send, get), L.slots) - mine0;
-      var tg = value(swap(t.players, get, send), L.slots) - th0;
-      var word, cls;
-      if(mg >= 10){ word = "Take it"; cls = "good"; }
-      else if(mg >= 3){ word = "Small win"; cls = "good"; }
-      else if(mg > -3){ word = "Basically even"; cls = "meh"; }
-      else { word = "Pass"; cls = "bad"; }
-      var hurt = get.filter(function(p){ return HURT[p.inj]; });
-      var h = '<p class="vw">'+word+'</p>'+
-        '<div class="vn"><span>Your lineup <b>'+sgn(mg)+'</b></span><span>Theirs <b>'+sgn(tg)+'</b></span></div>';
-      if(hurt.length) h += '<p class="vx">Heads up: '+escH(hurt[0].n)+' is hurt right now.</p>';
-      if(mg < 3){
-        var c = counter(t, mine0, th0);
-        if(c) h += '<p class="vx"><b>Try instead:</b> '+escH(c.send.map(function(p){ return p.n; }).join(" + "))+
-          ' for '+escH(c.get.n)+' (you '+sgn(c.mg)+', them '+sgn(c.tg)+')</p>';
+      var cls = "verdict", h;
+      if(!get.length || !send.length){ h = '<p class="vw">Pick players</p>'; }
+      else {
+        var mine0 = value(me.players, L.slots), th0 = value(t.players, L.slots);
+        var mg = value(swap(me.players, send, get), L.slots) - mine0;
+        var tg = value(swap(t.players, get, send), L.slots) - th0;
+        var word;
+        if(mg >= 10){ word = "Take it"; cls += " good"; }
+        else if(mg >= 3){ word = "Small win"; cls += " good"; }
+        else if(mg > -3){ word = "Even"; cls += " meh"; }
+        else { word = "Pass"; cls += " bad"; }
+        h = '<p class="vw">'+word+'</p><div class="vn"><span>You<b>'+sgn(mg)+'</b></span><span>Them<b>'+sgn(tg)+'</b></span></div>';
+        var hurt = get.filter(function(p){ return HURT[p.inj]; });
+        if(hurt.length) h += '<p class="vx">'+escH(hurt[0].n)+' is hurt.</p>';
+        if(mg < 3){
+          var c = counter(t, mine0, th0);
+          if(c) h += '<p class="vx">Try <b>'+escH(c.send.map(function(p){ return p.n; }).join(" + "))+
+            '</b> for <b>'+escH(c.get.n)+'</b> ('+sgn(c.mg)+')</p>';
+        }
       }
-      out.className = "verdict " + cls; out.innerHTML = h;
+      out.className = cls; out.innerHTML = h;
+      if(h !== last && !calm){ out.classList.remove("pop"); void out.offsetWidth; out.classList.add("pop"); }
+      last = h;
     }
     /* best counter with this manager: helps both lineups and looks fair on paper */
     function counter(t, mine0, th0){
