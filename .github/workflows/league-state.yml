@@ -1,0 +1,72 @@
+name: Refresh league state
+
+# Pulls every roster in both leagues plus the free-agent pool and commits the
+# result as JSON. The runner is the only place with network access to ESPN, so
+# everything downstream -- trade finder, lineup calls, the war room page --
+# reads these files rather than talking to ESPN itself.
+#
+# Fires on `.state-trigger` for an immediate refresh, and on a schedule so the
+# picture stays current without anyone asking.
+
+on:
+  push:
+    paths:
+      - ".state-trigger"
+  schedule:
+    # Twice a day. Cron here is best-effort and only runs from the default
+    # branch, which is why the branch has to be merged for this to tick.
+    - cron: "20 12 * * *"
+    - cron: "20 23 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ff-league-state
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install
+        run: pip install -e .
+
+      - name: Pull league state
+        env:
+          ESPN_S2: ${{ secrets.ESPN_S2 }}
+          ESPN_SWID: ${{ secrets.ESPN_SWID }}
+        run: python scripts/build_league_state.py --out data --season 2026
+
+      - name: Build command center
+        run: python scripts/build_command_center.py
+
+      - name: Commit state
+        run: |
+          git config user.name "fantasy-gm[bot]"
+          git config user.email "fantasy-gm@users.noreply.github.com"
+          # Scratch DBs and the HTTP cache are build artifacts, not data.
+          rm -rf data/state_*.db data/state_*.db-* data/.cache
+          if [ -n "$(git status --porcelain data)" ]; then
+            git add data
+            git commit -m "data: refresh league state $(date -u +%Y-%m-%dT%H:%MZ)"
+            for attempt in 1 2 3; do
+              git pull --rebase --autostash origin "${GITHUB_REF_NAME}" && \
+              git push origin "HEAD:${GITHUB_REF_NAME}" && break
+              sleep $((attempt * 4))
+            done
+          else
+            echo "No change in league state."
+          fi
