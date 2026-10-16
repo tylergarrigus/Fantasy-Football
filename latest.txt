@@ -1,0 +1,74 @@
+updated 04:40:35Z
+
+
+====================================================================
+LIVE DRAFT WATCH  ·  league 1259820957  ·  started 04:37:06Z
+====================================================================
+  Board loaded: 400 ranked players.
+
+  DRAFT ORDER (round 1)
+     1. The Commish
+     2. TyG TyG  <-- YOU
+     3. Riley Reid Option
+     4. Waiver Wire Willy 
+     5. Egbuka and Sausage Sammich
+     6. George picken brown flowers 
+     7. Real Slim Brady .
+     8. Fish Sticks
+
+  You pick at: #2, #15, #18, #31, #34, #47, #50, #63 ...
+
+  Watching for picks...
+
+====================================================================
+[04:37:20Z]  104 PICKS MADE  ·  round 14  ·  next is overall #105
+====================================================================
+
+LAST 8 PICKS
+  #101 Bo Nix                   QB   -> Egbuka and Sausage Sammich
+  #102 Jakobi Meyers            WR   -> George picken brown flowers 
+  #103 Eddy Pineiro             K    -> Real Slim Brady .
+  #104 Cam Little               K    -> Fish Sticks
+  #105 Matthew Golden           WR   -> Fish Sticks
+  #107 Justin Herbert           QB   -> George picken brown flowers 
+  #108 Dallas Goedert           TE   -> Egbuka and Sausage Sammich
+  #109 Harrison Butker          K    -> Waiver Wire Willy 
+
+MY ROSTER (13)
+  RB   Jahmyr Gibbs
+  RB   Saquon Barkley
+  WR   Drake London
+  RB   Kyren Williams
+  WR   Malik Nabers
+  WR   Tetairoa McMillan
+  WR   Tee Higgins
+  QB   Dak Prescott
+  K    Brandon Aubrey
+  TE   Kyle Pitts
+  WR   DK Metcalf
+  RB   Jonathon Brooks
+  TE   Tucker Kraft
+
+STILL NEEDED: starters filled
+NEXT PICK: overall #111 (6 away)
+
+>>> TAKE: Isaiah Likely (TE, proj 164, VOR +30)
+    Isaiah Likely (TE) projects 164 points, +30 over replacement at his position. Only 1 player(s) left in this tier and 6 picks until you're up again -- this tier will be gone. Take him now. Note this is a reach: ADP 95 against pick 105. Justified only by your roster needs.
+
+NEXT BEST
+  Chuba Hubbard            RB   proj   194 VOR    +23  ADP 79
+  Will Reichard            K    proj   135 VOR    +16  ADP 127
+  Jalen Coker              WR   proj   183 VOR     +0  ADP 123
+  Spencer Shrader          K    proj   127 VOR     +8  ADP 126
+
+CLIFFS BEFORE YOUR NEXT PICK
+  ! RB: only 1 left in the top available tier (Chuba Hubbard) with 6 picks until you're up -- positional run risk.
+  ! WR: only 1 left in the top available tier (Jalen Coker) with 6 picks until you're up -- positional run risk.
+  ! TE: only 1 left in the top available tier (Isaiah Likely) with 6 picks until you're up -- positional run risk.
+
+BEST AVAILABLE BY POSITION
+  QB  Brock Purdy (242), Patrick Mahomes (241), Bryce Young (238), Jared Goff (223)
+  RB  Chuba Hubbard (194), Ollie Gordon (152), Zach Charbonnet (145), Aaron Jones (140)
+  WR  Jalen Coker (183), Denzel Boston (162), Jordan Addison (131), Stefon Diggs (131)
+  TE  Isaiah Likely (164), Pat Freiermuth (131), T.J. Hockenson (128), Juwan Johnson (120)
+
