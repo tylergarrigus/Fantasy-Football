@@ -216,6 +216,8 @@ def chain_action(
 def waiver_actions(me: dict, free_agents: Sequence[dict], slots: dict,
                    faab: bool = False) -> list[Action]:
     base = best_lineup(me["players"], slots)
+    needed_now = _weekly_starter_ids(me, slots)
+    by_id = {p["player_id"]: p for p in me["players"]}
     out: list[Action] = []
     for fa in free_agents:
         if not fa.get("projected"):
@@ -225,10 +227,23 @@ def waiver_actions(me: dict, free_agents: Sequence[dict], slots: dict,
         if gain < ACTION_FLOOR:
             continue
 
-        # The drop is whoever the add pushes furthest from ever starting.
+        # The drop is whoever the add pushes furthest from ever starting --
+        # but never someone this week's lineup needs, and never the IR slot,
+        # which frees no roster spot.
+        # A weekly starter the add directly replaces (same spot, at least
+        # as good this week) is fair game -- that's a stream, not a hole.
+        fa_week = _week_value(fa) or 0
+        protected = {
+            pid for pid in needed_now
+            if not (by_id[pid]["position"] == fa["position"]
+                    and fa_week >= (_week_value(by_id[pid]) or 0))
+        }
         bench = sorted(trial.bench, key=lambda p: (p.get("projected") or 0))
         drop = next(
-            (p for p in bench if p["player_id"] != fa["player_id"]), None
+            (p for p in bench if p["player_id"] != fa["player_id"]
+             and p["player_id"] not in protected
+             and (p.get("current_slot") or "BE") != "IR"),
+            None,
         )
         conf, conf_why = _confidence_for_gain(gain)
         bid = " Bid modestly -- single digits of FAAB." if faab else ""
@@ -277,6 +292,18 @@ def _week_value(p: dict) -> float | None:
     if p.get("projected") is not None:
         return float(p["projected"]) / 17.0
     return None
+
+
+def _weekly_starter_ids(me: dict, slots: dict) -> set[str]:
+    """Who this week's best lineup can't do without (empty without weekly data)."""
+    players = me.get("players", [])
+    if not any(p.get("week_projected") is not None or p.get("on_bye")
+               for p in players):
+        return set()
+    weekly = [{**p, "projected": _week_value(p)} for p in players
+              if _week_value(p) is not None]
+    return {s["player_id"] for s in best_lineup(weekly, slots).starters
+            if s["projected"] > 0}
 
 
 def _why_not(p: dict) -> str:
@@ -379,10 +406,19 @@ def lineup_actions(me: dict, slots: dict,
 
 
 def injury_actions(me: dict, slots: dict, news_by_espn_id: dict) -> list[Action]:
-    """Starters in real injury trouble -- not the ambient 'questionable' fog."""
-    lineup = best_lineup(me["players"], slots)
+    """Starters in real injury trouble -- not the ambient 'questionable' fog.
+
+    "Starter" means who is in the ESPN lineup right now when we know it; a
+    hurt player already sitting on the bench needs no action.
+    """
+    players = me.get("players", [])
+    if any("current_slot" in p for p in players):
+        starters = [{**p, "slot": p["current_slot"]} for p in players
+                    if (p.get("current_slot") or "BE") not in ("BE", "IR")]
+    else:
+        starters = best_lineup(players, slots).starters
     out: list[Action] = []
-    for s in lineup.starters:
+    for s in starters:
         status = (s.get("injury_status") or "").upper().replace(" ", "_")
         if status not in OUT_STATUSES:
             continue

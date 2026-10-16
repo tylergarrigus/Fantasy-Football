@@ -221,3 +221,31 @@ def test_never_drop_a_good_player_just_because_he_is_on_bye():
     pick = next(a for a in q if "Pick up" in a.title)
     assert "drop WRscrub" in pick.title
     assert "WRbye" not in pick.title
+
+
+def test_waiver_never_drops_someone_this_weeks_lineup_needs():
+    """Bye-week fill-in starting today is not the cut, even with a low season number."""
+    mine = weekly_roster(
+        RB0=weekly("RB0", "RB", 320, 0, "BE", bye=True),
+        RBb=weekly("RBb", "RB", 90, 14, "RB"),
+        WRscrub=weekly("WRscrub", "WR", 100, 3, "BE"),
+    )
+    fa = [weekly("StudQB", "QB", 400, 25, None)]
+    q = build_queue(state(mine, free_agents=fa), [])
+    w = next(a for a in q if a.kind == "waiver")
+    assert "drop RBb" not in w.title
+    assert "drop WRscrub" in w.title
+
+
+def test_hurt_player_already_on_the_bench_is_not_an_action():
+    mine = weekly_roster(RBb=weekly("RBb", "RB", 400, 0, "BE", injury="OUT"))
+    q = build_queue(state(mine), [])
+    assert not [a for a in q if a.kind == "injury"]
+
+
+def test_streaming_a_better_defense_can_drop_the_current_one():
+    mine = weekly_roster(DST0=weekly("DST0", "D/ST", 80, 5, "D/ST"))
+    fa = [weekly("BetterD", "D/ST", 140, 9, None)]
+    q = build_queue(state(mine, free_agents=fa), [])
+    w = next(a for a in q if a.kind == "waiver")
+    assert w.title == "Add BetterD (D/ST), drop DST0"

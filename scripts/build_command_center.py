@@ -1,17 +1,15 @@
 #!/usr/bin/env python3
-"""Build the Fantasy Command Center -- one calm page that runs both leagues.
+"""Build the Fantasy Command Center -- a small personal app for both leagues.
 
 Reads data/state_*.json and data/news.json (pulled from ESPN on the Actions
-runner) and writes a single self-contained HTML page organized around one
-question: what should Tyler do right now?
+runner) and writes one self-contained HTML page with three tabs:
 
-Views: Today (the action queue), My Team, Market, Trades (including a live
-in-page evaluator for incoming offers), Waivers, News, Settings. League data is
-embedded so the trade evaluator works entirely client-side -- no server, no
-account, nothing to install.
+  Today   -- the few moves worth making, biggest first
+  Lineup  -- this week's lineup as set in ESPN, with byes, injuries and news
+  Trades  -- every trade idea, plus a checker for offers that come in
 
-Nothing here submits anything to ESPN. Every action ends in the exact clicks
-to do it yourself; approval-first is the design, not a disclaimer.
+Nothing here submits anything to ESPN. Every move is approval-first: the page
+says what to do, Tyler does it in the ESPN app.
 """
 
 from __future__ import annotations
@@ -31,8 +29,11 @@ from ff.engines.trades import best_lineup  # noqa: E402
 DATA = ROOT / "data"
 OUT = DATA / "command_center.html"
 
-SLOT_ORDER = ["QB", "RB", "WR", "TE", "FLEX", "D/ST", "K"]
-SKILL = ("QB", "RB", "WR", "TE")
+SLOT_ORDER = ["QB", "RB", "WR", "TE", "RB/WR/TE", "D/ST", "K"]
+SLOT_LABEL = {"RB/WR/TE": "FLEX", "D/ST": "DST"}
+BAD = {"OUT", "INJURY_RESERVE", "IR", "SUSPENSION", "DOUBTFUL", "PUP", "NA"}
+SHORT = {"INJURY_RESERVE": "IR", "QUESTIONABLE": "Q", "DOUBTFUL": "D",
+         "SUSPENSION": "SUS", "OUT": "OUT", "IR": "IR"}
 
 
 def esc(x) -> str:
@@ -44,9 +45,44 @@ def load(name: str) -> dict | None:
     return json.loads(p.read_text()) if p.exists() else None
 
 
-def pos_chip(pos: str) -> str:
-    key = "DST" if pos == "D/ST" else pos
-    return f'<span class="p p-{esc(key)}">{esc(pos)}</span>'
+def status_of(p: dict) -> str:
+    return (p.get("injury_status") or "").upper().replace(" ", "_")
+
+
+def flag(p: dict) -> tuple[str, str] | None:
+    """The one tag a player row needs, or none."""
+    if p.get("on_bye"):
+        return "BYE", "bad"
+    st = status_of(p)
+    if st in BAD:
+        return SHORT.get(st, st[:3]), "bad"
+    if st == "QUESTIONABLE":
+        return "Q", "warn"
+    return None
+
+
+def flag_html(p: dict) -> str:
+    f = flag(p)
+    return f'<span class="tag {f[1]}">{esc(f[0])}</span>' if f else ""
+
+
+def pos_html(pos: str) -> str:
+    key = "dst" if pos == "D/ST" else pos.lower()
+    label = "DST" if pos == "D/ST" else pos
+    return f'<span class="pos pos-{esc(key)}">{esc(label)}</span>'
+
+
+def week_pts(p: dict) -> float:
+    if p.get("on_bye") or status_of(p) in BAD:
+        return 0.0
+    if p.get("week_projected") is not None:
+        return float(p["week_projected"])
+    return float(p.get("projected") or 0) / 17.0
+
+
+def ordinal(n: int) -> str:
+    suffix = "th" if 10 <= n % 100 <= 20 else {1: "st", 2: "nd", 3: "rd"}.get(n % 10, "th")
+    return f"{n}{suffix}"
 
 
 # ------------------------------------------------------------- analysis
@@ -82,8 +118,7 @@ def rejected_filter(queue: list[Action], league_key: str, decisions: dict) -> li
             title="No action needed",
             why="The remaining trade ideas were already offered and declined, "
                 "nobody on waivers would crack your lineup, and no starter is in "
-                "injury trouble. Sitting tight is the right move -- rejected "
-                "offers get re-examined when rosters or projections change.",
+                "injury trouble.",
             confidence="High",
             confidence_why="every roster and the full free-agent pool was checked",
             deadline="—", steps="—", urgency=0,
@@ -116,447 +151,316 @@ def analyse(state: dict, news_items: list[dict], decisions: dict | None = None) 
         decisions or {},
     )
 
-    # Positional strength: my starters at each position vs the league median.
-    strength: dict[str, dict] = {}
-    if drafted:
-        for pos in SKILL:
-            per_team = []
-            for t in state["teams"]:
-                pts = sum(
-                    s["projected"] for s in t["_lineup"].starters
-                    if s["position"] == pos
-                )
-                per_team.append((t["team_id"], pts))
-            vals = sorted(p for _, p in per_team)
-            median = vals[len(vals) // 2]
-            my_pts = next(p for tid, p in per_team if tid == me["team_id"])
-            strength[pos] = {
-                "mine": my_pts,
-                "median": median,
-                "edge": my_pts - median,
-            }
+    # Name -> player row, mine first, so action cards can draw real rows.
+    people: dict[str, dict] = {}
+    for p in state.get("free_agents", []):
+        people[p["name"]] = p
+    for t in state["teams"]:
+        if not t.get("is_me"):
+            for p in t["players"]:
+                people[p["name"]] = p
+    if me:
+        for p in me["players"]:
+            people[p["name"]] = p
 
-    # Each rival's needs and surpluses, from lineup construction -- the input
-    # to "who would actually take this call".
-    market = []
-    if drafted:
-        league_start = {
-            pos: sorted(
-                (s["projected"] for t in state["teams"]
-                 for s in t["_lineup"].starters if s["position"] == pos),
-                reverse=True,
-            )
-            for pos in SKILL
-        }
-        for t in state["teams"]:
-            needs, surplus = [], []
-            for pos in SKILL:
-                starters = [s for s in t["_lineup"].starters if s["position"] == pos]
-                bench = [b for b in t["_lineup"].bench if b["position"] == pos
-                         and (b.get("projected") or 0) > 0]
-                if starters:
-                    worst = min(s["projected"] for s in starters)
-                    pool = league_start[pos]
-                    # Bottom quartile of the league's starters at that spot.
-                    if pool and worst <= pool[max(0, int(len(pool) * 0.75) - 1)]:
-                        needs.append(pos)
-                strong_bench = [
-                    b for b in bench
-                    if b["projected"] >= (min(s["projected"] for s in starters)
-                                          if starters else 0) * 0.85
-                    and b["projected"] >= 150
-                ]
-                if strong_bench:
-                    surplus.append((pos, strong_bench[0]))
-            market.append({"team": t, "needs": needs, "surplus": surplus})
+    return {"state": state, "me": me, "drafted": drafted,
+            "queue": queue, "people": people}
 
-    return {
-        "state": state, "me": me, "drafted": drafted,
-        "queue": queue, "strength": strength, "market": market,
-    }
+
+def split_queue(queue: list[Action]) -> tuple[list[Action], list[Action], list[Action]]:
+    """(today, trade ideas, alternatives).
+
+    Today carries every lineup/injury fix, the top two pickups and the single
+    best trade idea -- nothing that competes with itself for the same player.
+    """
+    real = [a for a in queue if a.kind != "info"]
+    trades = [a for a in real if a.kind in ("trade", "plan")
+              and not a.title.startswith("Alternative")]
+    alts = [a for a in real if a.kind == "trade" and a.title.startswith("Alternative")]
+    today = [a for a in real if a.kind in ("lineup", "injury")]
+    today += [a for a in real if a.kind == "waiver"][:2]
+    if trades:
+        today.append(max(trades, key=lambda a: a.gain))
+    today.sort(key=lambda a: (-a.urgency, -a.gain))
+    return today, trades, alts
+
+
+# ------------------------------------------------------------- pieces
+
+
+def row(p: dict | None, name: str, value: str = "", sub: str = "") -> str:
+    p = p or {}
+    meta = sub or esc(p.get("nfl_team") or "")
+    val = f'<span class="pv">{value}</span>' if value else ""
+    return (f'<li class="pr">{pos_html(p.get("position") or "")}'
+            f'<span class="pn"><b>{esc(name)}</b><small>{meta}</small></span>'
+            f'{flag_html(p)}{val}</li>')
+
+
+def swap(out_label: str, out_rows: str, in_label: str, in_rows: str) -> str:
+    return (f'<div class="swap">'
+            f'<div class="side out"><span class="sl">{out_label}</span><ul>{out_rows}</ul></div>'
+            f'<div class="side in"><span class="sl">{in_label}</span><ul>{in_rows}</ul></div>'
+            f'</div>')
+
+
+def wk(p: dict | None) -> str:
+    if not p:
+        return ""
+    f = flag(p)
+    if f and f[1] == "bad":
+        return "0"
+    return f"{week_pts(p):.1f}"
+
+
+def opp_sub(p: dict | None) -> str:
+    if not p:
+        return ""
+    opp = p.get("opponent")
+    team = esc(p.get("nfl_team") or "")
+    if opp == "BYE":
+        return f"{team} · bye week"
+    return f"{team} · vs {esc(opp)}" if opp else team
+
+
+def bubble(text: str) -> str:
+    return (f'<div class="chat"><p class="bub">{esc(text)}</p>'
+            f'<button class="ghost" data-copy>Copy</button></div>')
+
+
+TAGS = {"lineup": ("Lineup", "t-lineup"), "injury": ("Injury", "t-injury"),
+        "waiver": ("Pickup", "t-pickup"), "trade": ("Trade", "t-trade"),
+        "plan": ("2-step trade", "t-plan")}
+
+OPEN_SPOT = '<li class="pr none">Open spot</li>'
+
+
+def _rows(ps: list[dict], people: dict) -> str:
+    return "".join(row(people.get(p["name"]) or p, p["name"]) for p in ps)
+
+
+def card(a: Action, lg: str, people: dict) -> str:
+    get = people.get
+    tag, tcls = TAGS.get(a.kind, ("Move", ""))
+    title, body, gain_n, gain_l, extra = a.title, "", "", "", ""
+
+    if a.kind == "lineup" and a.title.startswith("Pick up"):
+        tag, tcls = "Pickup", "t-pickup"
+        add, drop = (a.players + [None])[:2]
+        title = f"Pick up {add}"
+        body = swap("Drop", row(get(drop), drop) if drop else OPEN_SPOT,
+                    "Add", row(get(add), add, wk(get(add)), opp_sub(get(add))))
+        gain_n, gain_l = f"+{a.gain:.1f}", "pts this week"
+    elif a.kind == "lineup":
+        start, sit = a.players[:2]
+        title = f"Start {start}"
+        body = swap("Bench", row(get(sit), sit, wk(get(sit)), opp_sub(get(sit))),
+                    "Start", row(get(start), start, wk(get(start)), opp_sub(get(start))))
+        gain_n, gain_l = f"+{a.gain:.1f}", "pts this week"
+    elif a.kind == "injury":
+        n = a.players[0]
+        title = f"Bench {n}"
+        body = (f'<ul class="solo">{row(get(n), n)}</ul>'
+                '<p class="note">Out this week. Start your best healthy player.</p>')
+    elif a.kind == "waiver":
+        add, drop = (a.players + [None])[:2]
+        title = f"Add {add}"
+        body = swap("Drop", row(get(drop), drop) if drop else OPEN_SPOT,
+                    "Add", row(get(add), add))
+        gain_n, gain_l = f"+{a.gain:.0f}", "season pts"
+    elif a.kind == "trade" and a.trade:
+        t = a.trade
+        title = "Get " + " + ".join(p["name"] for p in t["receive"])
+        body = (f'<p class="who">with <b>{esc(t["partner_name"])}</b></p>'
+                + swap("You give", _rows(t["send"], people),
+                       "You get", _rows(t["receive"], people)))
+        gain_n, gain_l = f"+{t['my_gain']:.0f}", "your lineup"
+        extra = f'<span class="them">them +{t["their_gain"]:.0f}</span>'
+    elif a.kind == "plan" and a.trade:
+        c = a.trade
+        notes = c.get("step_notes") or ["", ""]
+        title = "Get " + " + ".join(p["name"] for p in c["step2"]["receive"])
+        steps = ""
+        for i, (st, note) in enumerate(((c["step1"], notes[0]), (c["step2"], notes[1])), 1):
+            nline = f'<p class="note">{esc(note)}</p>' if note else ""
+            steps += (
+                f'<li class="step"><span class="sn">{i}</span><div class="sb">'
+                f'<p class="who">with <b>{esc(st["partner_name"])}</b></p>'
+                + swap("Give", _rows(st["send"], people), "Get", _rows(st["receive"], people))
+                + nline + "</div></li>")
+        body = f'<ol class="steps">{steps}</ol>'
+        gain_n, gain_l = f"+{c['total_gain']:.0f}", "your lineup"
+
+    chat = bubble(a.draft_message) if a.draft_message else ""
+    gain = (f'<div class="gain"><b>{gain_n}</b><span>{gain_l}</span>{extra}</div>'
+            if gain_n else '<div class="gain"></div>')
+    key = esc(f"{lg}|{a.kind}|{a.title}")
+    urgent = " urgent" if a.urgency >= 2 else ""
+    return f"""
+<article class="card{urgent}" data-key="{key}">
+  <header class="ch"><span class="kt {tcls}">{tag}</span><span class="dl">{esc(a.deadline)}</span></header>
+  <h3>{esc(title)}</h3>
+  <div class="cb">{body}{chat}</div>
+  <footer class="cf">{gain}<button class="done" data-done aria-pressed="false"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 10.5l3.2 3L15 6.5"/></svg>Done</button></footer>
+</article>"""
 
 
 # ------------------------------------------------------------- views
 
 
-CONF_CLASS = {"High": "hi", "Medium": "md", "Low": "lo"}
+def started(me: dict) -> list[dict]:
+    return [p for p in me["players"] if (p.get("current_slot") or "BE") not in ("BE", "IR")]
 
 
-def _names(ps) -> str:
-    return ", ".join(p["name"] for p in ps)
-
-
-def _swap_panel(send, receive) -> str:
-    def side(label, ps, cls):
-        lis = "".join(
-            f'<li>{pos_chip(p["position"])}<b>{esc(p["name"])}</b>'
-            f'<em>{(p.get("projected") or 0):.0f}</em></li>'
-            for p in ps
-        )
-        return (f'<div class="side {cls}"><span class="side-l">{label}</span>'
-                f'<ul>{lis}</ul></div>')
-    return (f'<div class="swap">{side("You give", send, "out")}'
-            f'<div class="arr" aria-hidden="true">&rarr;</div>'
-            f'{side("You get", receive, "in")}</div>')
-
-
-def render_action(a: Action, i: int, league: str) -> str:
-    """A card you read in three seconds: verb headline, chips, a picture of
-    the deal. Prose only where a fact needs a sentence (injury citations)."""
-    conf = f'<span class="conf {CONF_CLASS.get(a.confidence, "lo")}">' \
-           f'{esc(a.confidence)}</span>'
-    urgent = ' data-urgent="1"' if a.urgency >= 2 else ""
-
-    title = a.title
-    body = ""
-    gains = ""
-    if a.kind == "trade" and a.trade:
-        t = a.trade
-        title = f'Get {_names(t["receive"])}'
-        body = _swap_panel(t["send"], t["receive"])
-        gains = (f'<div class="gains"><span class="gchip you">Your lineup +{t["my_gain"]:.0f}</span>'
-                 f'<span class="gchip them">{esc(t["partner_name"])} lineup +{t["their_gain"]:.0f}</span></div>'
-                 '<p class="gnote">Pills count points that get started, not raw player totals.</p>')
-    elif a.kind == "plan" and a.trade:
-        c = a.trade
-        s1, s2 = c["step1"], c["step2"]
-        title = f'Get {_names(s2["receive"])} in two moves'
-        notes = c.get("step_notes") or ["", ""]
-        def step(n, st, tag, note):
-            nline = f'<span class="stepnote">{esc(note)}</span>' if note else ""
-            return (f'<div class="step"><span class="stepn">{n}</span>'
-                    f'<div class="stepbody">'
-                    f'<span class="stepwho">{esc(st["partner_name"])}'
-                    f'<i class="steptag">{tag}</i></span>'
-                    f'{_swap_panel(st["send"], st["receive"])}'
-                    f'<span class="gchip them">their lineup +{st["their_gain"]:.0f}</span>'
-                    f'{nline}'
-                    f'</div></div>')
-        body = step(1, s1, "do now", notes[0]) + step(2, s2, "after step 1", notes[1])
-        gains = (f'<div class="gains"><span class="gchip you">Your lineup +{c["total_gain"]:.0f}</span></div>'
-                 '<p class="gnote">Pills count points that get started, not raw player totals.</p>')
-    elif a.kind in ("injury", "info", "lineup"):
-        body = f'<p class="why">{esc(a.why)}</p>'
-
-    msg = ""
-    if a.draft_message:
-        msg = (
-            '<div class="msg"><span class="msg-l">Drop in the group chat '
-            '<button class="copy" data-copy>Copy</button></span>'
-            f'<p>{esc(a.draft_message)}</p></div>'
-        )
-    controls = ""
-    if a.kind != "info":
-        controls = (
-            '<div class="act-do">'
-            '<button class="btn yes" data-yes>Approve</button>'
-            '<button class="btn no" data-no>Pass</button></div>'
-            f'<div class="steps" hidden><p><b>Do it:</b> {esc(a.steps)}</p></div>'
-        )
-    gain_chip = (f'<span class="gchip you">+{a.gain:.0f} pts</span>'
-                 if a.kind == "waiver" and a.gain else "")
-    return f"""
-<article class="act k-{esc(a.kind)}" data-act="{esc(league)}-{i}"{urgent}>
-  <header class="act-h">
-    <span class="kind">{esc(a.kind)}</span>
-    {conf}{gain_chip}
-    <span class="dl">{esc(a.deadline)}</span>
-  </header>
-  <h3>{esc(title)}</h3>
-  {body}{gains}{msg}{controls}
-</article>"""
-
-
-def render_today(a: dict, key: str) -> str:
-    cards = "".join(
-        render_action(act, i, key) for i, act in enumerate(a["queue"])
-    )
-    quiet = ""
-    if all(act.kind == "info" for act in a["queue"]):
-        quiet = '<p class="allclear">Quiet day. That is the system working.</p>'
-    return f'<div class="view" data-view="today">{quiet}<div class="acts">{cards}</div></div>'
-
-
-def render_team(a: dict) -> str:
+def view_today(a: dict, key: str, today: list[Action], n_trades: int) -> str:
+    st, me = a["state"], a["me"]
     if not a["drafted"]:
-        return ('<div class="view" data-view="team" hidden><p class="empty">'
-                "No roster yet &mdash; this league hasn't drafted. Everything here "
-                "fills in automatically afterward.</p></div>")
-    me = a["me"]
-    lu = me["_lineup"]
-    order = {s: i for i, s in enumerate(SLOT_ORDER)}
-    starters = sorted(lu.starters, key=lambda s: (order.get(s["slot"], 9), -s["projected"]))
-
-    def prow(s, slot=True):
-        status = (s.get("injury_status") or "").upper()
-        flag = ""
-        if s.get("on_bye"):
-            flag = ' <span class="flag bad">BYE</span>'
-        elif status and status not in ("ACTIVE", "NORMAL"):
-            cls = "bad" if status in ("OUT", "DOUBTFUL", "INJURY_RESERVE") else "warn"
-            flag = f' <span class="flag {cls}">{esc(status[:3])}</span>'
-        left = f'<td class="slot">{esc(s["slot"])}</td>' if slot else ""
-        return (f'<tr>{left}<td class="who">{esc(s["name"])}{flag}</td>'
-                f'<td>{pos_chip(s["position"])}</td>'
-                f'<td class="n">{(s.get("projected") or 0):.0f}</td></tr>')
-
-    srows = "".join(prow(s) for s in starters)
-    brows = "".join(
-        prow(p, slot=False)
-        for p in sorted(lu.bench, key=lambda p: -(p.get("projected") or 0))
+        return ('<div class="view" data-view="today"><section class="hero">'
+                '<p class="big ok">Not drafted</p><p class="sub">This fills in after the draft.</p>'
+                '</section></div>')
+    n = len(today)
+    pts = sum(week_pts(p) for p in started(me))
+    rec = ""
+    if me.get("wins") is not None:
+        ties = f'-{me["ties"]}' if me.get("ties") else ""
+        rec = (f'<div class="stat"><b>{me["wins"]}-{me["losses"]}{ties}</b>'
+               f'<span>record</span></div>')
+    po = st.get("playoff_teams") or 0
+    total = len(st["teams"])
+    cells = "".join(
+        f'<i class="{"me" if t.get("is_me") else ""}{" in" if i < po else ""}"></i>'
+        for i, t in enumerate(st["teams"])
     )
-
-    bars = ""
-    for pos, s in a["strength"].items():
-        edge = s["edge"]
-        cls = "good" if edge > 12 else ("bad" if edge < -12 else "even")
-        word = "strong" if edge > 12 else ("thin" if edge < -12 else "league-average")
-        bars += (f'<li class="{cls}">{pos_chip(pos)}<span class="st-w">{word}</span>'
-                 f'<span class="st-n">{edge:+.0f} vs median</span></li>')
-
-    state = a["state"]
-    po = state.get("playoff_teams")
-    outlook = ""
+    ladder = ""
     if po:
-        making = me["_rank"] <= po
-        outlook = (
-            f"Projections put you <b>{me['_rank']} of {state['team_count']}</b>; "
-            f"top {po} make the playoffs, so you are currently "
-            f"{'inside' if making else 'outside'} the line. "
-            "That is a preseason estimate, not a fate."
-        )
-
-    plan = "".join(
-        f"<li>{esc(act.title)}</li>"
-        for act in a["queue"] if act.kind != "info"
-    )[:2000] or "<li>Nothing this week. Check back after the first games.</li>"
-
+        ladder = (f'<div class="ladder" aria-hidden="true">{cells}</div>'
+                  f'<p class="lcap"><span>Roster strength: <b>{ordinal(me["_rank"])}</b> of {total}</span>'
+                  f'<span>Top {po} make playoffs</span></p>')
+    word = "move" if n == 1 else "moves"
+    head = (f'<p class="big">{n}<span>{word}</span></p>' if n
+            else '<p class="big ok">All set</p>')
+    cards = "".join(card(x, key, a["people"]) for x in today)
+    more = (f'<button class="more" data-goto="trades">All trade ideas<span>{n_trades}</span></button>'
+            if n_trades > 1 else "")
+    empty = ('<p class="calm">Lineup is set, nobody on waivers beats your guys, '
+             'and no trade helps both sides. Check back later.</p>') if not n else ""
     return f"""
-<div class="view" data-view="team" hidden>
-  <div class="two">
-    <section class="panel">
-      <h2 class="sh">Starters</h2>
-      <table class="grid"><tbody>{srows}</tbody></table>
-      <p class="tot"><span>Season projection</span><b>{lu.projected:,.0f}</b></p>
-    </section>
-    <section class="panel">
-      <h2 class="sh">Bench</h2>
-      <table class="grid bench"><tbody>{brows}</tbody></table>
-    </section>
-  </div>
-  <div class="two">
-    <section class="panel">
-      <h2 class="sh">Positional strength</h2>
-      <ul class="strength">{bars}</ul>
-    </section>
-    <section class="panel">
-      <h2 class="sh">Playoff outlook</h2>
-      <p class="prose">{outlook}</p>
-      <h2 class="sh" style="margin-top:18px">This week's plan</h2>
-      <ol class="plan">{plan}</ol>
-    </section>
-  </div>
-</div>"""
-
-
-def render_market(a: dict) -> str:
-    if not a["drafted"]:
-        return ('<div class="view" data-view="market" hidden><p class="empty">'
-                "The market opens when the league drafts.</p></div>")
-    rows = ""
-    for m in sorted(a["market"], key=lambda m: m["team"]["_rank"]):
-        t = m["team"]
-        needs = " ".join(pos_chip(p) for p in m["needs"]) or '<span class="none">none</span>'
-        surplus = ", ".join(
-            f'{esc(pl["name"])} ({esc(pos)})' for pos, pl in m["surplus"]
-        ) or "&mdash;"
-        fit = ""
-        if not t.get("is_me") and m["needs"]:
-            my_surplus = next(
-                (pos for pos, _ in next(
-                    (x["surplus"] for x in a["market"] if x["team"].get("is_me")), []
-                ) if pos in m["needs"]), None,
-            )
-            if my_surplus:
-                fit = f'<span class="fit">fit: they need {esc(my_surplus)}, you have spare</span>'
-        me_cls = ' class="mine"' if t.get("is_me") else ""
-        rows += (f'<tr{me_cls}><td class="rk">{t["_rank"]}</td>'
-                 f'<td class="who">{esc(t["name"])}{fit}</td>'
-                 f'<td class="n">{t["_total"]:,.0f}</td>'
-                 f'<td>{needs}</td><td class="sur">{surplus}</td></tr>')
-    return f"""
-<div class="view" data-view="market" hidden>
-  <section class="panel">
-    <h2 class="sh">Every team, honestly read</h2>
-    <p class="sub">Needs are starting spots in the league's bottom quartile.
-       Surplus is a benched player good enough to start elsewhere &mdash; that
-       pair is what makes a trade real.</p>
-    <div class="scroll"><table class="grid market">
-      <thead><tr><th></th><th>Team</th><th class="n">Proj</th><th>Needs</th><th>Surplus</th></tr></thead>
-      <tbody>{rows}</tbody>
-    </table></div>
+<div class="view" data-view="today">
+  <section class="hero">
+    <div class="hrow">{head}
+      <div class="stats"><div class="stat"><b>{pts:.0f}</b><span>proj this week</span></div>{rec}</div>
+    </div>
+    {ladder}
   </section>
+  {empty}<div class="cards">{cards}</div>{more}
 </div>"""
 
 
-def render_trades(a: dict, key: str) -> str:
+def view_lineup(a: dict, news: dict) -> str:
     if not a["drafted"]:
-        return ('<div class="view" data-view="trades" hidden><p class="empty">'
-                "Trades open when rosters exist.</p></div>")
-    outgoing = "".join(
-        render_action(act, 100 + i, key)
-        for i, act in enumerate(act for act in a["queue"] if act.kind == "trade")
-    ) or '<p class="empty">No outgoing offer clears the bar right now.</p>'
+        return '<div class="view" data-view="lineup" hidden></div>'
+    me, st = a["me"], a["state"]
+    week = st.get("current_week")
+
+    moves_in, moves_out = set(), set()
+    for x in a["queue"]:
+        if x.kind == "lineup" and x.title.startswith("Start"):
+            moves_in.add(x.players[0])
+            moves_out.add(x.players[1])
+        elif x.kind == "injury":
+            moves_out.update(x.players)
+
+    order = {s: i for i, s in enumerate(SLOT_ORDER)}
+    starters = sorted(started(me), key=lambda p: (order.get(p["current_slot"], 9), -week_pts(p)))
+    bench = sorted((p for p in me["players"] if (p.get("current_slot") or "BE") == "BE"),
+                   key=lambda p: -week_pts(p))
+    ir = [p for p in me["players"] if p.get("current_slot") == "IR"]
+    top = max([week_pts(p) for p in me["players"]] + [1])
+
+    def line(p, slot):
+        v = week_pts(p)
+        f = flag(p)
+        dead = bool(f and f[1] == "bad")
+        mark = ""
+        if p["name"] in moves_out:
+            mark = '<span class="mv sit">Sit</span>'
+        elif p["name"] in moves_in:
+            mark = '<span class="mv go">Start</span>'
+        bar = max(0.0, min(1.0, v / top))
+        shown = "0" if dead else f"{v:.1f}"
+        dcls = " dead" if dead else ""
+        return (f'<li class="lr{dcls}">'
+                f'<span class="slot">{esc(slot)}</span>'
+                f'<span class="pn"><b>{esc(p["name"])}</b><small>{opp_sub(p)}</small></span>'
+                f'{flag_html(p)}{mark}'
+                f'<span class="pts"><b>{shown}</b><i style="--w:{bar:.2f}"></i></span></li>')
+
+    srows = "".join(line(p, SLOT_LABEL.get(p["current_slot"], p["current_slot"])) for p in starters)
+    brows = "".join(line(p, "BN") for p in bench)
+    irows = "".join(line(p, "IR") for p in ir)
+    total = sum(week_pts(p) for p in starters)
+
+    mine = {str(p["espn_id"]): p["name"] for p in me["players"] if p.get("espn_id")}
+    items = ""
+    seen = 0
+    for item in news.get("items", []):
+        names = [mine[str(i)] for i in item.get("espn_athlete_ids", []) if str(i) in mine]
+        if not names or seen >= 5:
+            continue
+        seen += 1
+        when = (item.get("published") or "")[:10]
+        link = esc(item.get("url") or "")
+        head = esc(item["headline"])
+        h = f'<a href="{link}" target="_blank" rel="noopener">{head}</a>' if link else head
+        who = esc(", ".join(dict.fromkeys(names)))
+        items += (f'<li><span class="nw">{who}</span><p>{h}</p>'
+                  f'<small>{esc(when)}</small></li>')
+    news_block = ""
+    if items:
+        news_block = (f'<section class="block"><h2>Your guys in the news</h2>'
+                      f'<ul class="news">{items}</ul></section>')
+
+    return f"""
+<div class="view" data-view="lineup" hidden>
+  <section class="block">
+    <div class="bh"><h2>Week {esc(week)} starters</h2><span class="tot"><b>{total:.1f}</b> proj</span></div>
+    <ul class="lineup">{srows}</ul>
+  </section>
+  <section class="block">
+    <h2>Bench</h2>
+    <ul class="lineup bench">{brows}{irows}</ul>
+  </section>
+  {news_block}
+</div>"""
+
+
+def view_trades(a: dict, key: str, trades: list[Action], alts: list[Action]) -> str:
+    if not a["drafted"]:
+        return '<div class="view" data-view="trades" hidden></div>'
+    cards = "".join(card(x, key, a["people"]) for x in sorted(trades, key=lambda x: -x.gain))
+    if not cards:
+        cards = '<p class="calm">No trade helps both sides right now.</p>'
+    alt_rows = ""
+    for x in alts:
+        t = x.trade
+        give = esc(" + ".join(p["name"] for p in t["send"]))
+        getn = esc(" + ".join(p["name"] for p in t["receive"]))
+        alt_rows += (f'<li><span class="ag">{give}<i>for</i>{getn}</span>'
+                     f'<small>{esc(t["partner_name"])}</small><b>+{t["my_gain"]:.0f}</b></li>')
+    alt_block = ""
+    if alt_rows:
+        alt_block = (f'<section class="block"><h2>Other versions</h2>'
+                     f'<ul class="alts">{alt_rows}</ul></section>')
     return f"""
 <div class="view" data-view="trades" hidden>
-  <section class="panel">
-    <h2 class="sh">Offers worth making</h2>
-    <div class="acts">{outgoing}</div>
-  </section>
-  <section class="panel">
-    <h2 class="sh">Got an offer? Evaluate it</h2>
-    <p class="sub">Pick who they want and who they're giving. Verdict comes from
-       both starting lineups, this league's slots and scoring &mdash; not a generic
-       trade calculator.</p>
-    <div class="eval">
-      <div class="ev-col">
-        <label class="lbl" for="ev-partner">From</label>
-        <select id="ev-partner" class="sel"></select>
-        <label class="lbl">They give you</label>
-        <div id="ev-get" class="picklist"></div>
-      </div>
-      <div class="ev-col">
-        <label class="lbl">You give them</label>
-        <div id="ev-send" class="picklist"></div>
-      </div>
-    </div>
-    <button class="btn yes" id="ev-run">Evaluate</button>
-    <div id="ev-out" class="verdict" hidden></div>
-  </section>
-  <section class="panel">
-    <h2 class="sh">Decision log</h2>
-    <p class="sub">Everything you approve, pass on, or evaluate is recorded here,
-       on this device.</p>
-    <ul id="audit" class="audit"><li class="empty">Nothing yet.</li></ul>
-  </section>
-</div>"""
-
-
-def render_waivers(a: dict) -> str:
-    if not a["drafted"]:
-        return ('<div class="view" data-view="waivers" hidden><p class="empty">'
-                "Waivers open after the draft.</p></div>")
-    state = a["state"]
-    me = a["me"]
-    base = me["_lineup"].projected
-    rows = ""
-    for fa in state.get("free_agents", [])[:40]:
-        if not fa.get("projected"):
-            continue
-        trial = best_lineup(me["players"] + [fa], state["roster_slots"])
-        gain = trial.projected - base
-        now = "starts for you" if gain >= 3 else "depth only"
-        cls = "good" if gain >= 3 else ""
-        rows += (f'<tr class="{cls}"><td class="who">{esc(fa["name"])}</td>'
-                 f'<td>{pos_chip(fa["position"])}</td>'
-                 f'<td class="n">{fa["projected"]:.0f}</td>'
-                 f'<td class="n">{gain:+.0f}</td><td>{now}</td></tr>')
-    wt = state.get("waiver_type") or "unknown"
-    note = ("Bids come out of your FAAB budget &mdash; the queue on Today says how much."
-            if wt == "faab" else
-            "This league uses waiver priority, so a claim also spends your spot in line "
-            "&mdash; the +points column says when that's worth it.")
-    return f"""
-<div class="view" data-view="waivers" hidden>
-  <section class="panel">
-    <h2 class="sh">Free agents, measured against your roster</h2>
-    <p class="sub">"+Lineup" is what adding him does to <em>your</em> starting
-       lineup &mdash; the only number that matters. {note}</p>
-    <div class="scroll"><table class="grid">
-      <thead><tr><th>Player</th><th></th><th class="n">Proj</th>
-      <th class="n">+Lineup</th><th>Verdict</th></tr></thead>
-      <tbody>{rows}</tbody>
-    </table></div>
-  </section>
-</div>"""
-
-
-def render_news(a: dict, news: dict) -> str:
-    state = a["state"]
-    rostered: dict[str, tuple[str, str]] = {}
-    for t in state["teams"]:
-        for p in t["players"]:
-            if p.get("espn_id"):
-                rostered[str(p["espn_id"])] = (p["name"], t["name"])
-    items = ""
-    linked = 0
-    for item in news.get("items", []):
-        hits = [rostered[str(i)] for i in item.get("espn_athlete_ids", [])
-                if str(i) in rostered]
-        if not hits:
-            continue
-        linked += 1
-        who = "; ".join(f"<b>{esc(n)}</b> ({esc(tm)})" for n, tm in hits)
-        src = (f' &middot; <a href="{esc(item["url"])}" target="_blank" rel="noopener">'
-               f'{esc(item.get("source","source"))}</a>' if item.get("url") else "")
-        when = esc((item.get("published") or "")[:10])
-        items += (f'<li><p class="nh">{esc(item["headline"])}</p>'
-                  f'<p class="nm">Affects {who}{src}'
-                  f'{" &middot; " + when if when else ""}</p></li>')
-    fetched = esc((news.get("fetched_at") or "")[:16].replace("T", " "))
-    if not linked:
-        items = ('<li class="empty">No current headline touches a rostered player '
-                 "in this league. Quiet is good.</li>")
-    return f"""
-<div class="view" data-view="news" hidden>
-  <section class="panel">
-    <h2 class="sh">News that touches this league</h2>
-    <p class="sub">Only stories naming a rostered player appear here. Anything
-       that changes a decision also shows up on Today as an action.
-       {f"Last checked {fetched} UTC." if fetched else ""}</p>
-    <ul class="news">{items}</ul>
-  </section>
-</div>"""
-
-
-def render_settings(key: str) -> str:
-    return f"""
-<div class="view" data-view="settings" hidden>
-  <section class="panel">
-    <h2 class="sh">Notifications</h2>
-    <p class="sub">These control what Claude includes when it messages you about
-       this league. Nothing here creates extra pings &mdash; it only removes them.</p>
-    <ul class="prefs" data-league="{esc(key)}">
-      <li><label><input type="checkbox" data-pref="digest" checked>
-        Daily digest &mdash; one message, only when something changed</label></li>
-      <li><label><input type="checkbox" data-pref="deadlines" checked>
-        Deadline reminders &mdash; waivers and lineup lock</label></li>
-      <li><label><input type="checkbox" data-pref="urgent" checked>
-        Urgent only: starter injured, incoming trade, time-sensitive pickup</label></li>
-      <li class="quiet-row"><label><input type="checkbox" data-pref="quiet">
-        <b>Quiet mode</b> &mdash; nothing but urgent, until you turn it off</label></li>
-    </ul>
-  </section>
-  <section class="panel">
-    <h2 class="sh">Untouchables</h2>
-    <p class="sub">Players the system must never offer in a trade. The evaluator
-       and counteroffers respect this list immediately.</p>
-    <div class="untouch"><input type="text" id="untouch-in"
-      placeholder="Type a player's name and press Enter"><ul id="untouch-list"></ul></div>
-  </section>
-  <section class="panel">
-    <h2 class="sh">Automation</h2>
-    <p class="prose">Nothing is ever submitted to ESPN automatically &mdash; ESPN
-       doesn't allow it, and this product wouldn't do it anyway. The flow is
-       always: it recommends, you approve, you make the one click in ESPN.
-       The rules below shape <em>recommendations only</em>.</p>
-    <ul class="prefs">
-      <li><label>Flag trades as "accept-worthy" only above
-        <input type="number" id="rule-threshold" value="10" min="0" max="100"
-         class="numin"> lineup points</label></li>
-      <li><label><input type="checkbox" id="rule-injured" checked>
-        Never recommend accepting a trade for an OUT/IR player without a warning</label></li>
-    </ul>
+  <div class="cards">{cards}</div>
+  {alt_block}
+  <section class="block check" data-eval="{key}">
+    <h2>Got an offer?</h2>
+    <label class="sel"><span>From</span><select id="ev-team-{key}"></select></label>
+    <p class="eh">They give you</p><div class="chips" data-side="get"></div>
+    <p class="eh">You give them</p><div class="chips" data-side="send"></div>
+    <div class="verdict" aria-live="polite"><p class="vw">Tap players on both sides</p></div>
   </section>
 </div>"""
 
@@ -565,7 +469,7 @@ def render_settings(key: str) -> str:
 
 
 def client_data(analyses: dict[str, dict]) -> str:
-    """The slim JSON the in-page evaluator needs: rosters + slots per league."""
+    """The slim JSON the offer checker needs: rosters + slots per league."""
     payload = {}
     for key, a in analyses.items():
         if not a["drafted"]:
@@ -573,13 +477,12 @@ def client_data(analyses: dict[str, dict]) -> str:
         st = a["state"]
         payload[key] = {
             "slots": st["roster_slots"],
-            "myTeamId": st["my_team_id"],
             "teams": [
                 {
-                    "id": t["team_id"], "name": t["name"], "me": bool(t.get("is_me")),
+                    "id": t["team_id"], "name": t["name"].strip(), "me": bool(t.get("is_me")),
                     "players": [
                         {"id": p["player_id"], "n": p["name"], "pos": p["position"],
-                         "pr": p.get("projected"), "inj": p.get("injury_status")}
+                         "pr": p.get("projected"), "inj": status_of(p)}
                         for p in t["players"]
                     ],
                 }
@@ -593,571 +496,436 @@ def build() -> str:
     news = load("news.json") or {"items": []}
     decisions = load("decisions.json") or {}
     analyses: dict[str, dict] = {}
-    tabs, blocks = [], []
+    switch, blocks = [], []
+    week = None
     for key in ("L1", "L2"):
         state = load(f"state_{key}.json")
         if not state:
             continue
         a = analyse(state, news["items"], decisions)
         analyses[key] = a
-        first = not tabs
-        n_act = sum(1 for x in a["queue"] if x.kind != "info")
-        badge = f'<i class="badge">{n_act}</i>' if n_act else ""
-        tabs.append(
-            f'<button data-league="{key}" aria-pressed="{"true" if first else "false"}">'
-            f'{esc(state["name"])}{badge}</button>'
+        week = week or state.get("current_week")
+        today, trades, alts = split_queue(a["queue"])
+        first = not switch
+        n = len(today)
+        count = f'<i class="cnt">{n}</i>' if n else '<i class="cnt ok">✓</i>'
+        pressed = "true" if first else "false"
+        switch.append(
+            f'<button data-lg="{key}" aria-pressed="{pressed}">'
+            f'<span class="ln">{esc(state["name"])}</span>'
+            f'<span class="ls">{esc(state.get("team_count", ""))} teams</span>{count}</button>'
         )
+        hidden = "" if first else " hidden"
         blocks.append(f"""
-<section class="league" id="lg-{key}"{"" if first else " hidden"}>
-  {render_today(a, key)}
-  {render_team(a)}
-  {render_market(a)}
-  {render_trades(a, key)}
-  {render_waivers(a)}
-  {render_news(a, news)}
-  {render_settings(key)}
+<section class="lg" data-lg="{key}"{hidden}>
+  {view_today(a, key, today, len(trades))}
+  {view_lineup(a, news)}
+  {view_trades(a, key, trades, alts)}
 </section>""")
 
-    stamp = datetime.now(timezone.utc).strftime("%b %-d, %H:%M UTC")
+    now = datetime.now(timezone.utc)
     return (PAGE
-            .replace("{{TABS}}", "".join(tabs))
+            .replace("{{SWITCH}}", "".join(switch))
             .replace("{{BLOCKS}}", "".join(blocks))
             .replace("{{DATA}}", client_data(analyses))
-            .replace("{{STAMP}}", stamp))
+            .replace("{{WEEK}}", esc(week or ""))
+            .replace("{{ISO}}", now.strftime("%Y-%m-%dT%H:%M:%SZ"))
+            .replace("{{STAMP}}", now.strftime("%b %-d, %H:%M UTC")))
 
 
 PAGE = r"""<title>Fantasy Command Center</title>
+<meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Outfit:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Figtree:wght@400;500;600;700;800&display=swap">
 <style>
+/* One narrow app column: sticky league switch on top, three tabs on the bottom. */
 :root{
-  --bg:#FFF6E9; --surface:#FFFFFF; --surface2:#FFEDCB;
-  --ink:#151515; --muted:#6E675C; --grid:#E8DFC9;
-  --brand:#8FC7FF;
-  --good:#187C33; --good-bg:#9FEA92;
-  --warn:#8A6400; --warn-bg:#FFD44D;
-  --help:#B3241C; --help-bg:#FF9E93;
-  --plan:#2563EB; --plan-bg:#BFD6FF;
-  --qb:#CBB4FF; --rb:#9FE8DC; --wr:#FFD44D; --te:#FFB3C2; --dst:#E4E0D6; --k:#E4E0D6;
-  --disp:'Bricolage Grotesque',Outfit,system-ui,sans-serif;
-  --body:Outfit,system-ui,-apple-system,sans-serif;
-  --pop:5px 5px 0 var(--ink);
-  --pop-sm:3px 3px 0 var(--ink);
+  --bg:#EDF2F7; --card:#FFFFFF; --soft:#F3F6FA; --line:#DDE5EE;
+  --fg:#0E1726; --muted:#5F6C7D;
+  --sky:#1E8FFF; --sky-soft:#DDEEFF; --sky-ink:#0B5CB5; --sky-line:#B9DBFF;
+  --bub:#1E8FFF; --on-bub:#FFFFFF;
+  --good:#11904A; --good-soft:#DCF4E5;
+  --bad:#D63A2C; --bad-soft:#FCE2DF;
+  --warn:#A86C00; --warn-soft:#FFEFCC;
+  --qb:#B197FC; --rb:#3FD8C2; --wr:#FFC53D; --te:#FF8FA3; --k:#B8C2CF; --on-pos:#0B1220;
+  --num:'Barlow Condensed','Arial Narrow',system-ui,sans-serif;
+  --ui:Figtree,system-ui,-apple-system,'Segoe UI',sans-serif;
+  --r:18px;
 }
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0A1019; --card:#131C28; --soft:#1A2431; --line:#243143;
+  --fg:#EAF0F7; --muted:#8E9BAE;
+  --sky:#5BB7FF; --sky-soft:#13314F; --sky-ink:#A6D7FF; --sky-line:#1F4C78;
+  --bub:#2580E0; --on-bub:#FFFFFF;
+  --good:#3FD68D; --good-soft:#0F3324;
+  --bad:#FF6B5E; --bad-soft:#3B1816;
+  --warn:#FFC24D; --warn-soft:#3A2A0C;
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0A1019; --card:#131C28; --soft:#1A2431; --line:#243143;
+  --fg:#EAF0F7; --muted:#8E9BAE;
+  --sky:#5BB7FF; --sky-soft:#13314F; --sky-ink:#A6D7FF; --sky-line:#1F4C78;
+  --bub:#2580E0; --on-bub:#FFFFFF;
+  --good:#3FD68D; --good-soft:#0F3324;
+  --bad:#FF6B5E; --bad-soft:#3B1816;
+  --warn:#FFC24D; --warn-soft:#3A2A0C;
+  color-scheme:dark}
+
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.5 var(--body)}
-a{color:var(--ink)}
-.num,.grid .n,.stamp{font-variant-numeric:tabular-nums}
-.wrap{max-width:1020px;margin:0 auto;padding:0 16px 90px}
+body{margin:0;background:var(--bg);color:var(--fg);font:500 16px/1.4 var(--ui);-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--bg)}
+button{font:inherit;color:inherit}
+a{color:inherit}
+b{font-weight:700}
+small{font-size:13px;color:var(--muted);font-weight:500}
+:focus-visible{outline:3px solid var(--sky);outline-offset:2px;border-radius:10px}
 
-/* top */
-.top{position:sticky;top:0;z-index:20;margin:0 -16px 14px;background:var(--brand);
-     border-bottom:3px solid var(--ink);
-     display:flex;align-items:center;justify-content:space-between;gap:12px;
-     padding:13px 18px;flex-wrap:wrap}
-.mark{font:800 21px/1.1 var(--disp);letter-spacing:0}
-.mark i{font-style:normal}
-.stamp{font:600 12px/1 var(--body);opacity:.65}
+.app{max-width:560px;margin:0 auto;
+  padding-left:max(16px,env(safe-area-inset-left,0px));
+  padding-right:max(16px,env(safe-area-inset-right,0px));
+  padding-block:0 calc(96px + env(safe-area-inset-bottom,0px))}
 
-/* league switch + view nav: chunky press-down pills */
-.lgs{display:flex;gap:10px;margin:16px 0 8px}
-.lgs button{appearance:none;cursor:pointer;flex:1;padding:11px 8px;
-  background:var(--surface);border:2.5px solid var(--ink);border-radius:14px;
-  box-shadow:var(--pop-sm);color:var(--ink);
-  font:700 15px/1.2 var(--body);display:flex;align-items:center;justify-content:center;gap:8px}
-.lgs button[aria-pressed="true"]{background:var(--ink);color:#fff;box-shadow:none;
-  transform:translate(3px,3px)}
-.lgs button:active{transform:translate(3px,3px);box-shadow:none}
-.badge{font:800 11.5px/1 var(--body);font-style:normal;background:var(--help-bg);
-  border:2px solid var(--ink);color:var(--ink);padding:2px 8px;border-radius:999px}
-.lgs button[aria-pressed="true"] .badge{border-color:#fff}
-.nav{display:flex;gap:8px;margin:10px 0 22px;overflow-x:auto;scrollbar-width:none;padding:4px 2px 6px}
-.nav button{appearance:none;cursor:pointer;border:2px solid var(--ink);background:var(--surface);
-  color:var(--ink);padding:8px 14px;border-radius:999px;white-space:nowrap;
-  font:700 13.5px/1 var(--body);box-shadow:2px 2px 0 var(--ink)}
-.nav button[aria-pressed="true"]{background:var(--ink);color:#fff;box-shadow:none;
-  transform:translate(2px,2px)}
-.nav button:active{transform:translate(2px,2px);box-shadow:none}
-.lgs button:focus-visible,.nav button:focus-visible,.btn:focus-visible,
-.copy:focus-visible{outline:3px solid var(--plan);outline-offset:2px}
+/* top: brand + league switch */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);padding-block:14px 12px;display:grid;gap:12px}
+.brand{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.mark{display:flex;align-items:center;gap:10px;font:800 19px/1 var(--ui);letter-spacing:-.01em}
+.mark i{display:grid;place-items:center;width:38px;height:34px;border-radius:11px;background:var(--sky);
+  color:var(--on-bub);font:700 17px/1 var(--num);font-style:normal;letter-spacing:.02em}
+.upd{font-size:13px;color:var(--muted);text-align:right;line-height:1.35}
+.upd b{color:var(--fg);font-weight:700}
+.switch{display:grid;grid-template-columns:1fr 1fr;gap:4px;padding:4px;background:var(--card);border:1px solid var(--line);border-radius:16px}
+.switch button{appearance:none;border:0;background:transparent;cursor:pointer;border-radius:12px;padding:8px 10px 8px 12px;
+  display:grid;grid-template-columns:1fr auto;text-align:left;column-gap:8px;align-items:center}
+.switch .ln{font-weight:700;font-size:15px}
+.switch .ls{grid-row:2;font-size:12px;color:var(--muted)}
+.switch .cnt{grid-row:1/3;grid-column:2;font:700 15px/1 var(--num);font-style:normal;min-width:26px;height:26px;
+  border-radius:99px;display:grid;place-items:center;background:var(--bad);color:var(--on-bub);padding:0 7px}
+.switch .cnt.ok{background:var(--good-soft);color:var(--good)}
+.switch button[aria-pressed="true"]{background:var(--sky-soft)}
+.switch button[aria-pressed="true"] .ln{color:var(--sky-ink)}
 
-/* action cards */
-.allclear{margin:0 0 14px;color:var(--good);font:800 21px/1.2 var(--disp)}
-.acts{display:flex;flex-direction:column;gap:16px}
-.act{background:var(--surface);border:2.5px solid var(--ink);border-radius:18px;
-     padding:17px 19px 15px;box-shadow:var(--pop)}
-.act[data-state="done"]{background:var(--good-bg)}
-.act[data-state="passed"]{opacity:.45;box-shadow:var(--pop-sm)}
-.act-h{display:flex;align-items:center;gap:9px;margin-bottom:9px;flex-wrap:wrap}
-.kind{font:800 12px/1 var(--body);letter-spacing:.06em;text-transform:uppercase;
-  border:2px solid var(--ink);border-radius:999px;padding:3px 11px;background:var(--surface2)}
-.k-trade .kind{background:var(--wr)}
-.k-waiver .kind{background:var(--warn-bg)}
-.k-injury .kind,[data-urgent] .kind{background:var(--help-bg)}
-.k-info .kind{background:var(--good-bg)}
-.k-plan .kind{background:var(--plan-bg)}
-.k-lineup .kind{background:var(--help-bg)}
-.conf{font:800 11.5px/1 var(--body);letter-spacing:.04em;padding:3px 10px;
-  border:2px solid var(--ink);border-radius:999px}
-.conf.hi{background:var(--good-bg)}
-.conf.md{background:var(--warn-bg)}
-.conf.lo{background:var(--dst)}
-.dl{margin-left:auto;font-size:12.5px;color:var(--muted);font-weight:600}
-.act h3{margin:0 0 9px;font:800 clamp(19px,3vw,25px)/1.2 var(--disp);text-wrap:balance}
-.why{margin:0;color:var(--ink);font-size:15px;max-width:68ch}
-.conf-why{margin:7px 0 0;color:var(--muted);font-size:13px;max-width:68ch}
-.msg{margin-top:13px;background:var(--surface2);border:2px solid var(--ink);
-  border-radius:14px 14px 14px 4px;padding:11px 14px}
-.msg-l{display:flex;justify-content:space-between;align-items:center;gap:8px;
-  font:800 11px/1 var(--body);letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
-.msg p{margin:8px 0 0;font-size:14.5px}
-.copy{appearance:none;cursor:pointer;border:2px solid var(--ink);background:var(--surface);
-  color:var(--ink);padding:4px 12px;border-radius:10px;
-  font:800 11px/1 var(--body);letter-spacing:.05em;box-shadow:2px 2px 0 var(--ink)}
-.copy:active{transform:translate(2px,2px);box-shadow:none}
-.act-do{display:flex;gap:10px;margin-top:15px}
-.btn{appearance:none;cursor:pointer;border:2.5px solid var(--ink);padding:10px 24px;
-  border-radius:14px;background:var(--surface);color:var(--ink);
-  font:800 14px/1 var(--body);box-shadow:var(--pop-sm)}
-.btn.yes{background:var(--brand)}
-.btn:active{transform:translate(3px,3px);box-shadow:none}
-.steps{margin-top:13px;padding:11px 14px;background:var(--good-bg);
-  border:2px solid var(--ink);border-radius:14px}
-.steps p{margin:0;font-size:14.5px}
+/* hero */
+.hero{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px 18px 16px;margin-block:4px 14px;display:grid;gap:14px}
+.hrow{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.big{margin:0;font:700 66px/.82 var(--num);display:flex;align-items:baseline;gap:8px}
+.big span{font:700 20px/1 var(--ui);color:var(--muted)}
+.big.ok{color:var(--good);font-size:52px}
+.sub{margin:0;color:var(--muted)}
+.stats{display:flex;gap:20px}
+.stat{display:grid;text-align:right}
+.stat b{font:700 30px/1 var(--num);font-variant-numeric:tabular-nums}
+.stat span{font-size:12px;color:var(--muted)}
+.ladder{display:flex;gap:4px;align-items:center}
+.ladder i{flex:1;height:12px;border-radius:4px;background:var(--soft);border:1px solid var(--line)}
+.ladder i.in{background:var(--sky-soft);border-color:var(--sky-line)}
+.ladder i.me{background:var(--sky);border-color:var(--sky);height:20px}
+.lcap{margin:-4px 0 0;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:13px;color:var(--muted)}
+.lcap b{color:var(--fg)}
+.calm{margin:0 0 14px;color:var(--muted);text-wrap:pretty}
 
-/* deal picture */
-.swap{display:flex;align-items:stretch;gap:10px;margin:4px 0 10px;flex-wrap:wrap}
-.side{flex:1 1 200px;background:var(--bg);border:2px solid var(--ink);
-  border-radius:14px;padding:10px 12px}
-.side-l{display:block;margin-bottom:7px;font:800 10.5px/1 var(--body);
-  letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
-.side.in{background:var(--good-bg)}
-.side ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:6px}
-.side li{display:flex;align-items:center;gap:8px}
-.side li b{flex:1;font-weight:700;font-size:15px}
-.side li em{font-style:normal;font-weight:700;font-size:13px;color:var(--muted)}
-.arr{align-self:center;font-size:22px;font-weight:800;flex:0 0 auto}
-.gains{display:flex;gap:8px;margin:2px 0 4px;flex-wrap:wrap}
-.gchip{display:inline-block;border:2px solid var(--ink);border-radius:999px;
-  padding:4px 12px;font:800 12.5px/1.3 var(--body)}
-.gchip.you{background:var(--good-bg)}
-.gchip.them{background:var(--surface2)}
-.step{display:flex;gap:10px;margin-bottom:10px}
-.stepn{flex:0 0 auto;width:30px;height:30px;border:2.5px solid var(--ink);
-  border-radius:999px;background:var(--brand);display:flex;align-items:center;
-  justify-content:center;font:800 15px/1 var(--body)}
-.stepbody{flex:1;min-width:0}
-.stepwho{display:block;margin-bottom:5px;font-weight:800;font-size:14px}
-.steptag{font-style:normal;font-weight:700;font-size:11px;margin-left:8px;
-  border:1.5px solid var(--ink);border-radius:999px;padding:2px 8px;background:var(--surface2)}
-.step .swap{margin-bottom:6px}
-.stepnote{display:block;margin-top:5px;font-size:12.5px;color:var(--muted);font-weight:600}
-.gnote{margin:2px 0 4px;font-size:11.5px;color:var(--muted)}
+/* move cards */
+.cards{display:grid;gap:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:14px 16px 12px;display:grid;gap:10px}
+.card.urgent{border-color:var(--bad);box-shadow:inset 0 0 0 1px var(--bad)}
+.ch{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.kt{font:700 12px/1 var(--ui);letter-spacing:.06em;text-transform:uppercase;padding:5px 9px;border-radius:8px;background:var(--soft);color:var(--muted)}
+.t-lineup{background:var(--sky-soft);color:var(--sky-ink)}
+.t-pickup{background:var(--good-soft);color:var(--good)}
+.t-injury{background:var(--bad-soft);color:var(--bad)}
+.t-trade,.t-plan{background:var(--warn-soft);color:var(--warn)}
+.dl{font-size:13px;color:var(--muted)}
+.urgent .dl{color:var(--bad);font-weight:700}
+.card h3{margin:0;font:800 21px/1.15 var(--ui);letter-spacing:-.01em;text-wrap:balance}
+.cb{display:grid;gap:10px}
+.who{margin:0;font-size:14px;color:var(--muted)}
+.who b{color:var(--fg)}
+.note{margin:0;font-size:14px;color:var(--muted)}
 
-/* panels + tables */
-.two{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
-@media(max-width:740px){.two{grid-template-columns:1fr}}
-.panel{background:var(--surface);border:2.5px solid var(--ink);border-radius:18px;
-  padding:17px 19px;margin-bottom:16px;box-shadow:var(--pop)}
-.two .panel{margin-bottom:0}
-.sh{margin:0 0 7px;font:800 18px/1.1 var(--body)}
-.sub{margin:0 0 13px;color:var(--muted);font-size:13.5px;max-width:74ch}
-.prose{margin:0;color:var(--ink);font-size:15px}
-.empty{color:var(--muted);font-size:15px}
-.grid{width:100%;border-collapse:collapse}
-.grid th{text-align:left;font:800 11px/1 var(--body);letter-spacing:.09em;
-  text-transform:uppercase;color:var(--muted);padding:0 8px 8px 0;
-  border-bottom:2px solid var(--ink)}
-.grid th.n{text-align:right}
-.grid td{padding:8px 8px 8px 0;border-bottom:1.5px solid var(--grid);vertical-align:middle}
-.grid tr:last-child td{border-bottom:0}
-.grid .slot{width:48px;font:800 12px/1.3 var(--body);letter-spacing:.05em;color:var(--muted)}
-.grid .who{font-weight:600;font-size:15.5px}
-.grid .n{text-align:right;font-weight:600;font-size:14px}
-.grid .rk{width:26px;font-weight:700;color:var(--muted)}
-.grid tr.mine td{background:var(--surface2)}
-.grid tr.mine .who{font-weight:800}
-.grid tr.good .who{color:var(--good);font-weight:700}
-.bench .who{color:var(--muted)}
-.market .sur{font-size:13.5px;color:var(--muted)}
-.fit{display:block;font-size:12px;color:var(--good);font-weight:700}
-.none{color:var(--muted);font-size:12.5px}
-.scroll{overflow-x:auto}
-.tot{display:flex;justify-content:space-between;align-items:baseline;margin:14px 0 0;
-  padding-top:12px;border-top:2.5px solid var(--ink)}
-.tot span{font:800 11px/1 var(--body);letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
-.tot b{font:800 28px/1 var(--disp)}
-.flag{display:inline-block;margin-left:6px;padding:2px 7px;border:1.5px solid var(--ink);
-  border-radius:999px;font:800 10px/1.3 var(--body);letter-spacing:.04em;vertical-align:1px}
-.flag.warn{background:var(--warn-bg)}
-.flag.bad{background:var(--help-bg)}
+.swap{display:grid;grid-template-columns:minmax(0,1fr);gap:6px}
+@media (min-width:540px){.swap{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.side{border-radius:14px;padding:9px 12px 5px;min-width:0}
+.side.out{background:var(--soft)}
+.side.in{background:var(--sky-soft)}
+.sl{display:block;font:700 11px/1 var(--ui);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:3px}
+.side.in .sl{color:var(--sky-ink)}
+.side ul,.solo{list-style:none;margin:0;padding:0;display:grid}
+.pr{display:flex;align-items:center;gap:8px;padding-block:5px;min-width:0}
+.pr+.pr{border-top:1px solid var(--line)}
+.side.in .pr+.pr{border-top-color:var(--sky-line)}
+.pr.none{color:var(--muted);font-size:14px}
+.pn{display:grid;min-width:0;flex:1}
+.pn b{font-size:15px;line-height:1.2;overflow-wrap:anywhere}
+.pn small{font-size:12px;line-height:1.3}
+.pv{font:700 20px/1 var(--num);font-variant-numeric:tabular-nums}
+.pos{flex:none;width:34px;text-align:center;font:700 12px/1 var(--num);letter-spacing:.04em;padding:5px 0;border-radius:7px;color:var(--on-pos);background:var(--k)}
+.pos-qb{background:var(--qb)} .pos-rb{background:var(--rb)} .pos-wr{background:var(--wr)} .pos-te{background:var(--te)}
+.tag{flex:none;font:700 11px/1 var(--ui);letter-spacing:.04em;padding:4px 6px;border-radius:6px}
+.tag.bad{background:var(--bad-soft);color:var(--bad)}
+.tag.warn{background:var(--warn-soft);color:var(--warn)}
 
-.p{display:inline-block;min-width:38px;text-align:center;padding:3px 8px;
-   border:1.5px solid var(--ink);border-radius:999px;
-   font:800 11px/1.3 var(--body);letter-spacing:.02em;color:var(--ink)}
-.p-QB{background:var(--qb)}.p-RB{background:var(--rb)}.p-WR{background:var(--wr)}
-.p-TE{background:var(--te)}.p-DST{background:var(--dst)}.p-K{background:var(--k)}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.step{display:grid;grid-template-columns:28px 1fr;gap:10px}
+.sn{width:28px;height:28px;border-radius:99px;display:grid;place-items:center;background:var(--fg);color:var(--bg);font:700 16px/1 var(--num)}
+.sb{display:grid;gap:8px;min-width:0}
 
-.strength{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px}
-.strength li{display:flex;align-items:center;gap:11px}
-.st-w{font-weight:700;font-size:15px}
-.strength .good .st-w{color:var(--good)}
-.strength .bad .st-w{color:var(--help)}
-.st-n{margin-left:auto;font-size:13px;color:var(--muted);font-weight:600}
-.plan{margin:0;padding-left:20px;font-size:14.5px}
-.plan li{margin-bottom:7px}
+.chat{display:flex;align-items:flex-end;gap:8px}
+.bub{margin:0;flex:1;min-width:0;background:var(--bub);color:var(--on-bub);padding:10px 13px;border-radius:18px 18px 4px 18px;font-size:15px;line-height:1.35}
+.ghost{appearance:none;cursor:pointer;border:1px solid var(--line);background:var(--card);border-radius:10px;padding:7px 11px;font-weight:700;font-size:13px}
 
-/* standings bars */
-.bars{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
-.bars li{display:flex;align-items:center;gap:11px}
-.bars .r{width:22px;font-weight:700;color:var(--muted);text-align:right;font-size:13px}
-.bars .t{width:185px;flex:0 0 auto;font-size:14.5px;color:var(--muted);font-weight:600;
-  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.bars .bar{flex:1;height:18px;background:var(--surface2);min-width:60px;
-  border:1.5px solid var(--ink);border-radius:999px;overflow:hidden}
-.bars .bar i{display:block;height:100%;background:var(--grid)}
-.bars .v{width:58px;text-align:right;font-size:13px;color:var(--muted);font-weight:700}
-.bars .mine .t{color:var(--ink);font-weight:800}
-.bars .mine .bar i{background:var(--brand)}
-.bars .mine .v{color:var(--ink)}
-@media(max-width:600px){.bars .t{width:105px}}
+.cf{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:10px;border-top:1px solid var(--line)}
+.gain{display:flex;align-items:baseline;gap:6px;flex-wrap:wrap}
+.gain b{font:700 30px/1 var(--num);color:var(--good)}
+.gain span{font-size:13px;color:var(--muted)}
+.gain .them{margin-left:6px;padding:3px 8px;border-radius:99px;background:var(--soft);font-weight:600}
+.done{appearance:none;cursor:pointer;flex:none;display:flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--card);border-radius:12px;padding:8px 12px;font-weight:700;font-size:14px}
+.done svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.card.is-done{opacity:.6}
+.card.is-done .cb{display:none}
+.card.is-done h3{text-decoration:line-through;text-decoration-thickness:2px}
+.card.is-done .done{background:var(--good);border-color:var(--good);color:var(--on-bub)}
+.card.is-done.urgent{border-color:var(--line);box-shadow:none}
 
-/* evaluator */
-.eval{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
-@media(max-width:700px){.eval{grid-template-columns:1fr}}
-.lbl{display:block;margin:0 0 6px;font:800 11px/1 var(--body);
-  letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
-.sel,.numin,#untouch-in{background:var(--surface);border:2px solid var(--ink);
-  border-radius:12px;color:var(--ink);padding:9px 11px;font:600 14.5px/1.3 var(--body);width:100%}
-.sel{margin-bottom:12px}
-.sel:focus,.numin:focus,#untouch-in:focus{outline:3px solid var(--plan);outline-offset:2px}
-.numin{width:76px;padding:5px 8px;margin:0 6px}
-.picklist{display:flex;flex-direction:column;gap:2px;max-height:250px;overflow-y:auto;
-  border:2px solid var(--ink);border-radius:12px;background:var(--surface);padding:6px}
-.picklist label{display:flex;align-items:center;gap:9px;padding:6px 8px;cursor:pointer;
-  font-size:14.5px;font-weight:600;border-radius:8px}
-.picklist label:hover{background:var(--surface2)}
-.picklist input[type=checkbox]{width:16px;height:16px;accent-color:var(--ink)}
-.picklist .pr{margin-left:auto;font-size:12.5px;color:var(--muted);font-weight:700}
-.verdict{margin-top:14px;padding:15px 18px;background:var(--help-bg);
-  border:2.5px solid var(--ink);border-radius:16px;box-shadow:var(--pop-sm)}
-.verdict.ok{background:var(--good-bg)}
-.verdict h4{margin:0 0 8px;font:800 24px/1.1 var(--disp)}
-.verdict p{margin:0 0 6px;font-size:14.5px}
-.verdict .counter{margin-top:10px;padding:10px 13px;background:var(--surface);
-  border:2px solid var(--ink);border-radius:12px}
-.verdict .counter b{font-size:15px}
-.verdict .counter span{display:block;color:var(--muted);font-size:13px;margin-top:3px}
+.more{appearance:none;cursor:pointer;margin-top:12px;width:100%;display:flex;justify-content:space-between;align-items:center;
+  background:transparent;border:1px dashed var(--line);border-radius:14px;padding:13px 16px;font-weight:700}
+.more span{font:700 18px/1 var(--num);color:var(--muted)}
 
-/* audit + news + prefs */
-.audit{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
-.audit li{font-size:14px;border-bottom:1.5px solid var(--grid);padding-bottom:8px}
-.audit li:last-child{border-bottom:0}
-.audit time{font-weight:700;font-size:12px;color:var(--muted);margin-right:9px}
-.news{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:13px}
-.news li{background:var(--surface2);border:2px solid var(--ink);border-radius:14px;padding:10px 14px}
-.news li.empty{background:none;border:0;padding:0}
-.nh{margin:0;font-weight:700;font-size:15.5px}
-.nm{margin:3px 0 0;font-size:13px;color:var(--muted)}
-.nm b{color:var(--ink)}
-.prefs{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:11px}
-.prefs label{display:flex;align-items:center;gap:10px;font-size:15px;cursor:pointer;font-weight:600}
-.prefs input[type=checkbox]{width:18px;height:18px;accent-color:var(--ink)}
-.quiet-row label{font-weight:800}
-.untouch ul{list-style:none;margin:10px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
-.untouch li{background:var(--surface2);border:2px solid var(--ink);border-radius:999px;
-  padding:5px 12px;font-size:14px;font-weight:700;display:flex;gap:8px;align-items:center}
-.untouch li button{appearance:none;border:0;background:none;color:var(--muted);
-  cursor:pointer;font-size:16px;padding:0;font-weight:800}
-.foot{margin-top:32px;color:var(--muted);font-size:13px;max-width:74ch}
-@media(prefers-reduced-motion:reduce){*{transition:none!important;transform:none!important}}
+/* lineup */
+.block{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:14px 16px;margin-block:0 12px}
+.block h2{margin:0 0 6px;font:800 17px/1.2 var(--ui)}
+.bh{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.tot{font-size:13px;color:var(--muted)}
+.tot b{font:700 22px/1 var(--num);color:var(--fg)}
+.lineup{list-style:none;margin:0;padding:0}
+.lr{display:flex;align-items:center;gap:10px;padding-block:9px;min-width:0}
+.lr+.lr{border-top:1px solid var(--line)}
+.slot{flex:none;width:36px;font:700 14px/1 var(--num);letter-spacing:.05em;color:var(--muted)}
+.pts{flex:none;width:54px;display:grid;justify-items:end;gap:5px}
+.pts b{font:700 21px/1 var(--num);font-variant-numeric:tabular-nums}
+.pts i{display:block;height:4px;width:100%;border-radius:4px;background:linear-gradient(90deg,var(--sky) calc(var(--w)*100%),var(--soft) 0)}
+.lr.dead .pts b{color:var(--bad)}
+.bench .pn b{font-weight:600}
+.mv{flex:none;font:700 11px/1 var(--ui);letter-spacing:.05em;text-transform:uppercase;padding:4px 7px;border-radius:6px;color:var(--on-bub)}
+.mv.go{background:var(--good)}
+.mv.sit{background:var(--bad)}
+.news{list-style:none;margin:0;padding:0}
+.news li{padding-block:10px;display:grid;gap:3px}
+.news li+li{border-top:1px solid var(--line)}
+.news p{margin:0;font-weight:600;line-height:1.3;text-wrap:pretty}
+.news a{text-decoration:none}
+.news a:hover{text-decoration:underline}
+.nw{font-size:12px;font-weight:700;color:var(--sky-ink);text-transform:uppercase;letter-spacing:.05em}
+
+/* trades */
+.alts{list-style:none;margin:0;padding:0}
+.alts li{display:grid;grid-template-columns:1fr auto;column-gap:10px;padding-block:9px}
+.alts li+li{border-top:1px solid var(--line)}
+.ag{font-weight:600;font-size:15px;min-width:0}
+.ag i{font-style:normal;color:var(--muted);font-weight:500;margin-inline:6px}
+.alts small{grid-row:2}
+.alts b{grid-row:1/3;grid-column:2;align-self:center;font:700 22px/1 var(--num);color:var(--good)}
+.check{display:grid;grid-template-columns:minmax(0,1fr);gap:8px}
+.sel{display:flex;align-items:center;gap:10px;background:var(--soft);border-radius:12px;padding:4px 4px 4px 12px}
+.sel span{font-size:13px;color:var(--muted);font-weight:600}
+.sel select{flex:1;min-width:0;appearance:none;border:0;background:var(--card);color:var(--fg);border-radius:9px;padding:9px 12px;font:600 15px/1.2 var(--ui)}
+.eh{margin:8px 0 0;font:700 11px/1 var(--ui);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{appearance:none;cursor:pointer;display:flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--card);
+  border-radius:10px;padding:4px 10px 4px 4px;font-size:14px;font-weight:600;max-width:100%;text-align:left}
+.chip .pos{width:30px;padding:4px 0;font-size:11px}
+.chip[aria-pressed="true"]{background:var(--sky);border-color:var(--sky);color:var(--on-bub)}
+.verdict{margin-top:8px;border-radius:14px;padding:14px;background:var(--soft);display:grid;gap:6px}
+.vw{margin:0;font:800 20px/1.2 var(--ui)}
+.verdict.good{background:var(--good-soft)} .verdict.good .vw{color:var(--good)}
+.verdict.bad{background:var(--bad-soft)} .verdict.bad .vw{color:var(--bad)}
+.verdict.meh{background:var(--warn-soft)} .verdict.meh .vw{color:var(--warn)}
+.vn{display:flex;gap:16px;flex-wrap:wrap;font-size:14px;color:var(--muted)}
+.vn b{font:700 22px/1 var(--num);color:var(--fg)}
+.vx{margin:0;font-size:14px}
+
+/* bottom tabs */
+.tabs{position:fixed;left:0;right:0;bottom:0;z-index:25;background:var(--card);border-top:1px solid var(--line);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  padding-block:6px calc(6px + env(safe-area-inset-bottom,0px))}
+.tabs nav{max-width:560px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:4px}
+.tabs button{appearance:none;border:0;background:transparent;cursor:pointer;display:grid;justify-items:center;gap:3px;
+  padding:7px 0;border-radius:12px;color:var(--muted);font-size:12px;font-weight:700}
+.tabs svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.tabs button[aria-pressed="true"]{color:var(--sky)}
+
+@media (prefers-reduced-motion:no-preference){
+  .card,.chip,.done,.switch button{transition:background-color .15s,opacity .2s,border-color .15s}
+}
+@media (max-width:380px){ .big{font-size:56px} }
 </style>
 
-<div class="wrap">
-  <div class="top">
-    <span class="mark">Fantasy <i>Command Center</i></span>
-    <span class="stamp">Data updated {{STAMP}}</span>
-  </div>
-  <nav class="lgs">{{TABS}}</nav>
-  <nav class="nav">
-    <button data-nav="today" aria-pressed="true">Today</button>
-    <button data-nav="team" aria-pressed="false">My Team</button>
-    <button data-nav="market" aria-pressed="false">Market</button>
-    <button data-nav="trades" aria-pressed="false">Trades</button>
-    <button data-nav="waivers" aria-pressed="false">Waivers</button>
-    <button data-nav="news" aria-pressed="false">News</button>
-    <button data-nav="settings" aria-pressed="false">Settings</button>
+<div class="app">
+  <header class="top">
+    <div class="brand">
+      <span class="mark"><i>TyG</i>Fantasy</span>
+      <span class="upd">Week {{WEEK}}<br><span data-ago="{{ISO}}">Updated {{STAMP}}</span></span>
+    </div>
+    <div class="switch" role="group" aria-label="League">{{SWITCH}}</div>
+  </header>
+  <main>{{BLOCKS}}</main>
+</div>
+
+<div class="tabs">
+  <nav aria-label="Sections">
+    <button data-tab="today" aria-pressed="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.2 4L19 7"/></svg>Today</button>
+    <button data-tab="lineup" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4"/><path d="M4 12h16M12 4v16"/></svg>Lineup</button>
+    <button data-tab="trades" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h12l-3-3M17 17H5l3 3"/></svg>Trades</button>
   </nav>
-
-  {{BLOCKS}}
-
-  <p class="foot">Every number is ESPN's own projection under this league's scoring,
-     refreshed twice daily. Nothing is ever submitted automatically &mdash; you approve,
-     then make the one click in ESPN. Decisions and settings live on this device.</p>
 </div>
 
 <script>
 var LEAGUES = {{DATA}};
 (function(){
   "use strict";
-  function store(key, val){ try{ localStorage.setItem(key, JSON.stringify(val)); }catch(e){} }
-  function read(key, fb){ try{ return JSON.parse(localStorage.getItem(key)) || fb; }catch(e){ return fb; } }
+  function get(k, fb){ try{ var v = JSON.parse(localStorage.getItem(k)); return v == null ? fb : v; }catch(e){ return fb; } }
+  function put(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+  function $$(s, el){ return Array.prototype.slice.call((el||document).querySelectorAll(s)); }
 
-  /* ---------- league + view switching ---------- */
-  var lgBtns = document.querySelectorAll(".lgs button");
-  var navBtns = document.querySelectorAll(".nav button");
-  function currentLeague(){
-    var b = document.querySelector('.lgs button[aria-pressed="true"]');
-    return b ? b.dataset.league : null;
-  }
+  /* league + tab, remembered on this device */
+  var lg = get("tyg-lg", null), tab = get("tyg-tab", "today");
+  if(!document.querySelector('.lg[data-lg="'+lg+'"]')){ var f = document.querySelector(".lg"); lg = f ? f.dataset.lg : null; }
+  if(["today","lineup","trades"].indexOf(tab) < 0) tab = "today";
   function show(){
-    var lg = currentLeague();
-    var nb = document.querySelector('.nav button[aria-pressed="true"]');
-    var view = nb ? nb.dataset.nav : "today";
-    document.querySelectorAll(".league").forEach(function(sec){
-      sec.hidden = sec.id !== "lg-" + lg;
-      sec.querySelectorAll(".view").forEach(function(v){
-        v.hidden = v.dataset.view !== view;
-      });
+    $$(".switch button").forEach(function(b){ b.setAttribute("aria-pressed", String(b.dataset.lg === lg)); });
+    $$(".tabs button").forEach(function(b){ b.setAttribute("aria-pressed", String(b.dataset.tab === tab)); });
+    $$(".lg").forEach(function(s){
+      s.hidden = s.dataset.lg !== lg;
+      $$(".view", s).forEach(function(v){ v.hidden = v.dataset.view !== tab; });
     });
   }
-  lgBtns.forEach(function(b){ b.addEventListener("click", function(){
-    lgBtns.forEach(function(x){ x.setAttribute("aria-pressed", String(x===b)); });
-    initEval(); show();
-  });});
-  navBtns.forEach(function(b){ b.addEventListener("click", function(){
-    navBtns.forEach(function(x){ x.setAttribute("aria-pressed", String(x===b)); });
-    show();
-  });});
+  $$(".switch button").forEach(function(b){ b.addEventListener("click", function(){
+    lg = b.dataset.lg; put("tyg-lg", lg); show(); window.scrollTo(0, 0);
+  }); });
+  function goTab(t){ tab = t; put("tyg-tab", tab); show(); window.scrollTo(0, 0); }
+  $$(".tabs button").forEach(function(b){ b.addEventListener("click", function(){ goTab(b.dataset.tab); }); });
+  $$("[data-goto]").forEach(function(b){ b.addEventListener("click", function(){ goTab(b.dataset.goto); }); });
 
-  /* ---------- decisions: approve / pass + audit ---------- */
-  var decisions = read("fcc-decisions", {});
-  var audit = read("fcc-audit", []);
-  function logAudit(text){
-    audit.unshift({t: new Date().toISOString().slice(0,16).replace("T"," "), x: text});
-    audit = audit.slice(0, 40); store("fcc-audit", audit); paintAudit();
-  }
-  function paintAudit(){
-    document.querySelectorAll("#audit").forEach(function(ul){
-      if(!audit.length){ ul.innerHTML = '<li class="empty">Nothing yet.</li>'; return; }
-      ul.innerHTML = audit.map(function(a){
-        return "<li><time>"+a.t+"</time>"+a.x.replace(/</g,"&lt;")+"</li>";
-      }).join("");
-    });
-  }
-  function paintCard(card, state){
-    card.dataset.state = state || "";
-    var st = card.querySelector(".steps"); if(st) st.hidden = state !== "done";
-    var y = card.querySelector("[data-yes]");
-    if(y) y.textContent = state === "done" ? "Approved" : "Approve";
-  }
-  document.querySelectorAll(".act[data-act]").forEach(function(card){
-    var id = card.dataset.act;
-    if(decisions[id]) paintCard(card, decisions[id]);
-    var title = (card.querySelector("h3")||{}).textContent || id;
-    var y = card.querySelector("[data-yes]"), n = card.querySelector("[data-no]");
-    if(y) y.addEventListener("click", function(){
-      decisions[id] = decisions[id]==="done" ? "" : "done";
-      store("fcc-decisions", decisions); paintCard(card, decisions[id]);
-      if(decisions[id]) logAudit("Approved: " + title);
-    });
-    if(n) n.addEventListener("click", function(){
-      decisions[id] = decisions[id]==="passed" ? "" : "passed";
-      store("fcc-decisions", decisions); paintCard(card, decisions[id]);
-      if(decisions[id]) logAudit("Passed: " + title);
-    });
+  /* done checkmarks */
+  var done = get("tyg-done", {});
+  $$(".card[data-key]").forEach(function(c){
+    var k = c.dataset.key, btn = c.querySelector("[data-done]");
+    function paint(){ var on = !!done[k]; c.classList.toggle("is-done", on); btn.setAttribute("aria-pressed", String(on)); }
+    paint();
+    btn.addEventListener("click", function(){ if(done[k]) delete done[k]; else done[k] = 1; put("tyg-done", done); paint(); });
   });
 
-  /* copy buttons */
-  document.querySelectorAll("[data-copy]").forEach(function(btn){
+  /* copy the group-chat line */
+  $$("[data-copy]").forEach(function(btn){
     btn.addEventListener("click", function(){
-      var p = btn.closest(".msg").querySelector("p");
-      var done = function(){ btn.textContent = "Copied"; setTimeout(function(){ btn.textContent="Copy"; }, 1500); };
-      if(navigator.clipboard){ navigator.clipboard.writeText(p.textContent).then(done, done); }
+      var p = btn.parentNode.querySelector(".bub");
+      function ok(){ btn.textContent = "Copied"; setTimeout(function(){ btn.textContent = "Copy"; }, 1600); }
+      function pick(){ var r = document.createRange(); r.selectNodeContents(p); var s = getSelection(); s.removeAllRanges(); s.addRange(r); btn.textContent = "Selected"; }
+      try{ navigator.clipboard.writeText(p.textContent).then(ok, pick); }catch(e){ pick(); }
     });
   });
 
-  /* ---------- prefs, untouchables, rules ---------- */
-  var prefs = read("fcc-prefs", {});
-  document.querySelectorAll(".prefs [data-pref]").forEach(function(cb){
-    var lg = cb.closest(".prefs").dataset.league || "all";
-    var k = lg + ":" + cb.dataset.pref;
-    if(k in prefs) cb.checked = prefs[k];
-    cb.addEventListener("change", function(){ prefs[k] = cb.checked; store("fcc-prefs", prefs); });
-  });
-  var untouch = read("fcc-untouchables", []);
-  function paintUntouch(){
-    document.querySelectorAll("#untouch-list").forEach(function(ul){
-      ul.innerHTML = untouch.map(function(n,i){
-        return "<li>"+n.replace(/</g,"&lt;")+'<button data-ui="'+i+'" aria-label="Remove">&times;</button></li>';
-      }).join("");
-      ul.querySelectorAll("[data-ui]").forEach(function(b){
-        b.addEventListener("click", function(){
-          untouch.splice(+b.dataset.ui,1); store("fcc-untouchables", untouch); paintUntouch();
-        });
-      });
-    });
-  }
-  document.querySelectorAll("#untouch-in").forEach(function(inp){
-    inp.addEventListener("keydown", function(e){
-      if(e.key === "Enter" && inp.value.trim()){
-        untouch.push(inp.value.trim()); inp.value="";
-        store("fcc-untouchables", untouch); paintUntouch();
-      }
-    });
-  });
-  var rules = read("fcc-rules", {threshold: 10, injured: true});
-  document.querySelectorAll("#rule-threshold").forEach(function(el){
-    el.value = rules.threshold;
-    el.addEventListener("change", function(){ rules.threshold = +el.value || 0; store("fcc-rules", rules); });
-  });
-  document.querySelectorAll("#rule-injured").forEach(function(el){
-    el.checked = rules.injured !== false;
-    el.addEventListener("change", function(){ rules.injured = el.checked; store("fcc-rules", rules); });
+  /* updated x ago */
+  $$("[data-ago]").forEach(function(el){
+    var t = Date.parse(el.dataset.ago); if(isNaN(t)) return;
+    var m = Math.round((Date.now() - t) / 60000), txt;
+    if(m < 2) txt = "just now"; else if(m < 60) txt = m + " min ago";
+    else if(m < 48*60) txt = Math.round(m/60) + "h ago"; else txt = Math.round(m/1440) + " days ago";
+    el.innerHTML = "Updated <b>" + txt + "</b>";
   });
 
-  /* ---------- lineup math (mirror of the Python engine) ---------- */
+  /* offer checker: same lineup math as the Python engine (season projections) */
   var FIXED = ["QB","RB","WR","TE","K","D/ST"], FLEXP = {RB:1,WR:1,TE:1};
-  function lineupValue(players, slots){
-    var pool = players.filter(function(p){ return p.pr != null; })
-                      .slice().sort(function(a,b){ return b.pr - a.pr; });
+  function value(players, slots){
+    var pool = players.filter(function(p){ return p.pr != null; }).sort(function(a,b){ return b.pr - a.pr; });
     var used = {}, total = 0;
     FIXED.forEach(function(pos){
       var need = +(slots[pos]||0);
-      for(var i=0;i<pool.length && need>0;i++){
-        var p = pool[i];
-        if(used[p.id] || p.pos !== pos) continue;
-        used[p.id]=1; total+=p.pr; need--;
-      }
+      for(var i=0;i<pool.length && need>0;i++){ var p = pool[i];
+        if(used[p.id] || p.pos !== pos) continue; used[p.id]=1; total+=p.pr; need--; }
     });
     var flex = +(slots["RB/WR/TE"]||0);
-    for(var j=0;j<pool.length && flex>0;j++){
-      var q = pool[j];
-      if(used[q.id] || !FLEXP[q.pos]) continue;
-      used[q.id]=1; total+=q.pr; flex--;
-    }
+    for(var j=0;j<pool.length && flex>0;j++){ var q = pool[j];
+      if(used[q.id] || !FLEXP[q.pos]) continue; used[q.id]=1; total+=q.pr; flex--; }
     return total;
   }
   function swap(roster, out, inn){
     var gone = {}; out.forEach(function(p){ gone[p.id]=1; });
     return roster.filter(function(p){ return !gone[p.id]; }).concat(inn);
   }
+  function raw(ps){ return ps.reduce(function(s,p){ return s + (p.pr||0); }, 0); }
+  function escH(s){ return String(s).replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
+  function sgn(x){ x = Math.round(x); return (x >= 0 ? "+" : "") + x; }
+  var HURT = {OUT:1,INJURY_RESERVE:1,IR:1,DOUBTFUL:1,SUSPENSION:1};
 
-  /* ---------- incoming-trade evaluator ---------- */
-  function initEval(){
-    var lg = LEAGUES[currentLeague()]; if(!lg) return;
-    var partnerSel = document.querySelector("#lg-"+currentLeague()+" #ev-partner");
-    if(!partnerSel || partnerSel.dataset.ready) { fillPick(); return; }
-    partnerSel.dataset.ready = "1";
-    lg.teams.filter(function(t){ return !t.me; }).forEach(function(t){
-      var o = document.createElement("option");
-      o.value = t.id; o.textContent = t.name; partnerSel.appendChild(o);
-    });
-    partnerSel.addEventListener("change", fillPick);
-    fillPick();
-
-    function fillPick(){
-      var sec = document.querySelector("#lg-"+currentLeague());
-      if(!sec) return;
-      var me = lg.teams.filter(function(t){ return t.me; })[0];
-      var them = lg.teams.filter(function(t){ return String(t.id) === partnerSel.value; })[0]
-                 || lg.teams.filter(function(t){ return !t.me; })[0];
-      function list(el, team){
-        el.innerHTML = team.players.slice().sort(function(a,b){ return (b.pr||0)-(a.pr||0); })
-          .map(function(p){
-            return '<label><input type="checkbox" value="'+p.id+'">'+
-              p.n.replace(/</g,"&lt;")+' ('+p.pos+')'+
-              (p.inj && p.inj !== "ACTIVE" ? ' <span class="flag warn">'+p.inj.slice(0,3)+"</span>":"")+
-              '<span class="pr">'+(p.pr!=null ? Math.round(p.pr) : "&mdash;")+"</span></label>";
-          }).join("");
-      }
-      list(sec.querySelector("#ev-get"), them);
-      list(sec.querySelector("#ev-send"), me);
+  $$(".check[data-eval]").forEach(function(box){
+    var L = LEAGUES[box.dataset.eval]; if(!L) return;
+    var me = L.teams.filter(function(t){ return t.me; })[0];
+    var others = L.teams.filter(function(t){ return !t.me; });
+    var sel = box.querySelector("select"), getEl = box.querySelector('[data-side="get"]'),
+        sendEl = box.querySelector('[data-side="send"]'), out = box.querySelector(".verdict");
+    others.forEach(function(t){ var o = document.createElement("option"); o.value = t.id; o.textContent = t.name; sel.appendChild(o); });
+    var picks = {get:{}, send:{}};
+    function them(){ return others.filter(function(t){ return String(t.id) === sel.value; })[0] || others[0]; }
+    function chips(el, team, side){
+      el.innerHTML = team.players.filter(function(p){ return p.pr != null; })
+        .sort(function(a,b){ return b.pr - a.pr; })
+        .map(function(p){
+          var k = p.pos === "D/ST" ? "dst" : p.pos.toLowerCase(), lab = p.pos === "D/ST" ? "DST" : p.pos;
+          return '<button class="chip" data-id="'+escH(p.id)+'" aria-pressed="false">'+
+            '<span class="pos pos-'+k+'">'+lab+'</span>'+escH(p.n)+'</button>';
+        }).join("");
+      $$(".chip", el).forEach(function(c){ c.addEventListener("click", function(){
+        var id = c.dataset.id; if(picks[side][id]) delete picks[side][id]; else picks[side][id] = 1;
+        c.setAttribute("aria-pressed", String(!!picks[side][id])); judge();
+      }); });
     }
-  }
-  initEval();
-
-  document.querySelectorAll("#ev-run").forEach(function(btn){
-    btn.addEventListener("click", function(){
-      var key = currentLeague(), lg = LEAGUES[key]; if(!lg) return;
-      var sec = document.querySelector("#lg-"+key);
-      var me = lg.teams.filter(function(t){ return t.me; })[0];
-      var pid = sec.querySelector("#ev-partner").value;
-      var them = lg.teams.filter(function(t){ return String(t.id)===pid; })[0];
-      function picked(id, team){
-        var ids = Array.prototype.map.call(
-          sec.querySelectorAll(id+" input:checked"), function(i){ return i.value; });
-        return team.players.filter(function(p){ return ids.indexOf(p.id)>=0; });
+    function fill(){ picks = {get:{}, send:{}}; chips(getEl, them(), "get"); chips(sendEl, me, "send"); judge(); }
+    function judge(){
+      var t = them();
+      var get = t.players.filter(function(p){ return picks.get[p.id]; });
+      var send = me.players.filter(function(p){ return picks.send[p.id]; });
+      if(!get.length || !send.length){ out.className = "verdict"; out.innerHTML = '<p class="vw">Tap players on both sides</p>'; return; }
+      var mine0 = value(me.players, L.slots), th0 = value(t.players, L.slots);
+      var mg = value(swap(me.players, send, get), L.slots) - mine0;
+      var tg = value(swap(t.players, get, send), L.slots) - th0;
+      var word, cls;
+      if(mg >= 10){ word = "Take it"; cls = "good"; }
+      else if(mg >= 3){ word = "Small win"; cls = "good"; }
+      else if(mg > -3){ word = "Basically even"; cls = "meh"; }
+      else { word = "Pass"; cls = "bad"; }
+      var hurt = get.filter(function(p){ return HURT[p.inj]; });
+      var h = '<p class="vw">'+word+'</p>'+
+        '<div class="vn"><span>Your lineup <b>'+sgn(mg)+'</b></span><span>Theirs <b>'+sgn(tg)+'</b></span></div>';
+      if(hurt.length) h += '<p class="vx">Heads up: '+escH(hurt[0].n)+' is hurt right now.</p>';
+      if(mg < 3){
+        var c = counter(t, mine0, th0);
+        if(c) h += '<p class="vx"><b>Try instead:</b> '+escH(c.send.map(function(p){ return p.n; }).join(" + "))+
+          ' for '+escH(c.get.n)+' (you '+sgn(c.mg)+', them '+sgn(c.tg)+')</p>';
       }
-      var get = picked("#ev-get", them), send = picked("#ev-send", me);
-      var out = sec.querySelector("#ev-out"); out.hidden = false;
-      if(!get.length && !send.length){
-        out.className = "verdict"; out.innerHTML = "<p>Pick at least one player on either side.</p>"; return;
-      }
-      var myBase = lineupValue(me.players, lg.slots);
-      var myAfter = lineupValue(swap(me.players, send, get), lg.slots);
-      var thBase = lineupValue(them.players, lg.slots);
-      var thAfter = lineupValue(swap(them.players, get, send), lg.slots);
-      var myGain = myAfter - myBase, thGain = thAfter - thBase;
-      var injured = get.filter(function(p){
-        return p.inj && ["OUT","DOUBTFUL","INJURY_RESERVE","IR"].indexOf(p.inj.toUpperCase())>=0; });
-
-      var verdict, cls = "verdict", body = "";
-      var thr = rules.threshold || 10;
-      if(injured.length && rules.injured !== false){
-        verdict = "Hold"; body = "<p><b>"+injured[0].n+"</b> is listed "+injured[0].inj+
-          ". Your rules say never accept a deal for an injured player without a second look.</p>";
-      } else if(myGain >= thr){
-        verdict = "Accept"; cls += " ok";
-        body = "<p>Your starting lineup improves by ~"+Math.round(myGain)+
-          " points over the season. That clears your "+thr+"-point bar.</p>";
-      } else if(myGain >= 0){
-        verdict = "Hold";
-        body = "<p>You gain ~"+Math.round(myGain)+" points -- inside projection noise. "+
-          "No harm accepting, no rush either.</p>";
-      } else {
-        verdict = "Decline"; body = "<p>This costs your starting lineup ~"+
-          Math.round(-myGain)+" points. Their side improves by ~"+Math.round(thGain)+".</p>";
-      }
-
-      /* counters: what WOULD work with this partner */
-      var counters = [];
-      if(verdict !== "Accept"){
-        var mine = me.players.filter(function(p){
-          return p.pr != null && untouch.indexOf(p.n) < 0; });
-        var packs = [];
-        mine.forEach(function(p){ packs.push([p]); });
-        for(var i=0;i<mine.length;i++) for(var j=i+1;j<mine.length;j++) packs.push([mine[i],mine[j]]);
-        them.players.forEach(function(target){
-          if(target.pr == null) return;
-          packs.forEach(function(pk){
-            var mg = lineupValue(swap(me.players, pk, [target]), lg.slots) - myBase;
-            var tg = lineupValue(swap(them.players, [target], pk), lg.slots) - thBase;
-            if(mg >= 5 && tg >= 3) counters.push({send: pk, get: target, mg: mg, tg: tg});
-          });
+      out.className = "verdict " + cls; out.innerHTML = h;
+    }
+    /* best counter with this manager: helps both lineups and looks fair on paper */
+    function counter(t, mine0, th0){
+      var mine = me.players.filter(function(p){ return p.pr != null; }), packs = [], best = null;
+      mine.forEach(function(p){ packs.push([p]); });
+      for(var i=0;i<mine.length;i++) for(var j=i+1;j<mine.length;j++) packs.push([mine[i], mine[j]]);
+      t.players.forEach(function(g){
+        if(g.pr == null || HURT[g.inj]) return;
+        packs.forEach(function(pk){
+          if(raw(pk) < 0.7 * g.pr) return;
+          var mg = value(swap(me.players, pk, [g]), L.slots) - mine0;
+          var tg = value(swap(t.players, [g], pk), L.slots) - th0;
+          if(mg >= 5 && tg >= 12 && (!best || mg + tg > best.mg + best.tg)) best = {send: pk, get: g, mg: mg, tg: tg};
         });
-        counters.sort(function(a,b){ return (b.tg+b.mg)-(a.tg+a.mg); });
-        var seen = {}; counters = counters.filter(function(c){
-          if(seen[c.get.id]) return false; seen[c.get.id]=1; return true; }).slice(0,3);
-        if(counters.length && verdict === "Decline") verdict = "Counter";
-      }
-      var chtml = counters.map(function(c){
-        return '<div class="counter"><b>Send '+
-          c.send.map(function(p){return p.n;}).join(" + ")+" for "+c.get.n+"</b>"+
-          "<span>you ~+"+Math.round(c.mg)+", them ~+"+Math.round(c.tg)+
-          " -- realistic because they gain too</span></div>";
-      }).join("");
-      out.className = cls;
-      out.innerHTML = "<h4>"+verdict+"</h4>"+body+chtml;
-      logAudit("Evaluated offer from "+them.name+": "+
-        (get.map(function(p){return p.n;}).join(", ")||"nothing")+" for "+
-        (send.map(function(p){return p.n;}).join(", ")||"nothing")+" -> "+verdict);
-    });
+      });
+      return best;
+    }
+    sel.addEventListener("change", fill);
+    fill();
   });
 
-  paintAudit(); paintUntouch(); show();
+  show();
 })();
 </script>
 """
