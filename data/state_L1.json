@@ -23378,6 +23378,20 @@
           "current_slot": "BE"
         },
         {
+          "player_id": "p_11625",
+          "espn_id": "4597500",
+          "name": "Adonai Mitchell",
+          "position": "WR",
+          "nfl_team": "NYJ",
+          "injury_status": "Out",
+          "projected": 92.12020141,
+          "adp": 169.05,
+          "week_projected": 0.0,
+          "opponent": "NE",
+          "on_bye": false,
+          "current_slot": "BE"
+        },
+        {
           "player_id": "p_5850",
           "espn_id": "4047365",
           "name": "Josh Jacobs",
@@ -28551,6 +28565,19 @@
       ]
     },
     {
+      "player_id": "p_3257",
+      "espn_id": "2578570",
+      "name": "Jacoby Brissett",
+      "position": "QB",
+      "nfl_team": "ARI",
+      "injury_status": null,
+      "projected": 202.16347336,
+      "adp": 167.67,
+      "week_projected": 15.19,
+      "opponent": null,
+      "on_bye": false
+    },
+    {
       "player_id": "p_4017",
       "espn_id": "3122840",
       "name": "Deshaun Watson",
@@ -29826,6 +29853,32 @@
       ]
     },
     {
+      "player_id": "p_5189",
+      "espn_id": "4034949",
+      "name": "Eddy Pineiro",
+      "position": "K",
+      "nfl_team": "SF",
+      "injury_status": null,
+      "projected": 101.23201346,
+      "adp": 154.75,
+      "week_projected": 8.97,
+      "opponent": null,
+      "on_bye": false
+    },
+    {
+      "player_id": "p_9508",
+      "espn_id": "4428557",
+      "name": "Tyjae Spears",
+      "position": "RB",
+      "nfl_team": "TEN",
+      "injury_status": "Questionable",
+      "projected": 100.5320724,
+      "adp": 163.11,
+      "week_projected": 8.74,
+      "opponent": null,
+      "on_bye": false
+    },
+    {
       "player_id": "p_8676",
       "espn_id": "4032473",
       "name": "Rashid Shaheed",
@@ -30508,6 +30561,19 @@
           "rey": 62.0
         }
       ]
+    },
+    {
+      "player_id": "p_7571",
+      "espn_id": "4360939",
+      "name": "Rashod Bateman",
+      "position": "WR",
+      "nfl_team": "BAL",
+      "injury_status": null,
+      "projected": 87.66090832,
+      "adp": 168.53,
+      "week_projected": 6.17,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_12713",
@@ -31266,6 +31332,19 @@
       ]
     },
     {
+      "player_id": "espn_-16014",
+      "espn_id": "-16014",
+      "name": "Rams D/ST",
+      "position": "D/ST",
+      "nfl_team": "LA",
+      "injury_status": null,
+      "projected": 76.63217623,
+      "adp": 120.47,
+      "week_projected": 7.19,
+      "opponent": null,
+      "on_bye": false
+    },
+    {
       "player_id": "p_6039",
       "espn_id": "3915411",
       "name": "Ty Johnson",
@@ -31573,6 +31652,19 @@
           "played": true
         }
       ]
+    },
+    {
+      "player_id": "espn_-16020",
+      "espn_id": "-16020",
+      "name": "Jets D/ST",
+      "position": "D/ST",
+      "nfl_team": "NYJ",
+      "injury_status": null,
+      "projected": 73.84474172,
+      "adp": 167.78,
+      "week_projected": 5.2,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_4066",
@@ -32583,6 +32675,32 @@
       ]
     },
     {
+      "player_id": "espn_-16001",
+      "espn_id": "-16001",
+      "name": "Falcons D/ST",
+      "position": "D/ST",
+      "nfl_team": "ATL",
+      "injury_status": null,
+      "projected": 64.3549678,
+      "adp": 168.51,
+      "week_projected": 4.08,
+      "opponent": null,
+      "on_bye": false
+    },
+    {
+      "player_id": "espn_-16021",
+      "espn_id": "-16021",
+      "name": "Eagles D/ST",
+      "position": "D/ST",
+      "nfl_team": "PHI",
+      "injury_status": null,
+      "projected": 64.07918876,
+      "adp": 152.82,
+      "week_projected": 4.52,
+      "opponent": null,
+      "on_bye": false
+    },
+    {
       "player_id": "espn_-16004",
       "espn_id": "-16004",
       "name": "Bengals D/ST",
@@ -33019,6 +33137,19 @@
           "retd": 1.0
         }
       ]
+    },
+    {
+      "player_id": "p_11629",
+      "espn_id": "4696882",
+      "name": "Devontez Walker",
+      "position": "WR",
+      "nfl_team": "BAL",
+      "injury_status": null,
+      "projected": 58.78800658,
+      "adp": 169.73,
+      "week_projected": 4.18,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_11643",
@@ -35837,6 +35968,19 @@
           "ruy": 3.0
         }
       ]
+    },
+    {
+      "player_id": "p_11608",
+      "espn_id": "4569371",
+      "name": "Isaiah Williams",
+      "position": "WR",
+      "nfl_team": "NYJ",
+      "injury_status": null,
+      "projected": 28.36329596,
+      "adp": 169.91,
+      "week_projected": 6.69,
+      "opponent": null,
+      "on_bye": false
     },
     {
       "player_id": "p_7049",
