@@ -1,6 +1,19 @@
 {
-  "fetched_at": "2026-10-17T12:53:20+00:00",
+  "fetched_at": "2026-10-17T15:41:23+00:00",
   "items": [
+    {
+      "headline": "Source: Patriots likely to activate WR A.J. Brown for Sunday's game vs. Jets",
+      "body": "Patriots wide receiver A.J. Brown is likely to be activated after missing the past four games with a right high ankle sprain, a source told NFL Network's Ian Rapoport.",
+      "published": "2026-10-17T13:47:00Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50200910/source-patriots-likely-activate-aj-brown-jets-game",
+      "espn_athlete_ids": [
+        380051
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
     {
       "headline": "Jags unlikely to play 3 international games in 2027 during EverBank renovations",
       "body": "Jaguars team president Mark Lamping said the team is unlikely to play three international home games in 2027 while renovations to EverBank Stadium continue.",
@@ -22,7 +35,7 @@
     {
       "headline": "Sources: Eagles' Jalen Hurts, out indefinitely with blood clot, not planned for IR",
       "body": "The Eagles are not planning to put Jalen Hurts on injured reserve, sources told ESPN, even as he remains sidelined indefinitely with a superficial blood clot.",
-      "published": "2026-10-17T12:17:04Z",
+      "published": "2026-10-17T14:16:38Z",
       "url": "https://www.espn.com/nfl/story/_/id/50200331/sources-no-ir-plans-hurts-indefinitely-clot",
       "espn_athlete_ids": [
         435090
@@ -35,7 +48,7 @@
     {
       "headline": "NFL Week 6 predictions: Upsets, fantasy sleepers, stat lines, TD scorers, more",
       "body": "First touchdown of 2026 for Drake London? Aaron Rodgers climbing the NFL record books? The Texans pulling an upset? Let's predict 15 things for Week 6.",
-      "published": "2026-10-17T10:48:57Z",
+      "published": "2026-10-17T13:47:30Z",
       "url": "https://www.espn.com/nfl/story/_/id/50189544/week-6-predictions-upsets-fantasy-sleepers-stats-2026",
       "espn_athlete_ids": [],
       "athlete_names": [],
@@ -131,7 +144,7 @@
     {
       "headline": "Titans CEO apologizes to fans, supports Robert Saleh, GM",
       "body": "Titans CEO Burke Nihill said the organization believes that coach Robert Saleh and GM Mike Borgonzi are \"ultimately going to get this team out of the woods.\"",
-      "published": "2026-10-16T23:49:32Z",
+      "published": "2026-10-17T14:38:25Z",
       "url": "https://www.espn.com/nfl/story/_/id/50198584/titans-ceo-apologizes-fans-supports-robert-saleh-gm",
       "espn_athlete_ids": [],
       "athlete_names": [],
@@ -449,15 +462,6 @@
       "athlete_names": [
         null
       ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Why the Bills could be in a 'troubling spot' vs. the Raiders",
-      "body": "Why the Bills could be in a 'troubling spot' vs. the Raiders",
-      "published": "2026-10-16T14:16:49Z",
-      "url": "https://www.espn.com/video/clip/_/id/50196191/why-bills-a-troubling-spot-vs-raiders",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
       "source": "ESPN"
     },
     {
@@ -864,7 +868,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Josh Jacobs (RB, GB) is the hot add -- 414,540 pickups in 24h",
+      "headline": "Josh Jacobs (RB, GB) is the hot add -- 433,820 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -877,7 +881,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Tyler Higbee (TE, LAR) is the hot add -- 266,607 pickups in 24h",
+      "headline": "Tyler Higbee (TE, LAR) is the hot add -- 290,529 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -890,7 +894,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Kirk Cousins (QB, LV) is the hot add -- 170,128 pickups in 24h",
+      "headline": "Kirk Cousins (QB, LV) is the hot add -- 165,096 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -903,7 +907,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Aaron Rodgers (QB, PIT) is the hot add -- 107,296 pickups in 24h",
+      "headline": "Aaron Rodgers (QB, PIT) is the hot add -- 103,180 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -916,7 +920,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Brandin Cooks (WR, SF) is the hot add -- 72,060 pickups in 24h",
+      "headline": "Brandin Cooks (WR, SF) is the hot add -- 71,308 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -929,7 +933,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Tyler Huntley (QB, BAL) is the hot add -- 59,616 pickups in 24h",
+      "headline": "Tyler Huntley (QB, BAL) is the hot add -- 64,314 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -942,7 +946,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Keenan Allen (WR, IND) is the hot add -- 59,140 pickups in 24h",
+      "headline": "Keenan Allen (WR, IND) is the hot add -- 62,464 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
