@@ -31,6 +31,7 @@ from ff.sources.espn import ESPNFantasySource  # noqa: E402
 from ff.sources.espn_extras import collect_extras  # noqa: E402
 from ff.sources.espn_draft import ESPNDraftSource  # noqa: E402
 from ff.sources.espn_news import ESPNNewsSource  # noqa: E402
+from ff.sources.headshots import sync_headshots  # noqa: E402
 from ff.sources.sleeper import SleeperSource  # noqa: E402
 
 log = get_logger(__name__)
@@ -466,12 +467,14 @@ def main() -> int:
     log.info("wrote %d news items", len(news))
 
     summary = []
+    built = []
     for league_id, key, name in (
         (1631980693, "L1", "League 1"),
         (1259820957, "L2", "League 2"),
     ):
         try:
             p = build(league_id, key, name, args.season, out_dir)
+            built.append(p)
             drafted = sum(len(t["players"]) for t in p["teams"])
             summary.append(
                 {
@@ -490,6 +493,14 @@ def main() -> int:
         except Exception as exc:  # noqa: BLE001 - one league must not sink the other
             log.exception("failed to build %s", key)
             summary.append({"key": key, "error": str(exc)})
+
+    # Photos for everyone the page can show. Fetched once each, kept in git.
+    try:
+        everyone = [p for s in built for t in s["teams"] for p in t["players"]]
+        everyone += [p for s in built for p in s.get("free_agents", [])]
+        sync_headshots(everyone, out_dir / "headshots")
+    except Exception:  # noqa: BLE001 - photos are a nicety
+        log.exception("headshot sync failed")
 
     print("\n=== SUMMARY ===")
     print(json.dumps(summary, indent=2))
