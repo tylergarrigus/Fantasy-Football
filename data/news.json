@@ -1,6 +1,201 @@
 {
-  "fetched_at": "2026-10-16T16:44:36+00:00",
+  "fetched_at": "2026-10-17T01:21:33+00:00",
   "items": [
+    {
+      "headline": "Titans CEO apologizes to fans, supports Robert Saleh, GM",
+      "body": "Titans CEO Burke Nihill said the organization believes that coach Robert Saleh and GM Mike Borgonzi are \"ultimately going to get this team out of the woods.\"",
+      "published": "2026-10-16T23:49:32Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50198584/titans-ceo-apologizes-fans-supports-robert-saleh-gm",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Decked-out, diehard Jaguars fans swarm London for pub takeover",
+      "body": "Jaguars fans roll deep in the United Kingdom, and the fandom showed up big at London's briefly renamed ''Tealwood'' pub Thursday night.",
+      "published": "2026-10-16T20:51:48Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50196768/jaguars-fans-london-pub-takeover",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Eagles' Saquon Barkley ruled out; DeVonta Smith likely to return",
+      "body": "Eagles RB Saquon Barkley has been ruled out for Sunday's game against the Panthers with a hamstring injury, but it appears WR DeVonta Smith will return.",
+      "published": "2026-10-16T23:42:25Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50198056/eagles-saquon-barkley-ruled-devonta-smith-return",
+      "espn_athlete_ids": [
+        184478,
+        470127,
+        529703,
+        489492
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Broncos' Jonathon Cooper off commissioner exempt list, could return Week 7",
+      "body": "Broncos linebacker Jonathon Cooper was removed from the commissioner exempt list Friday, meaning he's available to play in Week 7. Cooper, who was arrested twice in a seven-day span in June on domestic violence charges, has been on the list since Aug. 30.",
+      "published": "2026-10-16T23:56:38Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50198029/broncos-jonathon-cooper-removed-nfl-commissioner-exempt-list",
+      "espn_athlete_ids": [
+        470690
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Packers' Josh Jacobs eligible to return next week amid probe",
+      "body": "Packers RB Josh Jacobs will be removed from the commissioner exempt list Monday, the league announced, making him eligible to practice and play next week.",
+      "published": "2026-10-16T21:47:44Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50197784/packers-josh-jacobs-eligible-return-next-week-amid-probe",
+      "espn_athlete_ids": [
+        379791
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Bears' Caleb Williams questionable after 3 days of practice",
+      "body": "The quarterback said there are several hurdles to clear before he would be able to face the Falcons on Sunday.",
+      "published": "2026-10-16T20:49:09Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50197730/bears-caleb-williams-questionable-falcons",
+      "espn_athlete_ids": [
+        492854
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Cardinals 'do what's right,' rule RB Jeremiyah Love (ankle) out vs. Rams",
+      "body": "The Cardinals say they're doing \"what's right\" for RB Jeremiyah Love by ruling the prized rookie out for Sunday's game against the Rams due to his injured left ankle.",
+      "published": "2026-10-16T20:04:22Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50197712/cardinals-rb-jeremiyah-love-ankle-sunday-vs-rams",
+      "espn_athlete_ids": [
+        605430
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Jalen Hurts' health bigger than football, as teammates, coach detail QB concern",
+      "body": "Eagles coach Nick Sirianni declined to offer much detail about Jalen Hurts' health, instead focusing on his connection with the quarterback.",
+      "published": "2026-10-16T20:16:31Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50197708/sirianni-teammates-share-concern-jalen-hurts-diagnosis",
+      "espn_athlete_ids": [
+        435090
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Seahawks sticking with Sam Darnold as starter despite INTs",
+      "body": "Seahawks coach Mike Macdonald is standing behind Sam Darnold as the team's starting quarterback despite his seven interceptions over the past four games.",
+      "published": "2026-10-16T19:33:47Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50197704/seahawks-sticking-sam-darnold-starter-ints",
+      "espn_athlete_ids": [
+        184497
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Chiefs WR Rashee Rice out Sunday vs. Chargers with hamstring injury",
+      "body": "Kansas City's top receiver Rashee Rice will miss Sunday's game against the Chargers with a right hamstring injury.",
+      "published": "2026-10-16T19:19:10Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50197599/chiefs-wr-rashee-rice-vs-chargers-hamstring-injury",
+      "espn_athlete_ids": [
+        389698,
+        496825
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Pettine ready to lend support, experience to Cowboys' defense",
+      "body": "Mike Pettine was traveling through Italy, celebrating his 60th birthday when he got a call from Cowboys defensive coordinator Christian Parker a few weeks ago seeing if he would take a role on the staff.",
+      "published": "2026-10-16T19:21:50Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50197559/pettine-ready-lend-support-experience-cowboys-defense",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Falcons' Michael Penix Jr. (ribs) cleared to play vs. Bears",
+      "body": "Falcons quarterback Michael Penix Jr., who left last week's game with injured ribs, has been fully cleared to play against the Bears on Sunday.",
+      "published": "2026-10-16T18:46:05Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50197497/falcons-michael-penix-jr-ribs-cleared-play-vs-bears",
+      "espn_athlete_ids": [
+        208615
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Ravens rule out QB Lamar Jackson; Tyler Huntley to start vs. Browns",
+      "body": "The Ravens have ruled quarterback Lamar Jackson out for a second straight week, elevating Tyler Huntley to the starting role for Sunday's game in Cleveland.",
+      "published": "2026-10-16T18:45:28Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50197342/ravens-rule-qb-jackson-huntley-start-browns",
+      "espn_athlete_ids": [
+        184545,
+        435677
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Kyle Hamilton: Everybody has the utmost confidence in Tyler Huntley",
+      "body": "Kyle Hamilton: Everybody has the utmost confidence in Tyler Huntley",
+      "published": "2026-10-16T17:56:29Z",
+      "url": "https://www.espn.com/video/clip/_/id/50197297/everybody-utmost-confidence-tyler-huntley",
+      "espn_athlete_ids": [
+        529352,
+        435677
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Browns WR KC Concepcion clears concussion protocol, will play vs. Ravens",
+      "body": "Browns rookie wide receiver KC Concepcion has cleared the concussion protocol and will play against the Ravens.",
+      "published": "2026-10-16T18:33:53Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50197266/browns-wr-concepcion-clears-protocol-play-vs-ravens",
+      "espn_athlete_ids": [
+        607902
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
     {
       "headline": "Daniel Dopp's Week 6 DraftKings tournament lineup",
       "body": "Daniel Dopp's Week 6 DraftKings tournament lineup",
@@ -11,9 +206,9 @@
       "source": "ESPN"
     },
     {
-      "headline": "Jets rookie WR Cooper to play vs. Patriots; RB Hall, WR Mitchell out",
-      "body": "Jets rookie WR Omar Cooper Jr. (ankle) will play against the Patriots, but RB Breece Hall and wideout Adonai Mitchell have been ruled out for Sunday's game.",
-      "published": "2026-10-16T16:25:04Z",
+      "headline": "Jets rookie WR Omar Cooper Jr. to return vs. Patriots; RB Hall, WR Mitchell out",
+      "body": "Jets rookie wide receiver Omar Cooper Jr. (ankle) will play against the Patriots, but running back Breece Hall and wideout Adonai Mitchell have been ruled out for Sunday's game.",
+      "published": "2026-10-16T18:23:12Z",
       "url": "https://www.espn.com/nfl/story/_/id/50196775/jets-rookie-wr-cooper-play-vs-patriots-hall-mitchell-out",
       "espn_athlete_ids": [
         529523,
@@ -211,212 +406,6 @@
       "source": "ESPN"
     },
     {
-      "headline": "The Week 6 QB shuffle: Six quarterbacks to pick up if yours is underperforming",
-      "body": "Is it finally time to drop that one quarterback? Adam Rank says yes and offers his favorite options.",
-      "published": "2026-10-16T13:03:42Z",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/50190576/fantasy-football-start-sit-week-6-quarterbacks",
-      "espn_athlete_ids": [
-        435043,
-        438608,
-        439296,
-        17303,
-        209237,
-        138777,
-        103992
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Ranking all eight NFL divisions this season by strength: NFC North at No. 1?",
-      "body": "Why do we have the NFC North at No. 1 in our annual division power ranking -- even ahead of the mighty NFC West? And is the NFC South at the bottom of our list ... again?",
-      "published": "2026-10-16T10:38:23Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50181965/2026-nfl-season-ranking-eight-nfl-divisions-best-worst",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Pop quizzes from Aaron Rodgers?! How Steelers QB preps his pass catchers",
-      "body": "The 42-year-old veteran acts more like Simon Cowell than Ken Jennings as he builds trust with his teammates.",
-      "published": "2026-10-16T10:00:02Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50193213/pop-quizzes-aaron-rodgers-steelers-qb-prepares",
-      "espn_athlete_ids": [
-        17303
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Seahawks' Sam Darnold owns up to late interceptions in overtime loss to Broncos",
-      "body": "Seahawks quarterback Sam Darnold called his two late interceptions against the Broncos \"unacceptable\" and vowed to be better after a 17-14 loss.",
-      "published": "2026-10-16T15:53:57Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50194585/seahawks-darnold-owns-turnovers-loss-broncos",
-      "espn_athlete_ids": [
-        184497
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Defense bails out Broncos in overtime win as Bo Nix, offense struggle",
-      "body": "The Broncos defense came up with five sacks, 17 QB hits and two interceptions, enabling Denver to win even though the offense finished with only 168 yards.",
-      "published": "2026-10-16T12:54:58Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50194537/broncos-seahawks-defense-bo-nix",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Run game, defense power Broncos in OT win against Seahawks",
-      "body": "Behind two rushing touchdowns and a five-sack night, Denver holds off Seattle on \"Thursday Night Football.\"",
-      "published": "2026-10-16T05:00:03Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50192352/broncos-seahawks-week-6-tnf-run-game-defense-ot",
-      "espn_athlete_ids": [
-        549664,
-        184497
-      ],
-      "athlete_names": [
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Seattle Seahawks vs. Denver Broncos: Game Highlights",
-      "body": "Seattle Seahawks vs. Denver Broncos: Game Highlights",
-      "published": "2026-10-16T03:59:12Z",
-      "url": "https://www.espn.com/video/clip/_/id/50194124/game-highlights",
-      "espn_athlete_ids": [
-        136134,
-        435056,
-        530161,
-        156120,
-        390857,
-        399657
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Broncos beat the Seahawks 17-14 in OT on Ja'Quan McMillian's pick, Wil Lutz's 53-yarder",
-      "body": "\u2014 The Denver Broncos are atrocious on offense, depleted on defense and shaky on special teams. All they do is find ways to win.",
-      "published": "2026-10-16T04:53:27Z",
-      "url": "http://www.espn.com/nfl/recap?gameId=401872995",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Seahawks-Broncos on TNF Week 6: Highlights, TDs, key plays",
-      "body": "Look back at all the biggest plays and highlights from Thursday night's Denver win against Seattle.",
-      "published": "2026-10-16T03:47:40Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50191945/nfl-week-6-seahawks-broncos-top-plays-tnf",
-      "espn_athlete_ids": [
-        549664,
-        184497,
-        390857,
-        435056
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Browns coach Todd Monken faces his old team as Ravens visit Cleveland, likely with Huntley at QB",
-      "body": "Browns coach Todd Monken and Ravens quarterback Tyler Huntley won't be in a sentimental mood when Cleveland hosts Baltimore in an AFC North matchup on Sunday.",
-      "published": "2026-10-16T00:52:35Z",
-      "url": "http://www.espn.com/nfl/preview?gameId=401872997",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "NFL Week 6 uniforms: Broncos, Seahawks throw it back in TNF matchup",
-      "body": "Here's a look at what each NFL team is wearing in Week 6, led by throwbacks from the Broncos and Seahawks.",
-      "published": "2026-10-16T00:00:42Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50175780/nfl-week-6-uniforms",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Panthers to visit an Eagles team that was already reeling before losing Hurts to a blood clot",
-      "body": "\u2014 The Carolina Panthers had already been installed as road betting favorites as they prepare to visit Philadelphia and face a banged-up Eagles team riding a three-game losing streak.",
-      "published": "2026-10-15T23:23:28Z",
-      "url": "http://www.espn.com/nfl/preview?gameId=401872998",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Sean McVay faces former offensive coordinator Mike LaFleur for first time when Rams host Cardinals",
-      "body": "\u2014 The game between the Rams and Cardinals on Sunday is about more than the latest matchup pitting Sean McVay against one of his former offensive assistants \u2014 in this instance, ",
-      "published": "2026-10-15T22:56:28Z",
-      "url": "http://www.espn.com/nfl/preview?gameId=401873004",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Jon Morris, former AFL and NFL center with Patriots, dies at 84",
-      "body": "Jon Morris, who played 11 of his 15-year AFL and NFL career with the Boston and New England Patriots, has died at age 84.",
-      "published": "2026-10-15T23:39:29Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50192401/jon-morris-former-afl-nfl-center-patriots-dies-84",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Patriots on upset alert as Geno Smith brings a no-INT streak into Jets matchup with Patriots",
-      "body": "\u2014 The New England Patriots are coming off their best performance of the season, doing almost everything they wanted during a 28-point win over the...",
-      "published": "2026-10-15T22:49:28Z",
-      "url": "http://www.espn.com/nfl/preview?gameId=401873001",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Texans RB Montgomery, S Pitre out for London affair vs. Jaguars",
-      "body": "Texans starting RB David Montgomery (groin) and safety Jalen Pitre (shoulder) have been ruled out for Sunday's matchup against the Jaguars in London.",
-      "published": "2026-10-15T23:03:48Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50192302/texans-rb-montgomery-s-pitre-london-affair-vs-jaguars",
-      "espn_athlete_ids": [
-        380054,
-        529452,
-        213606
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
       "headline": "T.J. Hockenson (TE, MIN) listed Out",
       "body": "Concussion",
       "published": null,
@@ -469,7 +458,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Lamar Jackson (QB, BAL) listed Questionable",
+      "headline": "Lamar Jackson (QB, BAL) listed Out",
       "body": "Ankle -- Sprain",
       "published": null,
       "url": null,
@@ -508,7 +497,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Baker Mayfield (QB, TB) listed Doubtful",
+      "headline": "Baker Mayfield (QB, TB) listed Out",
       "body": "Thumb -- Dislocated",
       "published": null,
       "url": null,
@@ -569,6 +558,19 @@
       ],
       "athlete_names": [
         "Gunner Olszewski"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
+      "headline": "Saquon Barkley (RB, PHI) listed Out",
+      "body": "Hamstring",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3929630
+      ],
+      "athlete_names": [
+        "Saquon Barkley"
       ],
       "source": "Sleeper injury report"
     },
@@ -729,7 +731,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Tom Kennedy (WR, DET) listed Out",
+      "headline": "Tom Kennedy (WR, DET) listed IR",
       "body": "Knee - MCL -- Surgery",
       "published": null,
       "url": null,
@@ -781,33 +783,46 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Kirk Cousins (QB, LV) is the hot add -- 406,360 pickups in 24h",
+      "headline": "Ashton Dulin (WR, IND) listed Out",
+      "body": "Hamstring",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        4061956
+      ],
+      "athlete_names": [
+        "Ashton Dulin"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
+      "headline": "AJ Dillon (RB, CAR) listed Out",
+      "body": "Ankle",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        4239934
+      ],
+      "athlete_names": [
+        "AJ Dillon"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
+      "headline": "Josh Jacobs (RB, GB) is the hot add -- 371,280 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
       "espn_athlete_ids": [
-        14880
+        4047365
       ],
       "athlete_names": [
-        "Kirk Cousins"
+        "Josh Jacobs"
       ],
       "source": "Sleeper trending"
     },
     {
-      "headline": "Aaron Rodgers (QB, PIT) is the hot add -- 218,680 pickups in 24h",
-      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        8439
-      ],
-      "athlete_names": [
-        "Aaron Rodgers"
-      ],
-      "source": "Sleeper trending"
-    },
-    {
-      "headline": "Tyler Higbee (TE, LAR) is the hot add -- 168,129 pickups in 24h",
+      "headline": "Tyler Higbee (TE, LAR) is the hot add -- 234,171 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -820,7 +835,33 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Brandin Cooks (WR, SF) is the hot add -- 99,628 pickups in 24h",
+      "headline": "Kirk Cousins (QB, LV) is the hot add -- 227,168 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        14880
+      ],
+      "athlete_names": [
+        "Kirk Cousins"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Aaron Rodgers (QB, PIT) is the hot add -- 141,612 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        8439
+      ],
+      "athlete_names": [
+        "Aaron Rodgers"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Brandin Cooks (WR, SF) is the hot add -- 83,300 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -829,6 +870,19 @@
       ],
       "athlete_names": [
         "Brandin Cooks"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Keenan Allen (WR, IND) is the hot add -- 63,500 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        15818
+      ],
+      "athlete_names": [
+        "Keenan Allen"
       ],
       "source": "Sleeper trending"
     }
