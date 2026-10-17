@@ -19,9 +19,16 @@ from typing import Any, Sequence
 from ff.engines.trades import (
     TradeChain,
     TradeIdea,
+    TradePlan,
     best_lineup,
+    buy_low_targets,
+    find_packages,
     find_trade_chains,
+    find_trade_plans,
     find_trades,
+    form,
+    lineup_value,
+    sell_high_ids,
 )
 
 # Below this many starting-lineup points, a move is noise, not an action.
@@ -44,6 +51,8 @@ class Action:
     players: list[str] = field(default_factory=list)
     draft_message: str | None = None   # for trades: a message Tyler can send
     trade: dict | None = None          # structured send/receive for the UI
+    tag: str = ""                      # trade flavour: package | buy_low | sell_high | plan
+    note: str = ""                     # one line of "why now", for trades
 
     def as_dict(self) -> dict[str, Any]:
         return {k: v for k, v in self.__dict__.items()}
@@ -57,7 +66,7 @@ def _confidence_for_gain(gain: float) -> tuple[str, str]:
         )
     if gain >= 10:
         return "Medium", (
-            f"worth ~{gain:.0f} points over the season; real, but within a range "
+            f"worth ~{gain:.0f} points the rest of the way; real, but within a range "
             "where projections can be wrong"
         )
     return "Low", f"only ~{gain:.0f} points -- close to projection noise"
@@ -96,10 +105,12 @@ def trade_actions(
     )
     # Offers that spend the same player are alternatives, not a to-do list.
     seen_senders: set[str] = set()
+    hot = sell_high_ids(me["players"])
     out: list[Action] = []
     for idea in ideas:
         alt = any(p["player_id"] in seen_senders for p in idea.send)
         seen_senders.update(p["player_id"] for p in idea.send)
+        note = next((hot[p["player_id"]] for p in idea.send if p["player_id"] in hot), "")
 
         conf, conf_why = _confidence_for_gain(idea.my_gain)
         give = ", ".join(f'{p["name"]} ({p["position"]})' for p in idea.send)
@@ -113,7 +124,7 @@ def trade_actions(
                 title=title,
                 why=(
                     f"Your starting lineup improves by ~{idea.my_gain:.0f} points "
-                    f"over the season; theirs improves by ~{idea.their_gain:.0f}, "
+                    f"the rest of the season; theirs improves by ~{idea.their_gain:.0f}, "
                     f"which is {_acceptance_read(idea.their_gain)}."
                 ),
                 confidence=conf,
@@ -126,8 +137,152 @@ def trade_actions(
                 players=[p["name"] for p in idea.send + idea.receive],
                 draft_message=_trade_message(idea),
                 trade=idea.as_dict(),
+                tag="sell_high" if note else "",
+                note=note,
             )
         )
+    return out
+
+
+def _healthy_player(p: dict) -> bool:
+    return (p.get("injury_status") or "").upper().replace(" ", "_") not in UNAVAILABLE
+
+
+def package_actions(
+    me: dict, opponents: Sequence[dict], slots: dict,
+    untouchable: Sequence[str] = (), rejected: Sequence[tuple[str, str]] = (),
+    min_their_gain: float = 5.0,
+) -> list[Action]:
+    """Two-or-three-for-one deals that land a star without giving one up."""
+    out: list[Action] = []
+    for idea in find_packages(
+        me["players"], opponents, slots, untouchable=untouchable, rejected=rejected,
+        min_their_gain=min_their_gain, limit=4,
+    ):
+        conf, conf_why = _confidence_for_gain(idea.my_gain)
+        give = ", ".join(f'{p["name"]} ({p["position"]})' for p in idea.send)
+        get = ", ".join(f'{p["name"]} ({p["position"]})' for p in idea.receive)
+        out.append(Action(
+            kind="trade",
+            title=f"Package {give} to {idea.partner_name} for {get}",
+            why=(f"{len(idea.send)} of your players for {len(idea.receive)} of theirs: your "
+                 f"starting lineup improves by ~{idea.my_gain:.0f} the rest of the season, "
+                 f"theirs by ~{idea.their_gain:.0f}. They get depth, you get the star."),
+            confidence=conf, confidence_why=conf_why, deadline="No deadline",
+            steps=f"ESPN app: League → {idea.partner_name} → Propose Trade → offer {give} for {get}.",
+            gain=idea.my_gain, urgency=1,
+            players=[p["name"] for p in idea.send + idea.receive],
+            draft_message=_trade_message(idea), trade=idea.as_dict(),
+            tag="package", note="Two for one: they fill two spots, you upgrade one.",
+        ))
+    return out
+
+
+def buy_low_actions(
+    me: dict, opponents: Sequence[dict], slots: dict,
+    untouchable: Sequence[str] = (), rejected: Sequence[tuple[str, str]] = (),
+) -> list[Action]:
+    """Offers for good players whose managers are watching them underperform."""
+    protected = set(untouchable)
+    rejected_set = set(rejected)
+    mine = [p for p in me["players"] if p.get("projected") is not None]
+    base = lineup_value(mine, slots)
+    out: list[Action] = []
+    for target in buy_low_targets(opponents):
+        opp = target["_owner"]
+        if (opp["name"], target["name"]) in rejected_set:
+            continue
+        theirs = [p for p in opp["players"] if p.get("projected") is not None]
+        their_base = lineup_value(theirs, slots)
+        sendable = [p for p in mine if p["player_id"] not in protected and _healthy_player(p)]
+        packs = [[p] for p in sendable] + [[a, b] for i, a in enumerate(sendable) for b in sendable[i + 1:]]
+        offers: list[TradeIdea] = []
+        for give in packs:
+            if sum(p["projected"] for p in give) < 0.75 * target["projected"]:
+                continue  # a frustrated manager still wants something real back
+            my_gain = lineup_value([p for p in mine if p not in give] + [target], slots) - base
+            if my_gain < 5.0:
+                continue
+            their_gain = lineup_value([p for p in theirs if p is not target] + give, slots) - their_base
+            if their_gain < 5.0:
+                continue
+            offers.append(TradeIdea(opp["team_id"], opp["name"], list(give), [target], my_gain, their_gain))
+        if not offers:
+            continue
+        # The cheapest price that still gets most of the gain -- buying low
+        # means not overpaying, not maximising what the other side gets.
+        top = max(o.my_gain for o in offers)
+        best = min((o for o in offers if o.my_gain >= top - 5),
+                   key=lambda o: (sum(p["projected"] for p in o.send), -o.their_gain))
+        f = target["_form"]
+        conf, conf_why = _confidence_for_gain(best.my_gain)
+        give = ", ".join(f'{p["name"]} ({p["position"]})' for p in best.send)
+        out.append(Action(
+            kind="trade",
+            title=f"Buy low: offer {give} to {opp['name']} for {target['name']} ({target['position']})",
+            why=(f"{target['name']} is scoring {f['avg']:.1f} a game against a {f['proj_avg']:.1f} "
+                 f"projection, so his manager is watching a disappointment. ESPN still projects him "
+                 f"for ~{target['projected']:.0f} the rest of the way; you gain ~{best.my_gain:.0f} "
+                 f"lineup points, they gain ~{best.their_gain:.0f}."),
+            confidence="Medium" if conf == "High" else conf,
+            confidence_why=f"{conf_why}; the discount only exists if his manager is losing patience",
+            deadline="Before he has a big game",
+            steps=f"ESPN app: League → {opp['name']} → Propose Trade → offer {give} for {target['name']}.",
+            gain=best.my_gain, urgency=1,
+            players=[p["name"] for p in best.send] + [target["name"]],
+            draft_message=(f"yo {opp['name'].strip().lower()} -- {' + '.join(p['name'].lower() for p in best.send)} "
+                           f"for {target['name'].lower()}? he's been slow but i still like him, "
+                           "you get help now, lmk"),
+            trade=best.as_dict(),
+            tag="buy_low",
+            note=f"Scoring {f['avg']:.1f} a game vs {f['proj_avg']:.1f} projected. Buy while he's cold.",
+        ))
+        if len(out) >= 3:
+            break
+    return out
+
+
+def plan_action(
+    me: dict,
+    opponents: Sequence[dict],
+    slots: dict,
+    untouchable: Sequence[str] = (),
+    rejected: Sequence[tuple[str, str]] = (),
+    min_their_gain: float = 5.0,
+) -> list[Action]:
+    """Two- and three-move plans that clearly beat any single trade."""
+    out: list[Action] = []
+    for plan in find_trade_plans(
+        me["players"], opponents, slots, untouchable=untouchable, rejected=rejected,
+        min_their_gain=min_their_gain, limit=2,
+    ):
+        n = len(plan.steps)
+        last = plan.steps[-1]
+        get = ", ".join(p["name"] for p in last.receive)
+        lines = []
+        for i, st in enumerate(plan.steps, 1):
+            give = " + ".join(p["name"] for p in st.send)
+            lines.append(f"{i}. {give} to {st.partner_name.strip()} for "
+                         f"{', '.join(p['name'] for p in st.receive)} (they gain ~{st.their_gain:.0f})")
+        conf, conf_why = _confidence_for_gain(plan.total_gain)
+        out.append(Action(
+            kind="plan",
+            title=f"{n}-step plan: land {get}",
+            why=(" ".join(lines) + f". All together your lineup gains ~{plan.total_gain:.0f} the rest "
+                 "of the season. Each later step only happens if the one before lands."),
+            confidence="Medium" if conf == "High" else "Low",
+            confidence_why=f"{conf_why}; {n} managers each have to say yes",
+            deadline="Step 1 now",
+            steps=f"ESPN app: League → {plan.steps[0].partner_name} → Propose Trade → offer "
+                  f"{' + '.join(p['name'] for p in plan.steps[0].send)} for "
+                  f"{', '.join(p['name'] for p in plan.steps[0].receive)}. When accepted, come back for step 2.",
+            gain=plan.total_gain, urgency=1,
+            players=[p["name"] for st in plan.steps for p in st.send + st.receive],
+            draft_message=_trade_message(plan.steps[0]),
+            trade=plan.as_dict(),
+            tag="plan",
+            note=f"{n} trades, in order. Step 1 first.",
+        ))
     return out
 
 
@@ -254,7 +409,7 @@ def waiver_actions(me: dict, free_agents: Sequence[dict], slots: dict,
                       + (f", drop {drop['name']}" if drop else ""),
                 why=(
                     f"{fa['name']} projects {fa['projected']:.0f} and would start "
-                    f"for you, worth ~{gain:.0f} points over your current lineup."
+                    f"for you, worth ~{gain:.0f} points the rest of the season."
                     f"{bid}"
                 ),
                 confidence=conf,
@@ -267,8 +422,18 @@ def waiver_actions(me: dict, free_agents: Sequence[dict], slots: dict,
                 players=[fa["name"]] + ([drop["name"]] if drop else []),
             )
         )
+    # Three defenses to stream are one decision, not three: keep the best
+    # suggestion at each position.
     out.sort(key=lambda a: -a.gain)
-    return out[:3]
+    seen_pos: set[str] = set()
+    kept: list[Action] = []
+    for a in out:
+        pos = a.title.split("(")[1].split(")")[0] if "(" in a.title else ""
+        if pos in seen_pos:
+            continue
+        seen_pos.add(pos)
+        kept.append(a)
+    return kept[:3]
 
 
 UNAVAILABLE = OUT_STATUSES | {"PUP", "NA"}
@@ -477,10 +642,31 @@ def build_queue(state: dict, news_items: Sequence[dict],
     covered = {n for a in lineup for n in a.players}
     queue += [a for a in injury_actions(me, slots, news_by_id)
               if not set(a.players) & covered]
-    queue += trade_actions(me, opponents, slots, untouchable, their_bar)
-    chain = chain_action(me, opponents, slots, untouchable, rejected, chain_bar)
-    if chain:
-        queue.append(chain)
+    trades: list[Action] = []
+    trades += buy_low_actions(me, opponents, slots, untouchable, rejected)
+    trades += trade_actions(me, opponents, slots, untouchable, their_bar)
+    trades += package_actions(me, opponents, slots, untouchable, rejected, their_bar)
+    # A bigger package has to buy something: adding a third player to a deal
+    # that already worked for both sides is just a giveaway.
+    seen_shapes: set[tuple] = set()
+    accepted: list[tuple[str, frozenset, frozenset, float, float]] = []
+    for a in trades:
+        t = a.trade
+        send = frozenset(p["name"] for p in t["send"])
+        recv = frozenset(p["name"] for p in t["receive"])
+        shape = (t["partner_name"], send, recv)
+        if shape in seen_shapes:
+            continue
+        seen_shapes.add(shape)
+        if a.tag == "package" and any(
+            partner == t["partner_name"] and (s0 <= send or r0 <= recv)
+            and t["my_gain"] < mg + 3 and t["their_gain"] < tg + 3
+            for partner, s0, r0, mg, tg in accepted
+        ):
+            continue
+        accepted.append((t["partner_name"], send, recv, t["my_gain"], t["their_gain"]))
+        queue.append(a)
+    queue += plan_action(me, opponents, slots, untouchable, rejected, chain_bar)
     queue += waiver_actions(
         me, state.get("free_agents", []), slots,
         faab=(state.get("waiver_type") == "faab"),

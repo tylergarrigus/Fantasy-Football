@@ -369,8 +369,12 @@ def _step_candidates(
 
 
 def _packages(mine: Sequence[dict], protected: set[str]) -> list[list[dict]]:
-    """What we might send: any one player, or any two."""
-    sendable = [p for p in mine if p["player_id"] not in protected]
+    """What we might send: any one healthy player, or any two.
+
+    An injured player is never offered -- the other manager sees the red tag
+    before the projection, and the offer reads as a dump.
+    """
+    sendable = [p for p in mine if p["player_id"] not in protected and _healthy(p)]
     singles = [[p] for p in sendable]
     pairs = [
         [a, b]
@@ -390,4 +394,326 @@ def _dedupe(ideas: Sequence[TradeIdea]) -> list[TradeIdea]:
             continue
         seen.add(key)
         out.append(idea)
+    return out
+
+
+# ---------------------------------------------------------------------------
+# Rest-of-season value, packages, buy-low, and multi-step plans
+# ---------------------------------------------------------------------------
+
+LAST_WEEK = 17  # fantasy playoffs run through NFL week 17
+
+
+def games_left(p: dict, week: int, last_week: int = LAST_WEEK) -> int:
+    byes = set(p.get("bye_weeks") or [])
+    return sum(1 for w in range(week, last_week + 1) if w not in byes)
+
+
+def ros_value(p: dict, week: int, last_week: int = LAST_WEEK) -> float | None:
+    """Points this player projects for from now through the playoffs.
+
+    ESPN's season projection counts games already played; a trade only buys
+    the future. Per-game projection times the games he actually has left --
+    a bye still ahead is one fewer game -- is the number both sides are really
+    exchanging. Falls back to the season total spread over 12 games when ESPN
+    gives no per-game figure.
+    """
+    avg = p.get("proj_avg")
+    if avg is None:
+        if p.get("projected") is None:
+            return None
+        avg = float(p["projected"]) / 12.0
+    return round(float(avg) * games_left(p, week, last_week), 1)
+
+
+def with_ros_values(state: dict, week: int | None = None) -> dict:
+    """A copy of the league state where `projected` means rest-of-season.
+
+    `season_proj` keeps ESPN's full-season number for display.
+    """
+    week = int(week or state.get("current_week") or 1)
+
+    def conv(p: dict) -> dict:
+        ros = ros_value(p, week)
+        return {**p, "season_proj": p.get("projected"), "projected": ros, "ros": ros}
+
+    out = dict(state)
+    out["teams"] = [{**t, "players": [conv(p) for p in t.get("players", [])]} for t in state["teams"]]
+    out["free_agents"] = [conv(p) for p in state.get("free_agents", [])]
+    return out
+
+
+def _healthy(p: dict) -> bool:
+    return (p.get("injury_status") or "").upper().replace(" ", "_") not in {
+        "OUT", "DOUBTFUL", "INJURY_RESERVE", "IR", "PUP", "NA", "SUSPENSION",
+    }
+
+
+def find_packages(
+    my_players: Sequence[dict],
+    opponents: Sequence[dict],
+    slots: dict[str, Any],
+    *,
+    min_my_gain: float = 10.0,
+    min_their_gain: float = 5.0,
+    untouchable: Sequence[str] = (),
+    rejected: Sequence[tuple[str, str]] = (),
+    limit: int = 6,
+) -> list[TradeIdea]:
+    """Consolidation deals: two or three of ours for one or two of theirs.
+
+    Depth is worth little when only nine players start, and a manager who is
+    thin wants bodies. Two decent starters for one great one is how a lineup
+    gets a star without giving one up. Search is kept small on purpose: our
+    top ten by value in pairs and top eight in threes, against their top eight
+    singly and top six in pairs.
+    """
+    from itertools import combinations
+
+    protected = set(untouchable)
+    rejected_set = set(rejected)
+    mine = sorted(
+        (p for p in my_players if p.get("projected") is not None
+         and p["player_id"] not in protected and _healthy(p)),
+        key=lambda p: -p["projected"],
+    )
+    all_mine = [p for p in my_players if p.get("projected") is not None]
+    base = lineup_value(all_mine, slots)
+    # Two-for-one is already find_trades' territory; this is three-for-one
+    # and three-for-two.
+    sends = [list(c) for c in combinations(mine[:9], 3)]
+
+    ideas: list[TradeIdea] = []
+    for opp in opponents:
+        if opp.get("is_me"):
+            continue
+        theirs = sorted(
+            (p for p in opp.get("players", []) if p.get("projected") is not None and _healthy(p)),
+            key=lambda p: -p["projected"],
+        )
+        if not theirs:
+            continue
+        all_theirs = [p for p in opp.get("players", []) if p.get("projected") is not None]
+        their_base = lineup_value(all_theirs, slots)
+        gets = [[p] for p in theirs[:8]] + [list(c) for c in combinations(theirs[:6], 2)]
+        for get in gets:
+            if any((opp["name"], g["name"]) in rejected_set for g in get):
+                continue
+            for give in sends:
+                if len(get) >= len(give):
+                    continue  # a package is us sending more bodies than we get
+                if not _looks_fair(give, get):
+                    continue
+                my_gain = lineup_value(_swap(all_mine, give, get), slots) - base
+                if my_gain < min_my_gain:
+                    continue
+                their_gain = lineup_value(_swap(all_theirs, get, give), slots) - their_base
+                if their_gain < min_their_gain:
+                    continue
+                ideas.append(TradeIdea(
+                    partner_id=opp["team_id"], partner_name=opp["name"],
+                    send=list(give), receive=list(get),
+                    my_gain=my_gain, their_gain=their_gain,
+                ))
+
+    ideas.sort(key=lambda t: (-t.my_gain, len(t.send), -t.their_gain))
+    seen: set[tuple] = set()
+    out: list[TradeIdea] = []
+    for idea in ideas:
+        key = (idea.partner_id, frozenset(p["player_id"] for p in idea.receive))
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append(idea)
+        if len(out) >= limit:
+            break
+    return out
+
+
+def _played(p: dict) -> list[dict]:
+    return [r for r in (p.get("history") or []) if r.get("played") and r.get("pts") is not None]
+
+
+def form(p: dict) -> dict[str, Any]:
+    """How a player is really doing: recent and season scoring vs ESPN's projection."""
+    rows = _played(p)
+    pts = [r["pts"] for r in rows]
+    avg = sum(pts) / len(pts) if pts else None
+    last3 = sum(pts[-3:]) / len(pts[-3:]) if pts else None
+    return {"games": len(pts), "avg": avg, "last3": last3, "proj_avg": p.get("proj_avg")}
+
+
+def buy_low_targets(opponents: Sequence[dict], *, min_value: float = 90.0, limit: int = 10) -> list[dict]:
+    """Good players on other teams scoring well under their projection.
+
+    A manager watching a first-round pick post single digits is the manager who
+    takes a fair-looking offer. Three or more games played, actual average at
+    least 20% under the projected average, and still projected to matter.
+    """
+    out = []
+    for opp in opponents:
+        if opp.get("is_me"):
+            continue
+        for p in opp.get("players", []):
+            if (p.get("projected") or 0) < min_value or not _healthy(p):
+                continue
+            f = form(p)
+            if f["games"] < 3 or not f["proj_avg"] or f["avg"] is None:
+                continue
+            gap = f["proj_avg"] - f["avg"]
+            if gap >= 0.2 * f["proj_avg"] and gap >= 2.0:
+                out.append({**p, "_gap": gap, "_form": f, "_owner": opp})
+    out.sort(key=lambda p: -(p["_gap"] * (p["projected"] or 0)))
+    return out[:limit]
+
+
+def sell_high_ids(my_players: Sequence[dict]) -> dict[str, str]:
+    """Our players scoring well above projection -- the ones to sell into.
+
+    Returns player_id -> short reason.
+    """
+    out: dict[str, str] = {}
+    for p in my_players:
+        f = form(p)
+        if f["games"] < 3 or not f["proj_avg"] or f["avg"] is None:
+            continue
+        if f["avg"] >= 1.25 * f["proj_avg"] and f["avg"] - f["proj_avg"] >= 2.5:
+            out[p["player_id"]] = (
+                f"{p['name']} is scoring {f['avg']:.1f} a game against a {f['proj_avg']:.1f} "
+                "projection. Sell while he looks like a star."
+            )
+    return out
+
+
+@dataclass
+class TradePlan:
+    """Two or three trades in order, each one standing alone for its partner."""
+
+    steps: list[TradeIdea]
+    total_gain: float  # measured from the original roster
+
+    def as_dict(self) -> dict[str, Any]:
+        d = {"steps": [s.as_dict() for s in self.steps], "total_gain": round(self.total_gain, 1)}
+        d["step1"] = d["steps"][0]
+        d["step2"] = d["steps"][1] if len(d["steps"]) > 1 else d["steps"][0]
+        return d
+
+
+def find_trade_plans(
+    my_players: Sequence[dict],
+    opponents: Sequence[dict],
+    slots: dict[str, Any],
+    *,
+    untouchable: Sequence[str] = (),
+    rejected: Sequence[tuple[str, str]] = (),
+    min_their_gain: float = 5.0,
+    step_floor: float = -5.0,
+    step_adds: float = 5.0,
+    margin: float = 8.0,
+    beam: int = 24,
+    per_partner: int = 3,
+    max_steps: int = 3,
+    limit: int = 3,
+) -> list[TradePlan]:
+    """Up-to-three-move plans, found by beam search.
+
+    Every step must stand alone for the manager who sees it (their gain >=
+    min_their_gain, fair on paper), may cost us a little if it sets up the
+    next move, and each later step must add `step_adds` on its own. A plan is
+    reported only when its total beats the best single trade by `margin`:
+    every extra negotiation is another chance to hear no.
+    """
+    from itertools import combinations
+
+    protected = set(untouchable)
+    rejected_set = set(rejected)
+    mine0 = [p for p in my_players if p.get("projected") is not None]
+    base0 = lineup_value(mine0, slots)
+
+    def candidates(mine, teams, used):
+        base = lineup_value(mine, slots)
+        sendable = [p for p in mine if p["player_id"] not in protected and _healthy(p)]
+        packs = [[p] for p in sendable] + [list(c) for c in combinations(sendable, 2)]
+        found = []
+        for opp in teams:
+            if opp.get("is_me") or opp["team_id"] in used:
+                continue
+            theirs = [p for p in opp.get("players", []) if p.get("projected") is not None]
+            if not theirs:
+                continue
+            tb = lineup_value(theirs, slots)
+            for get in theirs:
+                if not _healthy(get) or (opp["name"], get["name"]) in rejected_set:
+                    continue
+                for give in packs:
+                    if not _looks_fair(give, [get]):
+                        continue
+                    mg = lineup_value(_swap(mine, give, [get]), slots) - base
+                    if mg < step_floor:
+                        continue
+                    tg = lineup_value(_swap(theirs, [get], give), slots) - tb
+                    if tg < min_their_gain:
+                        continue
+                    found.append(TradeIdea(opp["team_id"], opp["name"], list(give), [get], mg, tg))
+        return found
+
+    def prune(steps):
+        steps.sort(key=lambda s: -(s.my_gain + 0.3 * s.their_gain))
+        per: dict[int, int] = {}
+        keep = []
+        for s in steps:
+            if per.get(s.partner_id, 0) >= per_partner:
+                continue
+            per[s.partner_id] = per.get(s.partner_id, 0) + 1
+            keep.append(s)
+            if len(keep) >= beam:
+                break
+        return keep
+
+    def apply(mine, teams, step):
+        new_mine = _swap(mine, step.send, step.receive)
+        new_teams = []
+        for t in teams:
+            if t["team_id"] == step.partner_id:
+                theirs = [p for p in t.get("players", []) if p.get("projected") is not None]
+                new_teams.append({**t, "players": _swap(theirs, step.receive, step.send)})
+            else:
+                new_teams.append(t)
+        return new_mine, new_teams
+
+    first = candidates(mine0, list(opponents), set())
+    best_single = max((s.my_gain for s in first), default=0.0)
+    frontier = []
+    for s in prune(first):
+        m1, t1 = apply(mine0, list(opponents), s)
+        frontier.append((m1, t1, [s], {s.partner_id}))
+
+    plans: list[TradePlan] = []
+    for _depth in range(2, max_steps + 1):
+        nxt = []
+        for m, t, path, used in frontier:
+            prev_total = lineup_value(m, slots) - base0
+            for s in prune(candidates(m, t, used)):
+                m2, t2 = apply(m, t, s)
+                total = lineup_value(m2, slots) - base0
+                if total < prev_total + step_adds:
+                    continue
+                newpath = path + [s]
+                plans.append(TradePlan(newpath, total))
+                nxt.append((m2, t2, newpath, used | {s.partner_id}))
+        nxt.sort(key=lambda x: -(lineup_value(x[0], slots) - base0))
+        frontier = nxt[:beam]
+
+    plans = [p for p in plans if p.total_gain >= best_single + margin]
+    plans.sort(key=lambda p: (-p.total_gain, len(p.steps)))
+    seen: set[tuple] = set()
+    out: list[TradePlan] = []
+    for plan in plans:
+        sig = frozenset((s.partner_id, s.receive[0]["player_id"]) for s in plan.steps)
+        if sig in seen:
+            continue
+        seen.add(sig)
+        out.append(plan)
+        if len(out) >= limit:
+            break
     return out
