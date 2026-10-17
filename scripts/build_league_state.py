@@ -469,8 +469,8 @@ def main() -> int:
     summary = []
     built = []
     for league_id, key, name in (
-        (1631980693, "L1", "League 1"),
-        (1259820957, "L2", "League 2"),
+        (1631980693, "L1", "OJ Simpson Fantasy"),
+        (1259820957, "L2", "UAM Golf"),
     ):
         try:
             p = build(league_id, key, name, args.season, out_dir)

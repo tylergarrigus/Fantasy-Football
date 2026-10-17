@@ -36,6 +36,8 @@ DATA = ROOT / "data"
 WEB = ROOT / "ff" / "web"
 OUT = DATA / "command_center.html"
 SKILL = ("QB", "RB", "WR", "TE")
+# The leagues' real names, for data pulled before the pull learned them.
+LEAGUE_NAMES = {"L1": "OJ Simpson Fantasy", "L2": "UAM Golf"}
 HIST_KEYS = ("w", "pts", "proj", "played", "tgt", "car", "rec", "att")
 
 
@@ -220,7 +222,8 @@ def league_payload(a: dict, news: dict, msgs: dict) -> dict:
         })
 
     return {
-        "key": key, "name": st["name"], "id": st["league_id"], "teamCount": st["team_count"],
+        "key": key, "name": LEAGUE_NAMES.get(key, st["name"]) if str(st["name"]).startswith("League ") else st["name"],
+        "id": st["league_id"], "teamCount": st["team_count"],
         "slots": st["roster_slots"], "scoring": st.get("scoring") or "", "rules": st.get("scoring_rules") or [],
         "playoffTeams": st.get("playoff_teams"), "regWeeks": st.get("reg_season_weeks"),
         "waiverType": st.get("waiver_type"), "faabBudget": st.get("faab_budget"),
