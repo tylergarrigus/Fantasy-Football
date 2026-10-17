@@ -52,7 +52,7 @@
   function Q(p) { return (p.inj || "").toUpperCase() === "QUESTIONABLE"; }
   function dead(p) { return p.bye || HURT(p); }
   function wkVal(p) { if (dead(p)) return 0; if (p.wk != null) return p.wk; return p.proj ? p.proj / 17 : 0; }
-  function sVal(p) { return p.proj || 0; }
+  function sVal(p) { return p.ros != null ? p.ros : (p.proj || 0); }
   function stTag(p) {
     if (p.bye) return '<span class="st dn">▼ Bye</span>';
     var s = (p.inj || "").toUpperCase();
@@ -208,22 +208,28 @@
   }
   function check(key) { return '<button class="check" data-done="' + esc(key) + '" aria-pressed="' + (S.done[key] ? "true" : "false") + '" aria-label="Done"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7"/></svg></button>'; }
   var KIND = { lineup: "Start", injury: "Bench", waiver: "Add", trade: "Trade for", plan: "Trade for", info: "" };
-  function verb(a) { if (a.kind === "lineup" && /^Pick up/.test(a.title)) return "Pick up"; return KIND[a.kind] || "Move"; }
+  var TAGW = { package: "Package deal", buy_low: "Buy low", sell_high: "Sell high", plan: "Multi-step" };
+  function verb(a) { if (a.kind === "lineup" && /^Pick up/.test(a.title)) return "Pick up"; if (a.tag && TAGW[a.tag]) return TAGW[a.tag]; return KIND[a.kind] || "Move"; }
   function subject(lg, a) {
     var ps = a.players || [];
     if (a.kind === "trade" && a.trade) return a.trade.receive.map(function (p) { return byName(lg, p.name); }).filter(Boolean);
-    if (a.kind === "plan" && a.trade) return a.trade.step2.receive.map(function (p) { return byName(lg, p.name); }).filter(Boolean);
+    if (a.kind === "plan" && a.trade) { var st = a.trade.steps || [a.trade.step1, a.trade.step2]; return st[st.length - 1].receive.map(function (p) { return byName(lg, p.name); }).filter(Boolean); }
     return ps.slice(0, 1).map(function (n) { return byName(lg, n); }).filter(Boolean);
   }
-  function gainTxt(a) { return a.kind === "lineup" ? [sg(a.gain), "pts this week"] : [sg(a.gain, 0), "season pts"]; }
+  function gainTxt(a) { return a.kind === "lineup" ? [sg(a.gain), "pts this week"] : [sg(a.gain, 0), "pts rest of season"]; }
   function line2(lg, a) {
     var ps = a.players || [], t = a.trade;
-    if (a.kind === "trade" && t) return "Give " + names(t.send);
-    if (a.kind === "plan" && t) return "Two-step trade · " + names(t.step1.receive) + " first";
+    if (a.kind === "trade" && t) return "Give " + names(t.send) + (a.note ? " · " + a.note : "");
+    if (a.kind === "plan" && t) return (t.steps ? t.steps.length : 2) + " trades, in order · " + names(t.step1.receive) + " first";
     if (a.kind === "waiver" || /^Pick up/.test(a.title)) return ps[1] ? "Drop " + ps[1] : "Open roster spot";
     if (a.kind === "lineup") { var q = byName(lg, ps[1]); return "Bench " + ps[1] + (q && (q.bye || HURT(q)) ? " · " + (q.bye ? "bye" : "out") : ""); }
     if (a.kind === "injury") return "Out this week";
     return "";
+  }
+  function planSteps(lg, a) {
+    if (a.kind !== "plan" || !a.trade) return "";
+    var st = a.trade.steps || [a.trade.step1, a.trade.step2];
+    return '<div class="plan">' + st.map(function (s, i) { var g = s.receive.map(function (p) { return byName(lg, p.name); }).filter(Boolean)[0]; return '<div class="pstep">' + (g ? pic(g, "sm") : '<span class="ph ini sm">' + (i + 1) + "</span>") + '<span class="t"><b>' + (i + 1) + ". Get " + esc(names(s.receive)) + "</b><small>give " + esc(names(s.send)) + " · " + esc(s.partner_name.trim()) + '</small></span><span class="num up">' + sg(s.their_gain, 0) + "</span></div>"; }).join("") + "</div>";
   }
   function moveCard(lg, a, showLg) {
     var subj = subject(lg, a)[0], g = gainTxt(a), done = !!S.done[a.key];
@@ -233,7 +239,7 @@
       '<span style="flex:1"></span>' + check(a.key);
     return '<div class="move' + (done ? " done" : "") + '"><div class="row" style="min-height:0;padding:0;border:0;gap:10px"><span class="tag ' + (a.urgency >= 2 ? "o" : "c") + '">' + esc(verb(a)) + "</span>" + (showLg ? '<span class="st" style="color:var(--fg3)">' + esc(lgShort(lg)) + "</span>" : "") + "</div>" +
       '<div class="head">' + who + "</div>" +
-      '<div class="mid"><span class="gain"><span class="num">' + g[0] + "</span><small>" + g[1] + '</small></span><p class="sub">' + esc(line2(lg, a)) + "</p></div>" +
+      '<div class="mid"><span class="gain"><span class="num">' + g[0] + "</span><small>" + g[1] + '</small></span><p class="sub">' + esc(line2(lg, a)) + "</p>" + planSteps(lg, a) + "</div>" +
       '<div class="acts">' + acts + "</div></div>";
   }
   function hero(lg, c) {
@@ -311,7 +317,7 @@
     h += '<div class="search" style="--i:' + i++ + ';margin-top:6px"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><input id="q" type="search" placeholder="Search players" value="' + esc(S.q) + '" autocomplete="off"></div>';
     h += '<div class="scroll" style="--i:' + i++ + ';margin-top:8px">' + ["ALL", "QB", "RB", "WR", "TE", "K", "D/ST"].map(function (p) { return '<button class="chipb" data-pill="pos:' + p + '" aria-pressed="' + (S.pos === p) + '">' + (p === "D/ST" ? "DST" : p === "ALL" ? "All" : p) + "</button>"; }).join("") + '<button class="chipb" data-pill="fav:1" aria-pressed="' + S.favOnly + '">★</button></div>';
     h += '<div class="ctl" style="--i:' + i++ + ';margin-top:8px"><select class="sel" id="avail" aria-label="Who">' + [["ALL", "Everyone"], ["FA", "Free agents"], ["ME", "My team"], ["OTH", "Other teams"]].map(function (x) { return '<option value="' + x[0] + '"' + (S.avail === x[0] ? " selected" : "") + ">" + x[1] + "</option>"; }).join("") + "</select>" +
-      '<select class="sel" id="sort" aria-label="Sort">' + [["wk", "This week"], ["proj", "Season"], ["l3", "Last 3 games"], ["spts", "Points so far"], ["use", "Volume"]].map(function (x) { return '<option value="' + x[0] + '"' + (S.sort === x[0] ? " selected" : "") + ">" + x[1] + "</option>"; }).join("") + "</select></div>";
+      '<select class="sel" id="sort" aria-label="Sort">' + [["wk", "This week"], ["proj", "Rest of season"], ["l3", "Last 3 games"], ["spts", "Points so far"], ["use", "Volume"]].map(function (x) { return '<option value="' + x[0] + '"' + (S.sort === x[0] ? " selected" : "") + ">" + x[1] + "</option>"; }).join("") + "</select></div>";
     var list = filteredPlayers(lg), shown = list.slice(0, 30 + S.more * 30);
     h += '<div class="list" id="plist" style="--i:' + i++ + ';margin-top:10px">' + (shown.length ? shown.map(function (p) { return playerRow(lg, p); }).join("") : '<p class="empty">No players match.</p>') + "</div>";
     if (list.length > shown.length) h += '<button class="btn full g" data-more style="margin-top:12px">More</button>';
@@ -320,11 +326,11 @@
   }
   function metric(p) {
     switch (S.sort) {
-      case "proj": return [n0(p.proj), "season"]; case "l3": return [n1(last3(p)), "last 3"]; case "spts": return [n1(p.spts), "pts"];
+      case "proj": return [n0(sVal(p)), "rest of szn"]; case "l3": return [n1(last3(p)), "last 3"]; case "spts": return [n1(p.spts), "pts"];
       case "use": return [n1(usage3(p)), "touches"]; default: return [n1(wkVal(p)), "proj"];
     }
   }
-  function sortVal(p) { switch (S.sort) { case "proj": return p.proj || 0; case "l3": return last3(p) || 0; case "spts": return p.spts || 0; case "use": return usage3(p) || 0; default: return wkVal(p); } }
+  function sortVal(p) { switch (S.sort) { case "proj": return sVal(p); case "l3": return last3(p) || 0; case "spts": return p.spts || 0; case "use": return usage3(p) || 0; default: return wkVal(p); } }
   function filteredPlayers(lg) {
     var q = S.q.trim().toLowerCase();
     return Object.keys(lg.players).map(function (pid) { return P(lg, pid); }).filter(function (p) {
@@ -356,7 +362,7 @@
     h += '<div style="--i:' + i++ + '">' + label("Best available") + '<div class="list">';
     if (!list.length) h += '<p class="calm"><b>Nothing worth a claim.</b></p>';
     list.forEach(function (x) {
-      var p = x.p, ww = WWORD[x.cats[0]], fit = x.gs >= 3 ? [sg(x.gs, 0), "season pts"] : x.gw >= 2 ? [sg(x.gw), "this week"] : [n1(wkVal(p)), "proj"], o = opp(p);
+      var p = x.p, ww = WWORD[x.cats[0]], fit = x.gs >= 3 ? [sg(x.gs, 0), "rest of szn"] : x.gw >= 2 ? [sg(x.gw), "this week"] : [n1(wkVal(p)), "proj"], o = opp(p);
       var head = prow(lg, p, { b: true, ind: '<span class="' + ww[1] + '">' + ww[0] + "</span>", val: fit[0], unit: fit[1], deadMark: false });
       var body = '<div class="xin">' + spark(p) + '<div class="kv"><div><span class="num">' + n1(x.l3) + '</span><small>last 3</small></div><div><span class="num">' + (touchPos(p) ? n1(x.u3) : n1(wkVal(p))) + "</span><small>" + (touchPos(p) ? "touches" : "this week") + '</small></div><div><span class="num ' + o.cls + '">' + (o.r ? ord(o.r) : "—") + "</span><small>" + (p.bye ? "bye" : "opp defense") + "</small></div></div>" +
         '<p class="tiny"><span>' + (x.drop ? "Drop <b>" + esc(x.drop.n) + "</b>" : "Open roster spot") + "</span></p>" +
@@ -371,7 +377,7 @@
     h += '<div style="--i:' + i++ + '">' + label("Ideas", ideas.length ? "both teams get better" : "") + "</div>";
     if (!ideas.length) h += '<p class="calm" style="--i:' + i++ + '"><b>No trade helps both sides right now.</b></p>';
     ideas.forEach(function (a) { h += '<div style="--i:' + i++ + ';margin-bottom:10px">' + moveCard(lg, a, false) + "</div>"; });
-    if (c.alts.length) h += '<div class="list" style="--i:' + i++ + '">' + rx("alts", '<div class="row b" data-xt><span class="t"><b>' + c.alts.length + " more ideas</b></span>" + chev() + "</div>", '<div class="xin flush"><div class="list">' + c.alts.map(function (a) { var tr = a.trade; return '<div class="row"><span class="t"><b>Get ' + esc(names(tr.receive)) + "</b><small>for " + esc(names(tr.send)) + " · " + esc(tr.partner_name.trim()) + '</small></span><span class="n"><span class="num up">' + sg(tr.my_gain, 0) + "</span><small>season</small></span></div>"; }).join("") + "</div></div>", false) + "</div>";
+    if (c.alts.length) h += '<div class="list" style="--i:' + i++ + '">' + rx("alts", '<div class="row b" data-xt><span class="t"><b>' + c.alts.length + " more ideas</b></span>" + chev() + "</div>", '<div class="xin flush"><div class="list">' + c.alts.map(function (a) { var tr = a.trade; return '<div class="row"><span class="t"><b>Get ' + esc(names(tr.receive)) + "</b><small>for " + esc(names(tr.send)) + " · " + esc(tr.partner_name.trim()) + '</small></span><span class="n"><span class="num up">' + sg(tr.my_gain, 0) + "</span><small>rest of szn</small></span></div>"; }).join("") + "</div></div>", false) + "</div>";
     var others = lg.teams.filter(function (x) { return !x.me; });
     if (!S.tl.partner || !team(lg, S.tl.partner) || team(lg, S.tl.partner).me) S.tl.partner = others[0].id;
     var them = team(lg, S.tl.partner), my = roster(lg, t), theirs = roster(lg, them);
@@ -393,7 +399,7 @@
     if (!get.length || !send.length) return '<div class="verdict"><p class="w dim">Pick players on both sides</p></div>';
     var wk = S.horizon === "week", val = wk ? wkVal : sVal;
     var b0 = bestLineup(my, lg.slots, val), b1 = bestLineup(swap(my, send, get), lg.slots, val), t0 = lv(theirs, lg.slots, val), t1 = lv(swap(theirs, get, send), lg.slots, val);
-    var mg = b1.total - b0.total, tg = t1 - t0, rawS = send.reduce(function (s, p) { return s + (p.proj || 0); }, 0), rawG = get.reduce(function (s, p) { return s + (p.proj || 0); }, 0), ratio = rawG ? rawS / rawG : 1;
+    var mg = b1.total - b0.total, tg = t1 - t0, rawS = send.reduce(function (s, p) { return s + sVal(p); }, 0), rawG = get.reduce(function (s, p) { return s + sVal(p); }, 0), ratio = rawG ? rawS / rawG : 1;
     var take = wk ? S.takeAt / 4 : S.takeAt, win = wk ? 1 : 3, word, cls;
     if (mg >= take) { word = "▲ Take it"; cls = "up"; } else if (mg >= win) { word = "▲ Small win"; cls = "up"; } else if (mg > -win) { word = "◆ Even"; cls = "cau"; } else { word = "▼ Pass"; cls = "dn"; }
     var hurt = get.filter(HURT), byes = wk ? get.filter(function (p) { return p.bye; }) : [];
@@ -415,7 +421,7 @@
     theirs.forEach(function (g) {
       if (g.proj == null || HURT(g)) return;
       packs.forEach(function (pk) {
-        var raw = pk.reduce(function (s, p) { return s + (p.proj || 0); }, 0); if (raw < 0.7 * g.proj) return;
+        var raw = pk.reduce(function (s, p) { return s + sVal(p); }, 0); if (raw < 0.7 * sVal(g)) return;
         var mg = lv(swap(my, pk, [g]), lg.slots, val) - mine0, tg = lv(swap(theirs, [g], pk), lg.slots, val) - th0;
         if (mg >= 5 && tg >= 12 && (!best || mg + tg > best.mg + best.tg)) best = { send: pk, get: g, mg: mg, tg: tg };
       });
@@ -434,9 +440,9 @@
     if (p.bye) read.push("▼ Bye this week"); if (HURT(p)) read.push("▼ " + (p.inj || "").replace("_", " ")); if (Q(p)) read.push("◆ Questionable");
     var fut = (p.byes || []).filter(function (w) { return w > lg.week; }); if (fut.length) read.push("● Bye week " + fut.join(", "));
     var fit = "";
-    if (p.owner == null) { var c = C[lg.key], my = roster(lg, c.me), gs = lv(my.concat([p]), lg.slots, sVal) - c.bestSeason.total, gw = lv(my.concat([p]), lg.slots, wkVal) - c.bestWeek.total; fit = '<div class="kv"><div><span class="num ' + (gs > 0 ? "up" : "neu") + '">' + sg(gs, 0) + '</span><small>for you · season</small></div><div><span class="num ' + (gw > 0 ? "up" : "neu") + '">' + sg(gw) + "</span><small>for you · this week</small></div></div>"; }
+    if (p.owner == null) { var c = C[lg.key], my = roster(lg, c.me), gs = lv(my.concat([p]), lg.slots, sVal) - c.bestSeason.total, gw = lv(my.concat([p]), lg.slots, wkVal) - c.bestWeek.total; fit = '<div class="kv"><div><span class="num ' + (gs > 0 ? "up" : "neu") + '">' + sg(gs, 0) + '</span><small>for you · rest of season</small></div><div><span class="num ' + (gw > 0 ? "up" : "neu") + '">' + sg(gw) + "</span><small>for you · this week</small></div></div>"; }
     return sheet('<div class="phead">' + pic(p, "xl") + '<span class="t"><b>' + esc(p.n) + "</b><small>" + posT(p.pos) + "<span>" + esc(p.team || "") + '</span><span class="dim">' + esc(ownerWord(lg, p)) + "</span>" + stTag(p) + "</small></span>" + '<button class="btn g star" data-fav="' + esc(p.id) + '" aria-pressed="' + !!S.favs[p.id] + '" style="min-width:46px;padding:0 12px" aria-label="Favorite"><svg viewBox="0 0 24 24"><path d="M12 3l2.8 5.9 6.4.8-4.7 4.5 1.2 6.4L12 17.5 6.3 20.6l1.2-6.4L2.8 9.7l6.4-.8z"/></svg></button></div>' +
-      '<div class="kv"><div><span class="num">' + n1(wkVal(p)) + '</span><small>this week</small></div><div><span class="num">' + n1(l3) + '</span><small>last 3</small></div><div><span class="num">' + n0(p.proj) + "</span><small>season</small></div></div>" +
+      '<div class="kv"><div><span class="num">' + n1(wkVal(p)) + '</span><small>this week</small></div><div><span class="num">' + n1(l3) + '</span><small>last 3</small></div><div><span class="num">' + n0(sVal(p)) + "</span><small>rest of season</small></div></div>" +
       (o.w ? '<p class="tiny"><span class="' + o.cls + '">' + (o.g ? o.g + " " : "") + esc(o.w) + (o.r ? " (" + ord(o.r) + " vs " + esc(p.pos) + ")" : "") + "</span></p>" : "") +
       spark(p) +
       (read.length ? '<div class="list">' + read.map(function (w) { return '<div class="row" style="min-height:40px;padding:6px 0"><span class="t"><b style="font-size:16px">' + esc(w) + "</b></span></div>"; }).join("") + "</div>" : "") + fit +
@@ -445,7 +451,7 @@
   function compareSheet() {
     var lg = L(), ps = S.cmp.map(function (id) { return P(lg, id); }).filter(Boolean);
     if (ps.length < 2) return sheet('<p class="calm"><b>Pick two players.</b> Open a player, tap Compare.</p><button class="btn full" data-close>Close</button>');
-    var a = ps[0], b = ps[1], rows = [["This week", wkVal(a), wkVal(b), 1], ["Last 3 games", last3(a), last3(b), 1], ["Season", a.proj, b.proj, 0], ["Touches / game", usage3(a), usage3(b), 1]];
+    var a = ps[0], b = ps[1], rows = [["This week", wkVal(a), wkVal(b), 1], ["Last 3 games", last3(a), last3(b), 1], ["Rest of season", sVal(a), sVal(b), 0], ["Touches / game", usage3(a), usage3(b), 1]];
     return sheet('<div class="two"><div class="phead">' + pic(a, "lg") + '<span class="t"><b style="font-size:18px">' + esc(a.n) + "</b><small>" + posT(a.pos) + esc(a.team || "") + stTag(a) + '</small></span></div><div class="phead">' + pic(b, "lg") + '<span class="t"><b style="font-size:18px">' + esc(b.n) + "</b><small>" + posT(b.pos) + esc(b.team || "") + stTag(b) + "</small></span></div></div>" +
       rows.map(function (r) { var fa = r[3] ? n1(r[1]) : n0(r[1]), fb = r[3] ? n1(r[2]) : n0(r[2]); return '<div><div class="label" style="margin:4px 0 8px">' + r[0] + "</div>" + cmp(r[1] || 0, r[2] || 0, fa, fb) + "</div>"; }).join("") +
       '<p class="tiny"><span>' + esc(shortName(a.n)) + " " + esc(opp(a).w || "") + "</span><span>" + esc(shortName(b.n)) + " " + esc(opp(b).w || "") + "</span></p>" +

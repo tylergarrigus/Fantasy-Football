@@ -30,7 +30,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
 from ff.engines.actions import Action, build_queue  # noqa: E402
-from ff.engines.trades import best_lineup  # noqa: E402
+from ff.engines.trades import best_lineup, with_ros_values  # noqa: E402
 
 DATA = ROOT / "data"
 WEB = ROOT / "ff" / "web"
@@ -78,7 +78,12 @@ def rejected_filter(queue: list[Action], league_key: str, decisions: dict) -> li
 
 
 def analyse(state: dict, news_items: list[dict], decisions: dict | None = None) -> dict:
-    """Engine output for one league: queue, positional strength, market read."""
+    """Engine output for one league: queue, positional strength, market read.
+
+    Every value the engine trades on is rest-of-season: ESPN's per-game
+    projection times the games a player has left, byes included.
+    """
+    state = with_ros_values(state)
     slots = state["roster_slots"]
     for t in state["teams"]:
         lu = best_lineup(t["players"], slots)
@@ -161,7 +166,7 @@ def slim_player(p: dict, owner: int | None) -> dict:
     return {
         "id": p["player_id"], "eid": p.get("espn_id"), "n": p["name"], "pos": p["position"],
         "team": p.get("nfl_team"), "inj": p.get("injury_status"), "slot": p.get("current_slot"),
-        "owner": owner, "proj": p.get("projected"), "wk": p.get("week_projected"),
+        "owner": owner, "proj": p.get("season_proj", p.get("projected")), "ros": p.get("ros"), "wk": p.get("week_projected"),
         "opp": p.get("opponent"), "bye": bool(p.get("on_bye")), "wpts": p.get("week_pts"),
         "played": p.get("played"), "oppRank": p.get("opp_rank"), "kick": p.get("kickoff"),
         "spts": p.get("season_pts"), "avg": p.get("avg_pts"), "pavg": p.get("proj_avg"),
@@ -179,6 +184,7 @@ def action_payload(a: Action, key: str, msgs: dict) -> dict:
         "conf": a.confidence, "confWhy": a.confidence_why, "deadline": a.deadline,
         "steps": a.steps, "gain": round(a.gain, 1), "urgency": a.urgency,
         "players": a.players, "msg": bool(a.draft_message), "trade": a.trade,
+        "tag": a.tag, "note": a.note,
     }
 
 

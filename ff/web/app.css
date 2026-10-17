@@ -105,6 +105,13 @@ img{max-width:100%}
 .tag{display:inline-flex;align-items:center;gap:4px;font-size:13px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:6px 10px;border-radius:8px;background:var(--soft2);color:var(--fg2);flex:none;line-height:1.2}
 .tag.c{background:var(--acc);color:#fff} .tag.o{background:var(--dn);color:#fff}
 
+.plan{display:grid;gap:6px;margin-top:4px}
+.pstep{display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:12px;background:var(--soft)}
+.pstep .t{display:grid;min-width:0;flex:1}
+.pstep .t b{font-size:16px;line-height:1.15;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pstep .t small{font-size:13.5px;color:var(--fg2);font-weight:700;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pstep .num{font-size:18px}
+
 /* ---------- buttons ---------- */
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 18px;border-radius:14px;font-size:15px;font-weight:800;letter-spacing:.02em;
   background:var(--soft);border:1px solid var(--hair2);color:var(--fg);transition:transform .15s var(--spring),background var(--t),color var(--t),border-color var(--t)}
