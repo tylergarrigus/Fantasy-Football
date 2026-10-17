@@ -12,6 +12,7 @@ for the other side too, and you cannot see that from your own roster alone.
 from __future__ import annotations
 
 import argparse
+from datetime import datetime, timezone
 import json
 import os
 import sys
@@ -27,8 +28,10 @@ from ff.intel.news import _TRIVIAL  # noqa: E402
 from ff.logging_setup import get_logger, setup_logging  # noqa: E402
 from ff.sources.base import HttpClient  # noqa: E402
 from ff.sources.espn import ESPNFantasySource  # noqa: E402
+from ff.sources.espn_extras import collect_extras  # noqa: E402
 from ff.sources.espn_draft import ESPNDraftSource  # noqa: E402
 from ff.sources.espn_news import ESPNNewsSource  # noqa: E402
+from ff.sources.headshots import sync_headshots  # noqa: E402
 from ff.sources.sleeper import SleeperSource  # noqa: E402
 
 log = get_logger(__name__)
@@ -224,7 +227,8 @@ def build(league_id: int, key: str, name: str, season: int, out_dir: Path) -> di
 
     cfg = LeagueConfig(key=key, league_id=league_id, season=season, name=name)
     ctx = LeagueContext(store, league_id, key, name)
-    ESPNFantasySource(store, registry, creds).sync(ctx, cfg)
+    source = ESPNFantasySource(store, registry, creds)
+    source.sync(ctx, cfg)
 
     scoring = _infer_scoring(ctx)
     draft = ESPNDraftSource(http, store, registry, creds)
@@ -267,11 +271,53 @@ def build(league_id: int, key: str, name: str, season: int, out_dir: Path) -> di
         )
     }
 
+    # Richer, more volatile facts straight off the espn_api objects: live
+    # matchup scores, week-by-week production, opponent rank, records. Each
+    # part fails on its own; the page shows "unavailable" for whatever is
+    # missing rather than a made-up number.
+    rostered_pids = {
+        r["player_id"] for r in ctx.query(
+            "SELECT player_id FROM league_rosters WHERE league_id = :league_id"
+        )
+    }
+    fa_pids = {
+        r["player_id"] for r in ctx.query(
+            "SELECT player_id FROM league_free_agents WHERE league_id = :league_id"
+        )
+    }
+    extras: dict = {"records": {}, "matchups": [], "live": {}, "players": {},
+                    "scoring_rules": [], "activity": []}
+    extras_ok = False
+    try:
+        league_obj, _ = source.connect(cfg)
+        wanted = [espn_ids[pid] for pid in (rostered_pids | fa_pids) if pid in espn_ids]
+        extras = collect_extras(
+            league_obj, week, wanted, source.free_agent_objects.get(league_id, []),
+        )
+        extras_ok = True
+    except Exception:  # noqa: BLE001 - extras are additive, never fatal
+        log.exception("extras unavailable for %s", key)
+
+    def _eid(pid: str) -> int | None:
+        try:
+            return int(espn_ids[pid]) if pid in espn_ids else None
+        except (TypeError, ValueError):
+            return None
+
     def decorate(rows) -> list[dict]:
         out = []
         for r in rows:
             pid = r["player_id"]
             wk_proj, opp = weekly.get(pid, (None, None))
+            eid = _eid(pid)
+            facts = extras["players"].get(eid, {}) if eid is not None else {}
+            live = extras["live"].get(eid, {}) if eid is not None else {}
+            if wk_proj is None and live.get("proj") is not None:
+                wk_proj = live["proj"]
+            if opp is None and live.get("opp"):
+                opp = live["opp"]
+            if live.get("bye"):
+                opp, wk_proj = "BYE", 0.0
             out.append(
                 {
                     "player_id": pid,
@@ -285,6 +331,20 @@ def build(league_id: int, key: str, name: str, season: int, out_dir: Path) -> di
                     "week_projected": wk_proj,
                     "opponent": opp,
                     "on_bye": opp == "BYE",
+                    # this week, as of the pull
+                    "week_pts": live.get("pts"),
+                    "played": live.get("played"),
+                    "opp_rank": live.get("opp_rank"),
+                    "kickoff": live.get("kickoff"),
+                    # season so far
+                    "season_pts": facts.get("season_pts"),
+                    "avg_pts": facts.get("avg_pts"),
+                    "proj_avg": facts.get("proj_avg"),
+                    "pos_rank": facts.get("pos_rank"),
+                    "pct_owned": facts.get("pct_owned"),
+                    "pct_started": facts.get("pct_started"),
+                    "bye_weeks": facts.get("bye_weeks") or [],
+                    "history": facts.get("history") or [],
                 }
             )
         return out
@@ -306,11 +366,25 @@ def build(league_id: int, key: str, name: str, season: int, out_dir: Path) -> di
             # gets compared against to say "swap these two".
             p["current_slot"] = slot_by_pid.get(p["player_id"])
         lineup = best_lineup(players, slots)
+        rec = extras["records"].get(team["team_id"], {})
         teams.append(
             {
                 "team_id": team["team_id"],
                 "name": team["name"],
                 "owner": team["owner"],
+                "wins": rec.get("wins", team["wins"] if "wins" in team.keys() else None),
+                "losses": rec.get("losses", team["losses"] if "losses" in team.keys() else None),
+                "ties": rec.get("ties", team["ties"] if "ties" in team.keys() else None),
+                "points_for": rec.get("points_for", team["points_for"] if "points_for" in team.keys() else None),
+                "points_against": rec.get("points_against"),
+                "standing": rec.get("standing"),
+                "streak": rec.get("streak"),
+                "playoff_pct": rec.get("playoff_pct"),
+                "outcomes": rec.get("outcomes", []),
+                "scores": rec.get("scores", []),
+                "schedule": rec.get("schedule", []),
+                "faab_spent": rec.get("faab_spent"),
+                "waiver_rank": rec.get("waiver_rank"),
                 "is_me": team["team_id"] == ctx.my_team_id(),
                 "players": players,
                 "starters": lineup["starters"],
@@ -348,6 +422,11 @@ def build(league_id: int, key: str, name: str, season: int, out_dir: Path) -> di
         "current_week": week,
         "teams": teams,
         "free_agents": free_agents[:120],
+        "matchups": extras["matchups"],
+        "scoring_rules": extras["scoring_rules"],
+        "activity": extras["activity"][:40],
+        "extras_ok": extras_ok,
+        "pulled_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
     }
 
     path = out_dir / f"state_{key}.json"
@@ -388,12 +467,14 @@ def main() -> int:
     log.info("wrote %d news items", len(news))
 
     summary = []
+    built = []
     for league_id, key, name in (
-        (1631980693, "L1", "League 1"),
-        (1259820957, "L2", "League 2"),
+        (1631980693, "L1", "OJ Simpson Fantasy"),
+        (1259820957, "L2", "UAM Golf"),
     ):
         try:
             p = build(league_id, key, name, args.season, out_dir)
+            built.append(p)
             drafted = sum(len(t["players"]) for t in p["teams"])
             summary.append(
                 {
@@ -412,6 +493,14 @@ def main() -> int:
         except Exception as exc:  # noqa: BLE001 - one league must not sink the other
             log.exception("failed to build %s", key)
             summary.append({"key": key, "error": str(exc)})
+
+    # Photos for everyone the page can show. Fetched once each, kept in git.
+    try:
+        everyone = [p for s in built for t in s["teams"] for p in t["players"]]
+        everyone += [p for s in built for p in s.get("free_agents", [])]
+        sync_headshots(everyone, out_dir / "headshots")
+    except Exception:  # noqa: BLE001 - photos are a nicety
+        log.exception("headshot sync failed")
 
     print("\n=== SUMMARY ===")
     print(json.dumps(summary, indent=2))

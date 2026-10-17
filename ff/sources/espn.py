@@ -71,6 +71,9 @@ class ESPNFantasySource:
         self.registry = registry
         self.creds = creds
         self._cache: dict[int, Any] = {}
+        # The free-agent BoxPlayers from the last sync, per league: they carry
+        # this week's opponent and defensive rank, which the DB does not keep.
+        self.free_agent_objects: dict[int, list[Any]] = {}
 
     # -- connection --------------------------------------------------------
 
@@ -357,6 +360,7 @@ class ESPNFantasySource:
             if getattr(p, "playerId", None) is not None
         ]
         id_map = self.registry.bulk_resolve_espn(entries)
+        self.free_agent_objects[ctx.league_id] = list(free_agents)
 
         ctx.execute("DELETE FROM league_free_agents WHERE league_id = :league_id")
         fingerprint: list[str] = []
