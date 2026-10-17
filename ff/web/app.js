@@ -180,7 +180,7 @@
   function rx(id, head, body, open) { return '<div class="rx' + (open ? " open" : "") + '" data-rx="' + esc(id) + '">' + head + '<div class="x"><div>' + body + "</div></div></div>"; }
   function prow(lg, p, o) {
     o = o || {};
-    var meta = o.meta != null ? o.meta : posT(p.pos) + "<span>" + esc(p.team || "") + "</span>" + (o.ind != null ? o.ind : oppHtml(p));
+    var meta = o.meta != null ? o.meta : posT(p.pos) + "<span>" + esc(p.team || "") + "</span>" + (o.ind != null ? o.ind : "");
     var cls = "row" + (o.b ? " b" : "") + (o.cls ? " " + o.cls : "") + (dead(p) && o.deadMark !== false ? " dead" : "");
     var val = o.val != null ? o.val : n1(wkVal(p)), unit = o.unit != null ? o.unit : "proj";
     var attrs = (o.b ? " data-xt" : (o.open ? ' data-player="' + esc(p.id) + '"' : ""));
@@ -218,8 +218,8 @@
   function gainTxt(a) { return a.kind === "lineup" ? [sg(a.gain), "pts this week"] : [sg(a.gain, 0), "season pts"]; }
   function line2(lg, a) {
     var ps = a.players || [], t = a.trade;
-    if (a.kind === "trade" && t) return "Give " + names(t.send) + " to " + t.partner_name.trim();
-    if (a.kind === "plan" && t) return "Two trades · first " + names(t.step1.receive) + " from " + t.step1.partner_name.trim();
+    if (a.kind === "trade" && t) return "Give " + names(t.send);
+    if (a.kind === "plan" && t) return "Two-step trade · " + names(t.step1.receive) + " first";
     if (a.kind === "waiver" || /^Pick up/.test(a.title)) return ps[1] ? "Drop " + ps[1] : "Open roster spot";
     if (a.kind === "lineup") { var q = byName(lg, ps[1]); return "Bench " + ps[1] + (q && (q.bye || HURT(q)) ? " · " + (q.bye ? "bye" : "out") : ""); }
     if (a.kind === "injury") return "Out this week";
@@ -227,7 +227,7 @@
   }
   function moveCard(lg, a, showLg) {
     var subj = subject(lg, a)[0], g = gainTxt(a), done = !!S.done[a.key];
-    var who = subj ? pic(subj, "lg") + '<span class="who"><b>' + esc(subj.n) + "</b><small>" + posT(subj.pos) + "<span>" + esc(subj.team || "") + "</span>" + oppHtml(subj) + stTag(subj) + "</small></span>" : '<span class="who"><b>' + esc(a.title) + "</b></span>";
+    var who = subj ? pic(subj, "lg") + '<span class="who"><b>' + esc(subj.n) + "</b><small>" + posT(subj.pos) + "<span>" + esc(subj.team || "") + "</span>" + stTag(subj) + "</small></span>" : '<span class="who"><b>' + esc(a.title) + "</b></span>";
     var acts = (subj ? '<button class="btn g" data-player="' + esc(subj.id) + '">View player</button>' : "") +
       (a.kind === "lineup" ? '<button class="btn g" data-nav="lineup" data-lg="' + lg.key + '">Lineup</button>' : a.msg ? '<button class="btn g" data-copy="' + esc(a.key) + '">Copy text</button>' : "") +
       '<span style="flex:1"></span>' + check(a.key);
@@ -238,12 +238,12 @@
   }
   function hero(lg, c) {
     var t = c.me, o = c.opp; if (!o) return '<div class="hero"><p class="empty">No matchup this week.</p></div>';
-    var ms = c.live ? c.myScore : c.myProj, os = c.live ? c.oppScore : c.oppProj, share = (ms + os) > 0 ? ms / (ms + os) : 0.5, f = ago(lg.pulledAt);
-    return '<div class="hero"><div class="names"><div><b>' + esc(t.name) + "</b><small>" + rec(t) + (t.standing ? " · " + ord(t.standing) + " place" : "") + '</small></div><span class="cap">Wk ' + lg.week + '</span><div class="r"><b>' + esc(o.name.trim()) + "</b><small>" + rec(o) + (o.standing ? " · " + ord(o.standing) + " place" : "") + "</small></div></div>" +
+    var ms = c.live ? c.myScore : c.myProj, os = c.live ? c.oppScore : c.oppProj, share = (ms + os) > 0 ? ms / (ms + os) : 0.5;
+    return '<div class="hero"><div class="names"><div><b>' + esc(t.name) + "</b><small>" + rec(t) + (t.standing ? " · " + ord(t.standing) + " place" : "") + '</small></div><div class="r"><b>' + esc(o.name.trim()) + "</b><small>" + rec(o) + (o.standing ? " · " + ord(o.standing) + " place" : "") + "</small></div></div>" +
       '<div class="scores"><span class="num" data-count="' + n1(ms) + '">' + n1(ms) + '</span><span class="mid">' + (c.live ? "SO FAR" : "PROJ") + '</span><span class="num r" data-count="' + n1(os) + '">' + n1(os) + "</span></div>" +
       (c.live ? '<div class="proj"><span>Proj <b>' + n1(c.myProj) + '</b></span><span class="r">Proj <b>' + n1(c.oppProj) + "</b></span></div>" : "") +
       '<div class="hbar"><i style="--w:' + share.toFixed(3) + '"></i></div>' +
-      '<div class="foot"><span>' + c.left + ' to play</span><span class="mid">' + (c.live ? f.txt + " ago" : "") + '</span><span class="r">' + c.oppLeft + " to play</span></div></div>";
+      '<div class="foot"><span>' + c.left + ' still to play</span><span class="r">' + c.oppLeft + " still to play</span></div></div>";
   }
 
   /* ---------------- views ---------------- */
@@ -259,7 +259,7 @@
     h += '<div style="--i:' + i++ + '">' + label("Leagues") + '<div class="list">' + LGS.map(function (k) {
       var g = D.leagues[k], cc = C[k], t = cc.me, ms = cc.live ? cc.myScore : cc.myProj, os = cc.live ? cc.oppScore : cc.oppProj;
       var d = (ms || 0) - (os || 0), st = cc.live ? (Math.abs(d) < 3 ? ["◆ Close", "cau"] : d > 0 ? ["▲ Ahead", "up"] : ["▼ Behind", "dn"]) : (Math.abs(d) < 3 ? ["◆ Even", "cau"] : d > 0 ? ["▲ Favored", "up"] : ["▼ Underdog", "dn"]);
-      return '<div class="row b lgrow" data-nav="matchup" data-lg="' + k + '"><span class="t"><b>' + esc(g.name) + "</b><small>" + rec(t) + (t.standing ? " · " + ord(t.standing) + " of " + g.teamCount : "") + '</small></span><span class="mid"><span class="num">' + n1(ms) + "–" + n1(os) + "</span><small>" + (cc.live ? "so far" : "proj") + '</small></span><span class="stx ' + st[1] + '">' + st[0] + "</span>" + chev() + "</div>";
+      return '<div class="row b lgrow" data-nav="matchup" data-lg="' + k + '"><span class="nm">' + esc(g.name) + '</span><span class="stx ' + st[1] + '">' + st[0] + "</span>" + chev() + '<span class="rc">' + rec(t) + (t.standing ? " · " + ord(t.standing) + " of " + g.teamCount : "") + ' · <b class="num">' + n1(ms) + "–" + n1(os) + "</b> " + (cc.live ? "so far" : "proj") + "</span></div>";
     }).join("") + "</div></div>";
     return h + "</div>";
   }
@@ -294,7 +294,7 @@
       var fix = "";
       if (alt && dead(p) && av > 0) fix = '<div class="fix" data-cmp2="' + esc(p.id) + "," + esc(alt.id) + '">' + pic(alt) + "<span>Start <b>" + esc(alt.n) + '</b> instead</span><span class="g dn">▼ ' + (p.bye ? "bye" : "out") + "</span></div>";
       else if (alt && d >= 1.5) fix = '<div class="fix up" data-cmp2="' + esc(p.id) + "," + esc(alt.id) + '">' + pic(alt) + "<span>Start <b>" + esc(alt.n) + '</b> instead</span><span class="g up">▲ ' + sg(d) + "</span></div>";
-      h += '<div class="lu' + (dead(p) ? " dead" : "") + '"><span class="k">' + esc(k) + '</span><div class="main" data-player="' + esc(p.id) + '">' + pic(p) + '<span class="t"><b>' + esc(p.n) + "</b><small>" + posT(p.pos) + "<span>" + esc(p.team || "") + "</span>" + oppHtml(p) + stTag(p) + '</small></span><span class="n"><span class="num">' + (fin ? n1(p.wpts) : n1(sv)) + "</span><small>" + (fin ? "final" : "proj") + "</small></span></div>" + fix + "</div>";
+      h += '<div class="lu' + (dead(p) ? " dead" : "") + '"><span class="k">' + esc(k) + '</span><div class="main" data-player="' + esc(p.id) + '">' + pic(p) + '<span class="t"><b>' + esc(p.n) + "</b><small>" + posT(p.pos) + "<span>" + esc(p.team || "") + "</span>" + stTag(p) + '</small></span><span class="n"><span class="num">' + (fin ? n1(p.wpts) : n1(sv)) + "</span><small>" + (fin ? "final" : "proj") + "</small></span></div>" + fix + "</div>";
     });
     h += "</div></div>";
     var bench = my.filter(function (p) { return !sl.used[p.id] && p.slot !== "IR"; }).sort(function (a, b) { return wkVal(b) - wkVal(a); }), ir = my.filter(function (p) { return p.slot === "IR"; });
@@ -352,9 +352,8 @@
   var WWORD = { start: ["▲ Starter", "up"], week: ["▲ This week", "up"], hot: ["▲ Hot", "up"], role: ["▲ Role up", "up"], stash: ["● Depth", "neu"] };
   function vWaivers(lg, i) {
     var c = C[lg.key], t = c.me, h = "";
-    h += '<div class="scroll" style="--i:' + i++ + ';margin-top:10px">' + WCATS.map(function (x) { return '<button class="chipb" data-pill="wcat:' + x[0] + '" aria-pressed="' + (S.wcat === x[0]) + '">' + x[1] + "</button>"; }).join("") + "</div>";
-    var list = c.scout.filter(function (x) { return S.wcat === "ALL" || x.cats.indexOf(S.wcat) >= 0; }).slice(0, 8);
-    h += '<div style="--i:' + i++ + '">' + label("Best available", lg.waiverType === "faab" ? "FAAB $" + lg.faabBudget : "you pick " + ord(t.waiverRank || 1)) + '<div class="list">';
+    var list = c.scout.slice(0, 8);
+    h += '<div style="--i:' + i++ + '">' + label("Best available") + '<div class="list">';
     if (!list.length) h += '<p class="calm"><b>Nothing worth a claim.</b></p>';
     list.forEach(function (x) {
       var p = x.p, ww = WWORD[x.cats[0]], fit = x.gs >= 3 ? [sg(x.gs, 0), "season pts"] : x.gw >= 2 ? [sg(x.gw), "this week"] : [n1(wkVal(p)), "proj"], o = opp(p);
@@ -474,7 +473,7 @@
   var TITLES = { home: "Command Center", matchup: "Matchup", lineup: "Lineup", players: "Players", moves: "Moves" };
   function header() {
     var latest = LGS.map(function (k) { return D.leagues[k].pulledAt; }).filter(Boolean).sort().pop() || D.generated, f = ago(latest);
-    return '<div class="brand"><div class="logo"><i>TyG</i><span><b>' + TITLES[S.tab] + "</b><small>Week " + esc(D.week) + ' · <span class="fresh"><b class="' + f.cls + '"></b>' + esc(f.txt) + " ago</span></small></span></div>" +
+    return '<div class="brand"><div class="logo"><i>TyG</i><span><b>' + TITLES[S.tab] + "</b><small>Week " + esc(D.week) + " · updated " + esc(f.txt) + " ago</small></span></div>" +
       '<button class="gear" data-sheet="settings" aria-label="Settings"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 00.3 1.8l.1.1a2 2 0 11-2.8 2.8l-.1-.1a1.7 1.7 0 00-1.8-.3 1.7 1.7 0 00-1 1.5V21a2 2 0 11-4 0v-.1a1.7 1.7 0 00-1.1-1.5 1.7 1.7 0 00-1.8.3l-.1.1a2 2 0 11-2.8-2.8l.1-.1a1.7 1.7 0 00.3-1.8 1.7 1.7 0 00-1.5-1H3a2 2 0 110-4h.1a1.7 1.7 0 001.5-1.1 1.7 1.7 0 00-.3-1.8l-.1-.1a2 2 0 112.8-2.8l.1.1a1.7 1.7 0 001.8.3H9a1.7 1.7 0 001-1.5V3a2 2 0 114 0v.1a1.7 1.7 0 001 1.5 1.7 1.7 0 001.8-.3l.1-.1a2 2 0 112.8 2.8l-.1.1a1.7 1.7 0 00-.3 1.8V9a1.7 1.7 0 001.5 1H21a2 2 0 110 4h-.1a1.7 1.7 0 00-1.5 1z"/></svg></button></div>' +
       (LGS.length > 1 ? '<div class="lgsw">' + LGS.map(function (k) { var n = C[k].todo.filter(function (a) { return !S.done[a.key]; }).length; return '<button data-lg="' + k + '" aria-pressed="' + (S.lg === k) + '"><span>' + esc(D.leagues[k].name) + "</span>" + (n ? "<i>" + n + "</i>" : "") + "</button>"; }).join("") + "</div>" : "");
   }
