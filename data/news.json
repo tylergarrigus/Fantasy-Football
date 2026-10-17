@@ -1,10 +1,98 @@
 {
-  "fetched_at": "2026-10-17T15:41:23+00:00",
+  "fetched_at": "2026-10-17T22:07:26+00:00",
   "items": [
     {
-      "headline": "Source: Patriots likely to activate WR A.J. Brown for Sunday's game vs. Jets",
-      "body": "Patriots wide receiver A.J. Brown is likely to be activated after missing the past four games with a right high ankle sprain, a source told NFL Network's Ian Rapoport.",
-      "published": "2026-10-17T13:47:00Z",
+      "headline": "Sources: Bears plan to start QB Caleb Williams in Week 6 vs. Falcons",
+      "body": "The Bears are planning to start Caleb Williams against the Falcons after the star QB missed the past three games, sources told NFL Network and ESPN.",
+      "published": "2026-10-17T20:47:43Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50201828/sources-bears-plan-start-qb-caleb-williams-vs-falcons",
+      "espn_athlete_ids": [
+        492854
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Eagles QB Jalen Hurts on IR due to blood clot, expected to be out indefinitely",
+      "body": "The Eagles have decided to place Jalen Hurts on injured reserve after consultations with numerous doctors and experts, sources told ESPN and NFL Network.",
+      "published": "2026-10-17T21:17:30Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50202417/sources-eagles-place-jalen-hurts-ir-due-blood-clot",
+      "espn_athlete_ids": [
+        435090
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Steelers place Wilson on IR with finger injury",
+      "body": "The Pittsburgh Steelers placed Roman Wilson on the injured reserve list, their second key receiver lost to injury in as many weeks.",
+      "published": "2026-10-17T20:00:08Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50203338/steelers-place-receiver-wilson-ir",
+      "espn_athlete_ids": [
+        443979,
+        2116
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Taylor Moton among 3 Panthers activated ahead of Eagles game",
+      "body": "The Panthers will have RT Taylor Moton and DE Tershawn Wharton available Sunday against the Eagles. RB Trevor Etienne was also activated off IR.",
+      "published": "2026-10-17T19:23:52Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50202634/taylor-moton-3-panthers-activated-ahead-eagles-game",
+      "espn_athlete_ids": [
+        166989,
+        435769,
+        537961
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Bears CB Kyler Gordon set for 2026 debut after PUP activation",
+      "body": "Bears nickel corner Kyler Gordon has been activated off the PUP list and could make his season debut against the Falcons.",
+      "published": "2026-10-17T19:48:14Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50202598/bears-cb-kyler-gordon-set-2026-debut-pup-activation",
+      "espn_athlete_ids": [
+        529411,
+        470158,
+        435084
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Commanders RB Jacory Croskey-Merritt out vs. 49ers with groin injury",
+      "body": "Commanders running back Jacory Croskey-Merritt won't play against the 49ers because of a groin injury, coach Dan Quinn said.",
+      "published": "2026-10-17T17:50:22Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50202044/commanders-rb-croskey-merritt-vs-49ers-groin-injury",
+      "espn_athlete_ids": [
+        398613
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Patriots activate WR A.J. Brown for Sunday's game vs. Jets",
+      "body": "Patriots wide receiver A.J. Brown was activated from injured reserve Saturday after missing the past four games with a right high ankle sprain, the team announced.",
+      "published": "2026-10-17T20:14:34Z",
       "url": "https://www.espn.com/nfl/story/_/id/50200910/source-patriots-likely-activate-aj-brown-jets-game",
       "espn_athlete_ids": [
         380051
@@ -16,8 +104,8 @@
     },
     {
       "headline": "Jags unlikely to play 3 international games in 2027 during EverBank renovations",
-      "body": "Jaguars team president Mark Lamping said the team is unlikely to play three international home games in 2027 while renovations to EverBank Stadium continue.",
-      "published": "2026-10-17T12:26:41Z",
+      "body": "The Jaguars are unlikely to play three international home games in 2027 while renovations to EverBank Stadium continue, team president Mark Lamping said.",
+      "published": "2026-10-17T15:42:14Z",
       "url": "https://www.espn.com/nfl/story/_/id/50200792/jaguars-unlikely-play-3-international-home-games-2027",
       "espn_athlete_ids": [],
       "athlete_names": [],
@@ -35,7 +123,7 @@
     {
       "headline": "Sources: Eagles' Jalen Hurts, out indefinitely with blood clot, not planned for IR",
       "body": "The Eagles are not planning to put Jalen Hurts on injured reserve, sources told ESPN, even as he remains sidelined indefinitely with a superficial blood clot.",
-      "published": "2026-10-17T14:16:38Z",
+      "published": "2026-10-17T16:08:46Z",
       "url": "https://www.espn.com/nfl/story/_/id/50200331/sources-no-ir-plans-hurts-indefinitely-clot",
       "espn_athlete_ids": [
         435090
@@ -181,7 +269,7 @@
     {
       "headline": "Broncos' Jonathon Cooper off commissioner exempt list, could return Week 7",
       "body": "Broncos linebacker Jonathon Cooper was removed from the commissioner exempt list Friday, meaning he's available to play in Week 7. Cooper, who was arrested twice in a seven-day span in June on domestic violence charges, has been on the list since Aug. 30.",
-      "published": "2026-10-16T23:56:38Z",
+      "published": "2026-10-17T19:45:14Z",
       "url": "https://www.espn.com/nfl/story/_/id/50198029/broncos-jonathon-cooper-removed-nfl-commissioner-exempt-list",
       "espn_athlete_ids": [
         470690
@@ -387,84 +475,6 @@
       "source": "ESPN"
     },
     {
-      "headline": "Dopp's hesitancy over starting Josh Downs in Week 6",
-      "body": "Dopp's hesitancy over starting Josh Downs in Week 6",
-      "published": "2026-10-16T15:28:14Z",
-      "url": "https://www.espn.com/video/clip/_/id/50196473/dopp-hesitancy-starting-josh-downs-week-6",
-      "espn_athlete_ids": [
-        442393
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Why Clay is 'super excited' for Germie Bernard's opportunity in Week 6",
-      "body": "Why Clay is 'super excited' for Germie Bernard's opportunity in Week 6",
-      "published": "2026-10-16T15:04:15Z",
-      "url": "https://www.espn.com/video/clip/_/id/50196464/why-clay-super-excited-germie-bernard-opportunity-week-6",
-      "espn_athlete_ids": [
-        541779
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Why Denzel Boston is a \u2018lineup lock\u2019 in fantasy for Week 6",
-      "body": "Why Denzel Boston is a \u2018lineup lock\u2019 in fantasy for Week 6",
-      "published": "2026-10-16T15:13:57Z",
-      "url": "https://www.espn.com/video/clip/_/id/50196462/why-denzel-boston-lineup-lock-fantasy-week-6",
-      "espn_athlete_ids": [
-        538943
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Stephen A. \u2018fearful\u2019 over Jalen Hurts\u2019 blood clot",
-      "body": "Stephen A. \u2018fearful\u2019 over Jalen Hurts\u2019 blood clot",
-      "published": "2026-10-16T14:44:10Z",
-      "url": "https://www.espn.com/video/clip/_/id/50196397/stephen-fearful-jalen-hurts-blood-clot",
-      "espn_athlete_ids": [
-        435090
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Stephen A. sounds off on Bo Nix for 'not competing'",
-      "body": "Stephen A. sounds off on Bo Nix for 'not competing'",
-      "published": "2026-10-16T14:41:35Z",
-      "url": "https://www.espn.com/video/clip/_/id/50196351/stephen-sounds-bo-nix-not-competing",
-      "espn_athlete_ids": [
-        549664
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "What does Caleb Williams' post-injury fantasy outlook look like?",
-      "body": "What does Caleb Williams' post-injury fantasy outlook look like?",
-      "published": "2026-10-16T16:01:54Z",
-      "url": "https://www.espn.com/video/clip/_/id/50196306/what-does-caleb-williams-post-injury-fantasy-outlook-look-like",
-      "espn_athlete_ids": [
-        492854
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
       "headline": "T.J. Hockenson (TE, MIN) listed Out",
       "body": "Concussion",
       "published": null,
@@ -478,7 +488,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Jalen Hurts (QB, PHI) listed Out",
+      "headline": "Jalen Hurts (QB, PHI) listed IR",
       "body": "Calf",
       "published": null,
       "url": null,
@@ -595,7 +605,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "A.J. Brown (WR, NE) listed IR",
+      "headline": "A.J. Brown (WR, NE) listed Questionable",
       "body": "Ankle -- Sprain",
       "published": null,
       "url": null,
@@ -764,7 +774,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Marcus Mariota (QB, WAS) listed Doubtful",
+      "headline": "Marcus Mariota (QB, WAS) listed Out",
       "body": "Knee - MCL -- Sprain",
       "published": null,
       "url": null,
@@ -868,20 +878,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Josh Jacobs (RB, GB) is the hot add -- 433,820 pickups in 24h",
-      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        4047365
-      ],
-      "athlete_names": [
-        "Josh Jacobs"
-      ],
-      "source": "Sleeper trending"
-    },
-    {
-      "headline": "Tyler Higbee (TE, LAR) is the hot add -- 290,529 pickups in 24h",
+      "headline": "Tyler Higbee (TE, LAR) is the hot add -- 351,990 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -894,7 +891,20 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Kirk Cousins (QB, LV) is the hot add -- 165,096 pickups in 24h",
+      "headline": "Josh Jacobs (RB, GB) is the hot add -- 198,795 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        4047365
+      ],
+      "athlete_names": [
+        "Josh Jacobs"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Kirk Cousins (QB, LV) is the hot add -- 118,968 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -907,7 +917,20 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Aaron Rodgers (QB, PIT) is the hot add -- 103,180 pickups in 24h",
+      "headline": "Keenan Allen (WR, IND) is the hot add -- 70,040 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        15818
+      ],
+      "athlete_names": [
+        "Keenan Allen"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Aaron Rodgers (QB, PIT) is the hot add -- 68,528 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -920,7 +943,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Brandin Cooks (WR, SF) is the hot add -- 71,308 pickups in 24h",
+      "headline": "Brandin Cooks (WR, SF) is the hot add -- 60,156 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -933,7 +956,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Tyler Huntley (QB, BAL) is the hot add -- 64,314 pickups in 24h",
+      "headline": "Tyler Huntley (QB, BAL) is the hot add -- 45,164 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -942,19 +965,6 @@
       ],
       "athlete_names": [
         "Tyler Huntley"
-      ],
-      "source": "Sleeper trending"
-    },
-    {
-      "headline": "Keenan Allen (WR, IND) is the hot add -- 62,464 pickups in 24h",
-      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        15818
-      ],
-      "athlete_names": [
-        "Keenan Allen"
       ],
       "source": "Sleeper trending"
     }
