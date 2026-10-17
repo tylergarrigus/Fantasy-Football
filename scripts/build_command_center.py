@@ -19,6 +19,7 @@ browser with the same lineup math. Nothing talks to ESPN from the page.
 
 from __future__ import annotations
 
+import base64
 import html
 import json
 import sys
@@ -140,6 +141,19 @@ def analyse(state: dict, news_items: list[dict], decisions: dict | None = None) 
 # ------------------------------------------------------------- payload
 
 
+HEADSHOTS = DATA / "headshots"
+
+
+def photo(espn_id) -> str | None:
+    """The player's photo as a data URI, when the runner has fetched one."""
+    if espn_id is None:
+        return None
+    f = HEADSHOTS / f"{espn_id}.webp"
+    if not f.exists():
+        return None
+    return "data:image/webp;base64," + base64.b64encode(f.read_bytes()).decode("ascii")
+
+
 def slim_player(p: dict, owner: int | None) -> dict:
     hist = [{k: r.get(k) for k in HIST_KEYS if r.get(k) is not None} for r in (p.get("history") or [])]
     return {
@@ -238,10 +252,20 @@ def build() -> str:
         week = week or state.get("current_week")
         season = season or state.get("season")
 
+    # One photo per ESPN id, shared across leagues.
+    photos: dict[str, str] = {}
+    for lg in leagues.values():
+        for p in lg["players"].values():
+            eid = p.get("eid")
+            if eid is not None and str(eid) not in photos:
+                img = photo(eid)
+                if img:
+                    photos[str(eid)] = img
+
     now = datetime.now(timezone.utc)
     payload = {
         "season": season, "week": week, "generated": now.strftime("%Y-%m-%dT%H:%M:%SZ"),
-        "order": list(leagues.keys()), "leagues": leagues,
+        "order": list(leagues.keys()), "leagues": leagues, "photos": photos,
     }
     data_js = json.dumps(payload, separators=(",", ":")).replace("</", "<\\/")
     msg_js = json.dumps(msgs, separators=(",", ":")).replace("</", "<\\/")
@@ -256,7 +280,7 @@ PAGE = """<title>Fantasy Command Center</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,400..900;1,62..125,400..900&display=swap">
 <style>
 {{CSS}}
 </style>
