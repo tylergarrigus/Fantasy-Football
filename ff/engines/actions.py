@@ -20,6 +20,7 @@ from ff.engines.trades import (
     TradeChain,
     TradeIdea,
     TradePlan,
+    _looks_fair,
     best_lineup,
     buy_low_targets,
     find_packages,
@@ -198,7 +199,7 @@ def buy_low_actions(
         packs = [[p] for p in sendable] + [[a, b] for i, a in enumerate(sendable) for b in sendable[i + 1:]]
         offers: list[TradeIdea] = []
         for give in packs:
-            if sum(p["projected"] for p in give) < 0.75 * target["projected"]:
+            if not _looks_fair(give, [target]):
                 continue  # a frustrated manager still wants something real back
             my_gain = lineup_value([p for p in mine if p not in give] + [target], slots) - base
             if my_gain < 5.0:

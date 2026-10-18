@@ -25,12 +25,29 @@ FLEX_POSITIONS = ("RB", "WR", "TE")
 # gets declined on sight, no matter how sound the lineup math is -- learned the
 # hard way. Below this send/receive ratio a deal is never proposed.
 FAIRNESS_FLOOR = 0.7
+# Name value is draft position, not projection: a backup QB with a big
+# projection is still a backup QB to the manager looking at the offer. When
+# both sides have ADP, the offer must be worth MARKET_FLOOR of what is asked
+# on a standard draft-value curve (value halves roughly every 28 picks).
+MARKET_FLOOR = 0.85
+
+
+def market_value(p: dict) -> float:
+    import math
+    adp = p.get("adp")
+    return 100.0 * math.exp(-(float(adp) if adp else 170.0) / 40.0)
 
 
 def _looks_fair(send, receive) -> bool:
     asked = sum(p.get("projected") or 0 for p in receive)
     offered = sum(p.get("projected") or 0 for p in send)
-    return asked <= 0 or offered / asked >= FAIRNESS_FLOOR
+    if asked > 0 and offered / asked < FAIRNESS_FLOOR:
+        return False
+    if all(p.get("adp") for p in list(send) + list(receive)):
+        m_ask = sum(market_value(p) for p in receive)
+        m_off = sum(market_value(p) for p in send)
+        return m_ask <= 0 or m_off / m_ask >= MARKET_FLOOR
+    return True
 
 
 @dataclass
@@ -479,9 +496,9 @@ def find_packages(
     )
     all_mine = [p for p in my_players if p.get("projected") is not None]
     base = lineup_value(all_mine, slots)
-    # Two-for-one is already find_trades' territory; this is three-for-one
-    # and three-for-two.
-    sends = [list(c) for c in combinations(mine[:9], 3)]
+    # Two-for-one is already find_trades' territory; this is two-for-two
+    # (star plus a piece they need back), three-for-one and three-for-two.
+    sends = [list(c) for c in combinations(mine[:10], 2)] + [list(c) for c in combinations(mine[:9], 3)]
 
     ideas: list[TradeIdea] = []
     for opp in opponents:
@@ -500,8 +517,8 @@ def find_packages(
             if any((opp["name"], g["name"]) in rejected_set for g in get):
                 continue
             for give in sends:
-                if len(get) >= len(give):
-                    continue  # a package is us sending more bodies than we get
+                if len(get) > len(give) or (len(give) == 2 and len(get) != 2):
+                    continue  # 2-for-2, 3-for-1, 3-for-2 only
                 if not _looks_fair(give, get):
                     continue
                 my_gain = lineup_value(_swap(all_mine, give, get), slots) - base
