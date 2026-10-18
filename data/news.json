@@ -1,6 +1,106 @@
 {
-  "fetched_at": "2026-10-18T01:11:14+00:00",
+  "fetched_at": "2026-10-18T15:56:41+00:00",
   "items": [
+    {
+      "headline": "Texans safety Reed Blankenship suffers concussion vs. Jaguars in London",
+      "body": "The Texans lost starter safety Reed Blankenship to a concussion after he suffered the injury in the second quarter against the Jaguars on Sunday in London.",
+      "published": "2026-10-18T15:53:30Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50210735/texans-safety-reed-blankenship-suffers-concussion-london",
+      "espn_athlete_ids": [
+        530470
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Week 6 NFL highlights: Best plays, moments, touchdowns, more",
+      "body": "Here's a look at the best plays from Sunday's NFL action in Week 6.",
+      "published": "2026-10-18T14:20:54Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50209856/week-6-nfl-highlights-best-plays-moments-touchdowns",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Sources: Saints QB Tyler Shough playing with 2 broken bones in non-throwing hand",
+      "body": "Saints quarterback Tyler Shough has been playing with two broken bones in his left hand, sources told ESPN.",
+      "published": "2026-10-18T13:15:42Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50200514/sources-saints-tyler-shough-broken-bones-left-hand",
+      "espn_athlete_ids": [
+        209237
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Gayle Benson endorses Kellen Moore, coaches after comments about state of Saints",
+      "body": "Saints owner Gayle Benson endorsed Kellen Moore and the coaching staff Friday, three days after her pointed comments about the state of the team.",
+      "published": "2026-10-18T14:46:52Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50207241/gayle-benson-endorses-kellen-moore-saints-coaches",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Jets great Mark Gastineau wants rookie David Bailey to celebrate after sacks",
+      "body": "Gastineau's sack dances led to the NFL penalizing excessive celebrations for over 30 years.",
+      "published": "2026-10-18T13:29:38Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50197835/jets-david-bailey-sacks-mark-gastineau",
+      "espn_athlete_ids": [
+        537854
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Ranking the top 10 rookie performances in Super Bowl history",
+      "body": "Which rookies made a name from themselves in the Super Bowl over the years? We listed 10 standout performances, plus honorable mentions.",
+      "published": "2026-10-18T12:55:51Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50197687/top-10-super-bowl-rookie-performances-history",
+      "espn_athlete_ids": [
+        497669,
+        435068
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Patriots' 2026 rookies: Who has made an impact through five weeks?",
+      "body": "With two rookies assuming starting roles, let's take a look at how this year's draft class has panned out.",
+      "published": "2026-10-18T10:00:04Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50198740/new-england-patriots-notebook-rookies-jets-lomu-jacas",
+      "espn_athlete_ids": [
+        490129,
+        470142,
+        541810,
+        608891
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Ex-Broncos exec John Beake, who helped land John Elway, dies at 87",
+      "body": "John Beake, who was instrumental in the trade for John Elway and helped guide the Denver Broncos to back-to-back Super Bowl titles in the late 1990s, has died at age 87, the team said Saturday.",
+      "published": "2026-10-18T14:58:03Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50206700/ex-broncos-exec-john-beake-helped-land-john-elway-dies-87",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
     {
       "headline": "49ers rule out Bosa for Monday, still hopeful for Evans, Juszczyk",
       "body": "The San Francisco 49ers will have to wait at least another week for the return of defensive end Nick Bosa, though there's at least a chance they'll have both receiver Mike Evans and fullback Kyle Juszczyk for Monday's game vs. the Washington Commanders.",
@@ -19,9 +119,9 @@
       "source": "ESPN"
     },
     {
-      "headline": "Sources: Bears plan to start QB Caleb Williams in Week 6 vs. Falcons",
-      "body": "The Bears are planning to start Caleb Williams against the Falcons after the star QB missed the past three games, sources told NFL Network and ESPN.",
-      "published": "2026-10-17T20:47:43Z",
+      "headline": "Bears start QB Caleb Williams in Week 6 against Falcons",
+      "body": "The Bears will start Caleb Williams on Sunday against the Falcons after the star quarterback missed the past three games due to a torn hamstring.",
+      "published": "2026-10-18T15:35:48Z",
       "url": "https://www.espn.com/nfl/story/_/id/50201828/sources-bears-plan-start-qb-caleb-williams-vs-falcons",
       "espn_athlete_ids": [
         492854
@@ -122,7 +222,7 @@
     {
       "headline": "Jags unlikely to play 3 international games in 2027 during EverBank renovations",
       "body": "The Jaguars are unlikely to play three international home games in 2027 while renovations to EverBank Stadium continue, team president Mark Lamping said.",
-      "published": "2026-10-17T15:42:14Z",
+      "published": "2026-10-18T13:05:21Z",
       "url": "https://www.espn.com/nfl/story/_/id/50200792/jaguars-unlikely-play-3-international-home-games-2027",
       "espn_athlete_ids": [],
       "athlete_names": [],
@@ -386,99 +486,6 @@
       "source": "ESPN"
     },
     {
-      "headline": "Falcons' Michael Penix Jr. (ribs) cleared to play vs. Bears",
-      "body": "Falcons quarterback Michael Penix Jr., who left last week's game with injured ribs, has been fully cleared to play against the Bears on Sunday.",
-      "published": "2026-10-16T18:46:05Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50197497/falcons-michael-penix-jr-ribs-cleared-play-vs-bears",
-      "espn_athlete_ids": [
-        208615
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Ravens rule out QB Lamar Jackson; Tyler Huntley to start vs. Browns",
-      "body": "The Ravens have ruled quarterback Lamar Jackson out for a second straight week, elevating Tyler Huntley to the starting role for Sunday's game in Cleveland.",
-      "published": "2026-10-16T18:45:28Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50197342/ravens-rule-qb-jackson-huntley-start-browns",
-      "espn_athlete_ids": [
-        184545,
-        435677
-      ],
-      "athlete_names": [
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Kyle Hamilton: Everybody has the utmost confidence in Tyler Huntley",
-      "body": "Kyle Hamilton: Everybody has the utmost confidence in Tyler Huntley",
-      "published": "2026-10-16T17:56:29Z",
-      "url": "https://www.espn.com/video/clip/_/id/50197297/everybody-utmost-confidence-tyler-huntley",
-      "espn_athlete_ids": [
-        529352,
-        435677
-      ],
-      "athlete_names": [
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Browns WR KC Concepcion clears concussion protocol, will play vs. Ravens",
-      "body": "Browns rookie wide receiver KC Concepcion has cleared the concussion protocol and will play against the Ravens.",
-      "published": "2026-10-16T18:33:53Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50197266/browns-wr-concepcion-clears-protocol-play-vs-ravens",
-      "espn_athlete_ids": [
-        607902
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Daniel Dopp's Week 6 DraftKings tournament lineup",
-      "body": "Daniel Dopp's Week 6 DraftKings tournament lineup",
-      "published": "2026-10-16T16:26:36Z",
-      "url": "https://www.espn.com/video/clip/_/id/50196974/daniel-dopp-week-6-draftkings-tournament-lineup",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Jets rookie WR Omar Cooper Jr. to return vs. Patriots; RB Hall, WR Mitchell out",
-      "body": "Jets rookie wide receiver Omar Cooper Jr. (ankle) will play against the Patriots, but running back Breece Hall and wideout Adonai Mitchell have been ruled out for Sunday's game.",
-      "published": "2026-10-16T18:23:12Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50196775/jets-rookie-wr-cooper-play-vs-patriots-hall-mitchell-out",
-      "espn_athlete_ids": [
-        529523,
-        489480,
-        537402,
-        613527
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Is 2026 the year for Joe Burrow and the Bengals?",
-      "body": "Ben Baby breaks down Burrow's successful start to the 2026 season and how the Bengals are \"overperforming.\"",
-      "published": "2026-10-16T15:35:19Z",
-      "url": "https://www.espn.com/video/clip/_/id/50196714/is-2026-year-joe-burrow-bengals",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
       "headline": "T.J. Hockenson (TE, MIN) listed Out",
       "body": "Concussion",
       "published": null,
@@ -527,6 +534,19 @@
       ],
       "athlete_names": [
         "Demarcus Robinson"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
+      "headline": "Case Keenum (QB, CHI) listed Out",
+      "body": "Coach's Decision",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        15168
+      ],
+      "athlete_names": [
+        "Case Keenum"
       ],
       "source": "Sleeper injury report"
     },
@@ -609,19 +629,6 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "A.J. Brown (WR, NE) listed Questionable",
-      "body": "Ankle -- Sprain",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        4047646
-      ],
-      "athlete_names": [
-        "A.J. Brown"
-      ],
-      "source": "Sleeper injury report"
-    },
-    {
       "headline": "Gunner Olszewski (WR, NYG) listed IR",
       "body": "Achilles -- Surgery",
       "published": null,
@@ -670,6 +677,19 @@
       ],
       "athlete_names": [
         "Mack Hollins"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
+      "headline": "Marquise Brown (WR, PHI) listed Out",
+      "body": "Coach's Decision",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        4241372
+      ],
+      "athlete_names": [
+        "Marquise Brown"
       ],
       "source": "Sleeper injury report"
     },
@@ -882,7 +902,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Tyler Higbee (TE, LAR) is the hot add -- 358,074 pickups in 24h",
+      "headline": "Tyler Higbee (TE, LAR) is the hot add -- 792,099 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -895,20 +915,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Josh Jacobs (RB, GB) is the hot add -- 121,365 pickups in 24h",
-      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        4047365
-      ],
-      "athlete_names": [
-        "Josh Jacobs"
-      ],
-      "source": "Sleeper trending"
-    },
-    {
-      "headline": "Kirk Cousins (QB, LV) is the hot add -- 113,872 pickups in 24h",
+      "headline": "Kirk Cousins (QB, LV) is the hot add -- 159,984 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -921,7 +928,20 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Keenan Allen (WR, IND) is the hot add -- 69,760 pickups in 24h",
+      "headline": "Darren Waller (TE, CAR) is the hot add -- 136,719 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        2576925
+      ],
+      "athlete_names": [
+        "Darren Waller"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Keenan Allen (WR, IND) is the hot add -- 112,848 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -934,33 +954,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Aaron Rodgers (QB, PIT) is the hot add -- 63,744 pickups in 24h",
-      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        8439
-      ],
-      "athlete_names": [
-        "Aaron Rodgers"
-      ],
-      "source": "Sleeper trending"
-    },
-    {
-      "headline": "Brandin Cooks (WR, SF) is the hot add -- 58,092 pickups in 24h",
-      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        16731
-      ],
-      "athlete_names": [
-        "Brandin Cooks"
-      ],
-      "source": "Sleeper trending"
-    },
-    {
-      "headline": "Austin Ekeler (RB, WAS) is the hot add -- 51,564 pickups in 24h",
+      "headline": "Austin Ekeler (RB, WAS) is the hot add -- 107,496 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -973,15 +967,28 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Darren Waller (TE, CAR) is the hot add -- 42,435 pickups in 24h",
+      "headline": "Brandin Cooks (WR, SF) is the hot add -- 93,604 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
       "espn_athlete_ids": [
-        2576925
+        16731
       ],
       "athlete_names": [
-        "Darren Waller"
+        "Brandin Cooks"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Aaron Rodgers (QB, PIT) is the hot add -- 88,796 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        8439
+      ],
+      "athlete_names": [
+        "Aaron Rodgers"
       ],
       "source": "Sleeper trending"
     }
