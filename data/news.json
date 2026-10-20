@@ -1,10 +1,198 @@
 {
-  "fetched_at": "2026-10-19T18:45:03+00:00",
+  "fetched_at": "2026-10-20T01:54:46+00:00",
   "items": [
     {
-      "headline": "Jalen Hurts' blood clot diagnosis explained",
-      "body": "ESPN spoke with a medical professional for a better understanding of causes, treatments, and outlook for those with blood clots.",
-      "published": "2026-10-19T18:38:43Z",
+      "headline": "Commanders' Terry McLaurin carted off field with knee injury, ruled out for MNF",
+      "body": "Commanders wide receiver Terry McLaurin was carted off the field with his left leg in an air cast after injuring his knee in the first quarter of Monday night's game against the 49ers.",
+      "published": "2026-10-20T01:32:35Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50222846/commanders-terry-mclaurin-carted-knee-injury-ruled-mnf-vs-49ers",
+      "espn_athlete_ids": [
+        379936
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Stephen Jones says Brian Schottenheimer has full support of Cowboys' ownership",
+      "body": "Brian Schottenheimer has the full support of Cowboys ownership, Stephen Jones said Monday on 105.3 The Fan in Dallas.",
+      "published": "2026-10-20T00:19:07Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50222284/brian-schottenheimer-full-support-cowboys-ownership",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "49ers WR Mike Evans reps Bay Area with Curry jersey, leads NFL Week 6's arrivals",
+      "body": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
+      "published": "2026-10-19T23:19:59Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50193542/nfl-week-6-fashionable-arrivals",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Packers' Josh Jacobs to practice Wednesday, may play Sunday",
+      "body": "Running back Josh Jacobs missed Green Bay's first six games while on the NFL's commissioner exempt list.",
+      "published": "2026-10-20T01:18:35Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50221818/packers-josh-jacobs-practice-wednesday-play-sunday",
+      "espn_athlete_ids": [
+        379791
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Dan Orlovsky: Rams have to add another WR after losing Davante Adams",
+      "body": "Dan Orlovsky: Rams have to add another WR after losing Davante Adams",
+      "published": "2026-10-19T21:41:35Z",
+      "url": "https://www.espn.com/video/clip/_/id/50221678/rams-add-another-wr-losing-davante-adams",
+      "espn_athlete_ids": [
+        126492
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Rams suffer several major injuries, including to WR Adams, who's out 6-10 weeks",
+      "body": "Rams wideout Davante Adams ruptured a hamstring in Sunday's loss to the Cardinals, and he will be sidelined for six to 10 weeks, coach Sean McVay announced.",
+      "published": "2026-10-19T23:53:56Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50221426/rams-lose-star-wr-davante-adams-6-10-weeks-mcvay-says",
+      "espn_athlete_ids": [
+        126492,
+        185122,
+        225307,
+        221789
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Patriots place WR Romeo Doubs (shoulder) on IR",
+      "body": "The Patriots have placed Romeo Doubs on IR.",
+      "published": "2026-10-20T00:36:36Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50221307/patriots-place-romeo-doubs-shoulder-ir",
+      "espn_athlete_ids": [
+        530093
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "John Harbaugh: Giants 'honing in on' QB decision for Sunday vs. Texans",
+      "body": "The Giants are \"honing in on\" a decision on who will start at quarterback for Sunday's game against the Texans, coach John Harbaugh said Monday.",
+      "published": "2026-10-19T21:23:58Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50221241/john-harbaugh-giants-honing-qb-decision-week-7",
+      "espn_athlete_ids": [
+        493077,
+        138777
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Commanders place starting RB Jacory Croskey-Merritt (groin) on IR",
+      "body": "The Washington Commanders placed running back Jacory Croskey-Merritt on injured reserve, sidelining their starting back for at least four games.",
+      "published": "2026-10-19T20:50:47Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50221053/commanders-place-rb-jacory-croskey-merritt-groin-ir",
+      "espn_athlete_ids": [
+        398613,
+        440162
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Texans WR Tank Dell to play Sunday in 1st game since major 2024 knee injury",
+      "body": "Texans wide receiver Tank Dell will return to the field against the New York Giants on Sunday after a 22-month hiatus.",
+      "published": "2026-10-19T20:29:26Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50220990/texans-tank-dell-play-sunday-1st-game-knee-injury",
+      "espn_athlete_ids": [
+        213606
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "DeMeco Ryans can't wait to see Tank Dell back on the field",
+      "body": "DeMeco Ryans can't wait to see Tank Dell back on the field",
+      "published": "2026-10-19T20:06:45Z",
+      "url": "https://www.espn.com/video/clip/_/id/50220871/demeco-ryans-wait-see-tank-dell-back-field",
+      "espn_athlete_ids": [
+        213606
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Rams place kicker Blake Grupe on IR due to knee injury",
+      "body": "The Rams have placed kicker Blake Grupe on injured reserve after he injured his right knee in the team's Week 6 loss to the Cardinals.",
+      "published": "2026-10-19T21:18:20Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50220866/rams-place-kicker-blake-grupe-ir-due-knee-injury",
+      "espn_athlete_ids": [
+        221789
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Colts to stick with Daniel Jones at quarterback vs. Vikings",
+      "body": "Daniel Jones will remain the Indianapolis Colts' starting quarterback when they travel to play the Minnesota Vikings in Week 7, coach Shane Steichen said.",
+      "published": "2026-10-19T20:12:07Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50220744/colts-stick-daniel-jones-quarterback-vs-vikings",
+      "espn_athlete_ids": [
+        379778
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "NFL suspends Bills' C.J. Gardner-Johnson for one game for spitting",
+      "body": "The NFL has suspended Bills safety C.J. Gardner-Johnson for one game after cameras captured him spitting toward Raiders players on Sunday.",
+      "published": "2026-10-19T19:50:20Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50220546/nfl-suspends-cj-gardner-johnson-one-game-spitting",
+      "espn_athlete_ids": [
+        380148,
+        489617,
+        529396
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Eagles QB Jalen Hurts' blood clot diagnosis explained",
+      "body": "ESPN spoke with a medical professional for a better understanding of causes, treatments and outlook for those with blood clots.",
+      "published": "2026-10-19T19:50:20Z",
       "url": "https://www.espn.com/nfl/story/_/id/50219637/jalen-hurts-eagles-blood-clot",
       "espn_athlete_ids": [
         435090
@@ -17,10 +205,23 @@
     {
       "headline": "Can the Saints carry their winning momentum into Paris?",
       "body": "After New Orleans snapped its three-game losing streak, the team's focus quickly turns to Week 7 in France.",
-      "published": "2026-10-19T18:26:22Z",
+      "published": "2026-10-19T18:56:13Z",
       "url": "https://www.espn.com/nfl/story/_/id/50220069/can-new-orleans-saints-carry-winning-momentum-paris",
       "espn_athlete_ids": [
         209237
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "How swimming fueled Fred Warner's rehab",
+      "body": "How swimming fueled Fred Warner's rehab",
+      "published": "2026-10-19T23:28:17Z",
+      "url": "https://www.espn.com/video/clip/_/id/50220090/how-swimming-fueled-fred-warner-rehab",
+      "espn_athlete_ids": [
+        184670
       ],
       "athlete_names": [
         null
@@ -45,7 +246,7 @@
     {
       "headline": "What does firing GM Ballard mean for Colts coach Steichen?",
       "body": "Carlie Irsay-Gordon made a big change Monday, but is it the first of many as the trade deadline nears?",
-      "published": "2026-10-19T18:43:32Z",
+      "published": "2026-10-19T20:10:33Z",
       "url": "https://www.espn.com/nfl/story/_/id/50218623/colts-fire-gm-chris-ballard-shane-steichen",
       "espn_athlete_ids": [
         379778
@@ -225,7 +426,7 @@
     {
       "headline": "Jalen Hurts expected to miss season after blood clots discovered in QB's lungs",
       "body": "Eagles QB Jalen Hurts is expected to miss the rest of the season after doctors discovered multiple blood clots in his lungs, according to NFL Network and ESPN.",
-      "published": "2026-10-19T17:23:03Z",
+      "published": "2026-10-19T22:29:24Z",
       "url": "https://www.espn.com/nfl/story/_/id/50218378/eagles-jalen-hurts-season-due-blood-clots-lungs",
       "espn_athlete_ids": [
         435090
@@ -280,7 +481,7 @@
     {
       "headline": "Colts fire GM Chris Ballard after home loss to Titans, cite 'necessary' change",
       "body": "The Colts fired GM Chris Ballard one day after losing to the previously winless Titans. Owner Carlie Irsay-Gordon said \"a change in leadership is necessary.\"",
-      "published": "2026-10-19T18:09:59Z",
+      "published": "2026-10-19T19:45:41Z",
       "url": "https://www.espn.com/nfl/story/_/id/50218030/colts-fire-gm-chris-ballard-home-loss-titans",
       "espn_athlete_ids": [
         529382
@@ -401,197 +602,6 @@
       "source": "ESPN"
     },
     {
-      "headline": "2027 NFL draft order projections for Round 1, chances for top pick, more",
-      "body": "ESPN's Football Power Index projects the 2027 NFL draft order for Round 1, complete with each team's chances to pick in the top five, in the top 10 and at No. 1.",
-      "published": "2026-10-19T10:00:01Z",
-      "url": "https://www.espn.com/nfl/draft2027/story/_/id/49794361/2027-nfl-draft-order-projections-first-round-picks",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "How 49ers QB Brock Purdy mastered the art of layering passes over defenders",
-      "body": "Purdy is terrific at layering the football -- fitting it perfectly between the second and third levels of the defense. And it's a big reason why he's playing at an MVP level this season.",
-      "published": "2026-10-19T18:09:56Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50189530/san-francisco-49ers-brock-purdy-layering-football",
-      "espn_athlete_ids": [
-        529915
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "2026 NFL playoff picture: AFC, NFC seed projections, chances to make postseason",
-      "body": "We're looking ahead to how the 14-team playoff picture could line up -- and who will win divisions -- en route to the Super Bowl.",
-      "published": "2026-10-19T10:00:00Z",
-      "url": "https://www.espn.com/nfl/story/_/id/49745176/2026-nfl-playoff-predictions-afc-nfc-odds-super-bowl",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Brian Schottenheimer: Cowboys offense 'a little bit one-sided,' needs balance",
-      "body": "A talent-rich offense that is completely healthy has scored only 29 points in the past two games, leaving the Cowboys searching for answers everywhere.",
-      "published": "2026-10-19T07:35:12Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50216409/cowboys-left-searching-answers-offense-woeful-showing-vs-packers",
-      "espn_athlete_ids": [
-        153118
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "NFL Week 6: Big takeaways, questions and fantasy spin from Sunday's games",
-      "body": "Our NFL Nation reporters react to all the action, answering the biggest questions coming out of each Sunday game. Here's what we learned from Week 6.",
-      "published": "2026-10-19T04:46:54Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50181469/week-6-sunday-games-takeaways-questions-2026",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Week 6 NFL highlights: Best plays, moments, touchdowns, more",
-      "body": "Here's a look at the best plays from Sunday's NFL action in Week 6.",
-      "published": "2026-10-19T04:17:26Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50209856/week-6-nfl-highlights-best-plays-moments-touchdowns",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Jordan Love, Green Bay's defense lead the way in Packers' 23-13 victory over Cowboys",
-      "body": "\u2014 Green Bay Packers quarterback Jordan Love didn\u2019t bother wondering what might have been.",
-      "published": "2026-10-19T05:28:28Z",
-      "url": "http://www.espn.com/nfl/recap?gameId=401873007",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Packers use timely turnovers, third-down conversions to beat struggling Cowboys",
-      "body": "The Packers used timely third-down conversions and a few big defensive plays to topple a scuffling Cowboys squad.",
-      "published": "2026-10-19T04:22:04Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50190741/packers-beat-cowboys-sunday-night-football-jordan-love",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Packers dismantle Cowboys on SNF",
-      "body": "Packers dismantle Cowboys on SNF ",
-      "published": "2026-10-19T03:47:01Z",
-      "url": "https://www.espn.com/video/clip/_/id/50216129/packers-dismantle-cowboys-snf",
-      "espn_athlete_ids": [
-        435036,
-        393981,
-        607733,
-        153118
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Sunday's top plays from around the NFL",
-      "body": "Sunday's top plays from around the NFL",
-      "published": "2026-10-19T03:18:48Z",
-      "url": "https://www.espn.com/video/clip/_/id/50216041/sunday-top-plays-nfl",
-      "espn_athlete_ids": [
-        184455,
-        390659,
-        155378,
-        230164,
-        201531,
-        493594
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Harbaugh: Chargers 'not scoring enough points'",
-      "body": "Harbaugh: Chargers 'not scoring enough points'",
-      "published": "2026-10-19T03:11:17Z",
-      "url": "https://www.espn.com/video/clip/_/id/50216006/chargers-not-scoring-enough-points",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Chiefs' Patrick Mahomes earns 100th win in 131st start, tying Tom Brady",
-      "body": "Quarterback Patrick Mahomes earned his 100th win with the Chiefs in his 131st regular-season start Sunday, tying Tom Brady for the fewest games needed to reach 100 career wins.",
-      "published": "2026-10-19T03:38:02Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50215969/chiefs-patrick-mahomes-ties-tom-brady-fastest-100-career-wins",
-      "espn_athlete_ids": [
-        166867
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Kicker Chad Ryland accounts for all of Cardinals' points in upset of Rams",
-      "body": "Chad Ryland kicked six field goals, including a game-winning 43-yarder as time expired, to lift Arizona to an 18-16 win over the Rams.",
-      "published": "2026-10-19T03:24:40Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50215919/cardinals-chad-ryland-kicks-6-fgs-18-points-vs-rams",
-      "espn_athlete_ids": [
-        201531
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Harbaugh mum on McDaniel, says Chargers need 'to address everything'",
-      "body": "Jim Harbaugh said his Chargers will \"have to address everything, and especially offensively\" after another dismal performance in a 22-6 loss to the Chiefs.",
-      "published": "2026-10-19T03:47:51Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50215829/harbaugh-mum-mcdaniel-chargers-need-address-everything",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Judging overreactions to NFL Week 6: Regretting Daniel Jones, A.J. Brown deals?",
-      "body": "Did the Colts severely misfire by re-signing Jones? What about the Patriots with the A.J. Brown trade? We're judging overreactions to Sunday's games.",
-      "published": "2026-10-19T03:00:12Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50211304/week-6-overreactions-2026-graziano-aj-brown-jones-rams",
-      "espn_athlete_ids": [
-        549664,
-        435043,
-        450385,
-        209614,
-        470099,
-        605760,
-        537402
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
       "headline": "T.J. Hockenson (TE, MIN) listed Out",
       "body": "Concussion",
       "published": null,
@@ -670,15 +680,15 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Jeremy McNichols (RB, WAS) listed IR",
-      "body": "Quadriceps",
+      "headline": "Davante Adams (WR, LAR) listed Out",
+      "body": "Knee -- Ruptured",
       "published": null,
       "url": null,
       "espn_athlete_ids": [
-        3127586
+        16800
       ],
       "athlete_names": [
-        "Jeremy McNichols"
+        "Davante Adams"
       ],
       "source": "Sleeper injury report"
     },
@@ -731,6 +741,19 @@
       ],
       "athlete_names": [
         "Josh Oliver"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
+      "headline": "A.J. Brown (WR, NE) listed Questionable",
+      "body": "Ankle -- Sprain",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        4047646
+      ],
+      "athlete_names": [
+        "A.J. Brown"
       ],
       "source": "Sleeper injury report"
     },
@@ -835,6 +858,19 @@
       ],
       "athlete_names": [
         "David Montgomery"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
+      "headline": "Terry McLaurin (WR, WAS) listed Out",
+      "body": "Knee",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3121422
+      ],
+      "athlete_names": [
+        "Terry McLaurin"
       ],
       "source": "Sleeper injury report"
     },
@@ -1008,33 +1044,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Tyler Higbee (TE, LAR) is the hot add -- 111,555 pickups in 24h",
-      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        2573401
-      ],
-      "athlete_names": [
-        "Tyler Higbee"
-      ],
-      "source": "Sleeper trending"
-    },
-    {
-      "headline": "Brandin Cooks (WR, SF) is the hot add -- 99,304 pickups in 24h",
-      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        16731
-      ],
-      "athlete_names": [
-        "Brandin Cooks"
-      ],
-      "source": "Sleeper trending"
-    },
-    {
-      "headline": "Austin Ekeler (RB, WAS) is the hot add -- 61,848 pickups in 24h",
+      "headline": "Austin Ekeler (RB, WAS) is the hot add -- 93,028 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -1047,7 +1057,20 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Kirk Cousins (QB, LV) is the hot add -- 60,816 pickups in 24h",
+      "headline": "Kyler Murray (QB, MIN) is the hot add -- 65,992 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3917315
+      ],
+      "athlete_names": [
+        "Kyler Murray"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Kirk Cousins (QB, LV) is the hot add -- 63,656 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -1056,6 +1079,19 @@
       ],
       "athlete_names": [
         "Kirk Cousins"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Brandin Cooks (WR, SF) is the hot add -- 54,116 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        16731
+      ],
+      "athlete_names": [
+        "Brandin Cooks"
       ],
       "source": "Sleeper trending"
     }
