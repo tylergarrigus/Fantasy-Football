@@ -30,6 +30,15 @@ FAIRNESS_FLOOR = 0.7
 # both sides have ADP, the offer must be worth MARKET_FLOOR of what is asked
 # on a standard draft-value curve (value halves roughly every 28 picks).
 MARKET_FLOOR = 0.85
+# Stars are worth more than the sum of their parts: nobody hands over a
+# first-rounder for two second-rounders. Raising each name's value to this
+# power before adding makes the side getting the best player pay for it.
+STAR_POWER = 1.5
+# A throw-in worth less than this share of the best player asked for is a
+# roster spot the other manager has to clear, not a sweetener.
+FILLER_SHARE = 0.15
+# Nobody trades for a kicker or a defense; they come off waivers.
+NOT_TRADED = ("K", "D/ST")
 
 
 def market_value(p: dict) -> float:
@@ -39,13 +48,18 @@ def market_value(p: dict) -> float:
 
 
 def _looks_fair(send, receive) -> bool:
+    if any(p.get("position") in NOT_TRADED for p in list(send) + list(receive)):
+        return False
     asked = sum(p.get("projected") or 0 for p in receive)
     offered = sum(p.get("projected") or 0 for p in send)
     if asked > 0 and offered / asked < FAIRNESS_FLOOR:
         return False
     if all(p.get("adp") for p in list(send) + list(receive)):
-        m_ask = sum(market_value(p) for p in receive)
-        m_off = sum(market_value(p) for p in send)
+        top_ask = max(market_value(p) for p in receive)
+        if len(send) > 1 and min(market_value(p) for p in send) < FILLER_SHARE * top_ask:
+            return False
+        m_ask = sum(market_value(p) ** STAR_POWER for p in receive)
+        m_off = sum(market_value(p) ** STAR_POWER for p in send)
         return m_ask <= 0 or m_off / m_ask >= MARKET_FLOOR
     return True
 
