@@ -1,6 +1,369 @@
 {
-  "fetched_at": "2026-10-21T01:41:38+00:00",
+  "fetched_at": "2026-10-21T17:18:34+00:00",
   "items": [
+    {
+      "headline": "Goodell says NFL welcomes investigation into Eagles QB Hurts' medical care",
+      "body": "NFL commissioner Roger Goodell said Wednesday that the league welcomes an investigation into the Eagles' handling of Jalen Hurts' blood clots.",
+      "published": "2026-10-21T17:13:43Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50239029/roger-goodell-nfl-welcomes-probe-hurts-medical-care",
+      "espn_athlete_ids": [
+        435090
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Jordan Rodgers: J.J. McCarthy gives Giants the best opportunity to win",
+      "body": "Jordan Rodgers: J.J. McCarthy gives Giants the best opportunity to win",
+      "published": "2026-10-21T16:47:04Z",
+      "url": "https://www.espn.com/video/clip/_/id/50239027/jj-mccarthy-gives-giants-best-opportunity-win",
+      "espn_athlete_ids": [
+        493077
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Why the Bills have been historically good, and bad, through six weeks",
+      "body": "As Buffalo heads into its Week 7 bye, quarterback Josh Allen and the offense have thrived, while the defense has not.",
+      "published": "2026-10-21T16:43:11Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50230871/bills-qb-josh-allen-good-bad-bye",
+      "espn_athlete_ids": [
+        184455,
+        470133,
+        529581
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Daniel Dopp: Isaiah Likely can be started with confidence week in and week out",
+      "body": "Daniel Dopp: Isaiah Likely can be started with confidence week in and week out",
+      "published": "2026-10-21T16:00:58Z",
+      "url": "https://www.espn.com/video/clip/_/id/50238754/isaiah-likely-started-confidence-week-week-out",
+      "espn_athlete_ids": [
+        529999
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Source: Giants turning to J.J. McCarthy as QB1 this week against Texans",
+      "body": "The Giants plan to start J.J. McCarthy at quarterback this week against the Houston Texans, a source told ESPN's Jeremy Fowler on Wednesday.",
+      "published": "2026-10-21T16:48:42Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50238746/giants-start-jj-mccarthy-qb-week",
+      "espn_athlete_ids": [
+        493077
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Daniel Dopp: Jared Goff locked in as a top-10 fantasy QB in Week 7",
+      "body": "Daniel Dopp: Jared Goff locked in as a top-10 fantasy QB in Week 7",
+      "published": "2026-10-21T15:53:59Z",
+      "url": "https://www.espn.com/video/clip/_/id/50238711/jared-goff-locked-top-10-fantasy-qb-week-7",
+      "espn_athlete_ids": [
+        152836
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Daniel Dopp confident in Jonathan Taylor despite tough matchup in Week 7",
+      "body": "Daniel Dopp confident in Jonathan Taylor despite tough matchup in Week 7",
+      "published": "2026-10-21T15:46:19Z",
+      "url": "https://www.espn.com/video/clip/_/id/50238538/daniel-dopp-confident-jonathan-taylor-tough-matchup-week-7",
+      "espn_athlete_ids": [
+        435130
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Are the Bears genuine Super Bowl contenders?",
+      "body": "Are the Bears genuine Super Bowl contenders?",
+      "published": "2026-10-21T15:47:11Z",
+      "url": "https://www.espn.com/video/clip/_/id/50238528/are-bears-genuine-super-bowl-contenders",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Titans' Robert Saleh defends Jordan Elliott: Gun incident was not 'criminal act'",
+      "body": "Titans coach Robert Saleh defended Jordan Elliott's character and said that last week's gun-related incident was \"a call for help more than a criminal act.\"",
+      "published": "2026-10-21T17:10:41Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50238315/source-jordan-elliott-attempted-retrieve-gun-car",
+      "espn_athlete_ids": [
+        435098
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Dopp, Clay face off on Nabers vs. Lamb as a better fantasy option in Week 7",
+      "body": "Dopp, Clay face off on Nabers vs. Lamb as a better fantasy option in Week 7",
+      "published": "2026-10-21T15:15:49Z",
+      "url": "https://www.espn.com/video/clip/_/id/50238190/dopp-clay-face-nabers-vs-lamb-better-fantasy-option-week-7",
+      "espn_athlete_ids": [
+        489486,
+        435005
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Is Jonathan Taylor or Javonte Williams a better fantasy play in Week 7?",
+      "body": "Is Jonathan Taylor or Javonte Williams a better fantasy play in Week 7?",
+      "published": "2026-10-21T15:09:16Z",
+      "url": "https://www.espn.com/video/clip/_/id/50238185/is-jonathan-taylor-javonte-williams-better-fantasy-play-week-7",
+      "espn_athlete_ids": [
+        470208,
+        435130
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Jared Goff vs. C.J. Stroud: Dopp and Clay debate the QBs for Week 7",
+      "body": "Jared Goff vs. C.J. Stroud: Dopp and Clay debate the QBs for Week 7 ",
+      "published": "2026-10-21T15:11:25Z",
+      "url": "https://www.espn.com/video/clip/_/id/50238160/dopp-clay-debate-qbs-week-7",
+      "espn_athlete_ids": [
+        152836,
+        438608
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "The frustration around Harold Fannin Jr. for fantasy managers",
+      "body": "The frustration around Harold Fannin Jr. for fantasy managers",
+      "published": "2026-10-21T15:17:09Z",
+      "url": "https://www.espn.com/video/clip/_/id/50238075/the-frustration-harold-fannin-jr-fantasy-managers",
+      "espn_athlete_ids": [
+        539790
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Should managers put Josh Jacobs right in their starting lineups in Week 7?",
+      "body": "Should managers put Josh Jacobs right in their starting lineups in Week 7?",
+      "published": "2026-10-21T15:16:33Z",
+      "url": "https://www.espn.com/video/clip/_/id/50238040/should-managers-put-josh-jacobs-right-their-starting-lineups-week-7",
+      "espn_athlete_ids": [
+        379791
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Saints GM Mickey Loomis asks for patience with 'young developing team'",
+      "body": "Saints general manager Mickey Loomis said he understands the recent criticism from owner Gayle Benson but asked for patience with what he called a \"young developing team.\"",
+      "published": "2026-10-21T15:09:26Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50237982/saints-gm-loomis-asks-patience-young-developing-team",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Stephen A. demands Howie Roseman answer for Jalen Hurts medical controversy",
+      "body": "Stephen A. demands Howie Roseman answer for Jalen Hurts medical controversy",
+      "published": "2026-10-21T15:13:25Z",
+      "url": "https://www.espn.com/video/clip/_/id/50237981/stephen-demands-howie-roseman-answer-jalen-hurts-medical-controversy",
+      "espn_athlete_ids": [
+        435090
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Is Matthew Stafford a locked-in top-10 fantasy QB?",
+      "body": "Is Matthew Stafford a locked-in top-10 fantasy QB?",
+      "published": "2026-10-21T15:26:05Z",
+      "url": "https://www.espn.com/video/clip/_/id/50237936/is-matthew-stafford-locked-top-10-fantasy-qb",
+      "espn_athlete_ids": [
+        392016,
+        63003
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Mike Clay lays out his Rhamondre Stevenson concerns in Week 7",
+      "body": "Mike Clay lays out his Rhamondre Stevenson concerns in Week 7",
+      "published": "2026-10-21T15:11:26Z",
+      "url": "https://www.espn.com/video/clip/_/id/50237926/mike-clay-lays-rhamondre-stevenson-concerns-week-7",
+      "espn_athlete_ids": [
+        470372
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Bills' Sam Franklin Jr. suspended one game for spitting; will appeal, per sources",
+      "body": "Bills defensive back Sam Franklin Jr. was suspended one game for unsportsmanlike conduct that the league said was a spitting incident against the Raiders.",
+      "published": "2026-10-21T16:48:17Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50237503/bills-sam-franklin-suspended-spitting-appeal",
+      "espn_athlete_ids": [
+        436154
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Patrick Mahomes' Week 7 fantasy outlook",
+      "body": "Patrick Mahomes' Week 7 fantasy outlook",
+      "published": "2026-10-21T13:37:35Z",
+      "url": "https://www.espn.com/video/clip/_/id/50237399/patrick-mahomes-week-7-fantasy-outlook",
+      "espn_athlete_ids": [
+        166867
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Dameon Pierce's Week 7 fantasy outlook",
+      "body": "Dameon Pierce's Week 7 fantasy outlook",
+      "published": "2026-10-21T13:02:37Z",
+      "url": "https://www.espn.com/video/clip/_/id/50237131/dameon-pierce-week-7-fantasy-outlook",
+      "espn_athlete_ids": [
+        529703
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Jeff Saturday applauds NFLPA calling for investigation into Jalen Hurts' medical care",
+      "body": "Jeff Saturday applauds NFLPA calling for investigation into Jalen Hurts' medical care",
+      "published": "2026-10-21T13:02:04Z",
+      "url": "https://www.espn.com/video/clip/_/id/50236926/jeff-saturday-applauds-nflpa-calling-investigation-jalen-hurts-medical-care",
+      "espn_athlete_ids": [
+        435090,
+        2963
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Facts vs. Feelings: Should you start Josh Jacobs and other Week 7 lineup questions",
+      "body": "Josh Jacobs' return, emerging top-10 quarterbacks, two start 'em wide receivers and some tight end advice highlight how Liz Loza feels about some Week 7 fantasy football lineup options.",
+      "published": "2026-10-21T15:18:17Z",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/50236847/facts-vs-feelings-fantasy-advice-week-7",
+      "espn_athlete_ids": [
+        438608,
+        379780,
+        379791,
+        449123,
+        529388,
+        184685,
+        446693
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "NFL Week 7 latest intel, buzz questions, news, fantasy tips: What we're hearing",
+      "body": "Will the Seahawks stick with Sam Darnold past this season? Could Vita Vea get trade interest? What's next for the NFC East teams? And could the Colts make more changes?",
+      "published": "2026-10-21T16:06:52Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50228657/week-7-buzz-fantasy-predictions-graziano-fowler-2026",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "2027 NFL mock draft: Yates' early predictions for top 10 picks, QB landing spots",
+      "body": "We're two months into the college football season, and Field Yates is projecting which prospects could go in the top 10 picks of the 2027 NFL draft -- including three QBs.",
+      "published": "2026-10-21T14:02:57Z",
+      "url": "https://www.espn.com/nfl/draft2027/story/_/id/50229467/2027-nfl-mock-draft-yates-top-10-picks-predictions-qbs",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Cowboys' season looks bleak but schedule offers some hope",
+      "body": "Cowboys players and coaches are focused on a stretch of games versus teams that are struggling just like them.",
+      "published": "2026-10-21T13:41:26Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50229188/dallas-cowboys-dak-prescott-season-looks-bleak",
+      "espn_athlete_ids": [
+        153118
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "The case for (and against) the Colts keeping Shane Steichen",
+      "body": "With GM Chris Ballard gone, can Steichen avoid following him out the door?",
+      "published": "2026-10-21T12:29:36Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50229437/colts-shane-steichen-daniel-jones-anthony-richardson",
+      "espn_athlete_ids": [
+        379778,
+        447022
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
     {
       "headline": "NFL chief medical officer: Eagles' approach to Hurts was 'appropriately guarded'",
       "body": "At the owners meetings Tuesday in New York, NFL officials staunchly defended the process involving Philadelphia Eagles quarterback Jalen Hurts and his blood clot issue, with chief medical officer Allen Sills addressing reporters in a media availability.",
@@ -17,7 +380,7 @@
     {
       "headline": "Steelers bring back veteran Marquez Valdes-Scantling amid receiver injury woes",
       "body": "The Steelers, in need of help at wide receiver with Michael Pittman Jr. and Roman Wilson out because of injuries, signed veteran Marquez Valdes-Scantling on Tuesday.",
-      "published": "2026-10-20T22:49:56Z",
+      "published": "2026-10-21T10:34:25Z",
       "url": "https://www.espn.com/nfl/story/_/id/50232379/steelers-bring-back-marquez-valdes-scantling-amid-wr-injuries",
       "espn_athlete_ids": [
         185152
@@ -52,7 +415,7 @@
     {
       "headline": "Sources: Rams signing free agent kicker Brandon McManus",
       "body": "The Rams, after releasing Harrison Mevis and an injury to Blake Grupe, are signing free agent kicker Brandon McManus, sources told NFL Network.",
-      "published": "2026-10-20T21:17:52Z",
+      "published": "2026-10-21T10:28:49Z",
       "url": "https://www.espn.com/nfl/story/_/id/50231705/sources-rams-signing-free-agent-kicker-brandon-mcmanus",
       "espn_athlete_ids": [
         116071,
@@ -168,246 +531,6 @@
       "source": "ESPN"
     },
     {
-      "headline": "Dolphins release Riley Patterson after Week 5 problems defending kickoffs",
-      "body": "The Dolphins released kicker Riley Patterson in a move aimed to improve one of the NFL's worst special teams units.",
-      "published": "2026-10-20T18:11:46Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50229491/sources-dolphins-release-riley-patterson-amid-kickoff-woes",
-      "espn_athlete_ids": [
-        470679
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Expected fantasy points (xFP): 2026 leaderboard for TEs",
-      "body": "xFP focuses solely on opportunity. Here are the leaders for 2026.",
-      "published": "2026-10-20T17:15:51Z",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/49869668/2026-fantasy-football-expected-fantasy-points-xfp-te",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Expected fantasy points (xFP): 2026 leaderboard for WRs",
-      "body": "xFP focuses solely on opportunity. Here are the leaders for 2026.",
-      "published": "2026-10-20T17:14:29Z",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/49869659/fantasy-football-2026-expected-fantasy-points-xfp-wr",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Expected fantasy points (xFP): 2026 leaderboard for RBs",
-      "body": "xFP focuses solely on opportunity. Here are the leaders for 2026.",
-      "published": "2026-10-20T17:12:32Z",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/49869631/2026-fantasy-football-expected-fantasy-points-xfp-rb",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Expected fantasy points (xFP): 2026 leaderboard for QBs",
-      "body": "xFP focuses solely on opportunity. Here are the leaders for 2026.",
-      "published": "2026-10-20T17:09:10Z",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/49869566/2026-fantasy-football-expected-fantasy-points-xfp-qb",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "NFL expected touchdown (xTD) leaderboard for 2026",
-      "body": "Opportunity-adjusted TD leaders tell you not only who's scoring but who's getting the opportunities to score.",
-      "published": "2026-10-20T17:06:52Z",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/49869194/2026-fantasy-football-rankings-nfl-expected-td-opportunity-xtd",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "2026 NFL playoff picture: AFC, NFC seed projections, chances to make postseason",
-      "body": "We're looking ahead to how the 14-team playoff picture could line up -- and who will win divisions -- en route to the Super Bowl.",
-      "published": "2026-10-20T16:48:51Z",
-      "url": "https://www.espn.com/nfl/story/_/id/49745176/2026-nfl-playoff-predictions-afc-nfc-odds-super-bowl",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "What's the fantasy fallout from Najee Harris' release?",
-      "body": "What's the fantasy fallout from Najee Harris' release?",
-      "published": "2026-10-20T16:15:32Z",
-      "url": "https://www.espn.com/video/clip/_/id/50229101/fantasy-fallout-najee-harris-release",
-      "espn_athlete_ids": [
-        450385,
-        379992,
-        470099,
-        209614
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "How Dopp is looking to handle DeVonta Smith trade negotiations",
-      "body": "How Dopp is looking to handle DeVonta Smith trade negotiations",
-      "published": "2026-10-20T16:09:28Z",
-      "url": "https://www.espn.com/video/clip/_/id/50229069/how-dopp-looking-handle-devonta-smith-trade-negotiations",
-      "espn_athlete_ids": [
-        470127
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Stephen A.: 'Cowboys defense has been horrid from start to finish'",
-      "body": "Stephen A.: 'Cowboys defense has been horrid from start to finish'",
-      "published": "2026-10-20T16:08:26Z",
-      "url": "https://www.espn.com/video/clip/_/id/50228984/cowboys-defense-horrid-start-finish",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Should fantasy managers stash Jordyn Tyson on their rosters?",
-      "body": "Should fantasy managers stash Jordyn Tyson on their rosters?",
-      "published": "2026-10-20T15:59:03Z",
-      "url": "https://www.espn.com/video/clip/_/id/50228983/should-fantasy-managers-stash-jordyn-tyson-their-rosters",
-      "espn_athlete_ids": [
-        539343
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Stephen A. calls out Sean McVay amid disappointing Rams season",
-      "body": "Stephen A. calls out Sean McVay amid disappointing Rams season",
-      "published": "2026-10-20T16:09:01Z",
-      "url": "https://www.espn.com/video/clip/_/id/50228756/stephen-calls-sean-mcvay-amid-disappointing-rams-season",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Giants release RB Najee Harris 2 days after start",
-      "body": "The Giants are releasing running back Najee Harris. Harris started Sunday's loss against the Saints but had just 2 yards on four carries.",
-      "published": "2026-10-20T23:26:40Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50228752/giants-releasing-rb-najee-harris-source-says",
-      "espn_athlete_ids": [
-        470099,
-        450385,
-        209614,
-        379992
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Why Clay is pessimistic about Omar Cooper Jr.'s fantasy prospects",
-      "body": "Why Clay is pessimistic about Omar Cooper Jr.'s fantasy prospects",
-      "published": "2026-10-20T15:38:33Z",
-      "url": "https://www.espn.com/video/clip/_/id/50228748/why-clay-pessimistic-omar-cooper-jr-fantasy-prospects",
-      "espn_athlete_ids": [
-        537402
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Titans abruptly release DT Jordan Elliott for undisclosed reasons",
-      "body": "The Titans abruptly released defensive tackle Jordan Elliott on Tuesday, citing an undisclosed \"incident\" from Thursday at the team's facility.",
-      "published": "2026-10-20T15:33:10Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50228692/titans-abruptly-release-dt-jordan-elliott-undisclosed-reasons",
-      "espn_athlete_ids": [
-        435098
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Stephen A.: 'It's over for Dan Quinn'",
-      "body": "Stephen A.: 'It's over for Dan Quinn'",
-      "published": "2026-10-20T16:11:56Z",
-      "url": "https://www.espn.com/video/clip/_/id/50228483/dan-quinn",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "NFL announces U2 will play in first Thanksgiving Eve halftime show",
-      "body": "The former Super Bowl halftime performers will join names like Beyonce who have headlined Netflix's holiday halftime shows.",
-      "published": "2026-10-20T14:46:17Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50228151/u2-thanksgiving-eve-packers-rams-half-show",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "What does Davante Adams' injury mean for other Rams pass catchers in fantasy?",
-      "body": "What does Davante Adams' injury mean for other Rams pass catchers in fantasy?",
-      "published": "2026-10-20T14:45:14Z",
-      "url": "https://www.espn.com/video/clip/_/id/50228440/what-does-davante-adams-injury-mean-other-rams-pass-catchers-fantasy",
-      "espn_athlete_ids": [
-        435572,
-        126492,
-        491517,
-        491805,
-        153146
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "'It's not a good look': Who's to blame for Commanders' game mismanagement?",
-      "body": "'It's not a good look': Who's to blame for Commanders' game mismanagement?",
-      "published": "2026-10-20T16:14:07Z",
-      "url": "https://www.espn.com/video/clip/_/id/50227953/blame-commanders-game-mismanagement",
-      "espn_athlete_ids": [
-        390109
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "T.J. Hockenson (TE, MIN) listed Out",
-      "body": "Concussion",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        4036133
-      ],
-      "athlete_names": [
-        "T.J. Hockenson"
-      ],
-      "source": "Sleeper injury report"
-    },
-    {
       "headline": "Jalen Hurts (QB, PHI) listed IR",
       "body": "Calf",
       "published": null,
@@ -447,20 +570,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Case Keenum (QB, CHI) listed Out",
-      "body": "Coach's Decision",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        15168
-      ],
-      "athlete_names": [
-        "Case Keenum"
-      ],
-      "source": "Sleeper injury report"
-    },
-    {
-      "headline": "Lamar Jackson (QB, BAL) listed Out",
+      "headline": "Lamar Jackson (QB, BAL) listed Questionable",
       "body": "Ankle -- Sprain",
       "published": null,
       "url": null,
@@ -499,7 +609,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Baker Mayfield (QB, TB) listed Out",
+      "headline": "Baker Mayfield (QB, TB) listed Questionable",
       "body": "Thumb -- Dislocated",
       "published": null,
       "url": null,
@@ -538,8 +648,8 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Mike Evans (WR, SF) listed Out",
-      "body": "Achilles",
+      "headline": "Mike Evans (WR, SF) listed Questionable",
+      "body": "Achilles -- Tendinitis",
       "published": null,
       "url": null,
       "espn_athlete_ids": [
@@ -577,19 +687,6 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Saquon Barkley (RB, PHI) listed Out",
-      "body": "Hamstring",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        3929630
-      ],
-      "athlete_names": [
-        "Saquon Barkley"
-      ],
-      "source": "Sleeper injury report"
-    },
-    {
       "headline": "DJ Moore (WR, BUF) listed Out",
       "body": "Shoulder - AC Joint -- Sprain",
       "published": null,
@@ -616,19 +713,6 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Marquise Brown (WR, PHI) listed Out",
-      "body": "Coach's Decision",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        4241372
-      ],
-      "athlete_names": [
-        "Marquise Brown"
-      ],
-      "source": "Sleeper injury report"
-    },
-    {
       "headline": "Reggie Gilliam (RB, NE) listed IR",
       "body": "Ankle",
       "published": null,
@@ -638,32 +722,6 @@
       ],
       "athlete_names": [
         "Reggie Gilliam"
-      ],
-      "source": "Sleeper injury report"
-    },
-    {
-      "headline": "Odell Beckham (WR, MIN) listed Out",
-      "body": "Coach's Decision",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        16733
-      ],
-      "athlete_names": [
-        "Odell Beckham"
-      ],
-      "source": "Sleeper injury report"
-    },
-    {
-      "headline": "David Montgomery (RB, HOU) listed Out",
-      "body": "Groin",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        4035538
-      ],
-      "athlete_names": [
-        "David Montgomery"
       ],
       "source": "Sleeper injury report"
     },
@@ -759,19 +817,6 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Josh Jacobs (RB, GB) listed NA",
-      "body": "Personal",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        4047365
-      ],
-      "athlete_names": [
-        "Josh Jacobs"
-      ],
-      "source": "Sleeper injury report"
-    },
-    {
       "headline": "Tom Kennedy (WR, DET) listed IR",
       "body": "Knee - MCL -- Surgery",
       "published": null,
@@ -824,33 +869,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Ashton Dulin (WR, IND) listed Out",
-      "body": "Hamstring",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        4061956
-      ],
-      "athlete_names": [
-        "Ashton Dulin"
-      ],
-      "source": "Sleeper injury report"
-    },
-    {
-      "headline": "AJ Dillon (RB, CAR) listed Out",
-      "body": "Ankle",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        4239934
-      ],
-      "athlete_names": [
-        "AJ Dillon"
-      ],
-      "source": "Sleeper injury report"
-    },
-    {
-      "headline": "Kyler Murray (QB, MIN) is the hot add -- 844,232 pickups in 24h",
+      "headline": "Kyler Murray (QB, MIN) is the hot add -- 739,024 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -863,7 +882,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Tyler Higbee (TE, LAR) is the hot add -- 171,693 pickups in 24h",
+      "headline": "Tyler Higbee (TE, LAR) is the hot add -- 373,824 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
