@@ -88,3 +88,21 @@ def test_plans_chain_steps_that_each_stand_alone():
         assert 2 <= len(plan.steps) <= 3
         assert all(s.their_gain >= 3 for s in plan.steps)
         assert len({s.partner_id for s in plan.steps}) == len(plan.steps)
+
+
+def _named(pos, proj, adp):
+    return {"player_id": f"{pos}{adp}", "position": pos, "projected": proj, "adp": adp}
+
+
+def test_a_star_costs_a_star_not_a_qb_plus_filler():
+    chase = _named("WR", 265, 6.1)
+    allen, dowdle, wilson = _named("QB", 251, 13.2), _named("RB", 76, 136.9), _named("WR", 200, 30.0)
+    assert not T._looks_fair([allen, dowdle], [chase])  # junk throw-in, no star premium
+    assert not T._looks_fair([allen], [chase])
+    assert T._looks_fair([allen, wilson], [chase])
+
+
+def test_kickers_and_defenses_are_never_traded():
+    wr = _named("WR", 200, 20.0)
+    assert not T._looks_fair([wr], [_named("K", 140, 150.0)])
+    assert not T._looks_fair([_named("D/ST", 90, 120.0), wr], [_named("WR", 210, 18.0)])
