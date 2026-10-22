@@ -1,10 +1,274 @@
 {
-  "fetched_at": "2026-10-21T17:18:34+00:00",
+  "fetched_at": "2026-10-22T01:36:51+00:00",
   "items": [
+    {
+      "headline": "Senators fans booing Tkachuk reminiscent of previous unpleasant sports returns",
+      "body": "Brady Tkachuk isn't the first notable sports figure to be met with jeers by fans of his prior team.",
+      "published": "2026-10-22T00:14:15Z",
+      "url": "https://www.espn.com/nhl/story/_/id/28118392/athletes-faced-wrath-jilted-fans",
+      "espn_athlete_ids": [
+        9385,
+        154358,
+        51682,
+        141078,
+        164828,
+        187435
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Bucs QB Jalon Daniels swaps jerseys with idol, Steelers QB Aaron Rodgers",
+      "body": "Following Pittsburgh's 26-19 overtime victory, Jalon Daniels left with a keepsake from his idol, Aaron Rodgers.",
+      "published": "2026-10-21T23:52:18Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50242155/bucs-jalon-daniels-jersey-idol-steelers-aaron-rodgers",
+      "espn_athlete_ids": [
+        440164,
+        17303
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Packers' Josh Jacobs says he is trying to learn from 'mistake,' move forward",
+      "body": "Josh Jacobs, in his first comments since his arrest in May following an incident with a woman at his home, said he is trying to move forward from the \"mistake.\"",
+      "published": "2026-10-22T00:55:35Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50242627/green-bay-packers-josh-jacobs-first-comments-arrest",
+      "espn_athlete_ids": [
+        379791
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Cornell Green, 5-time Pro Bowl DB on Cowboys' Doomsday Defense, dies at 86",
+      "body": "Cornell Green, who never missed a game in 13 seasons while playing for the Cowboys from 1962-74, died at age 86.",
+      "published": "2026-10-22T00:05:10Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50242602/cornell-green-five-pro-bowl-db-cowboys-dies-86",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Kansas City Chiefs WR Xavier Worthy thriving in expanded role as Seahawks loom",
+      "body": "The Chiefs will likely need similar improved play -- or even better -- from Worthy in Sunday's showdown vs. Seattle.",
+      "published": "2026-10-22T00:03:44Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50241533/chiefs-wr-xavier-worthy-expanded-role-offense",
+      "espn_athlete_ids": [
+        497669,
+        529522,
+        389698,
+        115523
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Broncos OLB Jonathon Cooper on absence due to arrests: 'No excuses'",
+      "body": "Broncos OLB Jonathon Cooper, now off the exempt list following two arrests on domestic violence charges in June, said he holds himself accountable.",
+      "published": "2026-10-22T00:14:12Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50242318/broncos-olb-cooper-absence-due-arrests-no-excuses",
+      "espn_athlete_ids": [
+        470690
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Texans' Tank Dell says he won't fear being hit in return Sunday against Giants",
+      "body": "Texans WR Tank Dell said he is \"ready to get tackled\" on Sunday when he returns for his first game since suffering a gruesome knee injury in December 2024.",
+      "published": "2026-10-21T23:17:11Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50242240/texans-tank-dell-fear-being-hit-sunday-giants",
+      "espn_athlete_ids": [
+        213606
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Ravens' Lamar Jackson returns to practice but status remains unclear vs. Bengals",
+      "body": "After practice, Jackson was favoring his injured left ankle, walking into the team facility with a noticeable limp.",
+      "published": "2026-10-21T20:54:38Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50241195/lamar-jackson-practice-unclear-vs-bengals-week-7",
+      "espn_athlete_ids": [
+        184545,
+        435677
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Panthers LB Jaelan Phillips (hamstring) set to miss Week 7 game vs. Bucs",
+      "body": "Panthers coach Dave Canales said the team is preparing to host the Buccaneers on Sunday without top outside linebacker Jaelan Phillips.",
+      "published": "2026-10-21T22:35:58Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50241322/panthers-jaelan-phillips-set-miss-week-7-game-vs-buccaneers-hamstring-injury",
+      "espn_athlete_ids": [
+        470097
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Bears RB Kyle Monangai (toe, thumb) out Thursday vs. Patriots",
+      "body": "The Bears have ruled RB Kyle Monangai out for Thursday night's matchup against the Patriots with lingering toe and thumb injuries.",
+      "published": "2026-10-21T20:07:47Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50240756/bears-rb-kyle-monangai-toe-thumb-thursday-vs-patriots",
+      "espn_athlete_ids": [
+        451602
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Chiefs mourn Allen Bailey after former NFL player found dead at age 37",
+      "body": "Allen Bailey, a former NFL player who spent the majority of his 10-year career with the Chiefs, has died at age 37.",
+      "published": "2026-10-21T19:19:34Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50240343/allen-bailey-former-nfl-player-found-dead-age-37",
+      "espn_athlete_ids": [
+        92610
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Raheem Morris is back in Atlanta -- and he's bringing his surging 49ers defense",
+      "body": "Raheem Morris is returning to Atlanta for the first time since being fired as head coach. And his tenure as the 49ers' defensive coordinator is off to an amazing start.",
+      "published": "2026-10-21T19:03:26Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50238009/san-francisco-49ers-raheem-morris-atlanta-falcons-return",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Patriots' Alijah Vera-Tucker, Ben Brown ruled out vs. Bears",
+      "body": "The Patriots will be without starting guards Alijah Vera-Tucker and Ben Brown for Thursday's game against the Bears due to injuries, coach Mike Vrabel said.",
+      "published": "2026-10-21T19:56:08Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50240235/patriots-alijah-vera-tucker-ben-brown-ruled-vs-bears",
+      "espn_athlete_ids": [
+        470117,
+        531129
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "It's Drake Maye versus Caleb Williams as the New England Patriots visit the Chicago Bears",
+      "body": "\u2014 Caleb Williams and Drake Maye have known each other for years. They were part of the same draft class, and they grew up going to the same football camps.",
+      "published": "2026-10-21T18:37:11Z",
+      "url": "http://www.espn.com/nfl/preview?gameId=401873010",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Sam LaPorta not feeling contract 'love' from Lions ahead of 2027 free agency",
+      "body": "Tight end Sam LaPorta, who will be a free agent after the season, expressed some frustration that the Lions are \"not showing the love\" and indicated he would be OK with playing elsewhere in 2027.",
+      "published": "2026-10-21T19:22:14Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50240100/sam-laporta-extension-not-feeling-love-lions",
+      "espn_athlete_ids": [
+        391566
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Jameis Winston vs. J.J. McCarthy: Pros and cons of Giants' QBs",
+      "body": "Coach John Harbaugh must weigh the options in his QB conundrum, with two players who could start at Houston.",
+      "published": "2026-10-21T18:27:08Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50219771/jameis-winston-jj-mccarthy-qb-pros-cons-new-york-giants",
+      "espn_athlete_ids": [
+        138777,
+        493077
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Goodell defends Giants' Tisch, 49ers' York attending NFL's fall meeting",
+      "body": "NFL commissioner Roger Goodell defended the presence of the Giants' Steve Tisch and 49ers' Jed York at the NFL's two-day annual fall meeting.",
+      "published": "2026-10-21T18:03:46Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50239882/goodell-defends-tisch-york-attending-nfl-fall-meeting",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Robert Saleh defends Jordan Elliott, says gun incident not a 'criminal act'",
+      "body": "Robert Saleh defends Jordan Elliott, says gun incident not a 'criminal act'  ",
+      "published": "2026-10-21T18:30:23Z",
+      "url": "https://www.espn.com/video/clip/_/id/50239839/robert-saleh-defends-jordan-elliott-says-gun-incident-not-criminal-act",
+      "espn_athlete_ids": [
+        435098
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Goodell comfortable with security for NFL's Paris game",
+      "body": "NFL commissioner Roger Goodell said Wednesday he has a high comfort level in the Saints and Steelers safely playing in Paris on Sunday in light of the civil unrest in the city.",
+      "published": "2026-10-21T17:59:35Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50239811/goodell-comfortable-security-nfl-paris-game",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Eisen says starting J.J. McCarthy 'the only move John Harbaugh had'",
+      "body": "Eisen says starting J.J. McCarthy 'the only move John Harbaugh had'",
+      "published": "2026-10-21T17:37:57Z",
+      "url": "https://www.espn.com/video/clip/_/id/50239517/eisen-says-starting-jj-mccarthy-only-move-john-harbaugh-had",
+      "espn_athlete_ids": [
+        493077
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
     {
       "headline": "Goodell says NFL welcomes investigation into Eagles QB Hurts' medical care",
       "body": "NFL commissioner Roger Goodell said Wednesday that the league welcomes an investigation into the Eagles' handling of Jalen Hurts' blood clots.",
-      "published": "2026-10-21T17:13:43Z",
+      "published": "2026-10-21T22:12:14Z",
       "url": "https://www.espn.com/nfl/story/_/id/50239029/roger-goodell-nfl-welcomes-probe-hurts-medical-care",
       "espn_athlete_ids": [
         435090
@@ -58,14 +322,16 @@
       "source": "ESPN"
     },
     {
-      "headline": "Source: Giants turning to J.J. McCarthy as QB1 this week against Texans",
-      "body": "The Giants plan to start J.J. McCarthy at quarterback this week against the Houston Texans, a source told ESPN's Jeremy Fowler on Wednesday.",
-      "published": "2026-10-21T16:48:42Z",
+      "headline": "Giants turning to J.J. McCarthy as QB1 this weekend against Texans",
+      "body": "The Giants plan to start J.J. McCarthy at quarterback this week against the Texans.",
+      "published": "2026-10-21T22:28:43Z",
       "url": "https://www.espn.com/nfl/story/_/id/50238746/giants-start-jj-mccarthy-qb-week",
       "espn_athlete_ids": [
-        493077
+        493077,
+        138777
       ],
       "athlete_names": [
+        null,
         null
       ],
       "source": "ESPN"
@@ -108,7 +374,7 @@
     {
       "headline": "Titans' Robert Saleh defends Jordan Elliott: Gun incident was not 'criminal act'",
       "body": "Titans coach Robert Saleh defended Jordan Elliott's character and said that last week's gun-related incident was \"a call for help more than a criminal act.\"",
-      "published": "2026-10-21T17:10:41Z",
+      "published": "2026-10-21T19:33:48Z",
       "url": "https://www.espn.com/nfl/story/_/id/50238315/source-jordan-elliott-attempted-retrieve-gun-car",
       "espn_athlete_ids": [
         435098
@@ -240,9 +506,9 @@
       "source": "ESPN"
     },
     {
-      "headline": "Bills' Sam Franklin Jr. suspended one game for spitting; will appeal, per sources",
+      "headline": "Bills' Sam Franklin suspended one game for spitting; appealing, per sources",
       "body": "Bills defensive back Sam Franklin Jr. was suspended one game for unsportsmanlike conduct that the league said was a spitting incident against the Raiders.",
-      "published": "2026-10-21T16:48:17Z",
+      "published": "2026-10-21T18:17:50Z",
       "url": "https://www.espn.com/nfl/story/_/id/50237503/bills-sam-franklin-suspended-spitting-appeal",
       "espn_athlete_ids": [
         436154
@@ -319,218 +585,6 @@
       "source": "ESPN"
     },
     {
-      "headline": "NFL Week 7 latest intel, buzz questions, news, fantasy tips: What we're hearing",
-      "body": "Will the Seahawks stick with Sam Darnold past this season? Could Vita Vea get trade interest? What's next for the NFC East teams? And could the Colts make more changes?",
-      "published": "2026-10-21T16:06:52Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50228657/week-7-buzz-fantasy-predictions-graziano-fowler-2026",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "2027 NFL mock draft: Yates' early predictions for top 10 picks, QB landing spots",
-      "body": "We're two months into the college football season, and Field Yates is projecting which prospects could go in the top 10 picks of the 2027 NFL draft -- including three QBs.",
-      "published": "2026-10-21T14:02:57Z",
-      "url": "https://www.espn.com/nfl/draft2027/story/_/id/50229467/2027-nfl-mock-draft-yates-top-10-picks-predictions-qbs",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Cowboys' season looks bleak but schedule offers some hope",
-      "body": "Cowboys players and coaches are focused on a stretch of games versus teams that are struggling just like them.",
-      "published": "2026-10-21T13:41:26Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50229188/dallas-cowboys-dak-prescott-season-looks-bleak",
-      "espn_athlete_ids": [
-        153118
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "The case for (and against) the Colts keeping Shane Steichen",
-      "body": "With GM Chris Ballard gone, can Steichen avoid following him out the door?",
-      "published": "2026-10-21T12:29:36Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50229437/colts-shane-steichen-daniel-jones-anthony-richardson",
-      "espn_athlete_ids": [
-        379778,
-        447022
-      ],
-      "athlete_names": [
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "NFL chief medical officer: Eagles' approach to Hurts was 'appropriately guarded'",
-      "body": "At the owners meetings Tuesday in New York, NFL officials staunchly defended the process involving Philadelphia Eagles quarterback Jalen Hurts and his blood clot issue, with chief medical officer Allen Sills addressing reporters in a media availability.",
-      "published": "2026-10-21T01:17:48Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50232968/eagles-approach-hurts-was-appropriately-guarded",
-      "espn_athlete_ids": [
-        435090
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Steelers bring back veteran Marquez Valdes-Scantling amid receiver injury woes",
-      "body": "The Steelers, in need of help at wide receiver with Michael Pittman Jr. and Roman Wilson out because of injuries, signed veteran Marquez Valdes-Scantling on Tuesday.",
-      "published": "2026-10-21T10:34:25Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50232379/steelers-bring-back-marquez-valdes-scantling-amid-wr-injuries",
-      "espn_athlete_ids": [
-        185152
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Get ready for Cowboys vs. Eagles on Monday Night Football",
-      "body": "Get ready for Cowboys vs. Eagles on Monday Night Football",
-      "published": "2026-10-20T21:45:43Z",
-      "url": "https://www.espn.com/video/clip/_/id/50232141/get-ready-cowboys-vs-eagles-monday-night-football",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Commanders' Quinn, Daniels discuss QB's throwaway on fourth-down play",
-      "body": "Commanders quarterback Jayden Daniels shouldn't have thrown a fourth-down pass away in the second quarter of Monday night's loss, coach Dan Quinn said.",
-      "published": "2026-10-20T22:12:12Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50231812/quinn-daniels-discuss-qb-throwaway-fourth-play",
-      "espn_athlete_ids": [
-        390109
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Sources: Rams signing free agent kicker Brandon McManus",
-      "body": "The Rams, after releasing Harrison Mevis and an injury to Blake Grupe, are signing free agent kicker Brandon McManus, sources told NFL Network.",
-      "published": "2026-10-21T10:28:49Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50231705/sources-rams-signing-free-agent-kicker-brandon-mcmanus",
-      "espn_athlete_ids": [
-        116071,
-        221789
-      ],
-      "athlete_names": [
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Cam Heyward details Steelers' preparation for Paris game",
-      "body": "Cam Heyward details Steelers' preparation for Paris game",
-      "published": "2026-10-20T21:00:58Z",
-      "url": "https://www.espn.com/video/clip/_/id/50231436/cam-heyward-details-steelers-preparation-paris-game",
-      "espn_athlete_ids": [
-        92492
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Reports: NFL won't punish Eagles for letting Jalen Hurts play with blood clot",
-      "body": "The NFL will not punish the Eagles for how they handled the process surrounding quarterback Jalen Hurts being cleared to play Week 5 against the Jaguars, according to multiple reports.",
-      "published": "2026-10-21T01:14:22Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50230816/reports-nfl-punish-eagles-jalen-hurts-situation",
-      "espn_athlete_ids": [
-        435090
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "NFL to increase security in Paris for Steelers-Saints game",
-      "body": "The NFL said security will be heightened for the game in Paris between the Steelers and Saints after civil unrest engulfed the French capital last weekend.",
-      "published": "2026-10-20T20:41:33Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50230791/nfl-increase-security-paris-steelers-saints-game",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Commanders WR Terry McLaurin has torn patellar tendon, ending his season",
-      "body": "Commanders wide receiver Terry McLaurin suffered a torn patellar tendon, an injury that will end his season, coach Dan Quinn announced Tuesday.",
-      "published": "2026-10-20T21:50:58Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50230371/commanders-wr-terry-mclaurin-torn-patellar-tendon",
-      "espn_athlete_ids": [
-        379936
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Knockout league pickups: Trio of Lions among best pickups for Week 7",
-      "body": "Tristan H. Cockcroft lists the most common players on eliminated teams and finds how much FAB to spend this week.",
-      "published": "2026-10-20T17:46:16Z",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/50229520/fantasy-football-knockout-waiver-wire-free-agent-pickups-nfl-week-7",
-      "espn_athlete_ids": [
-        438406,
-        152836,
-        391566,
-        470832,
-        152901,
-        435000,
-        167170,
-        529387,
-        450385,
-        126492
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Saturday sounds off on Sirianni having to field questions about Hurts flying",
-      "body": "Saturday sounds off on Sirianni having to field questions about Hurts flying",
-      "published": "2026-10-20T17:41:13Z",
-      "url": "https://www.espn.com/video/clip/_/id/50229654/saturday-sounds-sirianni-having-field-questions-hurts-flying",
-      "espn_athlete_ids": [
-        435090,
-        2963
-      ],
-      "athlete_names": [
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "2026 expected fantasy points against (xFPA) by position",
-      "body": "Measuring the best defenses against specific positions by using expected points vs. actual fantasy production.",
-      "published": "2026-10-20T17:20:47Z",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/49869463/2026-fantasy-football-expected-points-xfpa-position-qb-rb-wr-te",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
       "headline": "Jalen Hurts (QB, PHI) listed IR",
       "body": "Calf",
       "published": null,
@@ -596,7 +650,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Deebo Samuel (WR, SF) listed Out",
+      "headline": "Deebo Samuel Sr. (WR, SF) listed Out",
       "body": "Hamstring",
       "published": null,
       "url": null,
@@ -604,7 +658,7 @@
         3126486
       ],
       "athlete_names": [
-        "Deebo Samuel"
+        "Deebo Samuel Sr."
       ],
       "source": "Sleeper injury report"
     },
@@ -657,19 +711,6 @@
       ],
       "athlete_names": [
         "Mike Evans"
-      ],
-      "source": "Sleeper injury report"
-    },
-    {
-      "headline": "A.J. Brown (WR, NE) listed Questionable",
-      "body": "Ankle -- Sprain",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        4047646
-      ],
-      "athlete_names": [
-        "A.J. Brown"
       ],
       "source": "Sleeper injury report"
     },
@@ -752,7 +793,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "David Sills (WR, TB) listed IR",
+      "headline": "David Sills V (WR, TB) listed IR",
       "body": "Undisclosed",
       "published": null,
       "url": null,
@@ -760,7 +801,7 @@
         3871102
       ],
       "athlete_names": [
-        "David Sills"
+        "David Sills V"
       ],
       "source": "Sleeper injury report"
     },
@@ -856,7 +897,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Michael Pittman (WR, PIT) listed IR",
+      "headline": "Michael Pittman Jr. (WR, PIT) listed IR",
       "body": "Foot -- Plantar Fasciitis",
       "published": null,
       "url": null,
@@ -864,12 +905,12 @@
         4035687
       ],
       "athlete_names": [
-        "Michael Pittman"
+        "Michael Pittman Jr."
       ],
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Kyler Murray (QB, MIN) is the hot add -- 739,024 pickups in 24h",
+      "headline": "Kyler Murray (QB, MIN) is the hot add -- 566,888 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -882,7 +923,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Tyler Higbee (TE, LAR) is the hot add -- 373,824 pickups in 24h",
+      "headline": "Tyler Higbee (TE, LAR) is the hot add -- 408,753 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
