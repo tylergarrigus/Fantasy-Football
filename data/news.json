@@ -1,20 +1,111 @@
 {
-  "fetched_at": "2026-10-24T01:41:31+00:00",
+  "fetched_at": "2026-10-24T16:02:10+00:00",
   "items": [
     {
-      "headline": "Lawrence McCutcheon, 5-time Pro Bowl RB for Rams, dies at 76",
-      "body": "Lawrence McCutcheon, a five-time Pro Bowl running back for the Los Angeles Rams who went on to a long career in the team's front office, died Friday. He was 76.",
-      "published": "2026-10-24T01:29:08Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50261735/lawrence-mccutcheon-dies-76",
+      "headline": "Fantasy playbook: NFL Week 7 Shadow Reports, lineup locks and projected scores",
+      "body": "An all-encompassing look at the matchups to exploit or avoid and lineup locks in fantasy, as well as projected scores for all NFL games.",
+      "published": "2026-10-24T15:54:31Z",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/50228155/fantasy-playbook-projections-lineup-locks-week-7-shadow",
       "espn_athlete_ids": [],
       "athlete_names": [],
       "source": "ESPN"
     },
     {
-      "headline": "Fantasy playbook: NFL Week 7 Shadow Reports, lineup locks and projected scores",
-      "body": "An all-encompassing look at the matchups to exploit or avoid and lineup locks in fantasy, as well as projected scores for all NFL games.",
-      "published": "2026-10-24T00:11:30Z",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/50228155/fantasy-playbook-projections-lineup-locks-week-7-shadow",
+      "headline": "Patriots must improve turnover differential if they want to win, other notes",
+      "body": "It's one of Mike Vrabel's four pillars of the team identity -- and New England is struggling with it after losing to the Bears on Thursday.",
+      "published": "2026-10-24T15:32:24Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50262387/new-england-patriots-week-7-loss-notebook",
+      "espn_athlete_ids": [
+        380051,
+        490129
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "NFL House in Paris closes ahead of street protests in French capital",
+      "body": "The NFL closed its \"NFL House\" in Paris as the city braced for street protests with a heavy police presence and storefronts boarded up.",
+      "published": "2026-10-24T12:21:04Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50264705/nfl-house-paris-closes-ahead-street-protests",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "NFL Week 7 predictions: Upsets, fantasy sleepers, stat lines, TD scorers, more",
+      "body": "Touchdowns for Tucker Kraft and Germie Bernard? Cardinals pull another upset? Revenge game for Trey Hendrickson? Let's predict 15 things for Week 7.",
+      "published": "2026-10-24T10:00:03Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50249972/week-7-predictions-upsets-fantasy-sleepers-stats-2026",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Will Niners have edge with ex-Falcons coach facing Penix?",
+      "body": "With all of the familiarity between Morris and the Falcons, Sunday's game should come down to execution.",
+      "published": "2026-10-24T10:00:21Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50253343/atlanta-falcons-san-francisco-49er-raheem-morris",
+      "espn_athlete_ids": [
+        208615,
+        444378
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Fernando Mendoza is embracing being Raiders' latest Hispanic QB",
+      "body": "The rookie's next chapter is inspired by the legacies of a Hispanic coach, QB and a Raiders' fan base embracing the culture.",
+      "published": "2026-10-24T10:00:13Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50253768/raiders-qb-fernando-mendoza-hispanic-plunkett-flores",
+      "espn_athlete_ids": [
+        542097,
+        669915
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Inside the silent messages Boye Mafe sends every game day",
+      "body": "The Bengals defensive end uses sign language to say \"I love you\" to his mother, Bola, who died of pancreatic cancer in 2018.",
+      "published": "2026-10-24T10:00:12Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50258881/cincinnati-bengals-boye-mafe-sign-language",
+      "espn_athlete_ids": [
+        529494
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "David Andrews' blood clot diagnosis illuminates what's going on with Jalen Hurts",
+      "body": "The former NFL center tells ESPN about his experience as it might provide a window into the Eagles QB's situation.",
+      "published": "2026-10-23T17:41:35Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50257261/patriots-david-andrews-blood-clots-eagles-jalen-hurts",
+      "espn_athlete_ids": [
+        435090,
+        139747
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Lawrence McCutcheon, 5-time Pro Bowl RB for Rams, dies at 76",
+      "body": "Lawrence McCutcheon, a five-time Pro Bowl running back for the Los Angeles Rams who went on to a long career in the team's front office, died Friday. He was 76.",
+      "published": "2026-10-24T02:03:23Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50261735/lawrence-mccutcheon-dies-76",
       "espn_athlete_ids": [],
       "athlete_names": [],
       "source": "ESPN"
@@ -403,84 +494,6 @@
       "source": "ESPN"
     },
     {
-      "headline": "Is Drake Maye a top-5 fantasy QB?",
-      "body": "Is Drake Maye a top-5 fantasy QB?",
-      "published": "2026-10-23T16:03:33Z",
-      "url": "https://www.espn.com/video/clip/_/id/50258107/is-drake-maye-top-5-fantasy-qb",
-      "espn_athlete_ids": [
-        490129
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Yates: A.J. Brown becoming one of the most disappointing players in fantasy",
-      "body": "Yates: A.J. Brown becoming one of the most disappointing players in fantasy",
-      "published": "2026-10-23T15:16:17Z",
-      "url": "https://www.espn.com/video/clip/_/id/50258094/aj-brown-becoming-one-most-disappointing-players-fantasy",
-      "espn_athlete_ids": [
-        380051
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Stephen A. makes big Super Bowl claim about 'superstar' Caleb Williams",
-      "body": "Stephen A. makes big Super Bowl claim about 'superstar' Caleb Williams",
-      "published": "2026-10-23T14:24:18Z",
-      "url": "https://www.espn.com/video/clip/_/id/50258019/stephen-makes-big-super-bowl-claim-superstar-caleb-williams",
-      "espn_athlete_ids": [
-        492854
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Colts QB Anthony Richardson Sr. charged with possession of marijuana",
-      "body": "Colts quarterback Anthony Richardson Sr. is facing a misdemeanor charge for marijuana possession following a traffic stop earlier this month, court records show.",
-      "published": "2026-10-23T18:22:52Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50257962/colts-qb-anthony-richardson-sr-charged-marijuana-possession",
-      "espn_athlete_ids": [
-        447022
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Orlovsky: It's 'scary' we still haven't seen the best version of Caleb Williams yet",
-      "body": "Orlovsky: It's 'scary' we still haven't seen the best version of Caleb Williams yet",
-      "published": "2026-10-23T13:50:44Z",
-      "url": "https://www.espn.com/video/clip/_/id/50257788/scary-seen-best-version-caleb-williams-yet",
-      "espn_athlete_ids": [
-        492854
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Jay-Z's greatest sports lyrics, ranked ahead of his SoFi Stadium show",
-      "body": "Jay-Z's catalog is packed with sports references -- here are the ones that top our list.",
-      "published": "2026-10-23T13:07:07Z",
-      "url": "https://www.espn.com/espn/story/_/id/50232827/jayz-best-sports-references-sofi-stadium",
-      "espn_athlete_ids": [
-        9385
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
       "headline": "Jalen Hurts (QB, PHI) listed IR",
       "body": "Calf",
       "published": null,
@@ -819,7 +832,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Tyler Higbee (TE, LAR) is the hot add -- 342,531 pickups in 24h",
+      "headline": "Tyler Higbee (TE, LAR) is the hot add -- 299,853 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -832,7 +845,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Chris Godwin Jr. (WR, TB) is the hot add -- 171,234 pickups in 24h",
+      "headline": "Chris Godwin Jr. (WR, TB) is the hot add -- 214,518 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -845,7 +858,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Brandin Cooks (WR, SF) is the hot add -- 84,940 pickups in 24h",
+      "headline": "Brandin Cooks (WR, SF) is the hot add -- 95,308 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -858,20 +871,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Kyler Murray (QB, MIN) is the hot add -- 67,800 pickups in 24h",
-      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        3917315
-      ],
-      "athlete_names": [
-        "Kyler Murray"
-      ],
-      "source": "Sleeper trending"
-    },
-    {
-      "headline": "Colby Parkinson (TE, LAR) is the hot add -- 64,446 pickups in 24h",
+      "headline": "Colby Parkinson (TE, LAR) is the hot add -- 59,322 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -884,15 +884,28 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Courtland Sutton (WR, DEN) is the hot add -- 58,923 pickups in 24h",
+      "headline": "Keenan Allen (WR, IND) is the hot add -- 48,960 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
       "espn_athlete_ids": [
-        3128429
+        15818
       ],
       "athlete_names": [
-        "Courtland Sutton"
+        "Keenan Allen"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Kyler Murray (QB, MIN) is the hot add -- 47,712 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3917315
+      ],
+      "athlete_names": [
+        "Kyler Murray"
       ],
       "source": "Sleeper trending"
     }
