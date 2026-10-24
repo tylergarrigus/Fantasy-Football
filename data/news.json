@@ -1,10 +1,313 @@
 {
-  "fetched_at": "2026-10-23T17:14:23+00:00",
+  "fetched_at": "2026-10-24T01:41:31+00:00",
   "items": [
     {
+      "headline": "Lawrence McCutcheon, 5-time Pro Bowl RB for Rams, dies at 76",
+      "body": "Lawrence McCutcheon, a five-time Pro Bowl running back for the Los Angeles Rams who went on to a long career in the team's front office, died Friday. He was 76.",
+      "published": "2026-10-24T01:29:08Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50261735/lawrence-mccutcheon-dies-76",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Fantasy playbook: NFL Week 7 Shadow Reports, lineup locks and projected scores",
+      "body": "An all-encompassing look at the matchups to exploit or avoid and lineup locks in fantasy, as well as projected scores for all NFL games.",
+      "published": "2026-10-24T00:11:30Z",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/50228155/fantasy-playbook-projections-lineup-locks-week-7-shadow",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Boye Mafe's proud of his culture",
+      "body": "Ben Baby details how Boye Mafe honors his culture when he's on the field.",
+      "published": "2026-10-23T23:33:53Z",
+      "url": "https://www.espn.com/video/clip/_/id/50261478/boye-mafe-proud-culture",
+      "espn_athlete_ids": [
+        529494
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Dallas Cowboys cheerleaders unionize, will begin collective bargaining",
+      "body": "The Dallas Cowboys have agreed to recognize the Dallas Cowboys Cheerleaders Association as the collective bargaining representative for the team's cheer squad.",
+      "published": "2026-10-24T01:24:21Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50261267/dallas-cowboys-cheerleaders-announce-unionizing",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Seahawks rule out RB Zach Charbonnet vs. Chiefs",
+      "body": "RB Zach Charbonnet's season debut will have to wait at least one more week as the Seahawks have ruled him out for Sunday's game against the Chiefs.",
+      "published": "2026-10-23T22:41:56Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50261029/seahawks-rule-rb-zach-charbonnet-vs-chiefs",
+      "espn_athlete_ids": [
+        395438
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Giants LB Tremaine Edmunds (chest) out for year, source says",
+      "body": "Giants linebacker Tremaine Edmunds will miss the rest of the season with a torn chest muscle, a source told ESPN's Jordan Raanan. Edmunds leads the team with 50 tackles and wears the green dot to make the calls on defense.",
+      "published": "2026-10-23T23:55:25Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50260899/giants-lb-tremaine-edmunds-chest-year-source-says",
+      "espn_athlete_ids": [
+        184530,
+        470192,
+        529751
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "49ers WR Evans, DE Bosa, WR Samuel out vs. Atlanta; WR Kirk may return",
+      "body": "49ers receivers Mike Evans and Deebo Samuel Sr., and defensive end Nick Bosa are among a half dozen players who have been ruled out for Sunday's game against the Falcons.",
+      "published": "2026-10-24T01:07:00Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50260609/49ers-wr-evans-de-bosa-wr-samuel-vs-atlanta-wr-kirk-return",
+      "espn_athlete_ids": [
+        126377,
+        379795,
+        380048,
+        382227,
+        470533,
+        446437,
+        184640
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Cowboys say still time to turn things around after 2-4 start",
+      "body": "Cowboys stars Dak Prescott and CeeDee Lamb express belief that there's still time for the team to turn things around despite a 2-4 start.",
+      "published": "2026-10-24T00:10:08Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50260535/cowboys-say-turn-things-2-4-start",
+      "espn_athlete_ids": [
+        153118,
+        435005
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Lamar Jackson 'heading in the right direction' but unsure of return",
+      "body": "Lamar Jackson 'heading in the right direction' but unsure of return",
+      "published": "2026-10-23T20:54:53Z",
+      "url": "https://www.espn.com/video/clip/_/id/50260393/lamar-jackson-heading-right-direction-unsure-return",
+      "espn_athlete_ids": [
+        184545
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Bets for National Tight Ends Day: Props and picks for Sunday's games",
+      "body": "In recognition of National Tight Ends Day, we thought we'd share our favorite bets for the versatile playmakers.",
+      "published": "2026-10-23T21:20:18Z",
+      "url": "https://www.espn.com/espn/betting/story/_/id/50221073/nfl-week-7-odds-tight-ends-betting-props-preview",
+      "espn_athlete_ids": [
+        184692,
+        167266,
+        446693,
+        153146
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Ravens' Lamar Jackson (high ankle sprain) unsure if he'll play",
+      "body": "Ravens quarterback Lamar Jackson said he's dealing with a high ankle sprain and is unsure if he'll play this week against the Bengals, but is \"heading in the right direction\" after missing the past two games.",
+      "published": "2026-10-23T20:55:19Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50260001/ravens-lamar-jackson-high-ankle-sprain-unsure-play",
+      "espn_athlete_ids": [
+        184545
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Browns RBs Quinshon Judkins, Dylan Sampson expected to play",
+      "body": "The Browns' top two running backs, Quinshon Judkins and Dylan Sampson, are expected to play against the Titans after being sidelined with injuries.",
+      "published": "2026-10-23T20:19:54Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50259999/browns-rbs-quinshon-judkins-dylan-sampson-expected-play",
+      "espn_athlete_ids": [
+        537086,
+        537503
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Bears TE Cole Kmet out for season after knee injury vs. Patriots",
+      "body": "Bears tight end Cole Kmet will miss the remainder of the 2026 season after he suffered a serious right knee injury during Chicago's 30-24 win over New England.",
+      "published": "2026-10-23T20:33:18Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50259989/bears-te-cole-kmet-season-knee-injury-vs-pats",
+      "espn_athlete_ids": [
+        435122
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Falcons' viral stripes will appear down center of helmets",
+      "body": "A vertical stripe pattern that the Falcons used in a social media post will appear down the middle of the team's throwback helmets. The stripes drew significant online backlash as some saw similarity to Nazi Germany imagery.",
+      "published": "2026-10-23T21:18:40Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50259857/falcons-throwback-logo-include-viral-stripe-pattern",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Cam Skattebo set to return to Giants RB mix after being 'taught a lesson'",
+      "body": "After zero carries in Week 6, Cam Skattebo says he took a step back to evaluate and correct, and Giants' coach says he should return to the running back mix vs. the Texans.",
+      "published": "2026-10-23T21:13:54Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50259856/cam-skattebo-set-return-giants-rb-mix",
+      "espn_athlete_ids": [
+        450385
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Rams WR Puka Nacua misses practice, questionable vs. Raiders with calf injury",
+      "body": "Rams wide receiver Puka Nacua (calf) will not practice Friday and is questionable to play Sunday against the Raiders, coach Sean McVay said.",
+      "published": "2026-10-23T19:17:30Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50259748/rams-wr-puka-nacua-questionable-vs-raiders-calf-injury",
+      "espn_athlete_ids": [
+        392016
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Cards rookie RB Jeremiyah Love to miss second straight game with ankle injury",
+      "body": "Cardinals rookie RB Jeremiyah Love will miss his second straight game Sunday as he continues to recover from an ankle injury.",
+      "published": "2026-10-23T18:46:10Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50259624/cardinals-rookie-rb-jeremiyah-love-miss-second-straight-game",
+      "espn_athlete_ids": [
+        605430
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "NFL Week 7 uniforms: Alternates galore as Texans go battle red, Lions all-black",
+      "body": "Here's a look at what each NFL team is wearing in Week 7, led by alternate looks from Houston, Detroit and Dallas.",
+      "published": "2026-10-23T18:23:48Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50240486/nfl-week-7-uniforms",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Colts' Tyler Warren to miss second game with groin injury",
+      "body": "Tight end Tyler Warren will miss his second consecutive game with a groin injury when the Colts travel to face the Vikings on Sunday.",
+      "published": "2026-10-23T18:37:51Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50259536/colts-tyler-warren-miss-second-game-groin-injury",
+      "espn_athlete_ids": [
+        446716
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Baker Mayfield returns for Bucs, but WR Emeka Egbuka, RT Luke Goedeke out",
+      "body": "Buccaneers quarterback Baker Mayfield will make his return following a three-game absence, but he will be without his top target in wide receiver Emeka Egbuka.",
+      "published": "2026-10-23T18:56:07Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50259196/baker-mayfield-returns-emeka-egbuka-luke-goedeke-out",
+      "espn_athlete_ids": [
+        492417,
+        184532,
+        529416,
+        435068
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Dolphins rookie WR Caleb Douglas set to return vs. Jets",
+      "body": "Miami Dolphins rookie receiver Caleb Douglas will play Sunday against the New York Jets after missing the past three games with a right ankle injury.",
+      "published": "2026-10-23T17:58:17Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50259154/dolphins-rookie-wr-caleb-douglas-set-return-vs-jets",
+      "espn_athlete_ids": [
+        537782
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Cowboys vs. Eagles: Where to watch 'Monday Night Football'",
+      "body": "Here's what to know about the Week 7 matchup.",
+      "published": "2026-10-23T17:43:58Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50249186/cowboys-vs-eagles-watch-monday-night-football-week-7",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Daniel Dopp's Week 7 DraftKings tournament lineup",
+      "body": "Daniel Dopp's Week 7 DraftKings tournament lineup",
+      "published": "2026-10-23T17:18:26Z",
+      "url": "https://www.espn.com/video/clip/_/id/50259006/daniel-dopp-week-7-draftkings-tournament-lineup",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
       "headline": "Lions' Dan Campbell downplays Sam LaPorta's contract comments",
-      "body": "Lions coach Dan Campbell is downplaying comments made by Sam LaPorta about the tight end's displeasure with where contract talks stand with the organization.",
-      "published": "2026-10-23T17:11:14Z",
+      "body": "Lions coach Dan Campbell is downplaying comments made by Sam LaPorta about the tight end's displeasure with where contract talks stand with the organization. LaPorta later softened the tone on his comments.",
+      "published": "2026-10-23T19:09:26Z",
       "url": "https://www.espn.com/nfl/story/_/id/50258967/lions-dan-campbell-downplays-sam-laporta-contract-comments",
       "espn_athlete_ids": [
         391566
@@ -17,7 +320,7 @@
     {
       "headline": "Roger Goodell says NFL targeting Tokyo game in 2027 or 2028",
       "body": "NFL commissioner Roger Goodell reiterated his goal to hold a regular-season game in Tokyo and said he thinks it could happen in 2027 or 2028.",
-      "published": "2026-10-23T16:39:55Z",
+      "published": "2026-10-23T17:23:44Z",
       "url": "https://www.espn.com/nfl/story/_/id/50258811/roger-goodell-says-nfl-targeting-tokyo-game-2027-2028",
       "espn_athlete_ids": [],
       "athlete_names": [],
@@ -61,7 +364,7 @@
     {
       "headline": "Jets WR Adonai Mitchell to play, RB Breece Hall questionable vs. Dolphins",
       "body": "Jets WR Adonai Mitchell, sidelined four games with a finger injury that required a surgical procedure, practiced all week and will play against the Dolphins.",
-      "published": "2026-10-23T15:56:55Z",
+      "published": "2026-10-23T19:32:22Z",
       "url": "https://www.espn.com/nfl/story/_/id/50258482/jets-wr-mitchell-play-rb-hall-questionable-vs-dolphins",
       "espn_athlete_ids": [
         489480,
@@ -69,19 +372,6 @@
       ],
       "athlete_names": [
         null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Mike Clay torn on making Emeka Egbuka a lineup lock in Week 7",
-      "body": "Mike Clay torn on making Emeka Egbuka a lineup lock in Week 7",
-      "published": "2026-10-23T15:21:51Z",
-      "url": "https://www.espn.com/video/clip/_/id/50258259/mike-clay-torn-making-emeka-egbuka-lineup-lock-week-7",
-      "espn_athlete_ids": [
-        492417
-      ],
-      "athlete_names": [
         null
       ],
       "source": "ESPN"
@@ -154,7 +444,7 @@
     {
       "headline": "Colts QB Anthony Richardson Sr. charged with possession of marijuana",
       "body": "Colts quarterback Anthony Richardson Sr. is facing a misdemeanor charge for marijuana possession following a traffic stop earlier this month, court records show.",
-      "published": "2026-10-23T17:03:53Z",
+      "published": "2026-10-23T18:22:52Z",
       "url": "https://www.espn.com/nfl/story/_/id/50257962/colts-qb-anthony-richardson-sr-charged-marijuana-possession",
       "espn_athlete_ids": [
         447022
@@ -188,272 +478,6 @@
       "athlete_names": [
         null
       ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "'Good Morning Football' sends best wishes to Faulk after Parkinson's diagnosis",
-      "body": "'Good Morning Football' sends best wishes to Faulk after Parkinson's diagnosis",
-      "published": "2026-10-23T12:46:36Z",
-      "url": "https://www.espn.com/video/clip/_/id/50257222/good-morning-football-sends-best-wishes-faulk-parkinson-diagnosis",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Sources: Jaguars LT Harrison out for season after surgery reveals torn ACL",
-      "body": "Jaguars left tackle Anton Harrison will miss the rest of the season because of a torn ACL in his right knee, league sources told NFL Network's Ian Rapoport.",
-      "published": "2026-10-23T12:03:52Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50256842/sources-jaguars-lt-anton-harrison-season-torn-acl",
-      "espn_athlete_ids": [
-        445912
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "What to know for Week 7: Start Stroud, one WR to trade for and one to trade away",
-      "body": "Faced with some tough start/sit decisions ahead of Week 7? Adam Rank has you covered at every position.",
-      "published": "2026-10-23T12:28:44Z",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/50250199/fantasy-football-start-sit-decisions-week-7",
-      "espn_athlete_ids": [
-        438608,
-        17303,
-        538711,
-        228197,
-        529351,
-        470174,
-        449123,
-        537447,
-        396602,
-        470090
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Don't be surprised if ... Rodgers is a top-12 QB, Skattebo rebounds",
-      "body": "Don't be surprised if Aaron Rodgers' strong play continues and Cam Skattebo bounces back in Week 7.",
-      "published": "2026-10-23T10:39:11Z",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/50249570/fantasy-football-start-sit-sleepers-breakouts-week-7",
-      "espn_athlete_ids": [
-        17303,
-        450385,
-        443040,
-        213606,
-        184640
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Steelers' Aaron Rodgers backs NFL on holding Paris game despite recent unrest",
-      "body": "Steelers quarterback Aaron Rodgers on Friday expressed confidence in the NFL to make security decisions around staging a game in Paris amid recent civil unrest in the city.",
-      "published": "2026-10-23T11:08:49Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50256507/steelers-rodgers-backs-nfl-paris-game-recent-unrest",
-      "espn_athlete_ids": [
-        17303
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "What's led to Titans' recent success? Under center",
-      "body": "Titans run the ball better from under center, so why not put it into practice more?",
-      "published": "2026-10-23T13:34:50Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50251843/tennessee-titans-center-success",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Inside Marvin Harrison Jr.s' exit from the Cardinals",
-      "body": "Harrison never reached his potential in Arizona, but all sides are hoping for a fresh start moving forward.",
-      "published": "2026-10-23T10:00:00Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50249407/marvin-harrison-jr-cardinals-texans",
-      "espn_athlete_ids": [
-        499124
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "What's wrong with Bo Nix? Exploring the Broncos QB's struggles, long-term status",
-      "body": "The Broncos are winning, but Nix is dealing with the roughest stretch of his career. Why is he struggling -- and is he still Denver's long-term QB?",
-      "published": "2026-10-23T10:00:00Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50250196/quarterback-bo-nix-struggles-broncos-long-term-questions",
-      "espn_athlete_ids": [
-        549664
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Kenneth Walker III is thriving with Chiefs. Why did the Seahawks let him go?",
-      "body": "While the Seahawks' run game is struggling, the Super Bowl MVP is on a historic pace for the Chiefs this season.",
-      "published": "2026-10-23T10:58:00Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50233140/seattle-seahawks-kansas-city-chiefs-kenneth-walker",
-      "espn_athlete_ids": [
-        529577,
-        166867,
-        184497
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Bears' Santos gets redemption with game-sealing FG after 'annoying' miss vs. Pats",
-      "body": "Bears kicker Cairo Santos walked away from Thursday's win over the Patriots a savior despite being haunted by a fourth-quarter miss.",
-      "published": "2026-10-23T07:22:53Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50255748/chicago-bears-cairo-santos-58-yard-field-goal-patriots",
-      "espn_athlete_ids": [
-        127957
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Week 7 NFL TNF highlights: Best plays, moments, TDs, more",
-      "body": "Here's a look at the best plays from the Bears' win over the Patriots on TNF.",
-      "published": "2026-10-23T04:24:54Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50253179/week-7-nfl-tnf-highlights-best-plays-moments-touchdowns",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Caleb Williams throws 2 TD passes as the Bears beat Drake Maye and the Patriots 30-24",
-      "body": "\u2014 Round 2 went to Caleb Williams and the Chicago Bears.",
-      "published": "2026-10-23T05:40:08Z",
-      "url": "http://www.espn.com/nfl/recap?gameId=401873010",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Caleb Williams, Bears find just enough to hold off Pats",
-      "body": "The Bears never trailed, but they never seemed comfortable with the lead.",
-      "published": "2026-10-23T04:19:49Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50254157/bears-patriots-thursday-night-football-luther-burden",
-      "espn_athlete_ids": [
-        536702,
-        492854,
-        490129
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "What are the longest field goals in NFL history?",
-      "body": "Timely field goals can change game trajectories in a dramatic fashion. Check out the longest field goals in NFL history now.",
-      "published": "2026-10-23T03:27:16Z",
-      "url": "https://www.espn.com/nfl/story/_/id/40994229/what-longest-field-goals-nfl-history",
-      "espn_athlete_ids": [
-        105890,
-        381487,
-        35934,
-        116639,
-        69369,
-        167159,
-        185448,
-        156120,
-        127805,
-        470479
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Bears take down Patriots in TNF thriller",
-      "body": "Bears take down Patriots in TNF thriller ",
-      "published": "2026-10-23T03:26:15Z",
-      "url": "https://www.espn.com/video/clip/_/id/50254893/bears-take-patriots-tnf-thriller",
-      "espn_athlete_ids": [
-        492854,
-        127957,
-        490129
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "TE Cole Kmet exits Bears' win vs. Patriots with knee injury",
-      "body": "Bears tight end Cole Kmet exited Thursday night's game against the Patriots on a cart after injuring his right knee in the fourth quarter.",
-      "published": "2026-10-23T07:01:47Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50254858/bears-te-cole-kmet-exits-late-vs-patriots-knee-injury",
-      "espn_athlete_ids": [
-        435122
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Chicago Bears honor late Mike Ditka with fake mustaches, knit headbands on TNF",
-      "body": "The Bears played their first home game Thursday since Mike Ditka's death Oct. 9.",
-      "published": "2026-10-23T02:50:52Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50253588/chicago-bears-mike-ditka-tribute-game",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Marshall Faulk, Hall of Famer and Southern coach, reveals Parkinson's diagnosis",
-      "body": "Marshall Faulk said that in discussing his illness in a podcast appearance Wednesday, \"I want to help as many people as I can.\"",
-      "published": "2026-10-23T12:47:10Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50253673/marshall-faulk-hall-famer-southern-coach-parkinsons",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
       "source": "ESPN"
     },
     {
@@ -574,7 +598,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Mike Evans (WR, SF) listed Questionable",
+      "headline": "Mike Evans (WR, SF) listed Out",
       "body": "Achilles -- Tendinitis",
       "published": null,
       "url": null,
@@ -639,7 +663,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Cole Kmet (TE, CHI) listed Out",
+      "headline": "Cole Kmet (TE, CHI) listed IR",
       "body": "Knee",
       "published": null,
       "url": null,
@@ -652,7 +676,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "David Montgomery (RB, HOU) listed Doubtful",
+      "headline": "David Montgomery (RB, HOU) listed Out",
       "body": "Groin",
       "published": null,
       "url": null,
@@ -795,7 +819,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Tyler Higbee (TE, LAR) is the hot add -- 387,738 pickups in 24h",
+      "headline": "Tyler Higbee (TE, LAR) is the hot add -- 342,531 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -808,20 +832,20 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Kyler Murray (QB, MIN) is the hot add -- 148,040 pickups in 24h",
+      "headline": "Chris Godwin Jr. (WR, TB) is the hot add -- 171,234 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
       "espn_athlete_ids": [
-        3917315
+        3116165
       ],
       "athlete_names": [
-        "Kyler Murray"
+        "Chris Godwin Jr."
       ],
       "source": "Sleeper trending"
     },
     {
-      "headline": "Brandin Cooks (WR, SF) is the hot add -- 89,052 pickups in 24h",
+      "headline": "Brandin Cooks (WR, SF) is the hot add -- 84,940 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -834,7 +858,33 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Courtland Sutton (WR, DEN) is the hot add -- 82,782 pickups in 24h",
+      "headline": "Kyler Murray (QB, MIN) is the hot add -- 67,800 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3917315
+      ],
+      "athlete_names": [
+        "Kyler Murray"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Colby Parkinson (TE, LAR) is the hot add -- 64,446 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        4242557
+      ],
+      "athlete_names": [
+        "Colby Parkinson"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Courtland Sutton (WR, DEN) is the hot add -- 58,923 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -843,19 +893,6 @@
       ],
       "athlete_names": [
         "Courtland Sutton"
-      ],
-      "source": "Sleeper trending"
-    },
-    {
-      "headline": "Aaron Rodgers (QB, PIT) is the hot add -- 81,656 pickups in 24h",
-      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        8439
-      ],
-      "athlete_names": [
-        "Aaron Rodgers"
       ],
       "source": "Sleeper trending"
     }
