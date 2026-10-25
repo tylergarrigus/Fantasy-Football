@@ -1,6 +1,105 @@
 {
-  "fetched_at": "2026-10-24T16:02:10+00:00",
+  "fetched_at": "2026-10-25T01:17:09+00:00",
   "items": [
+    {
+      "headline": "Larry Fitzgerald set to enter Cardinals Ring of Honor",
+      "body": "Joshua Weinfuss details what Larry Fitzgerald discussed before his Ring of Honor induction with the Cardinals this weekend.",
+      "published": "2026-10-25T00:13:05Z",
+      "url": "https://www.espn.com/video/clip/_/id/50271544/larry-fitzgerald-set-enter-cardinals-ring-honor",
+      "espn_athlete_ids": [
+        14067
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Inside the silent messages Boye Mafe sends every game day",
+      "body": "The Bengals defensive end uses sign language to say \"I love you\" to his mother, Bola, who died of pancreatic cancer in 2018.",
+      "published": "2026-10-24T23:35:44Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50258881/cincinnati-bengals-boye-mafe-sign-language",
+      "espn_athlete_ids": [
+        529494
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Eagles' DeVonta Smith, Dontayvion Wicks out vs. Cowboys",
+      "body": "The Eagles' top two receivers -- DeVonta Smith and Dontayvion Wicks -- have been ruled out of Monday night's game against the Cowboys.",
+      "published": "2026-10-24T21:17:02Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50269752/eagles-devonta-smith-dontayvion-wicks-vs-cowboys",
+      "espn_athlete_ids": [
+        470127,
+        390295
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Vikings activate RB Jordan Mason off injured reserve",
+      "body": "The Vikings activated running back Jordan Mason from injured reserve Saturday, completing his recovery from a fractured thumb that required surgery last month.",
+      "published": "2026-10-24T22:15:19Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50269656/vikings-activate-rb-jordan-mason-injured-reserve",
+      "espn_athlete_ids": [
+        530099,
+        167170
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Packers activate RB Josh Jacobs for 2026 debut",
+      "body": "Packers running back Josh Jacobs will make his 2026 season debut against the Lions after spending the first six weeks on the NFL's commissioner exempt list.",
+      "published": "2026-10-24T21:01:12Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50269266/packers-activate-rb-josh-jacobs-2026-debut",
+      "espn_athlete_ids": [
+        379791,
+        401693,
+        530747,
+        439894
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Ravens rule out Lamar Jackson (ankle) vs. Bengals; Tyler 'Snoop' Huntley to start",
+      "body": "The Baltimore Ravens have ruled QB Lamar Jackson out of Sundays game vs. the Cincinnati Bengals as he continues to deal with a high ankle sprain. Tyler \"Snoop\" Huntley will get the start.",
+      "published": "2026-10-24T20:41:27Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50268816/ravens-rule-lamar-jackson-high-ankle-sprain-vs-bengals",
+      "espn_athlete_ids": [
+        184545,
+        435677
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "NFL Week 7 uniforms: Alternates galore as Texans go battle red, Lions all-black",
+      "body": "Here's a look at what each NFL team is wearing in Week 7, led by alternate looks from Houston, Detroit and Dallas.",
+      "published": "2026-10-24T17:02:08Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50240486/nfl-week-7-uniforms",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
     {
       "headline": "Fantasy playbook: NFL Week 7 Shadow Reports, lineup locks and projected scores",
       "body": "An all-encompassing look at the matchups to exploit or avoid and lineup locks in fantasy, as well as projected scores for all NFL games.",
@@ -69,19 +168,6 @@
       ],
       "athlete_names": [
         null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Inside the silent messages Boye Mafe sends every game day",
-      "body": "The Bengals defensive end uses sign language to say \"I love you\" to his mother, Bola, who died of pancreatic cancer in 2018.",
-      "published": "2026-10-24T10:00:12Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50258881/cincinnati-bengals-boye-mafe-sign-language",
-      "espn_athlete_ids": [
-        529494
-      ],
-      "athlete_names": [
         null
       ],
       "source": "ESPN"
@@ -324,15 +410,6 @@
       "source": "ESPN"
     },
     {
-      "headline": "NFL Week 7 uniforms: Alternates galore as Texans go battle red, Lions all-black",
-      "body": "Here's a look at what each NFL team is wearing in Week 7, led by alternate looks from Houston, Detroit and Dallas.",
-      "published": "2026-10-23T18:23:48Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50240486/nfl-week-7-uniforms",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
       "headline": "Colts' Tyler Warren to miss second game with groin injury",
       "body": "Tight end Tyler Warren will miss his second consecutive game with a groin injury when the Colts travel to face the Vikings on Sunday.",
       "published": "2026-10-23T18:37:51Z",
@@ -431,69 +508,6 @@
       "source": "ESPN"
     },
     {
-      "headline": "Packers linebacker Zaire Franklin out Sunday with shin injury",
-      "body": "Packers linebacker Zaire Franklin will miss Sunday's game against the Lions with a shin injury.",
-      "published": "2026-10-23T17:03:26Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50258680/packers-linebacker-zaire-franklin-sunday-shin-injury",
-      "espn_athlete_ids": [
-        184997
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Where to watch NFL Paris game: Steelers vs. Saints",
-      "body": "The NFL takes a trip to France.",
-      "published": "2026-10-23T16:19:14Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50249185/watch-2026-nfl-paris-game-steelers-vs-saints",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Jets WR Adonai Mitchell to play, RB Breece Hall questionable vs. Dolphins",
-      "body": "Jets WR Adonai Mitchell, sidelined four games with a finger injury that required a surgical procedure, practiced all week and will play against the Dolphins.",
-      "published": "2026-10-23T19:32:22Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50258482/jets-wr-mitchell-play-rb-hall-questionable-vs-dolphins",
-      "espn_athlete_ids": [
-        489480,
-        529523
-      ],
-      "athlete_names": [
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Yates details why J.J. McCarthy is an intriguing player to stash",
-      "body": "Yates details why J.J. McCarthy is an intriguing player to stash",
-      "published": "2026-10-23T15:23:25Z",
-      "url": "https://www.espn.com/video/clip/_/id/50258233/yates-details-why-jj-mccarthy-intriguing-player-stash",
-      "espn_athlete_ids": [
-        493077
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Why fantasy managers shouldn't give up on Jaylen Waddle just yet",
-      "body": "Why fantasy managers shouldn't give up on Jaylen Waddle just yet",
-      "published": "2026-10-23T15:23:25Z",
-      "url": "https://www.espn.com/video/clip/_/id/50258185/why-fantasy-managers-give-jaylen-waddle-just-yet",
-      "espn_athlete_ids": [
-        470084
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
       "headline": "Jalen Hurts (QB, PHI) listed IR",
       "body": "Calf",
       "published": null,
@@ -546,7 +560,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Lamar Jackson (QB, BAL) listed Questionable",
+      "headline": "Lamar Jackson (QB, BAL) listed Out",
       "body": "Ankle -- Sprain",
       "published": null,
       "url": null,
@@ -715,19 +729,6 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Christian Kirk (WR, SF) listed IR",
-      "body": "Calf",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        3895856
-      ],
-      "athlete_names": [
-        "Christian Kirk"
-      ],
-      "source": "Sleeper injury report"
-    },
-    {
       "headline": "Durham Smythe (TE, BAL) listed IR",
       "body": "Achilles -- Surgery",
       "published": null,
@@ -832,7 +833,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Tyler Higbee (TE, LAR) is the hot add -- 299,853 pickups in 24h",
+      "headline": "Tyler Higbee (TE, LAR) is the hot add -- 181,143 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -845,7 +846,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Chris Godwin Jr. (WR, TB) is the hot add -- 214,518 pickups in 24h",
+      "headline": "Chris Godwin Jr. (WR, TB) is the hot add -- 165,360 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -858,7 +859,33 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Brandin Cooks (WR, SF) is the hot add -- 95,308 pickups in 24h",
+      "headline": "Justice Hill (RB, BAL) is the hot add -- 131,139 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        4038441
+      ],
+      "athlete_names": [
+        "Justice Hill"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Kyler Murray (QB, MIN) is the hot add -- 84,696 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3917315
+      ],
+      "athlete_names": [
+        "Kyler Murray"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Brandin Cooks (WR, SF) is the hot add -- 77,548 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -871,41 +898,15 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Colby Parkinson (TE, LAR) is the hot add -- 59,322 pickups in 24h",
+      "headline": "Aaron Rodgers (QB, PIT) is the hot add -- 49,992 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
       "espn_athlete_ids": [
-        4242557
+        8439
       ],
       "athlete_names": [
-        "Colby Parkinson"
-      ],
-      "source": "Sleeper trending"
-    },
-    {
-      "headline": "Keenan Allen (WR, IND) is the hot add -- 48,960 pickups in 24h",
-      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        15818
-      ],
-      "athlete_names": [
-        "Keenan Allen"
-      ],
-      "source": "Sleeper trending"
-    },
-    {
-      "headline": "Kyler Murray (QB, MIN) is the hot add -- 47,712 pickups in 24h",
-      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        3917315
-      ],
-      "athlete_names": [
-        "Kyler Murray"
+        "Aaron Rodgers"
       ],
       "source": "Sleeper trending"
     }
