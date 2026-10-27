@@ -1,10 +1,145 @@
 {
-  "fetched_at": "2026-10-26T18:43:17+00:00",
+  "fetched_at": "2026-10-27T02:09:26+00:00",
   "items": [
+    {
+      "headline": "Jay-Z's greatest sports lyrics, ranked ahead of his Super Bowl show",
+      "body": "The Super Bowl headliner's catalog is packed with sports references -- here are the ones that top our list.",
+      "published": "2026-10-27T01:52:27Z",
+      "url": "https://www.espn.com/espn/story/_/id/50232827/jayz-best-sports-references-sofi-stadium",
+      "espn_athlete_ids": [
+        9385
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Jay-Z's road to the Super Bowl: Were the clues there all along?",
+      "body": "With Hov headed to SoFi Stadium's halftime stage in Los Angeles, we revisit the breadcrumbs that might have pointed us there.",
+      "published": "2026-10-27T01:51:07Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50244728/jay-z-super-bowl-half-hints",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "ManningCast 2026 schedule: How to watch MNF games and guests",
+      "body": "Monday Night Football with Eli and Peyton Manning is back. Here's the 2026 game lineup, special guests and more.",
+      "published": "2026-10-26T21:45:57Z",
+      "url": "https://www.espn.com/nfl/story/_/id/34636537/maningcast-schedule-monday-night-football-guests-mnf",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Cardinals WR Jalen Brooks to miss rest of season with wrist injury",
+      "body": "Cardinals wide receiver Jalen Brooks posted on social media Monday that he will miss the rest of the season with a wrist injury.",
+      "published": "2026-10-26T23:41:13Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50291573/cardinals-jalen-brooks-wrist-miss-rest-season",
+      "espn_athlete_ids": [
+        446011
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Steelers Aaron Rodgers, QB room lead NFL Week 7's best arrivals",
+      "body": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
+      "published": "2026-10-26T22:50:32Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50252261/nfl-week-7-fashionable-arrivals",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Giants' Cam Skattebo, John Harbaugh object to lowering helmet penalty",
+      "body": "Giants coach John Harbaugh and Cam Skattebo took issue with a first-quarter penalty call Sunday against Houston, when the running back was flagged for unnecessary roughness for impermissible helmet contact.",
+      "published": "2026-10-26T23:26:18Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50291324/giants-cam-skattebo-john-harbaugh-object-lowering-helmet-penalty",
+      "espn_athlete_ids": [
+        450385
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Panthers RT Taylor Moton to undergo season-ending ankle surgery",
+      "body": "Panthers right tackle Taylor Moton will undergo season-ending ankle surgery while also recovering from a fractured fibula in his left leg.",
+      "published": "2026-10-26T23:27:47Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50291280/panthers-taylor-moton-season-ending-ankle-surgery",
+      "espn_athlete_ids": [
+        166989
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Ex-Cowboy Dez Bryant calls out police investigation after he's cited for assault",
+      "body": "Dez Bryant is calling for a thorough investigation by Texas' Southlake Police Department of an incident that resulted in him receiving a citation for assault.",
+      "published": "2026-10-26T23:11:04Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50290470/dez-bryant-calls-police-cited-assault",
+      "espn_athlete_ids": [
+        73955
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Ravens' Jesse Minter optimistic QB Lamar Jackson can return vs. Bills",
+      "body": "Ravens coach Jesse Minter expressed optimism Monday that quarterback Lamar Jackson could be available for Sunday's game against the Bills.",
+      "published": "2026-10-26T22:02:48Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50290411/ravens-coach-minter-optimistic-qb-jackson-returns-vs-bills",
+      "espn_athlete_ids": [
+        184545,
+        435677
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Browns activate Gabriel off IR, now have 4 QBs on roster",
+      "body": "The Browns activated quarterback Dillon Gabriel off injured reserve Monday, giving the team four passers on the 53-man roster.",
+      "published": "2026-10-26T21:33:15Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50290389/browns-activate-gabriel-ir-now-4-qbs-roster",
+      "espn_athlete_ids": [
+        390472
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Kirk Cousins to remain Raiders' starting QB vs. Jets, Klint Kubiak says",
+      "body": "Kirk Cousins will remain the Raiders' starting quarterback for Sunday's game against the Jets, coach Klint Kubiak announced Monday.",
+      "published": "2026-10-26T20:40:25Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50289866/kirk-cousins-remain-raiders-starting-qb-klint-kubiak-says",
+      "espn_athlete_ids": [
+        103992,
+        542097
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
     {
       "headline": "Vikings RB Jones avoids serious knee injury, day-to-day",
       "body": "Vikings running back Aaron Jones Sr. avoided a serious knee injury Sunday and is considered day-to-day, coach Kevin O'Connell confirmed Monday.",
-      "published": "2026-10-26T18:25:42Z",
+      "published": "2026-10-26T18:52:49Z",
       "url": "https://www.espn.com/nfl/story/_/id/50289047/vikings-rb-jones-avoids-serious-knee-injury-day-day",
       "espn_athlete_ids": [
         167170
@@ -98,15 +233,6 @@
       "athlete_names": [
         null
       ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Stephen A. lays into Michael Irvin for saying Cowboys' season on the line on MNF",
-      "body": "Stephen A. lays into Michael Irvin for saying Cowboys' season on the line on MNF",
-      "published": "2026-10-26T15:31:20Z",
-      "url": "https://www.espn.com/video/clip/_/id/50287807/stephen-lays-michael-irvin-saying-cowboys-season-line-mnf",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
       "source": "ESPN"
     },
     {
@@ -220,7 +346,7 @@
     {
       "headline": "Sources: Packers LB Zaire Franklin has hairline fracture in leg",
       "body": "Packers linebacker Zaire Franklin has a hairline fracture in his leg and center Sean Rhyan is believed to have a high ankle sprain, sources told NFL Network's Ian Rapoport.",
-      "published": "2026-10-26T14:56:26Z",
+      "published": "2026-10-26T20:27:22Z",
       "url": "https://www.espn.com/nfl/story/_/id/50287123/sources-packers-zaire-franklin-hairline-fracture-leg",
       "espn_athlete_ids": [
         184997,
@@ -229,6 +355,33 @@
         551687
       ],
       "athlete_names": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "How active NFL players continue to redefine all-time sack list",
+      "body": "Myles Garrett's torrid pace up the all-time sack list paces active players making their moves among the greats.",
+      "published": "2026-10-26T20:47:06Z",
+      "url": "https://www.espn.com/nfl/story/_/id/49545945/all-sack-list-tracker-myles-garrett-von-miller-aaron-donald",
+      "espn_athlete_ids": [
+        166841,
+        166884,
+        126391,
+        92489,
+        92503,
+        37414,
+        138823,
+        126383
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null,
+        null,
         null,
         null,
         null,
@@ -427,161 +580,6 @@
         null,
         null,
         null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Seahawks troll Taylor Swift, Travis Kelce to top NFL Week 7's petty posts",
-      "body": "The Seattle Seahawks' petty post at Taylor Swift and Kansas City Chiefs' Travis Kelce leads the way for NFL's Week 7 trolls.",
-      "published": "2026-10-26T04:35:25Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50280779/nfl-week-7-trolls",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Week 7 NFL highlights: Best plays, moments, touchdowns, more",
-      "body": "Check here for Sunday's top moments and TDs from J.J. McCarthy, Bucky Irving, Jonathan Taylor, Aaron Rodgers and more.",
-      "published": "2026-10-26T04:06:05Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50275344/week-7-sunday-highlights-best-plays-touchdowns-2026",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Jaxon Smith-Njigba has 150 receiving yards and a score in the Seahawks' 20-3 win over the Chiefs",
-      "body": "\u2014 Frustrated by a two-game skid, the Seattle Seahawks went into playoff mode.",
-      "published": "2026-10-26T04:13:47Z",
-      "url": "http://www.espn.com/nfl/recap?gameId=401873022",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Seahawks knock off Chiefs 20-3, giving K.C. its first loss",
-      "body": "Seahawks knock off Chiefs 20-3, giving K.C. its first loss",
-      "published": "2026-10-26T05:20:58Z",
-      "url": "https://www.espn.com/video/clip/_/id/50284399/seahawks-knock-chiefs-20-3-giving-kc-first-loss",
-      "espn_athlete_ids": [
-        502551,
-        205575,
-        438528,
-        450465,
-        167322
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Packers rip officiating after roughing penalties prove costly in loss",
-      "body": "Several Packers players lit up the crew that officiated Sunday's game in Detroit, arguing against roughing penalties that have plagued the team all season.",
-      "published": "2026-10-26T04:00:14Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50284205/packers-rip-officiating-roughing-penalties-prove-costly-loss",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Bo Nix wows with 62-yard run as Broncos stand by 'our guy' at QB after win",
-      "body": "Sean Payton issued a firm vote of confidence for his embattled quarterback Bo Nix after Sunday's win over the Cardinals.",
-      "published": "2026-10-26T03:12:59Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50284110/bo-nix-breaks-slump-carries-broncos-cardinals",
-      "espn_athlete_ids": [
-        549664
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Raiders' Kubiak on switching to QB Mendoza: 'We're thinking about everything'",
-      "body": "Raiders coach Klint Kubiak said the team is thinking about everything, including turning to QB Fernando Mendoza, amid a four-game losing streak.",
-      "published": "2026-10-26T04:22:57Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50284090/thinking-everything",
-      "espn_athlete_ids": [
-        103992,
-        146081
-      ],
-      "athlete_names": [
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Aaron Rodgers' 2026 NFL season: Tracking records, milestones",
-      "body": "The Pittsburgh QB is chasing records in his 22nd NFL season, and ESPN is chronicling his \"last rodeo.\"",
-      "published": "2026-10-26T03:03:21Z",
-      "url": "https://www.espn.com/nfl/story/_/id/49907062/aaron-rodgers-2026-nfl-season-steelers-packers-jets-tracking-records-milestones",
-      "espn_athlete_ids": [
-        17303
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Matthew Stafford makes history after 3-TD showing for Rams",
-      "body": "Matthew Stafford on Sunday became the first player to hold the franchise record for passing scores for multiple active teams (Rams, Lions).",
-      "published": "2026-10-26T01:42:26Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50283596/matthew-stafford-makes-history-3-td-showing-rams",
-      "espn_athlete_ids": [
-        63003
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Las Vegas Raiders vs Los Angeles Rams: Game Highlights",
-      "body": "Las Vegas Raiders vs Los Angeles Rams: Game Highlights",
-      "published": "2026-10-26T01:07:28Z",
-      "url": "https://www.espn.com/video/clip/_/id/50283411/game-highlights",
-      "espn_athlete_ids": [
-        443985,
-        63003,
-        538711
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "National Tight Ends Day 2026: Davis Allen, Mason Taylor put on a show during holiday",
-      "body": "The fourth weekend in October means National Tight Ends Day, and the NFL's tight ends made sure to bring their best.",
-      "published": "2026-10-26T12:11:59Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50281768/national-tight-end-day-highlights",
-      "espn_athlete_ids": [
-        439300,
-        389423,
-        470090,
-        537271,
-        396602,
-        139026,
-        529586,
-        379806
-      ],
-      "athlete_names": [
         null,
         null,
         null,
@@ -984,7 +982,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Devin Singletary (RB, NYG) is the hot add -- 48,924 pickups in 24h",
+      "headline": "Devin Singletary (RB, NYG) is the hot add -- 52,344 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -997,7 +995,20 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Kirk Cousins (QB, LV) is the hot add -- 46,096 pickups in 24h",
+      "headline": "Hunter Henry (TE, NE) is the hot add -- 46,311 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3046439
+      ],
+      "athlete_names": [
+        "Hunter Henry"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Kirk Cousins (QB, LV) is the hot add -- 44,512 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -1010,15 +1021,15 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Hunter Henry (TE, NE) is the hot add -- 44,760 pickups in 24h",
+      "headline": "Rico Dowdle (RB, PIT) is the hot add -- 29,360 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
       "espn_athlete_ids": [
-        3046439
+        4038815
       ],
       "athlete_names": [
-        "Hunter Henry"
+        "Rico Dowdle"
       ],
       "source": "Sleeper trending"
     }
