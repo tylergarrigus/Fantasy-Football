@@ -1,6 +1,366 @@
 {
-  "fetched_at": "2026-10-27T02:09:26+00:00",
+  "fetched_at": "2026-10-27T18:04:06+00:00",
   "items": [
+    {
+      "headline": "McAfee thanks Quenton Nelson for service to Colts after being traded to Seahawks",
+      "body": "McAfee thanks Quenton Nelson for service to Colts after being traded to Seahawks",
+      "published": "2026-10-27T17:08:19Z",
+      "url": "https://www.espn.com/video/clip/_/id/50299138/mcafee-thanks-quenton-nelson-service-colts-being-traded-seahawks",
+      "espn_athlete_ids": [
+        184551,
+        64593
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "2026 NFL trade deadline updates: Quenton Nelson, Marvin Harrison Jr. on the move",
+      "body": "The NFL trade deadline is Nov. 10, but deals have already started. We're tracking all moves, including the Colts sending Quenton Nelson to the Seahawks.",
+      "published": "2026-10-27T17:29:25Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50043471/2026-trade-deadline-updates-latest-news-deals-terms",
+      "espn_athlete_ids": [
+        499124,
+        184551
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Sources: Seahawks acquire Pro Bowl guard Quenton Nelson in trade with Colts",
+      "body": "The Colts have agreed to trade eight-time Pro Bowl guard Quenton Nelson to the Seahawks, sources told ESPN's Adam Schefter and NFL Network's Ian Rapoport.",
+      "published": "2026-10-27T17:43:22Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50298913/sources-seahawks-get-pro-bowl-guard-nelson-trade-colts",
+      "espn_athlete_ids": [
+        184551
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "'You can overcome this': Students of Jalen Hurts' mom wrote get-well cards for QB",
+      "body": "Pamela Hurts, a schoolteacher, was clearly touched by the cards from her students on \"Jalen Hurts Day.\"",
+      "published": "2026-10-27T16:20:24Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50298232/jalen-hurts-philadelphia-eagles-mom-get-well-cards",
+      "espn_athlete_ids": [
+        435090
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Strength of schedule (SOS) cheat sheet: Every team's year-to-date and rest-of-season ratings",
+      "body": "Ranking each team's remaining schedule and how it might impact every position's fantasy performance.",
+      "published": "2026-10-27T15:54:40Z",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/50117108/fantasy-football-2026-strength-schedule-rest-season",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "2026 NFL playoff picture: AFC, NFC seed projections, chances to make postseason",
+      "body": "We're looking ahead to how the 14-team playoff picture could line up -- and who will win divisions -- en route to the Super Bowl.",
+      "published": "2026-10-27T15:14:26Z",
+      "url": "https://www.espn.com/nfl/story/_/id/49745176/2026-nfl-playoff-predictions-afc-nfc-odds-super-bowl",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Why Hunter Henry is a top TE streamer in Week 8",
+      "body": "Why Hunter Henry is a top TE streamer in Week 8",
+      "published": "2026-10-27T14:53:45Z",
+      "url": "https://www.espn.com/video/clip/_/id/50297693/why-hunter-henry-top-te-streamer-week-8",
+      "espn_athlete_ids": [
+        152902
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "If Brian Thomas Jr. is traded, could it boost his fantasy value?",
+      "body": "If Brian Thomas Jr. is traded, could it boost his fantasy value?",
+      "published": "2026-10-27T14:52:37Z",
+      "url": "https://www.espn.com/video/clip/_/id/50297652/if-brian-thomas-jr-traded-boost-fantasy-value",
+      "espn_athlete_ids": [
+        499066
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Is KC Concepcion a trustworthy fantasy option?",
+      "body": "Is KC Concepcion a trustworthy fantasy option? ",
+      "published": "2026-10-27T14:48:34Z",
+      "url": "https://www.espn.com/video/clip/_/id/50297619/is-kc-concepcion-trustworthy-fantasy-option",
+      "espn_athlete_ids": [
+        607902
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Why Stephen A. believes there's a lack of confidence in Dak Prescott",
+      "body": "Why Stephen A. believes there's a lack of confidence in Dak Prescott",
+      "published": "2026-10-27T14:24:49Z",
+      "url": "https://www.espn.com/video/clip/_/id/50297434/why-stephen-believes-there-lack-confidence-dak-prescott",
+      "espn_athlete_ids": [
+        153118
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Sources: Ravens rookie G Olaivavega Ioane expected to miss time with MCL sprain",
+      "body": "Ravens rookie guard Olaivavega Ioane is expected to miss time after spraining his MCL in Sunday's loss to the Bengals, sources told NFL Network.",
+      "published": "2026-10-27T13:54:09Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50297114/sources-ravens-olaivavega-ioane-mcl-sprain",
+      "espn_athlete_ids": [
+        538366
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Will Nick Sirianni still be Eagles coach next season?",
+      "body": "Will Nick Sirianni still be Eagles coach next season?",
+      "published": "2026-10-27T13:46:49Z",
+      "url": "https://www.espn.com/video/clip/_/id/50297060/will-nick-sirianni-eagles-coach-next-season",
+      "espn_athlete_ids": [
+        439430,
+        440100,
+        530470
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Are the Cowboys now favorites to win the NFC East?",
+      "body": "Are the Cowboys now favorites to win the NFC East?",
+      "published": "2026-10-27T12:34:26Z",
+      "url": "https://www.espn.com/video/clip/_/id/50296659/are-cowboys-now-favorites-win-nfc-east",
+      "espn_athlete_ids": [
+        153118
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Seven things Solak thinks entering NFL Week 8: WR trade for Chiefs? Goff for MVP?",
+      "body": "Get ready for Week 8 with takes on the Chiefs' trade deadline plan, Jared Goff's sneaky season, Kevin Stefanski's Coach of the Year case and the Ravens' struggling defense.",
+      "published": "2026-10-27T15:31:14Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50278890/week-8-seven-things-solak-thinks-chiefs-trade-goff-mvp",
+      "espn_athlete_ids": [
+        152836,
+        547264,
+        439296,
+        489349
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Is Bills' Josh Allen the best goal-line rusher ever?",
+      "body": "Out of the 153 players who've carried from the 1- or 2-yard line at least 30 times since 1977, Allen has done it best.",
+      "published": "2026-10-27T13:22:40Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50288152/bills-josh-allen-greatest-td-rusher",
+      "espn_athlete_ids": [
+        184455
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "How Chargers 2026 first-round pick Akheem Mesidor is faring so far",
+      "body": "Safety Derwin James Jr. says Mesidor will be one of the top edge rushers in the league. Judging by the rookie's performance so far, that prediction may not be far off the mark.",
+      "published": "2026-10-27T13:18:51Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50278837/los-angeles-chargers-akheem-mesidor-2026-performance",
+      "espn_athlete_ids": [
+        444435
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Cowboys keep pace in NFC East, end 2-game slide with road win over Eagles",
+      "body": "Dak Prescott threw three touchdown passes, and the Cowboys averted a three-game losing streak to keep pace in the NFC East with a 38-21 win over the Eagles.",
+      "published": "2026-10-27T06:24:42Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50294687/prsecott-cowboys-keep-pace-nfc-east-road-win-eagles",
+      "espn_athlete_ids": [
+        153118
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Eagles' Saquon Barkley says hamstring 'great' in return, not sweating back issue",
+      "body": "Eagles running back Saquon Barkley said his \"hamstring came out great\" and doesn't believe his back issue will keep him out after a gutsy and highly efficient performance in a loss to the Cowboys on Monday night.",
+      "published": "2026-10-27T05:51:25Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50294604/eagles-saquon-barkley-hobbled-highly-efficient-gutsy-losing-effort-vs-cowboys",
+      "espn_athlete_ids": [
+        184478
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Peyton compares 'Omaha' to Dak Prescott's 'Here we go!' cadence",
+      "body": "Peyton compares 'Omaha' to Dak Prescott's 'Here we go!' cadence",
+      "published": "2026-10-27T12:23:21Z",
+      "url": "https://www.espn.com/video/clip/_/id/50294214/peyton-compares-omaha-dak-prescott-here-go-cadence",
+      "espn_athlete_ids": [
+        153118
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Jalen Brunson shows Peyton and Eli his special painting",
+      "body": "Jalen Brunson shows Peyton and Eli his special painting",
+      "published": "2026-10-27T12:22:33Z",
+      "url": "https://www.espn.com/video/clip/_/id/50294142/jalen-brunson-shows-peyton-eli-special-painting",
+      "espn_athlete_ids": [
+        187348
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Dak Prescott throws 3 TD passes, Javonte Williams runs for 155 yards as Cowboys beat Eagles 38-21",
+      "body": "\u2014 Tanner McKee and the Philadelphia Eagles still had a potential victory within their grasp in the fourth quarter when the career backup threw a pass into the outstretched hands of DeMarvion Overshown.",
+      "published": "2026-10-27T04:43:48Z",
+      "url": "http://www.espn.com/nfl/recap?gameId=401873009",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Cowboys handle Eagles on Javonte Williams' career night",
+      "body": "Williams rushed for a career-high 155 yards and added a touchdown for Dallas.",
+      "published": "2026-10-27T04:58:31Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50292494/cowboys-eagles-mnf-javonte-williams-career-night",
+      "espn_athlete_ids": [
+        153118,
+        184478
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "What are the longest field goals in NFL history?",
+      "body": "Timely field goals can change game trajectories in a dramatic fashion. Check out the longest field goals in NFL history now.",
+      "published": "2026-10-26T04:07:12Z",
+      "url": "https://www.espn.com/nfl/story/_/id/40994229/what-longest-field-goals-nfl-history",
+      "espn_athlete_ids": [
+        105890,
+        381487,
+        35934,
+        116639,
+        69369,
+        167159,
+        185448,
+        156120,
+        127805,
+        470479
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Cowboys bounce back, take down Eagles on MNF",
+      "body": "Cowboys bounce back, take down Eagles on MNF",
+      "published": "2026-10-27T05:13:16Z",
+      "url": "https://www.espn.com/video/clip/_/id/50293932/cowboys-bounce-back-take-eagles-mnf",
+      "espn_athlete_ids": [
+        435005,
+        184478,
+        153118,
+        228366,
+        609159
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Who has performed at the Super Bowl halftime show? Jay-Z to join the list",
+      "body": "Bad Bunny owned the Super Bowl LX halftime show. Check out every artist that graced NFL's biggest stage.",
+      "published": "2026-10-27T02:27:39Z",
+      "url": "https://www.espn.com/nfl/story/_/id/41193697/who-performed-super-bowl-half-show-all-list",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Jay-Z to headline Super Bowl LXI halftime show",
+      "body": "Jay-Z will be the featured performer for the halftime festivities on Feb. 14 at SoFi Stadium in Inglewood, California.",
+      "published": "2026-10-27T14:08:41Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50293241/jay-z-headline-super-bowl-lxi-half-show",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
     {
       "headline": "Jay-Z's greatest sports lyrics, ranked ahead of his Super Bowl show",
       "body": "The Super Bowl headliner's catalog is packed with sports references -- here are the ones that top our list.",
@@ -17,7 +377,7 @@
     {
       "headline": "Jay-Z's road to the Super Bowl: Were the clues there all along?",
       "body": "With Hov headed to SoFi Stadium's halftime stage in Los Angeles, we revisit the breadcrumbs that might have pointed us there.",
-      "published": "2026-10-27T01:51:07Z",
+      "published": "2026-10-27T03:06:13Z",
       "url": "https://www.espn.com/nfl/story/_/id/50244728/jay-z-super-bowl-half-hints",
       "espn_athlete_ids": [],
       "athlete_names": [],
@@ -30,565 +390,6 @@
       "url": "https://www.espn.com/nfl/story/_/id/34636537/maningcast-schedule-monday-night-football-guests-mnf",
       "espn_athlete_ids": [],
       "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Cardinals WR Jalen Brooks to miss rest of season with wrist injury",
-      "body": "Cardinals wide receiver Jalen Brooks posted on social media Monday that he will miss the rest of the season with a wrist injury.",
-      "published": "2026-10-26T23:41:13Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50291573/cardinals-jalen-brooks-wrist-miss-rest-season",
-      "espn_athlete_ids": [
-        446011
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Steelers Aaron Rodgers, QB room lead NFL Week 7's best arrivals",
-      "body": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
-      "published": "2026-10-26T22:50:32Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50252261/nfl-week-7-fashionable-arrivals",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Giants' Cam Skattebo, John Harbaugh object to lowering helmet penalty",
-      "body": "Giants coach John Harbaugh and Cam Skattebo took issue with a first-quarter penalty call Sunday against Houston, when the running back was flagged for unnecessary roughness for impermissible helmet contact.",
-      "published": "2026-10-26T23:26:18Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50291324/giants-cam-skattebo-john-harbaugh-object-lowering-helmet-penalty",
-      "espn_athlete_ids": [
-        450385
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Panthers RT Taylor Moton to undergo season-ending ankle surgery",
-      "body": "Panthers right tackle Taylor Moton will undergo season-ending ankle surgery while also recovering from a fractured fibula in his left leg.",
-      "published": "2026-10-26T23:27:47Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50291280/panthers-taylor-moton-season-ending-ankle-surgery",
-      "espn_athlete_ids": [
-        166989
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Ex-Cowboy Dez Bryant calls out police investigation after he's cited for assault",
-      "body": "Dez Bryant is calling for a thorough investigation by Texas' Southlake Police Department of an incident that resulted in him receiving a citation for assault.",
-      "published": "2026-10-26T23:11:04Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50290470/dez-bryant-calls-police-cited-assault",
-      "espn_athlete_ids": [
-        73955
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Ravens' Jesse Minter optimistic QB Lamar Jackson can return vs. Bills",
-      "body": "Ravens coach Jesse Minter expressed optimism Monday that quarterback Lamar Jackson could be available for Sunday's game against the Bills.",
-      "published": "2026-10-26T22:02:48Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50290411/ravens-coach-minter-optimistic-qb-jackson-returns-vs-bills",
-      "espn_athlete_ids": [
-        184545,
-        435677
-      ],
-      "athlete_names": [
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Browns activate Gabriel off IR, now have 4 QBs on roster",
-      "body": "The Browns activated quarterback Dillon Gabriel off injured reserve Monday, giving the team four passers on the 53-man roster.",
-      "published": "2026-10-26T21:33:15Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50290389/browns-activate-gabriel-ir-now-4-qbs-roster",
-      "espn_athlete_ids": [
-        390472
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Kirk Cousins to remain Raiders' starting QB vs. Jets, Klint Kubiak says",
-      "body": "Kirk Cousins will remain the Raiders' starting quarterback for Sunday's game against the Jets, coach Klint Kubiak announced Monday.",
-      "published": "2026-10-26T20:40:25Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50289866/kirk-cousins-remain-raiders-starting-qb-klint-kubiak-says",
-      "espn_athlete_ids": [
-        103992,
-        542097
-      ],
-      "athlete_names": [
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Vikings RB Jones avoids serious knee injury, day-to-day",
-      "body": "Vikings running back Aaron Jones Sr. avoided a serious knee injury Sunday and is considered day-to-day, coach Kevin O'Connell confirmed Monday.",
-      "published": "2026-10-26T18:52:49Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50289047/vikings-rb-jones-avoids-serious-knee-injury-day-day",
-      "espn_athlete_ids": [
-        167170
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Source: Seahawks LT Charles Cross has high ankle sprain, likely to miss time",
-      "body": "Seahawks left tackle Charles Cross suffered a high ankle sprain and is expected to miss time, a source told NFL Network's Ian Rapoport.",
-      "published": "2026-10-26T18:12:57Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50288850/source-seahawks-lt-charles-cross-high-ankle-sprain",
-      "espn_athlete_ids": [
-        529366,
-        530161,
-        537897
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Schefter sees Colts dealing players at trade deadline",
-      "body": "Schefter sees Colts dealing players at trade deadline",
-      "published": "2026-10-26T17:28:06Z",
-      "url": "https://www.espn.com/video/clip/_/id/50288619/schefter-sees-colts-dealing-players-trade-deadline",
-      "espn_athlete_ids": [
-        64593
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Browns balance relishing close wins, lamenting slow starts",
-      "body": "Despite a \"complete game\" by Deshaun Watson, offensive struggles are still lingering for the AFC North-leading Browns.",
-      "published": "2026-10-26T18:34:24Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50288083/cleveland-browns-balance-close-wins-slow-starts-week-7",
-      "espn_athlete_ids": [
-        166843,
-        607902
-      ],
-      "athlete_names": [
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Matthew Stafford: Win vs. Raiders a step in the right direction for us",
-      "body": "Matthew Stafford: Win vs. Raiders a step in the right direction for us",
-      "published": "2026-10-26T17:39:55Z",
-      "url": "https://www.espn.com/video/clip/_/id/50288404/win-vs-raiders-step-right-direction-us",
-      "espn_athlete_ids": [
-        63003,
-        64593
-      ],
-      "athlete_names": [
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Can Lamar Jackson solve the Ravens' historic identity crisis?",
-      "body": "The Ravens are the NFL's best team in the first half, outscoring teams by 65 points. But they are the worst team in the second half, getting outscored by 70 points.",
-      "published": "2026-10-26T15:49:00Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50286278/can-lamar-jackson-solve-ravens-historic-identity-crisis",
-      "espn_athlete_ids": [
-        184545
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Aaron Glenn says Garrett Wilson's outburst 'overblown,' defends Jets' offense",
-      "body": "Commenting for the first time on Garrett Wilson's sideline outburst during Sunday's loss to Miami, Jets coach Aaron Glenn said it was \"overblown\" by the media.",
-      "published": "2026-10-26T18:08:25Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50287902/aaron-glenn-says-talked-garrett-wilson-outburst",
-      "espn_athlete_ids": [
-        529387
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Stephen A. calls out Dan Orlovsky for his take during this Ravens debate",
-      "body": "Stephen A. calls out Dan Orlovsky for his take during this Ravens debate",
-      "published": "2026-10-26T15:27:07Z",
-      "url": "https://www.espn.com/video/clip/_/id/50287741/stephen-calls-dan-orlovsky-take-ravens-debate",
-      "espn_athlete_ids": [
-        184545
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Is Courtland Sutton back on the flex radar?",
-      "body": "Is Courtland Sutton back on the flex radar?",
-      "published": "2026-10-26T15:22:51Z",
-      "url": "https://www.espn.com/video/clip/_/id/50287717/is-courtland-sutton-back-flex-radar",
-      "espn_athlete_ids": [
-        184603
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "What to make of the Giants' backfield situation",
-      "body": "What to make of the Giants' backfield situation",
-      "published": "2026-10-26T15:25:50Z",
-      "url": "https://www.espn.com/video/clip/_/id/50287706/what-make-giants-backfield-situation",
-      "espn_athlete_ids": [
-        450385,
-        209614,
-        379992
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Why Field Yates is monitoring Rico Dowdle's fantasy value",
-      "body": "Why Field Yates is monitoring Rico Dowdle's fantasy value",
-      "published": "2026-10-26T15:15:04Z",
-      "url": "https://www.espn.com/video/clip/_/id/50287661/why-field-yates-monitoring-rico-dowdle-fantasy-value",
-      "espn_athlete_ids": [
-        436292
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Is Chase Brown still a starting fantasy RB?",
-      "body": "Is Chase Brown still a starting fantasy RB?",
-      "published": "2026-10-26T15:12:04Z",
-      "url": "https://www.espn.com/video/clip/_/id/50287614/is-chase-brown-starting-fantasy-rb",
-      "espn_athlete_ids": [
-        228197
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Aaron Rodgers suggests full week of international games, jabs at NFL owners",
-      "body": "Aaron Rodgers advocated for the NFL to schedule a full week of international games and also jabbed at owners, hinting that they pay lip service to player safety.",
-      "published": "2026-10-26T15:24:48Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50287522/aaron-rodgers-suggests-full-week-nfl-international-games",
-      "espn_athlete_ids": [
-        17303
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Breaking down Cowboys-Eagles MNF matchup in wide-open NFC East",
-      "body": "Both teams enter the game 2-4, looking far from formidable and staring up at the 4-2-1 division-leading Giants.",
-      "published": "2026-10-26T14:33:51Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50257820/cowboys-eagles-matchup-wide-open-nfc-east-mnf-week-7",
-      "espn_athlete_ids": [
-        153118,
-        438983,
-        435090
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Stephen A. stunned by Chiefs' offensive woes",
-      "body": "Stephen A. stunned by Chiefs' offensive woes ",
-      "published": "2026-10-26T14:32:45Z",
-      "url": "https://www.espn.com/video/clip/_/id/50287413/stephen-stunned-chiefs-offensive-woes",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Sources: Packers LB Zaire Franklin has hairline fracture in leg",
-      "body": "Packers linebacker Zaire Franklin has a hairline fracture in his leg and center Sean Rhyan is believed to have a high ankle sprain, sources told NFL Network's Ian Rapoport.",
-      "published": "2026-10-26T20:27:22Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50287123/sources-packers-zaire-franklin-hairline-fracture-leg",
-      "espn_athlete_ids": [
-        184997,
-        529455,
-        389475,
-        551687
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "How active NFL players continue to redefine all-time sack list",
-      "body": "Myles Garrett's torrid pace up the all-time sack list paces active players making their moves among the greats.",
-      "published": "2026-10-26T20:47:06Z",
-      "url": "https://www.espn.com/nfl/story/_/id/49545945/all-sack-list-tracker-myles-garrett-von-miller-aaron-donald",
-      "espn_athlete_ids": [
-        166841,
-        166884,
-        126391,
-        92489,
-        92503,
-        37414,
-        138823,
-        126383
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "How to bet Cowboys-Eagles: Analysis, tips and top prop plays",
-      "body": "Odds and analysis to help you bet the Dallas Cowboys-Philadelphia Eagles game on Monday night.",
-      "published": "2026-10-26T13:56:31Z",
-      "url": "https://www.espn.com/espn/betting/story/_/id/50284388/nfl-week-7-odds-betting-tips-cowboys-eagles-preview",
-      "espn_athlete_ids": [
-        184478,
-        184692,
-        435005
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Aaron Rodgers takes shot at NFL, outlines potential international week for league",
-      "body": "Aaron Rodgers takes shot at NFL, outlines potential international week for league",
-      "published": "2026-10-26T13:31:26Z",
-      "url": "https://www.espn.com/video/clip/_/id/50287037/aaron-rodgers-takes-shot-nfl-outlines-potential-international-week-league",
-      "espn_athlete_ids": [
-        17303
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Cowboys vs. Eagles: Where to watch 'Monday Night Football'",
-      "body": "Here's what to know about the Week 7 matchup.",
-      "published": "2026-10-26T13:31:01Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50249186/cowboys-vs-eagles-watch-monday-night-football-week-7",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Does Jared Goff belong in the MVP conversation?",
-      "body": "Does Jared Goff belong in the MVP conversation? ",
-      "published": "2026-10-26T12:48:08Z",
-      "url": "https://www.espn.com/video/clip/_/id/50286669/does-jared-goff-belong-mvp-conversation",
-      "espn_athlete_ids": [
-        152836
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Do the Chiefs need to trade for a WR to fix their offense?",
-      "body": "Do the Chiefs need to trade for a WR to fix their offense?",
-      "published": "2026-10-26T16:31:10Z",
-      "url": "https://www.espn.com/video/clip/_/id/50286665/do-chiefs-need-trade-wr-fix-their-offense",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Sizing up NFL Week 7: Time to trust the Giants? Start Mendoza? Worry about Henry?",
-      "body": "Let's make sense of six takeaways from Sunday and spin them forward. Just how good is the Vikings' defense? What's wrong with the Ravens' run game? Are the Giants legit?",
-      "published": "2026-10-26T18:22:41Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50278093/week-7-barnwell-vikings-texans-giants-jets-raiders-ravens",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Which NFL teams are undefeated this season?",
-      "body": "This team has yet to lose a game in the 2026 NFL season.",
-      "published": "2026-10-26T11:30:58Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50166789/nfl-teams-undefeated-2026-season",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "2027 NFL draft order projections for Round 1, chances for top pick, more",
-      "body": "ESPN's Football Power Index projects the 2027 NFL draft order for Round 1, complete with each team's chances to pick in the top five, in the top 10 and at No. 1.",
-      "published": "2026-10-26T10:00:11Z",
-      "url": "https://www.espn.com/nfl/draft2027/story/_/id/49794361/2027-nfl-draft-order-projections-first-round-picks",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "2026 NFL playoff picture: AFC, NFC seed projections, chances to make postseason",
-      "body": "We're looking ahead to how the 14-team playoff picture could line up -- and who will win divisions -- en route to the Super Bowl.",
-      "published": "2026-10-26T10:06:53Z",
-      "url": "https://www.espn.com/nfl/story/_/id/49745176/2026-nfl-playoff-predictions-afc-nfc-odds-super-bowl",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Jaxon Smith-Njigba has 150 receiving yards, TD in Seahawks' win vs. Chiefs",
-      "body": "Jaxon Smith-Njigba wasn't the main story heading into Sunday night's Chiefs-Seahawks matchup -- but he emerged as the game's biggest star, continuing his own historic start by catching nine passes for 150 yards and a touchdown in Seattle's 20-3 win.",
-      "published": "2026-10-26T12:07:09Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50285418/jaxon-smith-njigba-stars-seahawks-deal-chiefs-first-loss",
-      "espn_athlete_ids": [
-        438528
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Seahawks contain Chiefs' Kenneth Walker III in RB's return to Seattle",
-      "body": "Chiefs running back Kenneth Walker III had his worst game of the season in his return to Seattle on Sunday night.",
-      "published": "2026-10-26T12:09:36Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50285364/seahawks-limit-chiefs-rb-kenneth-walker-iii-seattle-return",
-      "espn_athlete_ids": [
-        529577
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Jaxon Smith-Njigba, stifling defense help Seahawks hand Chiefs first loss",
-      "body": "Seattle's bread and butter from its Super Bowl championship season -- Jaxon Smith-Njigba and defense -- was too much for the Chiefs.",
-      "published": "2026-10-26T04:27:47Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50252989/seahawks-beat-chiefs-sunday-night-football-smith-njigba",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "NFL Week 7: Big takeaways, questions and fantasy spin from Sunday's games",
-      "body": "Our NFL Nation reporters react to all the action, answering the biggest questions coming out of each Sunday game. Here's what we learned from Week 7.",
-      "published": "2026-10-26T04:29:51Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50239544/week-7-sunday-games-takeaways-questions-2026",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Week 7 winners and losers: Pollard, Burrow lead the way; Walker III, Purdy struggle",
-      "body": "Tony Pollard, Joe Burrow and Zay Flowers came up big in Week 7, while Brock Purdy, Derrick Henry and Kenneth Walker III all had quiet days.",
-      "published": "2026-10-26T05:18:09Z",
-      "url": "https://www.espn.com/fantasy/football/story/_/page/FFSundayHighLows-50280888/nfl-week-7-fantasy-football-winners-losers-injuries-rankings-more",
-      "espn_athlete_ids": [
-        152901,
-        450385,
-        529999,
-        439296,
-        547452,
-        449123,
-        435021,
-        470174,
-        529915,
-        435000,
-        380283,
-        389171,
-        208615,
-        529351,
-        537086,
-        435157,
-        492021,
-        115570,
-        209614,
-        470084,
-        549664,
-        529586,
-        529388,
-        166867,
-        529577
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
       "source": "ESPN"
     },
     {
@@ -982,20 +783,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Devin Singletary (RB, NYG) is the hot add -- 52,344 pickups in 24h",
-      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        4040761
-      ],
-      "athlete_names": [
-        "Devin Singletary"
-      ],
-      "source": "Sleeper trending"
-    },
-    {
-      "headline": "Hunter Henry (TE, NE) is the hot add -- 46,311 pickups in 24h",
+      "headline": "Hunter Henry (TE, NE) is the hot add -- 149,370 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -1008,7 +796,20 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Kirk Cousins (QB, LV) is the hot add -- 44,512 pickups in 24h",
+      "headline": "Devin Singletary (RB, NYG) is the hot add -- 144,099 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        4040761
+      ],
+      "athlete_names": [
+        "Devin Singletary"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Kirk Cousins (QB, LV) is the hot add -- 135,616 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -1021,15 +822,15 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Rico Dowdle (RB, PIT) is the hot add -- 29,360 pickups in 24h",
+      "headline": "Jakobi Meyers (WR, JAX) is the hot add -- 107,616 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
       "espn_athlete_ids": [
-        4038815
+        3916433
       ],
       "athlete_names": [
-        "Rico Dowdle"
+        "Jakobi Meyers"
       ],
       "source": "Sleeper trending"
     }
