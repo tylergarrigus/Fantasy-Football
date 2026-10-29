@@ -1,6 +1,375 @@
 {
-  "fetched_at": "2026-10-29T02:30:38+00:00",
+  "fetched_at": "2026-10-29T18:31:51+00:00",
   "items": [
+    {
+      "headline": "Raiders and Jets will try to stop struggles and quiet some outside noise when they square off Sunday",
+      "body": "\u2014 Las Vegas Raiders fans are getting restless, while New York Jets fans are fully frustrated.",
+      "published": "2026-10-29T18:18:47Z",
+      "url": "http://www.espn.com/nfl/preview?gameId=401873029",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "In Pittsburgh, the Browns chase a rare win and sole possession of the AFC North lead",
+      "body": "\u2014 Time to find out if the Cleveland Browns are for real.",
+      "published": "2026-10-29T17:45:48Z",
+      "url": "http://www.espn.com/nfl/preview?gameId=401873027",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Dolphins look to build momentum against defending AFC champion Patriots as Willis faces former coach",
+      "body": "\u2014 Most of the current players on the Miami Dolphins roster haven't faced the New England Patriots very much.",
+      "published": "2026-10-29T17:45:47Z",
+      "url": "http://www.espn.com/nfl/preview?gameId=401873034",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Burrow, Bengals go into November with momentum as they host struggling Titans",
+      "body": "Joe Burrow and the Cincinnati Bengals find themselves in an unusual position going into November \u2014 healthy and with momentum.",
+      "published": "2026-10-29T17:44:53Z",
+      "url": "http://www.espn.com/nfl/preview?gameId=401873031",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Jonathan Taylor: 'I'm always proud to wear the horseshoe'",
+      "body": "Jonathan Taylor: 'I'm always proud to wear the horseshoe'",
+      "published": "2026-10-29T17:27:24Z",
+      "url": "https://www.espn.com/video/clip/_/id/50319945/always-proud-wear-horseshoe",
+      "espn_athlete_ids": [
+        435130
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Bears get Jeffery Simmons: Key intel on blockbuster trade",
+      "body": "Is Jeffery Simmons the key missing piece for the Bears' Super Bowl puzzle? Here are key takeaways from the blockbuster trade.",
+      "published": "2026-10-29T17:23:17Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50319153/jeffery-simmons-trade-titans-bears-draft-picks-deadline",
+      "espn_athlete_ids": [
+        379823
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Colts' Jonathan Taylor confirms he hasn't requested trade: 'Proud to be here'",
+      "body": "The Colts' Jonathan Taylor confirmed he has not asked for a trade amid the team's roster overhaul, but he acknowledged that any and all changes are possible.",
+      "published": "2026-10-29T17:29:43Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50319874/colts-jonathan-taylor-confirms-requested-trade",
+      "espn_athlete_ids": [
+        435130
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "NFL trade deadline grades: Jeffery Simmons, DeForest Buckner, Quenton Nelson",
+      "body": "Did the Bears give up too much to go all-in with Simmons? How did the Colts do in their DeForest Buckner and Quenton Nelson deals?",
+      "published": "2026-10-29T17:06:39Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50043542/2026-trade-deadline-grades-latest-best-worst-deals",
+      "espn_athlete_ids": [
+        493077,
+        388513,
+        529435,
+        499124,
+        184551,
+        152825,
+        379823
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "How Jeffery Simmons landed with the Bears",
+      "body": "How Jeffery Simmons landed with the Bears",
+      "published": "2026-10-29T16:35:53Z",
+      "url": "https://www.espn.com/video/clip/_/id/50319483/how-jeffery-simmons-landed-bears",
+      "espn_athlete_ids": [
+        379823,
+        64593
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Have teams figured out DeMeco Ryans and the Texans' defense?",
+      "body": "Houston has gone from one of the best defenses in the NFL to one of the most scored upon.",
+      "published": "2026-10-29T16:04:02Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50308256/what-happened-texans-defense-struggle",
+      "espn_athlete_ids": [
+        439413,
+        529363,
+        138823,
+        489544
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Can fantasy managers feel good about Ladd McConkey this week?",
+      "body": "Can fantasy managers feel good about Ladd McConkey this week?",
+      "published": "2026-10-29T15:08:37Z",
+      "url": "https://www.espn.com/video/clip/_/id/50318657/can-fantasy-managers-feel-good-ladd-mcconkey-week",
+      "espn_athlete_ids": [
+        439382
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "How to bet Panthers-Packers: Analysis, tips and top prop plays",
+      "body": "Odds, bets and analysis to help you bet the Carolina Panthers-Green Bay Packers game on Thursday night.",
+      "published": "2026-10-29T15:05:49Z",
+      "url": "https://www.espn.com/espn/betting/story/_/id/50313890/nfl-week-8-odds-betting-tips-panthers-packers-preview",
+      "espn_athlete_ids": [
+        379791,
+        470498
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "'A league-changing move!' Kimes reacts to Bears' trade for Jeffery Simmons",
+      "body": "'A league-changing move!' Kimes reacts to Bears' trade for Jeffery Simmons",
+      "published": "2026-10-29T15:02:32Z",
+      "url": "https://www.espn.com/video/clip/_/id/50318514/a-league-changing-move-kimes-reacts-bears-trade-jeffery-simmons",
+      "espn_athlete_ids": [
+        379823
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Field Yates details challenges Jonathan Taylor faces in Week 8",
+      "body": "Field Yates details challenges Jonathan Taylor faces in Week 8  ",
+      "published": "2026-10-29T15:09:49Z",
+      "url": "https://www.espn.com/video/clip/_/id/50318443/field-yates-details-challenges-jonathan-taylor-faces-week-8",
+      "espn_athlete_ids": [
+        435130
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Bears acquire All-Pro DT Jeffery Simmons in trade with Titans",
+      "body": "The Bears are acquiring All-Pro defensive tackle Jeffery Simmons from the Titans.",
+      "published": "2026-10-29T18:23:30Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50318351/sources-bears-trade-all-pro-dt-jeffery-simmons",
+      "espn_athlete_ids": [
+        379823
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "2026 NFL trade deadline updates: Jeffery Simmons, Quenton Nelson on the move",
+      "body": "The NFL trade deadline is Nov. 10, but deals have already started. We're tracking all moves, including a blockbuster sending Jeffery Simmons to Chicago.",
+      "published": "2026-10-29T14:38:21Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50043471/2026-trade-deadline-updates-latest-news-deals-terms",
+      "espn_athlete_ids": [
+        499124,
+        184551,
+        152825
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Why Mike Clay is downgrading Carnell Tate in Week 8",
+      "body": "Why Mike Clay is downgrading Carnell Tate in Week 8",
+      "published": "2026-10-29T14:34:16Z",
+      "url": "https://www.espn.com/video/clip/_/id/50318305/why-mike-clay-downgrading-carnell-tate-week-8",
+      "espn_athlete_ids": [
+        605760
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Is Lamar Jackson's future in Baltimore in question?",
+      "body": "Is Lamar Jackson's future in Baltimore in question?",
+      "published": "2026-10-29T14:24:27Z",
+      "url": "https://www.espn.com/video/clip/_/id/50318163/is-lamar-jackson-future-baltimore-question",
+      "espn_athlete_ids": [
+        184545
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Does Deshaun Watson have a future with Browns? Adam Schefter weighs in",
+      "body": "Does Deshaun Watson have a future with Browns? Adam Schefter weighs in",
+      "published": "2026-10-29T13:45:24Z",
+      "url": "https://www.espn.com/video/clip/_/id/50317678/does-deshaun-watson-future-browns-adam-schefter-weighs-in",
+      "espn_athlete_ids": [
+        166843
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "NFL Week 8 uniforms: Jaguars, Lions become latest team to debut Rivalries look",
+      "body": "Here's a look at what each NFL team is wearing in Week 8, led by Rivalries looks from Jacksonville and Detroit.",
+      "published": "2026-10-29T13:25:23Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50302364/nfl-week-8-uniforms",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Fantasy playbook: NFL Week 8 Shadow Reports, lineup locks and projected scores",
+      "body": "An all-encompassing look at the matchups to exploit or avoid and lineup locks in fantasy, as well as projected scores for all NFL games.",
+      "published": "2026-10-29T14:35:58Z",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/50289069/fantasy-playbook-projections-lineup-locks-week-8-shadow",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Bowen: Four players (and a defense) that have changed my mind",
+      "body": "Matt Bowen discusses a few disappointments, a couple of surprises and what to expect going forward.",
+      "published": "2026-10-29T12:39:26Z",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/50310913/fantasy-football-trade-value-midseason-trends",
+      "espn_athlete_ids": [
+        435021,
+        228197,
+        443985,
+        529387
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "What has gone wrong for 2025 running backs? Ashton Jeanty, Omarion Hampton, more",
+      "body": "We thought last year's running back class was going to be great. But Ashton Jeanty, Omarion Hampton, TreVeyon Henderson and others haven't lived up to the hype.",
+      "published": "2026-10-29T10:37:57Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50309285/running-backs-2025-draft-class-barnwell-jeanty-hampton-skattebo",
+      "espn_athlete_ids": [
+        538711,
+        537651,
+        537086,
+        492605,
+        499240,
+        450385
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Ranking the best 2026 NFL rookies: Arvell Reese, Denzel Boston, others in top 10",
+      "body": "Who are the NFL's most impressive rookies through Week 7? Who is overperforming or underperforming? We stacked the top 10 -- and have a tie at No. 1.",
+      "published": "2026-10-29T10:32:13Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50308697/2026-rookies-ranking-top-10-reese-styles-boston-concepcion",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Why Vikings' astronomical 70% blitz rate isn't a gimmick",
+      "body": "Minnesota blitzed Indianapolis 85% of the time Sunday, as they redefine what a 'normal' pass rush can be in the NFL.",
+      "published": "2026-10-29T10:00:13Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50306991/vikings-astronomical-blitz-rate-brian-flores-sack",
+      "espn_athlete_ids": [
+        103695
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Panthers' consistency starts in the trenches, rests with DC Ejiro Evero",
+      "body": "From offensive line woes to a troubled run defense, Carolina (3-3) faces its problems entering Thursday night's game at Green Bay.",
+      "published": "2026-10-29T14:23:48Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50308348/carolina-panthers-consistency-packers-week-8-tnf-evero",
+      "espn_athlete_ids": [
+        605579,
+        530095,
+        439296
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Why Micah Parsons' ACL recovery is taking longer than Patrick Mahomes'",
+      "body": "They were injured the same day, but while Mahomes was ready for Week 1, Parsons has yet to practice.",
+      "published": "2026-10-29T14:29:07Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50307555/packers-micah-parsons-return-acl-patrick-mahomes",
+      "espn_athlete_ids": [
+        470130
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
     {
       "headline": "Cardinals' Budda Baker hopes to stay with Arizona at trade deadline",
       "body": "Budda Baker hopes that when the trade deadline passes, he'll still be in Arizona.",
@@ -87,7 +456,7 @@
     {
       "headline": "Study: Estimated 75% of NFL players who died from 2008 to 2023 had CTE",
       "body": "An estimated 75% of ex-NFL players who died between 2008 and 2023 had CTE, the neurodegenerative brain disease tied to high-impact sports, according to a new study.",
-      "published": "2026-10-29T00:32:37Z",
+      "published": "2026-10-29T13:08:06Z",
       "url": "https://www.espn.com/nfl/story/_/id/50311853/study-nearly-75-nfl-players-died-2008-23-had-cte",
       "espn_athlete_ids": [],
       "athlete_names": [],
@@ -143,457 +512,6 @@
       ],
       "athlete_names": [
         null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Bills' Sam Franklin Jr. ready to play this week after suspension reduced to fine",
-      "body": "Bills DB and special teams captain Sam Franklin Jr., doesn't want to fixate on the incident that briefly landed him a suspension that was reduced to a fine upon appeal.",
-      "published": "2026-10-28T21:55:56Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50311224/bills-sam-franklin-ready-play-ban-reduced-fine",
-      "espn_athlete_ids": [
-        436154
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Jets WR Garrett Wilson says he doesn't want to be traded but does want to win",
-      "body": "Jets receiver Garrett Wilson says he doesn't want to be traded but he expressed that he's frustrated by his target share and, most of all, losing.",
-      "published": "2026-10-28T23:58:59Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50308919/jets-wr-garrett-wilson-says-want-traded",
-      "espn_athlete_ids": [
-        529387
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Brian Thomas Jr. trying to ignore trade talk, 'keep working hard' for Jaguars",
-      "body": "Jaguars receiver Brian Thomas Jr. said Wednesday that he isn't concerned about being the subject of recent trade rumors.",
-      "published": "2026-10-28T21:42:47Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50311100/jaguars-brian-thomas-jr-trying-ignore-trade-talk",
-      "espn_athlete_ids": [
-        499066
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Packers and Panthers trying to bounce back as they face off at Lambeau Field",
-      "body": "\u2014 A pair of ticked-off teams will square off when the Green Bay Packers face the Carolina Panthers on Thursday night.",
-      "published": "2026-10-28T20:35:00Z",
-      "url": "http://www.espn.com/nfl/preview?gameId=401873023",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Winless Chargers sticking with Mike McDaniel as offensive playcaller",
-      "body": "Embattled offensive coordinator Mike McDaniel will continue as the Chargers' playcaller, coach Jim Harbaugh announced Wednesday.",
-      "published": "2026-10-28T20:41:11Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50310259/chargers-sticking-mike-mcdaniel-offensive-playcaller",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "After bringing back DeForest Buckner, will the 49ers make more trades?",
-      "body": "The 49ers addressed their defensive line by adding Buckner, but will they make more big moves to help the WR room before the Nov. 10 deadline?",
-      "published": "2026-10-28T19:32:05Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50308923/san-francisco-49ers-deforest-buckner-trade-deadline-plans",
-      "espn_athlete_ids": [
-        152825
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Pass rusher Jaelan Phillips among four Panthers ruled out for TNF vs. Packers",
-      "body": "The Panthers ruled out four players, including starting OLB Jaelan Phillips (hamstring) and left guard Damien Lewis (knee) for \"Thursday Night Football.\"",
-      "published": "2026-10-28T20:00:29Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50309816/pass-rusher-jaelan-phillips-4-panthers-ruled-tnf",
-      "espn_athlete_ids": [
-        470097,
-        435168,
-        529880
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Eagles star Saquon Barkley says he was forced to divest Polymarket equity stake",
-      "body": "Eagles star Saquon Barkley said he was forced to divest his equity stake in Polymarket to comply with NFL rules.",
-      "published": "2026-10-28T20:28:42Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50309777/saquon-barkley-says-was-forced-divest-polymarket-stake",
-      "espn_athlete_ids": [
-        184478
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Jahmyr Gibbs shares his mindset after fully taking over Lions' backfield",
-      "body": "Jahmyr Gibbs shares his mindset after fully taking over Lions' backfield",
-      "published": "2026-10-28T18:05:13Z",
-      "url": "https://www.espn.com/video/clip/_/id/50309469/jahmyr-gibbs-shares-mindset-fully-taking-lions-backfield",
-      "espn_athlete_ids": [
-        438406,
-        64593
-      ],
-      "athlete_names": [
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Amon-Ra St. Brown's Week 8 fantasy outlook",
-      "body": "Amon-Ra St. Brown's Week 8 fantasy outlook",
-      "published": "2026-10-28T16:59:02Z",
-      "url": "https://www.espn.com/video/clip/_/id/50309264/amon-ra-st-brown-week-8-fantasy-outlook",
-      "espn_athlete_ids": [
-        470832
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Ian Rapoport shares latest on Josh Downs trade talks",
-      "body": "Ian Rapoport shares latest on Josh Downs trade talks",
-      "published": "2026-10-28T17:37:30Z",
-      "url": "https://www.espn.com/video/clip/_/id/50309196/ian-rapoport-shares-latest-josh-downs-trade-talks",
-      "espn_athlete_ids": [
-        442393,
-        64593
-      ],
-      "athlete_names": [
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Braelon Allen's Week 8 fantasy outlook",
-      "body": "Braelon Allen's Week 8 fantasy outlook",
-      "published": "2026-10-28T16:40:55Z",
-      "url": "https://www.espn.com/video/clip/_/id/50309182/braelon-allen-week-8-fantasy-outlook",
-      "espn_athlete_ids": [
-        495554
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Sources: Colts' Josh Downs requests trade; Jonathan Taylor hasn't, per coach",
-      "body": "Colts wide receiver Josh Downs is requesting a trade amid the team's rebuilding efforts, sources told ESPN's Jeremy Fowler on Wednesday.",
-      "published": "2026-10-28T18:29:23Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50309159/source-wr-downs-requests-trade-rb-taylor-per-coach",
-      "espn_athlete_ids": [
-        442393,
-        435130
-      ],
-      "athlete_names": [
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "NFL trade deadline grades: DeForest Buckner, Quenton Nelson dealt by Colts, more",
-      "body": "Does Buckner make the 49ers Super Bowl hopefuls? Will Quenton Nelson upgrade the Seahawks' O-line? We're grading NFL trades ahead of November's deadline.",
-      "published": "2026-10-28T16:41:49Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50043542/2026-trade-deadline-grades-latest-best-worst-deals",
-      "espn_athlete_ids": [
-        493077,
-        388513,
-        529435,
-        499124,
-        184551,
-        152825
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Why Dopp loves Hunter Henry for fantasy managers in Week 8",
-      "body": "Why Dopp loves Hunter Henry for fantasy managers in Week 8",
-      "published": "2026-10-28T16:18:10Z",
-      "url": "https://www.espn.com/video/clip/_/id/50309030/why-dopp-loves-hunter-henry-fantasy-managers-week-8",
-      "espn_athlete_ids": [
-        152902
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Dopp: It's time we put some respect on Bucky Irving's name",
-      "body": "Dopp: It's time we put some respect on Bucky Irving's name",
-      "published": "2026-10-28T16:12:48Z",
-      "url": "https://www.espn.com/video/clip/_/id/50309008/put-some-respect-bucky-irving-name",
-      "espn_athlete_ids": [
-        492021
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Why Daniel Dopp is benching Jared Goff in Week 8",
-      "body": "Why Daniel Dopp is benching Jared Goff in Week 8",
-      "published": "2026-10-28T18:38:09Z",
-      "url": "https://www.espn.com/video/clip/_/id/50308983/why-daniel-dopp-benching-jared-goff-week-8",
-      "espn_athlete_ids": [
-        152836
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "With Davante Adams out, Rams leaning on the run game",
-      "body": "In Sunday's victory over the Raiders, the Rams looked to be leaning on the running game, something Los Angeles has struggled to find consistently in this season.",
-      "published": "2026-10-28T16:00:01Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50299981/davante-adams-rams-lean-run-game-blake-corum-kyren-williams",
-      "espn_athlete_ids": [
-        443985,
-        529649
-      ],
-      "athlete_names": [
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "What Jordan Rodgers wants to see from Kyler Murray",
-      "body": "What Jordan Rodgers wants to see from Kyler Murray",
-      "published": "2026-10-28T15:57:29Z",
-      "url": "https://www.espn.com/video/clip/_/id/50308704/what-jordan-rodgers-wants-see-kyler-murray",
-      "espn_athlete_ids": [
-        445431,
-        379780,
-        443040,
-        152836,
-        71576,
-        435021
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Xavier Worthy's Week 8 fantasy outlook",
-      "body": "Xavier Worthy's Week 8 fantasy outlook",
-      "published": "2026-10-28T15:27:15Z",
-      "url": "https://www.espn.com/video/clip/_/id/50308640/xavier-worthy-week-8-fantasy-outlook",
-      "espn_athlete_ids": [
-        497669
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Jeff Saturday comes after Stephen A. for his Jordan Love take",
-      "body": "Jeff Saturday comes after Stephen A. for his Jordan Love take",
-      "published": "2026-10-28T15:37:01Z",
-      "url": "https://www.espn.com/video/clip/_/id/50308594/jeff-saturday-comes-stephen-jordan-love-take",
-      "espn_athlete_ids": [
-        435036
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "NFL Week 8 latest intel, buzz questions, news, fantasy tips: What we're hearing",
-      "body": "Are changes coming for the Jets? Could the Chiefs add at the trade deadline? Will the Colts keep unloading? And what's going on in the AFC North standings?",
-      "published": "2026-10-28T16:40:39Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50297734/week-8-buzz-fantasy-predictions-graziano-fowler-2026",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Is A.J. Brown or George Pickens a better fantasy option in Week 8?",
-      "body": "Is A.J. Brown or George Pickens a better fantasy option in Week 8?",
-      "published": "2026-10-28T15:01:09Z",
-      "url": "https://www.espn.com/video/clip/_/id/50308420/is-aj-brown-george-pickens-better-fantasy-option-week-8",
-      "espn_athlete_ids": [
-        380051,
-        529504
-      ],
-      "athlete_names": [
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Is Josh Jacobs or Chase Brown a better fantasy option in Week 8?",
-      "body": "Is Josh Jacobs or Chase Brown a better fantasy option in Week 8?",
-      "published": "2026-10-28T15:09:15Z",
-      "url": "https://www.espn.com/video/clip/_/id/50308401/is-josh-jacobs-chase-brown-better-fantasy-option-week-8",
-      "espn_athlete_ids": [
-        379791,
-        228197
-      ],
-      "athlete_names": [
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Is Jared Goff or Jacoby Brissett a better option in Week 8?",
-      "body": "Is Jared Goff or Jacoby Brissett a better option in Week 8?",
-      "published": "2026-10-28T15:57:35Z",
-      "url": "https://www.espn.com/video/clip/_/id/50308371/is-jared-goff-jacoby-brissett-better-option-week-8",
-      "espn_athlete_ids": [
-        152836,
-        152903
-      ],
-      "athlete_names": [
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Why Malik Willis is Daniel Dopp's QB15 for Week 8",
-      "body": "Why Malik Willis is Daniel Dopp's QB15 for Week 8 ",
-      "published": "2026-10-28T14:59:37Z",
-      "url": "https://www.espn.com/video/clip/_/id/50308294/why-malik-willis-daniel-dopp-qb15-week-8",
-      "espn_athlete_ids": [
-        529420
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Why Daniel Dopp is 'lowering expectations' for Jameson Williams in Week 8",
-      "body": "Why Daniel Dopp is 'lowering expectations' for Jameson Williams in Week 8",
-      "published": "2026-10-28T14:58:21Z",
-      "url": "https://www.espn.com/video/clip/_/id/50308285/why-daniel-dopp-lowering-expectations-jameson-williams-week-8",
-      "espn_athlete_ids": [
-        529388
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Stephen A.: Kevin O'Connell is lucky he's got a job",
-      "body": "Stephen A.: Kevin O'Connell is lucky he's got a job",
-      "published": "2026-10-28T14:48:51Z",
-      "url": "https://www.espn.com/video/clip/_/id/50308255/kevin-oconnell-lucky-got-job",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Kyle Brandt shares his Halloween treat for Chiefs before trade deadline",
-      "body": "Kyle Brandt shares his Halloween treat for Chiefs before trade deadline",
-      "published": "2026-10-28T21:23:34Z",
-      "url": "https://www.espn.com/video/clip/_/id/50308015/kyle-brandt-shares-halloween-treat-chiefs-trade-deadline",
-      "espn_athlete_ids": [
-        499066
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Jordan Mason's Week 8 fantasy outlook",
-      "body": "Jordan Mason's Week 8 fantasy outlook",
-      "published": "2026-10-28T13:54:39Z",
-      "url": "https://www.espn.com/video/clip/_/id/50307863/jordan-mason-week-8-fantasy-outlook",
-      "espn_athlete_ids": [
-        530099
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "How far can Kyler Murray take the Vikings this season?",
-      "body": "How far can Kyler Murray take the Vikings this season?",
-      "published": "2026-10-28T14:04:15Z",
-      "url": "https://www.espn.com/video/clip/_/id/50307797/how-far-kyler-murray-take-vikings-season",
-      "espn_athlete_ids": [
-        379780
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Chiefs to sign Justin Tucker to practice squad",
-      "body": "Chiefs to sign Justin Tucker to practice squad",
-      "published": "2026-10-28T13:27:27Z",
-      "url": "https://www.espn.com/video/clip/_/id/50307645/chiefs-sign-justin-tucker-practice-squad",
-      "espn_athlete_ids": [
-        105890
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Justin Tucker, out of NFL since sexual misconduct allegations, signs with Chiefs",
-      "body": "The Chiefs have signed five-time All-Pro kicker Justin Tucker to their practice squad.",
-      "published": "2026-10-28T18:21:02Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50307506/sources-chiefs-sign-justin-tucker-practice-squad",
-      "espn_athlete_ids": [
-        105890
-      ],
-      "athlete_names": [
         null
       ],
       "source": "ESPN"
@@ -898,7 +816,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Devin Singletary (RB, NYG) is the hot add -- 597,240 pickups in 24h",
+      "headline": "Devin Singletary (RB, NYG) is the hot add -- 341,730 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -911,7 +829,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Kirk Cousins (QB, LV) is the hot add -- 190,000 pickups in 24h",
+      "headline": "Kirk Cousins (QB, LV) is the hot add -- 103,408 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
