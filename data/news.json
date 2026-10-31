@@ -1,10 +1,178 @@
 {
-  "fetched_at": "2026-10-30T18:04:05+00:00",
+  "fetched_at": "2026-10-31T02:30:05+00:00",
   "items": [
     {
-      "headline": "Lamar Jackson expected to play as Ravens QB calls ankle pain 'bearable'",
-      "body": "The Ravens plan to have quarterback Lamar Jackson return from his high ankle sprain to play at the Bills.",
-      "published": "2026-10-30T18:02:46Z",
+      "headline": "NFL Week 8 uniforms: Jaguars, Lions become latest team to debut Rivalries look",
+      "body": "Here's a look at what each NFL team is wearing in Week 8, led by Rivalries looks from Jacksonville and Detroit.",
+      "published": "2026-10-31T02:02:22Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50302364/nfl-week-8-uniforms",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Halloween 2026: Breaking down top athlete costumes from across the sports world",
+      "body": "Athletes far and wide across the sports world showed off special costumes for Halloween.",
+      "published": "2026-10-31T00:38:27Z",
+      "url": "https://www.espn.com/nba/story/_/id/50321862/halloween-athlete-costumes-2026",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Falcons' Anterio Thompson says he can't play football due to spinal cord issue",
+      "body": "Falcons rookie DT Anterio Thompson revealed on Instagram this week that he was told he would never play football again due to a genetic mutation of his spinal cord.",
+      "published": "2026-10-31T00:31:29Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50332073/falcons-thompson-play-football-due-spinal-cord-issue",
+      "espn_athlete_ids": [
+        605828
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Sources: Commanders' Daron Payne likely IR-bound after practice injury",
+      "body": "Commanders DT Daron Payne suffered a significant foot injury in practice Friday that likely will land him on injured reserve, sources told NFL Network.",
+      "published": "2026-10-31T00:05:38Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50331710/sources-commanders-daron-payne-injures-foot-practice",
+      "espn_athlete_ids": [
+        184531
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Colts' Shane Steichen: WR Josh Downs 'ready to go' despite trade request",
+      "body": "Colts coach Shane Steichen says receiver Josh Downs practiced all week and is \"ready to go\" despite the trade request he made earlier this week.",
+      "published": "2026-10-30T22:19:00Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50331045/colts-steichen-wr-downs-ready-go-trade-demand",
+      "espn_athlete_ids": [
+        442393
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Budda Baker fields trade rumor questions in costume",
+      "body": "Budda Baker fields trade rumor questions in costume",
+      "published": "2026-10-30T21:08:26Z",
+      "url": "https://www.espn.com/video/clip/_/id/50330916/budda-baker-fields-trade-rumor-questions-costume",
+      "espn_athlete_ids": [
+        167009
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Defensive tweaks on deck for the Cowboys",
+      "body": "Todd Archer details Dallas Cowboys DC Christian Parker's adjustments following a league-high number of opening-possession touchdowns allowed.",
+      "published": "2026-10-30T21:40:29Z",
+      "url": "https://www.espn.com/video/clip/_/id/50330890/defensive-tweaks-deck-cowboys",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "With 10 games left and Ejiro Evero out, what's next for Panthers' defense?",
+      "body": "Here are three reasons for optimism as Carolina makes a defensive coordinator change to Todd Wash.",
+      "published": "2026-10-30T20:56:49Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50329806/carolina-panthers-defense-ejiro-evero-next-todd-wash",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Eagles' Saquon Barkley carries no injury designation for Commanders matchup",
+      "body": "Saquon Barkley, who did not practice Wednesday or Thursday and was a limited participant Friday, carries no designation into Sunday's game.",
+      "published": "2026-10-30T21:13:22Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50330421/eagles-saquon-barkley-carries-no-injury-designation-commanders-matchup",
+      "espn_athlete_ids": [
+        184478
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Bears vs. Seahawks: Where to watch 'Monday Night Football'",
+      "body": "Here's what to know about the Week 8 matchup.",
+      "published": "2026-10-30T19:25:06Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50329759/bears-vs-seahawks-watch-monday-night-football-week-8",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Bills making contingencies if hurt starters aren't available",
+      "body": "The Bills have listed starters DJ Moore (shoulder), right tackle Spencer Brown (back) and nickel Dee Alford (ankle) as questionable vs. the Ravens.",
+      "published": "2026-10-30T19:30:57Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50329615/bills-making-contingencies-hurt-starters-available",
+      "espn_athlete_ids": [
+        184495,
+        470260,
+        519668
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Chiefs get Rashee Rice back from injury for Broncos game",
+      "body": "Chiefs receiver Rashee Rice is expected back from a hamstring injury against the Broncos on Sunday.",
+      "published": "2026-10-30T19:53:39Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50329594/chiefs-get-rashee-rice-back-injury-broncos-game",
+      "espn_athlete_ids": [
+        389698,
+        537151
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Ravens coach Jesse Minter expects Lamar Jackson back this week",
+      "body": "Ravens coach Jesse Minter expects Lamar Jackson back this week",
+      "published": "2026-10-30T18:59:12Z",
+      "url": "https://www.espn.com/video/clip/_/id/50329589/ravens-coach-jesse-minter-expects-lamar-jackson-back-week",
+      "espn_athlete_ids": [
+        184545
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Cardinals rookie RB Jeremiyah Love (ankle) set to return",
+      "body": "Jeremiyah Love is expected to return to the field for the Cardinals on Sunday after missing the past two weeks with an ankle injury.",
+      "published": "2026-10-30T21:46:45Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50329508/cardinals-rookie-rb-jeremiyah-love-ankle-set-return",
+      "espn_athlete_ids": [
+        605430
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Ravens QB Jackson to return for Bills clash, calls ankle pain 'bearable'",
+      "body": "Ravens quarterback Lamar Jackson will return to play Sunday at Buffalo, saying the pain in his injured left ankle is \"bearable.\"",
+      "published": "2026-10-30T19:55:05Z",
       "url": "https://www.espn.com/nfl/story/_/id/50329330/ravens-qb-lamar-jackson-expected-return-vs-bills",
       "espn_athlete_ids": [
         184545
@@ -124,8 +292,8 @@
     },
     {
       "headline": "Panthers relieve Ejiro Evero of defensive coordinator duties",
-      "body": "The Carolina Panthers are moving on from defensive coordinator Ejiro Evero, the team announced Firday, with defensive line coach Todd Wash taking over on an interim basis.",
-      "published": "2026-10-30T17:23:12Z",
+      "body": "The Carolina Panthers are moving on from defensive coordinator Ejiro Evero, the team announced Friday, with defensive line coach Todd Wash taking over on an interim basis.",
+      "published": "2026-10-30T20:55:49Z",
       "url": "https://www.espn.com/nfl/story/_/id/50328239/panthers-relieve-ejiro-evero-defensive-coordinator-duties",
       "espn_athlete_ids": [],
       "athlete_names": [],
@@ -238,186 +406,6 @@
         null,
         null,
         null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Has Tyler Guyton become the Cowboys' franchise left tackle?",
-      "body": "The 2024 first-round draft pick has gone to liability to strength in protecting quarterback Dak Prescott.",
-      "published": "2026-10-30T10:00:00Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50322739/dallas-cowboys-tyler-guyton-franchise-left-tackle",
-      "espn_athlete_ids": [
-        438539
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "When will the Raiders make Fernando Mendoza the starting QB?",
-      "body": "Making the case for and against the Raiders switching to Fernando Mendoza as QB1.",
-      "published": "2026-10-30T10:00:10Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50313034/las-vegas-raiders-fernando-mendoza-starter-kirk-cousins",
-      "espn_athlete_ids": [
-        542097,
-        103992
-      ],
-      "athlete_names": [
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "2027 NFL draft order projections for Round 1, chances for top pick, more",
-      "body": "ESPN's Football Power Index projects the 2027 NFL draft order for Round 1, complete with each team's chances to pick in the top five, in the top 10 and at No. 1.",
-      "published": "2026-10-30T15:17:41Z",
-      "url": "https://www.espn.com/nfl/draft2027/story/_/id/49794361/2027-nfl-draft-order-projections-first-round-picks",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "2026 NFL playoff picture: AFC, NFC seed projections, chances to make postseason",
-      "body": "We're looking ahead to how the 14-team playoff picture could line up -- and who will win divisions -- en route to the Super Bowl.",
-      "published": "2026-10-30T10:33:55Z",
-      "url": "https://www.espn.com/nfl/story/_/id/49745176/2026-nfl-playoff-predictions-afc-nfc-odds-super-bowl",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Packers' Josh Jacobs: TD celebration was ode to gospel song, not mocking arrest",
-      "body": "The Packers' Josh Jacobs said he was surprised his first-half TD celebration was perceived by some as mocking his May arrest, saying it was an ode to a gospel song.",
-      "published": "2026-10-30T14:31:10Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50325876/packers-josh-jacobs-says-td-celebration-mocking-arrest",
-      "espn_athlete_ids": [
-        379791
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Panthers' Bryce Young says injured knee 'fine' after taking 6 sacks vs. Packers",
-      "body": "Panthers quarterback Bryce Young was pressured on nearly half his dropbacks and was sacked six times, but said his injured knee was \"fine\" after a 27-19 loss to the Packers.",
-      "published": "2026-10-30T06:22:07Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50325742/panthers-bryce-young-says-knee-fine-loss-packers",
-      "espn_athlete_ids": [
-        439296
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Love throws 3 TD passes as the Packers beat the Panthers 27-19",
-      "body": "\u2014 Jordan Love realizes the Green Bay Packers need to finish better.",
-      "published": "2026-10-30T05:00:47Z",
-      "url": "http://www.espn.com/nfl/recap?gameId=401873023",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Week 8 TNF Panthers at Packers: Highlights, key plays",
-      "body": "Check out the biggest touchdowns and highlights from the Packers' win over the Panthers at Lambeau Field.",
-      "published": "2026-10-30T04:32:54Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50322459/nfl-thursday-night-football-packers-panthers-jordan-love-bryce-young",
-      "espn_athlete_ids": [
-        435036,
-        439296
-      ],
-      "athlete_names": [
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Jordan Love, Packers take down Panthers on TNF",
-      "body": "Jordan Love, Packers take down Panthers on TNF",
-      "published": "2026-10-30T12:24:38Z",
-      "url": "https://www.espn.com/video/clip/_/id/50324935/jordan-love-packers-take-panthers-tnf",
-      "espn_athlete_ids": [
-        435036,
-        379791
-      ],
-      "athlete_names": [
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Josh Jacobs scores twice as Packers dispatch Panthers",
-      "body": "Carolina made a game of it late, but Green Bay held on for the Thursday night win.",
-      "published": "2026-10-30T04:30:36Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50322670/nfl-green-bay-packers-panthers-jordan-love-bryce-young",
-      "espn_athlete_ids": [
-        435036,
-        439296,
-        547452,
-        537826,
-        387970
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Ben Johnson opens up about the early days of his coaching journey",
-      "body": "Ben Johnson opens up about the early days of his coaching journey",
-      "published": "2026-10-30T03:27:54Z",
-      "url": "https://www.espn.com/video/clip/_/id/50324851/ben-johnson-opens-early-days-coaching-journey",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Packers' Christian Watson returns to play after hospital trip for chest injury",
-      "body": "Christian Watson was determined to get back on the field Thursday despite coughing up blood and having to take an ambulance ride to get an X-ray and a CT scan.",
-      "published": "2026-10-30T06:44:37Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50324081/packers-christian-watson-hospital-chest-injury-panthers",
-      "espn_athlete_ids": [
-        529534
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Panthers' ailing secondary loses rookie CB Will Lee to injury in first half",
-      "body": "The Panthers, already down two starting cornerbacks, lost rookie Will Lee to a first-half hamstring injury Thursday night against the Packers.",
-      "published": "2026-10-30T04:21:02Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50323927/panthers-lee-injures-hamstring-ruled-vs-packers",
-      "espn_athlete_ids": [
-        606934
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Source: Bears quarterback Caleb Williams fined again for cleats",
-      "body": "The NFL fined Caleb Williams $23,882 for sporting Caddix cleats in Week 7, a source confirmed to ESPN on Thursday.",
-      "published": "2026-10-30T01:53:54Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50323203/bears-quarterback-caleb-williams-fined-again-cleats",
-      "espn_athlete_ids": [
-        492854
-      ],
-      "athlete_names": [
         null
       ],
       "source": "ESPN"
@@ -735,7 +723,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Devin Singletary (RB, NYG) is the hot add -- 233,172 pickups in 24h",
+      "headline": "Devin Singletary (RB, NYG) is the hot add -- 163,251 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -748,7 +736,33 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Kirk Cousins (QB, LV) is the hot add -- 99,624 pickups in 24h",
+      "headline": "Chris Godwin Jr. (WR, TB) is the hot add -- 78,882 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3116165
+      ],
+      "athlete_names": [
+        "Chris Godwin Jr."
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Samaje Perine (RB, CIN) is the hot add -- 67,816 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3116389
+      ],
+      "athlete_names": [
+        "Samaje Perine"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Kirk Cousins (QB, LV) is the hot add -- 48,416 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -757,32 +771,6 @@
       ],
       "athlete_names": [
         "Kirk Cousins"
-      ],
-      "source": "Sleeper trending"
-    },
-    {
-      "headline": "Kyler Murray (QB, MIN) is the hot add -- 77,112 pickups in 24h",
-      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        3917315
-      ],
-      "athlete_names": [
-        "Kyler Murray"
-      ],
-      "source": "Sleeper trending"
-    },
-    {
-      "headline": "Geno Smith (QB, NYJ) is the hot add -- 60,400 pickups in 24h",
-      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        15864
-      ],
-      "athlete_names": [
-        "Geno Smith"
       ],
       "source": "Sleeper trending"
     }
