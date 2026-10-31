@@ -1,6 +1,194 @@
 {
-  "fetched_at": "2026-10-31T02:30:05+00:00",
+  "fetched_at": "2026-10-31T17:16:06+00:00",
   "items": [
+    {
+      "headline": "Source: Commanders DT Daron Payne suffered season-ending foot injury",
+      "body": "Commanders defensive tackle Daron Payne suffered a season-ending Jones fracture in practice Friday, a source told ESPN's Adam Schefter.",
+      "published": "2026-10-31T15:46:37Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50336399/source-commanders-dt-payne-suffered-season-ending-foot-injury",
+      "espn_athlete_ids": [
+        184531
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Jeremy Fowler: Interest in Jonathan Taylor is 'heavy' and 'real'",
+      "body": "Jeremy Fowler: Interest in Jonathan Taylor is 'heavy' and 'real'",
+      "published": "2026-10-31T14:44:08Z",
+      "url": "https://www.espn.com/video/clip/_/id/50336119/interest-jonathan-taylor-heavy-real",
+      "espn_athlete_ids": [
+        435130
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "NFL scouts favor Drew Mestemaker as first QB taken in draft",
+      "body": "In a midseason poll of 25 NFL scouts, Oklahoma State's Drew Mestemaker was the overwhelming choice to be the first quarterback selected in the 2027 NFL draft.",
+      "published": "2026-10-31T16:18:43Z",
+      "url": "https://www.espn.com/college-football/story/_/id/50335830/nfl-scouts-favor-drew-mestemaker-first-qb-taken-draft",
+      "espn_athlete_ids": [
+        671639,
+        605976,
+        610447,
+        611019,
+        607024,
+        669073,
+        609594
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Sources: Packers, Micah Parsons target return for Thanksgiving Eve game vs. Rams",
+      "body": "The Packers and Micah Parsons are targeting the Thanksgiving Eve game against the Rams for his return to the field, sources told NFL Network.",
+      "published": "2026-10-31T13:28:28Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50335391/sources-packers-micah-parsons-eye-thanksgiving-eve-return",
+      "espn_athlete_ids": [
+        470130
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Appellate court revives 'Sunday Ticket' antitrust verdict against NFL",
+      "body": "A verdict in a class action lawsuit filed by \"Sunday Ticket\" subscribers claiming the NFL broke antitrust laws has been revived by a federal appeals court, more than two years after a $4.7 billion ruling against the league was reversed.",
+      "published": "2026-10-31T13:49:42Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50335296/appeals-court-revives-sunday-ticket-verdict-nfl",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "'No way' that Jets trade star WR Garrett Wilson before deadline, source says",
+      "body": "The Jets are not expected to trade Garrett Wilson, sources told ESPN, despite increased speculation about the star wide receiver's future.",
+      "published": "2026-10-31T12:33:18Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50331651/no-way-jets-trade-garrett-wilson-deadline-source-says",
+      "espn_athlete_ids": [
+        529387
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Sources: Colts willing to trade RB Jonathan Taylor, active in talks with teams",
+      "body": "The Colts now are open to trading Jonathan Taylor, sources told ESPN and NFL Network, and multiple teams have reached out to Indianapolis.",
+      "published": "2026-10-31T15:08:29Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50323095/sources-colts-willing-trade-star-rb-jonathan-taylor",
+      "espn_athlete_ids": [
+        435130
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "NFL Week 8 predictions: Upsets, fantasy sleepers, stat lines, TD scorers, more",
+      "body": "Tough day coming for Derrick Henry? Browns pulling an upset over the Steelers? Fantasy potential for Geno Smith? Let's predict 15 things for Week 8.\ufeff",
+      "published": "2026-10-31T10:57:35Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50319868/week-8-predictions-upsets-fantasy-sleepers-stats-2026",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Where the 2026 Vikings rank among worst 6-0 NFL teams ever",
+      "body": "Aaron Schatz ranked the worst 6-0 teams ever by DVOA and point differential. Where do the 2026 Vikings land, and what's next for them?",
+      "published": "2026-10-31T10:58:10Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50329579/2026-minnesota-vikings-worst-undefeated-team-ever",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Joe Burrow's trust makes Tee Higgins level up for Bengals",
+      "body": "No receiver in the NFL has been better on tight window throws this season than the Bengals' Tee Higgins.",
+      "published": "2026-10-31T10:00:00Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50331179/cincinnati-bengals-tee-higgins-joe-burrow",
+      "espn_athlete_ids": [
+        435157,
+        470095,
+        435000
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Michael Penix Jr. shows he could be Atlanta's QB1",
+      "body": "Penix has been mostly above average after 17 games as an NFL starter, and that's really all Atlanta needs him to be.",
+      "published": "2026-10-31T10:00:02Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50321280/atlanta-falcons-michael-penix-future",
+      "espn_athlete_ids": [
+        208615
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Will the Bills' defense stop them from winning a Super Bowl?",
+      "body": "Buffalo's defense ranks among the worst in several key statistical areas, including the third-most points allowed.",
+      "published": "2026-10-31T10:24:11Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50312381/bill-defense-super-bowl-gardner-johnson-rousseau",
+      "espn_athlete_ids": [
+        184455,
+        380148,
+        166858,
+        470133
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Records show 3 other women accused Packers' Josh Jacobs of abuse after arrest",
+      "body": "Three other women contacted police to detail allegations of abuse against Packers RB Josh Jacobs following his May arrest for an altercation with his then-girlfriend.",
+      "published": "2026-10-31T17:03:07Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50333636/records-show-3-other-women-accused-packers-josh-jacobs-abuse",
+      "espn_athlete_ids": [
+        379791
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Fantasy playbook: NFL Week 8 Shadow Reports, lineup locks and projected scores",
+      "body": "An all-encompassing look at the matchups to exploit or avoid and lineup locks in fantasy, as well as projected scores for all NFL games.",
+      "published": "2026-10-31T03:02:50Z",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/50289069/fantasy-playbook-projections-lineup-locks-week-8-shadow",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
     {
       "headline": "NFL Week 8 uniforms: Jaguars, Lions become latest team to debut Rivalries look",
       "body": "Here's a look at what each NFL team is wearing in Week 8, led by Rivalries looks from Jacksonville and Detroit.",
@@ -172,7 +360,7 @@
     {
       "headline": "Ravens QB Jackson to return for Bills clash, calls ankle pain 'bearable'",
       "body": "Ravens quarterback Lamar Jackson will return to play Sunday at Buffalo, saying the pain in his injured left ankle is \"bearable.\"",
-      "published": "2026-10-30T19:55:05Z",
+      "published": "2026-10-31T11:05:57Z",
       "url": "https://www.espn.com/nfl/story/_/id/50329330/ravens-qb-lamar-jackson-expected-return-vs-bills",
       "espn_athlete_ids": [
         184545
@@ -273,139 +461,6 @@
         537086
       ],
       "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Why this is a good week to start Dak Prescott in fantasy",
-      "body": "Why this is a good week to start Dak Prescott in fantasy",
-      "published": "2026-10-30T15:05:05Z",
-      "url": "https://www.espn.com/video/clip/_/id/50328325/why-good-week-start-dak-prescott-fantasy",
-      "espn_athlete_ids": [
-        153118
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Panthers relieve Ejiro Evero of defensive coordinator duties",
-      "body": "The Carolina Panthers are moving on from defensive coordinator Ejiro Evero, the team announced Friday, with defensive line coach Todd Wash taking over on an interim basis.",
-      "published": "2026-10-30T20:55:49Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50328239/panthers-relieve-ejiro-evero-defensive-coordinator-duties",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "What Stephen A. still needs to see from Jordan Love",
-      "body": "What Stephen A. still needs to see from Jordan Love",
-      "published": "2026-10-30T14:37:45Z",
-      "url": "https://www.espn.com/video/clip/_/id/50328162/what-stephen-needs-see-jordan-love",
-      "espn_athlete_ids": [
-        435036
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Dan Orlovsky stunned by news of Panthers firing DC Ejiro Evero",
-      "body": "Dan Orlovsky stunned by news of Panthers firing DC Ejiro Evero",
-      "published": "2026-10-30T14:34:14Z",
-      "url": "https://www.espn.com/video/clip/_/id/50328161/dan-orlovsky-stunned-news-panthers-firing-dc-ejiro-evero",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Orlovsky: Jordan Love is truly what an MVP looks like",
-      "body": "Orlovsky: Jordan Love is truly what an MVP looks like",
-      "published": "2026-10-30T12:47:14Z",
-      "url": "https://www.espn.com/video/clip/_/id/50327478/jordan-love-truly-mvp-looks-like",
-      "espn_athlete_ids": [
-        435036
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Fantasy playbook: NFL Week 8 Shadow Reports, lineup locks and projected scores",
-      "body": "An all-encompassing look at the matchups to exploit or avoid and lineup locks in fantasy, as well as projected scores for all NFL games.",
-      "published": "2026-10-30T10:36:40Z",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/50289069/fantasy-playbook-projections-lineup-locks-week-8-shadow",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Don't be surprised if ... JSN makes history, Baker Mayfield has a stellar Week 8",
-      "body": "Don't be surprised if Jaxon Smith-Njigba makes NFL history, don't underestimate Baker Mayfield and more bold predictions.",
-      "published": "2026-10-30T13:10:28Z",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/50319347/fantasy-football-start-sit-sleepers-breakouts-week-8",
-      "espn_athlete_ids": [
-        438528,
-        389171,
-        184532,
-        152836,
-        103992,
-        542097,
-        153118,
-        209237
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Why Jeremiah Smith is a generational NFL draft receiver prospect for 2027",
-      "body": "Smith could be the first wideout to be selected No. 1 in the draft in 31 years. What makes him so special? Who are his comps? Which NFL teams could pick him?",
-      "published": "2026-10-30T10:25:31Z",
-      "url": "https://www.espn.com/nfl/draft2027/story/_/id/50288294/2027-nfl-draft-ohio-state-receiver-jeremiah-smith-generational",
-      "espn_athlete_ids": [
-        670242
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Answering 10 questions about Chiefs-Broncos showdown for first place in AFC West",
-      "body": "Can the Broncos slow Kenneth Walker III? Can the Chiefs' pass rush fluster Bo Nix? Answering the biggest questions in Sunday's AFC West showdown.",
-      "published": "2026-10-30T10:00:10Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50319759/kansas-city-chiefs-denver-broncos-afc-west-division-lead",
-      "espn_athlete_ids": [
-        529577,
-        166867,
-        549664,
-        470083,
-        547264,
-        470084,
-        389698,
-        115523
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
         null
       ],
       "source": "ESPN"
@@ -723,7 +778,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Devin Singletary (RB, NYG) is the hot add -- 163,251 pickups in 24h",
+      "headline": "Devin Singletary (RB, NYG) is the hot add -- 155,106 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -736,20 +791,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Chris Godwin Jr. (WR, TB) is the hot add -- 78,882 pickups in 24h",
-      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        3116165
-      ],
-      "athlete_names": [
-        "Chris Godwin Jr."
-      ],
-      "source": "Sleeper trending"
-    },
-    {
-      "headline": "Samaje Perine (RB, CIN) is the hot add -- 67,816 pickups in 24h",
+      "headline": "Samaje Perine (RB, CIN) is the hot add -- 102,072 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -762,15 +804,15 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Kirk Cousins (QB, LV) is the hot add -- 48,416 pickups in 24h",
+      "headline": "Chris Godwin Jr. (WR, TB) is the hot add -- 98,232 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
       "espn_athlete_ids": [
-        14880
+        3116165
       ],
       "athlete_names": [
-        "Kirk Cousins"
+        "Chris Godwin Jr."
       ],
       "source": "Sleeper trending"
     }
