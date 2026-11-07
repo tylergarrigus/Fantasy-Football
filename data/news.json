@@ -1,6 +1,72 @@
 {
-  "fetched_at": "2026-11-07T02:54:18+00:00",
+  "fetched_at": "2026-11-07T17:45:59+00:00",
   "items": [
+    {
+      "headline": "Sources: Colts among several NFL teams mulling trade offers as deadline looms",
+      "body": "Multiple teams have been engaged in serious trade discussions as Tuesday's NFL deadline approaches.",
+      "published": "2026-11-07T17:06:46Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50403627/trade-talks-pick-nfl-tuesday-deadline-looming",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Colts in Daniel Jones trade talks as multiple teams call about QB, sources say",
+      "body": "The Colts have engaged in trade discussions with multiple teams involving quarterback Daniel Jones, sources told NFL Network and ESPN.",
+      "published": "2026-11-07T15:38:18Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50403440/sources-colts-engaged-daniel-jones-trade-talks",
+      "espn_athlete_ids": [
+        379778
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Sources: Ravens not expected to deal RB Derrick Henry before NFL trade deadline",
+      "body": "Ravens running back Derrick Henry is not expected to be moved by the NFL trade deadline, league sources told ESPN.",
+      "published": "2026-11-07T13:16:10Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50400748/sources-ravens-not-expected-trade-star-rb-derrick-henry",
+      "espn_athlete_ids": [
+        152901
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "NFL Week 9 predictions: Upsets, fantasy sleepers, stat lines, TD scorers, more",
+      "body": "QB controversy in Minnesota? Browns upsetting the Saints? Touchdowns for two rookie RBs? Let's predict 15 things for Week 9.",
+      "published": "2026-11-07T11:38:29Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50390199/week-9-predictions-upsets-fantasy-sleepers-stats-2026",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "2026 NFL trade deadline: Proposing deals for Tony Pollard, Riq Woolen, others",
+      "body": "Our NFL experts pitched trade offers they'd love to see get done before Tuesday's deadline, including moves for Tony Pollard, Riq Woolen, Jonathan Taylor and Jessie Bates III.",
+      "published": "2026-11-07T11:37:27Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50389499/2026-nfl-trade-deadline-offers-experts-taylor-woolen-pollard",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Bengals face Falcons S Jessie Bates III, evoking mixed emotions",
+      "body": "Cincinnati hasn't been to the playoffs since Bates' departure, but Atlanta also hasn't reached the postseason since his arrival.",
+      "published": "2026-11-07T11:00:10Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50402286/jessie-bates-falcons-bengals",
+      "espn_athlete_ids": [
+        184648
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
     {
       "headline": "Brandon Aiyuk meets with 49ers, says he's healthy, 'looking to get reinstated'",
       "body": "Brandon Aiyuk met with the Niners on Friday to begin hammering out a path toward a divorce that has been more than two years in the making.",
@@ -17,7 +83,7 @@
     {
       "headline": "Seahawks' Quenton Nelson, Sam Darnold among starters ruled out",
       "body": "New Seahawks trade acquisition Quenton Nelson will have a \"minor procedure\" and is one of six starters, including QB Sam Darnold, who won't play vs. the Cardinals.",
-      "published": "2026-11-07T00:24:17Z",
+      "published": "2026-11-07T03:11:40Z",
       "url": "https://www.espn.com/nfl/story/_/id/50402740/seahawks-quenton-nelson-sam-darnold-starters-ruled-out",
       "espn_athlete_ids": [
         184551,
@@ -78,6 +144,19 @@
       "url": "https://www.espn.com/nfl/story/_/id/50401403/what-biggest-problems-facing-brissett-ravens",
       "espn_athlete_ids": [
         152903
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Inside the evolution of Caleb Williams' MVP candidacy",
+      "body": "Williams has the fourth-shortest odds to win MVP as the Bears are currently favored to win the NFC.",
+      "published": "2026-11-07T12:56:58Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50402109/bears-caleb-williams-mvp",
+      "espn_athlete_ids": [
+        492854
       ],
       "athlete_names": [
         null
@@ -397,111 +476,6 @@
         721136
       ],
       "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Bills vs. Vikings: Where to watch 'Monday Night Football'",
-      "body": "Here's what to know about the Week 9 matchup.",
-      "published": "2026-11-06T13:55:51Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50392822/bills-vs-vikings-watch-monday-night-football-week-9",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Donte Whitner: Ravens made 'catastrophic mistake' firing John Harbaugh",
-      "body": "Donte Whitner: Ravens made 'catastrophic mistake' firing John Harbaugh",
-      "published": "2026-11-06T13:33:40Z",
-      "url": "https://www.espn.com/video/clip/_/id/50399035/ravens-made-catastrophic-mistake-firing-john-harbaugh",
-      "espn_athlete_ids": [
-        529352,
-        435268,
-        184452,
-        37414,
-        166847
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Fantasy playbook: Week 9 Shadow Reports, lineup locks and projected scores",
-      "body": "An all-encompassing look at the matchups to exploit or avoid and lineup locks in fantasy, as well as projected scores for all NFL games.",
-      "published": "2026-11-06T17:20:48Z",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/50357490/fantasy-playbook-projections-lineup-locks-week-9-shadow",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "NFL depth charts for all 32 teams for 2026 season",
-      "body": "Here are the latest NFL depth charts for all 32 teams.",
-      "published": "2026-11-06T13:05:33Z",
-      "url": "https://www.espn.com/nfl/story/_/id/29098001/nfl-depth-charts-all-32-teams",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Tracking Jaguars CB/WR Travis Hunter's 2026 season: Snaps on offense, defense",
-      "body": "Every week, we will look at how many snaps the two-way corner/receiver plays on offense and defense. Is there a trend in his usage?",
-      "published": "2026-11-06T13:16:56Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50043976/jacksonville-jaguars-travis-hunter-stats-snaps-tracker",
-      "espn_athlete_ids": [
-        540780
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "What to know for Week 9: Breaking down quarterbacks to pick up or leave behind",
-      "body": "Still working on your fantasy season turnaround? These are the best QB options to stream for Week 9.",
-      "published": "2026-11-06T12:20:44Z",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/50392279/fantasy-football-quarterback-start-sit-streamers-week-9",
-      "espn_athlete_ids": [
-        529420,
-        493077,
-        379932,
-        208615,
-        115570,
-        209237
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Don't be surprised if ... Nix gets hot, both Rams RBs star, Higgins outdoes Chase",
-      "body": "Denver's QB is ready to heat up, and the Rams RB duo and Bengals top two WRs could finish in the top 10.",
-      "published": "2026-11-06T12:16:46Z",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/50390704/fantasy-football-start-sit-sleepers-breakouts-week-9",
-      "espn_athlete_ids": [
-        549664,
-        529649,
-        443985,
-        435157,
-        547264
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null,
-        null,
         null
       ],
       "source": "ESPN"
@@ -871,7 +845,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Devin Singletary (RB, NYG) is the hot add -- 673,614 pickups in 24h",
+      "headline": "Devin Singletary (RB, NYG) is the hot add -- 795,258 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -884,7 +858,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Demarcus Robinson (WR, SF) is the hot add -- 241,674 pickups in 24h",
+      "headline": "Demarcus Robinson (WR, SF) is the hot add -- 236,148 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -897,7 +871,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Carson Wentz (QB, MIN) is the hot add -- 162,972 pickups in 24h",
+      "headline": "Carson Wentz (QB, MIN) is the hot add -- 90,690 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -910,7 +884,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Mike Gesicki (TE, CIN) is the hot add -- 67,496 pickups in 24h",
+      "headline": "Mike Gesicki (TE, CIN) is the hot add -- 48,960 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -919,32 +893,6 @@
       ],
       "athlete_names": [
         "Mike Gesicki"
-      ],
-      "source": "Sleeper trending"
-    },
-    {
-      "headline": "Keenan Allen (WR, IND) is the hot add -- 49,164 pickups in 24h",
-      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        15818
-      ],
-      "athlete_names": [
-        "Keenan Allen"
-      ],
-      "source": "Sleeper trending"
-    },
-    {
-      "headline": "Justice Hill (RB, BAL) is the hot add -- 47,484 pickups in 24h",
-      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        4038441
-      ],
-      "athlete_names": [
-        "Justice Hill"
       ],
       "source": "Sleeper trending"
     }
