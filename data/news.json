@@ -1,6 +1,89 @@
 {
-  "fetched_at": "2026-11-06T19:28:58+00:00",
+  "fetched_at": "2026-11-07T02:54:18+00:00",
   "items": [
+    {
+      "headline": "Brandon Aiyuk meets with 49ers, says he's healthy, 'looking to get reinstated'",
+      "body": "Brandon Aiyuk met with the Niners on Friday to begin hammering out a path toward a divorce that has been more than two years in the making.",
+      "published": "2026-11-07T00:52:30Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50402899/brandon-aiyuk-meets-49ers-looking-get-reinstated",
+      "espn_athlete_ids": [
+        434992
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Seahawks' Quenton Nelson, Sam Darnold among starters ruled out",
+      "body": "New Seahawks trade acquisition Quenton Nelson will have a \"minor procedure\" and is one of six starters, including QB Sam Darnold, who won't play vs. the Cardinals.",
+      "published": "2026-11-07T00:24:17Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50402740/seahawks-quenton-nelson-sam-darnold-starters-ruled-out",
+      "espn_athlete_ids": [
+        184551,
+        184497,
+        138774,
+        529366,
+        379932,
+        184656,
+        530161
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Nick Bosa back, Christian McCaffrey good to go for Niners",
+      "body": "The 49ers will have a healthy Nick Bosa for the first time since Week 2, and running back Christian McCaffrey is good to go this week against the Raiders.",
+      "published": "2026-11-06T23:03:00Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50402463/nick-bosa-back-christian-mccaffrey-good-go-niners",
+      "espn_athlete_ids": [
+        379795,
+        166874,
+        126377
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Giants' Cam Skattebo doubtful vs. Eagles; Malik Nabers 'full go'",
+      "body": "Giants running back Cam Skattebo is unlikely to play against the Eagles on Sunday, but receiver Malik Nabers is expected to be a \"full go\" without limitations.",
+      "published": "2026-11-07T00:36:48Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50402162/giants-cam-skattebo-doubtful-vs-eagles-nabers-full-go",
+      "espn_athlete_ids": [
+        450385,
+        489486
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Jacoby Brissett brings hope but realistic expectations for spiraling Ravens",
+      "body": "The Ravens know what they're getting in acquiring veteran journeyman QB, but does Jacoby Brissett know what he's in for?",
+      "published": "2026-11-07T01:09:33Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50401403/what-biggest-problems-facing-brissett-ravens",
+      "espn_athlete_ids": [
+        152903
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
     {
       "headline": "Joe Burrow makes time for art in Madrid ahead of Bengals-Falcons",
       "body": "While in Spain, the Bengals quarterback is finding time for one of his off-field interests: art.",
@@ -71,7 +154,7 @@
     {
       "headline": "Rams' Myles Garrett to be activated from injured reserve, play vs. Commanders",
       "body": "Rams star pass rusher Myles Garrett is on track to be activated from injured reserve ahead of Sunday's game at the Commanders.",
-      "published": "2026-11-06T19:27:15Z",
+      "published": "2026-11-06T22:24:26Z",
       "url": "https://www.espn.com/nfl/story/_/id/50400738/sources-rams-myles-garrett-track-return-vs-commanders",
       "espn_athlete_ids": [
         166841,
@@ -148,7 +231,7 @@
     {
       "headline": "2026 NFL trade deadline updates: Jacoby Brissett, Jeffery Simmons on the move",
       "body": "The NFL trade deadline is Nov. 10, but deals have already started. We're tracking all moves, including Jacoby Brissett to Baltimore.",
-      "published": "2026-11-06T17:42:30Z",
+      "published": "2026-11-06T20:04:33Z",
       "url": "https://www.espn.com/nfl/story/_/id/50043471/2026-trade-deadline-updates-latest-news-deals-terms",
       "espn_athlete_ids": [],
       "athlete_names": [],
@@ -215,7 +298,7 @@
     {
       "headline": "Sources: Ravens trade 4th-, 7th-rounders to get Jacoby Brissett, 5th-round pick",
       "body": "The Ravens will acquire quarterback Jacoby Brissett and a 2027 fifth-round pick for a fourth-round pick in 2027 and seventh-round pick in 2028, sources told ESPN and NFL Network.",
-      "published": "2026-11-06T19:14:10Z",
+      "published": "2026-11-06T21:06:00Z",
       "url": "https://www.espn.com/nfl/story/_/id/50400123/ravens-complete-trade-cardinals-qb-jacoby-brissett",
       "espn_athlete_ids": [
         152903,
@@ -260,7 +343,7 @@
     {
       "headline": "Patriots' TreVeyon Henderson affected by neurological symptoms",
       "body": "Patriots RB TreVeyon Henderson said tests have come back positive after he suffered \"unexplained neurological symptoms\" that remain \"unknown and unexplainable.\"",
-      "published": "2026-11-06T19:13:32Z",
+      "published": "2026-11-06T20:22:37Z",
       "url": "https://www.espn.com/nfl/story/_/id/50400016/patriots-treveyon-henderson-affected-neurological-symptoms",
       "espn_athlete_ids": [
         492605
@@ -424,82 +507,6 @@
       "source": "ESPN"
     },
     {
-      "headline": "Regrading 2025 NFL deadline trades: How Gardner, Williams deals look right now",
-      "body": "How do the Sauce Gardner and Quinnen Williams blockbuster trades look one year later? What about the Jakobi Meyers, Rashid Shaheed and Jaelan Phillips deals?",
-      "published": "2026-11-06T14:31:29Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50359560/regrading-deals-2025-nfl-trade-deadline-williams-gardner",
-      "espn_athlete_ids": [
-        529382,
-        379804,
-        380747,
-        470132,
-        435447,
-        470097,
-        530161,
-        220420,
-        470102,
-        470325
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "How the Jets trading stars Quinnen Williams and Sauce Gardner looks a year later",
-      "body": "Hours before the 2025 trade deadline, New York stockpiled first-round picks by sending its two stars to the Colts and Cowboys.",
-      "published": "2026-11-06T12:45:55Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50360565/trade-deadline-quinnen-sauce-jets-cowboys-colts",
-      "espn_athlete_ids": [
-        379804,
-        529382,
-        489480,
-        613527,
-        607497
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Forget about Cowboys' D, what happened to the GOTI offense?",
-      "body": "This summer, they talked about having the Greatest Offense There Is, but it's been worse than 2025.",
-      "published": "2026-11-06T16:18:26Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50393120/dallas-cowboys-goti-offense-dak-prescott",
-      "espn_athlete_ids": [
-        153118,
-        529504
-      ],
-      "athlete_names": [
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Dolphins coach Hafley brings familiarity with Lions",
-      "body": "Dolphins coach Jeff Hafley saw plenty of the Lions' top-ranked offense while leading Packers defense.",
-      "published": "2026-11-06T11:00:10Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50393038/miami-dolphins-hafley-familiar-lions",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
       "headline": "Sam Darnold (QB, SEA) listed Out",
       "body": "Quadriceps",
       "published": null,
@@ -591,6 +598,19 @@
       "source": "Sleeper injury report"
     },
     {
+      "headline": "Deebo Samuel Sr. (WR, SF) listed Out",
+      "body": "Hamstring",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3126486
+      ],
+      "athlete_names": [
+        "Deebo Samuel Sr."
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
       "headline": "James Conner (RB, ARI) listed IR",
       "body": "Foot",
       "published": null,
@@ -630,7 +650,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Mike Evans (WR, SF) listed Questionable",
+      "headline": "Mike Evans (WR, SF) listed Out",
       "body": "Achilles -- Tendinitis",
       "published": null,
       "url": null,
@@ -730,6 +750,19 @@
       ],
       "athlete_names": [
         "Terry McLaurin"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
+      "headline": "Christian Kirk (WR, SF) listed Out",
+      "body": "Knee - Meniscus",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3895856
+      ],
+      "athlete_names": [
+        "Christian Kirk"
       ],
       "source": "Sleeper injury report"
     },
@@ -838,20 +871,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Carson Wentz (QB, MIN) is the hot add -- 455,892 pickups in 24h",
-      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        2573079
-      ],
-      "athlete_names": [
-        "Carson Wentz"
-      ],
-      "source": "Sleeper trending"
-    },
-    {
-      "headline": "Devin Singletary (RB, NYG) is the hot add -- 434,025 pickups in 24h",
+      "headline": "Devin Singletary (RB, NYG) is the hot add -- 673,614 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -864,7 +884,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Demarcus Robinson (WR, SF) is the hot add -- 318,138 pickups in 24h",
+      "headline": "Demarcus Robinson (WR, SF) is the hot add -- 241,674 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -877,7 +897,20 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Mike Gesicki (TE, CIN) is the hot add -- 120,276 pickups in 24h",
+      "headline": "Carson Wentz (QB, MIN) is the hot add -- 162,972 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        2573079
+      ],
+      "athlete_names": [
+        "Carson Wentz"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Mike Gesicki (TE, CIN) is the hot add -- 67,496 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -890,7 +923,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Keenan Allen (WR, IND) is the hot add -- 81,916 pickups in 24h",
+      "headline": "Keenan Allen (WR, IND) is the hot add -- 49,164 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -899,6 +932,19 @@
       ],
       "athlete_names": [
         "Keenan Allen"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Justice Hill (RB, BAL) is the hot add -- 47,484 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        4038441
+      ],
+      "athlete_names": [
+        "Justice Hill"
       ],
       "source": "Sleeper trending"
     }
