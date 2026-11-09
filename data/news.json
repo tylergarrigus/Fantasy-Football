@@ -1,15 +1,28 @@
 {
-  "fetched_at": "2026-11-08T17:57:44+00:00",
+  "fetched_at": "2026-11-09T02:43:58+00:00",
   "items": [
     {
-      "headline": "Bengals' Burrow, Chase, Higgins add Spanish flair to TD celebrations in Madrid",
-      "body": "The Bengals' first half lead called for celebrations inspired by their Madrid surroundings.",
-      "published": "2026-11-08T17:52:22Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50421721/cincinnati-bengals-real-madrid-spain-touchdown-celebrations",
+      "headline": "Kenneth Walker III alleviates workload concerns with huge performance",
+      "body": "Kenneth Walker III alleviates workload concerns with huge performance",
+      "published": "2026-11-09T02:25:07Z",
+      "url": "https://www.espn.com/video/clip/_/id/50428624/kenneth-walker-iii-alleviates-workload-concerns-huge-performance",
       "espn_athlete_ids": [
-        435000,
-        470095,
-        435157
+        529577
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "49ers lose DT Gracen Halton to season-ending ankle fracture",
+      "body": "Gracen Halton suffered a broken left ankle against the Raiders, an injury that will end his rookie season after eight games.",
+      "published": "2026-11-09T02:37:12Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50428583/49ers-gracen-halton-season-broken-ankle",
+      "espn_athlete_ids": [
+        538527,
+        470733,
+        389520
       ],
       "athlete_names": [
         null,
@@ -19,20 +32,54 @@
       "source": "ESPN"
     },
     {
-      "headline": "Cincinnati Bengals vs. Atlanta Falcons: Game Highlights",
-      "body": "Cincinnati Bengals vs. Atlanta Falcons: Game Highlights",
-      "published": "2026-11-08T17:37:51Z",
-      "url": "https://www.espn.com/video/clip/_/id/50421706/game-highlights",
+      "headline": "How active NFL players continue to redefine all-time sack list",
+      "body": "Myles Garrett's torrid pace up the all-time sack list paces active players making their moves among the greats.",
+      "published": "2026-11-09T02:11:35Z",
+      "url": "https://www.espn.com/nfl/story/_/id/49545945/all-sack-list-tracker-myles-garrett-von-miller-aaron-donald",
       "espn_athlete_ids": [
-        435157,
-        208615,
-        444378,
-        435000
+        166841,
+        166884,
+        126391,
+        92489,
+        92503,
+        37414,
+        138823,
+        126383
       ],
       "athlete_names": [
         null,
         null,
         null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Herbert to undergo testing after exiting Chargers' 44-22 loss with finger injury",
+      "body": "Los Angeles Chargers quarterback Justin Herbert, who was sacked eight times and threw his NFL-leading 11th interception, left Sunday's 44-22 loss to the Houston Texans in the second half with an injury to the middle finger on his left (non-throwing) hand.",
+      "published": "2026-11-09T02:11:17Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50428280/herbert-injures-finger-chargers-loss-testing",
+      "espn_athlete_ids": [
+        435043
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Jets begin to unravel on and off field as losing streak hits 4 games",
+      "body": "New York players were seen slamming helmets during their 35-12 loss in Kansas City, where they failed to score a TD.",
+      "published": "2026-11-09T02:10:49Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50426396/jets-frustrated-geno-smith-membou",
+      "espn_athlete_ids": [
+        115570
+      ],
+      "athlete_names": [
         null
       ],
       "source": "ESPN"
@@ -40,25 +87,190 @@
     {
       "headline": "NFL Week 9: Big takeaways, questions and fantasy spin from Sunday's games",
       "body": "Our NFL Nation reporters react to all the action, answering the biggest questions coming out of each Sunday game. Here's what we learned from Week 9.",
-      "published": "2026-11-08T17:49:15Z",
+      "published": "2026-11-09T02:11:27Z",
       "url": "https://www.espn.com/nfl/story/_/id/50369510/week-9-sunday-games-takeaways-questions-2026",
       "espn_athlete_ids": [],
       "athlete_names": [],
       "source": "ESPN"
     },
     {
-      "headline": "2027 NFL draft questions, latest intel, risers, CFB standouts",
-      "body": "How did CFB Week 10 shake up the quarterback class? CJ Carr and LaNorris Sellers rising? Here's our weekly draft spin, including top standouts.",
-      "published": "2026-11-08T17:43:10Z",
-      "url": "https://www.espn.com/nfl/draft2027/story/_/id/49881131/2027-nfl-draft-risers-questions-college-football-prospects",
+      "headline": "Saints reference Shedeur Sanders quote after win, leading NFL Week 9 trolls",
+      "body": "The New Orleans Saints kept the receipts and poked fun at Shedeur Sanders to lead NFL Week 9 trolls.",
+      "published": "2026-11-09T01:36:38Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50426400/nfl-week-9-trolls",
       "espn_athlete_ids": [],
       "athlete_names": [],
       "source": "ESPN"
     },
     {
-      "headline": "NFL Week 9 arrivals: Lions show support for Jack Campbell",
+      "headline": "Reid: No decision now on Harrison Butker's Chiefs future",
+      "body": "Chiefs coach Andy Reid said he hasn't made a decision on kicker Harrison Butker, who leads the NFL this season with seven missed field goal attempts.",
+      "published": "2026-11-09T01:58:34Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50427823/reid-no-decision-harrison-butker-chiefs-future",
+      "espn_athlete_ids": [
+        167322
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Jordan Love accounts for 4 touchdowns, Packers force 4 turnovers in 45-27 win over Patriots",
+      "body": "\u2014 If Jordan Love has played a better game than he did on Sunday, he can't remember it.",
+      "published": "2026-11-09T02:27:35Z",
+      "url": "http://www.espn.com/nfl/recap?gameId=401873049",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Fantasy buzz: Week 9 scoring leaders through Sunday's 4 p.m. ET games",
+      "body": "Kenneth Walker III led Sunday afternoon fantasy scorers, and the Packers piled on the points in New England.",
+      "published": "2026-11-09T01:03:13Z",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
+      "espn_athlete_ids": [
+        529577,
+        392016,
+        435005,
+        470095,
+        435000,
+        435036,
+        529534,
+        537447,
+        439383,
+        438608
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Green Bay Packers vs. New England Patriots: Game Highlights",
+      "body": "Green Bay Packers vs. New England Patriots: Game Highlights",
+      "published": "2026-11-09T00:59:23Z",
+      "url": "https://www.espn.com/video/clip/_/id/50427757/game-highlights",
+      "espn_athlete_ids": [
+        435036
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Houston Texans vs. Los Angeles Chargers: Game Highlights",
+      "body": "Houston Texans vs. Los Angeles Chargers: Game Highlights",
+      "published": "2026-11-09T00:59:16Z",
+      "url": "https://www.espn.com/video/clip/_/id/50427746/game-highlights",
+      "espn_athlete_ids": [
+        440183,
+        439383,
+        213606,
+        438739,
+        470174
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Week 9 NFL highlights: Best plays, moments, touchdowns, more",
+      "body": "Check here for Sunday's top moments, TDs and analysis.",
+      "published": "2026-11-09T00:55:43Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50409762/week-9-sunday-highlights-best-plays-touchdowns-2026",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Multidrop game in Colts' loss irks WR Josh Downs as trade deadline looms",
+      "body": "Veteran receiver Josh Downs, who recently requested a trade away from the Indianapolis Colts, authored one of the most forgettable performances of his career Sunday, a multidrop effort at Lucas Oil Stadium in his team's 27-23 loss to the Dallas Cowboys.",
+      "published": "2026-11-09T01:37:21Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50427666/multi-drop-game-irks-colts-wr-downs-trade-deadline-nears",
+      "espn_athlete_ids": [
+        442393
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Judging overreactions to NFL Week 9 -- and what they mean for the trade deadline",
+      "body": "Is it time for the Bengals to make a push? Should the Giants aggressively go after a running back? Will the receiver market go wild? We're overreacting to Sunday's games.",
+      "published": "2026-11-09T02:13:08Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50422026/week-9-overreactions-2026-graziano-trade-deadline-bengals-cowboys",
+      "espn_athlete_ids": [
+        466378,
+        609159,
+        440265,
+        547264,
+        529577
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "C.J. Stroud tosses 5 TD passes as Texans rout winless Chargers 44-22. LA finally scores a TD",
+      "body": "\u2014 C.J. Stroud had been feeling lousy all week, barely practiced and woke up with chills on game day. Then he had his version of Michael Jordan's flu game.",
+      "published": "2026-11-09T02:04:35Z",
+      "url": "http://www.espn.com/nfl/recap?gameId=401873046",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "AJ Barner has a TD catch and runs for a score in Seahawks' 17-3 win over Cardinals",
+      "body": "\u2014 AJ Barner's breakout came just when the Seahawks needed it.",
+      "published": "2026-11-09T02:13:35Z",
+      "url": "http://www.espn.com/nfl/recap?gameId=401873048",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Arizona Cardinals vs. Seattle Seahawks: Game Highlights",
+      "body": "Arizona Cardinals vs. Seattle Seahawks: Game Highlights",
+      "published": "2026-11-09T00:37:40Z",
+      "url": "https://www.espn.com/video/clip/_/id/50427474/game-highlights",
+      "espn_athlete_ids": [
+        536680,
+        446693,
+        529586
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "NFL Week 9 arrivals: Caleb Williams rocks Supreme mascot zip-up before 'SNF'",
       "body": "NFL stars continue to turn gameday arrivals into their own weekly fashion showcase.",
-      "published": "2026-11-08T16:55:10Z",
+      "published": "2026-11-09T00:31:42Z",
       "url": "https://www.espn.com/nfl/story/_/id/50393510/nfl-week-9-fashionable-arrivals",
       "espn_athlete_ids": [
         391294
@@ -69,16 +281,38 @@
       "source": "ESPN"
     },
     {
-      "headline": "Cowboys WR Pickens, CB Porter, LB Overshown inactive against Colts",
-      "body": "The Cowboys will be without wide receiver George Pickens, cornerback Joey Porter Jr. and linebacker DeMarvion Overshown against the Colts.",
-      "published": "2026-11-08T17:42:57Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50421090/cowboys-wr-pickens-cb-porter-lb-overshown-inactive-vs-colts",
+      "headline": "49ers capitalize on 5 2nd-half takeaways to cruise past Raiders 38-17",
+      "body": "\u2014 Jaden Dugger set the tone for the second half when he returned an interception from Kirk Cousins on the first play for a touchdown.",
+      "published": "2026-11-09T01:44:50Z",
+      "url": "http://www.espn.com/nfl/recap?gameId=401873047",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Who are the winningest NFL coaches of all time?",
+      "body": "From Belichick to Reid, there are many iconic coaches in NFL history. Who has the best career record? Check out the stat breakdown now.",
+      "published": "2026-11-09T00:26:53Z",
+      "url": "https://www.espn.com/nfl/story/_/id/39286200/best-nfl-coaches-all-ranked-wins",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "49ers move to 7-1 after 38-17 win over the Raiders",
+      "body": "49ers move to 7-1 after 38-17 win over the Raiders",
+      "published": "2026-11-09T00:27:24Z",
+      "url": "https://www.espn.com/video/clip/_/id/50427403/49ers-move-7-1-38-17-win-raiders",
       "espn_athlete_ids": [
-        529504,
-        388513,
-        228366
+        440118,
+        529915,
+        543277,
+        489617,
+        166874
       ],
       "athlete_names": [
+        null,
+        null,
         null,
         null,
         null
@@ -86,36 +320,53 @@
       "source": "ESPN"
     },
     {
-      "headline": "Week 9 NFL highlights: Best plays, moments, touchdowns, more",
-      "body": "Check here for Sunday's top moments, TDs and analysis.",
-      "published": "2026-11-08T17:57:01Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50409762/week-9-sunday-highlights-best-plays-touchdowns-2026",
+      "headline": "Coach Nick Sirianni not ruling out staff changes after Eagles' 7th straight loss",
+      "body": "Nick Sirianni did not rule out the possibility of staff changes at the bye as he looks to find answers to what's ailing the Eagles, losers of seven in a row.",
+      "published": "2026-11-09T01:06:42Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50427398/sirianni-not-ruling-changes-eagles-7th-straight-loss",
       "espn_athlete_ids": [],
       "athlete_names": [],
       "source": "ESPN"
     },
     {
-      "headline": "Ben Johnson's Stanky Legg dance is Chicago Bears' latest postgame tradition",
-      "body": "As the weeks progress for the Bears, players eagerly await Johnson's dance, knowing that it signifies another win.",
-      "published": "2026-11-08T16:06:30Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50415535/ben-johnson-chicago-bears-stanky-legg",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Adam Schefter's players to watch at the trade deadline",
-      "body": "Adam Schefter's players to watch at the trade deadline  ",
-      "published": "2026-11-08T16:27:11Z",
-      "url": "https://www.espn.com/video/clip/_/id/50420730/adam-schefter-players-watch-trade-deadline",
+      "headline": "Week 9 winners and losers: Lamb, Walker come up big, Gibbs, Taylor disappoint",
+      "body": "CeeDee Lamb and Kenneth Walker III came up big in Week 9, while Jahmyr Gibbs and Jonathan Taylor were quieter than usual.",
+      "published": "2026-11-09T01:13:24Z",
+      "url": "https://www.espn.com/fantasy/football/story/_/page/FFSundayHighLows-50392903/nfl-week-9-fantasy-football-winners-losers-injuries-rankings",
       "espn_athlete_ids": [
-        184521,
+        529577,
+        435005,
+        392016,
+        547264,
+        139026,
+        607902,
+        435000,
+        470095,
+        435157,
+        438406,
         435130,
-        499066,
-        380283,
-        442393
+        152836,
+        529420,
+        489486,
+        537086,
+        529649,
+        470084,
+        439382
       ],
       "athlete_names": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         null,
         null,
         null,
@@ -125,27 +376,23 @@
       "source": "ESPN"
     },
     {
-      "headline": "How to bet Buccaneers-Bears: Tips, analysis and our top prop plays",
-      "body": "Odds, analysis and picks to help you bet Sunday's Tampa Bay Buccaneers-Chicago Bears game.",
-      "published": "2026-11-08T15:25:01Z",
-      "url": "https://www.espn.com/espn/betting/story/_/id/50408146/nfl-week-9-odds-betting-picks-buccaneers-bears-preview",
+      "headline": "Chiefs' Patrick Mahomes brushes off injury scare during rout of Jets",
+      "body": "Chiefs quarterback Patrick Mahomes was able to play through pain in his right arm after absorbing a massive hit during Sunday's 35-12 victory over the Jets.",
+      "published": "2026-11-09T02:03:32Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50427266/chiefs-patrick-mahomes-brushes-injury-scare",
       "espn_athlete_ids": [
-        492854,
-        543465,
-        536702
+        166867
       ],
       "athlete_names": [
-        null,
-        null,
         null
       ],
       "source": "ESPN"
     },
     {
-      "headline": "J.J. McCarthy wowing Giants after initial concerns over QB's 'maturity,' VP says",
-      "body": "Chris Mara said the Giants were concerned by J.J. McCarthy's maturity before the 2024 draft but says the QB has impressed his new team \"on and off the field.\"",
-      "published": "2026-11-08T14:23:10Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50419727/jj-mccarthy-wowing-giants-concerns-maturity",
+      "headline": "Giants QB J.J. McCarthy says he'll be fine after big hit injures hip",
+      "body": "Giants QB J.J. McCarthy said he's all good after being forced to exit Sunday's 19-11 win over the Eagles with a hip injury.",
+      "published": "2026-11-09T00:44:01Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50427263/giants-qb-jj-mccarthy-says-fine-big-hit-injures-hip",
       "espn_athlete_ids": [
         493077
       ],
@@ -155,26 +402,13 @@
       "source": "ESPN"
     },
     {
-      "headline": "Sources: Lamar Jackson told Ravens teammates he plans to return this season",
-      "body": "Lamar Jackson told his Ravens teammates that he plans to return later this season, sources told NFL Network.",
-      "published": "2026-11-08T14:19:32Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50407561/sources-lamar-jackson-told-ravens-plans-return-26",
+      "headline": "Browns coach 'proud' of Shedeur Sanders but sidesteps questions on QB position",
+      "body": "Browns coach Todd Monken said he was \"proud\" of Shedeur Sanders' performance in Cleveland's 23-22 overtime loss to the Saints but refused to answer whether Sanders made a case to start going forward.",
+      "published": "2026-11-09T01:28:10Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50427181/browns-todd-monken-proud-shedeur-sanders-ot-loss",
       "espn_athlete_ids": [
-        184545
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Sources: Seahawks' Sam Darnold in jeopardy of missing Week 10 game vs. Raiders",
-      "body": "Seahawks QB Sam Darnold, who is out Sunday against the Cardinals, also is in danger of missing Seattle's Week 10 game against the Raiders, sources told ESPN.",
-      "published": "2026-11-08T13:33:54Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50400897/sources-seahawks-sam-darnold-danger-missing-week-10",
-      "espn_athlete_ids": [
-        184497,
-        379932
+        466378,
+        166843
       ],
       "athlete_names": [
         null,
@@ -183,144 +417,160 @@
       "source": "ESPN"
     },
     {
-      "headline": "Weekly Patriots notes: What New England could do at the trade deadline, intel",
-      "body": "The Patriots will upgrade if they can before Tuesday's deadline, but it might be quiet. In fact, New England could even trade away someone like Christian Barmore.",
-      "published": "2026-11-08T11:00:01Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50401769/new-england-patriots-notebook-week-9-trade-deadline-plans",
+      "headline": "Dak Prescott: Cowboys can make playoffs without making trade",
+      "body": "Dallas quarterback Dak Prescott said the Cowboys have enough talent to be a playoff team without a trade deadline addition.",
+      "published": "2026-11-09T00:27:12Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50427153/dak-prescott-cowboys-make-playoffs-making-trade",
+      "espn_athlete_ids": [
+        153118
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Sean Payton's replay challenge results in key interception in Broncos' victory",
+      "body": "Denver coach Sean Payton's replay challenge, with 1:30 left in the third quarter, turned an incomplete pass in the end zone into an improbable interception by Broncos safety Devon Key during his club's 26-21 win at Bank of America Stadium.",
+      "published": "2026-11-09T00:59:41Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50427121/payton-challenge-results-key-interception-broncos-win",
       "espn_athlete_ids": [],
       "athlete_names": [],
       "source": "ESPN"
     },
     {
-      "headline": "Geno Smith has been upgrade from Justin Fields for Jets -- except in win column",
-      "body": "Smith statistically has outperformed Fields in New York, but they both only have two wins.",
-      "published": "2026-11-08T14:30:12Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50400929/jets-qb-upgrade-geno-smith-justin-fields",
+      "headline": "Can Isaiah Likely remain an elite fantasy TE with J.J. McCarthy at QB?",
+      "body": "Can Isaiah Likely remain an elite fantasy TE with J.J. McCarthy at QB?",
+      "published": "2026-11-09T01:17:52Z",
+      "url": "https://www.espn.com/video/clip/_/id/50426934/can-isaiah-likely-remain-elite-fantasy-te-jj-mccarthy-qb",
+      "espn_athlete_ids": [
+        529999,
+        493077
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "John Harbaugh: Giants did pull offer for Jonathan Taylor but 'things do change'",
+      "body": "The Giants pulled a recent trade offer for Jonathan Taylor, according to coach John Harbaugh, who added that doesn't mean a deal is completely off the table.",
+      "published": "2026-11-09T01:12:01Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50426855/john-harbaugh-says-giants-did-pull-offer-jonathan-taylor",
+      "espn_athlete_ids": [
+        435130
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Making sense of the Jets' backfield in fantasy",
+      "body": "Making sense of the Jets' backfield in fantasy",
+      "published": "2026-11-08T23:34:18Z",
+      "url": "https://www.espn.com/video/clip/_/id/50426731/making-sense-jets-backfield-fantasy",
       "espn_athlete_ids": [
         495554,
-        529387,
-        216016,
-        529523,
-        115570
+        529523
       ],
       "athlete_names": [
-        null,
-        null,
-        null,
         null,
         null
       ],
       "source": "ESPN"
     },
     {
-      "headline": "Venables lauds Witten after Sooners shine in Oklahoma playcaller's debut",
-      "body": "In his debut as Oklahoma's offensive playcaller, Jason Witten, a former NFL tight end who coached high school in Texas last year, engineered an impressive Sooners attack that throttled No. 25 Florida in a 23-7 victory Saturday to push them to 5-4.",
-      "published": "2026-11-08T06:27:11Z",
-      "url": "https://www.espn.com/college-football/story/_/id/50417320/venables-lauds-witten-sooners-shine-play-caller-debut",
+      "headline": "Why Jonah Coleman could be a 'league-winning' RB in fantasy",
+      "body": "Why Jonah Coleman could be a 'league-winning' RB in fantasy",
+      "published": "2026-11-09T01:20:16Z",
+      "url": "https://www.espn.com/video/clip/_/id/50426665/why-jonah-coleman-league-winning-rb-fantasy",
       "espn_athlete_ids": [
-        542051,
-        722512,
-        536173,
-        614489,
-        718271,
-        537889,
-        516127,
-        722513
+        547264
       ],
       "athlete_names": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Myles Garrett has 3 sacks in return to help Rams stop Commanders",
+      "body": "Myles Garrett had three sacks in his return to the field for the Rams in Los Angeles' victory over the Commanders.",
+      "published": "2026-11-09T02:36:40Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50426656/rams-myles-garrett-three-sacks-return",
+      "espn_athlete_ids": [
+        166841
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Are the Rams' running backs worth starting in fantasy?",
+      "body": "Are the Rams' running backs worth starting in fantasy?",
+      "published": "2026-11-08T23:03:54Z",
+      "url": "https://www.espn.com/video/clip/_/id/50426234/are-rams-running-backs-worth-starting-fantasy",
+      "espn_athlete_ids": [
+        443985,
+        529649
+      ],
+      "athlete_names": [
         null,
         null
       ],
       "source": "ESPN"
     },
     {
-      "headline": "How Ben Johnson became the Bears head coach",
-      "body": "How Ben Johnson became the Bears head coach",
-      "published": "2026-11-08T16:05:34Z",
-      "url": "https://www.espn.com/video/clip/_/id/50415617/how-ben-johnson-became-bears-head-coach",
+      "headline": "What kind of fantasy QB is Patrick Mahomes right now?",
+      "body": "What kind of fantasy QB is Patrick Mahomes right now?",
+      "published": "2026-11-08T22:35:36Z",
+      "url": "https://www.espn.com/video/clip/_/id/50425874/what-kind-fantasy-qb-patrick-mahomes-right-now",
+      "espn_athlete_ids": [
+        166867
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Sources: Puka Nacua set for tests on late-game knee injury; Rams believe ACL OK",
+      "body": "The Rams do not believe Puka Nacua suffered a torn ACL, but the imaging Monday will tell more, sources said.",
+      "published": "2026-11-08T23:32:52Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50425853/sources-rams-puka-nacua-undergo-tests-knee",
+      "espn_athlete_ids": [
+        392016
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Javonte Williams' late TD run helps Cowboys avoid another 4th-quarter collapse and beat Colts 27-23",
+      "body": "\u2014 With the Dallas Cowboys trailing by three points and on the verge of yet another fourth-quarter collapse, Dak Prescott needed 29 seconds to bail them out.",
+      "published": "2026-11-09T00:05:36Z",
+      "url": "http://www.espn.com/nfl/recap?gameId=401873040",
       "espn_athlete_ids": [],
       "athlete_names": [],
       "source": "ESPN"
     },
     {
-      "headline": "NFL Week 9 uniforms: Eagles rock 'Kelly Green,' Chargers don 'Super Chargers'",
-      "body": "Here's a look at what each NFL team is wearing in Week 9, led by throwbacks from the Eagles.",
-      "published": "2026-11-08T02:18:40Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50374069/nfl-week-9-uniforms",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Rob Gronkowski caps Brady-attended Patriots Hall of Fame ceremony with spike",
-      "body": "Rob Gronkowski was officially inducted into the New England Patriots Hall of Fame on Saturday with fellow Hall of Famers in attendance, including Tom Brady.",
-      "published": "2026-11-08T12:21:37Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50412382/rob-gronkowski-caps-brady-attended-patriots-hall-fame-ceremony-spike",
+      "headline": "Cleveland Browns vs. New Orleans Saints Game Highlights",
+      "body": "Cleveland Browns vs. New Orleans Saints Game Highlights",
+      "published": "2026-11-08T22:17:53Z",
+      "url": "https://www.espn.com/video/clip/_/id/50425557/cleveland-browns-vs-new-orleans-saints-game-highlights",
       "espn_athlete_ids": [
-        74059
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Vikings WR Jauan Jennings on rebuffing return to 49ers: 'I love where I'm at'",
-      "body": "Jauan Jennings said he rebuffed the chance to return to the 49ers via trade despite struggling to produce for the Vikings because \"I love where I'm at.\"",
-      "published": "2026-11-07T21:25:23Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50411320/jennings-rebuffing-return-49ers-love-where-at",
-      "espn_athlete_ids": [
-        435292
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Hall of Famer Jack Ham hospitalized, in stable condition after medical emergency",
-      "body": "Hall of Fame linebacker and Penn State radio analyst Jack Ham experienced a medical emergency Saturday in Seattle and was in stable condition.",
-      "published": "2026-11-08T01:55:42Z",
-      "url": "https://www.espn.com/college-football/story/_/id/50410839/hall-famer-jack-ham-hospitalized-medical-emergency",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Saints activate WR Jordyn Tyson, LT Kelvin Banks, cut RB Kendre Miller",
-      "body": "Saints rookie wide receiver Jordyn Tyson and left tackle Kelvin Banks Jr. have been activated from injured reserve ahead of Sunday's game against the Browns.",
-      "published": "2026-11-07T21:08:08Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50410541/sources-saints-activate-wr-jordyn-tyson-lt-kelvin-banks",
-      "espn_athlete_ids": [
-        539343,
-        538081,
-        438537
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Browns QB Deshaun Watson out of protocol but inactive",
-      "body": "Deshaun Watson has cleared the concussion protocol but the Browns quarterback is inactive for Sunday's game against the New Orleans Saints.",
-      "published": "2026-11-08T16:33:54Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50409705/browns-qb-deshaun-watson-concussion-protocol",
-      "espn_athlete_ids": [
-        166843,
+        209237,
+        539790,
+        230164,
         466378,
-        390472,
-        489609
+        497689
       ],
       "athlete_names": [
+        null,
         null,
         null,
         null,
@@ -329,110 +579,96 @@
       "source": "ESPN"
     },
     {
-      "headline": "Sources: Colts among several NFL teams mulling trade offers as deadline looms",
-      "body": "Multiple teams have been engaged in serious trade discussions as Tuesday's NFL deadline approaches.",
-      "published": "2026-11-07T17:06:46Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50403627/trade-talks-pick-nfl-tuesday-deadline-looming",
+      "headline": "Saints hold on for a 23-22 overtime victory over the Browns by stopping a 2-point conversion",
+      "body": "\u2014 Saints second-year quarterback Tyler Shough likes to think he has a refined and thoughtful approach to remaining calm and in control in the clutch.",
+      "published": "2026-11-09T00:30:36Z",
+      "url": "http://www.espn.com/nfl/recap?gameId=401873039",
       "espn_athlete_ids": [],
       "athlete_names": [],
       "source": "ESPN"
     },
     {
-      "headline": "Colts in Daniel Jones trade talks as multiple teams call about QB, sources say",
-      "body": "The Colts have engaged in trade discussions with multiple teams involving quarterback Daniel Jones, sources told NFL Network and ESPN.",
-      "published": "2026-11-07T15:38:18Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50403440/sources-colts-engaged-daniel-jones-trade-talks",
-      "espn_athlete_ids": [
-        379778
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Sources: Ravens not expected to deal RB Derrick Henry before NFL trade deadline",
-      "body": "Ravens running back Derrick Henry is not expected to be moved by the NFL trade deadline, league sources told ESPN.",
-      "published": "2026-11-07T13:16:10Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50400748/sources-ravens-not-expected-trade-star-rb-derrick-henry",
-      "espn_athlete_ids": [
-        152901
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "NFL Week 9 predictions: Upsets, fantasy sleepers, stat lines, TD scorers, more",
-      "body": "QB controversy in Minnesota? Browns upsetting the Saints? Touchdowns for two rookie RBs? Let's predict 15 things for Week 9.",
-      "published": "2026-11-07T11:38:29Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50390199/week-9-predictions-upsets-fantasy-sleepers-stats-2026",
+      "headline": "Bo Nix throws for 2 TDs, Broncos win key challenge to beat Panthers 26-21 for fifth straight victory",
+      "body": "\u2014 The Denver Broncos continue to know how to win close games.",
+      "published": "2026-11-08T23:13:34Z",
+      "url": "http://www.espn.com/nfl/recap?gameId=401873041",
       "espn_athlete_ids": [],
       "athlete_names": [],
       "source": "ESPN"
     },
     {
-      "headline": "2026 NFL trade deadline: Proposing deals for Tony Pollard, Riq Woolen, others",
-      "body": "Our NFL experts pitched trade offers they'd love to see get done before Tuesday's deadline, including moves for Tony Pollard, Riq Woolen, Jonathan Taylor and Jessie Bates III.",
-      "published": "2026-11-07T11:37:27Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50389499/2026-nfl-trade-deadline-offers-experts-taylor-woolen-pollard",
+      "headline": "As the 'Peanut Punch' takes over NFL, how do teams counter it?",
+      "body": "After Charles Tillman popularized the punch 14 years ago, it has really taken off this season.",
+      "published": "2026-11-08T22:38:11Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50380155/countering-peanut-punch-james-cook-skattebo",
+      "espn_athlete_ids": [
+        529581,
+        495554,
+        184648,
+        380096,
+        184670,
+        450385
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Dallas Cowboys vs. Indianapolis Colts: Game Highlights",
+      "body": "Dallas Cowboys vs. Indianapolis Colts: Game Highlights",
+      "published": "2026-11-08T21:42:39Z",
+      "url": "https://www.espn.com/video/clip/_/id/50425145/game-highlights",
+      "espn_athlete_ids": [
+        379778,
+        470208,
+        153118,
+        440265
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Winston, McCarthy combine to lead Giants to 19-11 win and hand Eagles 7th straight loss",
+      "body": "\u2014 J.J. McCarthy may as well have been any New York Giants fan nervously watching on TV as the injured quarterback tossed a football to keep warm and paced around the locker room.",
+      "published": "2026-11-08T23:44:35Z",
+      "url": "http://www.espn.com/nfl/recap?gameId=401873044",
       "espn_athlete_ids": [],
       "athlete_names": [],
       "source": "ESPN"
     },
     {
-      "headline": "Bengals face Falcons S Jessie Bates III, evoking mixed emotions",
-      "body": "Cincinnati hasn't been to the playoffs since Bates' departure, but Atlanta also hasn't reached the postseason since his arrival.",
-      "published": "2026-11-07T11:00:10Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50402286/jessie-bates-falcons-bengals",
-      "espn_athlete_ids": [
-        184648
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Rocky Bleier's 'I scored a touchdown' story: SB XIII",
-      "body": "Rocky Bleier's 'I scored a touchdown' story: SB XIII",
-      "published": "2026-11-08T16:54:17Z",
-      "url": "https://www.espn.com/video/clip/_/id/50405895/sb-xiii",
+      "headline": "Puka Nacua, Myles Garrett lead Rams to 20-13 win over Commanders",
+      "body": "\u2014 There's still room for growth from the star-studded Rams, but they're starting to show again why they were a preseason Super Bowl favorite.",
+      "published": "2026-11-08T23:01:35Z",
+      "url": "http://www.espn.com/nfl/recap?gameId=401873043",
       "espn_athlete_ids": [],
       "athlete_names": [],
       "source": "ESPN"
     },
     {
-      "headline": "Brandon Aiyuk meets with 49ers, says he's healthy, 'looking to get reinstated'",
-      "body": "Brandon Aiyuk met with the Niners on Friday to begin hammering out a path toward a divorce that has been more than two years in the making.",
-      "published": "2026-11-07T00:52:30Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50402899/brandon-aiyuk-meets-49ers-looking-get-reinstated",
+      "headline": "Rams outlast Commanders with defensive showcase",
+      "body": "Rams outlast Commanders with defensive showcase",
+      "published": "2026-11-08T21:27:40Z",
+      "url": "https://www.espn.com/video/clip/_/id/50424796/rams-outlast-commanders-defensive-showcase",
       "espn_athlete_ids": [
-        434992
+        392016,
+        435057,
+        443985,
+        529519,
+        166841
       ],
       "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Seahawks' Quenton Nelson, Sam Darnold among starters ruled out",
-      "body": "New Seahawks trade acquisition Quenton Nelson will have a \"minor procedure\" and is one of six starters, including QB Sam Darnold, who won't play vs. the Cardinals.",
-      "published": "2026-11-07T03:11:40Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50402740/seahawks-quenton-nelson-sam-darnold-starters-ruled-out",
-      "espn_athlete_ids": [
-        184551,
-        184497,
-        138774,
-        529366,
-        379932,
-        184656,
-        530161
-      ],
-      "athlete_names": [
-        null,
-        null,
         null,
         null,
         null,
@@ -442,85 +678,58 @@
       "source": "ESPN"
     },
     {
-      "headline": "Nick Bosa back, Christian McCaffrey good to go for Niners",
-      "body": "The 49ers will have a healthy Nick Bosa for the first time since Week 2, and running back Christian McCaffrey is good to go this week against the Raiders.",
-      "published": "2026-11-06T23:03:00Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50402463/nick-bosa-back-christian-mccaffrey-good-go-niners",
+      "headline": "New York Giants vs. Philadelphia Eagles: Game Highlights",
+      "body": "New York Giants vs. Philadelphia Eagles: Game Highlights",
+      "published": "2026-11-08T21:25:37Z",
+      "url": "https://www.espn.com/video/clip/_/id/50424771/game-highlights",
       "espn_athlete_ids": [
-        379795,
-        166874,
-        126377
+        529999,
+        606130,
+        184478,
+        435610
       ],
       "athlete_names": [
         null,
         null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Giants' Cam Skattebo doubtful vs. Eagles; Malik Nabers 'full go'",
-      "body": "Giants running back Cam Skattebo is unlikely to play against the Eagles on Sunday, but receiver Malik Nabers is expected to be a \"full go\" without limitations.",
-      "published": "2026-11-07T00:36:48Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50402162/giants-cam-skattebo-doubtful-vs-eagles-nabers-full-go",
-      "espn_athlete_ids": [
-        450385,
-        489486
-      ],
-      "athlete_names": [
         null,
         null
       ],
       "source": "ESPN"
     },
     {
-      "headline": "Jacoby Brissett brings hope but realistic expectations for spiraling Ravens",
-      "body": "The Ravens know what they're getting in acquiring veteran journeyman QB, but does Jacoby Brissett know what he's in for?",
-      "published": "2026-11-07T01:09:33Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50401403/what-biggest-problems-facing-brissett-ravens",
+      "headline": "Chiefs take care of business at home",
+      "body": "Chiefs take care of business at home",
+      "published": "2026-11-08T21:21:50Z",
+      "url": "https://www.espn.com/video/clip/_/id/50424764/chiefs-take-care-business-home",
       "espn_athlete_ids": [
-        152903
+        529577,
+        166867,
+        115523,
+        536855
       ],
       "athlete_names": [
+        null,
+        null,
+        null,
         null
       ],
       "source": "ESPN"
     },
     {
-      "headline": "Inside the evolution of Caleb Williams' MVP candidacy",
-      "body": "Williams has the fourth-shortest odds to win MVP as the Bears are currently favored to win the NFC.",
-      "published": "2026-11-07T12:56:58Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50402109/bears-caleb-williams-mvp",
+      "headline": "Detroit Lions vs. Miami Dolphins Game Highlights",
+      "body": "Detroit Lions vs. Miami Dolphins Game Highlights",
+      "published": "2026-11-08T21:27:33Z",
+      "url": "https://www.espn.com/video/clip/_/id/50424762/detroit-lions-vs-miami-dolphins-game-highlights",
       "espn_athlete_ids": [
-        492854
+        438406,
+        167206,
+        529420,
+        547254
       ],
       "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Joe Burrow makes time for art in Madrid ahead of Bengals-Falcons",
-      "body": "While in Spain, the Bengals quarterback is finding time for one of his off-field interests: art.",
-      "published": "2026-11-06T19:05:40Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50400935/joe-burrow-madrid-art-museum-bengals-falcons",
-      "espn_athlete_ids": [
-        435000
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "3 ways Browns QB Shedeur Sanders can show growth vs. Saints",
-      "body": "The opportunity is a big one as the second-year quarterback's first start of the season comes at a critical time.",
-      "published": "2026-11-06T19:07:34Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50399074/cleveland-browns-qb-shedeur-sanders-start-growth-saints",
-      "espn_athlete_ids": [
-        466378
-      ],
-      "athlete_names": [
+        null,
+        null,
+        null,
         null
       ],
       "source": "ESPN"
@@ -600,6 +809,19 @@
       ],
       "athlete_names": [
         "Pharaoh Brown"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
+      "headline": "Case Keenum (QB, CHI) listed Out",
+      "body": "Coach's Decision",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        15168
+      ],
+      "athlete_names": [
+        "Case Keenum"
       ],
       "source": "Sleeper injury report"
     },
@@ -968,7 +1190,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Devin Singletary (RB, NYG) is the hot add -- 706,014 pickups in 24h",
+      "headline": "Devin Singletary (RB, NYG) is the hot add -- 516,771 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -981,7 +1203,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Demarcus Robinson (WR, SF) is the hot add -- 576,216 pickups in 24h",
+      "headline": "Demarcus Robinson (WR, SF) is the hot add -- 481,950 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -994,7 +1216,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Alvin Kamara (RB, NO) is the hot add -- 216,768 pickups in 24h",
+      "headline": "Alvin Kamara (RB, NO) is the hot add -- 156,328 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -1007,7 +1229,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Carson Wentz (QB, MIN) is the hot add -- 112,356 pickups in 24h",
+      "headline": "Carson Wentz (QB, MIN) is the hot add -- 119,856 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -1016,19 +1238,6 @@
       ],
       "athlete_names": [
         "Carson Wentz"
-      ],
-      "source": "Sleeper trending"
-    },
-    {
-      "headline": "Austin Ekeler (RB, WAS) is the hot add -- 56,848 pickups in 24h",
-      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        3068267
-      ],
-      "athlete_names": [
-        "Austin Ekeler"
       ],
       "source": "Sleeper trending"
     }
