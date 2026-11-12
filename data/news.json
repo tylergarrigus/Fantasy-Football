@@ -1,11 +1,180 @@
 {
-  "fetched_at": "2026-11-11T19:41:23+00:00",
+  "fetched_at": "2026-11-12T03:53:57+00:00",
   "items": [
     {
-      "headline": "Saleh calls Ridley's incident at Nashville airport 'minor miscommunication'",
-      "body": "Titans wide receiver Calvin Ridley was involved in an incident at Nashville International Airport over the weekend that coach Robert Saleh called a \"minor miscommunication\" when asked about it after the team returned from the bye on Monday.",
-      "published": "2026-11-11T19:28:28Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50454416/saleh-ridley-incident-airport-minor-miscommunication",
+      "headline": "Veteran WR Keenan Allen feeling energized by trade to 49ers",
+      "body": "Keenan Allen said while he didn't expect to get traded, landing with a contending team in the 49ers has him feeling energized.",
+      "published": "2026-11-12T01:28:27Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50456881/veteran-wr-keenan-allen-feels-energized-trade-49ers",
+      "espn_athlete_ids": [
+        115682
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Sources: Philip Rivers set to return to NC State, deal to be finalized Friday",
+      "body": "Philip Rivers is set to return to NC State, this time as head football coach, once its trustees finalizes his contract after a meeting Friday, sources said.",
+      "published": "2026-11-12T01:18:18Z",
+      "url": "https://www.espn.com/college-football/story/_/id/50456831/sources-philip-rivers-nc-state-deal-set-finalized",
+      "espn_athlete_ids": [
+        14073
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Dolphins hopeful QB Malik Willis will be back this season",
+      "body": "Coach Jeff Hafley said Miami sees Malik Willis as its starter regardless of when he returns from his groin injury.",
+      "published": "2026-11-12T01:12:02Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50456677/dolphins-quarterback-malik-willis-return-starter",
+      "espn_athlete_ids": [
+        529420,
+        492684
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Source: Ravens, now on third kicker, sign journeyman Riley Patterson",
+      "body": "The Raven signed journeyman kicker Riley Patterson after his workout for the team on Wednesday, according to NFL Network.",
+      "published": "2026-11-12T00:48:45Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50456455/source-ravens-now-third-kicker-sign-riley-patterson",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Fernando Mendoza relishes 'once-in-a-lifetime' opportunity as Raiders' QB1",
+      "body": "No. 1 pick Fernando Mendoza said Wednesday it's a \"once-in-a-lifetime\" opportunity to be the Raiders' starting quarterback, while his teammates and coach expressed their confidence in his ability to lead the offense.",
+      "published": "2026-11-12T01:31:39Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50456405/fernando-mendoza-relishes-once-life-opportunity-raiders-starting-qb",
+      "espn_athlete_ids": [
+        542097
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Kirk Cousins makes first comments on Minnesota trade at Great Clips",
+      "body": "Kirk Cousins offered some thoughts on his trade to Minnesota after the news broke in the most on-brand location imaginable.",
+      "published": "2026-11-12T00:07:39Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50455775/kirk-cousins-minnesota-trade-great-clips",
+      "espn_athlete_ids": [
+        103992
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Kirk Cousins says call with Kevin O'Connell convinced him to OK Vikings trade",
+      "body": "Kirk Cousins has rejoined the Vikings after not quite three years away, relishing his familiarity with the Twin Cities area, the people in the organization.",
+      "published": "2026-11-12T00:04:23Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50455771/kirk-cousins-reintroduced-vikings-starting-qb",
+      "espn_athlete_ids": [
+        103992
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "New Bills safety Amani Hooker will be 'ready to go' vs. Jets",
+      "body": "Amani Cooper said he's confident he'll be able to pick up defensive coordinator Jim Leonhard's scheme by kickoff vs. the Jets.",
+      "published": "2026-11-11T23:35:57Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50455698/new-bills-safety-amani-hooker-ready-go-vs-jets",
+      "espn_athlete_ids": [
+        380279
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Sean McVay: Rams optimistic WR Davante Adams will return 'sooner than later'",
+      "body": "The Rams are optimistic that injured wide receiver Davante Adams will return from his hamstring injury \"sooner than later,\" coach Sean McVay said.",
+      "published": "2026-11-11T23:36:14Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50455318/mcvay-rams-optimistic-wr-adams-return-sooner-later",
+      "espn_athlete_ids": [
+        126492,
+        392016
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Cardinals coach: Carson Beck's been a pro since he's been here",
+      "body": "Cardinals coach: Carson Beck's been a pro since he's been here",
+      "published": "2026-11-11T21:52:44Z",
+      "url": "https://www.espn.com/video/clip/_/id/50455241/carson-beck-pro-here",
+      "espn_athlete_ids": [
+        439276
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Cardinals to start rookie QB Carson Beck against Rams",
+      "body": "The Cardinals will start their third quarterback in three weeks, with rookie Carson Beck getting the nod for Sunday's home game against the Rams.",
+      "published": "2026-11-12T01:02:22Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50455074/cardinals-start-rookie-qb-carson-beck-rams",
+      "espn_athlete_ids": [
+        439276,
+        380265,
+        152903
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Jets' Will McDonald has 'earned' bigger role, coach says",
+      "body": "Jets coach Aaron Glenn said Will McDonald IV has \"earned\" a bigger role after meeting with the pass rusher following his trade request.",
+      "published": "2026-11-11T21:13:37Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50454952/jets-mcdonald-earned-bigger-role-coach-says",
+      "espn_athlete_ids": [
+        216016
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Zac Taylor says Bengals take responsibility for failed trade with Eagles",
+      "body": "Zac Taylor says Bengals take responsibility for failed trade with Eagles",
+      "published": "2026-11-11T20:01:45Z",
+      "url": "https://www.espn.com/video/clip/_/id/50454635/zac-taylor-says-bengals-take-responsibility-failed-trade-eagles",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Titans' Calvin Ridley addresses incident with valet at Nashville airport",
+      "body": "Titans WR Calvin Ridley addressed the incident that occurred over the weekend at Nashville International Airport involving a valet as he attempted to recover the keys to his truck.",
+      "published": "2026-11-11T20:22:54Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50454416/titans-ridley-addresses-incident-valet-airport",
       "espn_athlete_ids": [
         184521
       ],
@@ -17,7 +186,7 @@
     {
       "headline": "Bengals' Zac Taylor apologizes for failed trade with Eagles: 'It was on our end'",
       "body": "Bengals coach Zac Taylor apologized for the failed trade for Eagles edge rusher Arnold Ebiketie ahead of Tuesday's deadline.",
-      "published": "2026-11-11T19:33:41Z",
+      "published": "2026-11-11T20:31:41Z",
       "url": "https://www.espn.com/nfl/story/_/id/50454351/bengals-zac-taylor-apologizes-failed-trade-eagles",
       "espn_athlete_ids": [
         529529
@@ -39,7 +208,7 @@
     {
       "headline": "Chiefs sticking with struggling Harrison Butker as kicker this week",
       "body": "Harrison Butker will remain the Chiefs' kicker for Sunday's game against the Falcons, coach Andy Reid announced.",
-      "published": "2026-11-11T18:44:41Z",
+      "published": "2026-11-11T20:50:47Z",
       "url": "https://www.espn.com/nfl/story/_/id/50454081/chiefs-sticking-harrison-butker-kicker-vs-falcons",
       "espn_athlete_ids": [
         167322,
@@ -78,7 +247,7 @@
     {
       "headline": "Ex-NFL coach Rex Ryan facing charges after alleged hit-and-run",
       "body": "Former NFL head coach Rex Ryan is facing charges after allegedly striking two pedestrians with his pickup truck and leaving the scene in Nashville, Tennessee.",
-      "published": "2026-11-11T18:13:49Z",
+      "published": "2026-11-11T20:23:45Z",
       "url": "https://www.espn.com/nfl/story/_/id/50453897/rex-ryan-facing-charges-alleged-hit-run",
       "espn_athlete_ids": [],
       "athlete_names": [],
@@ -429,252 +598,6 @@
       "athlete_names": [
         null,
         null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "From 2-7 to 6-2: Josh Downs reacts to Chiefs trade with Vince Carter GIF",
-      "body": "A moment from Vince Carter's retirement ceremony helped Downs sum up his feelings about joining Kansas City.",
-      "published": "2026-11-10T23:17:29Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50446669/chiefs-josh-downs-trade-reaction-vince-carter-gif",
-      "espn_athlete_ids": [
-        442393,
-        166867
-      ],
-      "athlete_names": [
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "RB Jonathan Taylor, QB Daniel Jones remain with Colts as trade deadline passes",
-      "body": "Colts RB Jonathan Taylor and QB Daniel Jones were the subject of trade overtures in recent days and weeks but were not traded before Tuesday's trade deadline.",
-      "published": "2026-11-10T23:27:48Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50446805/rb-taylor-qb-jones-remain-colts-trade-deadline-passes",
-      "espn_athlete_ids": [
-        379778,
-        435130
-      ],
-      "athlete_names": [
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "NFL trade deadline grades: Deals for Kirk Cousins, Josh Downs, Ryan Neuzil",
-      "body": "Was getting Kirk Cousins a home run for the Vikings? Did the Chiefs make a smart move to pick up Josh Downs?",
-      "published": "2026-11-11T02:53:07Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50043542/2026-trade-deadline-grades-latest-best-worst-deals",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "2026 NFL trade deadline updates: Kirk Cousins, Josh Downs on the move",
-      "body": "We're officially past the NFL trade deadline. We followed the action on 18 in-season deals, including six on Tuesday.",
-      "published": "2026-11-11T02:46:38Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50043471/2026-trade-deadline-updates-latest-news-deals-terms",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Giants' Nabers calls Fox analyst Olsen's body language critique a 'lie'",
-      "body": "Giants wide receiver Malik Nabers said Tuesday he posted on social media after the game because he thought the critique from Fox play-by-play announcer Joe Davis and analyst Greg Olsen about his body language and being a bad teammate was a \"lie.\"",
-      "published": "2026-11-11T00:27:35Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50446573/giants-nabers-calls-fox-analyst-olsen-body-language-criticism-lie",
-      "espn_athlete_ids": [
-        489486
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Falcons trade center Ryan Neuzil to Ravens for guard Andrew Vorhees, pick",
-      "body": "The Ravens acquired Falcons starting center Ryan Neuzil in exchange for backup guard Andrew Vorhees and a conditional 2028 sixth-round pick.",
-      "published": "2026-11-10T23:07:30Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50446499/falcons-trade-center-neuzil-ravens-guard-vorhees-pick",
-      "espn_athlete_ids": [
-        470950,
-        219337
-      ],
-      "athlete_names": [
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Fantasy buzz: Should you deal for one of the five most traded players in fantasy?",
-      "body": "Meet the most traded players in fantasy football this week, and whether you should hold or trade for them too.",
-      "published": "2026-11-11T19:16:37Z",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
-      "espn_athlete_ids": [
-        529577,
-        392016,
-        435005,
-        470095,
-        435000,
-        435036,
-        529534,
-        537447,
-        439383,
-        438608,
-        492021,
-        207508,
-        551224,
-        228197,
-        167268,
-        540401,
-        381213,
-        442393,
-        529523,
-        495554,
-        529387,
-        489480,
-        537402,
-        438406,
-        537503,
-        537086,
-        607902,
-        538943,
-        539790,
-        497689,
-        379992,
-        184478,
-        443985,
-        529649,
-        167431,
-        529519,
-        547264,
-        435056,
-        139026,
-        470336,
-        449123,
-        547452,
-        442886,
-        440183,
-        470174,
-        470372,
-        492605,
-        489557,
-        451277,
-        379791,
-        537467,
-        529807,
-        538711,
-        491932,
-        529855,
-        605430,
-        395438,
-        537897,
-        399657,
-        439749,
-        492417,
-        672922,
-        166911,
-        529586,
-        207938,
-        380265,
-        529581,
-        446697,
-        435021,
-        435130
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "2026 NFL trade deadline winners, losers: Kirk Cousins, Josh Downs, Bengals, more",
-      "body": "Which teams made the best -- and worst -- moves before the NFL trade deadline? We're making sense of all the action.",
-      "published": "2026-11-11T04:05:03Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50443388/2026-nfl-trade-deadline-winners-losers-best-worst-deals",
-      "espn_athlete_ids": [
-        103992,
-        435021,
-        442393,
-        435130
-      ],
-      "athlete_names": [
         null,
         null,
         null,
@@ -1047,7 +970,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Darren Waller (TE, CAR) is the hot add -- 843,165 pickups in 24h",
+      "headline": "Darren Waller (TE, CAR) is the hot add -- 662,202 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -1060,7 +983,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Ashton Dulin (WR, IND) is the hot add -- 540,369 pickups in 24h",
+      "headline": "Ashton Dulin (WR, IND) is the hot add -- 478,620 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -1073,7 +996,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Tyler Higbee (TE, LAR) is the hot add -- 383,382 pickups in 24h",
+      "headline": "Tyler Higbee (TE, LAR) is the hot add -- 303,030 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -1086,7 +1009,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Justice Hill (RB, BAL) is the hot add -- 315,324 pickups in 24h",
+      "headline": "Justice Hill (RB, BAL) is the hot add -- 280,026 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -1099,7 +1022,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Demarcus Robinson (WR, SF) is the hot add -- 279,048 pickups in 24h",
+      "headline": "Demarcus Robinson (WR, SF) is the hot add -- 250,050 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -1112,7 +1035,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Aaron Rodgers (QB, PIT) is the hot add -- 277,656 pickups in 24h",
+      "headline": "Aaron Rodgers (QB, PIT) is the hot add -- 215,216 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -1125,7 +1048,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Laquon Treadwell (WR, IND) is the hot add -- 183,040 pickups in 24h",
+      "headline": "Laquon Treadwell (WR, IND) is the hot add -- 148,105 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
