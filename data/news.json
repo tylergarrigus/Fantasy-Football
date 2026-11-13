@@ -1,10 +1,230 @@
 {
-  "fetched_at": "2026-11-12T20:01:41+00:00",
+  "fetched_at": "2026-11-13T03:27:30+00:00",
   "items": [
+    {
+      "headline": "Week 10 Thursday Night Football: Commanders at Giants highlights",
+      "body": "Follow along for the biggest touchdowns and highlights from the NFC East faceoff at MetLife Stadium.",
+      "published": "2026-11-13T02:43:01Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50463340/thursday-night-football-commanders-giants-highlights",
+      "espn_athlete_ids": [
+        493077,
+        390109
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Rams put WR Puka Nacua on IR with knee, toe injuries",
+      "body": "The Rams, who had said they would not put Puka Nacua on IR, pivoted so they can sign Brennan Presley to the active roster and Tyler Scott to the practice squad.",
+      "published": "2026-11-13T01:17:02Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50466270/rams-wide-receiver-puka-nacua-ir-knee-toe-injuries",
+      "espn_athlete_ids": [
+        392016,
+        446042
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Vikings 'hyped' to welcome back 'leader' Cousins on 1st day of practice",
+      "body": "The Minnesota Vikings reveled Thursday in quarterback Kirk Cousins' first full day back with the organization.",
+      "published": "2026-11-13T02:53:01Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50466164/vikings-hyped-welcome-back-leader-kirk-cousins-1st-day-practice",
+      "espn_athlete_ids": [
+        103992,
+        435021
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Cam Skattebo dons custom 'Iron Man' mask for TNF, leads NFL Week 10 arrivals",
+      "body": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
+      "published": "2026-11-13T00:54:58Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50465223/nfl-week-10-fashionable-arrivals",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Steelers and Bengals meet for AFC North lead on Sunday night, both 6-2",
+      "body": "Joe Burrow and the Cincinnati Bengals have been on a record run during their four-game winning streak.",
+      "published": "2026-11-13T00:00:41Z",
+      "url": "http://www.espn.com/nfl/preview?gameId=401873064",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Reunion for Jim Harbaugh and Jesse Minter comes with both the Chargers and Ravens spiraling",
+      "body": "\u2014 Jim Harbaugh and Jesse Minter won a national championship together at the college level, then led the Los Angeles Chargers to back-to-back playoff appearances.",
+      "published": "2026-11-12T23:58:44Z",
+      "url": "http://www.espn.com/nfl/preview?gameId=401873065",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Cardinals' rookie QB Carson Beck makes his NFL debut against stellar Rams defense",
+      "body": "\u2014 First-year Arizona Cardinals coach Mike LaFleur is earning his paycheck this week as he works to develop an offensive game plan with a rookie...",
+      "published": "2026-11-12T23:33:35Z",
+      "url": "http://www.espn.com/nfl/preview?gameId=401873061",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Raiders QB Fernando Mendoza\u2019s first start will come against the Seahawks' NFL-best defense",
+      "body": "\u2014 The change came quickly Tuesday, but it was not unexpected when the ",
+      "published": "2026-11-12T23:29:36Z",
+      "url": "http://www.espn.com/nfl/preview?gameId=401873062",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "GM Joe Hortiz says Chargers were listening to trade offers, none were enticing",
+      "body": "GM Joe Hortiz pushed back against any narrative that the Chargers were unwilling or reluctant to pick up their phone ahead of Tuesday's trade deadline.",
+      "published": "2026-11-13T00:02:09Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50465608/joe-hortiz-says-chargers-were-listening-trade-offers",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "QB Kyle McCord eager to make his 1st NFL start as Dolphins and Colts meet in battle of reeling teams",
+      "body": "\u2014 Miami Dolphins quarterback Kyle McCord has dreamed about this moment his entire life.",
+      "published": "2026-11-12T23:10:35Z",
+      "url": "http://www.espn.com/nfl/preview?gameId=401873059",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "NFL rushing leaders in spotlight as Kenneth Walker III and Chiefs face Bijan Robinson and Falcons",
+      "body": "\u2014 The NFL's rushing leaders will be in the spotlight on Sunday when Bijan Robinson and the Atlanta Falcons face Kenneth Walker III and the Kansas City Chiefs.",
+      "published": "2026-11-12T22:44:35Z",
+      "url": "http://www.espn.com/nfl/preview?gameId=401873058",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Ravens QB Jacoby Brissett immersed in 'crash course' for Chargers tilt",
+      "body": "New Ravens quarterback Jacoby Brissett says he's focused on Monday's game against the Chargers, not the team's plans at quarterback for the remainder of the season.",
+      "published": "2026-11-12T22:44:30Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50464938/ravens-qb-brissett-immersed-crash-course-chargers",
+      "espn_athlete_ids": [
+        152903
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Travis Hunter makes Jessie Bates' Jaguars trade a hit with his nephews",
+      "body": "The safety's young nephews were thrilled to learn their uncle would be Hunter's teammate.",
+      "published": "2026-11-12T22:19:47Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50464631/jaguars-jessie-bates-trade-travis-hunter",
+      "espn_athlete_ids": [
+        184648,
+        540780
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Cowboys' Porter: My absence is because of injury, not my contract",
+      "body": "Cowboys CB Joey Porter Jr. wants it known his absence the past two weeks has everything to do with an ankle injury and nothing to do with a future contract.",
+      "published": "2026-11-12T22:27:43Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50464810/cowboys-joey-porter-absence-due-injury-not-contract",
+      "espn_athlete_ids": [
+        388513
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Kirk Cousins begins his 2nd stint with Vikings as they face the Packers in an NFC North showdown",
+      "body": "\u2014 Kirk Cousins\u2019 career seemed at a crossroads when he tore his Achilles tendon during his last visit to Lambeau Field.",
+      "published": "2026-11-12T21:50:35Z",
+      "url": "http://www.espn.com/nfl/preview?gameId=401873060",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Chargers' Jim Harbaugh frustrated with Broncos after nixed Daiyan Henley trade",
+      "body": "Chargers coach Jim Harbaugh on Thursday expressed frustration with the Denver Broncos about a nixed trade this week involving linebacker Daiyan Henley.",
+      "published": "2026-11-13T01:44:21Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50464601/chargers-jim-harbaugh-irked-broncos-nixed-trade",
+      "espn_athlete_ids": [
+        200364
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Despite slow starts, the Panthers and Saints meet with a chance to become sole leaders of NFC South",
+      "body": "\u2014 Never mind the Carolina Panthers' three-game losing streak, or that the New Orleans Saints dropped five of their first seven games this season.",
+      "published": "2026-11-12T21:39:35Z",
+      "url": "http://www.espn.com/nfl/preview?gameId=401873055",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Trevor Lawrence sees a 'shot' as the Jaguars add 3 defenders in trades before visiting Tennessee",
+      "body": "\u2014 The Jacksonville Jaguars already felt pretty confident both in themselves and what they want for a franchise still searching for its first Super...",
+      "published": "2026-11-12T20:59:35Z",
+      "url": "http://www.espn.com/nfl/preview?gameId=401873057",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Deshaun Watson downplays facing Texans as Browns try to stay unbeaten at home, in playoff picture",
+      "body": "\u2014 Deshaun Watson isn't buying the hype, insisting that it's no longer a big deal when he plays against his former team, the Houston Texans.",
+      "published": "2026-11-12T20:09:35Z",
+      "url": "http://www.espn.com/nfl/preview?gameId=401873056",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Jonathan Taylor focused on being leader for Colts with trade deadline drama over",
+      "body": "Colts running back Jonathan Taylor said he has turned his attention toward the future after the team's big moves ahead of the NFL trade deadline.",
+      "published": "2026-11-12T20:24:51Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50463938/still-colts-jonathan-taylor-focused-being-leader",
+      "espn_athlete_ids": [
+        435130
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
     {
       "headline": "Myles Garrett details range of emotions when he was sidelined with injury",
       "body": "Myles Garrett details range of emotions when he was sidelined with injury",
-      "published": "2026-11-12T19:52:42Z",
+      "published": "2026-11-12T20:42:00Z",
       "url": "https://www.espn.com/video/clip/_/id/50463704/myles-garrett-details-range-emotions-was-sidelined-injury",
       "espn_athlete_ids": [
         166841
@@ -17,7 +237,7 @@
     {
       "headline": "NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
       "body": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
-      "published": "2026-11-12T19:34:41Z",
+      "published": "2026-11-13T00:39:05Z",
       "url": "https://www.espn.com/nfl/story/_/id/50448015/nfl-week-10-uniforms",
       "espn_athlete_ids": [],
       "athlete_names": [],
@@ -30,21 +250,6 @@
       "url": "http://www.espn.com/nfl/preview?gameId=401873054",
       "espn_athlete_ids": [],
       "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Week 10 Thursday Night Football: Commanders at Giants highlights",
-      "body": "Stay tuned for the biggest touchdowns and highlights from the NFC East faceoff at MetLife Stadium.",
-      "published": "2026-11-12T19:39:04Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50463340/thursday-night-football-commanders-giants-highlights",
-      "espn_athlete_ids": [
-        493077,
-        390109
-      ],
-      "athlete_names": [
-        null,
-        null
-      ],
       "source": "ESPN"
     },
     {
@@ -400,214 +605,6 @@
       "url": "https://www.espn.com/fantasy/football/story/_/id/50433086/fantasy-playbook-projections-lineup-locks-week-10-shadow",
       "espn_athlete_ids": [],
       "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Andrew Hawkins: The Jaguars are the 'most complete team in the AFC'",
-      "body": "Andrew Hawkins: The Jaguars are the 'most complete team in the AFC'",
-      "published": "2026-11-12T14:26:56Z",
-      "url": "https://www.espn.com/video/clip/_/id/50461653/jaguars-most-complete-team-afc",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Ian Rapoport details Broncos' trade for Daiyan Henley falling through",
-      "body": "Ian Rapoport details Broncos' trade for Daiyan Henley falling through",
-      "published": "2026-11-12T13:25:16Z",
-      "url": "https://www.espn.com/video/clip/_/id/50461369/ian-rapoport-details-broncos-trade-daiyan-henley-falling-through",
-      "espn_athlete_ids": [
-        200364
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "2026 NFL midseason report: Questions, stats for all 32 teams entering second half",
-      "body": "The 2026 NFL season has hit the midway point. Here's what to watch in the second half, key QB stats and fantasy nuggets for all 32 teams.",
-      "published": "2026-11-12T12:48:02Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50448976/2026-nfl-midseason-report-questions-stats-fantasy",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Why 2-7 Jets preferred to keep roster intact at trade deadline",
-      "body": "A year after making two blockbuster trades, New York stayed quiet at the NFL trade deadline.",
-      "published": "2026-11-12T16:15:45Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50454225/jets-2026-trade-deadline-garrett-wilson-geno-smith",
-      "espn_athlete_ids": [
-        216016,
-        529523,
-        529387
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Does Packers' Christian Watson + Matthew Golden = 3,000 yards?",
-      "body": "Watson and Golden are on pace to join a rare club of WR pairs who combined for 3,000 yards.",
-      "published": "2026-11-12T14:48:44Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50455566/packers-christian-watson-matthew-golden-3000-yards",
-      "espn_athlete_ids": [
-        529534,
-        537447
-      ],
-      "athlete_names": [
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "How Kobe, LeBron, Steph and Brady are helping Jayden Daniels chase greatness",
-      "body": "The Commanders QB has tapped into some of sports' all-time greats like Brady and LeBron in search of an edge.",
-      "published": "2026-11-12T14:08:31Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50453988/kobe-lebron-steph-brady-tips-commanders-jayden-daniels",
-      "espn_athlete_ids": [
-        390109,
-        66001,
-        9385,
-        63003,
-        106466
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "NFL trade deadline grades: Deals for Kirk Cousins, Josh Downs, Ryan Neuzil",
-      "body": "Was getting Kirk Cousins a home run for the Vikings? Did the Chiefs make a smart move to pick up Josh Downs?",
-      "published": "2026-11-12T12:20:15Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50043542/2026-trade-deadline-grades-latest-best-worst-deals",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Sources: Broncos-Chargers trade nixed due to concerns over Daiyan Henley's knee",
-      "body": "The Broncos announced late Wednesday that their trade to acquire linebacker Daiyan Henley from the Chargers \"will not be finalized.\"",
-      "published": "2026-11-12T16:01:20Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50459330/broncos-say-trade-chargers-lb-henley-not-finalized",
-      "espn_athlete_ids": [
-        200364
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Veteran WR Keenan Allen feeling energized by trade to 49ers",
-      "body": "Keenan Allen said while he didn't expect to get traded, landing with a contending team in the 49ers has him feeling energized.",
-      "published": "2026-11-12T01:28:27Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50456881/veteran-wr-keenan-allen-feels-energized-trade-49ers",
-      "espn_athlete_ids": [
-        115682
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Sources: Philip Rivers set to return to NC State, deal to be finalized Friday",
-      "body": "Philip Rivers is set to return to NC State, this time as head football coach, once its trustees finalizes his contract after a meeting Friday, sources said.",
-      "published": "2026-11-12T13:32:20Z",
-      "url": "https://www.espn.com/college-football/story/_/id/50456831/sources-philip-rivers-nc-state-deal-set-finalized",
-      "espn_athlete_ids": [
-        14073
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Dolphins hopeful QB Malik Willis will be back this season",
-      "body": "Coach Jeff Hafley said Miami sees Malik Willis as its starter regardless of when he returns from his groin injury.",
-      "published": "2026-11-12T01:12:02Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50456677/dolphins-quarterback-malik-willis-return-starter",
-      "espn_athlete_ids": [
-        529420,
-        492684
-      ],
-      "athlete_names": [
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Source: Ravens, now on third kicker, sign journeyman Riley Patterson",
-      "body": "The Raven signed journeyman kicker Riley Patterson after his workout for the team on Wednesday, according to NFL Network.",
-      "published": "2026-11-12T14:25:47Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50456455/source-ravens-now-third-kicker-sign-riley-patterson",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Fernando Mendoza relishes 'once-in-a-lifetime' opportunity as Raiders' QB1",
-      "body": "No. 1 pick Fernando Mendoza said Wednesday it's a \"once-in-a-lifetime\" opportunity to be the Raiders' starting quarterback, while his teammates and coach expressed their confidence in his ability to lead the offense.",
-      "published": "2026-11-12T01:31:39Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50456405/fernando-mendoza-relishes-once-life-opportunity-raiders-starting-qb",
-      "espn_athlete_ids": [
-        542097
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Kirk Cousins makes first comments on Minnesota trade at Great Clips",
-      "body": "Kirk Cousins offered some thoughts on his trade to Minnesota after the news broke in the most on-brand location imaginable.",
-      "published": "2026-11-12T00:07:39Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50455775/kirk-cousins-minnesota-trade-great-clips",
-      "espn_athlete_ids": [
-        103992
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Kirk Cousins says call with Kevin O'Connell convinced him to OK Vikings trade",
-      "body": "Kirk Cousins has rejoined the Vikings after not quite three years away, relishing his familiarity with the Twin Cities area, the people in the organization.",
-      "published": "2026-11-12T00:04:23Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50455771/kirk-cousins-reintroduced-vikings-starting-qb",
-      "espn_athlete_ids": [
-        103992
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "New Bills safety Amani Hooker will be 'ready to go' vs. Jets",
-      "body": "Amani Cooper said he's confident he'll be able to pick up defensive coordinator Jim Leonhard's scheme by kickoff vs. the Jets.",
-      "published": "2026-11-11T23:35:57Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50455698/new-bills-safety-amani-hooker-ready-go-vs-jets",
-      "espn_athlete_ids": [
-        380279
-      ],
-      "athlete_names": [
-        null
-      ],
       "source": "ESPN"
     },
     {
@@ -975,7 +972,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Darren Waller (TE, CAR) is the hot add -- 346,149 pickups in 24h",
+      "headline": "Darren Waller (TE, CAR) is the hot add -- 479,169 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -988,20 +985,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Ashton Dulin (WR, IND) is the hot add -- 222,291 pickups in 24h",
-      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        4061956
-      ],
-      "athlete_names": [
-        "Ashton Dulin"
-      ],
-      "source": "Sleeper trending"
-    },
-    {
-      "headline": "Justice Hill (RB, BAL) is the hot add -- 184,626 pickups in 24h",
+      "headline": "Justice Hill (RB, BAL) is the hot add -- 293,517 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -1014,7 +998,20 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Tyler Higbee (TE, LAR) is the hot add -- 140,148 pickups in 24h",
+      "headline": "Ashton Dulin (WR, IND) is the hot add -- 237,447 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        4061956
+      ],
+      "athlete_names": [
+        "Ashton Dulin"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Tyler Higbee (TE, LAR) is the hot add -- 141,462 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -1027,20 +1024,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Demarcus Robinson (WR, SF) is the hot add -- 122,700 pickups in 24h",
-      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        3043116
-      ],
-      "athlete_names": [
-        "Demarcus Robinson"
-      ],
-      "source": "Sleeper trending"
-    },
-    {
-      "headline": "Aaron Rodgers (QB, PIT) is the hot add -- 103,852 pickups in 24h",
+      "headline": "Aaron Rodgers (QB, PIT) is the hot add -- 116,516 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -1049,6 +1033,45 @@
       ],
       "athlete_names": [
         "Aaron Rodgers"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Mack Hollins (WR, NE) is the hot add -- 112,461 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        2991662
+      ],
+      "athlete_names": [
+        "Mack Hollins"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Austin Ekeler (RB, WAS) is the hot add -- 102,912 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3068267
+      ],
+      "athlete_names": [
+        "Austin Ekeler"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Deshaun Watson (QB, CLE) is the hot add -- 89,168 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3122840
+      ],
+      "athlete_names": [
+        "Deshaun Watson"
       ],
       "source": "Sleeper trending"
     }
