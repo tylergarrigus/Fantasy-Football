@@ -1,10 +1,137 @@
 {
-  "fetched_at": "2026-11-14T03:23:14+00:00",
+  "fetched_at": "2026-11-14T18:13:33+00:00",
   "items": [
     {
+      "headline": "Chiefs' Kenneth Walker III (groin) to sit out vs. Falcons",
+      "body": "Chiefs running back Kenneth Walker III will miss Sunday's game due to a groin injury.",
+      "published": "2026-11-14T17:13:38Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50480529/chiefs-kenneth-walker-iii-groin-sit-sources-say",
+      "espn_athlete_ids": [
+        529577
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "NFL reassigns backup refs to work games closer to home",
+      "body": "The NFL, trying to avoid further travel issues from Friday's FAA ground stop, has reassigned officials to Week 10 games within driving distance of their homes.",
+      "published": "2026-11-14T16:35:07Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50479995/nfl-reassigns-backup-refs-work-games-closer-home",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Sources: Vikings made initial Kirk Cousins trade call to Raiders before MNF",
+      "body": "The Vikings initially reached out to the Raiders about a Kirk Cousins trade before their MNF game against the Bills, sources told ESPN and NFL Network.",
+      "published": "2026-11-14T15:58:40Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50479874/sources-vikings-first-called-kirk-cousins-mnf",
+      "espn_athlete_ids": [
+        103992
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "NFL Week 10 predictions: Upsets, fantasy sleepers, stat lines, TD scorers, more",
+      "body": "Touchdown for Chuba Hubbard? Fantasy upside for Aaron Rodgers? Trick play from the Raiders? Let's predict 15 things for Week 10.",
+      "published": "2026-11-14T11:53:16Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50453290/week-10-predictions-upsets-fantasy-sleepers-stats-2026",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Falcons insist winning still the goal despite trading Jessie Bates III",
+      "body": "Atlanta wanted to ensure trading away Jessie Bates III didn't send the wrong message to the team.",
+      "published": "2026-11-14T11:00:03Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50473666/atlanta-falcons-trade-deadline-jessie-bates-morale",
+      "espn_athlete_ids": [
+        208615,
+        184648
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Why the Raiders named Fernando Mendoza as the starter",
+      "body": "The Raiders named Fernando Mendoza as the starter shortly after trading Kirk Cousins to the Vikings.",
+      "published": "2026-11-14T11:00:00Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50466331/las-vegas-raiders-why-fernando-mendoza-starting",
+      "espn_athlete_ids": [
+        542097
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Untold stories of Detroit Lions WR Amon-Ra St. Brown's German upbringing",
+      "body": "For Amon-Ra St. Brown, Sunday's NFL game in Munich will mark the ultimate convergence of his dual heritage. Here are stories that shed more light.",
+      "published": "2026-11-14T11:00:11Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50475710/nfl-germany-lions-amon-ra-st-brown-munich",
+      "espn_athlete_ids": [
+        470832,
+        211704,
+        185235
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Despite Cousins trade, are Vikings back to square one at QB?",
+      "body": "Cousins can give some short-term relief, but his future and the search for a franchise QB remain uncertain.",
+      "published": "2026-11-14T11:00:01Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50472099/vikings-kirk-cousins-trade-contract",
+      "espn_athlete_ids": [
+        103992,
+        379780
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Patriots are 6-0 after a regular-season loss under Vrabel: Can they do it again?",
+      "body": "New England plays in Munich, Germany, this week. Catch up on what's happening abroad in this week's Patriots notebook.",
+      "published": "2026-11-14T13:32:11Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50475264/patriots-lions-germany-week-10-mike-vrabel",
+      "espn_athlete_ids": [
+        490129,
+        470142,
+        380051,
+        393470,
+        440999,
+        503770
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
       "headline": "Seahawks are hurting with injuries, but two players will return vs. Raiders",
-      "body": "QB Drew Lock will start again for Darnold. LB Uchenna Nwosu and WR Rashid Shaheed will return to the field in Las Vegas.",
-      "published": "2026-11-14T02:05:47Z",
+      "body": "QB Drew Lock will start again for Darnold. And LB Uchenna Nwosu and WR Rashid Shaheed will return to the field in Las Vegas.",
+      "published": "2026-11-14T04:01:15Z",
       "url": "https://www.espn.com/nfl/story/_/id/50475505/seahawks-raiders-week-10-darnold-lock-shaheed-returns",
       "espn_athlete_ids": [
         379932,
@@ -228,7 +355,7 @@
     {
       "headline": "Commanders QB Sam Hartman to star as 'The Bachelor' in milestone 30th season",
       "body": "The 30th season of ABC's \"The Bachelor\" that will premiere in March 2027 will star the former Notre Dame standout.",
-      "published": "2026-11-13T16:44:12Z",
+      "published": "2026-11-14T04:39:19Z",
       "url": "https://www.espn.com/nfl/story/_/id/50472000/sam-hartman-bachelor-season-30",
       "espn_athlete_ids": [
         216652
@@ -280,9 +407,9 @@
       "source": "ESPN"
     },
     {
-      "headline": "Minter: Lamar Jackson 'doing everything' to return; QB had surgery, source says",
+      "headline": "Minter: Lamar Jackson 'doing everything' to return; QB had surgery, sources say",
       "body": "Ravens coach Jesse Minter's update on Lamar Jackson's recovery process calls such timelines \"challenging to predict.\"",
-      "published": "2026-11-13T16:25:06Z",
+      "published": "2026-11-14T13:56:35Z",
       "url": "https://www.espn.com/nfl/story/_/id/50472222/ravens-lamar-jackson-injury-typical-line-6-10-weeks",
       "espn_athlete_ids": [
         184545,
@@ -360,7 +487,7 @@
     {
       "headline": "Fantasy playbook: Week 10 Shadow Reports, lineup locks and projected scores",
       "body": "An all-encompassing look at the matchups to exploit or avoid and lineup locks in fantasy, as well as projected scores for all NFL games.",
-      "published": "2026-11-13T15:47:25Z",
+      "published": "2026-11-14T17:06:22Z",
       "url": "https://www.espn.com/fantasy/football/story/_/id/50433086/fantasy-playbook-projections-lineup-locks-week-10-shadow",
       "espn_athlete_ids": [],
       "athlete_names": [],
@@ -408,66 +535,7 @@
       "source": "ESPN"
     },
     {
-      "headline": "'I'd cut Jameis Winston this morning': Whitner not amused by hard count",
-      "body": "'I'd cut Jameis Winston this morning': Whitner not amused by hard count",
-      "published": "2026-11-13T14:07:41Z",
-      "url": "https://www.espn.com/video/clip/_/id/50471328/whitner-not-amused-hard-count",
-      "espn_athlete_ids": [
-        138777
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Fantasy buzz: Likely, Skattebo come up big on TNF but only one is an auto-start",
-      "body": "The Giants lost on the scoreboard but fantasy managers benefited from big games from Isaiah Likely and Cam Skattebo.",
-      "published": "2026-11-13T20:33:43Z",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
-      "espn_athlete_ids": [
-        392016,
-        207938,
-        529999,
-        450385,
-        529519,
-        529657,
-        493077
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "NFC North: Bears win division? Cousins has Vikes in command?",
-      "body": "What will Kirk Cousins and Micah Parsons mean for the best division in football, or will the Bears hang on?",
-      "published": "2026-11-13T15:19:15Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50462993/lions-packers-bears-vikings-nfc-north",
-      "espn_athlete_ids": [
-        492854,
-        435036,
-        152836,
-        379780,
-        103992
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Mo Alie-Cox (TE, IND) listed Out",
+      "headline": "Mo Alie-Cox (TE, IND) listed IR",
       "body": "Groin",
       "published": null,
       "url": null,
@@ -870,7 +938,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Darren Waller (TE, CAR) is the hot add -- 363,024 pickups in 24h",
+      "headline": "Darren Waller (TE, CAR) is the hot add -- 293,409 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -883,7 +951,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Justice Hill (RB, BAL) is the hot add -- 145,530 pickups in 24h",
+      "headline": "Justice Hill (RB, BAL) is the hot add -- 121,590 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -896,20 +964,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Ashton Dulin (WR, IND) is the hot add -- 96,381 pickups in 24h",
-      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        4061956
-      ],
-      "athlete_names": [
-        "Ashton Dulin"
-      ],
-      "source": "Sleeper trending"
-    },
-    {
-      "headline": "Tyler Higbee (TE, LAR) is the hot add -- 77,778 pickups in 24h",
+      "headline": "Tyler Higbee (TE, LAR) is the hot add -- 100,710 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -922,33 +977,20 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Mike Gesicki (TE, CIN) is the hot add -- 54,260 pickups in 24h",
+      "headline": "Ashton Dulin (WR, IND) is the hot add -- 67,662 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
       "espn_athlete_ids": [
-        3116164
+        4061956
       ],
       "athlete_names": [
-        "Mike Gesicki"
+        "Ashton Dulin"
       ],
       "source": "Sleeper trending"
     },
     {
-      "headline": "Mack Hollins (WR, NE) is the hot add -- 50,772 pickups in 24h",
-      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        2991662
-      ],
-      "athlete_names": [
-        "Mack Hollins"
-      ],
-      "source": "Sleeper trending"
-    },
-    {
-      "headline": "Hunter Henry (TE, NE) is the hot add -- 41,949 pickups in 24h",
+      "headline": "Hunter Henry (TE, NE) is the hot add -- 56,373 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -957,6 +999,19 @@
       ],
       "athlete_names": [
         "Hunter Henry"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Mike Gesicki (TE, CIN) is the hot add -- 55,788 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3116164
+      ],
+      "athlete_names": [
+        "Mike Gesicki"
       ],
       "source": "Sleeper trending"
     }
