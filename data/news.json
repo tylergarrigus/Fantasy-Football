@@ -1,6 +1,129 @@
 {
-  "fetched_at": "2026-11-13T19:49:13+00:00",
+  "fetched_at": "2026-11-14T03:23:14+00:00",
   "items": [
+    {
+      "headline": "Seahawks are hurting with injuries, but two players will return vs. Raiders",
+      "body": "QB Drew Lock will start again for Darnold. LB Uchenna Nwosu and WR Rashid Shaheed will return to the field in Las Vegas.",
+      "published": "2026-11-14T02:05:47Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50475505/seahawks-raiders-week-10-darnold-lock-shaheed-returns",
+      "espn_athlete_ids": [
+        379932,
+        530161,
+        184656,
+        184497,
+        138774
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "49ers OT Williams, LB Greenlaw questionable, WR Evans out vs. Cowboys",
+      "body": "The 49ers are listing left tackle Trent Williams and linebacker Dre Greenlaw as questionable for Sunday's game against the Cowboys, while receiver Mike Evans has been ruled out.",
+      "published": "2026-11-13T23:06:06Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50475033/49ers-williams-greenlaw-questionable-evans-vs-cowboys",
+      "espn_athlete_ids": [
+        73982,
+        380096,
+        126377
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "When will Lamar Jackson return to the field?",
+      "body": "Jamison Hensley provides an update on Jackson's thumb injury post surgery, projecting a potential return as early as Week 16.",
+      "published": "2026-11-13T22:48:46Z",
+      "url": "https://www.espn.com/video/clip/_/id/50474994/when-lamar-jackson-return-field",
+      "espn_athlete_ids": [
+        184545
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Vikings to start reacquired QB Kirk Cousins vs. Packers",
+      "body": "Coach Kevin O'Connell called Kirk Cousins' ability to get reacquainted with the Vikings' offense \"impressive.\"",
+      "published": "2026-11-14T02:23:48Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50474753/vikings-start-reacquired-qb-kirk-cousins-vs-packers",
+      "espn_athlete_ids": [
+        103992
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Colts look to take advantage of Dolphins without QB Malik Willis",
+      "body": "Stephen Holder previews the Colts matchup against he Dolphins with new faces on offense post the NFL trade deadline.",
+      "published": "2026-11-13T22:47:11Z",
+      "url": "https://www.espn.com/video/clip/_/id/50474656/colts-look-take-advantage-dolphins-qb-malik-willis",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "NFL outlines steps in Jalen Hurts investigation in letter to senator",
+      "body": "The NFL provided some additional details about the investigation into how Jalen Hurts' blood clots were handled in response to an inquiry from a U.S. senator.",
+      "published": "2026-11-13T22:23:25Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50474564/nfl-outlines-aspects-jalen-hurts-investigation-senator",
+      "espn_athlete_ids": [
+        435090
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Andy Reid delivers injury update on Kenneth Walker III",
+      "body": "Andy Reid delivers injury update on Kenneth Walker III",
+      "published": "2026-11-13T21:15:49Z",
+      "url": "https://www.espn.com/video/clip/_/id/50474246/andy-reid-delivers-injury-update-kenneth-walker-iii",
+      "espn_athlete_ids": [
+        529577
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Panthers looking to build momentum",
+      "body": "Mike Kaye previews the Panthers matchup against the Saints as the true second half of the NFL season begins.",
+      "published": "2026-11-13T20:22:32Z",
+      "url": "https://www.espn.com/video/clip/_/id/50473949/panthers-looking-build-momentum",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Jeffery Simmons has high praise for Caleb Williams",
+      "body": "Jeffery Simmons has high praise for Caleb Williams",
+      "published": "2026-11-13T19:57:28Z",
+      "url": "https://www.espn.com/video/clip/_/id/50473665/jeffery-simmons-high-praise-caleb-williams",
+      "espn_athlete_ids": [
+        379823,
+        492854
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
     {
       "headline": "NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
       "body": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
@@ -11,9 +134,9 @@
       "source": "ESPN"
     },
     {
-      "headline": "Sources: Eagles to release WR Hollywood Brown per request",
-      "body": "Receiver Hollywood Brown, who has played sparingly over the first half of the season, is being released by the Eagles upon his request, sources told ESPN.",
-      "published": "2026-11-13T19:32:56Z",
+      "headline": "Eagles release wide receiver Hollywood Brown per request",
+      "body": "Receiver Hollywood Brown, who has played sparingly over the first half of the season, has been released by the Eagles upon his request.",
+      "published": "2026-11-13T21:31:47Z",
       "url": "https://www.espn.com/nfl/story/_/id/50473514/sources-eagles-release-wr-hollywood-brown-per-request",
       "espn_athlete_ids": [
         379841
@@ -79,7 +202,7 @@
     {
       "headline": "NC State officially hires Philip Rivers as football coach",
       "body": "The NC State board of trustees has finalized a five-year contract for former NFL quarterback Philip Rivers to become head football coach at his alma mater.",
-      "published": "2026-11-13T18:50:53Z",
+      "published": "2026-11-13T20:59:56Z",
       "url": "https://www.espn.com/college-football/story/_/id/50456831/sources-philip-rivers-nc-state-deal-set-finalized",
       "espn_athlete_ids": [
         14073
@@ -300,7 +423,7 @@
     {
       "headline": "Fantasy buzz: Likely, Skattebo come up big on TNF but only one is an auto-start",
       "body": "The Giants lost on the scoreboard but fantasy managers benefited from big games from Isaiah Likely and Cam Skattebo.",
-      "published": "2026-11-13T14:01:39Z",
+      "published": "2026-11-13T20:33:43Z",
       "url": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
       "espn_athlete_ids": [
         392016,
@@ -344,149 +467,6 @@
       "source": "ESPN"
     },
     {
-      "headline": "Don't be surprised if Jordan Love makes history and Mendoza performs like a QB1",
-      "body": "Elite WRs compensate for the lack of a running game in Green Bay, while there's unwarranted caution for Vegas' QB.",
-      "published": "2026-11-13T15:06:11Z",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/50463616/fantasy-football-start-sit-sleepers-breakouts-week-10",
-      "espn_athlete_ids": [
-        435036,
-        529534,
-        537447,
-        542097,
-        166874,
-        449562,
-        536855,
-        529577
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "What to know to set your lineup: Cousins' Vikings return elevates Jefferson",
-      "body": "Adam Rank catches you up on the vital information and insight before you make your toughest lineup decisions.",
-      "published": "2026-11-13T11:45:02Z",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/50463489/fantasy-football-start-sit-week-10-need-know",
-      "espn_athlete_ids": [
-        103992,
-        435021,
-        379806,
-        63003,
-        470112,
-        435036,
-        495554,
-        529649,
-        443985,
-        228197,
-        449562,
-        607902,
-        380747,
-        529351,
-        152902,
-        537963,
-        446716,
-        396602
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Is Chuba Hubbard the biggest X factor to spark a Panthers turnaround?",
-      "body": "Meet Carolina's team captain, a locker room leader and a relentless running back who is \"chasing greatness myself.\"",
-      "published": "2026-11-13T14:01:15Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50463509/chuba-hubbard-x-factor-spark-carolina-panthers",
-      "espn_athlete_ids": [
-        470498
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "It's a battle for the AFC North: Steelers at Bengals Week 10 primer",
-      "body": "Aaron Rodgers and Joe Burrow and their 6-2 teams face off Sunday night, and Ben Baby and Brooke Pryor break down the matchup.",
-      "published": "2026-11-13T11:00:11Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50464709/afc-north-steelers-bengals-rodgers-burrow-week-10",
-      "espn_athlete_ids": [
-        470095,
-        435157,
-        435000,
-        17303,
-        380063
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "NFL execs on tight playoff races, MVP, Super Bowl picks, breakouts, more",
-      "body": "Who will win the most competitive divisions, and who's in line for awards? We asked sources around the NFL at midseason.",
-      "published": "2026-11-13T12:08:03Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50462723/2026-nfl-playoffs-mvp-super-bowl-breakout-players-divisions",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Fernando Mendoza and the Raiders' sit-and-learn plan: Is he ready to start?",
-      "body": "The Raiders had a plan for Fernando Mendoza in Year 1 and stuck to it as long as they could. But he's now QB1 earlier than expected, and they have to trust he's ready.",
-      "published": "2026-11-13T11:00:10Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50462155/raiders-starting-fernando-mendoza-plan-decision-graziano",
-      "espn_athlete_ids": [
-        542097
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Giants' Jameis Winston lets 'the dogs out' on 4th down; Commanders don't bite",
-      "body": "Giants quarterback Jameis Winston broke into a rendition of \"Who Let the Dogs Out\" in an attempt to draw the Commanders offside on fourth down in New York's 24-21 loss.",
-      "published": "2026-11-13T07:26:59Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50469309/giants-jameis-winston-barks-let-dogs-vs-commanders",
-      "espn_athlete_ids": [
-        138777
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
       "headline": "Mo Alie-Cox (TE, IND) listed Out",
       "body": "Groin",
       "published": null,
@@ -500,6 +480,19 @@
       "source": "Sleeper injury report"
     },
     {
+      "headline": "Jauan Jennings (WR, MIN) listed Out",
+      "body": "Calf",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3886598
+      ],
+      "athlete_names": [
+        "Jauan Jennings"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
       "headline": "Sam Darnold (QB, SEA) listed Out",
       "body": "Quadriceps",
       "published": null,
@@ -509,6 +502,19 @@
       ],
       "athlete_names": [
         "Sam Darnold"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
+      "headline": "T.J. Hockenson (TE, MIN) listed Out",
+      "body": "Wrist",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        4036133
+      ],
+      "athlete_names": [
+        "T.J. Hockenson"
       ],
       "source": "Sleeper injury report"
     },
@@ -643,7 +649,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Mike Evans (WR, SF) listed Questionable",
+      "headline": "Mike Evans (WR, SF) listed Out",
       "body": "Achilles -- Tendinitis",
       "published": null,
       "url": null,
@@ -825,7 +831,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Kyler Murray (QB, MIN) listed Doubtful",
+      "headline": "Kyler Murray (QB, MIN) listed Out",
       "body": "Hamstring -- Strain",
       "published": null,
       "url": null,
@@ -864,7 +870,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Darren Waller (TE, CAR) is the hot add -- 445,356 pickups in 24h",
+      "headline": "Darren Waller (TE, CAR) is the hot add -- 363,024 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -877,7 +883,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Justice Hill (RB, BAL) is the hot add -- 277,497 pickups in 24h",
+      "headline": "Justice Hill (RB, BAL) is the hot add -- 145,530 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -890,7 +896,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Ashton Dulin (WR, IND) is the hot add -- 167,193 pickups in 24h",
+      "headline": "Ashton Dulin (WR, IND) is the hot add -- 96,381 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -903,20 +909,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Mack Hollins (WR, NE) is the hot add -- 98,118 pickups in 24h",
-      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        2991662
-      ],
-      "athlete_names": [
-        "Mack Hollins"
-      ],
-      "source": "Sleeper trending"
-    },
-    {
-      "headline": "Tyler Higbee (TE, LAR) is the hot add -- 92,475 pickups in 24h",
+      "headline": "Tyler Higbee (TE, LAR) is the hot add -- 77,778 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -929,28 +922,41 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Aaron Rodgers (QB, PIT) is the hot add -- 84,648 pickups in 24h",
+      "headline": "Mike Gesicki (TE, CIN) is the hot add -- 54,260 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
       "espn_athlete_ids": [
-        8439
+        3116164
       ],
       "athlete_names": [
-        "Aaron Rodgers"
+        "Mike Gesicki"
       ],
       "source": "Sleeper trending"
     },
     {
-      "headline": "Deshaun Watson (QB, CLE) is the hot add -- 71,664 pickups in 24h",
+      "headline": "Mack Hollins (WR, NE) is the hot add -- 50,772 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
       "espn_athlete_ids": [
-        3122840
+        2991662
       ],
       "athlete_names": [
-        "Deshaun Watson"
+        "Mack Hollins"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Hunter Henry (TE, NE) is the hot add -- 41,949 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3046439
+      ],
+      "athlete_names": [
+        "Hunter Henry"
       ],
       "source": "Sleeper trending"
     }
