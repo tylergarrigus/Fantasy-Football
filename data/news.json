@@ -1,10 +1,107 @@
 {
-  "fetched_at": "2026-11-14T18:13:33+00:00",
+  "fetched_at": "2026-11-15T02:48:51+00:00",
   "items": [
+    {
+      "headline": "Fantasy playbook: Week 10 Shadow Reports, lineup locks and projected scores",
+      "body": "An all-encompassing look at the matchups to exploit or avoid and lineup locks in fantasy, as well as projected scores for all NFL games.",
+      "published": "2026-11-15T00:49:57Z",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/50433086/fantasy-playbook-projections-lineup-locks-week-10-shadow",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Saints RB Travis Etienne Jr. activated off IR for game vs. Panthers",
+      "body": "The New Orleans Saints activated running back Travis Etienne Jr. off injured reserve prior to their game against the Carolina Panthers, the team announced Saturday.",
+      "published": "2026-11-14T22:13:44Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50483551/saints-rb-travis-etienne-activated-ir-game-vs-panthers",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Patriots place RB TreVeyon Henderson on IR with still unexplained illness",
+      "body": "The Patriots placed RB TreVeyon Henderson on injured reserve while he deals with an unexplained neurological issue.",
+      "published": "2026-11-15T01:39:05Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50483113/patriots-place-rb-henderson-ir-unexplained-illness",
+      "espn_athlete_ids": [
+        492605
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Steelers activate DT Derrick Harmon from IR ahead of key Bengals clash",
+      "body": "The Steelers have activated defensive tackle Derrick Harmon from injured reserve after he missed the past four games with a foot injury.",
+      "published": "2026-11-14T20:41:30Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50482239/steelers-activate-dt-derrick-harmon-injured-reserve",
+      "espn_athlete_ids": [
+        492694
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "DE Danielle Hunter, LB Azeez Al-Shaair among Texans ruled out vs. Browns",
+      "body": "The Texans will be without a number of key starters -- including running back David Montgomery and All-Pro defensive end Danielle Hunter -- when they travel to face the Browns.",
+      "published": "2026-11-14T20:05:23Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50481864/rb-montgomery-de-hunter-texans-ruled-vs-browns",
+      "espn_athlete_ids": [
+        381308,
+        138823,
+        380054,
+        538298,
+        499124
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Panthers WR Xavier Legette, out since Week 2 with knee injury, activated from IR",
+      "body": "Panthers wide receiver Xavier Legette, sidelined since injuring his knee in a Week 2 blowout win over the Falcons, has been activated from injured reserve.",
+      "published": "2026-11-14T19:06:19Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50481450/panthers-xavier-legette-week-2-activated-ir",
+      "espn_athlete_ids": [
+        394065
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Fantasy buzz: Does Emmett Johnson have RB1 upside while Kenneth Walker III sits?",
+      "body": "Kansas City rookie Emmett Johnson is expected to be thrust into a starting role for Week 10 with Kenneth Walker III ruled out.",
+      "published": "2026-11-14T18:56:52Z",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
+      "espn_athlete_ids": [
+        536855,
+        529577,
+        489557,
+        449562
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
     {
       "headline": "Chiefs' Kenneth Walker III (groin) to sit out vs. Falcons",
       "body": "Chiefs running back Kenneth Walker III will miss Sunday's game due to a groin injury.",
-      "published": "2026-11-14T17:13:38Z",
+      "published": "2026-11-14T18:52:47Z",
       "url": "https://www.espn.com/nfl/story/_/id/50480529/chiefs-kenneth-walker-iii-groin-sit-sources-say",
       "espn_athlete_ids": [
         529577
@@ -76,7 +173,7 @@
     {
       "headline": "Untold stories of Detroit Lions WR Amon-Ra St. Brown's German upbringing",
       "body": "For Amon-Ra St. Brown, Sunday's NFL game in Munich will mark the ultimate convergence of his dual heritage. Here are stories that shed more light.",
-      "published": "2026-11-14T11:00:11Z",
+      "published": "2026-11-14T20:11:22Z",
       "url": "https://www.espn.com/nfl/story/_/id/50475710/nfl-germany-lions-amon-ra-st-brown-munich",
       "espn_athlete_ids": [
         470832,
@@ -254,7 +351,7 @@
     {
       "headline": "NFL Week 10 uniforms: Titans debut Rivalries look, Ravens go all-black",
       "body": "Here's a look at what each NFL team is wearing in Week 10, led by the Tennessee Titans' Rivalries look.",
-      "published": "2026-11-13T19:27:16Z",
+      "published": "2026-11-15T02:09:50Z",
       "url": "https://www.espn.com/nfl/story/_/id/50448015/nfl-week-10-uniforms",
       "espn_athlete_ids": [],
       "athlete_names": [],
@@ -388,147 +485,6 @@
       "athlete_names": [
         null,
         null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Why Mike Clay is locking Zach Charbonnet into his lineup vs. Las Vegas",
-      "body": "Why Mike Clay is locking Zach Charbonnet into his lineup vs. Las Vegas",
-      "published": "2026-11-13T16:42:12Z",
-      "url": "https://www.espn.com/video/clip/_/id/50472265/why-mike-clay-locking-zach-charbonnet-lineup-vs-las-vegas",
-      "espn_athlete_ids": [
-        395438
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Minter: Lamar Jackson 'doing everything' to return; QB had surgery, sources say",
-      "body": "Ravens coach Jesse Minter's update on Lamar Jackson's recovery process calls such timelines \"challenging to predict.\"",
-      "published": "2026-11-14T13:56:35Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50472222/ravens-lamar-jackson-injury-typical-line-6-10-weeks",
-      "espn_athlete_ids": [
-        184545,
-        152903,
-        470133
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Why Cam Ward is a fantasy option to keep an eye on",
-      "body": "Why Cam Ward is a fantasy option to keep an eye on",
-      "published": "2026-11-13T16:26:45Z",
-      "url": "https://www.espn.com/video/clip/_/id/50472214/why-cam-ward-fantasy-option-keep-eye-on",
-      "espn_athlete_ids": [
-        441891
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Where does Jayden Daniels rank among fantasy QBs?",
-      "body": "Where does Jayden Daniels rank among fantasy QBs?",
-      "published": "2026-11-13T16:45:45Z",
-      "url": "https://www.espn.com/video/clip/_/id/50472192/where-does-jayden-daniels-rank-fantasy-qbs",
-      "espn_athlete_ids": [
-        390109
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Should managers be concerned with Malik Nabers after 2 straight duds?",
-      "body": "Should managers be concerned with Malik Nabers after 2 straight duds?",
-      "published": "2026-11-13T16:38:34Z",
-      "url": "https://www.espn.com/video/clip/_/id/50472139/should-managers-concerned-malik-nabers-2-straight-duds",
-      "espn_athlete_ids": [
-        489486
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Why Mike Clay feels good about Rashee Rice as a WR2",
-      "body": "Why Mike Clay feels good about Rashee Rice as a WR2",
-      "published": "2026-11-13T16:59:09Z",
-      "url": "https://www.espn.com/video/clip/_/id/50472084/why-mike-clay-feels-good-rashee-rice-wr2",
-      "espn_athlete_ids": [
-        389698
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Stephen A.: 'John Harbaugh should be ashamed of himself' after Giants' loss",
-      "body": "Stephen A.: 'John Harbaugh should be ashamed of himself' after Giants' loss",
-      "published": "2026-11-13T15:29:56Z",
-      "url": "https://www.espn.com/video/clip/_/id/50472074/john-harbaugh-ashamed-giants-loss",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Fantasy playbook: Week 10 Shadow Reports, lineup locks and projected scores",
-      "body": "An all-encompassing look at the matchups to exploit or avoid and lineup locks in fantasy, as well as projected scores for all NFL games.",
-      "published": "2026-11-14T17:06:22Z",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/50433086/fantasy-playbook-projections-lineup-locks-week-10-shadow",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Will Lamar Jackson be able to return this season after thumb surgery?",
-      "body": "Will Lamar Jackson be able to return this season after thumb surgery?",
-      "published": "2026-11-13T15:01:56Z",
-      "url": "https://www.espn.com/video/clip/_/id/50471768/will-lamar-jackson-able-return-season-thumb-surgery",
-      "espn_athlete_ids": [
-        184545
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Are the Rams' playoff hopes over after Puka Nacua's injury?",
-      "body": "Are the Rams' playoff hopes over after Puka Nacua's injury?",
-      "published": "2026-11-13T15:16:17Z",
-      "url": "https://www.espn.com/video/clip/_/id/50471662/are-rams-playoff-hopes-puka-nacua-injury",
-      "espn_athlete_ids": [
-        392016
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Falcons sign DE Cameron Thomas, CB C.J. Henderson to multiyear extensions",
-      "body": "The Atlanta Falcons have signed defensive end Cameron Thomas and cornerback C.J. Henderson to multiyear contract extensions, the team announced Friday.",
-      "published": "2026-11-13T15:24:09Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50471659/falcons-sign-de-thomas-cb-henderson-multiyear-extensions",
-      "espn_athlete_ids": [
-        529507,
-        435022
-      ],
-      "athlete_names": [
         null,
         null
       ],
@@ -743,19 +699,6 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Reggie Gilliam (RB, NE) listed IR",
-      "body": "Ankle",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        4039505
-      ],
-      "athlete_names": [
-        "Reggie Gilliam"
-      ],
-      "source": "Sleeper injury report"
-    },
-    {
       "headline": "Cole Kmet (TE, CHI) listed IR",
       "body": "Knee",
       "published": null,
@@ -765,6 +708,19 @@
       ],
       "athlete_names": [
         "Cole Kmet"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
+      "headline": "David Montgomery (RB, HOU) listed Out",
+      "body": "Groin",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        4035538
+      ],
+      "athlete_names": [
+        "David Montgomery"
       ],
       "source": "Sleeper injury report"
     },
@@ -938,7 +894,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Darren Waller (TE, CAR) is the hot add -- 293,409 pickups in 24h",
+      "headline": "Darren Waller (TE, CAR) is the hot add -- 188,865 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -951,7 +907,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Justice Hill (RB, BAL) is the hot add -- 121,590 pickups in 24h",
+      "headline": "Justice Hill (RB, BAL) is the hot add -- 170,298 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -964,7 +920,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Tyler Higbee (TE, LAR) is the hot add -- 100,710 pickups in 24h",
+      "headline": "Tyler Higbee (TE, LAR) is the hot add -- 108,783 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -977,7 +933,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Ashton Dulin (WR, IND) is the hot add -- 67,662 pickups in 24h",
+      "headline": "Ashton Dulin (WR, IND) is the hot add -- 56,205 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -990,20 +946,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Hunter Henry (TE, NE) is the hot add -- 56,373 pickups in 24h",
-      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        3046439
-      ],
-      "athlete_names": [
-        "Hunter Henry"
-      ],
-      "source": "Sleeper trending"
-    },
-    {
-      "headline": "Mike Gesicki (TE, CIN) is the hot add -- 55,788 pickups in 24h",
+      "headline": "Mike Gesicki (TE, CIN) is the hot add -- 48,316 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -1012,6 +955,19 @@
       ],
       "athlete_names": [
         "Mike Gesicki"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Hunter Henry (TE, NE) is the hot add -- 45,591 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3046439
+      ],
+      "athlete_names": [
+        "Hunter Henry"
       ],
       "source": "Sleeper trending"
     }
