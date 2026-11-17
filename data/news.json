@@ -1,348 +1,258 @@
 {
-  "fetched_at": "2026-11-17T05:07:27+00:00",
+  "fetched_at": "2026-11-17T21:00:31+00:00",
   "items": [
     {
-      "headline": "Justin Herbert, defense help lift Chargers past Ravens on MNF",
-      "body": "The Chargers' defense stifles Baltimore's running backs, and Justin Herbert steps up in Los Angeles' first win.",
-      "published": "2026-11-17T05:05:52Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50506286/ravens-chargers-mnf-herbert-first-win",
+      "headline": "Irving, Walker III, Bowers and more Knockout league pickups for Week 11",
+      "body": "As the number of teams shrink, the number of stars available in Knockout leagues grows. Here are the ones to get.",
+      "published": "2026-11-17T20:33:17Z",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/50512512/2026-fantasy-football-knockout-leagues-pickups-week-11",
       "espn_athlete_ids": [
-        435043,
-        389171
+        489617,
+        492021,
+        529389,
+        529577,
+        529586,
+        435036,
+        529534,
+        537447,
+        392016
       ],
       "athlete_names": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         null,
         null
       ],
       "source": "ESPN"
     },
     {
-      "headline": "Chargers bully the Ravens at the line of scrimmage and earn their first win of the season, 23-20",
-      "body": "\u2014 Justin Herbert and Omarion Hampton ran for first-half touchdowns, and the Los Angeles Chargers earned their first win of the season, manhandling Baltimore at the line of scrimmage in a 23-20 victory over the Ravens on Monday night.",
-      "published": "2026-11-17T04:32:47Z",
-      "url": "http://www.espn.com/nfl/recap?gameId=401873065",
+      "headline": "Is Chuba Hubbard the biggest X factor to spark a Panthers turnaround?",
+      "body": "Meet Carolina's team captain, a locker room leader and a relentless running back who is \"chasing greatness myself.\"",
+      "published": "2026-11-17T19:29:01Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50463509/chuba-hubbard-x-factor-spark-carolina-panthers",
+      "espn_athlete_ids": [
+        470498
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "2026 expected fantasy points against (xFPA) by position",
+      "body": "Measuring the best defenses against specific positions by using expected points vs. actual fantasy production.",
+      "published": "2026-11-17T19:25:48Z",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/49869463/2026-fantasy-football-expected-points-xfpa-position-qb-rb-wr-te",
       "espn_athlete_ids": [],
       "athlete_names": [],
       "source": "ESPN"
     },
     {
-      "headline": "Chargers stun Ravens, pick up first win on MNF",
-      "body": "Chargers stun Ravens, pick up first win on MNF",
-      "published": "2026-11-17T04:24:23Z",
-      "url": "https://www.espn.com/video/clip/_/id/50507744/chargers-stun-ravens-pick-first-win-mnf",
-      "espn_athlete_ids": [
-        446050,
-        435043,
-        152901,
-        537651
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Bo Nix and Eli do some quality trolling of Peyton's rushing game",
-      "body": "Bo Nix and Eli do some quality trolling of Peyton's rushing game",
-      "published": "2026-11-17T03:45:46Z",
-      "url": "https://www.espn.com/video/clip/_/id/50507501/bo-nix-eli-do-some-quality-trolling-peyton-rushing-game",
-      "espn_athlete_ids": [
-        549664,
-        2951,
-        14061
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Rams center Coleman Shelton out 4-6 weeks with hamstring injury",
-      "body": "Coleman Shelton strained his hamstring in the second quarter of the Rams' Week 10 victory over the Cardinals.",
-      "published": "2026-11-17T02:37:21Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50506869/rams-coleman-shelton-4-6-weeks-hamstring-injury",
-      "espn_athlete_ids": [
-        185824
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Mike McCarthy on Steelers' blowout loss: 'Needs to stop there'",
-      "body": "After a deflating loss at Cincinnati, Pittsburgh faces a Week 11 gut-check game at the Eagles on Sunday.",
-      "published": "2026-11-17T02:52:26Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50505946/mike-mccarthy-pittsburgh-steelers-week-10-blowout-loss",
-      "espn_athlete_ids": [
-        434984,
-        392406
-      ],
-      "athlete_names": [
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Fan makes a fantastic catch to send himself to Super Bowl LXI",
-      "body": "Fan makes a fantastic catch to send himself to Super Bowl LXI",
-      "published": "2026-11-17T01:21:29Z",
-      "url": "https://www.espn.com/video/clip/_/id/50506334/fan-makes-fantastic-catch-send-super-bowl-lxi",
+      "headline": "Expected fantasy points (xFP): 2026 leaderboard for TEs",
+      "body": "xFP focuses solely on opportunity. Here are the leaders for 2026.",
+      "published": "2026-11-17T19:20:48Z",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/49869668/2026-fantasy-football-expected-fantasy-points-xfp-te",
       "espn_athlete_ids": [],
       "athlete_names": [],
       "source": "ESPN"
     },
     {
-      "headline": "Sources: Jets QB Geno Smith avoided major ankle injury, testing shows",
-      "body": "Imaging tests performed on Jets quarterback Geno Smith's injured left ankle did not reveal any major concerns, sources said Monday.",
-      "published": "2026-11-17T01:08:09Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50506147/jets-qb-geno-smith-avoided-major-ankle-injury",
-      "espn_athlete_ids": [
-        115570,
-        537689
-      ],
-      "athlete_names": [
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Kyle Hamilton rocks Christmas sweater ahead of 'MNF,' leads NFL Week 10 arrivals",
-      "body": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
-      "published": "2026-11-16T23:53:27Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50465223/nfl-week-10-fashionable-arrivals",
+      "headline": "Expected fantasy points (xFP): 2026 leaderboard for WRs",
+      "body": "xFP focuses solely on opportunity. Here are the leaders for 2026.",
+      "published": "2026-11-17T19:19:29Z",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/49869659/fantasy-football-2026-expected-fantasy-points-xfp-wr",
       "espn_athlete_ids": [],
       "athlete_names": [],
       "source": "ESPN"
     },
     {
-      "headline": "Behind Raiders fans' tribute to Fernando Mendoza's mother",
-      "body": "Tom Joanides' social media campaign became a meaningful tribute when Mendoza scored in his first NFL start.",
-      "published": "2026-11-16T23:13:41Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50504017/raiders-fans-seated-fernando-mendoza-touchdown-tribute",
-      "espn_athlete_ids": [
-        542097
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Bears RB Kyle Monangai says he's 'on track' to return Sunday against Saints",
-      "body": "Bears running back Kyle Monangai said Monday that he's \"on track\" to return Sunday against the Saints after sitting out five games because of a thumb injury and turf toe.",
-      "published": "2026-11-16T23:30:11Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50505407/bears-rb-kyle-monangai-says-track-return-sunday",
-      "espn_athlete_ids": [
-        451602
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "49ers WR Mike Evans' Achilles tendinitis injury explained",
-      "body": "ESPN spoke with a medical professional for a better understanding of Evans' diagnosis. When could he return? And will the injury completely resolve itself?",
-      "published": "2026-11-17T02:54:01Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50502440/san-francisco-49ers-mike-evans-achilles-tendinitis-injury-recovery",
-      "espn_athlete_ids": [
-        126377
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Seahawks' Mike Macdonald 'optimistic' QB Sam Darnold returns after bye week",
-      "body": "Seahawks coach Mike Macdonald is \"optimistic\" QB Sam Darnold will return to his starting role after the team's bye week.",
-      "published": "2026-11-16T21:17:12Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50504531/seahawks-macdonald-optimisitic-qb-darnold-plays-bye-week",
-      "espn_athlete_ids": [
-        184497,
-        379932
-      ],
-      "athlete_names": [
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Adam Schefter: Micah Parsons on track to return for Packers in Week 12",
-      "body": "Adam Schefter: Micah Parsons on track to return for Packers in Week 12",
-      "published": "2026-11-16T21:11:04Z",
-      "url": "https://www.espn.com/video/clip/_/id/50504435/micah-parsons-track-return-packers-week-12",
-      "espn_athlete_ids": [
-        470130
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Packers' Matt LaFleur still plans on Micah Parsons to return on Thanksgiving Eve",
-      "body": "The Packers still hope Micah Parsons will be ready to make his return for the Thanksgiving Eve game at the Rams in Week 12.",
-      "published": "2026-11-16T21:43:15Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50504228/lafleur-plans-parsons-return-thanksgiving-eve",
-      "espn_athlete_ids": [
-        470130
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Drake Maye ankle injury: Is the Patriots' season over? Can Tommy DeVito step up?",
-      "body": "If the QB doesn't return in 2026, New England faces an uphill battle against some of the NFL's best teams.",
-      "published": "2026-11-16T23:02:32Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50503981/drake-maye-ankle-injury-patriots-tommy-devito-stats",
-      "espn_athlete_ids": [
-        490129,
-        227632
-      ],
-      "athlete_names": [
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Can the Bengals keep winning while throwing so much?",
-      "body": "Can the Bengals keep winning while throwing so much?",
-      "published": "2026-11-16T20:17:29Z",
-      "url": "https://www.espn.com/video/clip/_/id/50504016/can-bengals-keep-winning-throwing-much",
-      "espn_athlete_ids": [
-        435157,
-        470095,
-        435000
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "McAfee can't believe how unlucky Aidan Hutchinson's injury is",
-      "body": "McAfee can't believe how unlucky Aidan Hutchinson's injury is   ",
-      "published": "2026-11-16T19:25:40Z",
-      "url": "https://www.espn.com/video/clip/_/id/50503576/mcafee-believe-how-unlucky-aidan-hutchinson-injury-is",
-      "espn_athlete_ids": [
-        529364,
-        64593
-      ],
-      "athlete_names": [
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Vikings WR Jordan Addison needs thumb surgery, is candidate for IR",
-      "body": "Vikings wide receiver Jordan Addison needs to undergo surgery on his thumb and is a candidate for injured reserve, coach Kevin O'Connell said Monday.",
-      "published": "2026-11-16T20:30:39Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50503437/vikings-wr-jordan-addison-needs-thumb-surgery",
-      "espn_athlete_ids": [
-        443040
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Early bets for Week 11: Will Broncos keep Raiders down? Will 49ers stay hot?",
-      "body": "Which Week 11 lines offered immediate value once odds came out? Here are the early bets we like.",
-      "published": "2026-11-16T20:00:15Z",
-      "url": "https://www.espn.com/espn/betting/story/_/id/50501527/nfl-week-11-betting-odds-props-early-picks-predictions",
+      "headline": "Expected fantasy points (xFP): 2026 leaderboard for RBs",
+      "body": "xFP focuses solely on opportunity. Here are the leaders for 2026.",
+      "published": "2026-11-17T19:17:32Z",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/49869631/2026-fantasy-football-expected-fantasy-points-xfp-rb",
       "espn_athlete_ids": [],
       "athlete_names": [],
       "source": "ESPN"
     },
     {
-      "headline": "Falcons WR Drake London cleared after being checked for concussion",
-      "body": "Falcons wide receiver Drake London has been cleared after being removed from Sunday's game against the Chiefs late with a possible concussion.",
-      "published": "2026-11-16T19:03:09Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50503127/falcons-drake-london-cleared-being-checked-concussion",
-      "espn_athlete_ids": [
-        529351
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Sources: Cowboys RG Tyler Booker, CB DaRon Bland have high ankle sprains",
-      "body": "The Cowboys are looking at multiple week absences for right guard Tyler Booker and cornerback DaRon Bland because of high ankle sprains, sources told ESPN.",
-      "published": "2026-11-16T17:57:59Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50502772/sources-cowboys-rg-booker-cb-bland-high-ankle-sprains",
-      "espn_athlete_ids": [
-        536272,
-        529843
-      ],
-      "athlete_names": [
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Jaguars outscoring opponents by 125 points through 10 weeks: Three reasons why",
-      "body": "Sunday's victory over the Titans was Jacksonville's fifth win by 17 or more points this season -- the most in the NFL.",
-      "published": "2026-11-16T17:35:23Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50498566/jaguars-outscoring-opponents-10-weeks",
-      "espn_athlete_ids": [
-        470112,
-        446697
-      ],
-      "athlete_names": [
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Why Stephen A. takes exception to Curt Cignetti's defense of Lincoln Riley",
-      "body": "Why Stephen A. takes exception to Curt Cignetti's defense of Lincoln Riley",
-      "published": "2026-11-16T17:05:03Z",
-      "url": "https://www.espn.com/video/clip/_/id/50502491/why-stephen-takes-exception-curt-cignetti-defense-lincoln-riley",
+      "headline": "NFL flexes Raiders-Browns to replace Pats-Chargers in SNF slot for Week 12",
+      "body": "The NFL has flexed the Raiders-Browns Week 12 game into NBC's \"Sunday Night Football\" slot.",
+      "published": "2026-11-17T19:51:53Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50512634/nfl-flexes-raiders-browns-snf-slot-week-12",
       "espn_athlete_ids": [],
       "athlete_names": [],
       "source": "ESPN"
     },
     {
-      "headline": "Dolphins cut kicker Zane Gonzalez a day after costly misses in loss to Colts",
-      "body": "The Dolphins waived kicker Zane Gonzalez on Monday, a day after he missed two field goals and an extra point in a 24-22 loss to the Colts.",
-      "published": "2026-11-17T02:33:27Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50502391/dolphins-cut-kicker-zane-gonzalez-day-costly-misses",
+      "headline": "Expected fantasy points (xFP): 2026 leaderboard for QBs",
+      "body": "xFP focuses solely on opportunity. Here are the leaders for 2026.",
+      "published": "2026-11-17T19:15:32Z",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/49869566/2026-fantasy-football-expected-fantasy-points-xfp-qb",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "NFL expected touchdown (xTD) leaderboard for 2026",
+      "body": "Opportunity-adjusted TD leaders tell you not only who's scoring but who's getting the opportunities to score.",
+      "published": "2026-11-17T18:59:38Z",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/49869194/2026-fantasy-football-rankings-nfl-expected-td-opportunity-xtd",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Miami Dolphins backup QB Kyle McCord showed poise in debut vs. Indianapolis Colts",
+      "body": "Miami coach Jeff Hafley praised McCord's poise and the trust he showed in receivers Malik Washington and Caleb Douglas.",
+      "published": "2026-11-17T16:48:42Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50505347/miami-dolphins-quarterback-kyle-mccord-debut-colts",
       "espn_athlete_ids": [
-        167215,
-        489905
+        492684,
+        529420,
+        392213,
+        537782
       ],
       "athlete_names": [
+        null,
+        null,
         null,
         null
       ],
       "source": "ESPN"
     },
     {
-      "headline": "Titans getting more after adding more to QB Cam Ward's plate",
-      "body": "The Titans offense has functioned better since putting more on quarterback Cam Ward's plate, even if it hasn't led to more wins yet.",
-      "published": "2026-11-16T17:03:09Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50502385/titans-getting-more-adding-more-qb-cam-ward-plate",
+      "headline": "How Vikings got Kirk Cousins ready to win on short notice",
+      "body": "Cousins and coach Kevin O'Connell deferred to each other until they each needed to take control Sunday.",
+      "published": "2026-11-17T17:19:26Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50511159/vikings-kirk-cousins-trade-beat-packers",
+      "espn_athlete_ids": [
+        103992
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Texans place LB Azeez Al-Shaair, team's leading tackler, on IR",
+      "body": "The Texans placed linebacker Azeez Al-Shaair, their leading tackler this season, on injured reserve Tuesday.",
+      "published": "2026-11-17T16:59:41Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50511791/texans-place-lb-azeez-al-shaair-groin-ir",
+      "espn_athlete_ids": [
+        381308
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Why Jeff Saturday opposes Cowboys making a midseason coordinator change",
+      "body": "Why Jeff Saturday opposes Cowboys making a midseason coordinator change",
+      "published": "2026-11-17T16:58:36Z",
+      "url": "https://www.espn.com/video/clip/_/id/50511658/why-jeff-saturday-opposes-cowboys-making-midseason-coordinator-change",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Strength of schedule (SOS) cheat sheet: Every team's year-to-date and rest-of-season ratings",
+      "body": "Ranking each team's remaining schedule and how it might impact every position's fantasy performance.",
+      "published": "2026-11-17T16:39:33Z",
+      "url": "https://www.espn.com/fantasy/football/story/_/id/50117108/fantasy-football-2026-strength-schedule-rest-season",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Lions plan for Kerby Joseph to make season debut Sunday, per Dan Campbell",
+      "body": "The Lions are planning for safety Kerby Joseph to make his season debut Sunday when they face the Buccaneers.",
+      "published": "2026-11-17T16:35:03Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50511524/lions-plan-kerby-joseph-make-season-debut-sunday",
+      "espn_athlete_ids": [
+        529561
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "2026 NFL playoff picture: AFC, NFC seed projections, chances to make postseason",
+      "body": "We're looking ahead to how the 14-team playoff picture could line up -- and who will win divisions -- en route to the Super Bowl.",
+      "published": "2026-11-17T16:16:18Z",
+      "url": "https://www.espn.com/nfl/story/_/id/49745176/2026-nfl-playoff-predictions-afc-nfc-odds-super-bowl",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "How Stephen A. is looking at Vikings-49ers matchup",
+      "body": "How Stephen A. is looking at Vikings-49ers matchup",
+      "published": "2026-11-17T17:03:10Z",
+      "url": "https://www.espn.com/video/clip/_/id/50511400/how-stephen-looking-vikings-49ers-matchup",
+      "espn_athlete_ids": [
+        103992
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Stephen A. lays out his concerns about Pats, Mike Vrabel",
+      "body": "Stephen A. lays out his concerns about Pats, Mike Vrabel",
+      "published": "2026-11-17T16:04:51Z",
+      "url": "https://www.espn.com/video/clip/_/id/50511349/stephen-lays-concerns-pats-mike-vrabel",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Why Mike Clay isn't overly bullish on Xavier Hutchinson",
+      "body": "Why Mike Clay isn't overly bullish on Xavier Hutchinson",
+      "published": "2026-11-17T16:59:41Z",
+      "url": "https://www.espn.com/video/clip/_/id/50511343/why-mike-clay-overly-bullish-xavier-hutchinson",
+      "espn_athlete_ids": [
+        440183
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Cowboys discussing new role for DC Parker, Jones says",
+      "body": "The Cowboys are discussing the possibility of changing Christian Parker's role and responsibilities as defensive coordinator, owner and general manager Jerry Jones said.",
+      "published": "2026-11-17T17:00:40Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50511280/cowboys-discussing-new-role-dc-parker-jones-says",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Is Emari Demercado worth of fantasy consideration in Week 11?",
+      "body": "Is Emari Demercado worth of fantasy consideration in Week 11?",
+      "published": "2026-11-17T17:03:06Z",
+      "url": "https://www.espn.com/video/clip/_/id/50511255/is-emari-demercado-worth-fantasy-consideration-week-11",
+      "espn_athlete_ids": [
+        228624
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Why Cam Ward has real streaming potential in Week 11",
+      "body": "Why Cam Ward has real streaming potential in Week 11",
+      "published": "2026-11-17T17:01:53Z",
+      "url": "https://www.espn.com/video/clip/_/id/50511207/why-cam-ward-real-streaming-potential-week-11",
       "espn_athlete_ids": [
         441891
       ],
@@ -352,12 +262,12 @@
       "source": "ESPN"
     },
     {
-      "headline": "Is Sam LaPorta a starting fantasy TE right now?",
-      "body": "Is Sam LaPorta a starting fantasy TE right now?",
-      "published": "2026-11-16T17:31:23Z",
-      "url": "https://www.espn.com/video/clip/_/id/50502327/is-sam-laporta-starting-fantasy-te-right-now",
+      "headline": "Should fantasy managers be concerned about Derrick Henry?",
+      "body": "Should fantasy managers be concerned about Derrick Henry?",
+      "published": "2026-11-17T16:52:58Z",
+      "url": "https://www.espn.com/video/clip/_/id/50511179/should-fantasy-managers-concerned-derrick-henry",
       "espn_athlete_ids": [
-        391566
+        152901
       ],
       "athlete_names": [
         null
@@ -365,27 +275,12 @@
       "source": "ESPN"
     },
     {
-      "headline": "Why Emmett Johnson could see more production later in season",
-      "body": "Why Emmett Johnson could see more production later in season",
-      "published": "2026-11-16T17:33:47Z",
-      "url": "https://www.espn.com/video/clip/_/id/50502301/why-emmett-johnson-see-more-production-later-season",
+      "headline": "Kyle Hamilton: Right now, we're disgracing Ravens' standards",
+      "body": "Kyle Hamilton: Right now, we're disgracing Ravens' standards",
+      "published": "2026-11-17T14:44:45Z",
+      "url": "https://www.espn.com/video/clip/_/id/50510870/right-now-disgracing-ravens-standards",
       "espn_athlete_ids": [
-        529577,
-        536855
-      ],
-      "athlete_names": [
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Cards rookie QB Beck struggles in debut, but keeps optimism",
-      "body": "Beck faced Aaron Donald and Myles Garrett in his first game, and it wasn't easy.",
-      "published": "2026-11-16T18:39:24Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50502112/arizona-cardinals-carson-beck-rookie-debut",
-      "espn_athlete_ids": [
-        439276
+        529352
       ],
       "athlete_names": [
         null
@@ -393,21 +288,12 @@
       "source": "ESPN"
     },
     {
-      "headline": "Jets Aaron Glenn ceded defensive playcalling to DC Brian Duker on Sunday",
-      "body": "Amid a prolonged defensive slide, Aaron Glenn handed the playcalling duties Sunday to defensive coordinator Brian Duker, Glenn revealed Monday.",
-      "published": "2026-11-16T17:13:57Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50502248/jets-aaron-glenn-ceded-defensive-playcalling-sunday",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "How impressive has Tony Pollard been in fantasy recently?",
-      "body": "How impressive has Tony Pollard been in fantasy recently?",
-      "published": "2026-11-16T17:32:37Z",
-      "url": "https://www.espn.com/video/clip/_/id/50502156/how-impressive-tony-pollard-fantasy-recently",
+      "headline": "Lions' Dan Campbell says Aidan Hutchinson injury won't prompt celebration ban",
+      "body": "Although Aidan Hutchinson's knee injury is a \"gut punch\" to the Lions, Dan Campbell said he won't tell his players to change the way they celebrate.",
+      "published": "2026-11-17T16:22:52Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50510660/dan-campbell-hutchinson-injury-prompt-celebration-ban",
       "espn_athlete_ids": [
-        380283
+        529364
       ],
       "athlete_names": [
         null
@@ -415,33 +301,22 @@
       "source": "ESPN"
     },
     {
-      "headline": "Geno Smith remains Jets' QB1 despite ankle injury, coach Aaron Glenn says",
-      "body": "Geno Smith is undergoing tests on his injured left ankle, creating uncertainty about his status for the Jets' Week 11 game against the Chargers.",
-      "published": "2026-11-16T17:11:33Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50502082/geno-smith-remains-jets-qb1-injury-aaron-glenn-says",
+      "headline": "Why the 'Get Up' crew is concerned about Packers after their loss to Vikings",
+      "body": "Why the 'Get Up' crew is concerned about Packers after their loss to Vikings",
+      "published": "2026-11-17T13:58:55Z",
+      "url": "https://www.espn.com/video/clip/_/id/50510528/why-get-crew-concerned-packers-their-loss-vikings",
       "espn_athlete_ids": [
-        115570,
-        537689
+        435036
       ],
       "athlete_names": [
-        null,
         null
       ],
       "source": "ESPN"
     },
     {
-      "headline": "Stephen A. calls for change with Cowboys after loss to 49ers",
-      "body": "Stephen A. calls for change with Cowboys after loss to 49ers",
-      "published": "2026-11-16T15:31:38Z",
-      "url": "https://www.espn.com/video/clip/_/id/50501788/stephen-calls-change-cowboys-loss-49ers",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Fantasy buzz: Who got the ball in Week 10?",
-      "body": "Which players saw ample fantasy football opportunities in Week 10, and which were limited?",
-      "published": "2026-11-16T17:58:09Z",
+      "headline": "Fantasy buzz: Henry has confusing night, Hampton breaks through",
+      "body": "Week 10 closes with Chargers winning their first game as Baltimore's offense adjusts to new QB.",
+      "published": "2026-11-17T20:45:19Z",
       "url": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
       "espn_athlete_ids": [
         470372,
@@ -506,146 +381,33 @@
       "source": "ESPN"
     },
     {
-      "headline": "How active NFL players continue to redefine all-time sack list",
-      "body": "Myles Garrett's torrid pace up the all-time sack list paces active players making their moves among the greats.",
-      "published": "2026-11-16T15:39:02Z",
-      "url": "https://www.espn.com/nfl/story/_/id/49545945/all-sack-list-tracker-myles-garrett-von-miller-aaron-donald",
-      "espn_athlete_ids": [
-        166841,
-        166884,
-        126391,
-        92489,
-        92503,
-        37414,
-        138823,
-        126383
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Sources: Lions' Aidan Hutchinson out for season with knee injury",
-      "body": "Lions star Aidan Hutchinson is out for the season with what tests showed to be a torn ACL in his right knee, sources told NFL Network.",
-      "published": "2026-11-17T01:10:23Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50501291/sources-aidan-hutchinson-season-torn-acl",
-      "espn_athlete_ids": [
-        529364
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Raiders TE Brock Bowers day-to-day with ankle injury",
-      "body": "Brock Bowers is day-to-day with an ankle injury that forced him to miss the entire second half of the Raiders' loss to the Seahawks.",
-      "published": "2026-11-16T21:42:58Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50501232/raiders-te-brock-bowers-avoids-major-ankle-injury-source-says",
-      "espn_athlete_ids": [
-        489617
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Adam Schefter: Drake Maye's injury is likely season-ending",
-      "body": "Adam Schefter: Drake Maye's injury is likely season-ending",
-      "published": "2026-11-16T13:49:47Z",
-      "url": "https://www.espn.com/video/clip/_/id/50501221/drake-maye-injury-likely-season-ending",
-      "espn_athlete_ids": [
-        490129
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Orlovsky\u2019s problem with Hutchinson\u2019s injury from celebrating",
-      "body": "Orlovsky\u2019s problem with Hutchinson\u2019s injury from celebrating",
-      "published": "2026-11-16T16:57:58Z",
-      "url": "https://www.espn.com/video/clip/_/id/50501190/orlovskys-problem-hutchinsons-injury-celebrating",
-      "espn_athlete_ids": [
-        529364
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Concerns for four NFL teams on playoff bubble: Cowboys, Raiders, Texans, Patriots",
-      "body": "The Cowboys' defense got lit up, the Patriots lost Drake Maye, the Raiders are adjusting to Fernando Mendoza, and the Texans can't find support for C.J. Stroud.",
-      "published": "2026-11-16T14:49:42Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50491459/week-10-playoff-bubble-cowboys-raiders-texans-patriots",
+      "headline": "Emmett Johnson, Jaxon Smith-Njigba shine in big offensive week for Africa's NFL stars",
+      "body": "Week 10 in the 2026 NFL season was one of the most noteworthy in terms of standout performances from offensive players in the NFL with known African ties.",
+      "published": "2026-11-17T11:45:40Z",
+      "url": "https://www.espn.com/espn/story/_/id/50509931/emmett-johnson-jaxon-smith-njigba-shine-big-offensive-week-africa-nfl-stars",
       "espn_athlete_ids": [],
       "athlete_names": [],
       "source": "ESPN"
     },
     {
-      "headline": "Rex: Cowboys are the worst-coached defense I've ever seen",
-      "body": "Rex: Cowboys are the worst-coached defense I've ever seen ",
-      "published": "2026-11-16T13:55:09Z",
-      "url": "https://www.espn.com/video/clip/_/id/50501155/cowboys-worst-coached-defense-ever-seen",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "How an NFL referee crew worked two games in one day",
-      "body": "An inside look at the 14-hour day of four referees who worked an afternoon game in Indianapolis and the Sunday night game in Cincinnati.",
-      "published": "2026-11-16T18:12:44Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50497412/nfl-referee-ref-crew-two-games",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Sources: Patriots fear Drake Maye has broken ankle, could miss rest of season",
-      "body": "The Patriots are concerned that Drake Maye sustained a fractured ankle, sources told ESPN, an injury that could sideline the star QB for the rest of the season.",
-      "published": "2026-11-16T20:46:43Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50500352/patriots-qb-drake-maye-leg-miss-extended-sources-say",
+      "headline": "Seven things Solak thinks for NFL Week 11: Takes on four QBs, Lions, Rams, more",
+      "body": "Get ready for Week 11 with what makes Vikings-49ers must-watch football, Joe Burrow's MVP case and how Aidan Hutchinson's injury could impact the Lions.",
+      "published": "2026-11-17T15:39:31Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50505355/week-11-seven-things-solak-thinks-burrow-mvp-rams-lions",
       "espn_athlete_ids": [
-        490129,
+        435000,
         529364,
-        227632,
-        380051
+        208615,
+        209237,
+        542097
       ],
       "athlete_names": [
         null,
         null,
         null,
+        null,
         null
       ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Judging overreactions to NFL Week 10: Playoff spin for Vikings, Pats, Browns, more",
-      "body": "Will Kirk Cousins be the difference in the NFC North? The Browns are going to the playoffs ... but not the Patriots? Patrick Mahomes for MVP and Kyle Shanahan for COY?",
-      "published": "2026-11-16T13:48:04Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50491464/week-10-overreactions-2026-graziano-cousins-mahomes",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "How Chargers' Harbaugh, Ravens' Minter can revive seasons",
-      "body": "Los Angeles stands at 0-8 on the season while Baltimore deals with its worst three-game stretch in team history.",
-      "published": "2026-11-16T11:00:01Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50471544/chargers-jim-harbaugh-ravens-jesse-minter-week-10",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
       "source": "ESPN"
     },
     {
@@ -1117,20 +879,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Justice Hill (RB, BAL) is the hot add -- 141,291 pickups in 24h",
-      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        4038441
-      ],
-      "athlete_names": [
-        "Justice Hill"
-      ],
-      "source": "Sleeper trending"
-    },
-    {
-      "headline": "Mark Andrews (TE, BAL) is the hot add -- 114,597 pickups in 24h",
+      "headline": "Mark Andrews (TE, BAL) is the hot add -- 569,052 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -1143,20 +892,33 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Deshaun Watson (QB, CLE) is the hot add -- 73,248 pickups in 24h",
+      "headline": "Justice Hill (RB, BAL) is the hot add -- 182,826 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
       "espn_athlete_ids": [
-        3122840
+        4038441
       ],
       "athlete_names": [
-        "Deshaun Watson"
+        "Justice Hill"
       ],
       "source": "Sleeper trending"
     },
     {
-      "headline": "Kirk Cousins (QB, MIN) is the hot add -- 49,896 pickups in 24h",
+      "headline": "David Montgomery (RB, HOU) is the hot add -- 165,228 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        4035538
+      ],
+      "athlete_names": [
+        "David Montgomery"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Kirk Cousins (QB, MIN) is the hot add -- 136,184 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -1169,7 +931,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Darren Waller (TE, CAR) is the hot add -- 41,436 pickups in 24h",
+      "headline": "Darren Waller (TE, CAR) is the hot add -- 119,268 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -1182,15 +944,15 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Alvin Kamara (RB, NO) is the hot add -- 41,392 pickups in 24h",
+      "headline": "Mike Gesicki (TE, CIN) is the hot add -- 118,088 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
       "espn_athlete_ids": [
-        3054850
+        3116164
       ],
       "athlete_names": [
-        "Alvin Kamara"
+        "Mike Gesicki"
       ],
       "source": "Sleeper trending"
     }
