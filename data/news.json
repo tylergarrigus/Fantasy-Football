@@ -1,6 +1,107 @@
 {
-  "fetched_at": "2026-11-18T20:38:32+00:00",
+  "fetched_at": "2026-11-19T04:15:38+00:00",
   "items": [
+    {
+      "headline": "Niners' Nick Bosa on 4-game sack drought: 'Don't think I'm playing my best'",
+      "body": "Niners star Nick Bosa acknowledged his performance this season, including four straight games with no sacks, hasn't been up to his usual standard.",
+      "published": "2026-11-19T01:47:36Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50526309/niners-nick-bosa-says-better-amid-4-game-sack-drought",
+      "espn_athlete_ids": [
+        379795
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Florio, Simms apologize for comments about Vrabel's mustache in Germany",
+      "body": "\"PFT Live\" hosts Mike Florio and Chris Simms apologized for comments they made about Mike Vrabel's mustache when talking about the Patriots' trip to Germany.",
+      "published": "2026-11-19T02:03:15Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50525580/florio-simms-apologize-comments-vrabel-mustache",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "TNF: Texans rule out DE Hunter, RB Marks; Colts rule out CB Ward, starting OTs",
+      "body": "The Texans and Colts ruled out several key contributors for their Thursday night matchup.",
+      "published": "2026-11-18T23:26:51Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50524890/texans-rule-hunter-marks-colts-rule-ward-starting-ots",
+      "espn_athlete_ids": [
+        138823,
+        442886,
+        185001,
+        529536,
+        505093
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Giants RB Cam Skattebo to nix backflips in wake of Aidan Hutchinson's injury",
+      "body": "Giants RB Cam Skattebo said he is holding off on doing any more backflips after Lions DE Aidan Hutchinson suffered a major knee injury while leaping and celebrating a sack.",
+      "published": "2026-11-18T23:13:37Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50524576/rb-skattebo-nix-backflips-wake-hutchinson-injury",
+      "espn_athlete_ids": [
+        450385
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Panthers secondary set for boost with return of CB Mike Jackson",
+      "body": "Panthers starting cornerback Mike Jackson, who has been sidelined since injuring his groin in Week 3, plans to be in the lineup Sunday against the Ravens.",
+      "published": "2026-11-18T22:37:57Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50524458/panthers-cb-mike-jackson-set-return-sunday-vs-ravens",
+      "espn_athlete_ids": [
+        380175,
+        497629,
+        470077,
+        470246
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Ravens' Humphrey apologizes for quip that Baltimore 'best at making criminals'",
+      "body": "Ravens cornerback Marlon Humphrey apologized Wednesday for the derogatory comment he recently made about Baltimore on his podcast.",
+      "published": "2026-11-19T03:37:02Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50524109/ravens-humphrey-apologizes-criminals-quip-podcast",
+      "espn_athlete_ids": [
+        166847
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Jets QB Geno Smith (ankle) intends to play vs. Chargers: 'That's the plan'",
+      "body": "Jets quarterback Geno Smith says he intends to play Sunday against the Chargers despite still walking with a noticeable limp due to an ankle injury.",
+      "published": "2026-11-18T21:09:21Z",
+      "url": "https://www.espn.com/mlb/story/_/id/50523800/jets-qb-geno-smith-ankle-intends-play-vs-chargers",
+      "espn_athlete_ids": [
+        115570
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
     {
       "headline": "Ravens' Flowers 'super frustrated' by latest late-game fumble",
       "body": "Ravens wide receiver Zay Flowers said he was \"super frustrated\" after having the ball ripped away around midfield in the final two minutes of a loss to the Chargers on Monday night.",
@@ -39,10 +140,14 @@
     {
       "headline": "Nick Sirianni: Joe Milton getting starting QB nod in Week 11",
       "body": "Nick Sirianni: Joe Milton getting starting QB nod in Week 11",
-      "published": "2026-11-18T18:56:35Z",
+      "published": "2026-11-18T21:30:18Z",
       "url": "https://www.espn.com/video/clip/_/id/50523042/joe-milton-getting-starting-qb-nod-week-11",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
+      "espn_athlete_ids": [
+        209441
+      ],
+      "athlete_names": [
+        null
+      ],
       "source": "ESPN"
     },
     {
@@ -305,7 +410,7 @@
     {
       "headline": "Pettine to take over defensive playcalling for Cowboys; Parker still DC",
       "body": "Christian Parker will remain as the Cowboys' defensive coordinator, but Mike Pettine will call the defense on game day, coach Brian Schottenhiemer said.",
-      "published": "2026-11-18T20:31:16Z",
+      "published": "2026-11-18T21:29:26Z",
       "url": "https://www.espn.com/nfl/story/_/id/50520940/sources-pettine-take-defensive-playcalling-cowboys",
       "espn_athlete_ids": [],
       "athlete_names": [],
@@ -572,94 +677,6 @@
       "athlete_names": [
         null
       ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Source: Jordan Phillips latest Dolphins DT to suffer season-ending injury",
-      "body": "Dolphins DT Jordan Phillips will miss the rest of the season with torn biceps, a source confirmed to ESPN.",
-      "published": "2026-11-17T22:30:15Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50513896/source-dolphins-jordan-phillips-miss-rest-season",
-      "espn_athlete_ids": [
-        537460
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Titans put WR Wan'Dale Robinson on IR due to ankle injury",
-      "body": "The Titans placed wide receiver Wan'Dale Robinson on injured reserve Tuesday.",
-      "published": "2026-11-18T11:41:21Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50513594/titans-put-wr-wandale-robinson-ankle-ir",
-      "espn_athlete_ids": [
-        529582,
-        439265
-      ],
-      "athlete_names": [
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Irving, Walker III, Bowers and more Knockout league pickups for Week 11",
-      "body": "As the number of teams shrink, the number of stars available in Knockout leagues grows. Here are the ones to get.",
-      "published": "2026-11-17T20:33:17Z",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/50512512/2026-fantasy-football-knockout-leagues-pickups-week-11",
-      "espn_athlete_ids": [
-        489617,
-        492021,
-        529389,
-        529577,
-        529586,
-        435036,
-        529534,
-        537447,
-        392016
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Is Chuba Hubbard the biggest X factor to spark a Panthers turnaround?",
-      "body": "Meet Carolina's team captain, a locker room leader and a relentless running back who is \"chasing greatness myself.\"",
-      "published": "2026-11-17T19:29:01Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50463509/chuba-hubbard-x-factor-spark-carolina-panthers",
-      "espn_athlete_ids": [
-        470498
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "2026 expected fantasy points against (xFPA) by position",
-      "body": "Measuring the best defenses against specific positions by using expected points vs. actual fantasy production.",
-      "published": "2026-11-17T19:25:48Z",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/49869463/2026-fantasy-football-expected-points-xfpa-position-qb-rb-wr-te",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Expected fantasy points (xFP): 2026 leaderboard for TEs",
-      "body": "xFP focuses solely on opportunity. Here are the leaders for 2026.",
-      "published": "2026-11-17T19:20:48Z",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/49869668/2026-fantasy-football-expected-fantasy-points-xfp-te",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
       "source": "ESPN"
     },
     {
@@ -1014,7 +1031,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Mark Andrews (TE, BAL) is the hot add -- 902,016 pickups in 24h",
+      "headline": "Mark Andrews (TE, BAL) is the hot add -- 633,096 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -1027,20 +1044,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "David Montgomery (RB, HOU) is the hot add -- 284,694 pickups in 24h",
-      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        4035538
-      ],
-      "athlete_names": [
-        "David Montgomery"
-      ],
-      "source": "Sleeper trending"
-    },
-    {
-      "headline": "Justice Hill (RB, BAL) is the hot add -- 268,380 pickups in 24h",
+      "headline": "Justice Hill (RB, BAL) is the hot add -- 240,660 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -1053,7 +1057,20 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Courtland Sutton (WR, DEN) is the hot add -- 253,584 pickups in 24h",
+      "headline": "David Montgomery (RB, HOU) is the hot add -- 226,050 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        4035538
+      ],
+      "athlete_names": [
+        "David Montgomery"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Courtland Sutton (WR, DEN) is the hot add -- 210,312 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -1066,15 +1083,15 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Darren Waller (TE, CAR) is the hot add -- 200,493 pickups in 24h",
+      "headline": "Samaje Perine (RB, CIN) is the hot add -- 168,252 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
       "espn_athlete_ids": [
-        2576925
+        3116389
       ],
       "athlete_names": [
-        "Darren Waller"
+        "Samaje Perine"
       ],
       "source": "Sleeper trending"
     }
