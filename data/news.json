@@ -1,10 +1,142 @@
 {
-  "fetched_at": "2026-11-20T20:28:40+00:00",
+  "fetched_at": "2026-11-21T04:02:00+00:00",
   "items": [
     {
-      "headline": "Justin Reid posts Saints farewell as team works through release",
-      "body": "After safety Justin Reid requested his release earlier this week, Saints coach Kellen Moore said the team was still working through the process but expected a roster move to happen soon.",
-      "published": "2026-11-20T20:26:16Z",
+      "headline": "Back at practice again, Bengals QB Burrow optimistic he'll be at full strength",
+      "body": "A full participant at practice for the second straight day despite the bug that he has battled, Bengals quarterback Joe Burrow is optimistic that he'll be at full strength when Cincinnati plays the Washington Commanders on \"Monday Night Football.\"",
+      "published": "2026-11-20T23:37:55Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50544261/burrow-practices-again-full-strength-mnf",
+      "espn_athlete_ids": [
+        435000
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "NFL Week 11 uniforms: Texans debut Rivalries look, Commanders rock 'Hail Raiser'",
+      "body": "Here's a look at what each NFL team is wearing in Week 11, led by Houston debuting its Rivalries combination.",
+      "published": "2026-11-20T22:49:33Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50514892/nfl-week-11-uniforms",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Drake Maye ankle injury: Is the Patriots' season over? Can Tommy DeVito step up?",
+      "body": "If the QB doesn't return in 2026, New England faces an uphill battle against some of the NFL's best teams.",
+      "published": "2026-11-20T22:06:28Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50503981/drake-maye-ankle-injury-patriots-tommy-devito-stats",
+      "espn_athlete_ids": [
+        490129,
+        227632
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Raiders TE Brock Bowers (ankle, quad) listed as questionable",
+      "body": "Las Vegas Raiders tight end Brock Bowers (ankle/quad) is questionable for Sunday's divisional matchup against the Denver Broncos, coach Klint Kubiak said Friday.",
+      "published": "2026-11-20T22:23:03Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50543720/raiders-te-brock-bowers-ankle-quad-listed-questionable",
+      "espn_athlete_ids": [
+        489617
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Jets QB Geno Smith (ankle) cleared to start vs. Chargers",
+      "body": "Jets quarterback Geno Smith made it through the practice week with no setbacks and was cleared to face the Chargers.",
+      "published": "2026-11-20T22:13:34Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50543665/jets-qb-geno-smith-ankle-cleared-start-vs-chargers",
+      "espn_athlete_ids": [
+        115570
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Police investigate man's death after alleged altercation at 49ers-Cowboys game",
+      "body": "Police are investigating the death of a man who was allegedly involved in an altercation before Sunday's game between the Cowboys and 49ers at AT&T Stadium.",
+      "published": "2026-11-20T22:37:47Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50543613/police-investigate-man-death-incident-cowboys-game",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Bills TE Dalton Kincaid doubtful to play vs. Dolphins",
+      "body": "Bills starting tight end Dalton Kincaid, their leading receiver, is listed as doubtful for Sunday's game against the Dolphins due to thumb and ankle injuries.",
+      "published": "2026-11-20T21:49:40Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50543381/bills-te-dalton-kincaid-doubtful-play-vs-dolphins",
+      "espn_athlete_ids": [
+        216534,
+        529604,
+        390611
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Tom Brady tops list of athletes who became owners",
+      "body": "The legendary quarterback is a member of an exclusive list of athletes that includes LeBron James, Serena Williams and Wayne Gretzky.",
+      "published": "2026-11-20T20:47:35Z",
+      "url": "https://www.espn.com/nfl/story/_/id/29553205/dwyane-wade-tom-brady-lebron-james-athletes-team-owners",
+      "espn_athlete_ids": [
+        166867,
+        9385,
+        51682,
+        66124,
+        241845,
+        65305,
+        65310,
+        103823,
+        32655,
+        28700,
+        36533,
+        2360,
+        16581,
+        15129,
+        261550,
+        187309
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Justin Reid posts Saints farewell as team releases safety",
+      "body": "The Saints have granted Justin Reid's request to be released, with the safety posting on social media: \"In life and sports, things don't always go the way you planned or hoped they would.\"",
+      "published": "2026-11-20T22:05:55Z",
       "url": "https://www.espn.com/nfl/story/_/id/50543025/justin-reid-posts-saints-farewell-team-works-release",
       "espn_athlete_ids": [
         184587,
@@ -23,7 +155,7 @@
     {
       "headline": "Fantasy buzz: Does anything change in Indy with Richardson under center?",
       "body": "Matt Bowen provides fantasy expectations for the Colts' new starter at QB and his supporting cast.",
-      "published": "2026-11-20T20:20:19Z",
+      "published": "2026-11-20T21:04:02Z",
       "url": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
       "espn_athlete_ids": [
         470372,
@@ -122,7 +254,7 @@
     {
       "headline": "Chiefs' Kenneth Walker III, two linemen out vs. Cardinals",
       "body": "Chiefs RB Kenneth Walker III will not play in Sunday's game against the Cardinals after not participating in practice this week due to a groin injury.",
-      "published": "2026-11-20T20:25:18Z",
+      "published": "2026-11-20T20:29:34Z",
       "url": "https://www.espn.com/nfl/story/_/id/50543014/chiefs-expect-kenneth-walker-iii-vs-cardinals",
       "espn_athlete_ids": [
         529577,
@@ -150,7 +282,7 @@
     {
       "headline": "Ravens rule out DT Nnamdi Madubuike (hamstring) vs Panthers",
       "body": "Ravens defensive tackle Nnamdi Madubuike has a hamstring injury and has been ruled out for Sunday's game against the Panthers.",
-      "published": "2026-11-20T20:14:01Z",
+      "published": "2026-11-20T21:59:11Z",
       "url": "https://www.espn.com/nfl/story/_/id/50542891/ravens-rule-dt-nnamdi-madubuike-hamstring-vs-panthers",
       "espn_athlete_ids": [
         435148,
@@ -225,7 +357,7 @@
     {
       "headline": "Cardinals QB Carson Beck dealing with back spasms; Josh Johnson may start",
       "body": "The Cardinals are preparing veteran quarterback Josh Johnson to start Sunday vs. the Chiefs as rookie Carson Beck deals with back spasms, coach Mike LaFleur said Friday.",
-      "published": "2026-11-20T19:59:27Z",
+      "published": "2026-11-21T01:36:03Z",
       "url": "https://www.espn.com/nfl/story/_/id/50542595/cardinals-qb-beck-dealing-back-spasms-johnson-start",
       "espn_athlete_ids": [
         439276,
@@ -307,9 +439,9 @@
       "source": "ESPN"
     },
     {
-      "headline": "Sources: Tom Brady buys shares in Chelsea after Birmingham exit",
+      "headline": "Sources: Tom Brady buys stake in Chelsea after Birmingham exit",
       "body": "Seven-time Super Bowl champion quarterback Tom Brady has invested in Chelsea soccer club, sources confirmed to ESPN and NFL Network.",
-      "published": "2026-11-20T18:42:32Z",
+      "published": "2026-11-20T22:24:28Z",
       "url": "https://www.espn.com/soccer/story/_/id/50542238/nfl-legend-tom-brady-buys-shares-chelsea-sources",
       "espn_athlete_ids": [],
       "athlete_names": [],
@@ -372,7 +504,7 @@
     {
       "headline": "Draft buzz: Interest in Oklahoma State's Drew Mestemaker could spur draft trade",
       "body": "If the Titans or Chargers wind up with the No. 1 selection and stick with their franchise quarterbacks, interest in Oklahoma State's Drew Mestemaker could lead to a team seeking to trade up for the top overall pick.",
-      "published": "2026-11-20T17:16:10Z",
+      "published": "2026-11-20T21:59:31Z",
       "url": "https://www.espn.com/nfl/story/_/id/50541939/draft-buzz-mestemaker-spur-auction-no-1-pick",
       "espn_athlete_ids": [],
       "athlete_names": [],
@@ -498,85 +630,6 @@
       "athlete_names": [
         null
       ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "What to know to set your lineup: Nix, Ward viable options if your QB is on bye",
-      "body": "Adam Rank catches you up on the vital information and insights before you make your toughest lineup decisions.",
-      "published": "2026-11-20T12:40:11Z",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/50531472/fantasy-football-start-sit-week-11-need-know",
-      "espn_athlete_ids": [
-        490873,
-        184615,
-        216534,
-        537782,
-        529387,
-        489632,
-        529504,
-        451602,
-        536855,
-        380283,
-        547264,
-        549664,
-        166867,
-        441891
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "NFL offseason free agent and trade acquisitions that have and have not worked",
-      "body": "Kenneth Walker III and Devin Lloyd look great with their new teams in 2026. But Jaylen Waddle and Alontae Taylor haven't quite found their groove.",
-      "published": "2026-11-20T11:42:26Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50525533/2026-offseason-change-scenery-fits-players-new-teams",
-      "espn_athlete_ids": [
-        103992,
-        529577,
-        126377,
-        379919,
-        529372,
-        470084,
-        529362,
-        529657,
-        435401,
-        529491
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "NFL field director Nick Pappas tested by 9 international games",
-      "body": "Nick Pappas is the man charged with making sure international venues are up to standard to host NFL games.",
-      "published": "2026-11-20T12:58:52Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50534594/mf-field-director-versus-international-games",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
       "source": "ESPN"
     },
     {
@@ -931,7 +984,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Justice Hill (RB, BAL) is the hot add -- 204,255 pickups in 24h",
+      "headline": "Justice Hill (RB, BAL) is the hot add -- 143,748 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -944,7 +997,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Mark Andrews (TE, BAL) is the hot add -- 190,062 pickups in 24h",
+      "headline": "Mark Andrews (TE, BAL) is the hot add -- 114,588 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -957,7 +1010,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Samaje Perine (RB, CIN) is the hot add -- 98,440 pickups in 24h",
+      "headline": "Samaje Perine (RB, CIN) is the hot add -- 59,104 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -970,7 +1023,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Courtland Sutton (WR, DEN) is the hot add -- 95,409 pickups in 24h",
+      "headline": "Courtland Sutton (WR, DEN) is the hot add -- 57,726 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -983,7 +1036,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Darren Waller (TE, CAR) is the hot add -- 84,303 pickups in 24h",
+      "headline": "Darren Waller (TE, CAR) is the hot add -- 52,614 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,

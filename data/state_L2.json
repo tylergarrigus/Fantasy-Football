@@ -95,7 +95,7 @@
           "nfl_team": "KC",
           "injury_status": null,
           "projected": 51.57540917,
-          "adp": 148.98,
+          "adp": 148.8,
           "week_projected": 7.03,
           "opponent": "ARI",
           "on_bye": false,
@@ -107,8 +107,8 @@
           "avg_pts": 6.6,
           "proj_avg": 3.0,
           "pos_rank": 11,
-          "pct_owned": 85.4,
-          "pct_started": 79.0,
+          "pct_owned": 85.6,
+          "pct_started": 79.3,
           "bye_weeks": [
             5
           ],
@@ -169,7 +169,7 @@
           "nfl_team": "JAC",
           "injury_status": null,
           "projected": 48.27896533,
-          "adp": 136.9,
+          "adp": 137.19,
           "week_projected": 7.05,
           "opponent": "NYG",
           "on_bye": false,
@@ -181,8 +181,8 @@
           "avg_pts": 7.8,
           "proj_avg": 2.8,
           "pos_rank": 5,
-          "pct_owned": 88.7,
-          "pct_started": 79.4,
+          "pct_owned": 88.8,
+          "pct_started": 79.5,
           "bye_weeks": [
             7
           ],
@@ -243,7 +243,7 @@
           "nfl_team": "JAC",
           "injury_status": null,
           "projected": 89.00065504,
-          "adp": 106.11,
+          "adp": 105.75,
           "week_projected": 10.85,
           "opponent": "NYG",
           "on_bye": false,
@@ -255,8 +255,8 @@
           "avg_pts": 10.9,
           "proj_avg": 11.1,
           "pos_rank": 6,
-          "pct_owned": 85.8,
-          "pct_started": 79.3,
+          "pct_owned": 86.1,
+          "pct_started": 79.6,
           "bye_weeks": [
             7
           ],
@@ -317,7 +317,7 @@
           "nfl_team": "NYG",
           "injury_status": null,
           "projected": 128.14272605,
-          "adp": 57.32,
+          "adp": 57.31,
           "week_projected": 14.46,
           "opponent": "JAX",
           "on_bye": false,
@@ -330,7 +330,7 @@
           "proj_avg": 16.0,
           "pos_rank": 22,
           "pct_owned": 94.7,
-          "pct_started": 71.1,
+          "pct_started": 71.5,
           "bye_weeks": [
             8
           ],
@@ -426,7 +426,7 @@
           "nfl_team": "TEN",
           "injury_status": "Questionable",
           "projected": 105.13945756,
-          "adp": 108.87,
+          "adp": 108.81,
           "week_projected": 13.11,
           "opponent": "DAL",
           "on_bye": false,
@@ -438,8 +438,8 @@
           "avg_pts": 11.0,
           "proj_avg": 15.0,
           "pos_rank": 46,
-          "pct_owned": 85.2,
-          "pct_started": 38.4,
+          "pct_owned": 85.3,
+          "pct_started": 38.9,
           "bye_weeks": [
             9
           ],
@@ -522,7 +522,7 @@
           "nfl_team": "BUF",
           "injury_status": null,
           "projected": 107.73964856,
-          "adp": 76.57,
+          "adp": 76.76,
           "week_projected": 13.71,
           "opponent": "MIA",
           "on_bye": false,
@@ -626,8 +626,8 @@
           "position": "QB",
           "nfl_team": "CIN",
           "injury_status": null,
-          "projected": 180.60927106,
-          "adp": 26.77,
+          "projected": 180.60927067,
+          "adp": 26.71,
           "week_projected": 22.86,
           "opponent": "WSH",
           "on_bye": false,
@@ -640,7 +640,7 @@
           "proj_avg": 22.6,
           "pos_rank": 1,
           "pct_owned": 99.5,
-          "pct_started": 92.7,
+          "pct_started": 92.8,
           "bye_weeks": [
             6
           ],
@@ -749,7 +749,7 @@
           "nfl_team": "IND",
           "injury_status": null,
           "projected": 99.51063261,
-          "adp": 12.59,
+          "adp": 12.69,
           "week_projected": 16.62,
           "opponent": "HOU",
           "on_bye": false,
@@ -893,7 +893,7 @@
           "nfl_team": "DET",
           "injury_status": null,
           "projected": 152.80104831,
-          "adp": 9.53,
+          "adp": 9.52,
           "week_projected": 17.7,
           "opponent": "TB",
           "on_bye": false,
@@ -906,7 +906,7 @@
           "proj_avg": 19.1,
           "pos_rank": 5,
           "pct_owned": 99.9,
-          "pct_started": 97.8,
+          "pct_started": 97.9,
           "bye_weeks": [
             6
           ],
@@ -1001,7 +1001,7 @@
           "position": "RB",
           "nfl_team": "CAR",
           "injury_status": null,
-          "projected": 149.96278261,
+          "projected": 149.96481775,
           "adp": 54.85,
           "week_projected": 19.99,
           "opponent": "BAL",
@@ -1015,7 +1015,7 @@
           "proj_avg": 18.8,
           "pos_rank": 5,
           "pct_owned": 98.1,
-          "pct_started": 89.7,
+          "pct_started": 89.8,
           "bye_weeks": [
             5
           ],
@@ -1127,8 +1127,8 @@
           "position": "TE",
           "nfl_team": "ARI",
           "injury_status": null,
-          "projected": 105.36098992,
-          "adp": 20.72,
+          "projected": 105.36098713,
+          "adp": 20.78,
           "week_projected": 13.09,
           "opponent": "KC",
           "on_bye": false,
@@ -1242,7 +1242,7 @@
           "nfl_team": "DAL",
           "injury_status": null,
           "projected": 98.93633319,
-          "adp": 37.06,
+          "adp": 36.97,
           "week_projected": 15.67,
           "opponent": "TEN",
           "on_bye": false,
@@ -1255,7 +1255,7 @@
           "proj_avg": 14.1,
           "pos_rank": 9,
           "pct_owned": 99.0,
-          "pct_started": 89.8,
+          "pct_started": 90.1,
           "bye_weeks": [
             14
           ],
@@ -1351,7 +1351,7 @@
           "nfl_team": "SEA",
           "injury_status": null,
           "projected": 93.30605332,
-          "adp": 135.39,
+          "adp": 135.73,
           "week_projected": 0.0,
           "opponent": "BYE",
           "on_bye": true,
@@ -1363,8 +1363,8 @@
           "avg_pts": 8.3,
           "proj_avg": 13.3,
           "pos_rank": 73,
-          "pct_owned": 81.5,
-          "pct_started": 7.0,
+          "pct_owned": 81.3,
+          "pct_started": 6.5,
           "bye_weeks": [
             11
           ],
@@ -1442,7 +1442,7 @@
           "nfl_team": "MIN",
           "injury_status": "Out",
           "projected": 84.74604879,
-          "adp": 144.78,
+          "adp": 144.92,
           "week_projected": 0.0,
           "opponent": "SF",
           "on_bye": false,
@@ -1454,8 +1454,8 @@
           "avg_pts": 7.7,
           "proj_avg": 12.1,
           "pos_rank": 69,
-          "pct_owned": 65.7,
-          "pct_started": 6.2,
+          "pct_owned": 65.4,
+          "pct_started": 5.9,
           "bye_weeks": [
             6
           ],
@@ -1539,9 +1539,9 @@
           "position": "WR",
           "nfl_team": "BAL",
           "injury_status": null,
-          "projected": 95.98754409,
-          "adp": 53.03,
-          "week_projected": 14.11,
+          "projected": 95.99852091,
+          "adp": 53.18,
+          "week_projected": 14.12,
           "opponent": "CAR",
           "on_bye": false,
           "week_pts": 0.0,
@@ -1656,8 +1656,8 @@
           "position": "QB",
           "nfl_team": "CIN",
           "injury_status": null,
-          "projected": 180.60927106,
-          "adp": 26.77,
+          "projected": 180.60927067,
+          "adp": 26.71,
           "week_projected": 22.86,
           "opponent": "WSH",
           "on_bye": false,
@@ -1670,7 +1670,7 @@
           "proj_avg": 22.6,
           "pos_rank": 1,
           "pct_owned": 99.5,
-          "pct_started": 92.7,
+          "pct_started": 92.8,
           "bye_weeks": [
             6
           ],
@@ -1779,7 +1779,7 @@
           "position": "RB",
           "nfl_team": "CAR",
           "injury_status": null,
-          "projected": 149.96278261,
+          "projected": 149.96481775,
           "adp": 54.85,
           "week_projected": 19.99,
           "opponent": "BAL",
@@ -1793,7 +1793,7 @@
           "proj_avg": 18.8,
           "pos_rank": 5,
           "pct_owned": 98.1,
-          "pct_started": 89.7,
+          "pct_started": 89.8,
           "bye_weeks": [
             5
           ],
@@ -1907,7 +1907,7 @@
           "nfl_team": "NYG",
           "injury_status": null,
           "projected": 128.14272605,
-          "adp": 57.32,
+          "adp": 57.31,
           "week_projected": 14.46,
           "opponent": "JAX",
           "on_bye": false,
@@ -1920,7 +1920,7 @@
           "proj_avg": 16.0,
           "pos_rank": 22,
           "pct_owned": 94.7,
-          "pct_started": 71.1,
+          "pct_started": 71.5,
           "bye_weeks": [
             8
           ],
@@ -2017,7 +2017,7 @@
           "nfl_team": "DET",
           "injury_status": null,
           "projected": 152.80104831,
-          "adp": 9.53,
+          "adp": 9.52,
           "week_projected": 17.7,
           "opponent": "TB",
           "on_bye": false,
@@ -2030,7 +2030,7 @@
           "proj_avg": 19.1,
           "pos_rank": 5,
           "pct_owned": 99.9,
-          "pct_started": 97.8,
+          "pct_started": 97.9,
           "bye_weeks": [
             6
           ],
@@ -2127,7 +2127,7 @@
           "nfl_team": "BUF",
           "injury_status": null,
           "projected": 107.73964856,
-          "adp": 76.57,
+          "adp": 76.76,
           "week_projected": 13.71,
           "opponent": "MIA",
           "on_bye": false,
@@ -2232,8 +2232,8 @@
           "position": "TE",
           "nfl_team": "ARI",
           "injury_status": null,
-          "projected": 105.36098992,
-          "adp": 20.72,
+          "projected": 105.36098713,
+          "adp": 20.78,
           "week_projected": 13.09,
           "opponent": "KC",
           "on_bye": false,
@@ -2348,7 +2348,7 @@
           "nfl_team": "JAC",
           "injury_status": null,
           "projected": 89.00065504,
-          "adp": 106.11,
+          "adp": 105.75,
           "week_projected": 10.85,
           "opponent": "NYG",
           "on_bye": false,
@@ -2360,8 +2360,8 @@
           "avg_pts": 10.9,
           "proj_avg": 11.1,
           "pos_rank": 6,
-          "pct_owned": 85.8,
-          "pct_started": 79.3,
+          "pct_owned": 86.1,
+          "pct_started": 79.6,
           "bye_weeks": [
             7
           ],
@@ -2423,7 +2423,7 @@
           "nfl_team": "KC",
           "injury_status": null,
           "projected": 51.57540917,
-          "adp": 148.98,
+          "adp": 148.8,
           "week_projected": 7.03,
           "opponent": "ARI",
           "on_bye": false,
@@ -2435,8 +2435,8 @@
           "avg_pts": 6.6,
           "proj_avg": 3.0,
           "pos_rank": 11,
-          "pct_owned": 85.4,
-          "pct_started": 79.0,
+          "pct_owned": 85.6,
+          "pct_started": 79.3,
           "bye_weeks": [
             5
           ],
@@ -2498,7 +2498,7 @@
           "nfl_team": "TEN",
           "injury_status": "Questionable",
           "projected": 105.13945756,
-          "adp": 108.87,
+          "adp": 108.81,
           "week_projected": 13.11,
           "opponent": "DAL",
           "on_bye": false,
@@ -2510,8 +2510,8 @@
           "avg_pts": 11.0,
           "proj_avg": 15.0,
           "pos_rank": 46,
-          "pct_owned": 85.2,
-          "pct_started": 38.4,
+          "pct_owned": 85.3,
+          "pct_started": 38.9,
           "bye_weeks": [
             9
           ],
@@ -2597,7 +2597,7 @@
           "nfl_team": "IND",
           "injury_status": null,
           "projected": 99.51063261,
-          "adp": 12.59,
+          "adp": 12.69,
           "week_projected": 16.62,
           "opponent": "HOU",
           "on_bye": false,
@@ -2741,7 +2741,7 @@
           "nfl_team": "DAL",
           "injury_status": null,
           "projected": 98.93633319,
-          "adp": 37.06,
+          "adp": 36.97,
           "week_projected": 15.67,
           "opponent": "TEN",
           "on_bye": false,
@@ -2754,7 +2754,7 @@
           "proj_avg": 14.1,
           "pos_rank": 9,
           "pct_owned": 99.0,
-          "pct_started": 89.8,
+          "pct_started": 90.1,
           "bye_weeks": [
             14
           ],
@@ -2849,9 +2849,9 @@
           "position": "WR",
           "nfl_team": "BAL",
           "injury_status": null,
-          "projected": 95.98754409,
-          "adp": 53.03,
-          "week_projected": 14.11,
+          "projected": 95.99852091,
+          "adp": 53.18,
+          "week_projected": 14.12,
           "opponent": "CAR",
           "on_bye": false,
           "week_pts": 0.0,
@@ -2965,7 +2965,7 @@
           "nfl_team": "SEA",
           "injury_status": null,
           "projected": 93.30605332,
-          "adp": 135.39,
+          "adp": 135.73,
           "week_projected": 0.0,
           "opponent": "BYE",
           "on_bye": true,
@@ -2977,8 +2977,8 @@
           "avg_pts": 8.3,
           "proj_avg": 13.3,
           "pos_rank": 73,
-          "pct_owned": 81.5,
-          "pct_started": 7.0,
+          "pct_owned": 81.3,
+          "pct_started": 6.5,
           "bye_weeks": [
             11
           ],
@@ -3056,7 +3056,7 @@
           "nfl_team": "MIN",
           "injury_status": "Out",
           "projected": 84.74604879,
-          "adp": 144.78,
+          "adp": 144.92,
           "week_projected": 0.0,
           "opponent": "SF",
           "on_bye": false,
@@ -3068,8 +3068,8 @@
           "avg_pts": 7.7,
           "proj_avg": 12.1,
           "pos_rank": 69,
-          "pct_owned": 65.7,
-          "pct_started": 6.2,
+          "pct_owned": 65.4,
+          "pct_started": 5.9,
           "bye_weeks": [
             6
           ],
@@ -3154,7 +3154,7 @@
           "nfl_team": "JAC",
           "injury_status": null,
           "projected": 48.27896533,
-          "adp": 136.9,
+          "adp": 137.19,
           "week_projected": 7.05,
           "opponent": "NYG",
           "on_bye": false,
@@ -3166,8 +3166,8 @@
           "avg_pts": 7.8,
           "proj_avg": 2.8,
           "pos_rank": 5,
-          "pct_owned": 88.7,
-          "pct_started": 79.4,
+          "pct_owned": 88.8,
+          "pct_started": 79.5,
           "bye_weeks": [
             7
           ],
@@ -3297,7 +3297,7 @@
           "nfl_team": "NYG",
           "injury_status": null,
           "projected": 41.95606106,
-          "adp": 168.87,
+          "adp": 168.89,
           "week_projected": 3.68,
           "opponent": "JAX",
           "on_bye": false,
@@ -3309,8 +3309,8 @@
           "avg_pts": 6.1,
           "proj_avg": 2.5,
           "pos_rank": 15,
-          "pct_owned": 18.2,
-          "pct_started": 11.2,
+          "pct_owned": 18.0,
+          "pct_started": 10.9,
           "bye_weeks": [
             8
           ],
@@ -3370,8 +3370,8 @@
           "position": "RB",
           "nfl_team": "TB",
           "injury_status": null,
-          "projected": 149.97522061,
-          "adp": 37.41,
+          "projected": 149.97523824,
+          "adp": 37.42,
           "week_projected": 17.46,
           "opponent": "DET",
           "on_bye": false,
@@ -3384,7 +3384,7 @@
           "proj_avg": 18.8,
           "pos_rank": 11,
           "pct_owned": 98.0,
-          "pct_started": 79.3,
+          "pct_started": 80.0,
           "bye_weeks": [
             10
           ],
@@ -3488,9 +3488,9 @@
           "name": "Bhayshul Tuten",
           "position": "RB",
           "nfl_team": "JAC",
-          "injury_status": "Questionable",
-          "projected": 140.57779574,
-          "adp": 52.87,
+          "injury_status": null,
+          "projected": 140.57782427,
+          "adp": 52.81,
           "week_projected": 16.9,
           "opponent": "NYG",
           "on_bye": false,
@@ -3503,7 +3503,7 @@
           "proj_avg": 20.1,
           "pos_rank": 15,
           "pct_owned": 95.7,
-          "pct_started": 79.7,
+          "pct_started": 79.8,
           "bye_weeks": [
             7
           ],
@@ -3613,7 +3613,7 @@
           "nfl_team": "LV",
           "injury_status": null,
           "projected": 101.09462344,
-          "adp": 37.07,
+          "adp": 37.16,
           "week_projected": 13.76,
           "opponent": "DEN",
           "on_bye": false,
@@ -3625,8 +3625,8 @@
           "avg_pts": 15.0,
           "proj_avg": 14.4,
           "pos_rank": 14,
-          "pct_owned": 98.8,
-          "pct_started": 82.1,
+          "pct_owned": 98.7,
+          "pct_started": 82.0,
           "bye_weeks": [
             13
           ],
@@ -3745,7 +3745,7 @@
           "nfl_team": "NE",
           "injury_status": "IR",
           "projected": 0.0,
-          "adp": 125.51,
+          "adp": 125.55,
           "week_projected": 0.0,
           "opponent": "BYE",
           "on_bye": true,
@@ -3757,7 +3757,7 @@
           "avg_pts": 5.6,
           "proj_avg": 0.0,
           "pos_rank": 62,
-          "pct_owned": 47.8,
+          "pct_owned": 47.6,
           "pct_started": 4.6,
           "bye_weeks": [
             11
@@ -3850,7 +3850,7 @@
           "nfl_team": "SF",
           "injury_status": null,
           "projected": 108.12927487,
-          "adp": 50.38,
+          "adp": 50.67,
           "week_projected": 13.06,
           "opponent": "MIN",
           "on_bye": false,
@@ -3863,7 +3863,7 @@
           "proj_avg": 13.5,
           "pos_rank": 4,
           "pct_owned": 98.8,
-          "pct_started": 90.0,
+          "pct_started": 89.9,
           "bye_weeks": [
             8
           ],
@@ -3955,7 +3955,7 @@
           "nfl_team": "BUF",
           "injury_status": null,
           "projected": 177.85280734,
-          "adp": 13.29,
+          "adp": 13.34,
           "week_projected": 23.38,
           "opponent": "MIA",
           "on_bye": false,
@@ -4083,7 +4083,7 @@
           "nfl_team": "MIN",
           "injury_status": null,
           "projected": 93.38711593,
-          "adp": 143.27,
+          "adp": 142.74,
           "week_projected": 11.69,
           "opponent": "SF",
           "on_bye": false,
@@ -4095,8 +4095,8 @@
           "avg_pts": 10.7,
           "proj_avg": 13.3,
           "pos_rank": 12,
-          "pct_owned": 81.0,
-          "pct_started": 39.5,
+          "pct_owned": 81.5,
+          "pct_started": 41.2,
           "bye_weeks": [
             6
           ],
@@ -4183,8 +4183,8 @@
           "position": "WR",
           "nfl_team": "NE",
           "injury_status": "Out",
-          "projected": 72.29560562,
-          "adp": 58.7,
+          "projected": 31.13317628,
+          "adp": 59.13,
           "week_projected": 0.0,
           "opponent": "BYE",
           "on_bye": true,
@@ -4194,10 +4194,10 @@
           "kickoff": null,
           "season_pts": 23.8,
           "avg_pts": 6.0,
-          "proj_avg": 10.3,
+          "proj_avg": 10.4,
           "pos_rank": 112,
-          "pct_owned": 85.9,
-          "pct_started": 12.1,
+          "pct_owned": 85.3,
+          "pct_started": 11.9,
           "bye_weeks": [
             11
           ],
@@ -4275,7 +4275,7 @@
           "nfl_team": "TEN",
           "injury_status": null,
           "projected": 126.19020263,
-          "adp": 80.68,
+          "adp": 80.7,
           "week_projected": 18.46,
           "opponent": "DAL",
           "on_bye": false,
@@ -4287,8 +4287,8 @@
           "avg_pts": 15.6,
           "proj_avg": 15.8,
           "pos_rank": 16,
-          "pct_owned": 92.9,
-          "pct_started": 76.5,
+          "pct_owned": 93.0,
+          "pct_started": 76.8,
           "bye_weeks": [
             9
           ],
@@ -4394,7 +4394,7 @@
           "nfl_team": "DAL",
           "injury_status": null,
           "projected": 142.20876808,
-          "adp": 10.27,
+          "adp": 10.3,
           "week_projected": 22.46,
           "opponent": "TEN",
           "on_bye": false,
@@ -4512,7 +4512,7 @@
           "nfl_team": "PHI",
           "injury_status": "IR",
           "projected": 0.0,
-          "adp": 112.94,
+          "adp": 112.89,
           "week_projected": 0.0,
           "opponent": "PIT",
           "on_bye": false,
@@ -4524,7 +4524,7 @@
           "avg_pts": 16.0,
           "proj_avg": 0.0,
           "pos_rank": 28,
-          "pct_owned": 26.2,
+          "pct_owned": 26.1,
           "pct_started": 9.5,
           "bye_weeks": [
             10
@@ -4611,7 +4611,7 @@
           "nfl_team": "BUF",
           "injury_status": null,
           "projected": 84.34518966,
-          "adp": 145.55,
+          "adp": 145.6,
           "week_projected": 10.94,
           "opponent": "MIA",
           "on_bye": false,
@@ -4623,8 +4623,8 @@
           "avg_pts": 10.9,
           "proj_avg": 10.5,
           "pos_rank": 6,
-          "pct_owned": 85.2,
-          "pct_started": 81.3,
+          "pct_owned": 85.4,
+          "pct_started": 81.5,
           "bye_weeks": [
             7
           ],
@@ -4683,7 +4683,7 @@
           "name": "Jaylen Waddle",
           "position": "WR",
           "nfl_team": "DEN",
-          "injury_status": "Questionable",
+          "injury_status": null,
           "projected": 91.66830193,
           "adp": 104.59,
           "week_projected": 12.49,
@@ -4697,8 +4697,8 @@
           "avg_pts": 9.1,
           "proj_avg": 13.1,
           "pos_rank": 40,
-          "pct_owned": 84.4,
-          "pct_started": 37.8,
+          "pct_owned": 84.6,
+          "pct_started": 38.7,
           "bye_weeks": [
             10
           ],
@@ -4791,8 +4791,8 @@
           "position": "QB",
           "nfl_team": "HOU",
           "injury_status": null,
-          "projected": 161.50042362,
-          "adp": 123.69,
+          "projected": 161.50042329,
+          "adp": 123.49,
           "week_projected": 21.84,
           "opponent": "IND",
           "on_bye": false,
@@ -4923,7 +4923,7 @@
           "nfl_team": "BUF",
           "injury_status": null,
           "projected": 177.85280734,
-          "adp": 13.29,
+          "adp": 13.34,
           "week_projected": 23.38,
           "opponent": "MIA",
           "on_bye": false,
@@ -5051,8 +5051,8 @@
           "position": "RB",
           "nfl_team": "TB",
           "injury_status": null,
-          "projected": 149.97522061,
-          "adp": 37.41,
+          "projected": 149.97523824,
+          "adp": 37.42,
           "week_projected": 17.46,
           "opponent": "DET",
           "on_bye": false,
@@ -5065,7 +5065,7 @@
           "proj_avg": 18.8,
           "pos_rank": 11,
           "pct_owned": 98.0,
-          "pct_started": 79.3,
+          "pct_started": 80.0,
           "bye_weeks": [
             10
           ],
@@ -5170,9 +5170,9 @@
           "name": "Bhayshul Tuten",
           "position": "RB",
           "nfl_team": "JAC",
-          "injury_status": "Questionable",
-          "projected": 140.57779574,
-          "adp": 52.87,
+          "injury_status": null,
+          "projected": 140.57782427,
+          "adp": 52.81,
           "week_projected": 16.9,
           "opponent": "NYG",
           "on_bye": false,
@@ -5185,7 +5185,7 @@
           "proj_avg": 20.1,
           "pos_rank": 15,
           "pct_owned": 95.7,
-          "pct_started": 79.7,
+          "pct_started": 79.8,
           "bye_weeks": [
             7
           ],
@@ -5296,7 +5296,7 @@
           "nfl_team": "DAL",
           "injury_status": null,
           "projected": 142.20876808,
-          "adp": 10.27,
+          "adp": 10.3,
           "week_projected": 22.46,
           "opponent": "TEN",
           "on_bye": false,
@@ -5413,7 +5413,7 @@
           "name": "Jaylen Waddle",
           "position": "WR",
           "nfl_team": "DEN",
-          "injury_status": "Questionable",
+          "injury_status": null,
           "projected": 91.66830193,
           "adp": 104.59,
           "week_projected": 12.49,
@@ -5427,8 +5427,8 @@
           "avg_pts": 9.1,
           "proj_avg": 13.1,
           "pos_rank": 40,
-          "pct_owned": 84.4,
-          "pct_started": 37.8,
+          "pct_owned": 84.6,
+          "pct_started": 38.7,
           "bye_weeks": [
             10
           ],
@@ -5523,7 +5523,7 @@
           "nfl_team": "SF",
           "injury_status": null,
           "projected": 108.12927487,
-          "adp": 50.38,
+          "adp": 50.67,
           "week_projected": 13.06,
           "opponent": "MIN",
           "on_bye": false,
@@ -5536,7 +5536,7 @@
           "proj_avg": 13.5,
           "pos_rank": 4,
           "pct_owned": 98.8,
-          "pct_started": 90.0,
+          "pct_started": 89.9,
           "bye_weeks": [
             8
           ],
@@ -5629,7 +5629,7 @@
           "nfl_team": "BUF",
           "injury_status": null,
           "projected": 84.34518966,
-          "adp": 145.55,
+          "adp": 145.6,
           "week_projected": 10.94,
           "opponent": "MIA",
           "on_bye": false,
@@ -5641,8 +5641,8 @@
           "avg_pts": 10.9,
           "proj_avg": 10.5,
           "pos_rank": 6,
-          "pct_owned": 85.2,
-          "pct_started": 81.3,
+          "pct_owned": 85.4,
+          "pct_started": 81.5,
           "bye_weeks": [
             7
           ],
@@ -5704,7 +5704,7 @@
           "nfl_team": "NYG",
           "injury_status": null,
           "projected": 41.95606106,
-          "adp": 168.87,
+          "adp": 168.89,
           "week_projected": 3.68,
           "opponent": "JAX",
           "on_bye": false,
@@ -5716,8 +5716,8 @@
           "avg_pts": 6.1,
           "proj_avg": 2.5,
           "pos_rank": 15,
-          "pct_owned": 18.2,
-          "pct_started": 11.2,
+          "pct_owned": 18.0,
+          "pct_started": 10.9,
           "bye_weeks": [
             8
           ],
@@ -5779,7 +5779,7 @@
           "nfl_team": "TEN",
           "injury_status": null,
           "projected": 126.19020263,
-          "adp": 80.68,
+          "adp": 80.7,
           "week_projected": 18.46,
           "opponent": "DAL",
           "on_bye": false,
@@ -5791,8 +5791,8 @@
           "avg_pts": 15.6,
           "proj_avg": 15.8,
           "pos_rank": 16,
-          "pct_owned": 92.9,
-          "pct_started": 76.5,
+          "pct_owned": 93.0,
+          "pct_started": 76.8,
           "bye_weeks": [
             9
           ],
@@ -5900,8 +5900,8 @@
           "position": "QB",
           "nfl_team": "HOU",
           "injury_status": null,
-          "projected": 161.50042362,
-          "adp": 123.69,
+          "projected": 161.50042329,
+          "adp": 123.49,
           "week_projected": 21.84,
           "opponent": "IND",
           "on_bye": false,
@@ -6030,7 +6030,7 @@
           "nfl_team": "LV",
           "injury_status": null,
           "projected": 101.09462344,
-          "adp": 37.07,
+          "adp": 37.16,
           "week_projected": 13.76,
           "opponent": "DEN",
           "on_bye": false,
@@ -6042,8 +6042,8 @@
           "avg_pts": 15.0,
           "proj_avg": 14.4,
           "pos_rank": 14,
-          "pct_owned": 98.8,
-          "pct_started": 82.1,
+          "pct_owned": 98.7,
+          "pct_started": 82.0,
           "bye_weeks": [
             13
           ],
@@ -6162,7 +6162,7 @@
           "nfl_team": "MIN",
           "injury_status": null,
           "projected": 93.38711593,
-          "adp": 143.27,
+          "adp": 142.74,
           "week_projected": 11.69,
           "opponent": "SF",
           "on_bye": false,
@@ -6174,8 +6174,8 @@
           "avg_pts": 10.7,
           "proj_avg": 13.3,
           "pos_rank": 12,
-          "pct_owned": 81.0,
-          "pct_started": 39.5,
+          "pct_owned": 81.5,
+          "pct_started": 41.2,
           "bye_weeks": [
             6
           ],
@@ -6262,8 +6262,8 @@
           "position": "WR",
           "nfl_team": "NE",
           "injury_status": "Out",
-          "projected": 72.29560562,
-          "adp": 58.7,
+          "projected": 31.13317628,
+          "adp": 59.13,
           "week_projected": 0.0,
           "opponent": "BYE",
           "on_bye": true,
@@ -6273,10 +6273,10 @@
           "kickoff": null,
           "season_pts": 23.8,
           "avg_pts": 6.0,
-          "proj_avg": 10.3,
+          "proj_avg": 10.4,
           "pos_rank": 112,
-          "pct_owned": 85.9,
-          "pct_started": 12.1,
+          "pct_owned": 85.3,
+          "pct_started": 11.9,
           "bye_weeks": [
             11
           ],
@@ -6354,7 +6354,7 @@
           "nfl_team": "NE",
           "injury_status": "IR",
           "projected": 0.0,
-          "adp": 125.51,
+          "adp": 125.55,
           "week_projected": 0.0,
           "opponent": "BYE",
           "on_bye": true,
@@ -6366,7 +6366,7 @@
           "avg_pts": 5.6,
           "proj_avg": 0.0,
           "pos_rank": 62,
-          "pct_owned": 47.8,
+          "pct_owned": 47.6,
           "pct_started": 4.6,
           "bye_weeks": [
             11
@@ -6459,7 +6459,7 @@
           "nfl_team": "PHI",
           "injury_status": "IR",
           "projected": 0.0,
-          "adp": 112.94,
+          "adp": 112.89,
           "week_projected": 0.0,
           "opponent": "PIT",
           "on_bye": false,
@@ -6471,7 +6471,7 @@
           "avg_pts": 16.0,
           "proj_avg": 0.0,
           "pos_rank": 28,
-          "pct_owned": 26.2,
+          "pct_owned": 26.1,
           "pct_started": 9.5,
           "bye_weeks": [
             10
@@ -6627,7 +6627,7 @@
           "nfl_team": "LA",
           "injury_status": null,
           "projected": 54.84664808,
-          "adp": 129.85,
+          "adp": 130.11,
           "week_projected": 0.0,
           "opponent": "BYE",
           "on_bye": true,
@@ -6639,8 +6639,8 @@
           "avg_pts": 6.4,
           "proj_avg": 3.2,
           "pos_rank": 9,
-          "pct_owned": 75.6,
-          "pct_started": 29.6,
+          "pct_owned": 75.2,
+          "pct_started": 28.6,
           "bye_weeks": [
             11
           ],
@@ -6705,8 +6705,8 @@
           "position": "D/ST",
           "nfl_team": "PIT",
           "injury_status": null,
-          "projected": 56.44661566,
-          "adp": 106.93,
+          "projected": 55.76984604,
+          "adp": 106.9,
           "week_projected": 8.3,
           "opponent": "PHI",
           "on_bye": false,
@@ -6718,8 +6718,8 @@
           "avg_pts": 7.3,
           "proj_avg": 3.3,
           "pos_rank": 8,
-          "pct_owned": 94.1,
-          "pct_started": 80.6,
+          "pct_owned": 94.2,
+          "pct_started": 81.0,
           "bye_weeks": [
             9
           ],
@@ -6780,7 +6780,7 @@
           "nfl_team": "DAL",
           "injury_status": null,
           "projected": 72.55085721,
-          "adp": 88.64,
+          "adp": 88.61,
           "week_projected": 11.22,
           "opponent": "TEN",
           "on_bye": false,
@@ -6792,7 +6792,7 @@
           "avg_pts": 9.2,
           "proj_avg": 10.4,
           "pos_rank": 9,
-          "pct_owned": 98.3,
+          "pct_owned": 98.4,
           "pct_started": 96.5,
           "bye_weeks": [
             14
@@ -6859,7 +6859,7 @@
           "nfl_team": "DEN",
           "injury_status": null,
           "projected": 140.93323613,
-          "adp": 128.18,
+          "adp": 127.91,
           "week_projected": 20.78,
           "opponent": "LV",
           "on_bye": false,
@@ -6871,8 +6871,8 @@
           "avg_pts": 14.5,
           "proj_avg": 17.6,
           "pos_rank": 19,
-          "pct_owned": 77.3,
-          "pct_started": 45.1,
+          "pct_owned": 77.8,
+          "pct_started": 45.8,
           "bye_weeks": [
             10
           ],
@@ -6979,7 +6979,7 @@
           "nfl_team": "NYG",
           "injury_status": null,
           "projected": 129.85192999,
-          "adp": 32.41,
+          "adp": 32.39,
           "week_projected": 16.19,
           "opponent": "JAX",
           "on_bye": false,
@@ -7081,8 +7081,8 @@
           "position": "WR",
           "nfl_team": "CAR",
           "injury_status": null,
-          "projected": 105.97387333,
-          "adp": 54.15,
+          "projected": 105.97868091,
+          "adp": 54.41,
           "week_projected": 13.86,
           "opponent": "BAL",
           "on_bye": false,
@@ -7095,7 +7095,7 @@
           "proj_avg": 13.2,
           "pos_rank": 16,
           "pct_owned": 98.3,
-          "pct_started": 86.4,
+          "pct_started": 86.3,
           "bye_weeks": [
             5
           ],
@@ -7184,9 +7184,9 @@
           "position": "RB",
           "nfl_team": "PHI",
           "injury_status": null,
-          "projected": 110.08385006,
-          "adp": 35.52,
-          "week_projected": 11.96,
+          "projected": 110.14273856,
+          "adp": 35.58,
+          "week_projected": 12.02,
           "opponent": "PIT",
           "on_bye": false,
           "week_pts": 0.0,
@@ -7198,7 +7198,7 @@
           "proj_avg": 13.8,
           "pos_rank": 42,
           "pct_owned": 96.6,
-          "pct_started": 60.6,
+          "pct_started": 61.2,
           "bye_weeks": [
             10
           ],
@@ -7295,7 +7295,7 @@
           "nfl_team": "BAL",
           "injury_status": "IR",
           "projected": 0.0,
-          "adp": 79.11,
+          "adp": 79.03,
           "week_projected": 0.0,
           "opponent": "CAR",
           "on_bye": false,
@@ -7307,8 +7307,8 @@
           "avg_pts": 15.8,
           "proj_avg": 0.0,
           "pos_rank": 29,
-          "pct_owned": 76.1,
-          "pct_started": 11.5,
+          "pct_owned": 76.0,
+          "pct_started": 11.4,
           "bye_weeks": [
             13
           ],
@@ -7395,8 +7395,8 @@
           "position": "QB",
           "nfl_team": "GB",
           "injury_status": null,
-          "projected": 121.20238219,
-          "adp": 104.04,
+          "projected": 121.20262887,
+          "adp": 104.81,
           "week_projected": 0.0,
           "opponent": "BYE",
           "on_bye": true,
@@ -7409,7 +7409,7 @@
           "proj_avg": 17.3,
           "pos_rank": 6,
           "pct_owned": 89.7,
-          "pct_started": 10.3,
+          "pct_started": 9.7,
           "bye_weeks": [
             11
           ],
@@ -7518,7 +7518,7 @@
           "nfl_team": "ATL",
           "injury_status": "Questionable",
           "projected": 102.52299585,
-          "adp": 29.38,
+          "adp": 29.45,
           "week_projected": 0.0,
           "opponent": "BYE",
           "on_bye": true,
@@ -7531,7 +7531,7 @@
           "proj_avg": 14.7,
           "pos_rank": 12,
           "pct_owned": 99.1,
-          "pct_started": 30.3,
+          "pct_started": 29.3,
           "bye_weeks": [
             11
           ],
@@ -7630,9 +7630,9 @@
           "name": "Isaiah Likely",
           "position": "TE",
           "nfl_team": "NYG",
-          "injury_status": "Questionable",
-          "projected": 104.61715585,
-          "adp": 59.96,
+          "injury_status": null,
+          "projected": 104.6171738,
+          "adp": 60.18,
           "week_projected": 13.1,
           "opponent": "JAX",
           "on_bye": false,
@@ -7642,10 +7642,10 @@
           "kickoff": "2026-11-22T21:25",
           "season_pts": 156.5,
           "avg_pts": 17.4,
-          "proj_avg": 13.1,
+          "proj_avg": 14.9,
           "pos_rank": 2,
           "pct_owned": 97.0,
-          "pct_started": 82.3,
+          "pct_started": 82.4,
           "bye_weeks": [
             8
           ],
@@ -7738,7 +7738,7 @@
           "nfl_team": "LA",
           "injury_status": null,
           "projected": 103.97527415,
-          "adp": 44.45,
+          "adp": 44.79,
           "week_projected": 0.0,
           "opponent": "BYE",
           "on_bye": true,
@@ -7751,7 +7751,7 @@
           "proj_avg": 14.8,
           "pos_rank": 9,
           "pct_owned": 98.8,
-          "pct_started": 25.7,
+          "pct_started": 24.6,
           "bye_weeks": [
             11
           ],
@@ -7872,8 +7872,8 @@
           "position": "RB",
           "nfl_team": "DET",
           "injury_status": null,
-          "projected": 194.75823402,
-          "adp": 1.67,
+          "projected": 194.75821181,
+          "adp": 1.69,
           "week_projected": 21.94,
           "opponent": "TB",
           "on_bye": false,
@@ -7886,7 +7886,7 @@
           "proj_avg": 24.3,
           "pos_rank": 1,
           "pct_owned": 100.0,
-          "pct_started": 98.8,
+          "pct_started": 98.9,
           "bye_weeks": [
             6
           ],
@@ -7999,7 +7999,7 @@
           "nfl_team": "GB",
           "injury_status": null,
           "projected": 68.61755535,
-          "adp": 109.36,
+          "adp": 109.71,
           "week_projected": 0.0,
           "opponent": "BYE",
           "on_bye": true,
@@ -8011,8 +8011,8 @@
           "avg_pts": 9.3,
           "proj_avg": 9.8,
           "pos_rank": 8,
-          "pct_owned": 87.9,
-          "pct_started": 19.4,
+          "pct_owned": 87.8,
+          "pct_started": 18.6,
           "bye_weeks": [
             11
           ],
@@ -8117,7 +8117,7 @@
           "nfl_team": "JAC",
           "injury_status": null,
           "projected": 126.71083317,
-          "adp": 63.76,
+          "adp": 63.67,
           "week_projected": 15.29,
           "opponent": "NYG",
           "on_bye": false,
@@ -8130,7 +8130,7 @@
           "proj_avg": 15.8,
           "pos_rank": 13,
           "pct_owned": 96.9,
-          "pct_started": 83.3,
+          "pct_started": 83.4,
           "bye_weeks": [
             7
           ],
@@ -8229,7 +8229,7 @@
           "nfl_team": "DEN",
           "injury_status": null,
           "projected": 140.93323613,
-          "adp": 128.18,
+          "adp": 127.91,
           "week_projected": 20.78,
           "opponent": "LV",
           "on_bye": false,
@@ -8241,8 +8241,8 @@
           "avg_pts": 14.5,
           "proj_avg": 17.6,
           "pos_rank": 19,
-          "pct_owned": 77.3,
-          "pct_started": 45.1,
+          "pct_owned": 77.8,
+          "pct_started": 45.8,
           "bye_weeks": [
             10
           ],
@@ -8349,8 +8349,8 @@
           "position": "RB",
           "nfl_team": "DET",
           "injury_status": null,
-          "projected": 194.75823402,
-          "adp": 1.67,
+          "projected": 194.75821181,
+          "adp": 1.69,
           "week_projected": 21.94,
           "opponent": "TB",
           "on_bye": false,
@@ -8363,7 +8363,7 @@
           "proj_avg": 24.3,
           "pos_rank": 1,
           "pct_owned": 100.0,
-          "pct_started": 98.8,
+          "pct_started": 98.9,
           "bye_weeks": [
             6
           ],
@@ -8476,9 +8476,9 @@
           "position": "RB",
           "nfl_team": "PHI",
           "injury_status": null,
-          "projected": 110.08385006,
-          "adp": 35.52,
-          "week_projected": 11.96,
+          "projected": 110.14273856,
+          "adp": 35.58,
+          "week_projected": 12.02,
           "opponent": "PIT",
           "on_bye": false,
           "week_pts": 0.0,
@@ -8490,7 +8490,7 @@
           "proj_avg": 13.8,
           "pos_rank": 42,
           "pct_owned": 96.6,
-          "pct_started": 60.6,
+          "pct_started": 61.2,
           "bye_weeks": [
             10
           ],
@@ -8588,7 +8588,7 @@
           "nfl_team": "NYG",
           "injury_status": null,
           "projected": 129.85192999,
-          "adp": 32.41,
+          "adp": 32.39,
           "week_projected": 16.19,
           "opponent": "JAX",
           "on_bye": false,
@@ -8692,7 +8692,7 @@
           "nfl_team": "JAC",
           "injury_status": null,
           "projected": 126.71083317,
-          "adp": 63.76,
+          "adp": 63.67,
           "week_projected": 15.29,
           "opponent": "NYG",
           "on_bye": false,
@@ -8705,7 +8705,7 @@
           "proj_avg": 15.8,
           "pos_rank": 13,
           "pct_owned": 96.9,
-          "pct_started": 83.3,
+          "pct_started": 83.4,
           "bye_weeks": [
             7
           ],
@@ -8801,9 +8801,9 @@
           "name": "Isaiah Likely",
           "position": "TE",
           "nfl_team": "NYG",
-          "injury_status": "Questionable",
-          "projected": 104.61715585,
-          "adp": 59.96,
+          "injury_status": null,
+          "projected": 104.6171738,
+          "adp": 60.18,
           "week_projected": 13.1,
           "opponent": "JAX",
           "on_bye": false,
@@ -8813,10 +8813,10 @@
           "kickoff": "2026-11-22T21:25",
           "season_pts": 156.5,
           "avg_pts": 17.4,
-          "proj_avg": 13.1,
+          "proj_avg": 14.9,
           "pos_rank": 2,
           "pct_owned": 97.0,
-          "pct_started": 82.3,
+          "pct_started": 82.4,
           "bye_weeks": [
             8
           ],
@@ -8910,7 +8910,7 @@
           "nfl_team": "DAL",
           "injury_status": null,
           "projected": 72.55085721,
-          "adp": 88.64,
+          "adp": 88.61,
           "week_projected": 11.22,
           "opponent": "TEN",
           "on_bye": false,
@@ -8922,7 +8922,7 @@
           "avg_pts": 9.2,
           "proj_avg": 10.4,
           "pos_rank": 9,
-          "pct_owned": 98.3,
+          "pct_owned": 98.4,
           "pct_started": 96.5,
           "bye_weeks": [
             14
@@ -8989,8 +8989,8 @@
           "position": "D/ST",
           "nfl_team": "PIT",
           "injury_status": null,
-          "projected": 56.44661566,
-          "adp": 106.93,
+          "projected": 55.76984604,
+          "adp": 106.9,
           "week_projected": 8.3,
           "opponent": "PHI",
           "on_bye": false,
@@ -9002,8 +9002,8 @@
           "avg_pts": 7.3,
           "proj_avg": 3.3,
           "pos_rank": 8,
-          "pct_owned": 94.1,
-          "pct_started": 80.6,
+          "pct_owned": 94.2,
+          "pct_started": 81.0,
           "bye_weeks": [
             9
           ],
@@ -9064,8 +9064,8 @@
           "position": "WR",
           "nfl_team": "CAR",
           "injury_status": null,
-          "projected": 105.97387333,
-          "adp": 54.15,
+          "projected": 105.97868091,
+          "adp": 54.41,
           "week_projected": 13.86,
           "opponent": "BAL",
           "on_bye": false,
@@ -9078,7 +9078,7 @@
           "proj_avg": 13.2,
           "pos_rank": 16,
           "pct_owned": 98.3,
-          "pct_started": 86.4,
+          "pct_started": 86.3,
           "bye_weeks": [
             5
           ],
@@ -9170,8 +9170,8 @@
           "position": "QB",
           "nfl_team": "GB",
           "injury_status": null,
-          "projected": 121.20238219,
-          "adp": 104.04,
+          "projected": 121.20262887,
+          "adp": 104.81,
           "week_projected": 0.0,
           "opponent": "BYE",
           "on_bye": true,
@@ -9184,7 +9184,7 @@
           "proj_avg": 17.3,
           "pos_rank": 6,
           "pct_owned": 89.7,
-          "pct_started": 10.3,
+          "pct_started": 9.7,
           "bye_weeks": [
             11
           ],
@@ -9293,7 +9293,7 @@
           "nfl_team": "LA",
           "injury_status": null,
           "projected": 103.97527415,
-          "adp": 44.45,
+          "adp": 44.79,
           "week_projected": 0.0,
           "opponent": "BYE",
           "on_bye": true,
@@ -9306,7 +9306,7 @@
           "proj_avg": 14.8,
           "pos_rank": 9,
           "pct_owned": 98.8,
-          "pct_started": 25.7,
+          "pct_started": 24.6,
           "bye_weeks": [
             11
           ],
@@ -9428,7 +9428,7 @@
           "nfl_team": "ATL",
           "injury_status": "Questionable",
           "projected": 102.52299585,
-          "adp": 29.38,
+          "adp": 29.45,
           "week_projected": 0.0,
           "opponent": "BYE",
           "on_bye": true,
@@ -9441,7 +9441,7 @@
           "proj_avg": 14.7,
           "pos_rank": 12,
           "pct_owned": 99.1,
-          "pct_started": 30.3,
+          "pct_started": 29.3,
           "bye_weeks": [
             11
           ],
@@ -9542,7 +9542,7 @@
           "nfl_team": "GB",
           "injury_status": null,
           "projected": 68.61755535,
-          "adp": 109.36,
+          "adp": 109.71,
           "week_projected": 0.0,
           "opponent": "BYE",
           "on_bye": true,
@@ -9554,8 +9554,8 @@
           "avg_pts": 9.3,
           "proj_avg": 9.8,
           "pos_rank": 8,
-          "pct_owned": 87.9,
-          "pct_started": 19.4,
+          "pct_owned": 87.8,
+          "pct_started": 18.6,
           "bye_weeks": [
             11
           ],
@@ -9660,7 +9660,7 @@
           "nfl_team": "LA",
           "injury_status": null,
           "projected": 54.84664808,
-          "adp": 129.85,
+          "adp": 130.11,
           "week_projected": 0.0,
           "opponent": "BYE",
           "on_bye": true,
@@ -9672,8 +9672,8 @@
           "avg_pts": 6.4,
           "proj_avg": 3.2,
           "pos_rank": 9,
-          "pct_owned": 75.6,
-          "pct_started": 29.6,
+          "pct_owned": 75.2,
+          "pct_started": 28.6,
           "bye_weeks": [
             11
           ],
@@ -9739,7 +9739,7 @@
           "nfl_team": "BAL",
           "injury_status": "IR",
           "projected": 0.0,
-          "adp": 79.11,
+          "adp": 79.03,
           "week_projected": 0.0,
           "opponent": "CAR",
           "on_bye": false,
@@ -9751,8 +9751,8 @@
           "avg_pts": 15.8,
           "proj_avg": 0.0,
           "pos_rank": 29,
-          "pct_owned": 76.1,
-          "pct_started": 11.5,
+          "pct_owned": 76.0,
+          "pct_started": 11.4,
           "bye_weeks": [
             13
           ],
@@ -9833,7 +9833,7 @@
           "current_slot": "IR"
         }
       ],
-      "projected": 1041.9,
+      "projected": 1041.3,
       "unfilled": [],
       "rank": 3
     },
@@ -9908,8 +9908,8 @@
           "position": "D/ST",
           "nfl_team": "TB",
           "injury_status": null,
-          "projected": 55.67088759,
-          "adp": 138.15,
+          "projected": 54.99391453,
+          "adp": 138.28,
           "week_projected": 4.63,
           "opponent": "DET",
           "on_bye": false,
@@ -9919,10 +9919,10 @@
           "kickoff": "2026-11-22T18:00",
           "season_pts": 93.0,
           "avg_pts": 10.3,
-          "proj_avg": 3.3,
+          "proj_avg": 3.2,
           "pos_rank": 2,
-          "pct_owned": 35.0,
-          "pct_started": 17.2,
+          "pct_owned": 35.2,
+          "pct_started": 17.4,
           "bye_weeks": [
             10
           ],
@@ -9983,7 +9983,7 @@
           "nfl_team": "LV",
           "injury_status": "Questionable",
           "projected": 110.12349598,
-          "adp": 24.22,
+          "adp": 24.3,
           "week_projected": 15.34,
           "opponent": "DEN",
           "on_bye": false,
@@ -9996,7 +9996,7 @@
           "proj_avg": 18.4,
           "pos_rank": 3,
           "pct_owned": 99.9,
-          "pct_started": 92.2,
+          "pct_started": 91.9,
           "bye_weeks": [
             13
           ],
@@ -10093,7 +10093,7 @@
           "nfl_team": "MIA",
           "injury_status": null,
           "projected": 118.68688962,
-          "adp": 125.46,
+          "adp": 125.55,
           "week_projected": 13.81,
           "opponent": "BUF",
           "on_bye": false,
@@ -10106,7 +10106,7 @@
           "proj_avg": 14.8,
           "pos_rank": 25,
           "pct_owned": 89.9,
-          "pct_started": 71.1,
+          "pct_started": 70.8,
           "bye_weeks": [
             6
           ],
@@ -10201,7 +10201,7 @@
           "nfl_team": "CHI",
           "injury_status": null,
           "projected": 63.96644827,
-          "adp": 139.55,
+          "adp": 139.36,
           "week_projected": 8.92,
           "opponent": "NO",
           "on_bye": false,
@@ -10213,8 +10213,8 @@
           "avg_pts": 14.8,
           "proj_avg": 8.0,
           "pos_rank": 39,
-          "pct_owned": 75.4,
-          "pct_started": 23.1,
+          "pct_owned": 75.6,
+          "pct_started": 23.9,
           "bye_weeks": [
             10
           ],
@@ -10294,7 +10294,7 @@
           "nfl_team": "DEN",
           "injury_status": null,
           "projected": 136.708563,
-          "adp": 103.26,
+          "adp": 103.02,
           "week_projected": 19.39,
           "opponent": "LV",
           "on_bye": false,
@@ -10306,8 +10306,8 @@
           "avg_pts": 12.6,
           "proj_avg": 17.1,
           "pos_rank": 36,
-          "pct_owned": 89.5,
-          "pct_started": 77.6,
+          "pct_owned": 89.7,
+          "pct_started": 78.3,
           "bye_weeks": [
             10
           ],
@@ -10391,7 +10391,7 @@
           "nfl_team": "WAS",
           "injury_status": null,
           "projected": 106.50346342,
-          "adp": 100.69,
+          "adp": 101.0,
           "week_projected": 12.91,
           "opponent": "CIN",
           "on_bye": false,
@@ -10403,8 +10403,8 @@
           "avg_pts": 13.8,
           "proj_avg": 13.3,
           "pos_rank": 23,
-          "pct_owned": 88.6,
-          "pct_started": 60.6,
+          "pct_owned": 88.7,
+          "pct_started": 60.7,
           "bye_weeks": [
             7
           ],
@@ -10494,7 +10494,7 @@
           "nfl_team": "HOU",
           "injury_status": null,
           "projected": 81.45345582,
-          "adp": 120.05,
+          "adp": 119.99,
           "week_projected": 10.65,
           "opponent": "IND",
           "on_bye": false,
@@ -10572,8 +10572,8 @@
           "position": "RB",
           "nfl_team": "GB",
           "injury_status": "Out",
-          "projected": 98.79546788,
-          "adp": 113.29,
+          "projected": 98.79545408,
+          "adp": 113.44,
           "week_projected": 0.0,
           "opponent": "BYE",
           "on_bye": true,
@@ -10585,8 +10585,8 @@
           "avg_pts": 14.6,
           "proj_avg": 16.5,
           "pos_rank": 52,
-          "pct_owned": 90.5,
-          "pct_started": 7.1,
+          "pct_owned": 90.4,
+          "pct_started": 7.0,
           "bye_weeks": [
             11
           ],
@@ -10667,7 +10667,7 @@
           "nfl_team": "SF",
           "injury_status": null,
           "projected": 86.86912946,
-          "adp": 130.88,
+          "adp": 130.81,
           "week_projected": 10.33,
           "opponent": "MIN",
           "on_bye": false,
@@ -10679,8 +10679,8 @@
           "avg_pts": 14.4,
           "proj_avg": 10.9,
           "pos_rank": 37,
-          "pct_owned": 83.3,
-          "pct_started": 46.0,
+          "pct_owned": 83.4,
+          "pct_started": 45.9,
           "bye_weeks": [
             8
           ],
@@ -10774,7 +10774,7 @@
           "nfl_team": "JAC",
           "injury_status": null,
           "projected": 166.44263396,
-          "adp": 74.11,
+          "adp": 74.09,
           "week_projected": 19.49,
           "opponent": "NYG",
           "on_bye": false,
@@ -10890,9 +10890,9 @@
           "position": "RB",
           "nfl_team": "NO",
           "injury_status": null,
-          "projected": 92.88106695,
-          "adp": 78.35,
-          "week_projected": 11.22,
+          "projected": 92.8881528,
+          "adp": 78.57,
+          "week_projected": 11.23,
           "opponent": "CHI",
           "on_bye": false,
           "week_pts": 0.0,
@@ -10903,8 +10903,8 @@
           "avg_pts": 9.3,
           "proj_avg": 11.6,
           "pos_rank": 59,
-          "pct_owned": 85.0,
-          "pct_started": 40.7,
+          "pct_owned": 85.1,
+          "pct_started": 41.0,
           "bye_weeks": [
             8
           ],
@@ -10984,8 +10984,8 @@
           "position": "WR",
           "nfl_team": "HOU",
           "injury_status": null,
-          "projected": 125.17489388,
-          "adp": 31.83,
+          "projected": 125.17489328,
+          "adp": 31.74,
           "week_projected": 15.75,
           "opponent": "IND",
           "on_bye": false,
@@ -11097,7 +11097,7 @@
           "nfl_team": "NYJ",
           "injury_status": null,
           "projected": 89.75574098,
-          "adp": 59.92,
+          "adp": 60.07,
           "week_projected": 13.07,
           "opponent": "LAC",
           "on_bye": false,
@@ -11202,7 +11202,7 @@
           "nfl_team": "LA",
           "injury_status": "IR",
           "projected": 0.0,
-          "adp": 31.73,
+          "adp": 32.09,
           "week_projected": 0.0,
           "opponent": "BYE",
           "on_bye": true,
@@ -11214,8 +11214,8 @@
           "avg_pts": 24.8,
           "proj_avg": 0.0,
           "pos_rank": 7,
-          "pct_owned": 97.3,
-          "pct_started": 17.3,
+          "pct_owned": 96.0,
+          "pct_started": 17.2,
           "bye_weeks": [
             11
           ],
@@ -11315,7 +11315,7 @@
           "nfl_team": "ATL",
           "injury_status": null,
           "projected": 136.47504516,
-          "adp": 4.84,
+          "adp": 4.85,
           "week_projected": 0.0,
           "opponent": "BYE",
           "on_bye": true,
@@ -11328,7 +11328,7 @@
           "proj_avg": 19.5,
           "pos_rank": 3,
           "pct_owned": 99.9,
-          "pct_started": 29.5,
+          "pct_started": 28.4,
           "bye_weeks": [
             11
           ],
@@ -11449,7 +11449,7 @@
           "nfl_team": "JAC",
           "injury_status": null,
           "projected": 166.44263396,
-          "adp": 74.11,
+          "adp": 74.09,
           "week_projected": 19.49,
           "opponent": "NYG",
           "on_bye": false,
@@ -11567,7 +11567,7 @@
           "nfl_team": "DEN",
           "injury_status": null,
           "projected": 136.708563,
-          "adp": 103.26,
+          "adp": 103.02,
           "week_projected": 19.39,
           "opponent": "LV",
           "on_bye": false,
@@ -11579,8 +11579,8 @@
           "avg_pts": 12.6,
           "proj_avg": 17.1,
           "pos_rank": 36,
-          "pct_owned": 89.5,
-          "pct_started": 77.6,
+          "pct_owned": 89.7,
+          "pct_started": 78.3,
           "bye_weeks": [
             10
           ],
@@ -11665,7 +11665,7 @@
           "nfl_team": "ATL",
           "injury_status": null,
           "projected": 136.47504516,
-          "adp": 4.84,
+          "adp": 4.85,
           "week_projected": 0.0,
           "opponent": "BYE",
           "on_bye": true,
@@ -11678,7 +11678,7 @@
           "proj_avg": 19.5,
           "pos_rank": 3,
           "pct_owned": 99.9,
-          "pct_started": 29.5,
+          "pct_started": 28.4,
           "bye_weeks": [
             11
           ],
@@ -11797,8 +11797,8 @@
           "position": "WR",
           "nfl_team": "HOU",
           "injury_status": null,
-          "projected": 125.17489388,
-          "adp": 31.83,
+          "projected": 125.17489328,
+          "adp": 31.74,
           "week_projected": 15.75,
           "opponent": "IND",
           "on_bye": false,
@@ -11911,7 +11911,7 @@
           "nfl_team": "WAS",
           "injury_status": null,
           "projected": 106.50346342,
-          "adp": 100.69,
+          "adp": 101.0,
           "week_projected": 12.91,
           "opponent": "CIN",
           "on_bye": false,
@@ -11923,8 +11923,8 @@
           "avg_pts": 13.8,
           "proj_avg": 13.3,
           "pos_rank": 23,
-          "pct_owned": 88.6,
-          "pct_started": 60.6,
+          "pct_owned": 88.7,
+          "pct_started": 60.7,
           "bye_weeks": [
             7
           ],
@@ -12015,7 +12015,7 @@
           "nfl_team": "LV",
           "injury_status": "Questionable",
           "projected": 110.12349598,
-          "adp": 24.22,
+          "adp": 24.3,
           "week_projected": 15.34,
           "opponent": "DEN",
           "on_bye": false,
@@ -12028,7 +12028,7 @@
           "proj_avg": 18.4,
           "pos_rank": 3,
           "pct_owned": 99.9,
-          "pct_started": 92.2,
+          "pct_started": 91.9,
           "bye_weeks": [
             13
           ],
@@ -12126,7 +12126,7 @@
           "nfl_team": "HOU",
           "injury_status": null,
           "projected": 81.45345582,
-          "adp": 120.05,
+          "adp": 119.99,
           "week_projected": 10.65,
           "opponent": "IND",
           "on_bye": false,
@@ -12205,8 +12205,8 @@
           "position": "D/ST",
           "nfl_team": "TB",
           "injury_status": null,
-          "projected": 55.67088759,
-          "adp": 138.15,
+          "projected": 54.99391453,
+          "adp": 138.28,
           "week_projected": 4.63,
           "opponent": "DET",
           "on_bye": false,
@@ -12216,10 +12216,10 @@
           "kickoff": "2026-11-22T18:00",
           "season_pts": 93.0,
           "avg_pts": 10.3,
-          "proj_avg": 3.3,
+          "proj_avg": 3.2,
           "pos_rank": 2,
-          "pct_owned": 35.0,
-          "pct_started": 17.2,
+          "pct_owned": 35.2,
+          "pct_started": 17.4,
           "bye_weeks": [
             10
           ],
@@ -12281,7 +12281,7 @@
           "nfl_team": "MIA",
           "injury_status": null,
           "projected": 118.68688962,
-          "adp": 125.46,
+          "adp": 125.55,
           "week_projected": 13.81,
           "opponent": "BUF",
           "on_bye": false,
@@ -12294,7 +12294,7 @@
           "proj_avg": 14.8,
           "pos_rank": 25,
           "pct_owned": 89.9,
-          "pct_started": 71.1,
+          "pct_started": 70.8,
           "bye_weeks": [
             6
           ],
@@ -12391,8 +12391,8 @@
           "position": "RB",
           "nfl_team": "GB",
           "injury_status": "Out",
-          "projected": 98.79546788,
-          "adp": 113.29,
+          "projected": 98.79545408,
+          "adp": 113.44,
           "week_projected": 0.0,
           "opponent": "BYE",
           "on_bye": true,
@@ -12404,8 +12404,8 @@
           "avg_pts": 14.6,
           "proj_avg": 16.5,
           "pos_rank": 52,
-          "pct_owned": 90.5,
-          "pct_started": 7.1,
+          "pct_owned": 90.4,
+          "pct_started": 7.0,
           "bye_weeks": [
             11
           ],
@@ -12485,9 +12485,9 @@
           "position": "RB",
           "nfl_team": "NO",
           "injury_status": null,
-          "projected": 92.88106695,
-          "adp": 78.35,
-          "week_projected": 11.22,
+          "projected": 92.8881528,
+          "adp": 78.57,
+          "week_projected": 11.23,
           "opponent": "CHI",
           "on_bye": false,
           "week_pts": 0.0,
@@ -12498,8 +12498,8 @@
           "avg_pts": 9.3,
           "proj_avg": 11.6,
           "pos_rank": 59,
-          "pct_owned": 85.0,
-          "pct_started": 40.7,
+          "pct_owned": 85.1,
+          "pct_started": 41.0,
           "bye_weeks": [
             8
           ],
@@ -12580,7 +12580,7 @@
           "nfl_team": "NYJ",
           "injury_status": null,
           "projected": 89.75574098,
-          "adp": 59.92,
+          "adp": 60.07,
           "week_projected": 13.07,
           "opponent": "LAC",
           "on_bye": false,
@@ -12685,7 +12685,7 @@
           "nfl_team": "SF",
           "injury_status": null,
           "projected": 86.86912946,
-          "adp": 130.88,
+          "adp": 130.81,
           "week_projected": 10.33,
           "opponent": "MIN",
           "on_bye": false,
@@ -12697,8 +12697,8 @@
           "avg_pts": 14.4,
           "proj_avg": 10.9,
           "pos_rank": 37,
-          "pct_owned": 83.3,
-          "pct_started": 46.0,
+          "pct_owned": 83.4,
+          "pct_started": 45.9,
           "bye_weeks": [
             8
           ],
@@ -12792,7 +12792,7 @@
           "nfl_team": "CHI",
           "injury_status": null,
           "projected": 63.96644827,
-          "adp": 139.55,
+          "adp": 139.36,
           "week_projected": 8.92,
           "opponent": "NO",
           "on_bye": false,
@@ -12804,8 +12804,8 @@
           "avg_pts": 14.8,
           "proj_avg": 8.0,
           "pos_rank": 39,
-          "pct_owned": 75.4,
-          "pct_started": 23.1,
+          "pct_owned": 75.6,
+          "pct_started": 23.9,
           "bye_weeks": [
             10
           ],
@@ -12885,7 +12885,7 @@
           "nfl_team": "LA",
           "injury_status": "IR",
           "projected": 0.0,
-          "adp": 31.73,
+          "adp": 32.09,
           "week_projected": 0.0,
           "opponent": "BYE",
           "on_bye": true,
@@ -12897,8 +12897,8 @@
           "avg_pts": 24.8,
           "proj_avg": 0.0,
           "pos_rank": 7,
-          "pct_owned": 97.3,
-          "pct_started": 17.3,
+          "pct_owned": 96.0,
+          "pct_started": 17.2,
           "bye_weeks": [
             11
           ],
@@ -12991,7 +12991,7 @@
           "current_slot": "BE"
         }
       ],
-      "projected": 1037.2,
+      "projected": 1036.6,
       "unfilled": [],
       "rank": 4
     },
@@ -13066,9 +13066,9 @@
           "position": "D/ST",
           "nfl_team": "CHI",
           "injury_status": null,
-          "projected": 39.36823451,
-          "adp": 161.03,
-          "week_projected": 6.01,
+          "projected": 38.58966823,
+          "adp": 161.06,
+          "week_projected": 5.91,
           "opponent": "NO",
           "on_bye": false,
           "week_pts": 0.0,
@@ -13079,8 +13079,8 @@
           "avg_pts": 7.7,
           "proj_avg": 2.3,
           "pos_rank": 6,
-          "pct_owned": 64.2,
-          "pct_started": 48.4,
+          "pct_owned": 64.6,
+          "pct_started": 49.0,
           "bye_weeks": [
             10
           ],
@@ -13141,7 +13141,7 @@
           "nfl_team": "SEA",
           "injury_status": null,
           "projected": 52.46425641,
-          "adp": 98.57,
+          "adp": 98.62,
           "week_projected": 0.0,
           "opponent": "BYE",
           "on_bye": true,
@@ -13153,8 +13153,8 @@
           "avg_pts": 8.9,
           "proj_avg": 3.1,
           "pos_rank": 3,
-          "pct_owned": 89.2,
-          "pct_started": 33.1,
+          "pct_owned": 88.9,
+          "pct_started": 31.9,
           "bye_weeks": [
             11
           ],
@@ -13220,7 +13220,7 @@
           "nfl_team": "KC",
           "injury_status": null,
           "projected": 100.56548853,
-          "adp": 47.24,
+          "adp": 47.36,
           "week_projected": 12.78,
           "opponent": "ARI",
           "on_bye": false,
@@ -13233,7 +13233,7 @@
           "proj_avg": 12.6,
           "pos_rank": 43,
           "pct_owned": 96.1,
-          "pct_started": 76.6,
+          "pct_started": 76.5,
           "bye_weeks": [
             5
           ],
@@ -13314,7 +13314,7 @@
           "nfl_team": "IND",
           "injury_status": null,
           "projected": 65.8402695,
-          "adp": 136.2,
+          "adp": 137.02,
           "week_projected": 9.38,
           "opponent": "HOU",
           "on_bye": false,
@@ -13327,7 +13327,7 @@
           "proj_avg": 9.4,
           "pos_rank": 1,
           "pct_owned": 85.0,
-          "pct_started": 79.6,
+          "pct_started": 79.5,
           "bye_weeks": [
             13
           ],
@@ -13398,7 +13398,7 @@
           "nfl_team": "GB",
           "injury_status": null,
           "projected": 124.52364438,
-          "adp": 55.96,
+          "adp": 56.31,
           "week_projected": 0.0,
           "opponent": "BYE",
           "on_bye": true,
@@ -13411,7 +13411,7 @@
           "proj_avg": 17.8,
           "pos_rank": 6,
           "pct_owned": 96.8,
-          "pct_started": 16.5,
+          "pct_started": 15.5,
           "bye_weeks": [
             11
           ],
@@ -13513,8 +13513,8 @@
           "position": "TE",
           "nfl_team": "CLE",
           "injury_status": null,
-          "projected": 71.82683247,
-          "adp": 87.32,
+          "projected": 71.82681419,
+          "adp": 87.39,
           "week_projected": 0.0,
           "opponent": "BYE",
           "on_bye": true,
@@ -13526,8 +13526,8 @@
           "avg_pts": 11.8,
           "proj_avg": 10.3,
           "pos_rank": 5,
-          "pct_owned": 89.7,
-          "pct_started": 27.5,
+          "pct_owned": 89.6,
+          "pct_started": 26.7,
           "bye_weeks": [
             11
           ],
@@ -13625,8 +13625,8 @@
           "position": "RB",
           "nfl_team": "KC",
           "injury_status": null,
-          "projected": 73.26764229,
-          "adp": 138.11,
+          "projected": 73.26762664,
+          "adp": 136.76,
           "week_projected": 20.19,
           "opponent": "ARI",
           "on_bye": false,
@@ -13638,8 +13638,8 @@
           "avg_pts": 10.7,
           "proj_avg": 9.2,
           "pos_rank": 23,
-          "pct_owned": 88.0,
-          "pct_started": 75.8,
+          "pct_owned": 88.9,
+          "pct_started": 79.2,
           "bye_weeks": [
             5
           ],
@@ -13738,7 +13738,7 @@
           "nfl_team": "KC",
           "injury_status": null,
           "projected": 155.31573501,
-          "adp": 80.67,
+          "adp": 80.59,
           "week_projected": 21.78,
           "opponent": "ARI",
           "on_bye": false,
@@ -13751,7 +13751,7 @@
           "proj_avg": 19.4,
           "pos_rank": 9,
           "pct_owned": 95.2,
-          "pct_started": 67.0,
+          "pct_started": 67.4,
           "bye_weeks": [
             5
           ],
@@ -13855,7 +13855,7 @@
           "nfl_team": "CHI",
           "injury_status": null,
           "projected": 120.57868992,
-          "adp": 49.61,
+          "adp": 49.75,
           "week_projected": 16.85,
           "opponent": "NO",
           "on_bye": false,
@@ -13868,7 +13868,7 @@
           "proj_avg": 15.1,
           "pos_rank": 12,
           "pct_owned": 97.6,
-          "pct_started": 78.2,
+          "pct_started": 79.0,
           "bye_weeks": [
             10
           ],
@@ -13977,7 +13977,7 @@
           "nfl_team": "BUF",
           "injury_status": null,
           "projected": 154.89660937,
-          "adp": 11.15,
+          "adp": 11.17,
           "week_projected": 20.88,
           "opponent": "MIA",
           "on_bye": false,
@@ -14098,7 +14098,7 @@
           "nfl_team": "DET",
           "injury_status": null,
           "projected": 96.28797405,
-          "adp": 83.64,
+          "adp": 83.99,
           "week_projected": 11.16,
           "opponent": "TB",
           "on_bye": false,
@@ -14110,8 +14110,8 @@
           "avg_pts": 12.7,
           "proj_avg": 12.0,
           "pos_rank": 20,
-          "pct_owned": 93.2,
-          "pct_started": 64.5,
+          "pct_owned": 93.1,
+          "pct_started": 64.4,
           "bye_weeks": [
             6
           ],
@@ -14204,7 +14204,7 @@
           "nfl_team": "WAS",
           "injury_status": null,
           "projected": 83.06172504,
-          "adp": 164.35,
+          "adp": 164.18,
           "week_projected": 10.06,
           "opponent": "CIN",
           "on_bye": false,
@@ -14216,8 +14216,8 @@
           "avg_pts": 7.3,
           "proj_avg": 10.4,
           "pos_rank": 33,
-          "pct_owned": 50.6,
-          "pct_started": 39.8,
+          "pct_owned": 52.0,
+          "pct_started": 41.0,
           "bye_weeks": [
             7
           ],
@@ -14298,8 +14298,8 @@
           "position": "RB",
           "nfl_team": "PIT",
           "injury_status": null,
-          "projected": 124.47884995,
-          "adp": 71.99,
+          "projected": 124.48077875,
+          "adp": 72.32,
           "week_projected": 15.68,
           "opponent": "PHI",
           "on_bye": false,
@@ -14420,7 +14420,7 @@
           "nfl_team": "SEA",
           "injury_status": null,
           "projected": 149.04873199,
-          "adp": 4.81,
+          "adp": 4.83,
           "week_projected": 0.0,
           "opponent": "BYE",
           "on_bye": true,
@@ -14433,7 +14433,7 @@
           "proj_avg": 21.3,
           "pos_rank": 1,
           "pct_owned": 99.9,
-          "pct_started": 27.2,
+          "pct_started": 26.1,
           "bye_weeks": [
             11
           ],
@@ -14544,7 +14544,7 @@
           "nfl_team": "KC",
           "injury_status": null,
           "projected": 155.31573501,
-          "adp": 80.67,
+          "adp": 80.59,
           "week_projected": 21.78,
           "opponent": "ARI",
           "on_bye": false,
@@ -14557,7 +14557,7 @@
           "proj_avg": 19.4,
           "pos_rank": 9,
           "pct_owned": 95.2,
-          "pct_started": 67.0,
+          "pct_started": 67.4,
           "bye_weeks": [
             5
           ],
@@ -14662,7 +14662,7 @@
           "nfl_team": "BUF",
           "injury_status": null,
           "projected": 154.89660937,
-          "adp": 11.15,
+          "adp": 11.17,
           "week_projected": 20.88,
           "opponent": "MIA",
           "on_bye": false,
@@ -14783,8 +14783,8 @@
           "position": "RB",
           "nfl_team": "PIT",
           "injury_status": null,
-          "projected": 124.47884995,
-          "adp": 71.99,
+          "projected": 124.48077875,
+          "adp": 72.32,
           "week_projected": 15.68,
           "opponent": "PHI",
           "on_bye": false,
@@ -14906,7 +14906,7 @@
           "nfl_team": "SEA",
           "injury_status": null,
           "projected": 149.04873199,
-          "adp": 4.81,
+          "adp": 4.83,
           "week_projected": 0.0,
           "opponent": "BYE",
           "on_bye": true,
@@ -14919,7 +14919,7 @@
           "proj_avg": 21.3,
           "pos_rank": 1,
           "pct_owned": 99.9,
-          "pct_started": 27.2,
+          "pct_started": 26.1,
           "bye_weeks": [
             11
           ],
@@ -15029,7 +15029,7 @@
           "nfl_team": "GB",
           "injury_status": null,
           "projected": 124.52364438,
-          "adp": 55.96,
+          "adp": 56.31,
           "week_projected": 0.0,
           "opponent": "BYE",
           "on_bye": true,
@@ -15042,7 +15042,7 @@
           "proj_avg": 17.8,
           "pos_rank": 6,
           "pct_owned": 96.8,
-          "pct_started": 16.5,
+          "pct_started": 15.5,
           "bye_weeks": [
             11
           ],
@@ -15146,7 +15146,7 @@
           "nfl_team": "WAS",
           "injury_status": null,
           "projected": 83.06172504,
-          "adp": 164.35,
+          "adp": 164.18,
           "week_projected": 10.06,
           "opponent": "CIN",
           "on_bye": false,
@@ -15158,8 +15158,8 @@
           "avg_pts": 7.3,
           "proj_avg": 10.4,
           "pos_rank": 33,
-          "pct_owned": 50.6,
-          "pct_started": 39.8,
+          "pct_owned": 52.0,
+          "pct_started": 41.0,
           "bye_weeks": [
             7
           ],
@@ -15242,7 +15242,7 @@
           "nfl_team": "IND",
           "injury_status": null,
           "projected": 65.8402695,
-          "adp": 136.2,
+          "adp": 137.02,
           "week_projected": 9.38,
           "opponent": "HOU",
           "on_bye": false,
@@ -15255,7 +15255,7 @@
           "proj_avg": 9.4,
           "pos_rank": 1,
           "pct_owned": 85.0,
-          "pct_started": 79.6,
+          "pct_started": 79.5,
           "bye_weeks": [
             13
           ],
@@ -15327,7 +15327,7 @@
           "nfl_team": "SEA",
           "injury_status": null,
           "projected": 52.46425641,
-          "adp": 98.57,
+          "adp": 98.62,
           "week_projected": 0.0,
           "opponent": "BYE",
           "on_bye": true,
@@ -15339,8 +15339,8 @@
           "avg_pts": 8.9,
           "proj_avg": 3.1,
           "pos_rank": 3,
-          "pct_owned": 89.2,
-          "pct_started": 33.1,
+          "pct_owned": 88.9,
+          "pct_started": 31.9,
           "bye_weeks": [
             11
           ],
@@ -15407,7 +15407,7 @@
           "nfl_team": "CHI",
           "injury_status": null,
           "projected": 120.57868992,
-          "adp": 49.61,
+          "adp": 49.75,
           "week_projected": 16.85,
           "opponent": "NO",
           "on_bye": false,
@@ -15420,7 +15420,7 @@
           "proj_avg": 15.1,
           "pos_rank": 12,
           "pct_owned": 97.6,
-          "pct_started": 78.2,
+          "pct_started": 79.0,
           "bye_weeks": [
             10
           ],
@@ -15532,7 +15532,7 @@
           "nfl_team": "KC",
           "injury_status": null,
           "projected": 100.56548853,
-          "adp": 47.24,
+          "adp": 47.36,
           "week_projected": 12.78,
           "opponent": "ARI",
           "on_bye": false,
@@ -15545,7 +15545,7 @@
           "proj_avg": 12.6,
           "pos_rank": 43,
           "pct_owned": 96.1,
-          "pct_started": 76.6,
+          "pct_started": 76.5,
           "bye_weeks": [
             5
           ],
@@ -15626,7 +15626,7 @@
           "nfl_team": "DET",
           "injury_status": null,
           "projected": 96.28797405,
-          "adp": 83.64,
+          "adp": 83.99,
           "week_projected": 11.16,
           "opponent": "TB",
           "on_bye": false,
@@ -15638,8 +15638,8 @@
           "avg_pts": 12.7,
           "proj_avg": 12.0,
           "pos_rank": 20,
-          "pct_owned": 93.2,
-          "pct_started": 64.5,
+          "pct_owned": 93.1,
+          "pct_started": 64.4,
           "bye_weeks": [
             6
           ],
@@ -15731,8 +15731,8 @@
           "position": "RB",
           "nfl_team": "KC",
           "injury_status": null,
-          "projected": 73.26764229,
-          "adp": 138.11,
+          "projected": 73.26762664,
+          "adp": 136.76,
           "week_projected": 20.19,
           "opponent": "ARI",
           "on_bye": false,
@@ -15744,8 +15744,8 @@
           "avg_pts": 10.7,
           "proj_avg": 9.2,
           "pos_rank": 23,
-          "pct_owned": 88.0,
-          "pct_started": 75.8,
+          "pct_owned": 88.9,
+          "pct_started": 79.2,
           "bye_weeks": [
             5
           ],
@@ -15843,8 +15843,8 @@
           "position": "TE",
           "nfl_team": "CLE",
           "injury_status": null,
-          "projected": 71.82683247,
-          "adp": 87.32,
+          "projected": 71.82681419,
+          "adp": 87.39,
           "week_projected": 0.0,
           "opponent": "BYE",
           "on_bye": true,
@@ -15856,8 +15856,8 @@
           "avg_pts": 11.8,
           "proj_avg": 10.3,
           "pos_rank": 5,
-          "pct_owned": 89.7,
-          "pct_started": 27.5,
+          "pct_owned": 89.6,
+          "pct_started": 26.7,
           "bye_weeks": [
             11
           ],
@@ -15955,9 +15955,9 @@
           "position": "D/ST",
           "nfl_team": "CHI",
           "injury_status": null,
-          "projected": 39.36823451,
-          "adp": 161.03,
-          "week_projected": 6.01,
+          "projected": 38.58966823,
+          "adp": 161.06,
+          "week_projected": 5.91,
           "opponent": "NO",
           "on_bye": false,
           "week_pts": 0.0,
@@ -15968,8 +15968,8 @@
           "avg_pts": 7.7,
           "proj_avg": 2.3,
           "pos_rank": 6,
-          "pct_owned": 64.2,
-          "pct_started": 48.4,
+          "pct_owned": 64.6,
+          "pct_started": 49.0,
           "bye_weeks": [
             10
           ],
@@ -16098,8 +16098,8 @@
           "position": "D/ST",
           "nfl_team": "BUF",
           "injury_status": null,
-          "projected": 49.40598061,
-          "adp": 161.06,
+          "projected": 48.7298201,
+          "adp": 161.1,
           "week_projected": 7.12,
           "opponent": "MIA",
           "on_bye": false,
@@ -16111,8 +16111,8 @@
           "avg_pts": 5.7,
           "proj_avg": 2.9,
           "pos_rank": 16,
-          "pct_owned": 78.3,
-          "pct_started": 72.6,
+          "pct_owned": 78.7,
+          "pct_started": 73.1,
           "bye_weeks": [
             7
           ],
@@ -16173,7 +16173,7 @@
           "nfl_team": "MIN",
           "injury_status": null,
           "projected": 51.98327677,
-          "adp": 93.73,
+          "adp": 93.69,
           "week_projected": 4.47,
           "opponent": "SF",
           "on_bye": false,
@@ -16186,7 +16186,7 @@
           "proj_avg": 3.1,
           "pos_rank": 1,
           "pct_owned": 87.0,
-          "pct_started": 55.7,
+          "pct_started": 55.6,
           "bye_weeks": [
             6
           ],
@@ -16247,7 +16247,7 @@
           "nfl_team": "LA",
           "injury_status": null,
           "projected": 81.01618274,
-          "adp": 114.91,
+          "adp": 115.02,
           "week_projected": 0.0,
           "opponent": "BYE",
           "on_bye": true,
@@ -16260,7 +16260,7 @@
           "proj_avg": 11.6,
           "pos_rank": 18,
           "pct_owned": 82.8,
-          "pct_started": 8.8,
+          "pct_started": 8.3,
           "bye_weeks": [
             11
           ],
@@ -16373,9 +16373,9 @@
           "position": "WR",
           "nfl_team": "CAR",
           "injury_status": null,
-          "projected": 66.98445298,
-          "adp": 138.07,
-          "week_projected": 8.78,
+          "projected": 66.98731224,
+          "adp": 138.56,
+          "week_projected": 8.79,
           "opponent": "BAL",
           "on_bye": false,
           "week_pts": 0.0,
@@ -16386,8 +16386,8 @@
           "avg_pts": 10.8,
           "proj_avg": 8.4,
           "pos_rank": 36,
-          "pct_owned": 78.3,
-          "pct_started": 28.5,
+          "pct_owned": 78.1,
+          "pct_started": 28.1,
           "bye_weeks": [
             5
           ],
@@ -16476,7 +16476,7 @@
           "nfl_team": "MIN",
           "injury_status": null,
           "projected": 130.27844239,
-          "adp": 146.63,
+          "adp": 146.74,
           "week_projected": 14.66,
           "opponent": "SF",
           "on_bye": false,
@@ -16488,8 +16488,8 @@
           "avg_pts": 18.8,
           "proj_avg": 16.3,
           "pos_rank": 7,
-          "pct_owned": 67.1,
-          "pct_started": 30.4,
+          "pct_owned": 67.2,
+          "pct_started": 30.5,
           "bye_weeks": [
             6
           ],
@@ -16600,7 +16600,7 @@
           "nfl_team": "MIN",
           "injury_status": null,
           "projected": 83.64092975,
-          "adp": 124.33,
+          "adp": 124.25,
           "week_projected": 10.07,
           "opponent": "SF",
           "on_bye": false,
@@ -16673,8 +16673,8 @@
           "position": "RB",
           "nfl_team": "LAC",
           "injury_status": null,
-          "projected": 87.85262371,
-          "adp": 49.81,
+          "projected": 87.85260076,
+          "adp": 49.61,
           "week_projected": 13.46,
           "opponent": "NYJ",
           "on_bye": false,
@@ -16686,8 +16686,8 @@
           "avg_pts": 9.5,
           "proj_avg": 11.0,
           "pos_rank": 28,
-          "pct_owned": 90.9,
-          "pct_started": 63.7,
+          "pct_owned": 91.1,
+          "pct_started": 64.3,
           "bye_weeks": [
             7
           ],
@@ -16787,8 +16787,8 @@
           "position": "RB",
           "nfl_team": "CLE",
           "injury_status": null,
-          "projected": 85.27941907,
-          "adp": 81.13,
+          "projected": 85.27941127,
+          "adp": 81.21,
           "week_projected": 0.0,
           "opponent": "BYE",
           "on_bye": true,
@@ -16800,8 +16800,8 @@
           "avg_pts": 12.0,
           "proj_avg": 12.2,
           "pos_rank": 21,
-          "pct_owned": 92.5,
-          "pct_started": 22.6,
+          "pct_owned": 92.4,
+          "pct_started": 21.8,
           "bye_weeks": [
             11
           ],
@@ -16914,9 +16914,9 @@
           "position": "WR",
           "nfl_team": "NO",
           "injury_status": null,
-          "projected": 92.56656444,
-          "adp": 147.41,
-          "week_projected": 11.74,
+          "projected": 92.58186464,
+          "adp": 146.92,
+          "week_projected": 11.75,
           "opponent": "CHI",
           "on_bye": false,
           "week_pts": 0.0,
@@ -16927,8 +16927,8 @@
           "avg_pts": 12.0,
           "proj_avg": 13.2,
           "pos_rank": 110,
-          "pct_owned": 70.0,
-          "pct_started": 35.6,
+          "pct_owned": 70.5,
+          "pct_started": 36.3,
           "bye_weeks": [
             8
           ],
@@ -16995,7 +16995,7 @@
           "nfl_team": "KC",
           "injury_status": null,
           "projected": 89.6840564,
-          "adp": 91.26,
+          "adp": 91.44,
           "week_projected": 11.34,
           "opponent": "ARI",
           "on_bye": false,
@@ -17101,7 +17101,7 @@
           "nfl_team": "MIN",
           "injury_status": null,
           "projected": 159.33958582,
-          "adp": 13.49,
+          "adp": 13.47,
           "week_projected": 19.96,
           "opponent": "SF",
           "on_bye": false,
@@ -17203,8 +17203,8 @@
           "position": "RB",
           "nfl_team": "DAL",
           "injury_status": null,
-          "projected": 114.31232858,
-          "adp": 34.55,
+          "projected": 114.312323,
+          "adp": 34.69,
           "week_projected": 19.54,
           "opponent": "TEN",
           "on_bye": false,
@@ -17337,8 +17337,8 @@
           "position": "RB",
           "nfl_team": "KC",
           "injury_status": "Out",
-          "projected": 164.17026524,
-          "adp": 13.71,
+          "projected": 164.17024692,
+          "adp": 13.95,
           "week_projected": 0.0,
           "opponent": "ARI",
           "on_bye": false,
@@ -17351,7 +17351,7 @@
           "proj_avg": 23.4,
           "pos_rank": 4,
           "pct_owned": 99.9,
-          "pct_started": 36.0,
+          "pct_started": 31.0,
           "bye_weeks": [
             5
           ],
@@ -17459,8 +17459,8 @@
           "position": "WR",
           "nfl_team": "GB",
           "injury_status": null,
-          "projected": 105.31043448,
-          "adp": 50.5,
+          "projected": 105.31046101,
+          "adp": 50.93,
           "week_projected": 0.0,
           "opponent": "BYE",
           "on_bye": true,
@@ -17473,7 +17473,7 @@
           "proj_avg": 15.0,
           "pos_rank": 4,
           "pct_owned": 97.3,
-          "pct_started": 16.8,
+          "pct_started": 15.9,
           "bye_weeks": [
             11
           ],
@@ -17576,7 +17576,7 @@
           "nfl_team": "MIN",
           "injury_status": null,
           "projected": 130.27844239,
-          "adp": 146.63,
+          "adp": 146.74,
           "week_projected": 14.66,
           "opponent": "SF",
           "on_bye": false,
@@ -17588,8 +17588,8 @@
           "avg_pts": 18.8,
           "proj_avg": 16.3,
           "pos_rank": 7,
-          "pct_owned": 67.1,
-          "pct_started": 30.4,
+          "pct_owned": 67.2,
+          "pct_started": 30.5,
           "bye_weeks": [
             6
           ],
@@ -17700,8 +17700,8 @@
           "position": "RB",
           "nfl_team": "KC",
           "injury_status": "Out",
-          "projected": 164.17026524,
-          "adp": 13.71,
+          "projected": 164.17024692,
+          "adp": 13.95,
           "week_projected": 0.0,
           "opponent": "ARI",
           "on_bye": false,
@@ -17714,7 +17714,7 @@
           "proj_avg": 23.4,
           "pos_rank": 4,
           "pct_owned": 99.9,
-          "pct_started": 36.0,
+          "pct_started": 31.0,
           "bye_weeks": [
             5
           ],
@@ -17823,8 +17823,8 @@
           "position": "RB",
           "nfl_team": "DAL",
           "injury_status": null,
-          "projected": 114.31232858,
-          "adp": 34.55,
+          "projected": 114.312323,
+          "adp": 34.69,
           "week_projected": 19.54,
           "opponent": "TEN",
           "on_bye": false,
@@ -17959,7 +17959,7 @@
           "nfl_team": "MIN",
           "injury_status": null,
           "projected": 159.33958582,
-          "adp": 13.49,
+          "adp": 13.47,
           "week_projected": 19.96,
           "opponent": "SF",
           "on_bye": false,
@@ -18062,8 +18062,8 @@
           "position": "WR",
           "nfl_team": "GB",
           "injury_status": null,
-          "projected": 105.31043448,
-          "adp": 50.5,
+          "projected": 105.31046101,
+          "adp": 50.93,
           "week_projected": 0.0,
           "opponent": "BYE",
           "on_bye": true,
@@ -18076,7 +18076,7 @@
           "proj_avg": 15.0,
           "pos_rank": 4,
           "pct_owned": 97.3,
-          "pct_started": 16.8,
+          "pct_started": 15.9,
           "bye_weeks": [
             11
           ],
@@ -18178,7 +18178,7 @@
           "nfl_team": "KC",
           "injury_status": null,
           "projected": 89.6840564,
-          "adp": 91.26,
+          "adp": 91.44,
           "week_projected": 11.34,
           "opponent": "ARI",
           "on_bye": false,
@@ -18285,7 +18285,7 @@
           "nfl_team": "MIN",
           "injury_status": null,
           "projected": 83.64092975,
-          "adp": 124.33,
+          "adp": 124.25,
           "week_projected": 10.07,
           "opponent": "SF",
           "on_bye": false,
@@ -18360,7 +18360,7 @@
           "nfl_team": "MIN",
           "injury_status": null,
           "projected": 51.98327677,
-          "adp": 93.73,
+          "adp": 93.69,
           "week_projected": 4.47,
           "opponent": "SF",
           "on_bye": false,
@@ -18373,7 +18373,7 @@
           "proj_avg": 3.1,
           "pos_rank": 1,
           "pct_owned": 87.0,
-          "pct_started": 55.7,
+          "pct_started": 55.6,
           "bye_weeks": [
             6
           ],
@@ -18434,9 +18434,9 @@
           "position": "WR",
           "nfl_team": "NO",
           "injury_status": null,
-          "projected": 92.56656444,
-          "adp": 147.41,
-          "week_projected": 11.74,
+          "projected": 92.58186464,
+          "adp": 146.92,
+          "week_projected": 11.75,
           "opponent": "CHI",
           "on_bye": false,
           "week_pts": 0.0,
@@ -18447,8 +18447,8 @@
           "avg_pts": 12.0,
           "proj_avg": 13.2,
           "pos_rank": 110,
-          "pct_owned": 70.0,
-          "pct_started": 35.6,
+          "pct_owned": 70.5,
+          "pct_started": 36.3,
           "bye_weeks": [
             8
           ],
@@ -18517,8 +18517,8 @@
           "position": "RB",
           "nfl_team": "LAC",
           "injury_status": null,
-          "projected": 87.85262371,
-          "adp": 49.81,
+          "projected": 87.85260076,
+          "adp": 49.61,
           "week_projected": 13.46,
           "opponent": "NYJ",
           "on_bye": false,
@@ -18530,8 +18530,8 @@
           "avg_pts": 9.5,
           "proj_avg": 11.0,
           "pos_rank": 28,
-          "pct_owned": 90.9,
-          "pct_started": 63.7,
+          "pct_owned": 91.1,
+          "pct_started": 64.3,
           "bye_weeks": [
             7
           ],
@@ -18631,8 +18631,8 @@
           "position": "RB",
           "nfl_team": "CLE",
           "injury_status": null,
-          "projected": 85.27941907,
-          "adp": 81.13,
+          "projected": 85.27941127,
+          "adp": 81.21,
           "week_projected": 0.0,
           "opponent": "BYE",
           "on_bye": true,
@@ -18644,8 +18644,8 @@
           "avg_pts": 12.0,
           "proj_avg": 12.2,
           "pos_rank": 21,
-          "pct_owned": 92.5,
-          "pct_started": 22.6,
+          "pct_owned": 92.4,
+          "pct_started": 21.8,
           "bye_weeks": [
             11
           ],
@@ -18759,7 +18759,7 @@
           "nfl_team": "LA",
           "injury_status": null,
           "projected": 81.01618274,
-          "adp": 114.91,
+          "adp": 115.02,
           "week_projected": 0.0,
           "opponent": "BYE",
           "on_bye": true,
@@ -18772,7 +18772,7 @@
           "proj_avg": 11.6,
           "pos_rank": 18,
           "pct_owned": 82.8,
-          "pct_started": 8.8,
+          "pct_started": 8.3,
           "bye_weeks": [
             11
           ],
@@ -18885,9 +18885,9 @@
           "position": "WR",
           "nfl_team": "CAR",
           "injury_status": null,
-          "projected": 66.98445298,
-          "adp": 138.07,
-          "week_projected": 8.78,
+          "projected": 66.98731224,
+          "adp": 138.56,
+          "week_projected": 8.79,
           "opponent": "BAL",
           "on_bye": false,
           "week_pts": 0.0,
@@ -18898,8 +18898,8 @@
           "avg_pts": 10.8,
           "proj_avg": 8.4,
           "pos_rank": 36,
-          "pct_owned": 78.3,
-          "pct_started": 28.5,
+          "pct_owned": 78.1,
+          "pct_started": 28.1,
           "bye_weeks": [
             5
           ],
@@ -18987,8 +18987,8 @@
           "position": "D/ST",
           "nfl_team": "BUF",
           "injury_status": null,
-          "projected": 49.40598061,
-          "adp": 161.06,
+          "projected": 48.7298201,
+          "adp": 161.1,
           "week_projected": 7.12,
           "opponent": "MIA",
           "on_bye": false,
@@ -19000,8 +19000,8 @@
           "avg_pts": 5.7,
           "proj_avg": 2.9,
           "pos_rank": 16,
-          "pct_owned": 78.3,
-          "pct_started": 72.6,
+          "pct_owned": 78.7,
+          "pct_started": 73.1,
           "bye_weeks": [
             7
           ],
@@ -19131,7 +19131,7 @@
           "nfl_team": "GB",
           "injury_status": null,
           "projected": 41.52762763,
-          "adp": 162.94,
+          "adp": 163.06,
           "week_projected": 0.0,
           "opponent": "BYE",
           "on_bye": true,
@@ -19143,8 +19143,8 @@
           "avg_pts": 7.1,
           "proj_avg": 2.4,
           "pos_rank": 4,
-          "pct_owned": 28.2,
-          "pct_started": 7.4,
+          "pct_owned": 27.9,
+          "pct_started": 7.0,
           "bye_weeks": [
             11
           ],
@@ -19210,7 +19210,7 @@
           "nfl_team": "DET",
           "injury_status": null,
           "projected": 75.71208818,
-          "adp": 156.87,
+          "adp": 157.04,
           "week_projected": 9.11,
           "opponent": "TB",
           "on_bye": false,
@@ -19222,7 +19222,7 @@
           "avg_pts": 9.3,
           "proj_avg": 9.5,
           "pos_rank": 12,
-          "pct_owned": 53.3,
+          "pct_owned": 53.2,
           "pct_started": 45.7,
           "bye_weeks": [
             6
@@ -19283,8 +19283,8 @@
           "position": "QB",
           "nfl_team": "WAS",
           "injury_status": null,
-          "projected": 162.65155739,
-          "adp": 58.46,
+          "projected": 162.65125937,
+          "adp": 58.41,
           "week_projected": 19.57,
           "opponent": "CIN",
           "on_bye": false,
@@ -19392,8 +19392,8 @@
           "position": "RB",
           "nfl_team": "HOU",
           "injury_status": "Out",
-          "projected": 56.07886524,
-          "adp": 161.8,
+          "projected": 56.07885763,
+          "adp": 162.02,
           "week_projected": 0.0,
           "opponent": "IND",
           "on_bye": false,
@@ -19517,7 +19517,7 @@
           "nfl_team": "CHI",
           "injury_status": null,
           "projected": 97.54556454,
-          "adp": 52.04,
+          "adp": 52.03,
           "week_projected": 12.64,
           "opponent": "NO",
           "on_bye": false,
@@ -19529,8 +19529,8 @@
           "avg_pts": 9.3,
           "proj_avg": 12.2,
           "pos_rank": 16,
-          "pct_owned": 96.4,
-          "pct_started": 75.2,
+          "pct_owned": 96.5,
+          "pct_started": 75.9,
           "bye_weeks": [
             10
           ],
@@ -19617,8 +19617,8 @@
           "position": "TE",
           "nfl_team": "IND",
           "injury_status": null,
-          "projected": 57.32358981,
-          "adp": 72.26,
+          "projected": 57.32357129,
+          "adp": 72.45,
           "week_projected": 8.64,
           "opponent": "HOU",
           "on_bye": false,
@@ -19740,7 +19740,7 @@
           "nfl_team": "CHI",
           "injury_status": null,
           "projected": 116.81752986,
-          "adp": 70.85,
+          "adp": 70.69,
           "week_projected": 15.09,
           "opponent": "NO",
           "on_bye": false,
@@ -19753,7 +19753,7 @@
           "proj_avg": 14.6,
           "pos_rank": 15,
           "pct_owned": 94.5,
-          "pct_started": 68.2,
+          "pct_started": 68.9,
           "bye_weeks": [
             10
           ],
@@ -19867,8 +19867,8 @@
           "avg_pts": 6.1,
           "proj_avg": 8.7,
           "pos_rank": 53,
-          "pct_owned": 77.8,
-          "pct_started": 9.4,
+          "pct_owned": 77.6,
+          "pct_started": 9.0,
           "bye_weeks": [
             11
           ],
@@ -19964,8 +19964,8 @@
           "position": "WR",
           "nfl_team": "SF",
           "injury_status": "Questionable",
-          "projected": 99.92518886,
-          "adp": 102.16,
+          "projected": 99.9251828,
+          "adp": 102.25,
           "week_projected": 11.47,
           "opponent": "MIN",
           "on_bye": false,
@@ -19978,7 +19978,7 @@
           "proj_avg": 14.3,
           "pos_rank": 34,
           "pct_owned": 91.6,
-          "pct_started": 14.7,
+          "pct_started": 15.9,
           "bye_weeks": [
             8
           ],
@@ -20060,7 +20060,7 @@
           "nfl_team": "DET",
           "injury_status": null,
           "projected": 133.69351456,
-          "adp": 125.97,
+          "adp": 126.23,
           "week_projected": 14.76,
           "opponent": "TB",
           "on_bye": false,
@@ -20072,8 +20072,8 @@
           "avg_pts": 18.6,
           "proj_avg": 16.7,
           "pos_rank": 11,
-          "pct_owned": 88.3,
-          "pct_started": 41.0,
+          "pct_owned": 88.2,
+          "pct_started": 40.9,
           "bye_weeks": [
             6
           ],
@@ -20175,9 +20175,9 @@
           "position": "WR",
           "nfl_team": "PHI",
           "injury_status": null,
-          "projected": 105.12690743,
-          "adp": 68.53,
-          "week_projected": 13.01,
+          "projected": 105.38822687,
+          "adp": 68.26,
+          "week_projected": 13.27,
           "opponent": "PIT",
           "on_bye": false,
           "week_pts": 0.0,
@@ -20186,10 +20186,10 @@
           "kickoff": "2026-11-22T18:00",
           "season_pts": 69.0,
           "avg_pts": 17.2,
-          "proj_avg": 13.1,
+          "proj_avg": 13.2,
           "pos_rank": 54,
-          "pct_owned": 94.7,
-          "pct_started": 48.5,
+          "pct_owned": 94.8,
+          "pct_started": 50.0,
           "bye_weeks": [
             10
           ],
@@ -20263,7 +20263,7 @@
           "position": "WR",
           "nfl_team": "CIN",
           "injury_status": null,
-          "projected": 199.55422992,
+          "projected": 199.55422893,
           "adp": 4.15,
           "week_projected": 25.41,
           "opponent": "WSH",
@@ -20371,7 +20371,7 @@
           "nfl_team": "ARI",
           "injury_status": null,
           "projected": 54.96817072,
-          "adp": 164.32,
+          "adp": 164.41,
           "week_projected": 7.12,
           "opponent": "KC",
           "on_bye": false,
@@ -20383,8 +20383,8 @@
           "avg_pts": 9.2,
           "proj_avg": 7.8,
           "pos_rank": 26,
-          "pct_owned": 56.4,
-          "pct_started": 18.5,
+          "pct_owned": 56.1,
+          "pct_started": 18.4,
           "bye_weeks": [
             14
           ],
@@ -20499,8 +20499,8 @@
           "position": "WR",
           "nfl_team": "NYJ",
           "injury_status": null,
-          "projected": 96.02586267,
-          "adp": 50.96,
+          "projected": 96.02585051,
+          "adp": 51.06,
           "week_projected": 14.09,
           "opponent": "LAC",
           "on_bye": false,
@@ -20513,7 +20513,7 @@
           "proj_avg": 13.7,
           "pos_rank": 18,
           "pct_owned": 97.8,
-          "pct_started": 80.5,
+          "pct_started": 80.8,
           "bye_weeks": [
             13
           ],
@@ -20608,8 +20608,8 @@
           "position": "RB",
           "nfl_team": "CIN",
           "injury_status": null,
-          "projected": 125.4593015,
-          "adp": 25.69,
+          "projected": 125.45931906,
+          "adp": 25.62,
           "week_projected": 15.6,
           "opponent": "WSH",
           "on_bye": false,
@@ -20622,7 +20622,7 @@
           "proj_avg": 15.7,
           "pos_rank": 17,
           "pct_owned": 98.6,
-          "pct_started": 87.8,
+          "pct_started": 87.7,
           "bye_weeks": [
             6
           ],
@@ -20731,8 +20731,8 @@
           "position": "QB",
           "nfl_team": "WAS",
           "injury_status": null,
-          "projected": 162.65155739,
-          "adp": 58.46,
+          "projected": 162.65125937,
+          "adp": 58.41,
           "week_projected": 19.57,
           "opponent": "CIN",
           "on_bye": false,
@@ -20841,8 +20841,8 @@
           "position": "RB",
           "nfl_team": "CIN",
           "injury_status": null,
-          "projected": 125.4593015,
-          "adp": 25.69,
+          "projected": 125.45931906,
+          "adp": 25.62,
           "week_projected": 15.6,
           "opponent": "WSH",
           "on_bye": false,
@@ -20855,7 +20855,7 @@
           "proj_avg": 15.7,
           "pos_rank": 17,
           "pct_owned": 98.6,
-          "pct_started": 87.8,
+          "pct_started": 87.7,
           "bye_weeks": [
             6
           ],
@@ -20976,8 +20976,8 @@
           "avg_pts": 6.1,
           "proj_avg": 8.7,
           "pos_rank": 53,
-          "pct_owned": 77.8,
-          "pct_started": 9.4,
+          "pct_owned": 77.6,
+          "pct_started": 9.0,
           "bye_weeks": [
             11
           ],
@@ -21074,7 +21074,7 @@
           "position": "WR",
           "nfl_team": "CIN",
           "injury_status": null,
-          "projected": 199.55422992,
+          "projected": 199.55422893,
           "adp": 4.15,
           "week_projected": 25.41,
           "opponent": "WSH",
@@ -21183,7 +21183,7 @@
           "nfl_team": "CHI",
           "injury_status": null,
           "projected": 116.81752986,
-          "adp": 70.85,
+          "adp": 70.69,
           "week_projected": 15.09,
           "opponent": "NO",
           "on_bye": false,
@@ -21196,7 +21196,7 @@
           "proj_avg": 14.6,
           "pos_rank": 15,
           "pct_owned": 94.5,
-          "pct_started": 68.2,
+          "pct_started": 68.9,
           "bye_weeks": [
             10
           ],
@@ -21299,7 +21299,7 @@
           "nfl_team": "CHI",
           "injury_status": null,
           "projected": 97.54556454,
-          "adp": 52.04,
+          "adp": 52.03,
           "week_projected": 12.64,
           "opponent": "NO",
           "on_bye": false,
@@ -21311,8 +21311,8 @@
           "avg_pts": 9.3,
           "proj_avg": 12.2,
           "pos_rank": 16,
-          "pct_owned": 96.4,
-          "pct_started": 75.2,
+          "pct_owned": 96.5,
+          "pct_started": 75.9,
           "bye_weeks": [
             10
           ],
@@ -21401,7 +21401,7 @@
           "nfl_team": "DET",
           "injury_status": null,
           "projected": 75.71208818,
-          "adp": 156.87,
+          "adp": 157.04,
           "week_projected": 9.11,
           "opponent": "TB",
           "on_bye": false,
@@ -21413,7 +21413,7 @@
           "avg_pts": 9.3,
           "proj_avg": 9.5,
           "pos_rank": 12,
-          "pct_owned": 53.3,
+          "pct_owned": 53.2,
           "pct_started": 45.7,
           "bye_weeks": [
             6
@@ -21476,7 +21476,7 @@
           "nfl_team": "GB",
           "injury_status": null,
           "projected": 41.52762763,
-          "adp": 162.94,
+          "adp": 163.06,
           "week_projected": 0.0,
           "opponent": "BYE",
           "on_bye": true,
@@ -21488,8 +21488,8 @@
           "avg_pts": 7.1,
           "proj_avg": 2.4,
           "pos_rank": 4,
-          "pct_owned": 28.2,
-          "pct_started": 7.4,
+          "pct_owned": 27.9,
+          "pct_started": 7.0,
           "bye_weeks": [
             11
           ],
@@ -21555,9 +21555,9 @@
           "position": "WR",
           "nfl_team": "PHI",
           "injury_status": null,
-          "projected": 105.12690743,
-          "adp": 68.53,
-          "week_projected": 13.01,
+          "projected": 105.38822687,
+          "adp": 68.26,
+          "week_projected": 13.27,
           "opponent": "PIT",
           "on_bye": false,
           "week_pts": 0.0,
@@ -21566,10 +21566,10 @@
           "kickoff": "2026-11-22T18:00",
           "season_pts": 69.0,
           "avg_pts": 17.2,
-          "proj_avg": 13.1,
+          "proj_avg": 13.2,
           "pos_rank": 54,
-          "pct_owned": 94.7,
-          "pct_started": 48.5,
+          "pct_owned": 94.8,
+          "pct_started": 50.0,
           "bye_weeks": [
             10
           ],
@@ -21647,7 +21647,7 @@
           "nfl_team": "DET",
           "injury_status": null,
           "projected": 133.69351456,
-          "adp": 125.97,
+          "adp": 126.23,
           "week_projected": 14.76,
           "opponent": "TB",
           "on_bye": false,
@@ -21659,8 +21659,8 @@
           "avg_pts": 18.6,
           "proj_avg": 16.7,
           "pos_rank": 11,
-          "pct_owned": 88.3,
-          "pct_started": 41.0,
+          "pct_owned": 88.2,
+          "pct_started": 40.9,
           "bye_weeks": [
             6
           ],
@@ -21762,8 +21762,8 @@
           "position": "WR",
           "nfl_team": "SF",
           "injury_status": "Questionable",
-          "projected": 99.92518886,
-          "adp": 102.16,
+          "projected": 99.9251828,
+          "adp": 102.25,
           "week_projected": 11.47,
           "opponent": "MIN",
           "on_bye": false,
@@ -21776,7 +21776,7 @@
           "proj_avg": 14.3,
           "pos_rank": 34,
           "pct_owned": 91.6,
-          "pct_started": 14.7,
+          "pct_started": 15.9,
           "bye_weeks": [
             8
           ],
@@ -21857,8 +21857,8 @@
           "position": "WR",
           "nfl_team": "NYJ",
           "injury_status": null,
-          "projected": 96.02586267,
-          "adp": 50.96,
+          "projected": 96.02585051,
+          "adp": 51.06,
           "week_projected": 14.09,
           "opponent": "LAC",
           "on_bye": false,
@@ -21871,7 +21871,7 @@
           "proj_avg": 13.7,
           "pos_rank": 18,
           "pct_owned": 97.8,
-          "pct_started": 80.5,
+          "pct_started": 80.8,
           "bye_weeks": [
             13
           ],
@@ -21966,8 +21966,8 @@
           "position": "TE",
           "nfl_team": "IND",
           "injury_status": null,
-          "projected": 57.32358981,
-          "adp": 72.26,
+          "projected": 57.32357129,
+          "adp": 72.45,
           "week_projected": 8.64,
           "opponent": "HOU",
           "on_bye": false,
@@ -22088,8 +22088,8 @@
           "position": "RB",
           "nfl_team": "HOU",
           "injury_status": "Out",
-          "projected": 56.07886524,
-          "adp": 161.8,
+          "projected": 56.07885763,
+          "adp": 162.02,
           "week_projected": 0.0,
           "opponent": "IND",
           "on_bye": false,
@@ -22213,7 +22213,7 @@
           "nfl_team": "ARI",
           "injury_status": null,
           "projected": 54.96817072,
-          "adp": 164.32,
+          "adp": 164.41,
           "week_projected": 7.12,
           "opponent": "KC",
           "on_bye": false,
@@ -22225,8 +22225,8 @@
           "avg_pts": 9.2,
           "proj_avg": 7.8,
           "pos_rank": 26,
-          "pct_owned": 56.4,
-          "pct_started": 18.5,
+          "pct_owned": 56.1,
+          "pct_started": 18.4,
           "bye_weeks": [
             14
           ],
@@ -22335,7 +22335,7 @@
           "current_slot": "RB"
         }
       ],
-      "projected": 985.3,
+      "projected": 985.6,
       "unfilled": [],
       "rank": 7
     },
@@ -22410,9 +22410,9 @@
           "position": "D/ST",
           "nfl_team": "BAL",
           "injury_status": null,
-          "projected": 40.50844398,
-          "adp": 154.58,
-          "week_projected": 4.85,
+          "projected": 40.57086427,
+          "adp": 154.61,
+          "week_projected": 4.9,
           "opponent": "CAR",
           "on_bye": false,
           "week_pts": 0.0,
@@ -22423,8 +22423,8 @@
           "avg_pts": 3.7,
           "proj_avg": 2.4,
           "pos_rank": 25,
-          "pct_owned": 59.8,
-          "pct_started": 47.2,
+          "pct_owned": 59.4,
+          "pct_started": 46.8,
           "bye_weeks": [
             13
           ],
@@ -22490,7 +22490,7 @@
           "nfl_team": "DET",
           "injury_status": null,
           "projected": 81.99812789,
-          "adp": 90.0,
+          "adp": 90.24,
           "week_projected": 9.53,
           "opponent": "TB",
           "on_bye": false,
@@ -22502,7 +22502,7 @@
           "avg_pts": 10.6,
           "proj_avg": 10.2,
           "pos_rank": 7,
-          "pct_owned": 95.5,
+          "pct_owned": 95.4,
           "pct_started": 74.3,
           "bye_weeks": [
             6
@@ -22595,8 +22595,8 @@
           "position": "WR",
           "nfl_team": "TB",
           "injury_status": null,
-          "projected": 88.06913856,
-          "adp": 76.54,
+          "projected": 88.06913808,
+          "adp": 76.67,
           "week_projected": 10.91,
           "opponent": "DET",
           "on_bye": false,
@@ -22609,7 +22609,7 @@
           "proj_avg": 11.0,
           "pos_rank": 45,
           "pct_owned": 91.7,
-          "pct_started": 44.1,
+          "pct_started": 44.6,
           "bye_weeks": [
             10
           ],
@@ -22700,7 +22700,7 @@
           "nfl_team": "PIT",
           "injury_status": null,
           "projected": 82.356427,
-          "adp": 155.91,
+          "adp": 156.07,
           "week_projected": 10.16,
           "opponent": "PHI",
           "on_bye": false,
@@ -22712,8 +22712,8 @@
           "avg_pts": 9.1,
           "proj_avg": 10.3,
           "pos_rank": 14,
-          "pct_owned": 62.1,
-          "pct_started": 50.5,
+          "pct_owned": 62.3,
+          "pct_started": 50.7,
           "bye_weeks": [
             9
           ],
@@ -22773,8 +22773,8 @@
           "position": "WR",
           "nfl_team": "LA",
           "injury_status": "IR",
-          "projected": 88.78966898,
-          "adp": 93.39,
+          "projected": 88.7896828,
+          "adp": 93.14,
           "week_projected": 0.0,
           "opponent": "BYE",
           "on_bye": true,
@@ -22786,8 +22786,8 @@
           "avg_pts": 17.0,
           "proj_avg": 14.8,
           "pos_rank": 26,
-          "pct_owned": 90.4,
-          "pct_started": 8.6,
+          "pct_owned": 90.5,
+          "pct_started": 8.5,
           "bye_weeks": [
             11
           ],
@@ -22872,8 +22872,8 @@
           "position": "RB",
           "nfl_team": "BAL",
           "injury_status": null,
-          "projected": 97.02134322,
-          "adp": 27.67,
+          "projected": 97.02466855,
+          "adp": 27.75,
           "week_projected": 14.54,
           "opponent": "CAR",
           "on_bye": false,
@@ -22886,7 +22886,7 @@
           "proj_avg": 13.9,
           "pos_rank": 10,
           "pct_owned": 99.6,
-          "pct_started": 93.4,
+          "pct_started": 93.2,
           "bye_weeks": [
             13
           ],
@@ -23006,8 +23006,8 @@
           "position": "QB",
           "nfl_team": "DAL",
           "injury_status": null,
-          "projected": 127.17838982,
-          "adp": 84.9,
+          "projected": 127.17816337,
+          "adp": 84.74,
           "week_projected": 21.9,
           "opponent": "TEN",
           "on_bye": false,
@@ -23019,8 +23019,8 @@
           "avg_pts": 20.2,
           "proj_avg": 18.2,
           "pos_rank": 5,
-          "pct_owned": 94.8,
-          "pct_started": 75.8,
+          "pct_owned": 94.9,
+          "pct_started": 76.2,
           "bye_weeks": [
             14
           ],
@@ -23135,7 +23135,7 @@
           "nfl_team": "SF",
           "injury_status": null,
           "projected": 161.43480721,
-          "adp": 6.91,
+          "adp": 6.88,
           "week_projected": 19.81,
           "opponent": "MIN",
           "on_bye": false,
@@ -23263,9 +23263,9 @@
           "position": "TE",
           "nfl_team": "PHI",
           "injury_status": null,
-          "projected": 64.58740806,
-          "adp": 134.05,
-          "week_projected": 8.1,
+          "projected": 64.66527842,
+          "adp": 134.25,
+          "week_projected": 8.18,
           "opponent": "PIT",
           "on_bye": false,
           "week_pts": 0.0,
@@ -23276,8 +23276,8 @@
           "avg_pts": 10.6,
           "proj_avg": 8.1,
           "pos_rank": 23,
-          "pct_owned": 74.0,
-          "pct_started": 30.3,
+          "pct_owned": 74.2,
+          "pct_started": 31.0,
           "bye_weeks": [
             10
           ],
@@ -23361,8 +23361,8 @@
           "position": "WR",
           "nfl_team": "CIN",
           "injury_status": null,
-          "projected": 131.57773216,
-          "adp": 29.99,
+          "projected": 131.57773151,
+          "adp": 30.14,
           "week_projected": 16.77,
           "opponent": "WSH",
           "on_bye": false,
@@ -23466,8 +23466,8 @@
           "position": "RB",
           "nfl_team": "NE",
           "injury_status": null,
-          "projected": 86.40422693,
-          "adp": 111.2,
+          "projected": 87.11675727,
+          "adp": 111.48,
           "week_projected": 0.0,
           "opponent": "BYE",
           "on_bye": true,
@@ -23477,10 +23477,10 @@
           "kickoff": null,
           "season_pts": 115.2,
           "avg_pts": 11.5,
-          "proj_avg": 12.3,
+          "proj_avg": 12.4,
           "pos_rank": 19,
-          "pct_owned": 88.6,
-          "pct_started": 11.6,
+          "pct_owned": 88.5,
+          "pct_started": 11.2,
           "bye_weeks": [
             11
           ],
@@ -23595,9 +23595,9 @@
           "name": "Rachaad White",
           "position": "RB",
           "nfl_team": "WAS",
-          "injury_status": null,
-          "projected": 62.82644123,
-          "adp": 141.95,
+          "injury_status": "Questionable",
+          "projected": 62.8264152,
+          "adp": 142.22,
           "week_projected": 7.71,
           "opponent": "CIN",
           "on_bye": false,
@@ -23609,8 +23609,8 @@
           "avg_pts": 9.5,
           "proj_avg": 7.8,
           "pos_rank": 30,
-          "pct_owned": 70.1,
-          "pct_started": 24.1,
+          "pct_owned": 69.8,
+          "pct_started": 23.4,
           "bye_weeks": [
             7
           ],
@@ -23713,9 +23713,9 @@
           "position": "WR",
           "nfl_team": "NO",
           "injury_status": null,
-          "projected": 111.85718733,
-          "adp": 31.62,
-          "week_projected": 14.13,
+          "projected": 111.87501074,
+          "adp": 31.85,
+          "week_projected": 14.15,
           "opponent": "CHI",
           "on_bye": false,
           "week_pts": 0.0,
@@ -23727,7 +23727,7 @@
           "proj_avg": 14.0,
           "pos_rank": 10,
           "pct_owned": 99.2,
-          "pct_started": 87.7,
+          "pct_started": 87.6,
           "bye_weeks": [
             8
           ],
@@ -23817,7 +23817,7 @@
           "nfl_team": "SF",
           "injury_status": null,
           "projected": 153.6853825,
-          "adp": 53.46,
+          "adp": 53.51,
           "week_projected": 17.58,
           "opponent": "MIN",
           "on_bye": false,
@@ -23830,7 +23830,7 @@
           "proj_avg": 19.2,
           "pos_rank": 4,
           "pct_owned": 98.7,
-          "pct_started": 61.9,
+          "pct_started": 61.6,
           "bye_weeks": [
             8
           ],
@@ -23937,8 +23937,8 @@
           "position": "WR",
           "nfl_team": "NE",
           "injury_status": null,
-          "projected": 50.32688856,
-          "adp": 168.08,
+          "projected": 55.73723731,
+          "adp": 168.12,
           "week_projected": 0.0,
           "opponent": "BYE",
           "on_bye": true,
@@ -23948,10 +23948,10 @@
           "kickoff": null,
           "season_pts": 97.8,
           "avg_pts": 9.8,
-          "proj_avg": 7.2,
+          "proj_avg": 8.0,
           "pos_rank": 28,
-          "pct_owned": 54.6,
-          "pct_started": 5.4,
+          "pct_owned": 54.2,
+          "pct_started": 4.9,
           "bye_weeks": [
             11
           ],
@@ -24052,7 +24052,7 @@
           "nfl_team": "SF",
           "injury_status": null,
           "projected": 153.6853825,
-          "adp": 53.46,
+          "adp": 53.51,
           "week_projected": 17.58,
           "opponent": "MIN",
           "on_bye": false,
@@ -24065,7 +24065,7 @@
           "proj_avg": 19.2,
           "pos_rank": 4,
           "pct_owned": 98.7,
-          "pct_started": 61.9,
+          "pct_started": 61.6,
           "bye_weeks": [
             8
           ],
@@ -24174,7 +24174,7 @@
           "nfl_team": "SF",
           "injury_status": null,
           "projected": 161.43480721,
-          "adp": 6.91,
+          "adp": 6.88,
           "week_projected": 19.81,
           "opponent": "MIN",
           "on_bye": false,
@@ -24303,8 +24303,8 @@
           "position": "RB",
           "nfl_team": "BAL",
           "injury_status": null,
-          "projected": 97.02134322,
-          "adp": 27.67,
+          "projected": 97.02466855,
+          "adp": 27.75,
           "week_projected": 14.54,
           "opponent": "CAR",
           "on_bye": false,
@@ -24317,7 +24317,7 @@
           "proj_avg": 13.9,
           "pos_rank": 10,
           "pct_owned": 99.6,
-          "pct_started": 93.4,
+          "pct_started": 93.2,
           "bye_weeks": [
             13
           ],
@@ -24438,8 +24438,8 @@
           "position": "WR",
           "nfl_team": "CIN",
           "injury_status": null,
-          "projected": 131.57773216,
-          "adp": 29.99,
+          "projected": 131.57773151,
+          "adp": 30.14,
           "week_projected": 16.77,
           "opponent": "WSH",
           "on_bye": false,
@@ -24544,9 +24544,9 @@
           "position": "WR",
           "nfl_team": "NO",
           "injury_status": null,
-          "projected": 111.85718733,
-          "adp": 31.62,
-          "week_projected": 14.13,
+          "projected": 111.87501074,
+          "adp": 31.85,
+          "week_projected": 14.15,
           "opponent": "CHI",
           "on_bye": false,
           "week_pts": 0.0,
@@ -24558,7 +24558,7 @@
           "proj_avg": 14.0,
           "pos_rank": 10,
           "pct_owned": 99.2,
-          "pct_started": 87.7,
+          "pct_started": 87.6,
           "bye_weeks": [
             8
           ],
@@ -24649,7 +24649,7 @@
           "nfl_team": "DET",
           "injury_status": null,
           "projected": 81.99812789,
-          "adp": 90.0,
+          "adp": 90.24,
           "week_projected": 9.53,
           "opponent": "TB",
           "on_bye": false,
@@ -24661,7 +24661,7 @@
           "avg_pts": 10.6,
           "proj_avg": 10.2,
           "pos_rank": 7,
-          "pct_owned": 95.5,
+          "pct_owned": 95.4,
           "pct_started": 74.3,
           "bye_weeks": [
             6
@@ -24756,7 +24756,7 @@
           "nfl_team": "PIT",
           "injury_status": null,
           "projected": 82.356427,
-          "adp": 155.91,
+          "adp": 156.07,
           "week_projected": 10.16,
           "opponent": "PHI",
           "on_bye": false,
@@ -24768,8 +24768,8 @@
           "avg_pts": 9.1,
           "proj_avg": 10.3,
           "pos_rank": 14,
-          "pct_owned": 62.1,
-          "pct_started": 50.5,
+          "pct_owned": 62.3,
+          "pct_started": 50.7,
           "bye_weeks": [
             9
           ],
@@ -24830,9 +24830,9 @@
           "position": "D/ST",
           "nfl_team": "BAL",
           "injury_status": null,
-          "projected": 40.50844398,
-          "adp": 154.58,
-          "week_projected": 4.85,
+          "projected": 40.57086427,
+          "adp": 154.61,
+          "week_projected": 4.9,
           "opponent": "CAR",
           "on_bye": false,
           "week_pts": 0.0,
@@ -24843,8 +24843,8 @@
           "avg_pts": 3.7,
           "proj_avg": 2.4,
           "pos_rank": 25,
-          "pct_owned": 59.8,
-          "pct_started": 47.2,
+          "pct_owned": 59.4,
+          "pct_started": 46.8,
           "bye_weeks": [
             13
           ],
@@ -24910,8 +24910,8 @@
           "position": "WR",
           "nfl_team": "LA",
           "injury_status": "IR",
-          "projected": 88.78966898,
-          "adp": 93.39,
+          "projected": 88.7896828,
+          "adp": 93.14,
           "week_projected": 0.0,
           "opponent": "BYE",
           "on_bye": true,
@@ -24923,8 +24923,8 @@
           "avg_pts": 17.0,
           "proj_avg": 14.8,
           "pos_rank": 26,
-          "pct_owned": 90.4,
-          "pct_started": 8.6,
+          "pct_owned": 90.5,
+          "pct_started": 8.5,
           "bye_weeks": [
             11
           ],
@@ -25012,8 +25012,8 @@
           "position": "QB",
           "nfl_team": "DAL",
           "injury_status": null,
-          "projected": 127.17838982,
-          "adp": 84.9,
+          "projected": 127.17816337,
+          "adp": 84.74,
           "week_projected": 21.9,
           "opponent": "TEN",
           "on_bye": false,
@@ -25025,8 +25025,8 @@
           "avg_pts": 20.2,
           "proj_avg": 18.2,
           "pos_rank": 5,
-          "pct_owned": 94.8,
-          "pct_started": 75.8,
+          "pct_owned": 94.9,
+          "pct_started": 76.2,
           "bye_weeks": [
             14
           ],
@@ -25140,8 +25140,8 @@
           "position": "WR",
           "nfl_team": "TB",
           "injury_status": null,
-          "projected": 88.06913856,
-          "adp": 76.54,
+          "projected": 88.06913808,
+          "adp": 76.67,
           "week_projected": 10.91,
           "opponent": "DET",
           "on_bye": false,
@@ -25154,7 +25154,7 @@
           "proj_avg": 11.0,
           "pos_rank": 45,
           "pct_owned": 91.7,
-          "pct_started": 44.1,
+          "pct_started": 44.6,
           "bye_weeks": [
             10
           ],
@@ -25244,8 +25244,8 @@
           "position": "RB",
           "nfl_team": "NE",
           "injury_status": null,
-          "projected": 86.40422693,
-          "adp": 111.2,
+          "projected": 87.11675727,
+          "adp": 111.48,
           "week_projected": 0.0,
           "opponent": "BYE",
           "on_bye": true,
@@ -25255,10 +25255,10 @@
           "kickoff": null,
           "season_pts": 115.2,
           "avg_pts": 11.5,
-          "proj_avg": 12.3,
+          "proj_avg": 12.4,
           "pos_rank": 19,
-          "pct_owned": 88.6,
-          "pct_started": 11.6,
+          "pct_owned": 88.5,
+          "pct_started": 11.2,
           "bye_weeks": [
             11
           ],
@@ -25374,9 +25374,9 @@
           "position": "TE",
           "nfl_team": "PHI",
           "injury_status": null,
-          "projected": 64.58740806,
-          "adp": 134.05,
-          "week_projected": 8.1,
+          "projected": 64.66527842,
+          "adp": 134.25,
+          "week_projected": 8.18,
           "opponent": "PIT",
           "on_bye": false,
           "week_pts": 0.0,
@@ -25387,8 +25387,8 @@
           "avg_pts": 10.6,
           "proj_avg": 8.1,
           "pos_rank": 23,
-          "pct_owned": 74.0,
-          "pct_started": 30.3,
+          "pct_owned": 74.2,
+          "pct_started": 31.0,
           "bye_weeks": [
             10
           ],
@@ -25471,9 +25471,9 @@
           "name": "Rachaad White",
           "position": "RB",
           "nfl_team": "WAS",
-          "injury_status": null,
-          "projected": 62.82644123,
-          "adp": 141.95,
+          "injury_status": "Questionable",
+          "projected": 62.8264152,
+          "adp": 142.22,
           "week_projected": 7.71,
           "opponent": "CIN",
           "on_bye": false,
@@ -25485,8 +25485,8 @@
           "avg_pts": 9.5,
           "proj_avg": 7.8,
           "pos_rank": 30,
-          "pct_owned": 70.1,
-          "pct_started": 24.1,
+          "pct_owned": 69.8,
+          "pct_started": 23.4,
           "bye_weeks": [
             7
           ],
@@ -25589,8 +25589,8 @@
           "position": "WR",
           "nfl_team": "NE",
           "injury_status": null,
-          "projected": 50.32688856,
-          "adp": 168.08,
+          "projected": 55.73723731,
+          "adp": 168.12,
           "week_projected": 0.0,
           "opponent": "BYE",
           "on_bye": true,
@@ -25600,10 +25600,10 @@
           "kickoff": null,
           "season_pts": 97.8,
           "avg_pts": 9.8,
-          "proj_avg": 7.2,
+          "proj_avg": 8.0,
           "pos_rank": 28,
-          "pct_owned": 54.6,
-          "pct_started": 5.4,
+          "pct_owned": 54.2,
+          "pct_started": 4.9,
           "bye_weeks": [
             11
           ],
@@ -25695,7 +25695,7 @@
           "current_slot": "BE"
         }
       ],
-      "projected": 949.2,
+      "projected": 949.3,
       "unfilled": [],
       "rank": 8
     }
@@ -25708,8 +25708,8 @@
       "position": "QB",
       "nfl_team": "CHI",
       "injury_status": null,
-      "projected": 135.36935501,
-      "adp": 83.09,
+      "projected": 135.36931853,
+      "adp": 83.03,
       "week_projected": 18.95,
       "opponent": "NO",
       "on_bye": false,
@@ -25722,7 +25722,7 @@
       "proj_avg": 16.9,
       "pos_rank": 22,
       "pct_owned": 90.8,
-      "pct_started": 49.4,
+      "pct_started": 50.0,
       "bye_weeks": [
         10
       ],
@@ -25811,9 +25811,9 @@
       "position": "QB",
       "nfl_team": "NO",
       "injury_status": null,
-      "projected": 122.93659401,
-      "adp": 149.71,
-      "week_projected": 14.91,
+      "projected": 122.92516672,
+      "adp": 149.9,
+      "week_projected": 14.9,
       "opponent": "CHI",
       "on_bye": false,
       "week_pts": 0.0,
@@ -25824,8 +25824,8 @@
       "avg_pts": 17.3,
       "proj_avg": 15.4,
       "pos_rank": 13,
-      "pct_owned": 64.2,
-      "pct_started": 22.9,
+      "pct_owned": 64.1,
+      "pct_started": 22.7,
       "bye_weeks": [
         8
       ],
@@ -25928,9 +25928,9 @@
       "position": "QB",
       "nfl_team": "CAR",
       "injury_status": null,
-      "projected": 122.76485662,
-      "adp": 153.49,
-      "week_projected": 17.39,
+      "projected": 122.74956741,
+      "adp": 153.75,
+      "week_projected": 17.37,
       "opponent": "BAL",
       "on_bye": false,
       "week_pts": 0.0,
@@ -25942,7 +25942,7 @@
       "proj_avg": 15.3,
       "pos_rank": 14,
       "pct_owned": 77.0,
-      "pct_started": 37.5,
+      "pct_started": 37.4,
       "bye_weeks": [
         5
       ],
@@ -26042,9 +26042,9 @@
       "position": "QB",
       "nfl_team": "PIT",
       "injury_status": null,
-      "projected": 122.47150358,
-      "adp": 165.97,
-      "week_projected": 15.13,
+      "projected": 122.50575565,
+      "adp": 166.0,
+      "week_projected": 15.16,
       "opponent": "PHI",
       "on_bye": false,
       "week_pts": 0.0,
@@ -26055,8 +26055,8 @@
       "avg_pts": 14.8,
       "proj_avg": 15.3,
       "pos_rank": 18,
-      "pct_owned": 38.5,
-      "pct_started": 17.6,
+      "pct_owned": 38.6,
+      "pct_started": 17.7,
       "bye_weeks": [
         9
       ],
@@ -26155,7 +26155,7 @@
       "nfl_team": "NYG",
       "injury_status": null,
       "projected": 120.81727212,
-      "adp": 166.96,
+      "adp": 166.87,
       "week_projected": 13.37,
       "opponent": "JAX",
       "on_bye": false,
@@ -26168,7 +26168,7 @@
       "proj_avg": 15.1,
       "pos_rank": 34,
       "pct_owned": 25.6,
-      "pct_started": 10.6,
+      "pct_started": 10.5,
       "bye_weeks": [
         8
       ],
@@ -26248,7 +26248,7 @@
       "nfl_team": "TEN",
       "injury_status": null,
       "projected": 116.05081523,
-      "adp": 168.59,
+      "adp": 168.54,
       "week_projected": 16.95,
       "opponent": "DAL",
       "on_bye": false,
@@ -26260,8 +26260,8 @@
       "avg_pts": 13.3,
       "proj_avg": 14.5,
       "pos_rank": 21,
-      "pct_owned": 33.1,
-      "pct_started": 26.8,
+      "pct_owned": 33.8,
+      "pct_started": 27.5,
       "bye_weeks": [
         9
       ],
@@ -26363,8 +26363,8 @@
       "position": "QB",
       "nfl_team": "CLE",
       "injury_status": null,
-      "projected": 115.70792318,
-      "adp": 169.01,
+      "projected": 115.70792298,
+      "adp": 168.98,
       "week_projected": 0.0,
       "opponent": "BYE",
       "on_bye": true,
@@ -26377,7 +26377,7 @@
       "proj_avg": 16.5,
       "pos_rank": 15,
       "pct_owned": 11.3,
-      "pct_started": 1.4,
+      "pct_started": 1.3,
       "bye_weeks": [
         11
       ],
@@ -26485,7 +26485,7 @@
       "nfl_team": "LV",
       "injury_status": null,
       "projected": 110.89255337,
-      "adp": 165.15,
+      "adp": 165.07,
       "week_projected": 14.41,
       "opponent": "DEN",
       "on_bye": false,
@@ -26497,8 +26497,8 @@
       "avg_pts": 4.0,
       "proj_avg": 15.8,
       "pos_rank": 44,
-      "pct_owned": 21.3,
-      "pct_started": 8.0,
+      "pct_owned": 21.5,
+      "pct_started": 8.1,
       "bye_weeks": [
         13
       ],
@@ -26571,8 +26571,8 @@
       "position": "QB",
       "nfl_team": "TB",
       "injury_status": "Questionable",
-      "projected": 102.51853637,
-      "adp": 166.97,
+      "projected": 102.51853389,
+      "adp": 166.96,
       "week_projected": 12.02,
       "opponent": "DET",
       "on_bye": false,
@@ -26585,7 +26585,7 @@
       "proj_avg": 14.7,
       "pos_rank": 35,
       "pct_owned": 17.6,
-      "pct_started": 1.7,
+      "pct_started": 1.9,
       "bye_weeks": [
         10
       ],
@@ -26671,7 +26671,7 @@
       "nfl_team": "LA",
       "injury_status": null,
       "projected": 98.88799663,
-      "adp": 132.63,
+      "adp": 132.67,
       "week_projected": 0.0,
       "opponent": "BYE",
       "on_bye": true,
@@ -26683,8 +26683,8 @@
       "avg_pts": 16.3,
       "proj_avg": 14.1,
       "pos_rank": 12,
-      "pct_owned": 84.6,
-      "pct_started": 13.8,
+      "pct_owned": 84.5,
+      "pct_started": 13.3,
       "bye_weeks": [
         11
       ],
@@ -26789,9 +26789,9 @@
       "name": "Geno Smith",
       "position": "QB",
       "nfl_team": "NYJ",
-      "injury_status": "Questionable",
+      "injury_status": null,
       "projected": 96.18233799,
-      "adp": 169.51,
+      "adp": 169.5,
       "week_projected": 14.19,
       "opponent": "LAC",
       "on_bye": false,
@@ -26803,8 +26803,8 @@
       "avg_pts": 13.6,
       "proj_avg": 16.0,
       "pos_rank": 16,
-      "pct_owned": 16.3,
-      "pct_started": 4.7,
+      "pct_owned": 16.2,
+      "pct_started": 4.8,
       "bye_weeks": [
         13
       ],
@@ -26911,7 +26911,7 @@
       "nfl_team": "LAC",
       "injury_status": null,
       "projected": 95.44966217,
-      "adp": 132.94,
+      "adp": 132.79,
       "week_projected": 14.66,
       "opponent": "NYJ",
       "on_bye": false,
@@ -26923,8 +26923,8 @@
       "avg_pts": 10.8,
       "proj_avg": 11.9,
       "pos_rank": 25,
-      "pct_owned": 35.2,
-      "pct_started": 15.5,
+      "pct_owned": 35.4,
+      "pct_started": 15.7,
       "bye_weeks": [
         7
       ],
@@ -27027,8 +27027,8 @@
       "position": "QB",
       "nfl_team": "ATL",
       "injury_status": null,
-      "projected": 94.02666193,
-      "adp": 169.48,
+      "projected": 94.02653545,
+      "adp": 169.46,
       "week_projected": 0.0,
       "opponent": "BYE",
       "on_bye": true,
@@ -27040,8 +27040,8 @@
       "avg_pts": 13.6,
       "proj_avg": 13.4,
       "pos_rank": 23,
-      "pct_owned": 10.0,
-      "pct_started": 1.3,
+      "pct_owned": 9.9,
+      "pct_started": 1.2,
       "bye_weeks": [
         11
       ],
@@ -27144,7 +27144,7 @@
       "nfl_team": "SEA",
       "injury_status": "Out",
       "projected": 92.92865371,
-      "adp": 168.61,
+      "adp": 168.57,
       "week_projected": 0.0,
       "opponent": "BYE",
       "on_bye": true,
@@ -27252,9 +27252,9 @@
       "position": "WR",
       "nfl_team": "PIT",
       "injury_status": null,
-      "projected": 92.76703398,
-      "adp": 111.93,
-      "week_projected": 11.12,
+      "projected": 92.76999369,
+      "adp": 112.2,
+      "week_projected": 11.13,
       "opponent": "PHI",
       "on_bye": false,
       "week_pts": 0.0,
@@ -27266,7 +27266,7 @@
       "proj_avg": 11.6,
       "pos_rank": 29,
       "pct_owned": 88.5,
-      "pct_started": 49.9,
+      "pct_started": 50.0,
       "bye_weeks": [
         9
       ],
@@ -27355,9 +27355,9 @@
       "name": "Jakobi Meyers",
       "position": "WR",
       "nfl_team": "JAC",
-      "injury_status": "Questionable",
-      "projected": 91.11409152,
-      "adp": 138.26,
+      "injury_status": null,
+      "projected": 91.1140734,
+      "adp": 138.4,
       "week_projected": 10.91,
       "opponent": "NYG",
       "on_bye": false,
@@ -27461,8 +27461,8 @@
       "position": "RB",
       "nfl_team": "HOU",
       "injury_status": null,
-      "projected": 90.11659832,
-      "adp": 114.32,
+      "projected": 90.11659867,
+      "adp": 113.88,
       "week_projected": 13.67,
       "opponent": "IND",
       "on_bye": false,
@@ -27567,7 +27567,7 @@
       "nfl_team": "CHI",
       "injury_status": null,
       "projected": 88.63356682,
-      "adp": 103.27,
+      "adp": 103.39,
       "week_projected": 11.47,
       "opponent": "NO",
       "on_bye": false,
@@ -27579,8 +27579,8 @@
       "avg_pts": 9.9,
       "proj_avg": 11.1,
       "pos_rank": 35,
-      "pct_owned": 87.4,
-      "pct_started": 46.0,
+      "pct_owned": 87.5,
+      "pct_started": 46.5,
       "bye_weeks": [
         10
       ],
@@ -27667,8 +27667,8 @@
       "position": "WR",
       "nfl_team": "CLE",
       "injury_status": null,
-      "projected": 83.03331133,
-      "adp": 153.38,
+      "projected": 83.03331093,
+      "adp": 153.5,
       "week_projected": 0.0,
       "opponent": "BYE",
       "on_bye": true,
@@ -27680,8 +27680,8 @@
       "avg_pts": 10.5,
       "proj_avg": 11.9,
       "pos_rank": 24,
-      "pct_owned": 74.8,
-      "pct_started": 7.2,
+      "pct_owned": 74.7,
+      "pct_started": 6.7,
       "bye_weeks": [
         11
       ],
@@ -27779,7 +27779,7 @@
       "nfl_team": "MIN",
       "injury_status": null,
       "projected": 81.48929613,
-      "adp": 160.58,
+      "adp": 160.57,
       "week_projected": 8.57,
       "opponent": "SF",
       "on_bye": false,
@@ -27792,7 +27792,7 @@
       "proj_avg": 10.2,
       "pos_rank": 63,
       "pct_owned": 56.0,
-      "pct_started": 18.0,
+      "pct_started": 18.1,
       "bye_weeks": [
         6
       ],
@@ -27867,8 +27867,8 @@
       "position": "WR",
       "nfl_team": "LAC",
       "injury_status": "Questionable",
-      "projected": 80.94521323,
-      "adp": 98.09,
+      "projected": 80.94523226,
+      "adp": 98.22,
       "week_projected": 10.75,
       "opponent": "NYJ",
       "on_bye": false,
@@ -27958,7 +27958,7 @@
       "nfl_team": "TB",
       "injury_status": null,
       "projected": 78.34669744,
-      "adp": 153.72,
+      "adp": 153.63,
       "week_projected": 9.51,
       "opponent": "DET",
       "on_bye": false,
@@ -27970,8 +27970,8 @@
       "avg_pts": 11.0,
       "proj_avg": 9.8,
       "pos_rank": 5,
-      "pct_owned": 33.7,
-      "pct_started": 22.6,
+      "pct_owned": 33.9,
+      "pct_started": 22.8,
       "bye_weeks": [
         10
       ],
@@ -28030,7 +28030,7 @@
       "position": "QB",
       "nfl_team": "ARI",
       "injury_status": "Questionable",
-      "projected": 78.20362164,
+      "projected": 78.2036169,
       "adp": 169.6,
       "week_projected": 0.0,
       "opponent": "KC",
@@ -28044,7 +28044,7 @@
       "proj_avg": 13.0,
       "pos_rank": 58,
       "pct_owned": 1.2,
-      "pct_started": 0.4,
+      "pct_started": 0.3,
       "bye_weeks": [
         14
       ],
@@ -28112,8 +28112,8 @@
       "position": "WR",
       "nfl_team": "MIA",
       "injury_status": null,
-      "projected": 77.26874357,
-      "adp": 166.2,
+      "projected": 77.26871604,
+      "adp": 166.15,
       "week_projected": 9.67,
       "opponent": "BUF",
       "on_bye": false,
@@ -28125,8 +28125,8 @@
       "avg_pts": 11.8,
       "proj_avg": 11.0,
       "pos_rank": 52,
-      "pct_owned": 34.4,
-      "pct_started": 14.4,
+      "pct_owned": 34.8,
+      "pct_started": 14.6,
       "bye_weeks": [
         6
       ],
@@ -28205,7 +28205,7 @@
       "nfl_team": "MIN",
       "injury_status": null,
       "projected": 76.44704877,
-      "adp": 134.08,
+      "adp": 133.91,
       "week_projected": 8.42,
       "opponent": "SF",
       "on_bye": false,
@@ -28218,7 +28218,7 @@
       "proj_avg": 9.6,
       "pos_rank": 24,
       "pct_owned": 81.6,
-      "pct_started": 32.4,
+      "pct_started": 32.5,
       "bye_weeks": [
         6
       ],
@@ -28320,7 +28320,7 @@
       "nfl_team": "DEN",
       "injury_status": null,
       "projected": 76.21774274,
-      "adp": 129.51,
+      "adp": 129.5,
       "week_projected": 10.33,
       "opponent": "LV",
       "on_bye": false,
@@ -28332,8 +28332,8 @@
       "avg_pts": 7.1,
       "proj_avg": 9.5,
       "pos_rank": 59,
-      "pct_owned": 66.0,
-      "pct_started": 28.2,
+      "pct_owned": 66.2,
+      "pct_started": 28.6,
       "bye_weeks": [
         10
       ],
@@ -28421,8 +28421,8 @@
       "position": "WR",
       "nfl_team": "HOU",
       "injury_status": null,
-      "projected": 75.6028456,
-      "adp": 167.85,
+      "projected": 75.6028652,
+      "adp": 167.9,
       "week_projected": 10.68,
       "opponent": "IND",
       "on_bye": false,
@@ -28536,9 +28536,9 @@
       "position": "QB",
       "nfl_team": "BAL",
       "injury_status": null,
-      "projected": 75.45158421,
-      "adp": 169.17,
-      "week_projected": 11.49,
+      "projected": 75.48478977,
+      "adp": 169.14,
+      "week_projected": 11.52,
       "opponent": "CAR",
       "on_bye": false,
       "week_pts": 0.0,
@@ -28549,7 +28549,7 @@
       "avg_pts": 13.7,
       "proj_avg": 10.8,
       "pos_rank": 20,
-      "pct_owned": 13.9,
+      "pct_owned": 13.8,
       "pct_started": 5.0,
       "bye_weeks": [
         13
@@ -28656,7 +28656,7 @@
       "nfl_team": "BUF",
       "injury_status": null,
       "projected": 75.19138539,
-      "adp": 145.58,
+      "adp": 145.68,
       "week_projected": 10.05,
       "opponent": "MIA",
       "on_bye": false,
@@ -28668,8 +28668,8 @@
       "avg_pts": 9.3,
       "proj_avg": 9.4,
       "pos_rank": 39,
-      "pct_owned": 62.8,
-      "pct_started": 24.2,
+      "pct_owned": 62.9,
+      "pct_started": 24.3,
       "bye_weeks": [
         7
       ],
@@ -28759,7 +28759,7 @@
       "nfl_team": "NYG",
       "injury_status": null,
       "projected": 74.96800274,
-      "adp": 168.69,
+      "adp": 168.68,
       "week_projected": 9.0,
       "opponent": "JAX",
       "on_bye": false,
@@ -28771,8 +28771,8 @@
       "avg_pts": 8.4,
       "proj_avg": 9.4,
       "pos_rank": 17,
-      "pct_owned": 33.8,
-      "pct_started": 25.3,
+      "pct_owned": 33.6,
+      "pct_started": 25.1,
       "bye_weeks": [
         8
       ],
@@ -28832,7 +28832,7 @@
       "nfl_team": "LAC",
       "injury_status": null,
       "projected": 74.8102739,
-      "adp": 130.44,
+      "adp": 129.98,
       "week_projected": 10.23,
       "opponent": "NYJ",
       "on_bye": false,
@@ -28844,8 +28844,8 @@
       "avg_pts": 7.9,
       "proj_avg": 9.3,
       "pos_rank": 21,
-      "pct_owned": 57.6,
-      "pct_started": 49.6,
+      "pct_owned": 58.0,
+      "pct_started": 50.2,
       "bye_weeks": [
         7
       ],
@@ -28904,8 +28904,8 @@
       "position": "RB",
       "nfl_team": "TB",
       "injury_status": null,
-      "projected": 74.76164985,
-      "adp": 133.05,
+      "projected": 74.76164991,
+      "adp": 133.08,
       "week_projected": 8.85,
       "opponent": "DET",
       "on_bye": false,
@@ -28917,8 +28917,8 @@
       "avg_pts": 7.1,
       "proj_avg": 9.3,
       "pos_rank": 35,
-      "pct_owned": 57.7,
-      "pct_started": 19.1,
+      "pct_owned": 58.1,
+      "pct_started": 19.6,
       "bye_weeks": [
         10
       ],
@@ -29019,7 +29019,7 @@
       "nfl_team": "WAS",
       "injury_status": null,
       "projected": 74.18186753,
-      "adp": 169.16,
+      "adp": 169.11,
       "week_projected": 8.97,
       "opponent": "CIN",
       "on_bye": false,
@@ -29031,8 +29031,8 @@
       "avg_pts": 8.1,
       "proj_avg": 9.3,
       "pos_rank": 50,
-      "pct_owned": 20.3,
-      "pct_started": 8.1,
+      "pct_owned": 20.4,
+      "pct_started": 8.2,
       "bye_weeks": [
         7
       ],
@@ -29121,8 +29121,8 @@
       "position": "WR",
       "nfl_team": "CLE",
       "injury_status": null,
-      "projected": 73.64268839,
-      "adp": 144.27,
+      "projected": 73.64268803,
+      "adp": 144.31,
       "week_projected": 0.0,
       "opponent": "BYE",
       "on_bye": true,
@@ -29134,8 +29134,8 @@
       "avg_pts": 10.0,
       "proj_avg": 10.5,
       "pos_rank": 27,
-      "pct_owned": 66.2,
-      "pct_started": 6.0,
+      "pct_owned": 66.1,
+      "pct_started": 5.6,
       "bye_weeks": [
         11
       ],
@@ -29244,7 +29244,7 @@
       "nfl_team": "CHI",
       "injury_status": null,
       "projected": 73.4100978,
-      "adp": 164.12,
+      "adp": 164.04,
       "week_projected": 9.82,
       "opponent": "NO",
       "on_bye": false,
@@ -29256,8 +29256,8 @@
       "avg_pts": 8.8,
       "proj_avg": 9.2,
       "pos_rank": 15,
-      "pct_owned": 29.3,
-      "pct_started": 22.6,
+      "pct_owned": 29.5,
+      "pct_started": 22.9,
       "bye_weeks": [
         10
       ],
@@ -29329,8 +29329,8 @@
       "avg_pts": 7.9,
       "proj_avg": 9.1,
       "pos_rank": 21,
-      "pct_owned": 12.4,
-      "pct_started": 10.6,
+      "pct_owned": 12.7,
+      "pct_started": 10.9,
       "bye_weeks": [
         10
       ],
@@ -29389,8 +29389,8 @@
       "position": "RB",
       "nfl_team": "PIT",
       "injury_status": null,
-      "projected": 72.94800461,
-      "adp": 138.78,
+      "projected": 72.94933292,
+      "adp": 138.76,
       "week_projected": 9.14,
       "opponent": "PHI",
       "on_bye": false,
@@ -29402,8 +29402,8 @@
       "avg_pts": 8.3,
       "proj_avg": 9.1,
       "pos_rank": 48,
-      "pct_owned": 68.5,
-      "pct_started": 28.8,
+      "pct_owned": 68.6,
+      "pct_started": 29.1,
       "bye_weeks": [
         9
       ],
@@ -29490,8 +29490,8 @@
       "position": "WR",
       "nfl_team": "NYJ",
       "injury_status": null,
-      "projected": 72.72271917,
-      "adp": 168.37,
+      "projected": 72.72269776,
+      "adp": 168.32,
       "week_projected": 10.68,
       "opponent": "LAC",
       "on_bye": false,
@@ -29503,8 +29503,8 @@
       "avg_pts": 9.6,
       "proj_avg": 10.4,
       "pos_rank": 67,
-      "pct_owned": 45.6,
-      "pct_started": 25.1,
+      "pct_owned": 46.0,
+      "pct_started": 25.4,
       "bye_weeks": [
         13
       ],
@@ -29583,8 +29583,8 @@
       "position": "WR",
       "nfl_team": "KC",
       "injury_status": null,
-      "projected": 70.76807748,
-      "adp": 123.66,
+      "projected": 70.76808149,
+      "adp": 123.84,
       "week_projected": 9.15,
       "opponent": "ARI",
       "on_bye": false,
@@ -29596,7 +29596,7 @@
       "avg_pts": 9.0,
       "proj_avg": 8.8,
       "pos_rank": 32,
-      "pct_owned": 77.5,
+      "pct_owned": 77.6,
       "pct_started": 35.1,
       "bye_weeks": [
         5
@@ -29695,8 +29695,8 @@
       "position": "RB",
       "nfl_team": "CLE",
       "injury_status": null,
-      "projected": 70.03618034,
-      "adp": 168.84,
+      "projected": 70.03615171,
+      "adp": 168.81,
       "week_projected": 0.0,
       "opponent": "BYE",
       "on_bye": true,
@@ -29708,8 +29708,8 @@
       "avg_pts": 7.8,
       "proj_avg": 10.0,
       "pos_rank": 57,
-      "pct_owned": 20.6,
-      "pct_started": 2.0,
+      "pct_owned": 20.5,
+      "pct_started": 1.8,
       "bye_weeks": [
         11
       ],
@@ -29792,9 +29792,9 @@
       "name": "Treylon Burks",
       "position": "WR",
       "nfl_team": "WAS",
-      "injury_status": null,
+      "injury_status": "Questionable",
       "projected": 69.89235559,
-      "adp": 169.77,
+      "adp": 169.78,
       "week_projected": 8.5,
       "opponent": "CIN",
       "on_bye": false,
@@ -29807,7 +29807,7 @@
       "proj_avg": 8.7,
       "pos_rank": 74,
       "pct_owned": 7.8,
-      "pct_started": 2.8,
+      "pct_started": 2.7,
       "bye_weeks": [
         7
       ],
@@ -29888,7 +29888,7 @@
       "nfl_team": "WAS",
       "injury_status": null,
       "projected": 69.81889999,
-      "adp": 169.61,
+      "adp": 169.6,
       "week_projected": 8.64,
       "opponent": "CIN",
       "on_bye": false,
@@ -29960,8 +29960,8 @@
       "position": "TE",
       "nfl_team": "HOU",
       "injury_status": null,
-      "projected": 69.33066332,
-      "adp": 167.44,
+      "projected": 69.33066295,
+      "adp": 167.42,
       "week_projected": 8.66,
       "opponent": "IND",
       "on_bye": false,
@@ -30070,7 +30070,7 @@
       "nfl_team": "CLE",
       "injury_status": null,
       "projected": 68.99557073,
-      "adp": 169.53,
+      "adp": 169.51,
       "week_projected": 0.0,
       "opponent": "BYE",
       "on_bye": true,
@@ -30083,7 +30083,7 @@
       "proj_avg": 9.9,
       "pos_rank": 11,
       "pct_owned": 3.5,
-      "pct_started": 1.5,
+      "pct_started": 1.4,
       "bye_weeks": [
         11
       ],
@@ -30148,7 +30148,7 @@
       "nfl_team": "KC",
       "injury_status": null,
       "projected": 68.14781194,
-      "adp": 158.26,
+      "adp": 158.17,
       "week_projected": 9.3,
       "opponent": "ARI",
       "on_bye": false,
@@ -30214,106 +30214,14 @@
       ]
     },
     {
-      "player_id": "p_9486",
-      "espn_id": "4428850",
-      "name": "Dontayvion Wicks",
-      "position": "WR",
-      "nfl_team": "PHI",
-      "injury_status": "Questionable",
-      "projected": 67.90956773,
-      "adp": 169.59,
-      "week_projected": 8.39,
-      "opponent": "PIT",
-      "on_bye": false,
-      "week_pts": 0.0,
-      "played": 0,
-      "opp_rank": 16,
-      "kickoff": null,
-      "season_pts": 53.4,
-      "avg_pts": 8.9,
-      "proj_avg": 9.7,
-      "pos_rank": 70,
-      "pct_owned": 12.5,
-      "pct_started": 1.8,
-      "bye_weeks": [
-        10
-      ],
-      "history": [
-        {
-          "w": 1,
-          "pts": 15.3,
-          "played": true,
-          "tgt": 4.0,
-          "rec": 2.0,
-          "rey": 73.0,
-          "retd": 1.0
-        },
-        {
-          "w": 2,
-          "pts": 12.4,
-          "played": true,
-          "tgt": 6.0,
-          "rec": 5.0,
-          "rey": 74.0
-        },
-        {
-          "w": 3,
-          "pts": 5.2,
-          "played": true,
-          "tgt": 5.0,
-          "rec": 2.0,
-          "rey": 32.0
-        },
-        {
-          "w": 4,
-          "pts": 4.8,
-          "played": true,
-          "tgt": 5.0,
-          "rec": 3.0,
-          "rey": 18.0
-        },
-        {
-          "w": 5,
-          "pts": 11.3,
-          "played": true,
-          "tgt": 8.0,
-          "rec": 5.0,
-          "rey": 63.0
-        },
-        {
-          "w": 6,
-          "pts": 4.4,
-          "played": true,
-          "tgt": 4.0,
-          "rec": 2.0,
-          "rey": 24.0
-        },
-        {
-          "w": 7,
-          "pts": 0.0,
-          "played": false
-        },
-        {
-          "w": 8,
-          "pts": 0.0,
-          "played": false
-        },
-        {
-          "w": 9,
-          "pts": 0.0,
-          "played": false
-        }
-      ]
-    },
-    {
       "player_id": "p_9480",
       "espn_id": "4430539",
       "name": "Brenton Strange",
       "position": "TE",
       "nfl_team": "JAC",
       "injury_status": null,
-      "projected": 67.11585081,
-      "adp": 155.29,
+      "projected": 67.11584945,
+      "adp": 155.44,
       "week_projected": 8.01,
       "opponent": "NYG",
       "on_bye": false,
@@ -30325,8 +30233,8 @@
       "avg_pts": 8.9,
       "proj_avg": 8.4,
       "pos_rank": 20,
-      "pct_owned": 53.0,
-      "pct_started": 28.1,
+      "pct_owned": 53.1,
+      "pct_started": 28.3,
       "bye_weeks": [
         7
       ],
@@ -30415,7 +30323,7 @@
       "nfl_team": "CIN",
       "injury_status": null,
       "projected": 66.41641498,
-      "adp": 157.6,
+      "adp": 157.73,
       "week_projected": 8.31,
       "opponent": "WSH",
       "on_bye": false,
@@ -30488,7 +30396,7 @@
       "nfl_team": "MIA",
       "injury_status": "IR",
       "projected": 65.083099,
-      "adp": 169.15,
+      "adp": 169.09,
       "week_projected": 0.0,
       "opponent": "BUF",
       "on_bye": false,
@@ -30599,8 +30507,8 @@
       "position": "TE",
       "nfl_team": "CAR",
       "injury_status": "Questionable",
-      "projected": 64.9892285,
-      "adp": 168.18,
+      "projected": 64.99202411,
+      "adp": 168.23,
       "week_projected": 8.43,
       "opponent": "BAL",
       "on_bye": false,
@@ -30701,7 +30609,7 @@
       "nfl_team": "TEN",
       "injury_status": null,
       "projected": 64.564453,
-      "adp": 169.69,
+      "adp": 169.7,
       "week_projected": 8.46,
       "opponent": "DAL",
       "on_bye": false,
@@ -30773,8 +30681,8 @@
       "position": "RB",
       "nfl_team": "NO",
       "injury_status": null,
-      "projected": 64.11646974,
-      "adp": 162.38,
+      "projected": 64.1244947,
+      "adp": 162.39,
       "week_projected": 8.06,
       "opponent": "CHI",
       "on_bye": false,
@@ -30890,9 +30798,9 @@
       "position": "TE",
       "nfl_team": "PIT",
       "injury_status": null,
-      "projected": 62.85142083,
-      "adp": 166.2,
-      "week_projected": 7.56,
+      "projected": 62.85340974,
+      "adp": 166.16,
+      "week_projected": 7.57,
       "opponent": "PHI",
       "on_bye": false,
       "week_pts": 0.0,
@@ -30903,8 +30811,8 @@
       "avg_pts": 10.1,
       "proj_avg": 7.9,
       "pos_rank": 10,
-      "pct_owned": 42.7,
-      "pct_started": 18.4,
+      "pct_owned": 43.0,
+      "pct_started": 18.9,
       "bye_weeks": [
         9
       ],
@@ -31003,8 +30911,8 @@
       "position": "WR",
       "nfl_team": "HOU",
       "injury_status": null,
-      "projected": 62.62503263,
-      "adp": 154.7,
+      "projected": 62.62504279,
+      "adp": 154.98,
       "week_projected": 10.42,
       "opponent": "IND",
       "on_bye": false,
@@ -31016,7 +30924,7 @@
       "avg_pts": 9.2,
       "proj_avg": 7.8,
       "pos_rank": 96,
-      "pct_owned": 60.8,
+      "pct_owned": 60.7,
       "pct_started": 28.8,
       "bye_weeks": [
         8
@@ -31097,8 +31005,8 @@
       "position": "RB",
       "nfl_team": "CIN",
       "injury_status": null,
-      "projected": 62.2095856,
-      "adp": 168.02,
+      "projected": 62.20958582,
+      "adp": 167.96,
       "week_projected": 7.72,
       "opponent": "WSH",
       "on_bye": false,
@@ -31110,8 +31018,8 @@
       "avg_pts": 6.5,
       "proj_avg": 7.8,
       "pos_rank": 40,
-      "pct_owned": 13.6,
-      "pct_started": 6.2,
+      "pct_owned": 13.9,
+      "pct_started": 6.5,
       "bye_weeks": [
         6
       ],
@@ -31211,7 +31119,7 @@
       "nfl_team": "MIA",
       "injury_status": null,
       "projected": 62.09637993,
-      "adp": 168.88,
+      "adp": 168.86,
       "week_projected": 7.65,
       "opponent": "BUF",
       "on_bye": false,
@@ -31223,8 +31131,8 @@
       "avg_pts": 9.9,
       "proj_avg": 7.8,
       "pos_rank": 33,
-      "pct_owned": 32.0,
-      "pct_started": 11.4,
+      "pct_owned": 31.9,
+      "pct_started": 11.3,
       "bye_weeks": [
         6
       ],
@@ -31319,111 +31227,14 @@
       ]
     },
     {
-      "player_id": "p_4177",
-      "espn_id": "2991662",
-      "name": "Mack Hollins",
-      "position": "WR",
-      "nfl_team": "NE",
-      "injury_status": null,
-      "projected": 61.61234792,
-      "adp": 169.81,
-      "week_projected": 0.0,
-      "opponent": "BYE",
-      "on_bye": true,
-      "week_pts": 0.0,
-      "played": 100,
-      "opp_rank": null,
-      "kickoff": null,
-      "season_pts": 58.3,
-      "avg_pts": 9.7,
-      "proj_avg": 8.8,
-      "pos_rank": 64,
-      "pct_owned": 17.9,
-      "pct_started": 1.2,
-      "bye_weeks": [
-        11
-      ],
-      "history": [
-        {
-          "w": 1,
-          "pts": 9.1,
-          "played": true,
-          "tgt": 5.0,
-          "rec": 4.0,
-          "rey": 51.0
-        },
-        {
-          "w": 2,
-          "pts": 3.8,
-          "played": true,
-          "tgt": 2.0,
-          "rec": 2.0,
-          "rey": 18.0
-        },
-        {
-          "w": 3,
-          "pts": 14.7,
-          "played": true,
-          "tgt": 9.0,
-          "rec": 6.0,
-          "rey": 87.0
-        },
-        {
-          "w": 4,
-          "pts": 8.3,
-          "played": true,
-          "tgt": 4.0,
-          "rec": 3.0,
-          "rey": 53.0
-        },
-        {
-          "w": 5,
-          "pts": 0.0,
-          "played": false
-        },
-        {
-          "w": 6,
-          "pts": 0.0,
-          "played": false
-        },
-        {
-          "w": 7,
-          "pts": 0.0,
-          "played": false
-        },
-        {
-          "w": 8,
-          "pts": 0.0,
-          "played": false
-        },
-        {
-          "w": 9,
-          "pts": 12.6,
-          "played": true,
-          "tgt": 6.0,
-          "rec": 3.0,
-          "rey": 36.0,
-          "retd": 1.0
-        },
-        {
-          "w": 10,
-          "pts": 9.8,
-          "played": true,
-          "tgt": 6.0,
-          "rec": 5.0,
-          "rey": 48.0
-        }
-      ]
-    },
-    {
       "player_id": "p_12533",
       "espn_id": "4575131",
       "name": "Jacory Croskey-Merritt",
       "position": "RB",
       "nfl_team": "WAS",
       "injury_status": "IR",
-      "projected": 61.17877993,
-      "adp": 157.81,
+      "projected": 61.17879814,
+      "adp": 157.84,
       "week_projected": 7.49,
       "opponent": "CIN",
       "on_bye": false,
@@ -31435,8 +31246,8 @@
       "avg_pts": 9.0,
       "proj_avg": 8.7,
       "pos_rank": 51,
-      "pct_owned": 44.4,
-      "pct_started": 3.2,
+      "pct_owned": 44.6,
+      "pct_started": 3.4,
       "bye_weeks": [
         7
       ],
@@ -31519,8 +31330,8 @@
       "position": "RB",
       "nfl_team": "SF",
       "injury_status": null,
-      "projected": 60.98386738,
-      "adp": 165.19,
+      "projected": 60.98389202,
+      "adp": 165.07,
       "week_projected": 6.45,
       "opponent": "MIN",
       "on_bye": false,
@@ -31532,7 +31343,7 @@
       "avg_pts": 5.8,
       "proj_avg": 7.6,
       "pos_rank": 46,
-      "pct_owned": 37.6,
+      "pct_owned": 37.7,
       "pct_started": 8.4,
       "bye_weeks": [
         8
@@ -31625,8 +31436,8 @@
       "position": "WR",
       "nfl_team": "BUF",
       "injury_status": null,
-      "projected": 60.97345582,
-      "adp": 168.09,
+      "projected": 60.97342811,
+      "adp": 168.07,
       "week_projected": 8.24,
       "opponent": "MIA",
       "on_bye": false,
@@ -31638,8 +31449,8 @@
       "avg_pts": 8.2,
       "proj_avg": 7.6,
       "pos_rank": 49,
-      "pct_owned": 16.3,
-      "pct_started": 4.5,
+      "pct_owned": 16.4,
+      "pct_started": 4.6,
       "bye_weeks": [
         7
       ],
@@ -31728,8 +31539,8 @@
       "position": "WR",
       "nfl_team": "DAL",
       "injury_status": null,
-      "projected": 60.71976151,
-      "adp": 166.48,
+      "projected": 60.71976101,
+      "adp": 166.42,
       "week_projected": 9.66,
       "opponent": "TEN",
       "on_bye": false,
@@ -31741,8 +31552,8 @@
       "avg_pts": 10.3,
       "proj_avg": 8.7,
       "pos_rank": 25,
-      "pct_owned": 41.6,
-      "pct_started": 24.1,
+      "pct_owned": 42.0,
+      "pct_started": 24.3,
       "bye_weeks": [
         14
       ],
@@ -31842,7 +31653,7 @@
       "nfl_team": "SF",
       "injury_status": null,
       "projected": 60.46920691,
-      "adp": 158.79,
+      "adp": 158.78,
       "week_projected": 7.69,
       "opponent": "MIN",
       "on_bye": false,
@@ -31855,7 +31666,7 @@
       "proj_avg": 7.6,
       "pos_rank": 31,
       "pct_owned": 52.1,
-      "pct_started": 20.6,
+      "pct_started": 20.3,
       "bye_weeks": [
         8
       ],
@@ -31947,8 +31758,8 @@
       "position": "K",
       "nfl_team": "CAR",
       "injury_status": null,
-      "projected": 60.41148356,
-      "adp": 169.58,
+      "projected": 60.41148546,
+      "adp": 169.57,
       "week_projected": 8.1,
       "opponent": "BAL",
       "on_bye": false,
@@ -32020,8 +31831,8 @@
       "position": "WR",
       "nfl_team": "NYG",
       "injury_status": null,
-      "projected": 60.18339638,
-      "adp": 168.98,
+      "projected": 60.18342334,
+      "adp": 168.93,
       "week_projected": 7.47,
       "opponent": "JAX",
       "on_bye": false,
@@ -32122,7 +31933,7 @@
       "nfl_team": "ATL",
       "injury_status": null,
       "projected": 60.16359478,
-      "adp": 108.54,
+      "adp": 108.69,
       "week_projected": 0.0,
       "opponent": "BYE",
       "on_bye": true,
@@ -32134,8 +31945,8 @@
       "avg_pts": 7.8,
       "proj_avg": 8.6,
       "pos_rank": 21,
-      "pct_owned": 75.0,
-      "pct_started": 23.1,
+      "pct_owned": 74.7,
+      "pct_started": 22.5,
       "bye_weeks": [
         11
       ],
@@ -32230,8 +32041,8 @@
       "position": "TE",
       "nfl_team": "BUF",
       "injury_status": "Doubtful",
-      "projected": 59.80861744,
-      "adp": 133.47,
+      "projected": 59.80859976,
+      "adp": 134.02,
       "week_projected": 0.0,
       "opponent": "MIA",
       "on_bye": false,
@@ -32243,8 +32054,8 @@
       "avg_pts": 10.3,
       "proj_avg": 8.5,
       "pos_rank": 9,
-      "pct_owned": 79.1,
-      "pct_started": 36.5,
+      "pct_owned": 78.0,
+      "pct_started": 31.5,
       "bye_weeks": [
         7
       ],
@@ -32326,14 +32137,106 @@
       ]
     },
     {
+      "player_id": "p_9486",
+      "espn_id": "4428850",
+      "name": "Dontayvion Wicks",
+      "position": "WR",
+      "nfl_team": "PHI",
+      "injury_status": "Out",
+      "projected": 59.52082985,
+      "adp": 169.59,
+      "week_projected": 0.0,
+      "opponent": "PIT",
+      "on_bye": false,
+      "week_pts": 0.0,
+      "played": 0,
+      "opp_rank": 16,
+      "kickoff": null,
+      "season_pts": 53.4,
+      "avg_pts": 8.9,
+      "proj_avg": 8.5,
+      "pos_rank": 70,
+      "pct_owned": 12.3,
+      "pct_started": 1.6,
+      "bye_weeks": [
+        10
+      ],
+      "history": [
+        {
+          "w": 1,
+          "pts": 15.3,
+          "played": true,
+          "tgt": 4.0,
+          "rec": 2.0,
+          "rey": 73.0,
+          "retd": 1.0
+        },
+        {
+          "w": 2,
+          "pts": 12.4,
+          "played": true,
+          "tgt": 6.0,
+          "rec": 5.0,
+          "rey": 74.0
+        },
+        {
+          "w": 3,
+          "pts": 5.2,
+          "played": true,
+          "tgt": 5.0,
+          "rec": 2.0,
+          "rey": 32.0
+        },
+        {
+          "w": 4,
+          "pts": 4.8,
+          "played": true,
+          "tgt": 5.0,
+          "rec": 3.0,
+          "rey": 18.0
+        },
+        {
+          "w": 5,
+          "pts": 11.3,
+          "played": true,
+          "tgt": 8.0,
+          "rec": 5.0,
+          "rey": 63.0
+        },
+        {
+          "w": 6,
+          "pts": 4.4,
+          "played": true,
+          "tgt": 4.0,
+          "rec": 2.0,
+          "rey": 24.0
+        },
+        {
+          "w": 7,
+          "pts": 0.0,
+          "played": false
+        },
+        {
+          "w": 8,
+          "pts": 0.0,
+          "played": false
+        },
+        {
+          "w": 9,
+          "pts": 0.0,
+          "played": false
+        }
+      ]
+    },
+    {
       "player_id": "p_8111",
       "espn_id": "4243331",
       "name": "Cade Otton",
       "position": "TE",
       "nfl_team": "TB",
       "injury_status": null,
-      "projected": 59.46597109,
-      "adp": 169.71,
+      "projected": 59.46599577,
+      "adp": 169.72,
       "week_projected": 7.4,
       "opponent": "DET",
       "on_bye": false,
@@ -32345,8 +32248,8 @@
       "avg_pts": 4.9,
       "proj_avg": 7.4,
       "pos_rank": 35,
-      "pct_owned": 3.3,
-      "pct_started": 1.8,
+      "pct_owned": 3.5,
+      "pct_started": 2.0,
       "bye_weeks": [
         10
       ],
@@ -32428,7 +32331,7 @@
       "nfl_team": "LV",
       "injury_status": null,
       "projected": 59.29019666,
-      "adp": 164.91,
+      "adp": 164.99,
       "week_projected": 8.18,
       "opponent": "DEN",
       "on_bye": false,
@@ -32440,8 +32343,8 @@
       "avg_pts": 11.1,
       "proj_avg": 8.5,
       "pos_rank": 22,
-      "pct_owned": 52.5,
-      "pct_started": 15.4,
+      "pct_owned": 52.4,
+      "pct_started": 15.3,
       "bye_weeks": [
         13
       ],
@@ -32551,8 +32454,8 @@
       "avg_pts": 9.5,
       "proj_avg": 7.4,
       "pos_rank": 81,
-      "pct_owned": 9.5,
-      "pct_started": 4.0,
+      "pct_owned": 9.8,
+      "pct_started": 4.1,
       "bye_weeks": [
         10
       ],
@@ -32629,7 +32532,7 @@
       "nfl_team": "ARI",
       "injury_status": null,
       "projected": 59.06086569,
-      "adp": 169.51,
+      "adp": 169.5,
       "week_projected": 7.11,
       "opponent": "KC",
       "on_bye": false,
@@ -32641,8 +32544,8 @@
       "avg_pts": 9.2,
       "proj_avg": 8.4,
       "pos_rank": 9,
-      "pct_owned": 19.5,
-      "pct_started": 16.1,
+      "pct_owned": 19.4,
+      "pct_started": 16.0,
       "bye_weeks": [
         14
       ],
@@ -32707,7 +32610,7 @@
       "nfl_team": "SF",
       "injury_status": null,
       "projected": 58.86909417,
-      "adp": 155.2,
+      "adp": 154.85,
       "week_projected": 6.85,
       "opponent": "MIN",
       "on_bye": false,
@@ -32719,7 +32622,7 @@
       "avg_pts": 6.3,
       "proj_avg": 7.4,
       "pos_rank": 27,
-      "pct_owned": 32.5,
+      "pct_owned": 32.4,
       "pct_started": 24.1,
       "bye_weeks": [
         8
@@ -32780,7 +32683,7 @@
       "nfl_team": "SF",
       "injury_status": null,
       "projected": 58.7173494,
-      "adp": 136.95,
+      "adp": 137.08,
       "week_projected": 5.4,
       "opponent": "MIN",
       "on_bye": false,
@@ -32792,8 +32695,8 @@
       "avg_pts": 7.4,
       "proj_avg": 3.5,
       "pos_rank": 7,
-      "pct_owned": 46.7,
-      "pct_started": 32.0,
+      "pct_owned": 46.9,
+      "pct_started": 32.3,
       "bye_weeks": [
         8
       ],
@@ -32853,7 +32756,7 @@
       "nfl_team": "LV",
       "injury_status": "Questionable",
       "projected": 58.68610041,
-      "adp": 168.3,
+      "adp": 168.36,
       "week_projected": 8.02,
       "opponent": "DEN",
       "on_bye": false,
@@ -32865,8 +32768,8 @@
       "avg_pts": 9.6,
       "proj_avg": 8.4,
       "pos_rank": 8,
-      "pct_owned": 40.7,
-      "pct_started": 33.9,
+      "pct_owned": 40.0,
+      "pct_started": 33.1,
       "bye_weeks": [
         13
       ],
@@ -32920,6 +32823,103 @@
           "w": 10,
           "pts": 8.0,
           "played": true
+        }
+      ]
+    },
+    {
+      "player_id": "p_4177",
+      "espn_id": "2991662",
+      "name": "Mack Hollins",
+      "position": "WR",
+      "nfl_team": "NE",
+      "injury_status": null,
+      "projected": 58.41251302,
+      "adp": 169.81,
+      "week_projected": 0.0,
+      "opponent": "BYE",
+      "on_bye": true,
+      "week_pts": 0.0,
+      "played": 100,
+      "opp_rank": null,
+      "kickoff": null,
+      "season_pts": 58.3,
+      "avg_pts": 9.7,
+      "proj_avg": 8.3,
+      "pos_rank": 64,
+      "pct_owned": 17.7,
+      "pct_started": 1.1,
+      "bye_weeks": [
+        11
+      ],
+      "history": [
+        {
+          "w": 1,
+          "pts": 9.1,
+          "played": true,
+          "tgt": 5.0,
+          "rec": 4.0,
+          "rey": 51.0
+        },
+        {
+          "w": 2,
+          "pts": 3.8,
+          "played": true,
+          "tgt": 2.0,
+          "rec": 2.0,
+          "rey": 18.0
+        },
+        {
+          "w": 3,
+          "pts": 14.7,
+          "played": true,
+          "tgt": 9.0,
+          "rec": 6.0,
+          "rey": 87.0
+        },
+        {
+          "w": 4,
+          "pts": 8.3,
+          "played": true,
+          "tgt": 4.0,
+          "rec": 3.0,
+          "rey": 53.0
+        },
+        {
+          "w": 5,
+          "pts": 0.0,
+          "played": false
+        },
+        {
+          "w": 6,
+          "pts": 0.0,
+          "played": false
+        },
+        {
+          "w": 7,
+          "pts": 0.0,
+          "played": false
+        },
+        {
+          "w": 8,
+          "pts": 0.0,
+          "played": false
+        },
+        {
+          "w": 9,
+          "pts": 12.6,
+          "played": true,
+          "tgt": 6.0,
+          "rec": 3.0,
+          "rey": 36.0,
+          "retd": 1.0
+        },
+        {
+          "w": 10,
+          "pts": 9.8,
+          "played": true,
+          "tgt": 6.0,
+          "rec": 5.0,
+          "rey": 48.0
         }
       ]
     },
@@ -32991,8 +32991,8 @@
       "position": "TE",
       "nfl_team": "CIN",
       "injury_status": null,
-      "projected": 58.01473884,
-      "adp": 166.03,
+      "projected": 58.01473861,
+      "adp": 165.97,
       "week_projected": 7.37,
       "opponent": "WSH",
       "on_bye": false,
@@ -33004,8 +33004,8 @@
       "avg_pts": 9.1,
       "proj_avg": 7.2,
       "pos_rank": 17,
-      "pct_owned": 26.1,
-      "pct_started": 15.1,
+      "pct_owned": 26.6,
+      "pct_started": 15.7,
       "bye_weeks": [
         6
       ],
@@ -33095,7 +33095,7 @@
       "nfl_team": "GB",
       "injury_status": null,
       "projected": 57.74933221,
-      "adp": 168.65,
+      "adp": 168.67,
       "week_projected": 0.0,
       "opponent": "BYE",
       "on_bye": true,
@@ -33107,8 +33107,8 @@
       "avg_pts": 7.1,
       "proj_avg": 8.2,
       "pos_rank": 21,
-      "pct_owned": 6.5,
-      "pct_started": 3.4,
+      "pct_owned": 6.4,
+      "pct_started": 3.3,
       "bye_weeks": [
         11
       ],
@@ -33172,8 +33172,8 @@
       "position": "RB",
       "nfl_team": "BAL",
       "injury_status": null,
-      "projected": 57.66320725,
-      "adp": 168.73,
+      "projected": 57.66771107,
+      "adp": 168.66,
       "week_projected": 8.35,
       "opponent": "CAR",
       "on_bye": false,
@@ -33185,8 +33185,8 @@
       "avg_pts": 7.0,
       "proj_avg": 8.2,
       "pos_rank": 32,
-      "pct_owned": 22.5,
-      "pct_started": 12.6,
+      "pct_owned": 23.0,
+      "pct_started": 13.1,
       "bye_weeks": [
         13
       ],
@@ -33297,7 +33297,7 @@
       "nfl_team": "MIA",
       "injury_status": null,
       "projected": 56.22733794,
-      "adp": 169.84,
+      "adp": 169.81,
       "week_projected": 7.04,
       "opponent": "BUF",
       "on_bye": false,
@@ -33391,8 +33391,8 @@
       "position": "WR",
       "nfl_team": "TB",
       "injury_status": null,
-      "projected": 55.70311261,
-      "adp": 148.3,
+      "projected": 55.70311226,
+      "adp": 148.35,
       "week_projected": 6.9,
       "opponent": "DET",
       "on_bye": false,
@@ -33405,7 +33405,7 @@
       "proj_avg": 7.0,
       "pos_rank": 66,
       "pct_owned": 38.4,
-      "pct_started": 4.8,
+      "pct_started": 4.9,
       "bye_weeks": [
         10
       ],
@@ -33498,7 +33498,7 @@
       "nfl_team": "KC",
       "injury_status": null,
       "projected": 55.30246408,
-      "adp": 152.55,
+      "adp": 152.71,
       "week_projected": 7.68,
       "opponent": "ARI",
       "on_bye": false,
@@ -33510,8 +33510,8 @@
       "avg_pts": 7.4,
       "proj_avg": 6.9,
       "pos_rank": 57,
-      "pct_owned": 57.8,
-      "pct_started": 14.7,
+      "pct_owned": 57.6,
+      "pct_started": 14.6,
       "bye_weeks": [
         5
       ],
@@ -33597,7 +33597,7 @@
       "nfl_team": "DEN",
       "injury_status": null,
       "projected": 55.14638007,
-      "adp": 144.96,
+      "adp": 145.03,
       "week_projected": 8.52,
       "opponent": "LV",
       "on_bye": false,
@@ -33609,8 +33609,8 @@
       "avg_pts": 6.9,
       "proj_avg": 6.9,
       "pos_rank": 37,
-      "pct_owned": 62.7,
-      "pct_started": 19.7,
+      "pct_owned": 62.8,
+      "pct_started": 20.2,
       "bye_weeks": [
         10
       ],
@@ -33706,7 +33706,7 @@
       "nfl_team": "TEN",
       "injury_status": "Questionable",
       "projected": 55.05191376,
-      "adp": 165.03,
+      "adp": 165.06,
       "week_projected": 7.86,
       "opponent": "DAL",
       "on_bye": false,
@@ -33718,8 +33718,8 @@
       "avg_pts": 4.4,
       "proj_avg": 7.9,
       "pos_rank": 67,
-      "pct_owned": 19.1,
-      "pct_started": 3.4,
+      "pct_owned": 19.2,
+      "pct_started": 3.5,
       "bye_weeks": [
         9
       ],
@@ -33808,8 +33808,8 @@
       "position": "WR",
       "nfl_team": "ATL",
       "injury_status": null,
-      "projected": 54.82218872,
-      "adp": 169.73,
+      "projected": 54.82218754,
+      "adp": 169.71,
       "week_projected": 0.0,
       "opponent": "BYE",
       "on_bye": true,
@@ -33919,7 +33919,7 @@
       "nfl_team": "SEA",
       "injury_status": null,
       "projected": 53.98398615,
-      "adp": 132.53,
+      "adp": 132.4,
       "week_projected": 0.0,
       "opponent": "BYE",
       "on_bye": true,
@@ -33931,8 +33931,8 @@
       "avg_pts": 7.7,
       "proj_avg": 7.7,
       "pos_rank": 16,
-      "pct_owned": 60.9,
-      "pct_started": 35.5,
+      "pct_owned": 60.2,
+      "pct_started": 34.4,
       "bye_weeks": [
         11
       ],
@@ -33996,8 +33996,8 @@
       "position": "TE",
       "nfl_team": "SEA",
       "injury_status": null,
-      "projected": 53.80941833,
-      "adp": 168.19,
+      "projected": 53.80942087,
+      "adp": 168.24,
       "week_projected": 0.0,
       "opponent": "BYE",
       "on_bye": true,
@@ -34009,8 +34009,8 @@
       "avg_pts": 6.8,
       "proj_avg": 7.7,
       "pos_rank": 25,
-      "pct_owned": 9.7,
-      "pct_started": 1.8,
+      "pct_owned": 9.6,
+      "pct_started": 1.7,
       "bye_weeks": [
         11
       ],
@@ -34114,7 +34114,7 @@
       "nfl_team": "TEN",
       "injury_status": null,
       "projected": 53.4442332,
-      "adp": 169.89,
+      "adp": 169.88,
       "week_projected": 7.22,
       "opponent": "DAL",
       "on_bye": false,
@@ -34126,8 +34126,8 @@
       "avg_pts": 3.3,
       "proj_avg": 6.7,
       "pos_rank": 102,
-      "pct_owned": 2.6,
-      "pct_started": 1.9,
+      "pct_owned": 2.7,
+      "pct_started": 2.0,
       "bye_weeks": [
         9
       ],
@@ -34208,8 +34208,8 @@
       "position": "WR",
       "nfl_team": "LAC",
       "injury_status": null,
-      "projected": 53.27553153,
-      "adp": 169.7,
+      "projected": 53.27555872,
+      "adp": 169.67,
       "week_projected": 7.01,
       "opponent": "NYJ",
       "on_bye": false,
@@ -34306,8 +34306,8 @@
       "position": "TE",
       "nfl_team": "CAR",
       "injury_status": "Questionable",
-      "projected": 52.8079759,
-      "adp": 169.77,
+      "projected": 52.81030732,
+      "adp": 169.75,
       "week_projected": 6.89,
       "opponent": "BAL",
       "on_bye": false,
@@ -34408,8 +34408,8 @@
       "position": "TE",
       "nfl_team": "TEN",
       "injury_status": null,
-      "projected": 52.77054567,
-      "adp": 169.69,
+      "projected": 52.77055356,
+      "adp": 169.67,
       "week_projected": 7.11,
       "opponent": "DAL",
       "on_bye": false,
@@ -34421,7 +34421,7 @@
       "avg_pts": 4.8,
       "proj_avg": 6.6,
       "pos_rank": 36,
-      "pct_owned": 2.7,
+      "pct_owned": 2.8,
       "pct_started": 1.5,
       "bye_weeks": [
         9
@@ -34503,8 +34503,8 @@
       "position": "TE",
       "nfl_team": "BAL",
       "injury_status": null,
-      "projected": 52.70875084,
-      "adp": 153.36,
+      "projected": 52.7143965,
+      "adp": 153.16,
       "week_projected": 7.68,
       "opponent": "CAR",
       "on_bye": false,
@@ -34516,8 +34516,8 @@
       "avg_pts": 7.5,
       "proj_avg": 7.5,
       "pos_rank": 22,
-      "pct_owned": 62.8,
-      "pct_started": 28.4,
+      "pct_owned": 63.2,
+      "pct_started": 28.9,
       "bye_weeks": [
         13
       ],
@@ -34613,8 +34613,8 @@
       "position": "K",
       "nfl_team": "BAL",
       "injury_status": null,
-      "projected": 52.23251015,
-      "adp": 169.7,
+      "projected": 52.23365475,
+      "adp": 169.69,
       "week_projected": 7.72,
       "opponent": "CAR",
       "on_bye": false,
@@ -34672,7 +34672,7 @@
       "nfl_team": "NYJ",
       "injury_status": null,
       "projected": 52.22924081,
-      "adp": 163.73,
+      "adp": 163.79,
       "week_projected": 7.66,
       "opponent": "LAC",
       "on_bye": false,
@@ -34684,8 +34684,8 @@
       "avg_pts": 11.1,
       "proj_avg": 7.5,
       "pos_rank": 20,
-      "pct_owned": 68.8,
-      "pct_started": 19.6,
+      "pct_owned": 68.7,
+      "pct_started": 19.7,
       "bye_weeks": [
         13
       ],
@@ -34793,6 +34793,79 @@
       ]
     },
     {
+      "player_id": "espn_-16007",
+      "espn_id": "-16007",
+      "name": "Broncos D/ST",
+      "position": "D/ST",
+      "nfl_team": "DEN",
+      "injury_status": null,
+      "projected": 52.14047038,
+      "adp": 109.54,
+      "week_projected": 6.47,
+      "opponent": "LV",
+      "on_bye": false,
+      "week_pts": 0.0,
+      "played": 0,
+      "opp_rank": 12,
+      "kickoff": null,
+      "season_pts": 56.0,
+      "avg_pts": 6.2,
+      "proj_avg": 3.1,
+      "pos_rank": 14,
+      "pct_owned": 83.6,
+      "pct_started": 60.0,
+      "bye_weeks": [
+        10
+      ],
+      "history": [
+        {
+          "w": 1,
+          "pts": 2.0,
+          "played": true
+        },
+        {
+          "w": 2,
+          "pts": 9.0,
+          "played": true
+        },
+        {
+          "w": 3,
+          "pts": 9.0,
+          "played": true
+        },
+        {
+          "w": 4,
+          "pts": 1.0,
+          "played": true
+        },
+        {
+          "w": 5,
+          "pts": 14.0,
+          "played": true
+        },
+        {
+          "w": 6,
+          "pts": 11.0,
+          "played": true
+        },
+        {
+          "w": 7,
+          "pts": 3.0,
+          "played": true
+        },
+        {
+          "w": 8,
+          "pts": 1.0,
+          "played": true
+        },
+        {
+          "w": 9,
+          "pts": 6.0,
+          "played": true
+        }
+      ]
+    },
+    {
       "player_id": "p_13276",
       "espn_id": "4723820",
       "name": "Omar Cooper Jr.",
@@ -34800,7 +34873,7 @@
       "nfl_team": "NYJ",
       "injury_status": "Out",
       "projected": 52.06305392,
-      "adp": 168.4,
+      "adp": 168.44,
       "week_projected": 0.0,
       "opponent": "LAC",
       "on_bye": false,
@@ -34812,8 +34885,8 @@
       "avg_pts": 10.4,
       "proj_avg": 8.7,
       "pos_rank": 61,
-      "pct_owned": 42.6,
-      "pct_started": 3.5,
+      "pct_owned": 42.1,
+      "pct_started": 3.1,
       "bye_weeks": [
         13
       ],
@@ -34994,8 +35067,8 @@
       "position": "WR",
       "nfl_team": "GB",
       "injury_status": null,
-      "projected": 51.26760976,
-      "adp": 169.45,
+      "projected": 51.26762617,
+      "adp": 169.46,
       "week_projected": 0.0,
       "opponent": "BYE",
       "on_bye": true,
@@ -35096,8 +35169,8 @@
       "position": "TE",
       "nfl_team": "PIT",
       "injury_status": null,
-      "projected": 50.82270125,
-      "adp": 167.71,
+      "projected": 50.82415176,
+      "adp": 167.69,
       "week_projected": 6.13,
       "opponent": "PHI",
       "on_bye": false,
@@ -35110,7 +35183,7 @@
       "proj_avg": 6.3,
       "pos_rank": 27,
       "pct_owned": 7.2,
-      "pct_started": 3.0,
+      "pct_started": 2.9,
       "bye_weeks": [
         9
       ],
@@ -35199,8 +35272,8 @@
       "position": "TE",
       "nfl_team": "LV",
       "injury_status": null,
-      "projected": 50.53784183,
-      "adp": 169.02,
+      "projected": 50.5378161,
+      "adp": 168.96,
       "week_projected": 7.02,
       "opponent": "DEN",
       "on_bye": false,
@@ -35212,8 +35285,8 @@
       "avg_pts": 8.6,
       "proj_avg": 7.2,
       "pos_rank": 13,
-      "pct_owned": 23.9,
-      "pct_started": 8.6,
+      "pct_owned": 24.1,
+      "pct_started": 8.8,
       "bye_weeks": [
         13
       ],
@@ -35304,79 +35377,6 @@
       ]
     },
     {
-      "player_id": "espn_-16007",
-      "espn_id": "-16007",
-      "name": "Broncos D/ST",
-      "position": "D/ST",
-      "nfl_team": "DEN",
-      "injury_status": null,
-      "projected": 50.06516916,
-      "adp": 109.81,
-      "week_projected": 6.47,
-      "opponent": "LV",
-      "on_bye": false,
-      "week_pts": 0.0,
-      "played": 0,
-      "opp_rank": 12,
-      "kickoff": null,
-      "season_pts": 56.0,
-      "avg_pts": 6.2,
-      "proj_avg": 3.0,
-      "pos_rank": 14,
-      "pct_owned": 83.3,
-      "pct_started": 59.4,
-      "bye_weeks": [
-        10
-      ],
-      "history": [
-        {
-          "w": 1,
-          "pts": 2.0,
-          "played": true
-        },
-        {
-          "w": 2,
-          "pts": 9.0,
-          "played": true
-        },
-        {
-          "w": 3,
-          "pts": 9.0,
-          "played": true
-        },
-        {
-          "w": 4,
-          "pts": 1.0,
-          "played": true
-        },
-        {
-          "w": 5,
-          "pts": 14.0,
-          "played": true
-        },
-        {
-          "w": 6,
-          "pts": 11.0,
-          "played": true
-        },
-        {
-          "w": 7,
-          "pts": 3.0,
-          "played": true
-        },
-        {
-          "w": 8,
-          "pts": 1.0,
-          "played": true
-        },
-        {
-          "w": 9,
-          "pts": 6.0,
-          "played": true
-        }
-      ]
-    },
-    {
       "player_id": "p_11564",
       "espn_id": "4431452",
       "name": "Drake Maye",
@@ -35384,7 +35384,7 @@
       "nfl_team": "NE",
       "injury_status": "Out",
       "projected": 50.00206996,
-      "adp": 82.85,
+      "adp": 83.47,
       "week_projected": 0.0,
       "opponent": "BYE",
       "on_bye": true,
@@ -35396,8 +35396,8 @@
       "avg_pts": 18.2,
       "proj_avg": 8.3,
       "pos_rank": 8,
-      "pct_owned": 86.7,
-      "pct_started": 24.9,
+      "pct_owned": 85.3,
+      "pct_started": 23.7,
       "bye_weeks": [
         11
       ],
@@ -35512,7 +35512,7 @@
       "nfl_team": "LAC",
       "injury_status": null,
       "projected": 49.62085335,
-      "adp": 169.73,
+      "adp": 169.67,
       "week_projected": 6.95,
       "opponent": "NYJ",
       "on_bye": false,
@@ -35524,7 +35524,7 @@
       "avg_pts": 5.2,
       "proj_avg": 6.2,
       "pos_rank": 50,
-      "pct_owned": 10.4,
+      "pct_owned": 10.3,
       "pct_started": 4.0,
       "bye_weeks": [
         7
@@ -35620,9 +35620,9 @@
       "position": "WR",
       "nfl_team": "PIT",
       "injury_status": "IR",
-      "projected": 49.32546776,
-      "adp": 130.53,
-      "week_projected": 5.87,
+      "projected": 49.32734083,
+      "adp": 130.57,
+      "week_projected": 5.88,
       "opponent": "PHI",
       "on_bye": false,
       "week_pts": 0.0,
@@ -35702,8 +35702,8 @@
       "position": "RB",
       "nfl_team": "LV",
       "injury_status": null,
-      "projected": 48.88466973,
-      "adp": 168.94,
+      "projected": 48.88468221,
+      "adp": 168.87,
       "week_projected": 6.38,
       "opponent": "DEN",
       "on_bye": false,
@@ -35814,9 +35814,9 @@
       "name": "Chris Rodriguez Jr.",
       "position": "RB",
       "nfl_team": "JAC",
-      "injury_status": "Questionable",
+      "injury_status": null,
       "projected": 48.60434767,
-      "adp": 168.49,
+      "adp": 168.47,
       "week_projected": 5.84,
       "opponent": "NYG",
       "on_bye": false,
@@ -35920,9 +35920,9 @@
       "position": "WR",
       "nfl_team": "NO",
       "injury_status": null,
-      "projected": 48.37691075,
-      "adp": 169.31,
-      "week_projected": 6.13,
+      "projected": 48.38407066,
+      "adp": 169.29,
+      "week_projected": 6.14,
       "opponent": "CHI",
       "on_bye": false,
       "week_pts": 0.0,
@@ -35933,8 +35933,8 @@
       "avg_pts": 10.3,
       "proj_avg": 6.0,
       "pos_rank": 30,
-      "pct_owned": 36.0,
-      "pct_started": 6.4,
+      "pct_owned": 35.8,
+      "pct_started": 6.3,
       "bye_weeks": [
         8
       ],
@@ -36023,8 +36023,8 @@
       "position": "D/ST",
       "nfl_team": "CLE",
       "injury_status": null,
-      "projected": 48.35374234,
-      "adp": 161.38,
+      "projected": 48.35374249,
+      "adp": 161.36,
       "week_projected": 0.0,
       "opponent": "BYE",
       "on_bye": true,
@@ -36036,8 +36036,8 @@
       "avg_pts": 5.7,
       "proj_avg": 2.8,
       "pos_rank": 13,
-      "pct_owned": 33.3,
-      "pct_started": 20.6,
+      "pct_owned": 33.0,
+      "pct_started": 20.2,
       "bye_weeks": [
         11
       ],
@@ -36101,9 +36101,9 @@
       "position": "TE",
       "nfl_team": "NO",
       "injury_status": null,
-      "projected": 48.22549661,
-      "adp": 165.43,
-      "week_projected": 6.11,
+      "projected": 48.23189052,
+      "adp": 165.53,
+      "week_projected": 6.12,
       "opponent": "CHI",
       "on_bye": false,
       "week_pts": 0.0,
@@ -36114,7 +36114,7 @@
       "avg_pts": 9.3,
       "proj_avg": 6.0,
       "pos_rank": 15,
-      "pct_owned": 36.4,
+      "pct_owned": 36.2,
       "pct_started": 12.0,
       "bye_weeks": [
         8
@@ -36203,7 +36203,7 @@
       "nfl_team": "ARI",
       "injury_status": "IR",
       "projected": 48.10897086,
-      "adp": 69.35,
+      "adp": 69.41,
       "week_projected": 0.0,
       "opponent": "KC",
       "on_bye": false,
@@ -36215,7 +36215,7 @@
       "avg_pts": 8.9,
       "proj_avg": 12.0,
       "pos_rank": 44,
-      "pct_owned": 81.3,
+      "pct_owned": 81.2,
       "pct_started": 14.1,
       "bye_weeks": [
         14
@@ -36308,7 +36308,7 @@
       "nfl_team": "NYG",
       "injury_status": null,
       "projected": 47.96541122,
-      "adp": 169.8,
+      "adp": 169.76,
       "week_projected": 5.85,
       "opponent": "JAX",
       "on_bye": false,
@@ -36424,7 +36424,7 @@
       "avg_pts": 6.4,
       "proj_avg": 6.8,
       "pos_rank": 57,
-      "pct_owned": 11.4,
+      "pct_owned": 11.7,
       "pct_started": 0.3,
       "bye_weeks": [
         11
@@ -36491,206 +36491,14 @@
       ]
     },
     {
-      "player_id": "p_4066",
-      "espn_id": "3051876",
-      "name": "Evan Engram",
-      "position": "TE",
-      "nfl_team": "DEN",
-      "injury_status": null,
-      "projected": 47.71215398,
-      "adp": 169.64,
-      "week_projected": 6.45,
-      "opponent": "LV",
-      "on_bye": false,
-      "week_pts": 0.0,
-      "played": 0,
-      "opp_rank": 25,
-      "kickoff": null,
-      "season_pts": 39.9,
-      "avg_pts": 4.4,
-      "proj_avg": 6.0,
-      "pos_rank": 40,
-      "pct_owned": 1.7,
-      "pct_started": 0.6,
-      "bye_weeks": [
-        10
-      ],
-      "history": [
-        {
-          "w": 1,
-          "pts": 14.3,
-          "played": true,
-          "tgt": 5.0,
-          "rec": 4.0,
-          "rey": 43.0,
-          "retd": 1.0
-        },
-        {
-          "w": 2,
-          "pts": 2.7,
-          "played": true,
-          "tgt": 1.0,
-          "rec": 1.0,
-          "rey": 17.0
-        },
-        {
-          "w": 3,
-          "pts": 0.0,
-          "played": true,
-          "tgt": 2.0
-        },
-        {
-          "w": 4,
-          "pts": 1.6,
-          "played": true,
-          "tgt": 5.0,
-          "rec": 1.0,
-          "rey": 6.0
-        },
-        {
-          "w": 5,
-          "pts": 9.5,
-          "played": true,
-          "tgt": 4.0,
-          "rec": 4.0,
-          "rey": 55.0
-        },
-        {
-          "w": 6,
-          "pts": 3.3,
-          "played": true,
-          "tgt": 2.0,
-          "rec": 2.0,
-          "rey": 13.0
-        },
-        {
-          "w": 7,
-          "pts": 1.2,
-          "played": true,
-          "tgt": 3.0,
-          "rec": 1.0,
-          "rey": 2.0
-        },
-        {
-          "w": 8,
-          "pts": 0.0,
-          "played": true,
-          "tgt": 3.0
-        },
-        {
-          "w": 9,
-          "pts": 7.3,
-          "played": true,
-          "tgt": 5.0,
-          "rec": 4.0,
-          "rey": 33.0
-        }
-      ]
-    },
-    {
-      "player_id": "p_11631",
-      "espn_id": "4432773",
-      "name": "Brian Thomas Jr.",
-      "position": "WR",
-      "nfl_team": "JAC",
-      "injury_status": null,
-      "projected": 47.43578909,
-      "adp": 143.72,
-      "week_projected": 5.67,
-      "opponent": "NYG",
-      "on_bye": false,
-      "week_pts": 0.0,
-      "played": 0,
-      "opp_rank": 13,
-      "kickoff": null,
-      "season_pts": 39.6,
-      "avg_pts": 4.4,
-      "proj_avg": 5.9,
-      "pos_rank": 92,
-      "pct_owned": 32.3,
-      "pct_started": 3.8,
-      "bye_weeks": [
-        7
-      ],
-      "history": [
-        {
-          "w": 1,
-          "pts": 7.0,
-          "played": true,
-          "tgt": 3.0,
-          "rec": 3.0,
-          "rey": 40.0
-        },
-        {
-          "w": 2,
-          "pts": 7.0,
-          "played": true,
-          "tgt": 9.0,
-          "rec": 3.0,
-          "rey": 40.0
-        },
-        {
-          "w": 3,
-          "pts": 1.8,
-          "played": true,
-          "tgt": 1.0,
-          "rec": 1.0,
-          "rey": 8.0
-        },
-        {
-          "w": 4,
-          "pts": 9.7,
-          "played": true,
-          "tgt": 2.0,
-          "rec": 2.0,
-          "rey": 17.0,
-          "retd": 1.0
-        },
-        {
-          "w": 5,
-          "pts": 0.0,
-          "played": true,
-          "tgt": 3.0
-        },
-        {
-          "w": 6,
-          "pts": 0.0,
-          "played": true,
-          "tgt": 2.0
-        },
-        {
-          "w": 8,
-          "pts": 8.2,
-          "played": true,
-          "tgt": 2.0,
-          "rec": 1.0,
-          "rey": 12.0,
-          "retd": 1.0
-        },
-        {
-          "w": 9,
-          "pts": 0.0,
-          "played": true
-        },
-        {
-          "w": 10,
-          "pts": 5.9,
-          "played": true,
-          "tgt": 4.0,
-          "rec": 3.0,
-          "rey": 29.0
-        }
-      ]
-    },
-    {
       "player_id": "p_3214",
       "espn_id": "3046439",
       "name": "Hunter Henry",
       "position": "TE",
       "nfl_team": "NE",
       "injury_status": null,
-      "projected": 47.28804858,
-      "adp": 162.16,
+      "projected": 47.84980502,
+      "adp": 162.29,
       "week_projected": 0.0,
       "opponent": "BYE",
       "on_bye": true,
@@ -36702,8 +36510,8 @@
       "avg_pts": 8.4,
       "proj_avg": 6.8,
       "pos_rank": 14,
-      "pct_owned": 50.7,
-      "pct_started": 5.5,
+      "pct_owned": 50.3,
+      "pct_started": 5.2,
       "bye_weeks": [
         11
       ],
@@ -36793,6 +36601,301 @@
       ]
     },
     {
+      "player_id": "p_4066",
+      "espn_id": "3051876",
+      "name": "Evan Engram",
+      "position": "TE",
+      "nfl_team": "DEN",
+      "injury_status": null,
+      "projected": 47.71215398,
+      "adp": 169.63,
+      "week_projected": 6.45,
+      "opponent": "LV",
+      "on_bye": false,
+      "week_pts": 0.0,
+      "played": 0,
+      "opp_rank": 25,
+      "kickoff": null,
+      "season_pts": 39.9,
+      "avg_pts": 4.4,
+      "proj_avg": 6.0,
+      "pos_rank": 40,
+      "pct_owned": 1.8,
+      "pct_started": 0.6,
+      "bye_weeks": [
+        10
+      ],
+      "history": [
+        {
+          "w": 1,
+          "pts": 14.3,
+          "played": true,
+          "tgt": 5.0,
+          "rec": 4.0,
+          "rey": 43.0,
+          "retd": 1.0
+        },
+        {
+          "w": 2,
+          "pts": 2.7,
+          "played": true,
+          "tgt": 1.0,
+          "rec": 1.0,
+          "rey": 17.0
+        },
+        {
+          "w": 3,
+          "pts": 0.0,
+          "played": true,
+          "tgt": 2.0
+        },
+        {
+          "w": 4,
+          "pts": 1.6,
+          "played": true,
+          "tgt": 5.0,
+          "rec": 1.0,
+          "rey": 6.0
+        },
+        {
+          "w": 5,
+          "pts": 9.5,
+          "played": true,
+          "tgt": 4.0,
+          "rec": 4.0,
+          "rey": 55.0
+        },
+        {
+          "w": 6,
+          "pts": 3.3,
+          "played": true,
+          "tgt": 2.0,
+          "rec": 2.0,
+          "rey": 13.0
+        },
+        {
+          "w": 7,
+          "pts": 1.2,
+          "played": true,
+          "tgt": 3.0,
+          "rec": 1.0,
+          "rey": 2.0
+        },
+        {
+          "w": 8,
+          "pts": 0.0,
+          "played": true,
+          "tgt": 3.0
+        },
+        {
+          "w": 9,
+          "pts": 7.3,
+          "played": true,
+          "tgt": 5.0,
+          "rec": 4.0,
+          "rey": 33.0
+        }
+      ]
+    },
+    {
+      "player_id": "p_11631",
+      "espn_id": "4432773",
+      "name": "Brian Thomas Jr.",
+      "position": "WR",
+      "nfl_team": "JAC",
+      "injury_status": null,
+      "projected": 47.43578909,
+      "adp": 143.76,
+      "week_projected": 5.67,
+      "opponent": "NYG",
+      "on_bye": false,
+      "week_pts": 0.0,
+      "played": 0,
+      "opp_rank": 13,
+      "kickoff": null,
+      "season_pts": 39.6,
+      "avg_pts": 4.4,
+      "proj_avg": 5.9,
+      "pos_rank": 92,
+      "pct_owned": 32.2,
+      "pct_started": 3.8,
+      "bye_weeks": [
+        7
+      ],
+      "history": [
+        {
+          "w": 1,
+          "pts": 7.0,
+          "played": true,
+          "tgt": 3.0,
+          "rec": 3.0,
+          "rey": 40.0
+        },
+        {
+          "w": 2,
+          "pts": 7.0,
+          "played": true,
+          "tgt": 9.0,
+          "rec": 3.0,
+          "rey": 40.0
+        },
+        {
+          "w": 3,
+          "pts": 1.8,
+          "played": true,
+          "tgt": 1.0,
+          "rec": 1.0,
+          "rey": 8.0
+        },
+        {
+          "w": 4,
+          "pts": 9.7,
+          "played": true,
+          "tgt": 2.0,
+          "rec": 2.0,
+          "rey": 17.0,
+          "retd": 1.0
+        },
+        {
+          "w": 5,
+          "pts": 0.0,
+          "played": true,
+          "tgt": 3.0
+        },
+        {
+          "w": 6,
+          "pts": 0.0,
+          "played": true,
+          "tgt": 2.0
+        },
+        {
+          "w": 8,
+          "pts": 8.2,
+          "played": true,
+          "tgt": 2.0,
+          "rec": 1.0,
+          "rey": 12.0,
+          "retd": 1.0
+        },
+        {
+          "w": 9,
+          "pts": 0.0,
+          "played": true
+        },
+        {
+          "w": 10,
+          "pts": 5.9,
+          "played": true,
+          "tgt": 4.0,
+          "rec": 3.0,
+          "rey": 29.0
+        }
+      ]
+    },
+    {
+      "player_id": "p_13294",
+      "espn_id": "4870795",
+      "name": "Makai Lemon",
+      "position": "WR",
+      "nfl_team": "PHI",
+      "injury_status": null,
+      "projected": 47.39479176,
+      "adp": 152.5,
+      "week_projected": 7.78,
+      "opponent": "PIT",
+      "on_bye": false,
+      "week_pts": 0.0,
+      "played": 0,
+      "opp_rank": 16,
+      "kickoff": null,
+      "season_pts": 73.7,
+      "avg_pts": 8.2,
+      "proj_avg": 5.9,
+      "pos_rank": 48,
+      "pct_owned": 44.8,
+      "pct_started": 6.0,
+      "bye_weeks": [
+        10
+      ],
+      "history": [
+        {
+          "w": 1,
+          "pts": 2.5,
+          "played": true,
+          "tgt": 4.0,
+          "rec": 3.0,
+          "rey": -5.0
+        },
+        {
+          "w": 2,
+          "pts": 1.9,
+          "played": true,
+          "tgt": 1.0,
+          "rec": 1.0,
+          "rey": 14.0,
+          "car": 1.0,
+          "ruy": -5.0
+        },
+        {
+          "w": 3,
+          "pts": 5.9,
+          "played": true,
+          "tgt": 4.0,
+          "rec": 3.0,
+          "rey": 29.0
+        },
+        {
+          "w": 4,
+          "pts": 5.7,
+          "played": true,
+          "tgt": 6.0,
+          "rec": 3.0,
+          "rey": 27.0
+        },
+        {
+          "w": 5,
+          "pts": 9.3,
+          "played": true,
+          "tgt": 7.0,
+          "rec": 5.0,
+          "rey": 43.0
+        },
+        {
+          "w": 6,
+          "pts": 4.9,
+          "played": true,
+          "tgt": 6.0,
+          "rec": 3.0,
+          "rey": 19.0
+        },
+        {
+          "w": 7,
+          "pts": 19.7,
+          "played": true,
+          "tgt": 8.0,
+          "rec": 7.0,
+          "rey": 67.0,
+          "retd": 1.0
+        },
+        {
+          "w": 8,
+          "pts": 11.7,
+          "played": true,
+          "tgt": 9.0,
+          "rec": 6.0,
+          "rey": 57.0
+        },
+        {
+          "w": 9,
+          "pts": 12.1,
+          "played": true,
+          "tgt": 9.0,
+          "rec": 6.0,
+          "rey": 61.0
+        }
+      ]
+    },
+    {
       "player_id": "p_12713",
       "espn_id": "4569923",
       "name": "Andy Borregales",
@@ -36800,7 +36903,7 @@
       "nfl_team": "NE",
       "injury_status": null,
       "projected": 47.13861488,
-      "adp": 169.78,
+      "adp": 169.77,
       "week_projected": 0.0,
       "opponent": "BYE",
       "on_bye": true,
@@ -36877,8 +36980,8 @@
       "position": "D/ST",
       "nfl_team": "CIN",
       "injury_status": null,
-      "projected": 47.13585217,
-      "adp": 165.68,
+      "projected": 47.13585229,
+      "adp": 165.69,
       "week_projected": 5.04,
       "opponent": "WSH",
       "on_bye": false,
@@ -36890,8 +36993,8 @@
       "avg_pts": 6.4,
       "proj_avg": 2.8,
       "pos_rank": 12,
-      "pct_owned": 34.5,
-      "pct_started": 26.0,
+      "pct_owned": 34.6,
+      "pct_started": 26.1,
       "bye_weeks": [
         6
       ],
@@ -36951,7 +37054,7 @@
       "nfl_team": "LAC",
       "injury_status": null,
       "projected": 47.07281995,
-      "adp": 169.51,
+      "adp": 169.46,
       "week_projected": 6.56,
       "opponent": "NYJ",
       "on_bye": false,
@@ -36963,7 +37066,7 @@
       "avg_pts": 5.6,
       "proj_avg": 5.9,
       "pos_rank": 47,
-      "pct_owned": 8.5,
+      "pct_owned": 8.4,
       "pct_started": 2.3,
       "bye_weeks": [
         7
@@ -37062,8 +37165,8 @@
       "position": "WR",
       "nfl_team": "LV",
       "injury_status": null,
-      "projected": 46.6817029,
-      "adp": 169.48,
+      "projected": 46.68173153,
+      "adp": 169.46,
       "week_projected": 6.41,
       "opponent": "DEN",
       "on_bye": false,
@@ -37075,7 +37178,7 @@
       "avg_pts": 3.7,
       "proj_avg": 6.7,
       "pos_rank": 100,
-      "pct_owned": 2.9,
+      "pct_owned": 2.8,
       "pct_started": 0.6,
       "bye_weeks": [
         13
@@ -37165,8 +37268,8 @@
       "position": "WR",
       "nfl_team": "HOU",
       "injury_status": "Out",
-      "projected": 46.62906856,
-      "adp": 128.19,
+      "projected": 46.62907104,
+      "adp": 128.16,
       "week_projected": 0.0,
       "opponent": "IND",
       "on_bye": false,
@@ -37264,8 +37367,8 @@
       "position": "TE",
       "nfl_team": "NYJ",
       "injury_status": null,
-      "projected": 45.77710402,
-      "adp": 169.72,
+      "projected": 45.77710573,
+      "adp": 169.73,
       "week_projected": 7.21,
       "opponent": "LAC",
       "on_bye": false,
@@ -37278,7 +37381,7 @@
       "proj_avg": 6.5,
       "pos_rank": 31,
       "pct_owned": 4.3,
-      "pct_started": 1.3,
+      "pct_started": 1.4,
       "bye_weeks": [
         13
       ],
@@ -37365,7 +37468,7 @@
       "nfl_team": "LAC",
       "injury_status": null,
       "projected": 45.74115371,
-      "adp": 156.95,
+      "adp": 157.0,
       "week_projected": 6.12,
       "opponent": "NYJ",
       "on_bye": false,
@@ -37460,109 +37563,6 @@
           "rey": 6.0
         }
       ]
-    },
-    {
-      "player_id": "p_13294",
-      "espn_id": "4870795",
-      "name": "Makai Lemon",
-      "position": "WR",
-      "nfl_team": "PHI",
-      "injury_status": null,
-      "projected": 45.30305501,
-      "adp": 152.38,
-      "week_projected": 5.69,
-      "opponent": "PIT",
-      "on_bye": false,
-      "week_pts": 0.0,
-      "played": 0,
-      "opp_rank": 16,
-      "kickoff": null,
-      "season_pts": 73.7,
-      "avg_pts": 8.2,
-      "proj_avg": 5.7,
-      "pos_rank": 48,
-      "pct_owned": 44.8,
-      "pct_started": 5.8,
-      "bye_weeks": [
-        10
-      ],
-      "history": [
-        {
-          "w": 1,
-          "pts": 2.5,
-          "played": true,
-          "tgt": 4.0,
-          "rec": 3.0,
-          "rey": -5.0
-        },
-        {
-          "w": 2,
-          "pts": 1.9,
-          "played": true,
-          "tgt": 1.0,
-          "rec": 1.0,
-          "rey": 14.0,
-          "car": 1.0,
-          "ruy": -5.0
-        },
-        {
-          "w": 3,
-          "pts": 5.9,
-          "played": true,
-          "tgt": 4.0,
-          "rec": 3.0,
-          "rey": 29.0
-        },
-        {
-          "w": 4,
-          "pts": 5.7,
-          "played": true,
-          "tgt": 6.0,
-          "rec": 3.0,
-          "rey": 27.0
-        },
-        {
-          "w": 5,
-          "pts": 9.3,
-          "played": true,
-          "tgt": 7.0,
-          "rec": 5.0,
-          "rey": 43.0
-        },
-        {
-          "w": 6,
-          "pts": 4.9,
-          "played": true,
-          "tgt": 6.0,
-          "rec": 3.0,
-          "rey": 19.0
-        },
-        {
-          "w": 7,
-          "pts": 19.7,
-          "played": true,
-          "tgt": 8.0,
-          "rec": 7.0,
-          "rey": 67.0,
-          "retd": 1.0
-        },
-        {
-          "w": 8,
-          "pts": 11.7,
-          "played": true,
-          "tgt": 9.0,
-          "rec": 6.0,
-          "rey": 57.0
-        },
-        {
-          "w": 9,
-          "pts": 12.1,
-          "played": true,
-          "tgt": 9.0,
-          "rec": 6.0,
-          "rey": 61.0
-        }
-      ]
     }
   ],
   "matchups": [
@@ -37581,7 +37581,7 @@
       "home_score": 0.0,
       "away_score": 1.0,
       "home_proj": 128.4,
-      "away_proj": 120.7,
+      "away_proj": 120.6,
       "playoff": false
     },
     {
@@ -37590,7 +37590,7 @@
       "home_score": 0.0,
       "away_score": 0.0,
       "home_proj": 107.9,
-      "away_proj": 122.6,
+      "away_proj": 122.7,
       "playoff": false
     },
     {
@@ -38253,5 +38253,5 @@
     }
   ],
   "extras_ok": true,
-  "pulled_at": "2026-11-20T20:29:27+00:00"
+  "pulled_at": "2026-11-21T04:03:11+00:00"
 }
