@@ -1,6 +1,51 @@
 {
-  "fetched_at": "2026-11-21T19:23:41+00:00",
+  "fetched_at": "2026-11-22T03:16:58+00:00",
   "items": [
+    {
+      "headline": "Sources: Rams' Puka Nacua out 4-5 months after knee surgery, will miss playoffs",
+      "body": "Puka Nacua's recovery time from MCL surgery is considered to be four to five months, sources told ESPN, meaning he will miss the playoffs.",
+      "published": "2026-11-22T02:19:36Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50556613/sources-rams-puka-nacua-4-5-months-knee-surgery",
+      "espn_athlete_ids": [
+        392016
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Cardinals rule out rookie Carson Beck, turn to 40-year-old Josh Johnson vs. Chiefs",
+      "body": "Cardinals rookie quarterback Carson Beck has been downgraded to out, paving the way for 40-year-old Josh Johnson to start against the Chiefs.",
+      "published": "2026-11-21T21:41:11Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50553035/cardinals-downgrade-qb-carson-beck-josh-johnson-set-start",
+      "espn_athlete_ids": [
+        37596,
+        439276
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Steelers activate WR Roman Wilson off IR for Eagles game",
+      "body": "The Steelers have activated wide receiver Roman Wilson from injured reserve ahead of Sunday's game against the Eagles.",
+      "published": "2026-11-21T20:54:35Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50552701/sources-steelers-activate-wr-roman-wilson-ir-eagles-game",
+      "espn_athlete_ids": [
+        443979,
+        447687,
+        435184
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
     {
       "headline": "Titans DL Jaylen Harrell hospitalized after car accident in Tampa",
       "body": "Titans defensive lineman Jaylen Harrell was involved in a serious car accident Friday and remains hospitalized, according to the team.",
@@ -617,32 +662,6 @@
       "source": "ESPN"
     },
     {
-      "headline": "Pat McAfee sees no hope for Colts' future",
-      "body": "Pat McAfee sees no hope for Colts' future",
-      "published": "2026-11-20T17:39:23Z",
-      "url": "https://www.espn.com/video/clip/_/id/50542049/pat-mcafee-sees-no-hope-colts-future",
-      "espn_athlete_ids": [
-        64593
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Rams' Puka Nacua has MCL surgery, likely done for regular season",
-      "body": "Rams WR Puka Nacua, who is serving a three-game suspension while on IR, had surgery on his MCL and likely will miss at least the rest of the regular season.",
-      "published": "2026-11-20T18:19:07Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50542028/rams-puka-nacua-needs-mcl-surgery-likely-done-season",
-      "espn_athlete_ids": [
-        392016
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
       "headline": "Mo Alie-Cox (TE, IND) listed IR",
       "body": "Groin",
       "published": null,
@@ -994,7 +1013,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Justice Hill (RB, BAL) is the hot add -- 143,874 pickups in 24h",
+      "headline": "Justice Hill (RB, BAL) is the hot add -- 124,353 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -1007,20 +1026,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Mark Andrews (TE, BAL) is the hot add -- 96,489 pickups in 24h",
-      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        3116365
-      ],
-      "athlete_names": [
-        "Mark Andrews"
-      ],
-      "source": "Sleeper trending"
-    },
-    {
-      "headline": "Dawson Knox (TE, BUF) is the hot add -- 63,030 pickups in 24h",
+      "headline": "Dawson Knox (TE, BUF) is the hot add -- 79,596 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -1033,7 +1039,20 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Samaje Perine (RB, CIN) is the hot add -- 53,988 pickups in 24h",
+      "headline": "Mark Andrews (TE, BAL) is the hot add -- 73,278 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3116365
+      ],
+      "athlete_names": [
+        "Mark Andrews"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Samaje Perine (RB, CIN) is the hot add -- 41,944 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -1046,7 +1065,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Darren Waller (TE, CAR) is the hot add -- 46,215 pickups in 24h",
+      "headline": "Darren Waller (TE, CAR) is the hot add -- 36,603 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -1059,7 +1078,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Courtland Sutton (WR, DEN) is the hot add -- 40,446 pickups in 24h",
+      "headline": "Courtland Sutton (WR, DEN) is the hot add -- 30,735 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
