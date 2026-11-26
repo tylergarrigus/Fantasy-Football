@@ -1,10 +1,327 @@
 {
-  "fetched_at": "2026-11-25T21:47:19+00:00",
+  "fetched_at": "2026-11-26T05:10:15+00:00",
   "items": [
     {
+      "headline": "Rams pick up important home win over the Packers",
+      "body": "Rams pick up important home win over the Packers",
+      "published": "2026-11-26T04:46:32Z",
+      "url": "https://www.espn.com/video/clip/_/id/50601743/rams-pick-important-home-win-packers",
+      "espn_athlete_ids": [
+        529534,
+        443985,
+        442833,
+        529649,
+        388606
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Blake Corum leads Rams' dominant rushing attack in their 5th straight win, 26-13 over Packers",
+      "body": "\u2014 Blake Corum rushed for a career-high 184 yards and a touchdown, Kyren Williams ran for another score and the Los Angeles Rams used a relentless ground game to pound out their fifth consecutive...",
+      "published": "2026-11-26T04:41:33Z",
+      "url": "http://www.espn.com/nfl/recap?gameId=401873079",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Rams take Packers' dinner in first Thanksgiving Eve game",
+      "body": "The night was full of interceptions and injuries with the Rams taking the W.",
+      "published": "2026-11-26T04:34:44Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50599736/2026-nfl-week-12-los-angeles-rams-green-bay-packers",
+      "espn_athlete_ids": [
+        529534,
+        435036,
+        63003,
+        443985
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Rams vs. Packers: Week 12 NFL game highlights",
+      "body": "Our team reporters are set to keep you updated on all the biggest plays and highlights.",
+      "published": "2026-11-26T04:37:26Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50599365/nfl-week-12-highlights-touchdowns-plays",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Rams' Kam Kinchens ejected as hit leaves Packers' Christian Watson concussed",
+      "body": "Rams safety Kam Kinchens was ejected for a hit along the sideline that left Packers wide receiver Christian Watson with a concussion Wednesday night.",
+      "published": "2026-11-26T04:40:45Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50600753/rams-kam-kinchens-ejected-hit-christian-watson",
+      "espn_athlete_ids": [
+        489892,
+        529534
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Buccaneers will need more from Baker Mayfield and struggling passing attack to beat the Panthers",
+      "body": "\u2014 The Tampa Bay Buccaneers didn't need much from Baker Mayfield to rout the Carolina Panthers last month.",
+      "published": "2026-11-26T02:24:54Z",
+      "url": "http://www.espn.com/nfl/preview?gameId=401873094",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Tony Romo takes job with sports gambling company co-founded by Jake Paul",
+      "body": "Former CBS NFL analyst Tony Romo has taken a job with Betr, with the company saying he will make predictions and engage with fans across platforms.",
+      "published": "2026-11-26T02:37:43Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50600128/tony-romo-job-sports-gambling-company-jake-paul",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Kirk Cousins makes his home debut in his second act with the Vikings, fittingly against the Falcons",
+      "body": "\u2014 When the Minnesota Vikings last played at home, a foundering offense heard it from the frustrated fans after each futile possession.",
+      "published": "2026-11-26T01:47:32Z",
+      "url": "http://www.espn.com/nfl/preview?gameId=401873084",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Commanders try to continue momentum while Cardinals work to end 11-game home losing streak",
+      "body": "\u2014 Some people around the NFL might have needed a reminder what Jayden Daniels can do on a football field before the quarterback led the Washington Commanders ",
+      "published": "2026-11-26T00:58:33Z",
+      "url": "http://www.espn.com/nfl/preview?gameId=401873092",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Patriots-Chargers shaping up to be battle of backup QBs for 2 of AFC's biggest disappointments",
+      "body": "\u2014 When Drake Maye\u2019s New England Patriots eased past Justin Herbert\u2019s Los Angeles Chargers in an AFC wild-card game in January, it seemed as if...",
+      "published": "2026-11-26T00:38:32Z",
+      "url": "http://www.espn.com/nfl/preview?gameId=401873093",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Bengals look to get back on track when they host the Saints on a short week",
+      "body": "Most coaches don't like coming off a Monday night game the week of Thanksgiving because of changes to the practice schedule and a short week of preparation becoming even more condensed.",
+      "published": "2026-11-26T00:37:33Z",
+      "url": "http://www.espn.com/nfl/preview?gameId=401873087",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Purdy and the 49ers prepare for another tough test against Seahawks' stout defense",
+      "body": "\u2014 The San Francisco 49ers passed the first of back-to-back tests against two of the NFL's top defenses with flying colors as Brock Prudy ",
+      "published": "2026-11-26T00:25:33Z",
+      "url": "http://www.espn.com/nfl/preview?gameId=401873091",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Jaguars are simplifying the operation in hopes of bouncing back against the woeful Titans",
+      "body": "\u2014 Coming off their worst offensive performance in two months, the Jacksonville Jaguars are simplifying the operation.",
+      "published": "2026-11-26T00:17:34Z",
+      "url": "http://www.espn.com/nfl/preview?gameId=401873090",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "NFL Week 12 arrivals: Aaron Donald leads arrivals ahead of Rams-Packers",
+      "body": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
+      "published": "2026-11-25T23:58:11Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50588078/nfl-week-12-fashionable-arrivals",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Dolphins playing host to Jets, as the NFL's youngest team remains mindful of rookie wall",
+      "body": "\u2014 The Miami Dolphins have a visible opponent this week. They're playing host to the rival New York Jets on Sunday.",
+      "published": "2026-11-25T23:48:34Z",
+      "url": "http://www.espn.com/nfl/preview?gameId=401873089",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Deshaun Watson and No. 1 pick Fernando Mendoza face primetime pressure in Browns' matchup vs Raiders",
+      "body": "\u2014 Deshaun Watson and Fernando Mendoza have plenty to prove when Cleveland hosts Las Vegas on Sunday night.",
+      "published": "2026-11-25T23:47:32Z",
+      "url": "http://www.espn.com/nfl/preview?gameId=401873086",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Ryans says Texans are focused on winning each week as Ravens limp in on 6-game skid without Jackson",
+      "body": "\u2014 Despite their struggles this season, the Houston Texans still have a good shot to reach the playoffs if they finish strong.",
+      "published": "2026-11-25T23:34:32Z",
+      "url": "http://www.espn.com/nfl/preview?gameId=401873085",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "QB Anthony Richardson hopes to follow J.J. McCarthy's lead when he starts for Colts against Giants",
+      "body": "\u2014 Anthony Richardson has already watched quarterback ",
+      "published": "2026-11-25T23:33:33Z",
+      "url": "http://www.espn.com/nfl/preview?gameId=401873088",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "NFL Week 12 uniforms: Rams debut alternates, Cowboys rock Thanksgiving throwbacks",
+      "body": "Here's a look at what each NFL team is wearing in Week 12, led by an alternate uniform for the Los Angeles Rams.",
+      "published": "2026-11-26T03:44:06Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50577887/nfl-week-12-uniforms",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Allen and Mahomes renew their thrilling rivalry as the Bills host the Chiefs on Thanksgiving night",
+      "body": "\u2014 Sorry, Steve Spagnuolo. Josh Allen has no plans of going anywhere, any time soon.",
+      "published": "2026-11-25T23:03:41Z",
+      "url": "http://www.espn.com/nfl/preview?gameId=401873082",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Lions and Bears kick off NFL's Thanksgiving Day tripleheader, playing for first place in NFC North",
+      "body": "\u2014 NFL fans without ties to Detroit used to dread when the Lions kicked off the league's annual tradition of playing on Thanksgiving Day because they were a laughingstock for many years.",
+      "published": "2026-11-25T22:57:33Z",
+      "url": "http://www.espn.com/nfl/preview?gameId=401873081",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Cowboys really need back-to-back wins this time with rival Eagles visiting on Thanksgiving",
+      "body": "\u2014 If the Dallas Cowboys don't solve a puzzling inability to win consecutive games when NFC East rival Philadelphia visits on Thanksgiving, they'll have to accept that they're probably going to miss the playoffs for the third year in a row.",
+      "published": "2026-11-25T22:47:45Z",
+      "url": "http://www.espn.com/nfl/preview?gameId=401873080",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Mike McCarthy defends himself amid accusations from Aaron Rodgers",
+      "body": "Mike McCarthy defends himself amid accusations from Aaron Rodgers",
+      "published": "2026-11-25T22:59:05Z",
+      "url": "https://www.espn.com/video/clip/_/id/50598220/mike-mccarthy-defends-amid-accusations-aaron-rodgers",
+      "espn_athlete_ids": [
+        17303
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "What's next for Aaron Rodgers, Mike McCarthy, Steelers?",
+      "body": "The news out of Pittsburgh shook the NFL landscape, and ESPN's insiders share insights on the QB, the coach and their futures.",
+      "published": "2026-11-26T03:21:29Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50596920/pittsburgh-steelers-aaron-rodgers-mike-mccarthy-next",
+      "espn_athlete_ids": [
+        17303,
+        470266
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Aaron Rodgers' comments on 'The Pat McAfee Show' draw NFL reaction",
+      "body": "The now-former Steelers quarterback made a number of noteworthy comments in a bombshell interview on \"The Pat McAfee Show\" Wednesday afternoon.",
+      "published": "2026-11-26T04:45:44Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50597133/aaron-rodgers-pat-mcafee-interview-social-reaction",
+      "espn_athlete_ids": [
+        17303
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Steelers players try to keep focus on Broncos amid Aaron Rodgers fallout",
+      "body": "Steelers players tried to keep their focus on Friday's game against the Broncos as Aaron Rodgers ripped coach Mike McCarthy on national TV.",
+      "published": "2026-11-26T03:45:08Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50597989/steelers-players-try-keep-focus-broncos-amid-rodgers-fallout",
+      "espn_athlete_ids": [
+        470266,
+        17303
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Sources: Mike McCarthy has Steelers' full support after Aaron Rodgers interview",
+      "body": "Mike McCarthy has the full support of the Steelers organization and will remain the team's coach after Aaron Rodgers' allegations, sources told NFL Network and ESPN.",
+      "published": "2026-11-26T03:43:28Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50597534/sources-mike-mccarthy-steelers-full-support",
+      "espn_athlete_ids": [
+        17303
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "RB Derrick Henry in concussion protocol but Ravens expect him to play Sunday",
+      "body": "Ravens running back Derrick Henry was placed back into concussion protocol Wednesday, but he is expected to play Sunday at the Texans.",
+      "published": "2026-11-25T22:33:48Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50597502/henry-concussion-protocol-ravens-expect-play",
+      "espn_athlete_ids": [
+        152901
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Panthers vs. Buccaneers: Where to watch 'Monday Night Football'",
+      "body": "Here's what to know about the Week 12 matchup.",
+      "published": "2026-11-25T21:49:44Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50596948/panthers-vs-buccaneers-watch-monday-night-football-week-12",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
       "headline": "Sources corroborate Aaron Rodgers' allegations about Steelers HC Mike McCarthy",
-      "body": "Sources around NFL have corroborated Aaron Rodgers' account of Mike McCarthy to ESPN reporters, confirming the star QB's allegations about the Steelers coach.",
-      "published": "2026-11-25T21:44:26Z",
+      "body": "NFL sources have corroborated Aaron Rodgers' account of Mike McCarthy to ESPN reporters, confirming the star QB's allegations about the Steelers coach.",
+      "published": "2026-11-26T03:31:14Z",
       "url": "https://www.espn.com/nfl/story/_/id/50597187/sources-confirm-aaron-rodgers-allegations-mike-mccarthy",
       "espn_athlete_ids": [
         17303
@@ -17,7 +334,7 @@
     {
       "headline": "Colts' Alec Pierce: 'Definitely a chance' to return from heel injury this season",
       "body": "Colts WR Alec Pierce said on Wednesday he's progressing each day from a heel injury he sustained in Week 2 and hopes to return to play this season.",
-      "published": "2026-11-25T21:31:27Z",
+      "published": "2026-11-25T23:13:25Z",
       "url": "https://www.espn.com/nfl/story/_/id/50597055/colts-alec-pierce-heel-injury-hopeful-return-season",
       "espn_athlete_ids": [
         529438
@@ -37,9 +354,9 @@
       "source": "ESPN"
     },
     {
-      "headline": "49ers QB Brock Purdy has ankle injury, won't practice Wednesday",
-      "body": "49ers quarterback Brock Purdy will not practice Wednesday as he deals with an ankle injury suffered in Sunday night's game against the Vikings.",
-      "published": "2026-11-25T21:04:52Z",
+      "headline": "49ers QB Brock Purdy has ankle injury, sits out practice Wednesday",
+      "body": "49ers quarterback Brock Purdy did not practice Wednesday as he deals with an ankle injury suffered in Sunday night's game against the Vikings.",
+      "published": "2026-11-26T00:16:10Z",
       "url": "https://www.espn.com/nfl/story/_/id/50596930/49ers-brock-purdy-ankle-injury-practice-wednesday",
       "espn_athlete_ids": [
         529915
@@ -47,15 +364,6 @@
       "athlete_names": [
         null
       ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "NFL Week 12 uniforms: Rams debut alternates, Cowboys rock Thanksgiving throwbacks",
-      "body": "Here's a look at what each NFL team is wearing in Week 12, led by an alternate uniform for the Los Angeles Rams.",
-      "published": "2026-11-25T20:56:45Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50577887/nfl-week-12-uniforms",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
       "source": "ESPN"
     },
     {
@@ -151,7 +459,7 @@
     {
       "headline": "Steelers cut Rodgers after QB rips McCarthy in scorched-earth interview",
       "body": "The Steelers have waived Aaron Rodgers after the quarterback said Wednesday on \"The Pat McAfee Show\" that coach Mike McCarthy has been sleeping through team meetings.",
-      "published": "2026-11-25T21:37:16Z",
+      "published": "2026-11-26T03:42:55Z",
       "url": "https://www.espn.com/nfl/story/_/id/50595660/rodgers-heard-mccarthy-benching",
       "espn_athlete_ids": [
         17303
@@ -177,7 +485,7 @@
     {
       "headline": "Commanders and WR Brandon Aiyuk: What to expect, his fit and fantasy impact",
       "body": "Our experts answer the biggest questions surrounding Aiyuk agreeing to join the Commanders practice squad.",
-      "published": "2026-11-25T21:00:38Z",
+      "published": "2026-11-25T23:24:03Z",
       "url": "https://www.espn.com/nfl/story/_/id/50587341/brandon-aiyuk-commanders-questions",
       "espn_athlete_ids": [
         434992,
@@ -201,9 +509,9 @@
       "source": "ESPN"
     },
     {
-      "headline": "Brandon Aiyuk joining Commanders, will reunite with college QB Jayden Daniels",
-      "body": "Wide receiver Brandon Aiyuk is signing with the Commanders on their practice squad, agent Drew Rosenhaus told ESPN's Adam Schefter.",
-      "published": "2026-11-25T19:57:26Z",
+      "headline": "Brandon Aiyuk joining Commanders, reunites with college QB Jayden Daniels",
+      "body": "Wide receiver Brandon Aiyuk is signing with the Commanders on their practice squad, the team announced.",
+      "published": "2026-11-26T00:35:42Z",
       "url": "https://www.espn.com/nfl/story/_/id/50595281/brandon-aiyuk-finishes-visit-commanders",
       "espn_athlete_ids": [
         434992
@@ -256,230 +564,6 @@
         444378
       ],
       "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Why Mike Clay is high on Deshaun Watson as a streaming option in Week 12",
-      "body": "Why Mike Clay is high on Deshaun Watson as a streaming option in Week 12",
-      "published": "2026-11-25T16:59:10Z",
-      "url": "https://www.espn.com/video/clip/_/id/50594488/why-mike-clay-high-deshaun-watson-streaming-option-week-12",
-      "espn_athlete_ids": [
-        166843
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Why Field Yates isn't fully convinced by Zach Charbonnet's fantasy potential",
-      "body": "Why Field Yates isn't fully convinced by Zach Charbonnet's fantasy potential",
-      "published": "2026-11-25T16:46:09Z",
-      "url": "https://www.espn.com/video/clip/_/id/50594466/why-field-yates-fully-convinced-zach-charbonnet-fantasy-potential",
-      "espn_athlete_ids": [
-        395438
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Why Mike Clay says Carnell Tate may be in store for a tough Week 12 matchup",
-      "body": "Why Mike Clay says Carnell Tate may be in store for a tough Week 12 matchup",
-      "published": "2026-11-25T16:55:47Z",
-      "url": "https://www.espn.com/video/clip/_/id/50594441/why-mike-clay-says-carnell-tate-store-tough-week-12-matchup",
-      "espn_athlete_ids": [
-        605760
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Why Field Yates is banking on Jordyn Tyson to bounce back",
-      "body": "Why Field Yates is banking on Jordyn Tyson to bounce back",
-      "published": "2026-11-25T17:01:37Z",
-      "url": "https://www.espn.com/video/clip/_/id/50594376/why-field-yates-banking-jordyn-tyson-bounce-back",
-      "espn_athlete_ids": [
-        539343
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Why Stephen A. is taking Josh Allen over Patrick Mahomes ... right now",
-      "body": "Why Stephen A. is taking Josh Allen over Patrick Mahomes ... right now",
-      "published": "2026-11-25T19:58:01Z",
-      "url": "https://www.espn.com/video/clip/_/id/50594342/why-stephen-taking-josh-allen-patrick-mahomes-right-now",
-      "espn_athlete_ids": [
-        184455,
-        166867
-      ],
-      "athlete_names": [
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Fantasy buzz: How to navigate your roster for the Thanksgiving slate",
-      "body": "How do you decide which players go where for six days of fantasy football? Tristan H. Cockcroft breaks it all down.",
-      "published": "2026-11-25T20:43:42Z",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/40699880/fantasy-football-injuries-position-battles-nfl-news-analysis",
-      "espn_athlete_ids": [
-        529802,
-        537782,
-        470107,
-        435107,
-        539343,
-        380283,
-        446463,
-        672922,
-        442393,
-        184478,
-        470127,
-        389171,
-        529523,
-        439382,
-        537651,
-        547264,
-        538711,
-        450385,
-        499240,
-        126377,
-        537704,
-        398613,
-        390109,
-        470095,
-        435157,
-        435000,
-        167268,
-        228197,
-        184615,
-        529657,
-        139089,
-        17303,
-        439920,
-        435043,
-        538943,
-        184680
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Stephen A. rips Steelers' decision to bench Aaron Rodgers",
-      "body": "Stephen A. rips Steelers' decision to bench Aaron Rodgers",
-      "published": "2026-11-25T15:18:49Z",
-      "url": "https://www.espn.com/video/clip/_/id/50593396/stephen-rips-steelers-decision-bench-aaron-rodgers",
-      "espn_athlete_ids": [
-        17303
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Fantasy playbook: Week 12 Shadow Reports, lineup locks and projected scores",
-      "body": "An all-encompassing look at the matchups to exploit or avoid and lineup locks in fantasy, as well as projected scores for all NFL games.",
-      "published": "2026-11-25T17:58:39Z",
-      "url": "https://www.espn.com/fantasy/football/story/_/id/50572372/fantasy-playbook-projections-lineup-locks-week-12-shadow",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Brooke Pryor: No indication from Steelers that Rodgers was being benched",
-      "body": "Brooke Pryor: No indication from Steelers that Rodgers was being benched",
-      "published": "2026-11-25T14:01:36Z",
-      "url": "https://www.espn.com/video/clip/_/id/50592591/no-indication-steelers-rodgers-was-being-benched",
-      "espn_athlete_ids": [
-        17303
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Jordan Rodgers: Benching Aaron Rodgers won't fix the Steelers' issues",
-      "body": "Jordan Rodgers: Benching Aaron Rodgers won't fix the Steelers' issues ",
-      "published": "2026-11-25T13:59:59Z",
-      "url": "https://www.espn.com/video/clip/_/id/50592394/benching-aaron-rodgers-fix-steelers-issues",
-      "espn_athlete_ids": [
-        17303
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "NFL Week 12 latest intel, buzz questions, news, fantasy tips: What we're hearing",
-      "body": "Where could Daniel Jones land? What's the latest on coaching hot seats? What's next for Puka Nacua? And who is getting MVP love in league circles?",
-      "published": "2026-11-25T18:44:11Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50582929/week-12-buzz-fantasy-predictions-graziano-fowler-2026",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "What Aaron Rodgers' benching means for Steelers, his future",
-      "body": "The Steelers are starting Mason Rudolph this week over Aaron Rodgers. Why make this change now -- and will it help? And is this really it for Rodgers?",
-      "published": "2026-11-25T20:14:17Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50589984/aaron-rodgers-benched-steelers-quarterback-rudolph-week-12",
-      "espn_athlete_ids": [
-        17303,
-        184680,
-        538225
-      ],
-      "athlete_names": [
-        null,
-        null,
         null
       ],
       "source": "ESPN"
@@ -572,6 +656,19 @@
       ],
       "athlete_names": [
         "James Conner"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
+      "headline": "Tyler Higbee (TE, LAR) listed Out",
+      "body": "Chest",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        2573401
+      ],
+      "athlete_names": [
+        "Tyler Higbee"
       ],
       "source": "Sleeper injury report"
     },
@@ -732,7 +829,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Josh Jacobs (RB, GB) listed Questionable",
+      "headline": "Josh Jacobs (RB, GB) listed Out",
       "body": "Finger -- Surgery",
       "published": null,
       "url": null,
@@ -797,7 +894,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "J.K. Dobbins (RB, DEN) listed Out",
+      "headline": "J.K. Dobbins (RB, DEN) listed Sus",
       "body": "Personal",
       "published": null,
       "url": null,
@@ -810,20 +907,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Justice Hill (RB, BAL) is the hot add -- 505,476 pickups in 24h",
-      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        4038441
-      ],
-      "athlete_names": [
-        "Justice Hill"
-      ],
-      "source": "Sleeper trending"
-    },
-    {
-      "headline": "Deshaun Watson (QB, CLE) is the hot add -- 493,336 pickups in 24h",
+      "headline": "Deshaun Watson (QB, CLE) is the hot add -- 538,544 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -836,20 +920,20 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Tyler Higbee (TE, LAR) is the hot add -- 321,354 pickups in 24h",
+      "headline": "Justice Hill (RB, BAL) is the hot add -- 417,798 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
       "espn_athlete_ids": [
-        2573401
+        4038441
       ],
       "athlete_names": [
-        "Tyler Higbee"
+        "Justice Hill"
       ],
       "source": "Sleeper trending"
     },
     {
-      "headline": "Samaje Perine (RB, CIN) is the hot add -- 312,908 pickups in 24h",
+      "headline": "Samaje Perine (RB, CIN) is the hot add -- 299,988 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -862,7 +946,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Mason Rudolph (QB, PIT) is the hot add -- 268,394 pickups in 24h",
+      "headline": "Mason Rudolph (QB, PIT) is the hot add -- 275,428 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -875,7 +959,20 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Geno Smith (QB, NYJ) is the hot add -- 158,884 pickups in 24h",
+      "headline": "Tyler Higbee (TE, LAR) is the hot add -- 248,175 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        2573401
+      ],
+      "athlete_names": [
+        "Tyler Higbee"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Geno Smith (QB, NYJ) is the hot add -- 205,408 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -888,7 +985,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Evan Engram (TE, DEN) is the hot add -- 120,848 pickups in 24h",
+      "headline": "Evan Engram (TE, DEN) is the hot add -- 108,296 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
