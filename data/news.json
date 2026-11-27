@@ -1,10 +1,343 @@
 {
-  "fetched_at": "2026-11-26T21:40:12+00:00",
+  "fetched_at": "2026-11-27T05:08:24+00:00",
   "items": [
+    {
+      "headline": "Kansas City Chiefs vs. Buffalo Bills: Game Highlight",
+      "body": "Kansas City Chiefs vs. Buffalo Bills: Game Highlight",
+      "published": "2026-11-27T04:56:29Z",
+      "url": "https://www.espn.com/video/clip/_/id/50609218/game-highlight",
+      "espn_athlete_ids": [
+        435540,
+        529581,
+        450465,
+        380765,
+        529346,
+        536855
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Tyler Bass hits 57-yard field goal as time expires to lift Bills past Chiefs, 13-10",
+      "body": "\u2014 Tyler Bass hit a 57-yard field goal as time expired and the Buffalo Bills improved their AFC-leading record to 10-1 with a 13-10 victory over the rival Kansas City Chiefs on a rainy, windy and chilly Thursday night.",
+      "published": "2026-11-27T05:06:33Z",
+      "url": "http://www.espn.com/nfl/recap?gameId=401873082",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Eagles QB Joe Milton wows teammates with breakout game in Dallas",
+      "body": "Eagles QB Joe Milton had a breakout game on the national stage, accounting for four touchdowns in a wild 39-38 come-from-behind win over the Cowboys.",
+      "published": "2026-11-27T04:53:39Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50609081/eagles-qb-joe-milton-wows-teammates-breakout-game-dallas",
+      "espn_athlete_ids": [
+        209441
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Bills edge Chiefs with last-second FG in low-scoring battle",
+      "body": "The Bills won their seventh straight, snapping the Chiefs' win streak at three in a sloppy, low-scoring thriller.",
+      "published": "2026-11-27T04:58:55Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50582828/2026-nfl-buffalo-bills-kansas-city-chiefs-thanksgiving",
+      "espn_athlete_ids": [
+        166867,
+        184455
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Jerry Jones backs Schottenheimer despite 'damning setbacks' in loss",
+      "body": "Jerry Jones said he did not anticipate making immediate changes but still labeled the Cowboys' latest fourth-quarter collapse as a \"damning\" setback.",
+      "published": "2026-11-27T05:07:00Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50608969/cowboys-jerry-jones-backs-coach-damning-setbacks",
+      "espn_athlete_ids": [
+        153118
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Will Shipley brushes off argument with coach Nick Sirianni: 'Emotions were running high'",
+      "body": "RB Will Shipley likened his sideline argument with coach Nick Sirianni to a Thanksgiving family spat in the wake of the Eagles' dramatic comeback win at Dallas.",
+      "published": "2026-11-27T04:54:00Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50608884/will-shipley-brushes-argument-coach-nick-sirianni",
+      "espn_athlete_ids": [
+        489492
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Tomlin upset by Rodgers' bitter exit, calls situation 'a dumpster fire'",
+      "body": "Mike Tomlin said he was saddened by Aaron Rodgers' tumultuous exit from Pittsburgh and disagreed with how the QB \"aired out\" his grievances against Mike McCarthy.",
+      "published": "2026-11-27T05:02:36Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50608802/tomlin-calls-rodgers-mccarthy-situation-dumpster-fire",
+      "espn_athlete_ids": [
+        17303
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "QB Caleb Williams, WR Rome Odunze's chemistry helps Bears stun Lions",
+      "body": "QB Caleb Williams and WR Rome Odunze leaned on their chemistry and trust to secure Chicago's ninth win of the season.",
+      "published": "2026-11-27T03:58:07Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50608495/qb-caleb-williams-wr-rome-odunze-chemistry-helps-bears-stun-lions",
+      "espn_athlete_ids": [
+        492854,
+        439920
+      ],
+      "athlete_names": [
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Stephen A. can't stop laughing at Cowboys after Thanksgiving collapse",
+      "body": "Stephen A. can't stop laughing at Cowboys after Thanksgiving collapse",
+      "published": "2026-11-27T02:21:34Z",
+      "url": "https://www.espn.com/video/clip/_/id/50608117/stephen-stop-laughing-cowboys-thanksgiving-collapse",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Eagles' comeback against Cowboys stuns Jason Kelce, Caitlin Clark and more",
+      "body": "The Philadelphia Eagles pulled off the largest Thanksgiving Day comeback in NFL history.",
+      "published": "2026-11-27T02:36:42Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50607960/eagles-cowboys-thanksgiving-social-reaction",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Eagles stun Cowboys with largest-ever Thanksgiving game comeback",
+      "body": "Eagles stun Cowboys with largest-ever Thanksgiving game comeback",
+      "published": "2026-11-27T01:58:17Z",
+      "url": "https://www.espn.com/video/clip/_/id/50607884/eagles-stun-cowboys-largest-ever-thanksgiving-game-comeback",
+      "espn_athlete_ids": [
+        167159,
+        470208,
+        470127,
+        168010,
+        153118
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Joe Milton has huge game as Eagles shock Cowboys",
+      "body": "Dallas blew a 21-point lead as Philly made a spectacular comeback with Milton at the helm.",
+      "published": "2026-11-27T02:43:27Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50605786/cowboys-eagles-thanksgiving-dak-prescott-saquon-barkley",
+      "espn_athlete_ids": [
+        184478,
+        153118,
+        435005,
+        470208
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Schottenheimer defends 4th-down call before Eagles' 59-yard FG in 39-38 stunner over Cowboys",
+      "body": "\u2014 Brian Schottenheimer said he second-guesses plenty of his decisions, just not the one that will be dissected more than any other in his two seasons as coach of the Dallas Cowboys.",
+      "published": "2026-11-27T03:40:32Z",
+      "url": "http://www.espn.com/nfl/recap?gameId=401873080",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Brady disappointed in Rodgers' McCarthy comments: 'Nobody wins'",
+      "body": "Tom Brady expressed his disappointment in how Aaron Rodgers handled his exit from Pittsburgh, saying there are things in the locker room that shouldn't be made public.",
+      "published": "2026-11-27T03:07:47Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50607635/tom-brady-disappointed-aaron-rodgers-mccarthy-comments",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "NFL Week 12 arrivals: Chris Jones leads arrivals ahead of Chiefs-Bills",
+      "body": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
+      "published": "2026-11-27T00:25:19Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50588078/nfl-week-12-fashionable-arrivals",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "NFL Week 12 uniforms: Rams debut alternates, Cowboys rock Thanksgiving throwbacks",
+      "body": "Here's a look at what each NFL team is wearing in Week 12, led by an alternate uniform for the Los Angeles Rams.",
+      "published": "2026-11-27T00:24:39Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50577887/nfl-week-12-uniforms",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "NFL Week 12: Highlights of Thanksgiving games",
+      "body": "Our team reporters are set to keep you updated on all the biggest plays and highlights.",
+      "published": "2026-11-27T03:10:16Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50599365/nfl-week-12-highlights-touchdowns-plays",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Dan Campbell: Lions' Thanksgiving loss to Bears will 'sting for a while'",
+      "body": "Dan Campbell: Lions' Thanksgiving loss to Bears will 'sting for a while'",
+      "published": "2026-11-26T23:57:28Z",
+      "url": "https://www.espn.com/video/clip/_/id/50607220/lions-thanksgiving-loss-bears-sting-while",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Ben Johnson proud of TEs that stepped up after Colston Loveland injury",
+      "body": "Ben Johnson proud of TEs that stepped up after Colston Loveland injury",
+      "published": "2026-11-26T23:55:59Z",
+      "url": "https://www.espn.com/video/clip/_/id/50607202/ben-johnson-proud-tes-stepped-colston-loveland-injury",
+      "espn_athlete_ids": [
+        543465,
+        537969,
+        381278
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Lions to 'move forward' after latest Thanksgiving heartbreak",
+      "body": "Lions head coach Dan Campbell rued another heartbreaker on Thanksgiving but encouraged his team to still try and enjoy the night with their families.",
+      "published": "2026-11-27T00:15:14Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50607165/lions-move-forward-latest-thanksgiving-heartbreak",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Eagles' Cooper DeJean leaves win at Cowboys because of concussion",
+      "body": "Eagles All-Pro defensive back Cooper DeJean was ruled out of Thursday's game against the Dallas Cowboys with a concussion.",
+      "published": "2026-11-27T01:37:41Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50606739/eagles-cooper-dejean-concussion-leaves-game-cowboys",
+      "espn_athlete_ids": [
+        489790
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Aaron Rodgers officially a free agent after clearing waivers",
+      "body": "Aaron Rodgers is officially a free agent and eligible to sign with any team after he cleared waivers Thursday.",
+      "published": "2026-11-26T23:30:54Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50606625/aaron-rodgers-officially-free-agent-clearing-waivers",
+      "espn_athlete_ids": [
+        17303
+      ],
+      "athlete_names": [
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Chicago Bears vs. Detroit Lions: Game Highlights",
+      "body": "Chicago Bears vs. Detroit Lions: Game Highlights",
+      "published": "2026-11-27T00:25:00Z",
+      "url": "https://www.espn.com/video/clip/_/id/50606402/game-highlights",
+      "espn_athlete_ids": [
+        438406,
+        451602,
+        435107,
+        439920
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Caleb Williams' late TD to Rome Odunze gives Bears dramatic win over Lions",
+      "body": "Caleb Williams turned into the 'Iceman' once again to give the Bears a dramatic late win over the Lions.",
+      "published": "2026-11-27T01:01:44Z",
+      "url": "https://www.espn.com/nfl/story/_/id/50605750/jahmyr-gibbs-lions-caleb-williams-bears-thanksgiving-game",
+      "espn_athlete_ids": [
+        529388,
+        470832,
+        438406,
+        152836,
+        492854,
+        435107,
+        451602,
+        439920
+      ],
+      "athlete_names": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "source": "ESPN"
+    },
+    {
+      "headline": "Caleb Williams' TD pass with 3 seconds left gives Bears 39-35 win over Lions",
+      "body": "\u2014 Caleb Williams took a shotgun snap, dropped back, looked left and threw a perfect pass to the back, right corner of the end zone where only Rome Odunze could catch it.",
+      "published": "2026-11-27T00:00:52Z",
+      "url": "http://www.espn.com/nfl/recap?gameId=401873081",
+      "espn_athlete_ids": [],
+      "athlete_names": [],
+      "source": "ESPN"
+    },
     {
       "headline": "Steelers activate Michael Pittman Jr. off IR, sign Max Hurleman to active roster",
       "body": "The Steelers on Thursday activated Michael Pittman Jr. from injured reserve and signed Max Hurleman to the active roster from the practice squad.",
-      "published": "2026-11-26T21:25:14Z",
+      "published": "2026-11-26T22:36:50Z",
       "url": "https://www.espn.com/nfl/story/_/id/50606063/steelers-activate-michael-pittman-jr-ir-sign-max-hurleman-active-roster-practice-squad",
       "espn_athlete_ids": [
         447687,
@@ -17,27 +350,9 @@
       "source": "ESPN"
     },
     {
-      "headline": "NFL Week 12 arrivals: CeeDee Lamb leads arrivals ahead of Eagles-Cowboys",
-      "body": "NFL stars continue to turn game-day arrivals into their own weekly fashion showcase.",
-      "published": "2026-11-26T20:21:31Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50588078/nfl-week-12-fashionable-arrivals",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "NFL Week 12: Highlights of Thanksgiving games",
-      "body": "Our team reporters are set to keep you updated on all the biggest plays and highlights.",
-      "published": "2026-11-26T20:39:04Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50599365/nfl-week-12-highlights-touchdowns-plays",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Bears TE Colston Loveland ruled out vs. Lions with knee injury",
-      "body": "The Bears have ruled out tight end Colston Loveland for the rest of Thursday's game at Detroit with a left knee injury.",
-      "published": "2026-11-26T19:37:33Z",
+      "headline": "Bears TE Colston Loveland exits win over Lions with knee injury",
+      "body": "Bears tight end Colston Loveland was ruled out of Thursday's game at Detroit after injuring his left knee in the first quarter.",
+      "published": "2026-11-27T01:53:03Z",
       "url": "https://www.espn.com/nfl/story/_/id/50605365/bears-colston-loveland-ruled-vs-lions-knee-injury",
       "espn_athlete_ids": [
         543465
@@ -48,18 +363,9 @@
       "source": "ESPN"
     },
     {
-      "headline": "NFL Week 12 uniforms: Rams debut alternates, Cowboys rock Thanksgiving throwbacks",
-      "body": "Here's a look at what each NFL team is wearing in Week 12, led by an alternate uniform for the Los Angeles Rams.",
-      "published": "2026-11-26T17:49:54Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50577887/nfl-week-12-uniforms",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
       "headline": "Steelers owner Art Rooney II 'disappointed' in Rodgers outcome, backs McCarthy",
       "body": "Steelers owner Art Rooney II reacted to Wednesday's fiery interview from Aaron Rodgers by saying he was \"disappointed in where this went\" with their now-former quarterback, adding he has \"100% confidence in Mike McCarthy.\"",
-      "published": "2026-11-26T18:40:21Z",
+      "published": "2026-11-27T02:49:38Z",
       "url": "https://www.espn.com/nfl/story/_/id/50605070/steelers-owner-disappointed-rodgers-backs-mccarthy",
       "espn_athlete_ids": [
         17303
@@ -91,21 +397,6 @@
       "url": "http://www.espn.com/nfl/preview?gameId=401873083",
       "espn_athlete_ids": [],
       "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Why Stephen A. is backing the Bills to beat the Chiefs",
-      "body": "Why Stephen A. is backing the Bills to beat the Chiefs",
-      "published": "2026-11-26T16:11:54Z",
-      "url": "https://www.espn.com/video/clip/_/id/50604663/why-stephen-backing-bills-beat-chiefs",
-      "espn_athlete_ids": [
-        166867,
-        184455
-      ],
-      "athlete_names": [
-        null,
-        null
-      ],
       "source": "ESPN"
     },
     {
@@ -214,218 +505,6 @@
         null,
         null
       ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "2026 NFL playoff picture: AFC, NFC seed projections, chances to make postseason",
-      "body": "We're looking ahead to how the 14-team playoff picture could line up -- and who will win divisions -- en route to the Super Bowl.",
-      "published": "2026-11-26T13:09:47Z",
-      "url": "https://www.espn.com/nfl/story/_/id/49745176/2026-nfl-playoff-predictions-afc-nfc-odds-super-bowl",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Packers' Micah Parsons calls for accountability after Rams run wild",
-      "body": "\"That wasn't a championship attitude, competitiveness, drive,\" Micah Parsons said of the Packers allowing the Rams to rush for a season-high 241 yards.",
-      "published": "2026-11-26T14:16:27Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50602564/packers-micah-parsons-accountability-rams-return",
-      "espn_athlete_ids": [
-        470130
-      ],
-      "athlete_names": [
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Rams pick up important home win over the Packers",
-      "body": "Rams pick up important home win over the Packers",
-      "published": "2026-11-26T04:46:32Z",
-      "url": "https://www.espn.com/video/clip/_/id/50601743/rams-pick-important-home-win-packers",
-      "espn_athlete_ids": [
-        529534,
-        443985,
-        442833,
-        529649,
-        388606
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Blake Corum leads Rams' dominant rushing attack in their 5th straight win, 26-13 over Packers",
-      "body": "\u2014 At some point, Blake Corum realized he should be getting weary while he ran the ball more times than anybody ever had during Sean McVay's 10 seasons in charge of the Los Angeles Rams.",
-      "published": "2026-11-26T05:49:32Z",
-      "url": "http://www.espn.com/nfl/recap?gameId=401873079",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Rams take Packers' dinner in first Thanksgiving Eve game",
-      "body": "The night was full of interceptions and injuries with the Rams taking the W.",
-      "published": "2026-11-26T04:34:44Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50599736/2026-nfl-week-12-los-angeles-rams-green-bay-packers",
-      "espn_athlete_ids": [
-        529534,
-        435036,
-        63003,
-        443985
-      ],
-      "athlete_names": [
-        null,
-        null,
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Rams' Kam Kinchens ejected as hit leaves Packers' Christian Watson concussed",
-      "body": "Rams safety Kam Kinchens was ejected for a hit along the sideline that left Packers wide receiver Christian Watson with a concussion.",
-      "published": "2026-11-26T14:09:41Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50600753/rams-kam-kinchens-ejected-hit-christian-watson",
-      "espn_athlete_ids": [
-        489892,
-        529534
-      ],
-      "athlete_names": [
-        null,
-        null
-      ],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Buccaneers will need more from Baker Mayfield and struggling passing attack to beat the Panthers",
-      "body": "\u2014 The Tampa Bay Buccaneers didn't need much from Baker Mayfield to rout the Carolina Panthers last month.",
-      "published": "2026-11-26T02:24:54Z",
-      "url": "http://www.espn.com/nfl/preview?gameId=401873094",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Tony Romo takes job with sports gambling company co-founded by Jake Paul",
-      "body": "Former CBS NFL analyst Tony Romo has taken a job with Betr, with the company saying he will make predictions and engage with fans across platforms.",
-      "published": "2026-11-26T14:29:46Z",
-      "url": "https://www.espn.com/nfl/story/_/id/50600128/tony-romo-job-sports-gambling-company-jake-paul",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Kirk Cousins makes his home debut in his second act with the Vikings, fittingly against the Falcons",
-      "body": "\u2014 When the Minnesota Vikings last played at home, a foundering offense heard it from the frustrated fans after each futile possession.",
-      "published": "2026-11-26T01:47:32Z",
-      "url": "http://www.espn.com/nfl/preview?gameId=401873084",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Commanders try to continue momentum while Cardinals work to end 11-game home losing streak",
-      "body": "\u2014 Some people around the NFL might have needed a reminder what Jayden Daniels can do on a football field before the quarterback led the Washington Commanders ",
-      "published": "2026-11-26T00:58:33Z",
-      "url": "http://www.espn.com/nfl/preview?gameId=401873092",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Patriots-Chargers shaping up to be battle of backup QBs for 2 of AFC's biggest disappointments",
-      "body": "\u2014 When Drake Maye\u2019s New England Patriots eased past Justin Herbert\u2019s Los Angeles Chargers in an AFC wild-card game in January, it seemed as if...",
-      "published": "2026-11-26T00:38:32Z",
-      "url": "http://www.espn.com/nfl/preview?gameId=401873093",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Bengals look to get back on track when they host the Saints on a short week",
-      "body": "Most coaches don't like coming off a Monday night game the week of Thanksgiving because of changes to the practice schedule and a short week of preparation becoming even more condensed.",
-      "published": "2026-11-26T00:37:33Z",
-      "url": "http://www.espn.com/nfl/preview?gameId=401873087",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Purdy and the 49ers prepare for another tough test against Seahawks' stout defense",
-      "body": "\u2014 The San Francisco 49ers passed the first of back-to-back tests against two of the NFL's top defenses with flying colors as Brock Prudy ",
-      "published": "2026-11-26T00:25:33Z",
-      "url": "http://www.espn.com/nfl/preview?gameId=401873091",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Jaguars are simplifying the operation in hopes of bouncing back against the woeful Titans",
-      "body": "\u2014 Coming off their worst offensive performance in two months, the Jacksonville Jaguars are simplifying the operation.",
-      "published": "2026-11-26T00:17:34Z",
-      "url": "http://www.espn.com/nfl/preview?gameId=401873090",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Dolphins playing host to Jets, as the NFL's youngest team remains mindful of rookie wall",
-      "body": "\u2014 The Miami Dolphins have a visible opponent this week. They're playing host to the rival New York Jets on Sunday.",
-      "published": "2026-11-25T23:48:34Z",
-      "url": "http://www.espn.com/nfl/preview?gameId=401873089",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Deshaun Watson and No. 1 pick Fernando Mendoza face primetime pressure in Browns' matchup vs Raiders",
-      "body": "\u2014 Deshaun Watson and Fernando Mendoza have plenty to prove when Cleveland hosts Las Vegas on Sunday night.",
-      "published": "2026-11-25T23:47:32Z",
-      "url": "http://www.espn.com/nfl/preview?gameId=401873086",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Ryans says Texans are focused on winning each week as Ravens limp in on 6-game skid without Jackson",
-      "body": "\u2014 Despite their struggles this season, the Houston Texans still have a good shot to reach the playoffs if they finish strong.",
-      "published": "2026-11-25T23:34:32Z",
-      "url": "http://www.espn.com/nfl/preview?gameId=401873085",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "QB Anthony Richardson hopes to follow J.J. McCarthy's lead when he starts for Colts against Giants",
-      "body": "\u2014 Anthony Richardson has already watched quarterback ",
-      "published": "2026-11-25T23:33:33Z",
-      "url": "http://www.espn.com/nfl/preview?gameId=401873088",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Allen and Mahomes renew their thrilling rivalry as the Bills host the Chiefs on Thanksgiving night",
-      "body": "\u2014 Sorry, Steve Spagnuolo. Josh Allen has no plans of going anywhere, any time soon.",
-      "published": "2026-11-25T23:03:41Z",
-      "url": "http://www.espn.com/nfl/preview?gameId=401873082",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
-      "source": "ESPN"
-    },
-    {
-      "headline": "Lions and Bears kick off NFL's Thanksgiving Day tripleheader, playing for first place in NFC North",
-      "body": "\u2014 NFL fans without ties to Detroit used to dread when the Lions kicked off the league's annual tradition of playing on Thanksgiving Day because they were a laughingstock for many years.",
-      "published": "2026-11-25T22:57:33Z",
-      "url": "http://www.espn.com/nfl/preview?gameId=401873081",
-      "espn_athlete_ids": [],
-      "athlete_names": [],
       "source": "ESPN"
     },
     {
@@ -611,6 +690,32 @@
       "source": "Sleeper injury report"
     },
     {
+      "headline": "Saquon Barkley (RB, PHI) listed Questionable",
+      "body": "Neck -- Stinger",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3929630
+      ],
+      "athlete_names": [
+        "Saquon Barkley"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
+      "headline": "Dallas Goedert (TE, PHI) listed Out",
+      "body": "Shoulder",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3121023
+      ],
+      "athlete_names": [
+        "Dallas Goedert"
+      ],
+      "source": "Sleeper injury report"
+    },
+    {
       "headline": "Cole Kmet (TE, CHI) listed IR",
       "body": "Knee",
       "published": null,
@@ -767,7 +872,7 @@
       "source": "Sleeper injury report"
     },
     {
-      "headline": "Deshaun Watson (QB, CLE) is the hot add -- 307,312 pickups in 24h",
+      "headline": "Deshaun Watson (QB, CLE) is the hot add -- 216,632 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -780,7 +885,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Justice Hill (RB, BAL) is the hot add -- 171,648 pickups in 24h",
+      "headline": "Justice Hill (RB, BAL) is the hot add -- 98,226 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -793,7 +898,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Geno Smith (QB, NYJ) is the hot add -- 141,136 pickups in 24h",
+      "headline": "Geno Smith (QB, NYJ) is the hot add -- 98,208 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -806,20 +911,7 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Samaje Perine (RB, CIN) is the hot add -- 137,364 pickups in 24h",
-      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        3116389
-      ],
-      "athlete_names": [
-        "Samaje Perine"
-      ],
-      "source": "Sleeper trending"
-    },
-    {
-      "headline": "Evan Engram (TE, DEN) is the hot add -- 90,280 pickups in 24h",
+      "headline": "Evan Engram (TE, DEN) is the hot add -- 97,104 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -832,7 +924,20 @@
       "source": "Sleeper trending"
     },
     {
-      "headline": "Darren Waller (TE, CAR) is the hot add -- 72,198 pickups in 24h",
+      "headline": "Samaje Perine (RB, CIN) is the hot add -- 84,800 pickups in 24h",
+      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
+      "published": null,
+      "url": null,
+      "espn_athlete_ids": [
+        3116389
+      ],
+      "athlete_names": [
+        "Samaje Perine"
+      ],
+      "source": "Sleeper trending"
+    },
+    {
+      "headline": "Darren Waller (TE, CAR) is the hot add -- 58,734 pickups in 24h",
       "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
       "published": null,
       "url": null,
@@ -841,19 +946,6 @@
       ],
       "athlete_names": [
         "Darren Waller"
-      ],
-      "source": "Sleeper trending"
-    },
-    {
-      "headline": "Mason Rudolph (QB, PIT) is the hot add -- 59,196 pickups in 24h",
-      "body": "League-wide add volume like this usually means an injury ahead of him or a role change.",
-      "published": null,
-      "url": null,
-      "espn_athlete_ids": [
-        3116407
-      ],
-      "athlete_names": [
-        "Mason Rudolph"
       ],
       "source": "Sleeper trending"
     }
